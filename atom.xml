@@ -6,7 +6,7 @@
   <link href="https://skddj.github.io/atom.xml" rel="self"/>
   
   <link href="https://skddj.github.io/"/>
-  <updated>2022-12-19T16:01:32.886Z</updated>
+  <updated>2022-12-19T16:32:10.123Z</updated>
   <id>https://skddj.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TCPIP</title>
+    <link href="https://skddj.github.io/2022/12/20/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/"/>
+    <id>https://skddj.github.io/2022/12/20/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/</id>
+    <published>2022-12-19T16:31:11.000Z</published>
+    <updated>2022-12-19T16:32:10.123Z</updated>
+    
+    
+    <summary type="html">description</summary>
+    
+    
+    
+    <category term="uncategorized" scheme="https://skddj.github.io/categories/uncategorized/"/>
+    
+    
+    <category term="untagged" scheme="https://skddj.github.io/tags/untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu_git_ssh</title>
@@ -428,32 +447,6 @@
 &lt;p&gt;用途:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;是分布</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>WireShark协议分析(有小组合作成分)</title>
-    <link href="https://skddj.github.io/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/wireshark-xie-yi-fen-xi-you-xiao-zu-he-zuo-cheng-fen/"/>
-    <id>https://skddj.github.io/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/wireshark-xie-yi-fen-xi-you-xiao-zu-he-zuo-cheng-fen/</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-10-06T04:52:53.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;独立实验，分为两阶段抓包，完成两份分析报告：（进度对应单元一，单元三）&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;分阶段要求&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;阶段1：&lt;br&gt;针对3个不同报文完成层次化封装分析。对抓取的3种不同类型报文查对应的</summary>
         
       
     

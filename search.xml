@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>TCPIP</title>
+      <link href="/2022/12/20/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/"/>
+      <url>/2022/12/20/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/</url>
+      
+        <content type="html"><![CDATA[<ol><li>协议有什么用?计算机联网为了通信,就像人与人直接需要一个统一的交流标准(English),因此ARPA公司推出了著名的TCP&#x2F;IP标准网络协议<br><img src="/2022/12/20/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/../resources/image1-8.png" alt="image1"></li><li>什么是OSI,什么又是TCP&#x2F;IP?<br>为了方便设计,更符合理性,因此引入网络层次划分</li></ol><p>国际标准化组织（ISO）在1978年提出了”开放系统互联参考模型”，即著名的OSI&#x2F;RM模型（Open System Interconnection&#x2F;Reference Model）。</p><p>一共七个层次,除了OSI七层模型,常见的网络层次划分还有TCP&#x2F;IP四层和五层协议,它们之间的关系如图所示:</p><p><img src="/2022/12/20/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/../resources/image2-3.png" alt="image2"></p><p><strong>1.物理层(Physical Layer)</strong></p><p>该层是最底层,为上层协议提供了一个数据传输可靠的物理媒体,确保原始数据在各种物理媒体上的传输.</p><p>有两个设备名称很关键:</p><ul><li>中继器(Repeater,也叫放大器)</li><li>集线器</li></ul><p><strong>2.数据链路层(Data Link Layer)</strong></p><p>在物理层的基础上向网络层提供服务,<strong>基本服务是将源于网络层的数据可靠的传输到相邻节点的目标机网络层(说人话就是为网络层提供可靠的数据传输)</strong></p><p>数据链路层基本干的事是将数据组合成数据块(数据块基本单位叫做<strong>帧(Frame)</strong>),为物理的链路提供了硬件或软件的协议支持,构成数据链路</p><p>剩下的作用还有:物理地址寻址,数据组合成数据块(成帧),数据检索重发</p><p>主要的协议是:<strong>以太网协议(网卡工作)</strong></p><p>两个重要的设备名称:</p><ul><li>网桥</li><li>交换机</li></ul><p><strong>3.网络层(Network Layer)</strong></p><p><em>注意:实现端到端之间的数据透明传送</em></p><p>作用基本是:寻址,路由选择,连接建立,保持,中止 等</p><p>重要的协议:<strong>IP协议,ICMP协议,ARP协议,RARP协议</strong></p><table><thead><tr><th>补充IP协议功能: 无连接数据报传输,数据包路由选择和差错控制,因特网组管理协议IGMP,重点是无连接.</th></tr></thead><tbody><tr><td>网络层功能实现:对子网间数据包进行路由选择,拥塞控制,网际互连等(根据网络地址将源节点发出的数据包传送到目的结点)</td></tr></tbody></table><p>基本数据单位:IP数据报</p><p>重要的设备:路由器</p><p><strong>4. 传输层(Transport Layer)</strong></p><p>第一个实现<strong>端到端</strong>也就是主机到主机层次通信的层</p><p>将上层的数据分段并提供端到端的,可靠或者不可靠的传输.端到端的差错控制和流量控制问题.</p><p>功能:根据通信子网的特性,最佳利用网络资源,为两个端系统的会话层之间,提供建立,维护和取消传输连接的功能.(将数据可靠的传送到相应的端口)</p><p>基本数据单位:段 或者 报文</p><p>重要协议: TCP(Transmission Control Protocol,传输控制协议),UDP(User Datagram Protocol,用户数据报协议)</p><p>重要设备:网关</p><p><strong>5. 会话层</strong></p><p>管理主机之间的会话进程,建立,管理,终止进程之间的会话,数据的同步等等</p><p><strong>6.表示层</strong></p><p>让一个主机上的应用层信息可以被另一个主机上的应用程序理解,数据转换包括数据加密,压缩,格式转换等</p><p><strong>7.应用层</strong></p><p>为操作系统或网络应用程序提供网络服务的接口</p><p><strong>会话层,表示层,应用层重点:</strong></p><p>数据传输基本单位为:报文</p><p>主要协议: FTP(文件传送协议),Telnet(远程登录协议),DNS,SMTP(简单邮件传送协议),POP3(邮局协议),HTTP协议</p><p><strong>关于”OSI模型不适合软件实现，而TCP&#x2F;IP协议族适合，请解释？”的问题</strong></p><p><img src="/2022/12/20/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/../resources/image3-2.png" alt="image3"></p><p>还有很多值得说的:</p><ul><li>IP地址</li><li>子网掩码及网络划分</li><li>ARP&#x2F;RARP协议</li><li>TCP&#x2F;IP协议(其中包括三次握手四次挥手,报文格式组成)</li><li>UDP协议,</li><li>最后欠缺一个例子,连接网站的示例</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> uncategorized </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> untagged </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu_git_ssh</title>
       <link href="/2022/12/19/ubuntu-git-ssh/"/>
       <url>/2022/12/19/ubuntu-git-ssh/</url>
@@ -3148,19 +3173,6 @@
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/</url>
       
         <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/../resources/image1-6.png" alt="image1"></p><p><strong>&lt;!DOCTYPE&gt;声明</strong><br>放在&lt;html&gt;之前<br>&lt;!DOCTYPE&gt;声明有助于浏览器中正确显示网页。</p><p><em>来自 &lt;<a href="https://www.runoob.com/html/html-intro.html">https://www.runoob.com/html/html-intro.html</a>&gt;</em></p><p>通用声明在不兼容时查看超链接</p><p><strong>中文编码</strong><br>在&lt;head&gt;处把字符声明改成utf-8或者GBK</p><table><thead><tr><th>&lt;meta charset &#x3D; “UTF-8”&gt;</th></tr></thead></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>1. TCP/IP</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/</url>
-      
-        <content type="html"><![CDATA[<ol><li>协议有什么用?<br>计算机联网为了通信,就像人与人直接需要一个统一的交流标准(English),因此ARPA公司推出了著名的TCP&#x2F;IP标准网络协议<br><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/../resources/image1-8.png" alt="image1"></li><li>什么是OSI,什么又是TCP&#x2F;IP?<br>为了方便设计,更符合理性,因此引入网络层次划分</li></ol><p>国际标准化组织（ISO）在1978年提出了”开放系统互联参考模型”，即著名的OSI&#x2F;RM模型（Open System Interconnection&#x2F;Reference Model）。</p><p>一共七个层次,除了OSI七层模型,常见的网络层次划分还有TCP&#x2F;IP四层和五层协议,它们之间的关系如图所示:</p><p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/../resources/image2-3.png" alt="image2"></p><p><strong>1.物理层(Physical Layer)</strong></p><p>该层是最底层,为上层协议提供了一个数据传输可靠的物理媒体,确保原始数据在各种物理媒体上的传输.</p><p>有两个设备名称很关键:</p><ul><li>中继器(Repeater,也叫放大器)</li><li>集线器</li></ul><p><strong>2.数据链路层(Data Link Layer)</strong></p><p>在物理层的基础上向网络层提供服务,<strong>基本服务是将源于网络层的数据可靠的传输到相邻节点的目标机网络层(说人话就是为网络层提供可靠的数据传输)</strong></p><p>数据链路层基本干的事是将数据组合成数据块(数据块基本单位叫做<strong>帧(Frame)</strong>),为物理的链路提供了硬件或软件的协议支持,构成数据链路</p><p>剩下的作用还有:物理地址寻址,数据组合成数据块(成帧),数据检索重发</p><p>主要的协议是:<strong>以太网协议(网卡工作)</strong></p><p>两个重要的设备名称:</p><ul><li>网桥</li><li>交换机</li></ul><p><strong>3.网络层(Network Layer)</strong></p><p><em>注意:实现端到端之间的数据透明传送</em></p><p>作用基本是:寻址,路由选择,连接建立,保持,中止 等</p><p>重要的协议:<strong>IP协议,ICMP协议,ARP协议,RARP协议</strong></p><table><thead><tr><th>补充IP协议功能: 无连接数据报传输,数据包路由选择和差错控制,因特网组管理协议IGMP,重点是无连接.</th></tr></thead><tbody><tr><td>网络层功能实现:对子网间数据包进行路由选择,拥塞控制,网际互连等(根据网络地址将源节点发出的数据包传送到目的结点)</td></tr></tbody></table><p>基本数据单位:IP数据报</p><p>重要的设备:路由器</p><p><strong>4. 传输层(Transport Layer)</strong></p><p>第一个实现<strong>端到端</strong>也就是主机到主机层次通信的层</p><p>将上层的数据分段并提供端到端的,可靠或者不可靠的传输.端到端的差错控制和流量控制问题.</p><p>功能:根据通信子网的特性,最佳利用网络资源,为两个端系统的会话层之间,提供建立,维护和取消传输连接的功能.(将数据可靠的传送到相应的端口)</p><p>基本数据单位:段 或者 报文</p><p>重要协议: TCP(Transmission Control Protocol,传输控制协议),UDP(User Datagram Protocol,用户数据报协议)</p><p>重要设备:网关</p><p><strong>5. 会话层</strong></p><p>管理主机之间的会话进程,建立,管理,终止进程之间的会话,数据的同步等等</p><p><strong>6.表示层</strong></p><p>让一个主机上的应用层信息可以被另一个主机上的应用程序理解,数据转换包括数据加密,压缩,格式转换等</p><p><strong>7.应用层</strong></p><p>为操作系统或网络应用程序提供网络服务的接口</p><p><strong>会话层,表示层,应用层重点:</strong></p><p>数据传输基本单位为:报文</p><p>主要协议: FTP(文件传送协议),Telnet(远程登录协议),DNS,SMTP(简单邮件传送协议),POP3(邮局协议),HTTP协议</p><p><strong>关于”OSI模型不适合软件实现，而TCP&#x2F;IP协议族适合，请解释？”的问题</strong></p><p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/1.tcpip/../resources/image3-2.png" alt="image3"></p><p>还有很多值得说的:</p><ul><li>IP地址</li><li>子网掩码及网络划分</li><li>ARP&#x2F;RARP协议</li><li>TCP&#x2F;IP协议(其中包括三次握手四次挥手,报文格式组成)</li><li>UDP协议,</li><li>最后欠缺一个例子,连接网站的示例</li></ul>]]></content>
       
       
       
