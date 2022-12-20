@@ -217,179 +217,6 @@
   </entry>
   
   <entry>
-    <title>第一章 计算机系统概述</title>
-    <link href="https://shiym.top/article/31c36041"/>
-    <id>https://shiym.top/article/31c36041</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-11-03T22:53:54.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;outline:&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第七章 存储系统</title>
-    <link href="https://shiym.top/article/c6008702"/>
-    <id>https://shiym.top/article/c6008702</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-12-18T02:54:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;第七章 存储系统&lt;br&gt;2022年11月23日</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第三章 芯片的数电基础</title>
-    <link href="https://shiym.top/article/b722933d"/>
-    <id>https://shiym.top/article/b722933d</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-10-23T05:37:01.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;outline:&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第二章 计算机的数值和编码</title>
-    <link href="https://shiym.top/article/409f14a"/>
-    <id>https://shiym.top/article/409f14a</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-10-27T21:48:34.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;outline:&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第五章 现代处理器基础</title>
-    <link href="https://shiym.top/article/3a8589f7"/>
-    <id>https://shiym.top/article/3a8589f7</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-12-10T02:30:18.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第六章 现代处理器的高级实现技术</title>
-    <link href="https://shiym.top/article/4d36cce8"/>
-    <id>https://shiym.top/article/4d36cce8</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-11-17T23:57:53.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;流水线&lt;/strong&gt;&lt;br&gt;流水线技术(pipeline):多条指令重叠执行,实现指令级并行(instruction-level parallelism)&lt;br&gt;&lt;img src=&quot;/article/../resources/image1-6.png&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第四章 计算机芯片的基本电路组成</title>
-    <link href="https://shiym.top/article/bcd0e82"/>
-    <id>https://shiym.top/article/bcd0e82</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-12-01T23:52:28.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;第四章 计算机芯片的基本电路组成&lt;br&gt;2022年10月10日 星期一&lt;br&gt;下午2:33&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>课程介绍和目标</title>
-    <link href="https://shiym.top/article/8416727"/>
-    <id>https://shiym.top/article/8416727</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-11-14T04:25:14.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/article/../resources/image1.png&quot; alt=&quot;image1&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/article/../resources/image2.png&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Unit2 交互</title>
     <link href="https://shiym.top/article/ee2c8de7"/>
     <id>https://shiym.top/article/ee2c8de7</id>
@@ -449,6 +276,189 @@
 &lt;p&gt;用途:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;是分布</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>WireShark协议分析(有小组合作成分)</title>
+    <link href="https://shiym.top/article/905f6b1e"/>
+    <id>https://shiym.top/article/905f6b1e</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>2022-10-06T04:52:53.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;独立实验，分为两阶段抓包，完成两份分析报告：（进度对应单元一，单元三）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;分阶段要求&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;阶段1：&lt;br&gt;针对3个不同报文完成层次化封装分析。对抓取的3种不同类型报文查对应的</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>串讲1 </title>
+    <link href="https://shiym.top/article/a8d9a867"/>
+    <id>https://shiym.top/article/a8d9a867</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>2022-11-06T18:37:31.000Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>传输层</title>
+    <link href="https://shiym.top/article/ec75daa1"/>
+    <id>https://shiym.top/article/ec75daa1</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>2022-10-16T18:24:42.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;传输层&lt;br&gt;2022年10月13日</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>信道的极限容量</title>
+    <link href="https://shiym.top/article/71cc5dab"/>
+    <id>https://shiym.top/article/71cc5dab</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>2022-10-15T02:36:37.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;em&gt;码间串扰&lt;/em&gt;:失真严重,无法分出码元之间的界限&lt;br&gt;&lt;strong&gt;信道容量&lt;/strong&gt; ： 可用带宽B上的bit速率极限&lt;br&gt;&lt;img src=&quot;/article/../resources/image1.jpg&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>差错控制--停等,滑动窗口协议</title>
+    <link href="https://shiym.top/article/4b245d8"/>
+    <id>https://shiym.top/article/4b245d8</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>2022-10-30T19:12:57.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;bit流信道—物理层模型&lt;br&gt;&lt;strong&gt;停等协议(Stop and wait)&lt;/strong&gt; 顾名思义,发送一帧停一帧,接收方应答后接着发送&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果超时没有应答,则重传&lt;br&gt;停等协议的效率问题(不知道有没有用&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据链路层</title>
+    <link href="https://shiym.top/article/c8c4683d"/>
+    <id>https://shiym.top/article/c8c4683d</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>2022-10-26T22:53:17.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;小知识点:最小帧长64字节&lt;br&gt;实现两个相连机器的有效通信。&lt;br&gt;&lt;strong&gt;相连&lt;/strong&gt;使用的是&lt;em&gt;物理通道&lt;/em&gt;连接&lt;br&gt;&lt;strong&gt;链路层的任务&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Service&lt;/li&gt;
+&lt;li&gt;为上方的实体</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>竞争式访问控制仿真</title>
+    <link href="https://shiym.top/article/401edb05"/>
+    <id>https://shiym.top/article/401edb05</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>2022-10-06T04:53:04.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;独立型实验。&lt;br&gt;根据实验指导书，利用课程组提供的竞争式访问控制协议仿真软件，收集实验数据，结合竞争式访问控制原理，完成数据分析。&lt;br&gt;撰写实验报告，重点在数据分析。友情提醒，实验具有随机性，不同同学收集到的实验数据完全相同，是小小概率事件。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>物理层</title>
+    <link href="https://shiym.top/article/652d7ab3"/>
+    <id>https://shiym.top/article/652d7ab3</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>2022-10-23T18:44:08.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;物理层的基本概念&lt;ul&gt;
+&lt;li&gt;物理层协议的任务&lt;ul&gt;
+&lt;li&gt;机械特性&lt;/li&gt;
+&lt;li&gt;电气特性&lt;/li&gt;
+&lt;li&gt;功能特性&lt;/li&gt;
+&lt;li&gt;过程特性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;物理层下面的传输媒体&lt;ul&gt;
+&lt;l</summary>
         
       
     
