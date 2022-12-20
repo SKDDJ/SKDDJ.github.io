@@ -555,6 +555,110 @@
     
     
     <entry>
+      <title>case 1  基本语法</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见运算符</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/</url>
+      
+        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image1-42.png" alt="image1"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微分方程模型与ODE函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/</url>
+      
+        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>符号计算函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/</url>
+      
+        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>线性代数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/</url>
+      
+        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>课程介绍,成绩构成</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/../resources/image1-40.png" alt="image1"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>非线性方程求解</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>区块链简介</title>
       <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/"/>
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/</url>
@@ -815,102 +919,11 @@
     
     
     <entry>
-      <title>case 1  基本语法</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
+      <title>case1 事件运算及概率</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case1-shi-jian-yun-suan-ji-gai-lu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case1-shi-jian-yun-suan-ji-gai-lu/</url>
       
-        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见运算符</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/</url>
-      
-        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image1-42.png" alt="image1"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微分方程模型与ODE函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/</url>
-      
-        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>符号计算函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/</url>
-      
-        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>线性代数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/</url>
-      
-        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>课程介绍,成绩构成</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/../resources/image1-40.png" alt="image1"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>非线性方程求解</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case1%2520%E4%BA%8B%E4%BB%B6%E8%BF%90%E7%AE%97%E5%8F%8A%E6%A6%82%E7%8E%87&amp;section-id={5A797EF2-6FBF-408E-90EC-EDFB0B4554AE}&amp;page-id={63C26D89-89BB-448F-839C-3E058705A685}&amp;object-id={7F4ACE23-54AC-47E7-AEEA-A7D8701CE170}&amp;5B&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/概率论.one">1.1 随机试验与随机事件</a></p><blockquote><p><a href="onenote:#case1%2520%E4%BA%8B%E4%BB%B6%E8%BF%90%E7%AE%97%E5%8F%8A%E6%A6%82%E7%8E%87&amp;section-id={5A797EF2-6FBF-408E-90EC-EDFB0B4554AE}&amp;page-id={63C26D89-89BB-448F-839C-3E058705A685}&amp;object-id={8F616E9E-B0D6-417C-AA09-B9D0190A9C41}&amp;27&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/概率论.one">随机事件的关系及运算</a></p></blockquote></th></tr></thead><tbody></tbody></table><p><strong>1.1 随机试验与随机事件</strong></p><p>样本空间:所有可能的结果的集合,记为Ω</p><p>样本点:样本空间中的元素</p><p>基本事件:是集合,仅在样本空间中单个结果的事件</p><p><strong>随机事件的关系及运算</strong></p><ol><li>包含关系</li><li>和事件</li><li>积事件</li><li>互不相容事件</li><li>对立事件(逆事件)实际就是补集的概念</li><li>差事件 A-B<ul><li>A-B &#x3D; AB-hat &#x3D; A-AB &#x3D; A∪B - B</li></ul></li><li>随机事件(集合)运算律:<ul><li>交换律:A∪B &#x3D; B∪A , A∩B &#x3D; B∩A</li><li>结合律:括号可以随意调整</li><li>分配律:去掉括号,再分配</li><li>德摩根律:去掉hat时长变短开口换方向</li><li>吸收律:</li></ul></li></ol><p>homework: 习题册第一章</p><p><em>多了个不认识的加法定理</em></p>]]></content>
       
       
       
@@ -924,19 +937,6 @@
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/</url>
       
         <content type="html"><![CDATA[<p>case 协方差,相关系数与矩<br>2022年11月15日<br>8:38<br><strong>协方差</strong><br>协方差,相关系数就是描述随机变量之间相互关系的数字特征<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image1-27.png" alt="image1"><br><strong>协方差</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image2-29.png" alt="image2"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image3-23.png" alt="image3"><br>为X,Y的协方差<br><em><strong>特别的</strong></em><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image4-23.png" alt="image4"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image5-15.png" alt="image5"></p><p><strong>计算公式</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image6-15.png" alt="image6"><br><strong>协方差的性质</strong></p><ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image7-16.png" alt="image7"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image8-13.png" alt="image8"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image9-11.png" alt="image9"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image10-9.png" alt="image10"><br><strong>相关系数</strong></li><li>相关系数是衡量两个随机变量之间**<u>线性相关程度</u>**的数字特征</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image11-7.png" alt="image11"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image12-7.png" alt="image12"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image13-7.png" alt="image13"><br>为随机变量X与Y的<strong>相关系数</strong><br><strong>注:</strong></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image14-6.png" alt="image14"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image15-5.png" alt="image15"><br><strong>性质</strong></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image16-5.png" alt="image16"><ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image17-5.png" alt="image17"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image18-5.png" alt="image18"><ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image19-4.png" alt="image19"><br><strong>定理</strong>:</li></ul></li></ul></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image20-3.png" alt="image20"><ul><li>逆定理不成立<ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image21-3.png" alt="image21"><br><strong>协方差矩阵</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image22-3.png" alt="image22"><br>性质:</li></ul></li></ul></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image23-3.png" alt="image23"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image24-3.png" alt="image24"></li><li>C是非负定矩阵</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image25-3.png" alt="image25"></li></ul><p><strong>矩</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image26-3.png" alt="image26"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image27-3.png" alt="image27"><br>为X的*<u>k阶原点矩</u>*<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image28-3.png" alt="image28"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image29-3.png" alt="image29"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image30-3.png" alt="image30"><br>为X的*<u>k阶中心矩</u>*<br>称<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/../resources/image31-3.png" alt="image31"><br>为X的*<u>k阶绝对中心矩</u>*</p><p>然后观察得到结论—-<strong>随机变量的矩是数!</strong></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case1 事件运算及概率</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case1-shi-jian-yun-suan-ji-gai-lu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case1-shi-jian-yun-suan-ji-gai-lu/</url>
-      
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case1%2520%E4%BA%8B%E4%BB%B6%E8%BF%90%E7%AE%97%E5%8F%8A%E6%A6%82%E7%8E%87&amp;section-id={5A797EF2-6FBF-408E-90EC-EDFB0B4554AE}&amp;page-id={63C26D89-89BB-448F-839C-3E058705A685}&amp;object-id={7F4ACE23-54AC-47E7-AEEA-A7D8701CE170}&amp;5B&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/概率论.one">1.1 随机试验与随机事件</a></p><blockquote><p><a href="onenote:#case1%2520%E4%BA%8B%E4%BB%B6%E8%BF%90%E7%AE%97%E5%8F%8A%E6%A6%82%E7%8E%87&amp;section-id={5A797EF2-6FBF-408E-90EC-EDFB0B4554AE}&amp;page-id={63C26D89-89BB-448F-839C-3E058705A685}&amp;object-id={8F616E9E-B0D6-417C-AA09-B9D0190A9C41}&amp;27&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/概率论.one">随机事件的关系及运算</a></p></blockquote></th></tr></thead><tbody></tbody></table><p><strong>1.1 随机试验与随机事件</strong></p><p>样本空间:所有可能的结果的集合,记为Ω</p><p>样本点:样本空间中的元素</p><p>基本事件:是集合,仅在样本空间中单个结果的事件</p><p><strong>随机事件的关系及运算</strong></p><ol><li>包含关系</li><li>和事件</li><li>积事件</li><li>互不相容事件</li><li>对立事件(逆事件)实际就是补集的概念</li><li>差事件 A-B<ul><li>A-B &#x3D; AB-hat &#x3D; A-AB &#x3D; A∪B - B</li></ul></li><li>随机事件(集合)运算律:<ul><li>交换律:A∪B &#x3D; B∪A , A∩B &#x3D; B∩A</li><li>结合律:括号可以随意调整</li><li>分配律:去掉括号,再分配</li><li>德摩根律:去掉hat时长变短开口换方向</li><li>吸收律:</li></ul></li></ol><p>homework: 习题册第一章</p><p><em>多了个不认识的加法定理</em></p>]]></content>
       
       
       
@@ -1387,6 +1387,32 @@
     
     
     <entry>
+      <title>命令总结</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p><a href="../../resources/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a></p><p>git learning over!<br>–2022.8.26</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常用基本操作命令大全了算是,没有init就是</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>开发一个新feature(其实是bug...)，最好新建一个分支；</p><p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D &lt;name&gt;强行删除。</p><p>git push -f origin branchname // 这个-f命令大公司应该都不然用,都是用</p><p>git rebase 先拉回一个最新的commit到本地分支上手动修改,</p></th></tr></thead><tbody></tbody></table>**1.git clone // 到本地  2.git checkout -b xxx 切换至新分支xxx  （相当于复制了remote的仓库到本地的xxx分支上  3.修改或者添加本地代码（部署在硬盘的源文件上）  4.git diff 查看自己对代码做出的改变  5.git add 上传更新后的代码至暂存区  6.git commit 可以将暂存区里更新后的代码更新到本地git  7.git push origin xxx 将本地的xxxgit分支上传至github上的git****（如果在写自己的代码过程中发现远端GitHub上代码出现改变）  1.git checkout main 切换回main分支  2.git pull origin master(main) 将远端修改过的代码再更新到本地  3.git checkout xxx 回到xxx分支  4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  （-f ---》强行）  6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit****远端完成更新后****1.git branch -d xxx 删除本地的git分支****2.git pull origin master 再把远端的最新代码拉至本地**]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go的代码风格简述</title>
       <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-de-dai-ma-feng-ge-jian-shu/"/>
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-de-dai-ma-feng-ge-jian-shu/</url>
@@ -1634,32 +1660,6 @@
     
     
     <entry>
-      <title>命令总结</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p><a href="../../resources/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a></p><p>git learning over!<br>–2022.8.26</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常用基本操作命令大全了算是,没有init就是</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/</url>
-      
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>开发一个新feature(其实是bug...)，最好新建一个分支；</p><p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D &lt;name&gt;强行删除。</p><p>git push -f origin branchname // 这个-f命令大公司应该都不然用,都是用</p><p>git rebase 先拉回一个最新的commit到本地分支上手动修改,</p></th></tr></thead><tbody></tbody></table>**1.git clone // 到本地  2.git checkout -b xxx 切换至新分支xxx  （相当于复制了remote的仓库到本地的xxx分支上  3.修改或者添加本地代码（部署在硬盘的源文件上）  4.git diff 查看自己对代码做出的改变  5.git add 上传更新后的代码至暂存区  6.git commit 可以将暂存区里更新后的代码更新到本地git  7.git push origin xxx 将本地的xxxgit分支上传至github上的git****（如果在写自己的代码过程中发现远端GitHub上代码出现改变）  1.git checkout main 切换回main分支  2.git pull origin master(main) 将远端修改过的代码再更新到本地  3.git checkout xxx 回到xxx分支  4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  （-f ---》强行）  6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit****远端完成更新后****1.git branch -d xxx 删除本地的git分支****2.git pull origin master 再把远端的最新代码拉至本地**]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Bar柱状图</title>
       <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/"/>
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/</url>
@@ -1725,11 +1725,11 @@
     
     
     <entry>
-      <title>无标题页</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/numpy/wu-biao-ti-ye/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/numpy/wu-biao-ti-ye/</url>
+      <title>Series and DataFrame</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/pandas/series-and-dataframe/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/pandas/series-and-dataframe/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><strong>Series</strong><br>一维列表</p><p><strong>DataFrame</strong><br>二维的列表</p><p>可以使用list进行按行创建table也可以用ndarrays按列创建<br>dict也是按行创建<br>Pandas 可以使用<strong>loc</strong>属性返回指定行的数据，如果没有设置索引，第一行索引为<strong>0</strong>，第二行索引为<strong>1</strong></p><p><em>来自 &lt;<a href="https://www.runoob.com/pandas/pandas-dataframe.html">https://www.runoob.com/pandas/pandas-dataframe.html</a>&gt;</em></p>]]></content>
       
       
       
@@ -1738,11 +1738,11 @@
     
     
     <entry>
-      <title>Series and DataFrame</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/pandas/series-and-dataframe/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/pandas/series-and-dataframe/</url>
+      <title>无标题页</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/numpy/wu-biao-ti-ye/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/numpy/wu-biao-ti-ye/</url>
       
-        <content type="html"><![CDATA[<p><strong>Series</strong><br>一维列表</p><p><strong>DataFrame</strong><br>二维的列表</p><p>可以使用list进行按行创建table也可以用ndarrays按列创建<br>dict也是按行创建<br>Pandas 可以使用<strong>loc</strong>属性返回指定行的数据，如果没有设置索引，第一行索引为<strong>0</strong>，第二行索引为<strong>1</strong></p><p><em>来自 &lt;<a href="https://www.runoob.com/pandas/pandas-dataframe.html">https://www.runoob.com/pandas/pandas-dataframe.html</a>&gt;</em></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       
@@ -2284,11 +2284,11 @@
     
     
     <entry>
-      <title>html部分</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/html-bu-fen/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/html-bu-fen/</url>
+      <title>基本语法</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/ji-ben-yu-fa/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/ji-ben-yu-fa/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={D2359789-53F4-49C2-A098-BB58DB404BB1}&amp;96&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">把HTML和CSS链接起来</a></p><blockquote><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={63F3420D-AAD7-4AF4-8CD8-D01264739E59}&amp;22&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">改变元素的默认行为</a></p><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={E3F321B8-AAE3-4242-AEFF-AFE2E639619E}&amp;CE&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">使用类名</a></p><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={680CE892-DFC5-4446-86F3-D36235F0C3B2}&amp;38&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">根据元素在文档中的位置确定样式</a></p><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={9651EA4E-A3DB-4FE6-815F-6B61AF413DB9}&amp;13&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">根据状态确定样式</a></p></blockquote></th></tr></thead><tbody></tbody></table><p>实现主标题红色:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>h1{</p><blockquote><p>color :red;</p><p>font-size: 5em;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>开头一个选择器(selector),选择了要添加样式的HTML元素,此例我们选择了一级标题<p>大括号里面为 <strong>属性</strong>(property) : <strong>值</strong>(value) 的<strong>声明</strong>(declarations)</p><ol><li><strong>把HTML和CSS链接起来</strong><br>假如css文件名叫”style.css”,html文件叫”index.html”</li></ol><p>在html文件的语句模块中加入:</p><table><thead><tr><th>&lt;link rel&#x3D;”stylesheet” href&#x3D;”style.css”&gt;</th></tr></thead><tbody><tr><td><sub></sub>​rel​<sub></sub>是让浏览器知道有css文档存在,利用<sub></sub>​href​<sub></sub>指定寻找css文件位置</td></tr></tbody></table><ol start="2"><li><p><strong>改变元素的默认行为</strong><br>浏览器有默认的样式,比如标题默认大号粗体,无序列表都是圆点开头,我们可以对其更改:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>li{</p><blockquote><p>list-style-type:none;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>上面的代码是不显示圆点</li><li><p><strong>使用类名</strong><br>把元素分个类,让它特殊起来,有了你给的名字,做法就是给元素加个类名(class)就可以.</p></li></ol><p>比方说在一个无序列表中:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>  <strong>&lt;ul&gt;</strong></p><p>    &lt;li&gt;Item One&lt;/li&gt;</p><p>    &lt;li class="special"&gt;Item Two&lt;/li&gt;</p><p>    &lt;li&gt;Item &lt;em&gt;three&lt;/em&gt; &lt;/li&gt;</p><p>  <strong>&lt;/ul&gt;</strong></p></th></tr></thead><tbody></tbody></table>我们把第二个元素叫"special",那么在css中更改样式时:<p>使用一个半角句点<sub></sub>​.​<sub></sub></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>.special{</p><blockquote><p>color:orange;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>它的颜色就和隔壁的那两个不一样了-   *如果你给一个\<li>元素名字"special",还给\<p>叫"special",但是这次你只想更改\<li>的"special"该怎么做呢?*css中使用类的实例对象时有点奇怪,是反过来的引用,看代码:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>li.special{</p><blockquote><p>color : orange;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>这只会更改\</li><li>中的special元素<ol start="4"><li><strong>根据元素在文档中的位置确定样式</strong><ul><li><strong>包含选择器 — 空格</strong></li><li><strong>相邻选择器 — 加号+</strong></li></ul></li></ol><ul><li><p><em>如果段落中有个&lt;em&gt;元素,列表中也有个&lt;em&gt;元素,该怎么只修改列表中的&lt;em&gt;元素呢?</em><br>很简单,在两个选择器中间加一个<strong>空格</strong>(包含选择器)</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>li em{</p><blockquote><p>color:rebeccapurple;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>这只会更改列表中的em的样式</li><li><p>标题后面设置一个紧跟标题的同层级的段落样式,在两个选择器中间添加个<sub></sub>​+​<sub></sub></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>h1+p{</p><blockquote><p>font-size:200%;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>像是有两个大标题一样</li></ul><ol start="5"><li><strong>根据状态确定样式</strong><ul><li><strong>为什么有时候我们会见到有些链接,当鼠标悬停在链接上时是一个颜色,点击后是一个颜色,没有点击过是一个颜色,这是怎么做的的呢?</strong><br>和之前说过的”锚”有关,把的样式表改一改<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>a:link{</p><blockquote><p>color:pink;</p></blockquote><p>}//没访问的是粉色</p><p></p><p>a:visited{</p><p>color:green;</p><p>} //访问过就变绿</p><p></p><p>a:hover{</p><p>text-decoration:none;</p><p>}//悬停时清除下划线</p></th></tr></thead><tbody></tbody></table></li></ul></li></ol><p>关于属性:</p><ul><li>font-size</li><li>width</li><li>background-color</li><li>color</li><li>border</li><li>transform(可以结合rotate使用让图片旋转)</li></ul></li></p></li>]]></content>
       
       
       
@@ -2297,11 +2297,11 @@
     
     
     <entry>
-      <title>基本语法</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/ji-ben-yu-fa/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/ji-ben-yu-fa/</url>
+      <title>html部分</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/html-bu-fen/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/html-bu-fen/</url>
       
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={D2359789-53F4-49C2-A098-BB58DB404BB1}&amp;96&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">把HTML和CSS链接起来</a></p><blockquote><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={63F3420D-AAD7-4AF4-8CD8-D01264739E59}&amp;22&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">改变元素的默认行为</a></p><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={E3F321B8-AAE3-4242-AEFF-AFE2E639619E}&amp;CE&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">使用类名</a></p><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={680CE892-DFC5-4446-86F3-D36235F0C3B2}&amp;38&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">根据元素在文档中的位置确定样式</a></p><p><a href="onenote:#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95&amp;section-id={C6D0B08B-3A1B-4515-A5A0-0D568E7C6046}&amp;page-id={90A90B90-5987-4055-9F5C-4EE4FAE5769F}&amp;object-id={9651EA4E-A3DB-4FE6-815F-6B61AF413DB9}&amp;13&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/CSS.one">根据状态确定样式</a></p></blockquote></th></tr></thead><tbody></tbody></table><p>实现主标题红色:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>h1{</p><blockquote><p>color :red;</p><p>font-size: 5em;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>开头一个选择器(selector),选择了要添加样式的HTML元素,此例我们选择了一级标题<p>大括号里面为 <strong>属性</strong>(property) : <strong>值</strong>(value) 的<strong>声明</strong>(declarations)</p><ol><li><strong>把HTML和CSS链接起来</strong><br>假如css文件名叫”style.css”,html文件叫”index.html”</li></ol><p>在html文件的语句模块中加入:</p><table><thead><tr><th>&lt;link rel&#x3D;”stylesheet” href&#x3D;”style.css”&gt;</th></tr></thead><tbody><tr><td><sub></sub>​rel​<sub></sub>是让浏览器知道有css文档存在,利用<sub></sub>​href​<sub></sub>指定寻找css文件位置</td></tr></tbody></table><ol start="2"><li><p><strong>改变元素的默认行为</strong><br>浏览器有默认的样式,比如标题默认大号粗体,无序列表都是圆点开头,我们可以对其更改:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>li{</p><blockquote><p>list-style-type:none;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>上面的代码是不显示圆点</li><li><p><strong>使用类名</strong><br>把元素分个类,让它特殊起来,有了你给的名字,做法就是给元素加个类名(class)就可以.</p></li></ol><p>比方说在一个无序列表中:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>  <strong>&lt;ul&gt;</strong></p><p>    &lt;li&gt;Item One&lt;/li&gt;</p><p>    &lt;li class="special"&gt;Item Two&lt;/li&gt;</p><p>    &lt;li&gt;Item &lt;em&gt;three&lt;/em&gt; &lt;/li&gt;</p><p>  <strong>&lt;/ul&gt;</strong></p></th></tr></thead><tbody></tbody></table>我们把第二个元素叫"special",那么在css中更改样式时:<p>使用一个半角句点<sub></sub>​.​<sub></sub></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>.special{</p><blockquote><p>color:orange;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>它的颜色就和隔壁的那两个不一样了-   *如果你给一个\<li>元素名字"special",还给\<p>叫"special",但是这次你只想更改\<li>的"special"该怎么做呢?*css中使用类的实例对象时有点奇怪,是反过来的引用,看代码:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>li.special{</p><blockquote><p>color : orange;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>这只会更改\</li><li>中的special元素<ol start="4"><li><strong>根据元素在文档中的位置确定样式</strong><ul><li><strong>包含选择器 — 空格</strong></li><li><strong>相邻选择器 — 加号+</strong></li></ul></li></ol><ul><li><p><em>如果段落中有个&lt;em&gt;元素,列表中也有个&lt;em&gt;元素,该怎么只修改列表中的&lt;em&gt;元素呢?</em><br>很简单,在两个选择器中间加一个<strong>空格</strong>(包含选择器)</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>li em{</p><blockquote><p>color:rebeccapurple;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>这只会更改列表中的em的样式</li><li><p>标题后面设置一个紧跟标题的同层级的段落样式,在两个选择器中间添加个<sub></sub>​+​<sub></sub></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>h1+p{</p><blockquote><p>font-size:200%;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>像是有两个大标题一样</li></ul><ol start="5"><li><strong>根据状态确定样式</strong><ul><li><strong>为什么有时候我们会见到有些链接,当鼠标悬停在链接上时是一个颜色,点击后是一个颜色,没有点击过是一个颜色,这是怎么做的的呢?</strong><br>和之前说过的”锚”有关,把的样式表改一改<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>a:link{</p><blockquote><p>color:pink;</p></blockquote><p>}//没访问的是粉色</p><p></p><p>a:visited{</p><p>color:green;</p><p>} //访问过就变绿</p><p></p><p>a:hover{</p><p>text-decoration:none;</p><p>}//悬停时清除下划线</p></th></tr></thead><tbody></tbody></table></li></ul></li></ol><p>关于属性:</p><ul><li>font-size</li><li>width</li><li>background-color</li><li>color</li><li>border</li><li>transform(可以结合rotate使用让图片旋转)</li></ul></li></p></li>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       
