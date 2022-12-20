@@ -256,11 +256,11 @@
     
     
     <entry>
-      <title>Unit4 共享</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/</url>
+      <title>Unit5 交换与路由技术</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/</url>
       
-        <content type="html"><![CDATA[<p>Unit4 共享<br>2022年10月20日 星期四<br>下午3:53</p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image1-9.png" alt="image1"><br>核心内容就是挖掘信道资源，共享信道等等<br><strong>信道，信号与传输（理论基础）</strong></p><ul><li>数字数据和模拟数据<ul><li>模拟（analog） 数据：连续变化的数据<ul><li>声音</li></ul></li><li>数字（digital） 数据：不连续变化的数据<ul><li>文本（bit流）</li></ul></li><li>可以通过<em>插值法</em>将数字信号拟合模拟信号<br>信号的幅频特性：信号的时域变化越剧烈，频域带宽越宽</li></ul></li></ul><p>基于数字传输理论，结合信号编码和调制技术，我们知道，一个信道传输多个信号是可行的</p><p><strong>无线传输</strong><br>利用双绞线构成星型网络,线路很难一线传通,依靠简单的集线器<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image2-8.png" alt="image2"><br>还可以构成环形广播式信道(点对点,单向绕环传递)<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image3-7.png" alt="image3"><br>利用光纤构成无源星型:广播式媒体:broadcast</p><ul><li>基带同轴电缆,传输距离500-2km</li><li>宽带同轴电缆:传输距离几十km</li></ul><p><strong>共用信道的控制技术 — xDM,xDMA</strong></p><ul><li>多路复用-Multiplex<ul><li>频分多路</li><li>时分多路</li><li>波分多路:光纤</li></ul></li><li>多址技术<ul><li>频分多址</li><li>时分多址</li><li>码分多址:无线<br>关于码分多址:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image4-7.png" alt="image4"></li></ul></li></ul><p><strong>基于OFDMA的资源块</strong><br>把信道资源规划为:资源块</p><ul><li>频域:子载波</li><li>时域:符号</li><li>基站根据业务需求动态为用户分配资源块<ul><li>资源分配算法:平均分配,优先级分配,公平算法</li></ul></li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image5-5.png" alt="image5"></p><ul><li>结论:将信道分为N个子信道后,每个信道的容量降低为原来的1&#x2F;N,到达率也减少到N分之一,则平均延迟增加N倍,用户体验减少<br><strong>排队论</strong><br>此处有个考点:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image6-6.png" alt="image6"><br>最后的部分,可能出公式的计算<br><strong>猝发性问题</strong><br>简而言之就是分配了子信道后,用户一般也能够用,但是有些时间段可能流量剧增,导致信道分了这么多也没用上<br>分配给用户的资源,用户也没有充分利用<br>解决方案就是在用户需要时才分配信道,避免造成浪费</li></ul><p><strong>竞争式媒体访问技术(MAC在数据链路层)</strong></p><ul><li>广播式信道—最低成本实现最广泛连接<ul><li>两个以上站点使用共享信道</li><li>不能有多个站点同时发送,否则会导致冲突</li></ul></li><li>目的还是为了省钱,低成本控制,实现了信道的高利用率<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image7-6.png" alt="image7"><br>四个竞争式协议</li><li>ALOHA<ul><li>Pure ALOHA</li><li>Slotted ALOHA</li></ul></li><li>CSMA载波侦听多路访问<ul><li>1坚持</li><li>0坚持</li><li>P坚持</li></ul></li><li>CSMA&#x2F;CD(以太网)</li><li>CSMA&#x2F;CA(无线局域网)<br>跟监听和冲突解决有关,一般互联网会采用最后一个协议,因为降低了冲突<br>此处会讲竞争式协议的冲突窗口分析<br>还有竞争式协议的性能分析</li></ul><p><strong>非竞争式协议</strong><br>利用<strong>令牌</strong>指挥发送信息</p><ul><li>监控站向指定站发送一个”令牌”,拿到令牌的站才能发送数据</li><li>监控站确保只有一个令牌出现<ul><li>只有一个站能够发送信息 -&gt; 没有了冲突</li><li>令牌依次沿环传递 — 轮询制<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image8-5.png" alt="image8"><br><strong>重要结论</strong><br>竞争协议与无冲突协议各有优劣</li></ul></li><li>轻载时,竞争式协议具有低发送延时的特性</li><li>重载时,无冲突协议具有较高的信道利用率特性<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image9-4.png" alt="image9"></li></ul><p><strong>共享式以太网</strong><br>媒体访问技术 –CSMA&#x2F;CD<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image10-4.png" alt="image10"><br>一些重要规定:</p><ul><li>最小帧长64字节,最大帧长1518字节</li><li>最多连续冲突次数:16次</li><li>帧间间隔12字节</li></ul><p><strong>网桥与交换机(工作原理)</strong><br><strong>网桥</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image11-3.png" alt="image11"><br>网桥的出现:不同局域网之间需要互联</p><ul><li>不同的局域网之间可能需要进行协议格式转换(至今没有很好解决)</li><li>转发帧到目的地址<ul><li>可以允许多个端口同时收发数据</li><li>对比集线器<ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image12-3.png" alt="image12"></li></ul></li></ul></li><li>存储转发技术<ul><li>解封和重新封装,可以速率匹配,信号转换,协议转换</li></ul></li><li>工作在数据链路层</li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image13-3.png" alt="image13"><br><strong>交换机</strong><br><u>交换机仅把收到的数据放到目的站所在的端口_</u><br>交换机提供独享的信道,可以并发<br>交换机是数据链路层的设备<br>交换机是特殊的透明网桥</p><ul><li>端口数量更多</li><li>功能简化—不进行协议转换</li></ul>]]></content>
+        <content type="html"><![CDATA[<p><strong>最优化法则,路由表和分布式路由</strong><br><strong>最优化法则—收敛法则:</strong><br><u>若J位于I到K的最优路径上,则从J到K的最优路径也位于上面(收敛性)</u></p><p>用途:</p><ul><li>是分布式路由算法的基础</li><li>路由表中不用记全部路径,只需要知道下一跳<br><strong>路由表</strong><table><colgroup><col style="width: 30%"><col style="width: 26%"><col style="width: 25%"><col style="width: 17%"></colgroup><thead><tr class="header"><th><p><strong>目的</strong></p><p><strong>Destination</strong></p></th><th><p><strong>下一站</strong></p><p><strong>Next Hop</strong></p></th><th><p><strong>出口</strong></p><p><strong>Interface</strong></p></th><th><p><strong>度量</strong></p><p><strong>Metric</strong></p></th></tr></thead><tbody></tbody></table>**路由选择技术分类**</li><li>表驱动路由<ul><li>事先计算节点之间的最优路径,形成路由表(转发表)</li><li>根据路由表进行PDU的转发<ul><li>静态路由</li><li>独立路由<ul><li>泛射路由,随机路由,反向地址学习</li></ul></li><li>动态路由<ul><li>集中式路由</li><li>分布式路由<ul><li>链路状态</li><li>距离矢量</li></ul></li></ul></li></ul></li></ul></li><li>按需路由<ul><li>需要转发分组时,才发起路由查找过程,生成路由</li><li>用于经常变换拓扑的无线网络</li></ul></li></ul><p><strong>距离矢量算法</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image1-11.png" alt="image1"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image2-10.png" alt="image2"><br>看着像迪杰斯特拉算法<br>有可能成环,一直踢皮球不去找目的地了</p><p><strong>链路状态算法</strong></p><ul><li>链路状态—–”接通”or”断开”</li><li>用<strong>链路质量</strong>评估链路状态<ul><li>常用***<u>链路延时</u>***作为链路质量的度量</li></ul></li></ul><p><strong>路由</strong><br>路由在网络层的寻址和物理层的寻址不同</p><p>网络号的计算:IP地址和掩码按位与<br>ARP协议<br>然后补充了IP协议的帧格式,可以查一查<br><strong>网络互联</strong><br>有连接 —连锁虚电路<br>无连接 –数据报<br><strong>隧道技术</strong><br>在两个同构网络之间是异构网络提供服务</p><ul><li>基础是透明通信<br>例子:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image3-8.png" alt="image3"></li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image4-8.png" alt="image4"></p>]]></content>
       
       
       
@@ -269,11 +269,11 @@
     
     
     <entry>
-      <title>Unit5 交换与路由技术</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/</url>
+      <title>Unit4 共享</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/</url>
       
-        <content type="html"><![CDATA[<p><strong>最优化法则,路由表和分布式路由</strong><br><strong>最优化法则—收敛法则:</strong><br><u>若J位于I到K的最优路径上,则从J到K的最优路径也位于上面(收敛性)</u></p><p>用途:</p><ul><li>是分布式路由算法的基础</li><li>路由表中不用记全部路径,只需要知道下一跳<br><strong>路由表</strong><table><colgroup><col style="width: 30%"><col style="width: 26%"><col style="width: 25%"><col style="width: 17%"></colgroup><thead><tr class="header"><th><p><strong>目的</strong></p><p><strong>Destination</strong></p></th><th><p><strong>下一站</strong></p><p><strong>Next Hop</strong></p></th><th><p><strong>出口</strong></p><p><strong>Interface</strong></p></th><th><p><strong>度量</strong></p><p><strong>Metric</strong></p></th></tr></thead><tbody></tbody></table>**路由选择技术分类**</li><li>表驱动路由<ul><li>事先计算节点之间的最优路径,形成路由表(转发表)</li><li>根据路由表进行PDU的转发<ul><li>静态路由</li><li>独立路由<ul><li>泛射路由,随机路由,反向地址学习</li></ul></li><li>动态路由<ul><li>集中式路由</li><li>分布式路由<ul><li>链路状态</li><li>距离矢量</li></ul></li></ul></li></ul></li></ul></li><li>按需路由<ul><li>需要转发分组时,才发起路由查找过程,生成路由</li><li>用于经常变换拓扑的无线网络</li></ul></li></ul><p><strong>距离矢量算法</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image1-11.png" alt="image1"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image2-10.png" alt="image2"><br>看着像迪杰斯特拉算法<br>有可能成环,一直踢皮球不去找目的地了</p><p><strong>链路状态算法</strong></p><ul><li>链路状态—–”接通”or”断开”</li><li>用<strong>链路质量</strong>评估链路状态<ul><li>常用***<u>链路延时</u>***作为链路质量的度量</li></ul></li></ul><p><strong>路由</strong><br>路由在网络层的寻址和物理层的寻址不同</p><p>网络号的计算:IP地址和掩码按位与<br>ARP协议<br>然后补充了IP协议的帧格式,可以查一查<br><strong>网络互联</strong><br>有连接 —连锁虚电路<br>无连接 –数据报<br><strong>隧道技术</strong><br>在两个同构网络之间是异构网络提供服务</p><ul><li>基础是透明通信<br>例子:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image3-8.png" alt="image3"></li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image4-8.png" alt="image4"></p>]]></content>
+        <content type="html"><![CDATA[<p>Unit4 共享<br>2022年10月20日 星期四<br>下午3:53</p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image1-9.png" alt="image1"><br>核心内容就是挖掘信道资源，共享信道等等<br><strong>信道，信号与传输（理论基础）</strong></p><ul><li>数字数据和模拟数据<ul><li>模拟（analog） 数据：连续变化的数据<ul><li>声音</li></ul></li><li>数字（digital） 数据：不连续变化的数据<ul><li>文本（bit流）</li></ul></li><li>可以通过<em>插值法</em>将数字信号拟合模拟信号<br>信号的幅频特性：信号的时域变化越剧烈，频域带宽越宽</li></ul></li></ul><p>基于数字传输理论，结合信号编码和调制技术，我们知道，一个信道传输多个信号是可行的</p><p><strong>无线传输</strong><br>利用双绞线构成星型网络,线路很难一线传通,依靠简单的集线器<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image2-8.png" alt="image2"><br>还可以构成环形广播式信道(点对点,单向绕环传递)<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image3-7.png" alt="image3"><br>利用光纤构成无源星型:广播式媒体:broadcast</p><ul><li>基带同轴电缆,传输距离500-2km</li><li>宽带同轴电缆:传输距离几十km</li></ul><p><strong>共用信道的控制技术 — xDM,xDMA</strong></p><ul><li>多路复用-Multiplex<ul><li>频分多路</li><li>时分多路</li><li>波分多路:光纤</li></ul></li><li>多址技术<ul><li>频分多址</li><li>时分多址</li><li>码分多址:无线<br>关于码分多址:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image4-7.png" alt="image4"></li></ul></li></ul><p><strong>基于OFDMA的资源块</strong><br>把信道资源规划为:资源块</p><ul><li>频域:子载波</li><li>时域:符号</li><li>基站根据业务需求动态为用户分配资源块<ul><li>资源分配算法:平均分配,优先级分配,公平算法</li></ul></li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image5-5.png" alt="image5"></p><ul><li>结论:将信道分为N个子信道后,每个信道的容量降低为原来的1&#x2F;N,到达率也减少到N分之一,则平均延迟增加N倍,用户体验减少<br><strong>排队论</strong><br>此处有个考点:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image6-6.png" alt="image6"><br>最后的部分,可能出公式的计算<br><strong>猝发性问题</strong><br>简而言之就是分配了子信道后,用户一般也能够用,但是有些时间段可能流量剧增,导致信道分了这么多也没用上<br>分配给用户的资源,用户也没有充分利用<br>解决方案就是在用户需要时才分配信道,避免造成浪费</li></ul><p><strong>竞争式媒体访问技术(MAC在数据链路层)</strong></p><ul><li>广播式信道—最低成本实现最广泛连接<ul><li>两个以上站点使用共享信道</li><li>不能有多个站点同时发送,否则会导致冲突</li></ul></li><li>目的还是为了省钱,低成本控制,实现了信道的高利用率<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image7-6.png" alt="image7"><br>四个竞争式协议</li><li>ALOHA<ul><li>Pure ALOHA</li><li>Slotted ALOHA</li></ul></li><li>CSMA载波侦听多路访问<ul><li>1坚持</li><li>0坚持</li><li>P坚持</li></ul></li><li>CSMA&#x2F;CD(以太网)</li><li>CSMA&#x2F;CA(无线局域网)<br>跟监听和冲突解决有关,一般互联网会采用最后一个协议,因为降低了冲突<br>此处会讲竞争式协议的冲突窗口分析<br>还有竞争式协议的性能分析</li></ul><p><strong>非竞争式协议</strong><br>利用<strong>令牌</strong>指挥发送信息</p><ul><li>监控站向指定站发送一个”令牌”,拿到令牌的站才能发送数据</li><li>监控站确保只有一个令牌出现<ul><li>只有一个站能够发送信息 -&gt; 没有了冲突</li><li>令牌依次沿环传递 — 轮询制<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image8-5.png" alt="image8"><br><strong>重要结论</strong><br>竞争协议与无冲突协议各有优劣</li></ul></li><li>轻载时,竞争式协议具有低发送延时的特性</li><li>重载时,无冲突协议具有较高的信道利用率特性<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image9-4.png" alt="image9"></li></ul><p><strong>共享式以太网</strong><br>媒体访问技术 –CSMA&#x2F;CD<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image10-4.png" alt="image10"><br>一些重要规定:</p><ul><li>最小帧长64字节,最大帧长1518字节</li><li>最多连续冲突次数:16次</li><li>帧间间隔12字节</li></ul><p><strong>网桥与交换机(工作原理)</strong><br><strong>网桥</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image11-3.png" alt="image11"><br>网桥的出现:不同局域网之间需要互联</p><ul><li>不同的局域网之间可能需要进行协议格式转换(至今没有很好解决)</li><li>转发帧到目的地址<ul><li>可以允许多个端口同时收发数据</li><li>对比集线器<ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image12-3.png" alt="image12"></li></ul></li></ul></li><li>存储转发技术<ul><li>解封和重新封装,可以速率匹配,信号转换,协议转换</li></ul></li><li>工作在数据链路层</li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image13-3.png" alt="image13"><br><strong>交换机</strong><br><u>交换机仅把收到的数据放到目的站所在的端口_</u><br>交换机提供独享的信道,可以并发<br>交换机是数据链路层的设备<br>交换机是特殊的透明网桥</p><ul><li>端口数量更多</li><li>功能简化—不进行协议转换</li></ul>]]></content>
       
       
       
@@ -685,11 +685,11 @@
     
     
     <entry>
-      <title>homework2</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/</url>
+      <title>homework1</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/</url>
       
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/../resources/image1-7.jpg" alt="image1"></p><p>void SelectSort(ElemType A[], int n){<br>for(i &#x3D; 0; i &lt; n-1; i++){</p><p>min &#x3D; i;</p><p>for(j &#x3D; i + 1; j &lt; n; j++){</p><p>if(A[j] &lt; A[min])</p><p>min &#x3D; j;</p><p>if(min!&#x3D;i)</p><p>swap(A[i],A[min]);</p><p>}<br>}</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>void selectSort(LinkList &amp;L){</p><p>LinkList p,q,current;</p><p>int min;</p><p>if(!p || !p-&gt;next){</p><p>return ;</p><p>}</p><p>for(p = L;p;p = p-&gt;next){</p><p>q = p;</p><p>current = p;</p><p>min = q-&gt;data;</p><p>while(q){</p><p>if(min &gt; q-&gt;data){</p><p>min = q-&gt;data;</p><p>current = q;</p><p>}</p><p>q = q-&gt;next;</p><p>}</p><p>if(current != p){</p><p>current-&gt;data = p-&gt;data;</p><p>p-&gt;data = min;</p><p>}</p><p>}</p><p>}</p></th></tr></thead><tbody></tbody></table>]]></content>
+        <content type="html"><![CDATA[<p>homework1<br>2022年10月17日<br>9:58</p><p>&#x2F;&#x2F; 1.设计一个算法，删除递增有序链表中值大于mink且小于maxk的所有元素<br>&#x2F;&#x2F;（mink和maxk是给定的两个参数，其值可以和表中的元素相同，也可以不同 ）。<br>&#x2F;*<br>  传入函数的参数有链表L,最小值mink和最大值maxk<br>  定义p,q是链表类型的指针指向L中第一个结点<br>  动态分配一块内存让新结点作为头结点,pre指向头结点<br>  设计循环,遍历L,条件为p不为空并且p的数据域&lt;&#x3D;mink,则pre&#x3D;p,p&#x3D;p-&gt;next<br>  上面的循环留下了比mink小的元素<br>  下面删除比maxk小的元素<br>  p非空的条件下,并且元素小于maxk,q &#x3D; p,p&#x3D;p-&gt;next,delete q<br>  最后连接两个部分,pre-&gt;next &#x3D; p<br>*&#x2F;<br>&#x2F;&#x2F; 2.已知两个链表A和B分别表示两个集合，其元素递增排列。请设计算法求出A与B的交集，并存放于A链表中。<br>&#x2F;*<br>  传入参数有A和B两条链表(用La和Lb表示),还有新表Lc<br>  创建链表类型的指针pa和pb分别指向La和Lb的第一个结点<br>  创建链表类型的指针pc<br>  让La的头结点作为Lc的头结点(让Lb和La比较)<br>  创建LinkList d<br>  循环,当pa和pb不是NULL时<br>    如果pa指向的元素&#x3D;&#x3D;pb-&gt;data<br>      pc-&gt;next &#x3D; pa;<br>      pc &#x3D; pa;<br>      pa &#x3D; pa-&gt;next;<br>      d &#x3D; pb;<br>      pb &#x3D; pb -&gt; next;<br>      delete d;<br>    else if (pa-&gt;data &lt; pb-&gt;data)<br>      d &#x3D; pa<br>      pa &#x3D; pa-&gt;next;<br>      delete d;<br>    else&#x2F;&#x2F;同理否则删除pb指向的元素<br>      d &#x3D; pa<br>      pa &#x3D; pa-&gt;next;<br>      delete d;<br>  当pa不为空时,d &#x3D; pa;pa &#x3D; pa-&gt;next;delete d;<br>  当pb不为空时,d &#x3D; pb;pb &#x3D; pb-&gt;next;delete d;<br>  pc-&gt;next &#x3D; NULL&#x2F;&#x2F;尾结点置空<br>  delete Lb&#x2F;&#x2F;释放Lb头结点</p><p>*&#x2F;<br>&#x2F;&#x2F; 3.假设以带头结点的循环链表表示队列，并且用指向队尾结点的指针q来命名该队列(注意不设头指针) ，<br>&#x2F;&#x2F; 试编写相应的清空队列、判队空、入队和出队算法。<br>&#x2F;&#x2F;链队列结点类型的结构体定义:<br>typedef struct queuenode{<br>  ElemType data;<br>  struct queuenode *next;<br>  }QueueNode, *LinkQueue;<br>Status ClearQueue(LinkQueue &amp;q){&#x2F;&#x2F;让头结点成为队尾元素<br>  QueueNode *p;<br>  q-&gt;rear &#x3D; q-&gt;rear-&gt;next;&#x2F;&#x2F;队尾指针指向头结点<br>  while(q-&gt;rear!&#x3D; q-&gt;rear-&gt;next){&#x2F;&#x2F;不为空就删除元素<br>    p &#x3D; q-&gt;rear-&gt;next;<br>    q-&gt;rear-&gt;next &#x3D; p-&gt;next;<br>    delete p;<br>  }<br>}<br>Status EmptyQueue( LinkQueue q){<br>  if(q.rear &#x3D;&#x3D; q.rear-&gt;next){<br>    return OK;<br>  }<br>}<br>Status EnQueue(LinkQueue &amp;q, ElemType e){<br>  QueueNode *p;<br>  p &#x3D; new QueueNode;<br>  if(!p)return notOK;<br>  p-&gt;data &#x3D; e;<br>  p-&gt;next &#x3D; q.rear-&gt;next;&#x2F;&#x2F;构成循环,p的下一个元素时q的表头<br>  q.rear-&gt;next &#x3D; p;<br>  q.rear &#x3D; p;<br>  return OK;<br>}<br>Status DeQueue(LinkQueue &amp;q, ElemType &amp;e){<br>  if(q.rear &#x3D;&#x3D; q.rear-&gt;next)return notOK;&#x2F;&#x2F;队列为空没法删除<br>  QueueNode *p;<br>  p &#x3D; q.rear-&gt;next-&gt;next;<br>  q.rear-&gt;next-&gt;next &#x3D; p-&gt;next;<br>  e &#x3D; p-&gt;data;<br>  if(p &#x3D;&#x3D; q.rear)q.rear &#x3D; q.rear-&gt;next;<br>  delete p;<br>  return OK;<br>}</p>]]></content>
       
       
       
@@ -698,11 +698,11 @@
     
     
     <entry>
-      <title>homework1</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/</url>
+      <title>homework2</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/</url>
       
-        <content type="html"><![CDATA[<p>homework1<br>2022年10月17日<br>9:58</p><p>&#x2F;&#x2F; 1.设计一个算法，删除递增有序链表中值大于mink且小于maxk的所有元素<br>&#x2F;&#x2F;（mink和maxk是给定的两个参数，其值可以和表中的元素相同，也可以不同 ）。<br>&#x2F;*<br>  传入函数的参数有链表L,最小值mink和最大值maxk<br>  定义p,q是链表类型的指针指向L中第一个结点<br>  动态分配一块内存让新结点作为头结点,pre指向头结点<br>  设计循环,遍历L,条件为p不为空并且p的数据域&lt;&#x3D;mink,则pre&#x3D;p,p&#x3D;p-&gt;next<br>  上面的循环留下了比mink小的元素<br>  下面删除比maxk小的元素<br>  p非空的条件下,并且元素小于maxk,q &#x3D; p,p&#x3D;p-&gt;next,delete q<br>  最后连接两个部分,pre-&gt;next &#x3D; p<br>*&#x2F;<br>&#x2F;&#x2F; 2.已知两个链表A和B分别表示两个集合，其元素递增排列。请设计算法求出A与B的交集，并存放于A链表中。<br>&#x2F;*<br>  传入参数有A和B两条链表(用La和Lb表示),还有新表Lc<br>  创建链表类型的指针pa和pb分别指向La和Lb的第一个结点<br>  创建链表类型的指针pc<br>  让La的头结点作为Lc的头结点(让Lb和La比较)<br>  创建LinkList d<br>  循环,当pa和pb不是NULL时<br>    如果pa指向的元素&#x3D;&#x3D;pb-&gt;data<br>      pc-&gt;next &#x3D; pa;<br>      pc &#x3D; pa;<br>      pa &#x3D; pa-&gt;next;<br>      d &#x3D; pb;<br>      pb &#x3D; pb -&gt; next;<br>      delete d;<br>    else if (pa-&gt;data &lt; pb-&gt;data)<br>      d &#x3D; pa<br>      pa &#x3D; pa-&gt;next;<br>      delete d;<br>    else&#x2F;&#x2F;同理否则删除pb指向的元素<br>      d &#x3D; pa<br>      pa &#x3D; pa-&gt;next;<br>      delete d;<br>  当pa不为空时,d &#x3D; pa;pa &#x3D; pa-&gt;next;delete d;<br>  当pb不为空时,d &#x3D; pb;pb &#x3D; pb-&gt;next;delete d;<br>  pc-&gt;next &#x3D; NULL&#x2F;&#x2F;尾结点置空<br>  delete Lb&#x2F;&#x2F;释放Lb头结点</p><p>*&#x2F;<br>&#x2F;&#x2F; 3.假设以带头结点的循环链表表示队列，并且用指向队尾结点的指针q来命名该队列(注意不设头指针) ，<br>&#x2F;&#x2F; 试编写相应的清空队列、判队空、入队和出队算法。<br>&#x2F;&#x2F;链队列结点类型的结构体定义:<br>typedef struct queuenode{<br>  ElemType data;<br>  struct queuenode *next;<br>  }QueueNode, *LinkQueue;<br>Status ClearQueue(LinkQueue &amp;q){&#x2F;&#x2F;让头结点成为队尾元素<br>  QueueNode *p;<br>  q-&gt;rear &#x3D; q-&gt;rear-&gt;next;&#x2F;&#x2F;队尾指针指向头结点<br>  while(q-&gt;rear!&#x3D; q-&gt;rear-&gt;next){&#x2F;&#x2F;不为空就删除元素<br>    p &#x3D; q-&gt;rear-&gt;next;<br>    q-&gt;rear-&gt;next &#x3D; p-&gt;next;<br>    delete p;<br>  }<br>}<br>Status EmptyQueue( LinkQueue q){<br>  if(q.rear &#x3D;&#x3D; q.rear-&gt;next){<br>    return OK;<br>  }<br>}<br>Status EnQueue(LinkQueue &amp;q, ElemType e){<br>  QueueNode *p;<br>  p &#x3D; new QueueNode;<br>  if(!p)return notOK;<br>  p-&gt;data &#x3D; e;<br>  p-&gt;next &#x3D; q.rear-&gt;next;&#x2F;&#x2F;构成循环,p的下一个元素时q的表头<br>  q.rear-&gt;next &#x3D; p;<br>  q.rear &#x3D; p;<br>  return OK;<br>}<br>Status DeQueue(LinkQueue &amp;q, ElemType &amp;e){<br>  if(q.rear &#x3D;&#x3D; q.rear-&gt;next)return notOK;&#x2F;&#x2F;队列为空没法删除<br>  QueueNode *p;<br>  p &#x3D; q.rear-&gt;next-&gt;next;<br>  q.rear-&gt;next-&gt;next &#x3D; p-&gt;next;<br>  e &#x3D; p-&gt;data;<br>  if(p &#x3D;&#x3D; q.rear)q.rear &#x3D; q.rear-&gt;next;<br>  delete p;<br>  return OK;<br>}</p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/../resources/image1-7.jpg" alt="image1"></p><p>void SelectSort(ElemType A[], int n){<br>for(i &#x3D; 0; i &lt; n-1; i++){</p><p>min &#x3D; i;</p><p>for(j &#x3D; i + 1; j &lt; n; j++){</p><p>if(A[j] &lt; A[min])</p><p>min &#x3D; j;</p><p>if(min!&#x3D;i)</p><p>swap(A[i],A[min]);</p><p>}<br>}</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>void selectSort(LinkList &amp;L){</p><p>LinkList p,q,current;</p><p>int min;</p><p>if(!p || !p-&gt;next){</p><p>return ;</p><p>}</p><p>for(p = L;p;p = p-&gt;next){</p><p>q = p;</p><p>current = p;</p><p>min = q-&gt;data;</p><p>while(q){</p><p>if(min &gt; q-&gt;data){</p><p>min = q-&gt;data;</p><p>current = q;</p><p>}</p><p>q = q-&gt;next;</p><p>}</p><p>if(current != p){</p><p>current-&gt;data = p-&gt;data;</p><p>p-&gt;data = min;</p><p>}</p><p>}</p><p>}</p></th></tr></thead><tbody></tbody></table>]]></content>
       
       
       
@@ -1647,11 +1647,11 @@
     
     
     <entry>
-      <title>Bar柱状图</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/</url>
+      <title>运算操作符</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/yun-suan-cao-zuo-fu/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/yun-suan-cao-zuo-fu/</url>
       
-        <content type="html"><![CDATA[<p>Bar柱状图<br>2022年8月1日<br>0:58</p><p>我们可以使用 pyplot 中的 bar() 方法来绘制柱形图。</p><p>Add:<br>中文不兼容怎么搞</p><p>1# fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径，size 参数设置字体大小<br>2 zhfont1 &#x3D; matplotlib.font_manager.FontProperties(fname&#x3D;”E:&#x2F;OneDrive - 6x26s6&#x2F;Lan&#x2F;SourceHanSansSC-Bold.otf”, size&#x3D;18)<br>3<br>4# fontdict 可以使用 css 来设置字体样式<br>5plt.title(“菜鸟教程 - 测试”, fontproperties&#x3D;zhfont1, fontdict &#x3D; font1, loc&#x3D;”center”)<br>6<br>7# fontproperties 设置中文显示，fontsize 设置字体大小</p>]]></content>
+        <content type="html"><![CDATA[<p>基本和C语言的相同,下面只罗列运算符的优先级(实际也不用记,用用就知道了)</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>* / % &lt;&lt; &gt;&gt; &amp; &amp;^</p><p>+ - | ^</p><p><strong>== != &lt; &lt;= &gt; &gt;=</strong></p><p>&amp;&amp;</p><p>||</p></th></tr></thead><tbody></tbody></table>从上到下逐级递减-   值得一提的是Go也支持字符串通过"+"连接,当然"+="也可以,例如<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>println("Go"+"lang")//Golang</p><p>var a = "Go"</p><p>a += "lang"</p><p>println(a)//Golang</p></th></tr></thead><tbody></tbody></table>-   <u>还有,Go也支持"++""--"操作,但是没有返回值,不能当作表达式使用</u>-   <u>Go中的取反操作符不是"\~",而是"^"</u>    -   和其他流行语言一样,Go也支持"+"去连接字符串-   和Java不同,Go支持无符号数,所以不需要无符号右移运算符>\>\>-   Go不支持幂运算符,所以要使用<sub></sub>​math​<sub></sub>标准库包中的<sub></sub>​Pow​<sub></sub>函数进行幂运算-   多了个特殊的**清位运算符**<sub></sub>​&^​<sub></sub>    -   <sub></sub>​m&^n​<sub></sub>等价于<sub></sub>​m&(^n)​<sub></sub>如果是2的幂运算的话,可以使用<sub></sub>​>\>​<sub></sub>(除2的次数)或者<sub></sub>​\<\<​<sub>(乘2的次数)注意:移位操作的结果都是整数移位运算在32和64位架构的机器上有时候如果不注重细节会出大bug</\<​<sub>]]></content>
       
       
       
@@ -1660,11 +1660,11 @@
     
     
     <entry>
-      <title>运算操作符</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/yun-suan-cao-zuo-fu/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/yun-suan-cao-zuo-fu/</url>
+      <title>Bar柱状图</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/</url>
       
-        <content type="html"><![CDATA[<p>基本和C语言的相同,下面只罗列运算符的优先级(实际也不用记,用用就知道了)</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>* / % &lt;&lt; &gt;&gt; &amp; &amp;^</p><p>+ - | ^</p><p><strong>== != &lt; &lt;= &gt; &gt;=</strong></p><p>&amp;&amp;</p><p>||</p></th></tr></thead><tbody></tbody></table>从上到下逐级递减-   值得一提的是Go也支持字符串通过"+"连接,当然"+="也可以,例如<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>println("Go"+"lang")//Golang</p><p>var a = "Go"</p><p>a += "lang"</p><p>println(a)//Golang</p></th></tr></thead><tbody></tbody></table>-   <u>还有,Go也支持"++""--"操作,但是没有返回值,不能当作表达式使用</u>-   <u>Go中的取反操作符不是"\~",而是"^"</u>    -   和其他流行语言一样,Go也支持"+"去连接字符串-   和Java不同,Go支持无符号数,所以不需要无符号右移运算符>\>\>-   Go不支持幂运算符,所以要使用<sub></sub>​math​<sub></sub>标准库包中的<sub></sub>​Pow​<sub></sub>函数进行幂运算-   多了个特殊的**清位运算符**<sub></sub>​&^​<sub></sub>    -   <sub></sub>​m&^n​<sub></sub>等价于<sub></sub>​m&(^n)​<sub></sub>如果是2的幂运算的话,可以使用<sub></sub>​>\>​<sub></sub>(除2的次数)或者<sub></sub>​\<\<​<sub>(乘2的次数)注意:移位操作的结果都是整数移位运算在32和64位架构的机器上有时候如果不注重细节会出大bug</\<​<sub>]]></content>
+        <content type="html"><![CDATA[<p>Bar柱状图<br>2022年8月1日<br>0:58</p><p>我们可以使用 pyplot 中的 bar() 方法来绘制柱形图。</p><p>Add:<br>中文不兼容怎么搞</p><p>1# fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径，size 参数设置字体大小<br>2 zhfont1 &#x3D; matplotlib.font_manager.FontProperties(fname&#x3D;”E:&#x2F;OneDrive - 6x26s6&#x2F;Lan&#x2F;SourceHanSansSC-Bold.otf”, size&#x3D;18)<br>3<br>4# fontdict 可以使用 css 来设置字体样式<br>5plt.title(“菜鸟教程 - 测试”, fontproperties&#x3D;zhfont1, fontdict &#x3D; font1, loc&#x3D;”center”)<br>6<br>7# fontproperties 设置中文显示，fontsize 设置字体大小</p>]]></content>
       
       
       
@@ -2167,71 +2167,6 @@
     
     
     <entry>
-      <title>基本代码风格</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/ji-ben-dai-ma-feng-ge/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/ji-ben-dai-ma-feng-ge/</url>
-      
-        <content type="html"><![CDATA[<p>基本代码风格<br>2022年10月10日 星期一<br>下午3:30</p><p>格式推荐驼峰格式<br>注释和C一样<br>标识符和关键字同理<br><strong>数值表示</strong><br>一共四种来表示电平逻辑</p><ol><li>0 ： false</li><li>1 ： true</li><li>x ： 未知</li><li>z ： 高阻</li></ol><ul><li>数值声明中，可以使用的进制也只有四种<ul><li>十进制（‘d或‘D）</li><li>十六进制（’h或‘H）</li><li>二进制（’b或‘B）</li><li>八进制（’o或‘O）<br>当然可以指明位宽也可以不指明<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>32 ‘h3022_c0de //32bit 数值</p><p>这个上面的是指明</p></th></tr></thead><tbody></tbody></table>**字符串**使用双引号包起来**数据类型**一共两种重要的 线网（wire） 和 寄存器（reg）**线网（wire）**表示物理硬件之间的物理连线，例如| wire flag1,flag2; ||-------------------|**寄存器（reg）**保持数据原有的值，直到被改写，举例：| reg flag1,flag2; ||------------------|**向量**位宽大于1时使用，wire和reg都可以声明成向量形式。感觉像切片，尤其是go语言中的切片| wire \[32 - 1:0 \] gpio_data;// 声明32bit位宽的线型变量gpio_data ||------------------------------------------------------------------|**整数（integer）**一般32bit，直接用integer + 变量名就好**实数（real）**一般只是整数，默认值0**时间（time）**时间寄存器，保存仿真时间用，64bit一般调用系统函数$time获取仿真时间**数组**允许声明reg，wire，integer，time，real及向量类型的数组<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>wire data_bit[7:0][5:0] ; //声明1bit wire型变量的二维数组</p><p></p></th></tr></thead><tbody></tbody></table>**存储器，字符串str**</li></ul></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>按位操作符</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/an-wei-cao-zuo-fu/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/an-wei-cao-zuo-fu/</url>
-      
-        <content type="html"><![CDATA[<p>按位操作符<br>按位操作符包括：取反（~），与（&amp;），或（|），异或（^），同或（~^）。<br>按位操作符对 2 个操作数的每 1bit 数据进行按位操作。<br>如果 2 个操作数位宽不相等，则用 0 向左扩展补充较短的操作数。</p><p>**</p><p>连续赋值语句是 Verilog 数据流建模的基本语句，用于对 wire 型变量进行赋值。：<br>assign 为关键词，任何已经声明 wire 变量的连续赋值语句都是以 assign 开头，例如：<br>wire Cout, A, B ;<br>assign Cout &#x3D; A &amp; B ; &#x2F;&#x2F;实现计算A与B的功能</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读书笔记</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/du-shu-bi-ji/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/du-shu-bi-ji/</url>
-      
-        <content type="html"><![CDATA[<ul><li>模块之间并行</li><li>parameter声明常数</li><li>testbench测试程序是编写模块的高层模块</li><li>‘timescale定义时延单位和精度</li><li>5’O37 5位8进制数 4’D2 四位2进制</li><li>wire [2:0] Start 3位线网<ul><li>通过assign Start &#x3D; Blt;连续赋值语句给Start第一个驱动源<ul><li>assign只能给wire型变量赋值,这是连续型赋值,而reg只能过程性赋值,由&#x3D;和&lt;&#x3D;一个阻塞一个不阻塞,阻塞就是当此语句执行时,其他语句全部暂停</li></ul></li></ul></li><li>reg只能在initial和always里面赋值<ul><li>initial只在仿真开始时执行一次,always符合要求就可以反复执行,他们都是并行执行<ul><li>always Clk&#x3D;~Clk 无限循环</li><li>always #5 Clk&#x3D;~Clk 产生时钟信号为10个单位时间的波形,这是时延控制</li><li>事件控制<ul><li>always @(EcecuteCycle) &#x2F;&#x2F;always执行,当EcecuteCycle发生,边缘触发事件,电平跳变触发事件</li><li>经典的类似于if的@(posedge Clock) 当电平信号从低电平变成高电平就执行语句(上升沿),否则该进程被挂起</li><li>还可以@Cla xxx&#x3D;xx &#x2F;&#x2F;当Cla值发生改变时,将xx赋值给xxx</li><li>还有这样的玩法:@(posedge Clock); &#x2F;&#x2F;注意有个分号,整个程序运行到这里暂停执行,进入等待状态,知道Clock上出现一个上升沿</li></ul></li></ul></li><li>reg [3:0] Sat; &#x2F;&#x2F;Sat是4位寄存器</li><li>reg [3:0] Mem [63:0] &#x2F;&#x2F;Mem是64个4位寄存器组成的存储器</li><li>reg Bog [1:5] &#x2F;&#x2F;Bog是5个一位寄存器组成的数组</li></ul></li><li>reg不能用assign赋值</li><li>#3 &#x2F;&#x2F;停顿三个单位的时间</li><li>forever是一个永久循环,不需要声明任何变量</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>nand</p><blockquote><p>Gang3(Out[3],InA[3],InB[3]),</p><p>Gang3(Out[2],InA[2],InB[2]),</p><p>Gang3(Out[3],InA[3],InB[3]),//3-&gt;1</p><p>Gang3(Out[3],InA[3],InB[3]), //3-&gt;0</p></blockquote></th></tr></thead><tbody></tbody></table>等价于<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>wire [3:0] Out,InA,InB;</p><p>nand Gang [3:0] (Out,InA,InB);</p></th></tr></thead><tbody></tbody></table><p>关于模块的替换工作可以在书吴戈的&lt;verilog简明教程&gt;中的测试单元里找到相应的模块</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>速通code</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/su-tong-code/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/su-tong-code/</url>
-      
-        <content type="html"><![CDATA[<p>基本组成单元 module</p><p><strong>一般形式:</strong><br>module 模块名(接口信号);<br>&#x2F;&#x2F;信号声明<br>&#x2F;&#x2F;功能描述<br>endmodule<br>注意:模块名要有意义,一个.v文件只有一个模块</p><p><strong>数据类型</strong>四种记住:reg,wire,parameter,integer</p><p><strong>数字表示</strong>:&lt;位宽&gt;&lt;类型&gt;&lt;数字&gt; 例如: 8’b1100_0010</p><p><strong>参数型</strong><br>parameter定义一个标识符定义常量 ,例如: parameter SIZE &#x3D; 15;<br>可以跨模块的(define这个宏定义可以作用于整个工程,跨文件跨模块都可以)<br>还有个 localparam模块内部使用</p><p><strong>变量</strong></p><ul><li>wire<ul><li>输入输出信号wire型</li><li>模块间端口连接,电路连线操作</li><li>wire [7:0] a;</li><li>用assign连续赋值(阻塞赋值”&#x3D;”)</li></ul></li><li>reg<ul><li>代表寄存器</li><li>always块中的变量必须是reg型,使用非阻塞赋值”&lt;&#x3D;”</li><li>reg [7:0] a;</li></ul></li></ul><p>运算符和C一样,不赘述<br>优先级也是略过</p><p><strong>赋值语句与块语句</strong></p><ul><li>非阻塞(Non_Blocking)赋值(如b &lt;&#x3D; a;)<ul><li>块结束才赋值</li><li>b的值不是立刻改变</li></ul></li><li>阻塞(Blocking)赋值(如b &#x3D; a;)<ul><li>b的值立刻改变</li><li>bug产生的原因?</li></ul></li></ul><ol><li>always块中使用非阻塞赋值</li><li>assign中使用阻塞赋值</li></ol><p><strong>块语句</strong></p><ul><li>顺序块(顺序执行)<br>begin</li></ul><p>语句1;</p><p>语句2;</p><p>…</p><p>end</p><ul><li>并行块(同时执行)<br>fork</li></ul><p>语句1;</p><p>…</p><p>end<br>&#x2F;&#x2F;begin或fork后面可以跟上块的名称(“:块名”)</p><p><strong>条件语句和循环语句</strong><br>可嵌套的if…else<br>if(条件)</p><p>语句;</p><p>else</p><p>语句;</p><p>case<br>case(变量)</p><p>情况1:语句1;</p><p>情况2:语句2;</p><p>endcase</p><p>循环语句<br>integer i;</p><p>for(i &#x3D; 0; i&lt;10;i &#x3D; i + 1)</p><p>a[i] &lt;&#x3D; i;</p><p><strong>结构说明语句</strong><br>只说明always:在仿真过程中不断重复执行<br>声明格式:<br>always &lt;时序控制&gt;&lt;语句&gt;<br>信号控制的时间中间用or连接<br>例如</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>always @(posedge clock or posedge reset)//时序逻辑</p><p>begin</p><p>......</p><p>end</p><p></p><p>//组合逻辑直接使用*代替敏感电平,避免遗漏</p><p>always @(*)//多个电平触发的组合逻辑</p><p>begin</p><p>...</p><p>end</p><p></p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>门电路实现</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/../resources/image1-1.png" alt="image1"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>11 </title>
       <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/11/"/>
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/11/</url>
@@ -2341,6 +2276,71 @@
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/</url>
       
         <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/../resources/image1-6.png" alt="image1"></p><p><strong>&lt;!DOCTYPE&gt;声明</strong><br>放在&lt;html&gt;之前<br>&lt;!DOCTYPE&gt;声明有助于浏览器中正确显示网页。</p><p><em>来自 &lt;<a href="https://www.runoob.com/html/html-intro.html">https://www.runoob.com/html/html-intro.html</a>&gt;</em></p><p>通用声明在不兼容时查看超链接</p><p><strong>中文编码</strong><br>在&lt;head&gt;处把字符声明改成utf-8或者GBK</p><table><thead><tr><th>&lt;meta charset &#x3D; “UTF-8”&gt;</th></tr></thead></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>基本代码风格</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/ji-ben-dai-ma-feng-ge/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/ji-ben-dai-ma-feng-ge/</url>
+      
+        <content type="html"><![CDATA[<p>基本代码风格<br>2022年10月10日 星期一<br>下午3:30</p><p>格式推荐驼峰格式<br>注释和C一样<br>标识符和关键字同理<br><strong>数值表示</strong><br>一共四种来表示电平逻辑</p><ol><li>0 ： false</li><li>1 ： true</li><li>x ： 未知</li><li>z ： 高阻</li></ol><ul><li>数值声明中，可以使用的进制也只有四种<ul><li>十进制（‘d或‘D）</li><li>十六进制（’h或‘H）</li><li>二进制（’b或‘B）</li><li>八进制（’o或‘O）<br>当然可以指明位宽也可以不指明<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>32 ‘h3022_c0de //32bit 数值</p><p>这个上面的是指明</p></th></tr></thead><tbody></tbody></table>**字符串**使用双引号包起来**数据类型**一共两种重要的 线网（wire） 和 寄存器（reg）**线网（wire）**表示物理硬件之间的物理连线，例如| wire flag1,flag2; ||-------------------|**寄存器（reg）**保持数据原有的值，直到被改写，举例：| reg flag1,flag2; ||------------------|**向量**位宽大于1时使用，wire和reg都可以声明成向量形式。感觉像切片，尤其是go语言中的切片| wire \[32 - 1:0 \] gpio_data;// 声明32bit位宽的线型变量gpio_data ||------------------------------------------------------------------|**整数（integer）**一般32bit，直接用integer + 变量名就好**实数（real）**一般只是整数，默认值0**时间（time）**时间寄存器，保存仿真时间用，64bit一般调用系统函数$time获取仿真时间**数组**允许声明reg，wire，integer，time，real及向量类型的数组<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>wire data_bit[7:0][5:0] ; //声明1bit wire型变量的二维数组</p><p></p></th></tr></thead><tbody></tbody></table>**存储器，字符串str**</li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>按位操作符</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/an-wei-cao-zuo-fu/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/an-wei-cao-zuo-fu/</url>
+      
+        <content type="html"><![CDATA[<p>按位操作符<br>按位操作符包括：取反（~），与（&amp;），或（|），异或（^），同或（~^）。<br>按位操作符对 2 个操作数的每 1bit 数据进行按位操作。<br>如果 2 个操作数位宽不相等，则用 0 向左扩展补充较短的操作数。</p><p>**</p><p>连续赋值语句是 Verilog 数据流建模的基本语句，用于对 wire 型变量进行赋值。：<br>assign 为关键词，任何已经声明 wire 变量的连续赋值语句都是以 assign 开头，例如：<br>wire Cout, A, B ;<br>assign Cout &#x3D; A &amp; B ; &#x2F;&#x2F;实现计算A与B的功能</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读书笔记</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/du-shu-bi-ji/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/du-shu-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<ul><li>模块之间并行</li><li>parameter声明常数</li><li>testbench测试程序是编写模块的高层模块</li><li>‘timescale定义时延单位和精度</li><li>5’O37 5位8进制数 4’D2 四位2进制</li><li>wire [2:0] Start 3位线网<ul><li>通过assign Start &#x3D; Blt;连续赋值语句给Start第一个驱动源<ul><li>assign只能给wire型变量赋值,这是连续型赋值,而reg只能过程性赋值,由&#x3D;和&lt;&#x3D;一个阻塞一个不阻塞,阻塞就是当此语句执行时,其他语句全部暂停</li></ul></li></ul></li><li>reg只能在initial和always里面赋值<ul><li>initial只在仿真开始时执行一次,always符合要求就可以反复执行,他们都是并行执行<ul><li>always Clk&#x3D;~Clk 无限循环</li><li>always #5 Clk&#x3D;~Clk 产生时钟信号为10个单位时间的波形,这是时延控制</li><li>事件控制<ul><li>always @(EcecuteCycle) &#x2F;&#x2F;always执行,当EcecuteCycle发生,边缘触发事件,电平跳变触发事件</li><li>经典的类似于if的@(posedge Clock) 当电平信号从低电平变成高电平就执行语句(上升沿),否则该进程被挂起</li><li>还可以@Cla xxx&#x3D;xx &#x2F;&#x2F;当Cla值发生改变时,将xx赋值给xxx</li><li>还有这样的玩法:@(posedge Clock); &#x2F;&#x2F;注意有个分号,整个程序运行到这里暂停执行,进入等待状态,知道Clock上出现一个上升沿</li></ul></li></ul></li><li>reg [3:0] Sat; &#x2F;&#x2F;Sat是4位寄存器</li><li>reg [3:0] Mem [63:0] &#x2F;&#x2F;Mem是64个4位寄存器组成的存储器</li><li>reg Bog [1:5] &#x2F;&#x2F;Bog是5个一位寄存器组成的数组</li></ul></li><li>reg不能用assign赋值</li><li>#3 &#x2F;&#x2F;停顿三个单位的时间</li><li>forever是一个永久循环,不需要声明任何变量</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>nand</p><blockquote><p>Gang3(Out[3],InA[3],InB[3]),</p><p>Gang3(Out[2],InA[2],InB[2]),</p><p>Gang3(Out[3],InA[3],InB[3]),//3-&gt;1</p><p>Gang3(Out[3],InA[3],InB[3]), //3-&gt;0</p></blockquote></th></tr></thead><tbody></tbody></table>等价于<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>wire [3:0] Out,InA,InB;</p><p>nand Gang [3:0] (Out,InA,InB);</p></th></tr></thead><tbody></tbody></table><p>关于模块的替换工作可以在书吴戈的&lt;verilog简明教程&gt;中的测试单元里找到相应的模块</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>速通code</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/su-tong-code/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/su-tong-code/</url>
+      
+        <content type="html"><![CDATA[<p>基本组成单元 module</p><p><strong>一般形式:</strong><br>module 模块名(接口信号);<br>&#x2F;&#x2F;信号声明<br>&#x2F;&#x2F;功能描述<br>endmodule<br>注意:模块名要有意义,一个.v文件只有一个模块</p><p><strong>数据类型</strong>四种记住:reg,wire,parameter,integer</p><p><strong>数字表示</strong>:&lt;位宽&gt;&lt;类型&gt;&lt;数字&gt; 例如: 8’b1100_0010</p><p><strong>参数型</strong><br>parameter定义一个标识符定义常量 ,例如: parameter SIZE &#x3D; 15;<br>可以跨模块的(define这个宏定义可以作用于整个工程,跨文件跨模块都可以)<br>还有个 localparam模块内部使用</p><p><strong>变量</strong></p><ul><li>wire<ul><li>输入输出信号wire型</li><li>模块间端口连接,电路连线操作</li><li>wire [7:0] a;</li><li>用assign连续赋值(阻塞赋值”&#x3D;”)</li></ul></li><li>reg<ul><li>代表寄存器</li><li>always块中的变量必须是reg型,使用非阻塞赋值”&lt;&#x3D;”</li><li>reg [7:0] a;</li></ul></li></ul><p>运算符和C一样,不赘述<br>优先级也是略过</p><p><strong>赋值语句与块语句</strong></p><ul><li>非阻塞(Non_Blocking)赋值(如b &lt;&#x3D; a;)<ul><li>块结束才赋值</li><li>b的值不是立刻改变</li></ul></li><li>阻塞(Blocking)赋值(如b &#x3D; a;)<ul><li>b的值立刻改变</li><li>bug产生的原因?</li></ul></li></ul><ol><li>always块中使用非阻塞赋值</li><li>assign中使用阻塞赋值</li></ol><p><strong>块语句</strong></p><ul><li>顺序块(顺序执行)<br>begin</li></ul><p>语句1;</p><p>语句2;</p><p>…</p><p>end</p><ul><li>并行块(同时执行)<br>fork</li></ul><p>语句1;</p><p>…</p><p>end<br>&#x2F;&#x2F;begin或fork后面可以跟上块的名称(“:块名”)</p><p><strong>条件语句和循环语句</strong><br>可嵌套的if…else<br>if(条件)</p><p>语句;</p><p>else</p><p>语句;</p><p>case<br>case(变量)</p><p>情况1:语句1;</p><p>情况2:语句2;</p><p>endcase</p><p>循环语句<br>integer i;</p><p>for(i &#x3D; 0; i&lt;10;i &#x3D; i + 1)</p><p>a[i] &lt;&#x3D; i;</p><p><strong>结构说明语句</strong><br>只说明always:在仿真过程中不断重复执行<br>声明格式:<br>always &lt;时序控制&gt;&lt;语句&gt;<br>信号控制的时间中间用or连接<br>例如</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>always @(posedge clock or posedge reset)//时序逻辑</p><p>begin</p><p>......</p><p>end</p><p></p><p>//组合逻辑直接使用*代替敏感电平,避免遗漏</p><p>always @(*)//多个电平触发的组合逻辑</p><p>begin</p><p>...</p><p>end</p><p></p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>门电路实现</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/../resources/image1-1.png" alt="image1"></p>]]></content>
       
       
       
