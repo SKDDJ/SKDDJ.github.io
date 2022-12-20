@@ -581,6 +581,110 @@
     
     
     <entry>
+      <title>case 1  基本语法</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见运算符</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/</url>
+      
+        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image1-42.png" alt="image1"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微分方程模型与ODE函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/</url>
+      
+        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>符号计算函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/</url>
+      
+        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>线性代数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/</url>
+      
+        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>课程介绍,成绩构成</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/../resources/image1-40.png" alt="image1"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>非线性方程求解</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>homework1</title>
       <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/"/>
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/</url>
@@ -807,110 +911,6 @@
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/</url>
       
         <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={EDA1F8B2-236A-4984-A9E1-31CF029599FA}&amp;71&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">outline</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={2B5827D1-3FCA-49AC-8306-970DD00CA74B}&amp;E1&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">单链表的结构</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={E524CB0E-23BB-4741-BEA8-E11356B4CDA4}&amp;C9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">单链表的实现</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={ED2695E9-6382-4E51-939D-4B1187C8486C}&amp;2D&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">双链表</a></p></th></tr></thead><tbody></tbody></table><p><strong>outline</strong></p><ul><li>单链表的结构</li><li>单链表的实现</li><li>双链表</li><li>循环链表</li></ul><p><strong>单链表的结构</strong><br>定义:链式存储的线性表</p><table><thead><tr><th><strong>data</strong></th><th><strong>next</strong></th></tr></thead><tbody><tr><td>数据域 指针域</td><td></td></tr></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>typedef struct LNode{</p><blockquote><p>ElemType data;</p><p>struct LNode *next;</p><p>}LNode,*LinkList;</p></blockquote></th></tr></thead><tbody></tbody></table>*这里还有个带不带头结点的问题:*<p><u>增加一个头结点的目的是方便运算的实现,在单链表中,如果没有头结点的话需要把第一个结点和后面的结点进行分类,这样就比较麻烦了,先说头指针(链表名),头结点(不必要,但有用,data域不一定有意义,也可以存链表长度),首元结点的概念</u></p><p><strong>单链表的实现</strong><br>(1)按序号查找结点值(按位查找)<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image1-47.png" alt="image1"></p><p>L是头指针</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>LNode *GetElem(LinkList L, int i){</p><blockquote><p>int j = 1;// count</p><p>LNode *p = L -&gt; next;//因为有头结点,所以p指向下一个</p><p>if(i == 0) return L;</p><p>if(i &lt; 0) return NULL;</p><p>while(p&amp;&amp;j&lt;i){</p><p>p = p -&gt; next; j++;</p><p>}</p><p>return p;</p><p>}</p></blockquote></th></tr></thead><tbody></tbody></table>(2)按值查找表结点![image1](../../resources/image1-47.png)<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>LNode *LocateElem(LinkList L, ElemType e){</p><blockquote><p>LNode *p = L -&gt; next;</p><p>while(p != NULL &amp;&amp; p -&gt; data != e)</p><p>p = p -&gt; next;</p><p>return p;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>P.S. 此处应有一道例题(3)插入结点操作(将值为x的新结点插入到单链表的第i个位置上)![image2](../../resources/image2-46.png)实现插入操作的代码如下(前插操作,在某个结点前插入结点):<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>p = GetElem(L,i - 1);</p><blockquote><p>s -&gt; next = p -&gt; next:</p><p>p -&gt; next = s;</p></blockquote></th></tr></thead><tbody></tbody></table>后插操作(在某个结点之后插入新结点)在某个结点之后插入新结点后交换数据域那么就转化为前插<table><colgroup><col style="width: 21%"><col style="width: 78%"></colgroup><thead><tr class="header"><th></th><th><p>s -&gt; next = p -&gt; next;</p><p>p -&gt; next = s;</p><p>temp = p -&gt; data;</p><p>p -&gt; data = s -&gt; data;</p><p>s -&gt; data = temp;</p></th></tr></thead><tbody></tbody></table><p>(4)删除结点操作<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image3-39.png" alt="image3"><br>删除结点的代码片段:</p><table><colgroup><col style="width: 22%"><col style="width: 77%"></colgroup><thead><tr class="header"><th></th><th><p>p = GetElem(L,i - 1);</p><p>q = p -&gt; next;</p><p>p -&gt; next = q -&gt; next;</p><p>free(q);</p></th></tr></thead><tbody></tbody></table><p><strong>双链表</strong><br>双链表结点中有两个指针prior和next,分别指向其前驱节点和后继结点<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image4-38.png" alt="image4"></p><p>代码描述:</p><table><colgroup><col style="width: 18%"><col style="width: 81%"></colgroup><thead><tr class="header"><th></th><th><p>typedef struct DNode{</p><blockquote><p>ElemType data;</p><p>struct DNode *prior, *next;</p><p>}DNode,*DLinkList;</p></blockquote></th></tr></thead><tbody></tbody></table><p>头插法和尾插法的补充<br>循环链表和双向链表的内容</p><p><em><strong><del><u>插入操作等等未完待续…</u></del></strong></em></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case 1  基本语法</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
-      
-        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见运算符</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/</url>
-      
-        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image1-42.png" alt="image1"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微分方程模型与ODE函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/</url>
-      
-        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>符号计算函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/</url>
-      
-        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>线性代数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/</url>
-      
-        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>课程介绍,成绩构成</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/../resources/image1-40.png" alt="image1"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>非线性方程求解</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
       
       
       
@@ -2167,6 +2167,71 @@
     
     
     <entry>
+      <title>基本代码风格</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/ji-ben-dai-ma-feng-ge/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/ji-ben-dai-ma-feng-ge/</url>
+      
+        <content type="html"><![CDATA[<p>基本代码风格<br>2022年10月10日 星期一<br>下午3:30</p><p>格式推荐驼峰格式<br>注释和C一样<br>标识符和关键字同理<br><strong>数值表示</strong><br>一共四种来表示电平逻辑</p><ol><li>0 ： false</li><li>1 ： true</li><li>x ： 未知</li><li>z ： 高阻</li></ol><ul><li>数值声明中，可以使用的进制也只有四种<ul><li>十进制（‘d或‘D）</li><li>十六进制（’h或‘H）</li><li>二进制（’b或‘B）</li><li>八进制（’o或‘O）<br>当然可以指明位宽也可以不指明<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>32 ‘h3022_c0de //32bit 数值</p><p>这个上面的是指明</p></th></tr></thead><tbody></tbody></table>**字符串**使用双引号包起来**数据类型**一共两种重要的 线网（wire） 和 寄存器（reg）**线网（wire）**表示物理硬件之间的物理连线，例如| wire flag1,flag2; ||-------------------|**寄存器（reg）**保持数据原有的值，直到被改写，举例：| reg flag1,flag2; ||------------------|**向量**位宽大于1时使用，wire和reg都可以声明成向量形式。感觉像切片，尤其是go语言中的切片| wire \[32 - 1:0 \] gpio_data;// 声明32bit位宽的线型变量gpio_data ||------------------------------------------------------------------|**整数（integer）**一般32bit，直接用integer + 变量名就好**实数（real）**一般只是整数，默认值0**时间（time）**时间寄存器，保存仿真时间用，64bit一般调用系统函数$time获取仿真时间**数组**允许声明reg，wire，integer，time，real及向量类型的数组<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>wire data_bit[7:0][5:0] ; //声明1bit wire型变量的二维数组</p><p></p></th></tr></thead><tbody></tbody></table>**存储器，字符串str**</li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>按位操作符</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/an-wei-cao-zuo-fu/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/an-wei-cao-zuo-fu/</url>
+      
+        <content type="html"><![CDATA[<p>按位操作符<br>按位操作符包括：取反（~），与（&amp;），或（|），异或（^），同或（~^）。<br>按位操作符对 2 个操作数的每 1bit 数据进行按位操作。<br>如果 2 个操作数位宽不相等，则用 0 向左扩展补充较短的操作数。</p><p>**</p><p>连续赋值语句是 Verilog 数据流建模的基本语句，用于对 wire 型变量进行赋值。：<br>assign 为关键词，任何已经声明 wire 变量的连续赋值语句都是以 assign 开头，例如：<br>wire Cout, A, B ;<br>assign Cout &#x3D; A &amp; B ; &#x2F;&#x2F;实现计算A与B的功能</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读书笔记</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/du-shu-bi-ji/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/du-shu-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<ul><li>模块之间并行</li><li>parameter声明常数</li><li>testbench测试程序是编写模块的高层模块</li><li>‘timescale定义时延单位和精度</li><li>5’O37 5位8进制数 4’D2 四位2进制</li><li>wire [2:0] Start 3位线网<ul><li>通过assign Start &#x3D; Blt;连续赋值语句给Start第一个驱动源<ul><li>assign只能给wire型变量赋值,这是连续型赋值,而reg只能过程性赋值,由&#x3D;和&lt;&#x3D;一个阻塞一个不阻塞,阻塞就是当此语句执行时,其他语句全部暂停</li></ul></li></ul></li><li>reg只能在initial和always里面赋值<ul><li>initial只在仿真开始时执行一次,always符合要求就可以反复执行,他们都是并行执行<ul><li>always Clk&#x3D;~Clk 无限循环</li><li>always #5 Clk&#x3D;~Clk 产生时钟信号为10个单位时间的波形,这是时延控制</li><li>事件控制<ul><li>always @(EcecuteCycle) &#x2F;&#x2F;always执行,当EcecuteCycle发生,边缘触发事件,电平跳变触发事件</li><li>经典的类似于if的@(posedge Clock) 当电平信号从低电平变成高电平就执行语句(上升沿),否则该进程被挂起</li><li>还可以@Cla xxx&#x3D;xx &#x2F;&#x2F;当Cla值发生改变时,将xx赋值给xxx</li><li>还有这样的玩法:@(posedge Clock); &#x2F;&#x2F;注意有个分号,整个程序运行到这里暂停执行,进入等待状态,知道Clock上出现一个上升沿</li></ul></li></ul></li><li>reg [3:0] Sat; &#x2F;&#x2F;Sat是4位寄存器</li><li>reg [3:0] Mem [63:0] &#x2F;&#x2F;Mem是64个4位寄存器组成的存储器</li><li>reg Bog [1:5] &#x2F;&#x2F;Bog是5个一位寄存器组成的数组</li></ul></li><li>reg不能用assign赋值</li><li>#3 &#x2F;&#x2F;停顿三个单位的时间</li><li>forever是一个永久循环,不需要声明任何变量</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>nand</p><blockquote><p>Gang3(Out[3],InA[3],InB[3]),</p><p>Gang3(Out[2],InA[2],InB[2]),</p><p>Gang3(Out[3],InA[3],InB[3]),//3-&gt;1</p><p>Gang3(Out[3],InA[3],InB[3]), //3-&gt;0</p></blockquote></th></tr></thead><tbody></tbody></table>等价于<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>wire [3:0] Out,InA,InB;</p><p>nand Gang [3:0] (Out,InA,InB);</p></th></tr></thead><tbody></tbody></table><p>关于模块的替换工作可以在书吴戈的&lt;verilog简明教程&gt;中的测试单元里找到相应的模块</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>速通code</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/su-tong-code/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/su-tong-code/</url>
+      
+        <content type="html"><![CDATA[<p>基本组成单元 module</p><p><strong>一般形式:</strong><br>module 模块名(接口信号);<br>&#x2F;&#x2F;信号声明<br>&#x2F;&#x2F;功能描述<br>endmodule<br>注意:模块名要有意义,一个.v文件只有一个模块</p><p><strong>数据类型</strong>四种记住:reg,wire,parameter,integer</p><p><strong>数字表示</strong>:&lt;位宽&gt;&lt;类型&gt;&lt;数字&gt; 例如: 8’b1100_0010</p><p><strong>参数型</strong><br>parameter定义一个标识符定义常量 ,例如: parameter SIZE &#x3D; 15;<br>可以跨模块的(define这个宏定义可以作用于整个工程,跨文件跨模块都可以)<br>还有个 localparam模块内部使用</p><p><strong>变量</strong></p><ul><li>wire<ul><li>输入输出信号wire型</li><li>模块间端口连接,电路连线操作</li><li>wire [7:0] a;</li><li>用assign连续赋值(阻塞赋值”&#x3D;”)</li></ul></li><li>reg<ul><li>代表寄存器</li><li>always块中的变量必须是reg型,使用非阻塞赋值”&lt;&#x3D;”</li><li>reg [7:0] a;</li></ul></li></ul><p>运算符和C一样,不赘述<br>优先级也是略过</p><p><strong>赋值语句与块语句</strong></p><ul><li>非阻塞(Non_Blocking)赋值(如b &lt;&#x3D; a;)<ul><li>块结束才赋值</li><li>b的值不是立刻改变</li></ul></li><li>阻塞(Blocking)赋值(如b &#x3D; a;)<ul><li>b的值立刻改变</li><li>bug产生的原因?</li></ul></li></ul><ol><li>always块中使用非阻塞赋值</li><li>assign中使用阻塞赋值</li></ol><p><strong>块语句</strong></p><ul><li>顺序块(顺序执行)<br>begin</li></ul><p>语句1;</p><p>语句2;</p><p>…</p><p>end</p><ul><li>并行块(同时执行)<br>fork</li></ul><p>语句1;</p><p>…</p><p>end<br>&#x2F;&#x2F;begin或fork后面可以跟上块的名称(“:块名”)</p><p><strong>条件语句和循环语句</strong><br>可嵌套的if…else<br>if(条件)</p><p>语句;</p><p>else</p><p>语句;</p><p>case<br>case(变量)</p><p>情况1:语句1;</p><p>情况2:语句2;</p><p>endcase</p><p>循环语句<br>integer i;</p><p>for(i &#x3D; 0; i&lt;10;i &#x3D; i + 1)</p><p>a[i] &lt;&#x3D; i;</p><p><strong>结构说明语句</strong><br>只说明always:在仿真过程中不断重复执行<br>声明格式:<br>always &lt;时序控制&gt;&lt;语句&gt;<br>信号控制的时间中间用or连接<br>例如</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>always @(posedge clock or posedge reset)//时序逻辑</p><p>begin</p><p>......</p><p>end</p><p></p><p>//组合逻辑直接使用*代替敏感电平,避免遗漏</p><p>always @(*)//多个电平触发的组合逻辑</p><p>begin</p><p>...</p><p>end</p><p></p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>门电路实现</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/../resources/image1-1.png" alt="image1"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>11 </title>
       <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/11/"/>
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/11/</url>
@@ -2276,71 +2341,6 @@
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/</url>
       
         <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/../resources/image1-6.png" alt="image1"></p><p><strong>&lt;!DOCTYPE&gt;声明</strong><br>放在&lt;html&gt;之前<br>&lt;!DOCTYPE&gt;声明有助于浏览器中正确显示网页。</p><p><em>来自 &lt;<a href="https://www.runoob.com/html/html-intro.html">https://www.runoob.com/html/html-intro.html</a>&gt;</em></p><p>通用声明在不兼容时查看超链接</p><p><strong>中文编码</strong><br>在&lt;head&gt;处把字符声明改成utf-8或者GBK</p><table><thead><tr><th>&lt;meta charset &#x3D; “UTF-8”&gt;</th></tr></thead></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>基本代码风格</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/ji-ben-dai-ma-feng-ge/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/ji-ben-dai-ma-feng-ge/</url>
-      
-        <content type="html"><![CDATA[<p>基本代码风格<br>2022年10月10日 星期一<br>下午3:30</p><p>格式推荐驼峰格式<br>注释和C一样<br>标识符和关键字同理<br><strong>数值表示</strong><br>一共四种来表示电平逻辑</p><ol><li>0 ： false</li><li>1 ： true</li><li>x ： 未知</li><li>z ： 高阻</li></ol><ul><li>数值声明中，可以使用的进制也只有四种<ul><li>十进制（‘d或‘D）</li><li>十六进制（’h或‘H）</li><li>二进制（’b或‘B）</li><li>八进制（’o或‘O）<br>当然可以指明位宽也可以不指明<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>32 ‘h3022_c0de //32bit 数值</p><p>这个上面的是指明</p></th></tr></thead><tbody></tbody></table>**字符串**使用双引号包起来**数据类型**一共两种重要的 线网（wire） 和 寄存器（reg）**线网（wire）**表示物理硬件之间的物理连线，例如| wire flag1,flag2; ||-------------------|**寄存器（reg）**保持数据原有的值，直到被改写，举例：| reg flag1,flag2; ||------------------|**向量**位宽大于1时使用，wire和reg都可以声明成向量形式。感觉像切片，尤其是go语言中的切片| wire \[32 - 1:0 \] gpio_data;// 声明32bit位宽的线型变量gpio_data ||------------------------------------------------------------------|**整数（integer）**一般32bit，直接用integer + 变量名就好**实数（real）**一般只是整数，默认值0**时间（time）**时间寄存器，保存仿真时间用，64bit一般调用系统函数$time获取仿真时间**数组**允许声明reg，wire，integer，time，real及向量类型的数组<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>wire data_bit[7:0][5:0] ; //声明1bit wire型变量的二维数组</p><p></p></th></tr></thead><tbody></tbody></table>**存储器，字符串str**</li></ul></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>按位操作符</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/an-wei-cao-zuo-fu/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/an-wei-cao-zuo-fu/</url>
-      
-        <content type="html"><![CDATA[<p>按位操作符<br>按位操作符包括：取反（~），与（&amp;），或（|），异或（^），同或（~^）。<br>按位操作符对 2 个操作数的每 1bit 数据进行按位操作。<br>如果 2 个操作数位宽不相等，则用 0 向左扩展补充较短的操作数。</p><p>**</p><p>连续赋值语句是 Verilog 数据流建模的基本语句，用于对 wire 型变量进行赋值。：<br>assign 为关键词，任何已经声明 wire 变量的连续赋值语句都是以 assign 开头，例如：<br>wire Cout, A, B ;<br>assign Cout &#x3D; A &amp; B ; &#x2F;&#x2F;实现计算A与B的功能</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读书笔记</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/du-shu-bi-ji/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/du-shu-bi-ji/</url>
-      
-        <content type="html"><![CDATA[<ul><li>模块之间并行</li><li>parameter声明常数</li><li>testbench测试程序是编写模块的高层模块</li><li>‘timescale定义时延单位和精度</li><li>5’O37 5位8进制数 4’D2 四位2进制</li><li>wire [2:0] Start 3位线网<ul><li>通过assign Start &#x3D; Blt;连续赋值语句给Start第一个驱动源<ul><li>assign只能给wire型变量赋值,这是连续型赋值,而reg只能过程性赋值,由&#x3D;和&lt;&#x3D;一个阻塞一个不阻塞,阻塞就是当此语句执行时,其他语句全部暂停</li></ul></li></ul></li><li>reg只能在initial和always里面赋值<ul><li>initial只在仿真开始时执行一次,always符合要求就可以反复执行,他们都是并行执行<ul><li>always Clk&#x3D;~Clk 无限循环</li><li>always #5 Clk&#x3D;~Clk 产生时钟信号为10个单位时间的波形,这是时延控制</li><li>事件控制<ul><li>always @(EcecuteCycle) &#x2F;&#x2F;always执行,当EcecuteCycle发生,边缘触发事件,电平跳变触发事件</li><li>经典的类似于if的@(posedge Clock) 当电平信号从低电平变成高电平就执行语句(上升沿),否则该进程被挂起</li><li>还可以@Cla xxx&#x3D;xx &#x2F;&#x2F;当Cla值发生改变时,将xx赋值给xxx</li><li>还有这样的玩法:@(posedge Clock); &#x2F;&#x2F;注意有个分号,整个程序运行到这里暂停执行,进入等待状态,知道Clock上出现一个上升沿</li></ul></li></ul></li><li>reg [3:0] Sat; &#x2F;&#x2F;Sat是4位寄存器</li><li>reg [3:0] Mem [63:0] &#x2F;&#x2F;Mem是64个4位寄存器组成的存储器</li><li>reg Bog [1:5] &#x2F;&#x2F;Bog是5个一位寄存器组成的数组</li></ul></li><li>reg不能用assign赋值</li><li>#3 &#x2F;&#x2F;停顿三个单位的时间</li><li>forever是一个永久循环,不需要声明任何变量</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>nand</p><blockquote><p>Gang3(Out[3],InA[3],InB[3]),</p><p>Gang3(Out[2],InA[2],InB[2]),</p><p>Gang3(Out[3],InA[3],InB[3]),//3-&gt;1</p><p>Gang3(Out[3],InA[3],InB[3]), //3-&gt;0</p></blockquote></th></tr></thead><tbody></tbody></table>等价于<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>wire [3:0] Out,InA,InB;</p><p>nand Gang [3:0] (Out,InA,InB);</p></th></tr></thead><tbody></tbody></table><p>关于模块的替换工作可以在书吴戈的&lt;verilog简明教程&gt;中的测试单元里找到相应的模块</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>速通code</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/su-tong-code/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/su-tong-code/</url>
-      
-        <content type="html"><![CDATA[<p>基本组成单元 module</p><p><strong>一般形式:</strong><br>module 模块名(接口信号);<br>&#x2F;&#x2F;信号声明<br>&#x2F;&#x2F;功能描述<br>endmodule<br>注意:模块名要有意义,一个.v文件只有一个模块</p><p><strong>数据类型</strong>四种记住:reg,wire,parameter,integer</p><p><strong>数字表示</strong>:&lt;位宽&gt;&lt;类型&gt;&lt;数字&gt; 例如: 8’b1100_0010</p><p><strong>参数型</strong><br>parameter定义一个标识符定义常量 ,例如: parameter SIZE &#x3D; 15;<br>可以跨模块的(define这个宏定义可以作用于整个工程,跨文件跨模块都可以)<br>还有个 localparam模块内部使用</p><p><strong>变量</strong></p><ul><li>wire<ul><li>输入输出信号wire型</li><li>模块间端口连接,电路连线操作</li><li>wire [7:0] a;</li><li>用assign连续赋值(阻塞赋值”&#x3D;”)</li></ul></li><li>reg<ul><li>代表寄存器</li><li>always块中的变量必须是reg型,使用非阻塞赋值”&lt;&#x3D;”</li><li>reg [7:0] a;</li></ul></li></ul><p>运算符和C一样,不赘述<br>优先级也是略过</p><p><strong>赋值语句与块语句</strong></p><ul><li>非阻塞(Non_Blocking)赋值(如b &lt;&#x3D; a;)<ul><li>块结束才赋值</li><li>b的值不是立刻改变</li></ul></li><li>阻塞(Blocking)赋值(如b &#x3D; a;)<ul><li>b的值立刻改变</li><li>bug产生的原因?</li></ul></li></ul><ol><li>always块中使用非阻塞赋值</li><li>assign中使用阻塞赋值</li></ol><p><strong>块语句</strong></p><ul><li>顺序块(顺序执行)<br>begin</li></ul><p>语句1;</p><p>语句2;</p><p>…</p><p>end</p><ul><li>并行块(同时执行)<br>fork</li></ul><p>语句1;</p><p>…</p><p>end<br>&#x2F;&#x2F;begin或fork后面可以跟上块的名称(“:块名”)</p><p><strong>条件语句和循环语句</strong><br>可嵌套的if…else<br>if(条件)</p><p>语句;</p><p>else</p><p>语句;</p><p>case<br>case(变量)</p><p>情况1:语句1;</p><p>情况2:语句2;</p><p>endcase</p><p>循环语句<br>integer i;</p><p>for(i &#x3D; 0; i&lt;10;i &#x3D; i + 1)</p><p>a[i] &lt;&#x3D; i;</p><p><strong>结构说明语句</strong><br>只说明always:在仿真过程中不断重复执行<br>声明格式:<br>always &lt;时序控制&gt;&lt;语句&gt;<br>信号控制的时间中间用or连接<br>例如</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>always @(posedge clock or posedge reset)//时序逻辑</p><p>begin</p><p>......</p><p>end</p><p></p><p>//组合逻辑直接使用*代替敏感电平,避免遗漏</p><p>always @(*)//多个电平触发的组合逻辑</p><p>begin</p><p>...</p><p>end</p><p></p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>门电路实现</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/verilog/men-dian-lu-shi-xian/../resources/image1-1.png" alt="image1"></p>]]></content>
       
       
       
