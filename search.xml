@@ -256,11 +256,11 @@
     
     
     <entry>
-      <title>Unit5 交换与路由技术</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/</url>
+      <title>Unit4 共享</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/</url>
       
-        <content type="html"><![CDATA[<p><strong>最优化法则,路由表和分布式路由</strong><br><strong>最优化法则—收敛法则:</strong><br><u>若J位于I到K的最优路径上,则从J到K的最优路径也位于上面(收敛性)</u></p><p>用途:</p><ul><li>是分布式路由算法的基础</li><li>路由表中不用记全部路径,只需要知道下一跳<br><strong>路由表</strong><table><colgroup><col style="width: 30%"><col style="width: 26%"><col style="width: 25%"><col style="width: 17%"></colgroup><thead><tr class="header"><th><p><strong>目的</strong></p><p><strong>Destination</strong></p></th><th><p><strong>下一站</strong></p><p><strong>Next Hop</strong></p></th><th><p><strong>出口</strong></p><p><strong>Interface</strong></p></th><th><p><strong>度量</strong></p><p><strong>Metric</strong></p></th></tr></thead><tbody></tbody></table>**路由选择技术分类**</li><li>表驱动路由<ul><li>事先计算节点之间的最优路径,形成路由表(转发表)</li><li>根据路由表进行PDU的转发<ul><li>静态路由</li><li>独立路由<ul><li>泛射路由,随机路由,反向地址学习</li></ul></li><li>动态路由<ul><li>集中式路由</li><li>分布式路由<ul><li>链路状态</li><li>距离矢量</li></ul></li></ul></li></ul></li></ul></li><li>按需路由<ul><li>需要转发分组时,才发起路由查找过程,生成路由</li><li>用于经常变换拓扑的无线网络</li></ul></li></ul><p><strong>距离矢量算法</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image1-11.png" alt="image1"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image2-10.png" alt="image2"><br>看着像迪杰斯特拉算法<br>有可能成环,一直踢皮球不去找目的地了</p><p><strong>链路状态算法</strong></p><ul><li>链路状态—–”接通”or”断开”</li><li>用<strong>链路质量</strong>评估链路状态<ul><li>常用***<u>链路延时</u>***作为链路质量的度量</li></ul></li></ul><p><strong>路由</strong><br>路由在网络层的寻址和物理层的寻址不同</p><p>网络号的计算:IP地址和掩码按位与<br>ARP协议<br>然后补充了IP协议的帧格式,可以查一查<br><strong>网络互联</strong><br>有连接 —连锁虚电路<br>无连接 –数据报<br><strong>隧道技术</strong><br>在两个同构网络之间是异构网络提供服务</p><ul><li>基础是透明通信<br>例子:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image3-8.png" alt="image3"></li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image4-8.png" alt="image4"></p>]]></content>
+        <content type="html"><![CDATA[<p>Unit4 共享<br>2022年10月20日 星期四<br>下午3:53</p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image1-9.png" alt="image1"><br>核心内容就是挖掘信道资源，共享信道等等<br><strong>信道，信号与传输（理论基础）</strong></p><ul><li>数字数据和模拟数据<ul><li>模拟（analog） 数据：连续变化的数据<ul><li>声音</li></ul></li><li>数字（digital） 数据：不连续变化的数据<ul><li>文本（bit流）</li></ul></li><li>可以通过<em>插值法</em>将数字信号拟合模拟信号<br>信号的幅频特性：信号的时域变化越剧烈，频域带宽越宽</li></ul></li></ul><p>基于数字传输理论，结合信号编码和调制技术，我们知道，一个信道传输多个信号是可行的</p><p><strong>无线传输</strong><br>利用双绞线构成星型网络,线路很难一线传通,依靠简单的集线器<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image2-8.png" alt="image2"><br>还可以构成环形广播式信道(点对点,单向绕环传递)<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image3-7.png" alt="image3"><br>利用光纤构成无源星型:广播式媒体:broadcast</p><ul><li>基带同轴电缆,传输距离500-2km</li><li>宽带同轴电缆:传输距离几十km</li></ul><p><strong>共用信道的控制技术 — xDM,xDMA</strong></p><ul><li>多路复用-Multiplex<ul><li>频分多路</li><li>时分多路</li><li>波分多路:光纤</li></ul></li><li>多址技术<ul><li>频分多址</li><li>时分多址</li><li>码分多址:无线<br>关于码分多址:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image4-7.png" alt="image4"></li></ul></li></ul><p><strong>基于OFDMA的资源块</strong><br>把信道资源规划为:资源块</p><ul><li>频域:子载波</li><li>时域:符号</li><li>基站根据业务需求动态为用户分配资源块<ul><li>资源分配算法:平均分配,优先级分配,公平算法</li></ul></li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image5-5.png" alt="image5"></p><ul><li>结论:将信道分为N个子信道后,每个信道的容量降低为原来的1&#x2F;N,到达率也减少到N分之一,则平均延迟增加N倍,用户体验减少<br><strong>排队论</strong><br>此处有个考点:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image6-6.png" alt="image6"><br>最后的部分,可能出公式的计算<br><strong>猝发性问题</strong><br>简而言之就是分配了子信道后,用户一般也能够用,但是有些时间段可能流量剧增,导致信道分了这么多也没用上<br>分配给用户的资源,用户也没有充分利用<br>解决方案就是在用户需要时才分配信道,避免造成浪费</li></ul><p><strong>竞争式媒体访问技术(MAC在数据链路层)</strong></p><ul><li>广播式信道—最低成本实现最广泛连接<ul><li>两个以上站点使用共享信道</li><li>不能有多个站点同时发送,否则会导致冲突</li></ul></li><li>目的还是为了省钱,低成本控制,实现了信道的高利用率<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image7-6.png" alt="image7"><br>四个竞争式协议</li><li>ALOHA<ul><li>Pure ALOHA</li><li>Slotted ALOHA</li></ul></li><li>CSMA载波侦听多路访问<ul><li>1坚持</li><li>0坚持</li><li>P坚持</li></ul></li><li>CSMA&#x2F;CD(以太网)</li><li>CSMA&#x2F;CA(无线局域网)<br>跟监听和冲突解决有关,一般互联网会采用最后一个协议,因为降低了冲突<br>此处会讲竞争式协议的冲突窗口分析<br>还有竞争式协议的性能分析</li></ul><p><strong>非竞争式协议</strong><br>利用<strong>令牌</strong>指挥发送信息</p><ul><li>监控站向指定站发送一个”令牌”,拿到令牌的站才能发送数据</li><li>监控站确保只有一个令牌出现<ul><li>只有一个站能够发送信息 -&gt; 没有了冲突</li><li>令牌依次沿环传递 — 轮询制<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image8-5.png" alt="image8"><br><strong>重要结论</strong><br>竞争协议与无冲突协议各有优劣</li></ul></li><li>轻载时,竞争式协议具有低发送延时的特性</li><li>重载时,无冲突协议具有较高的信道利用率特性<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image9-4.png" alt="image9"></li></ul><p><strong>共享式以太网</strong><br>媒体访问技术 –CSMA&#x2F;CD<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image10-4.png" alt="image10"><br>一些重要规定:</p><ul><li>最小帧长64字节,最大帧长1518字节</li><li>最多连续冲突次数:16次</li><li>帧间间隔12字节</li></ul><p><strong>网桥与交换机(工作原理)</strong><br><strong>网桥</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image11-3.png" alt="image11"><br>网桥的出现:不同局域网之间需要互联</p><ul><li>不同的局域网之间可能需要进行协议格式转换(至今没有很好解决)</li><li>转发帧到目的地址<ul><li>可以允许多个端口同时收发数据</li><li>对比集线器<ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image12-3.png" alt="image12"></li></ul></li></ul></li><li>存储转发技术<ul><li>解封和重新封装,可以速率匹配,信号转换,协议转换</li></ul></li><li>工作在数据链路层</li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image13-3.png" alt="image13"><br><strong>交换机</strong><br><u>交换机仅把收到的数据放到目的站所在的端口_</u><br>交换机提供独享的信道,可以并发<br>交换机是数据链路层的设备<br>交换机是特殊的透明网桥</p><ul><li>端口数量更多</li><li>功能简化—不进行协议转换</li></ul>]]></content>
       
       
       
@@ -269,11 +269,11 @@
     
     
     <entry>
-      <title>Unit4 共享</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/</url>
+      <title>Unit5 交换与路由技术</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/</url>
       
-        <content type="html"><![CDATA[<p>Unit4 共享<br>2022年10月20日 星期四<br>下午3:53</p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image1-9.png" alt="image1"><br>核心内容就是挖掘信道资源，共享信道等等<br><strong>信道，信号与传输（理论基础）</strong></p><ul><li>数字数据和模拟数据<ul><li>模拟（analog） 数据：连续变化的数据<ul><li>声音</li></ul></li><li>数字（digital） 数据：不连续变化的数据<ul><li>文本（bit流）</li></ul></li><li>可以通过<em>插值法</em>将数字信号拟合模拟信号<br>信号的幅频特性：信号的时域变化越剧烈，频域带宽越宽</li></ul></li></ul><p>基于数字传输理论，结合信号编码和调制技术，我们知道，一个信道传输多个信号是可行的</p><p><strong>无线传输</strong><br>利用双绞线构成星型网络,线路很难一线传通,依靠简单的集线器<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image2-8.png" alt="image2"><br>还可以构成环形广播式信道(点对点,单向绕环传递)<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image3-7.png" alt="image3"><br>利用光纤构成无源星型:广播式媒体:broadcast</p><ul><li>基带同轴电缆,传输距离500-2km</li><li>宽带同轴电缆:传输距离几十km</li></ul><p><strong>共用信道的控制技术 — xDM,xDMA</strong></p><ul><li>多路复用-Multiplex<ul><li>频分多路</li><li>时分多路</li><li>波分多路:光纤</li></ul></li><li>多址技术<ul><li>频分多址</li><li>时分多址</li><li>码分多址:无线<br>关于码分多址:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image4-7.png" alt="image4"></li></ul></li></ul><p><strong>基于OFDMA的资源块</strong><br>把信道资源规划为:资源块</p><ul><li>频域:子载波</li><li>时域:符号</li><li>基站根据业务需求动态为用户分配资源块<ul><li>资源分配算法:平均分配,优先级分配,公平算法</li></ul></li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image5-5.png" alt="image5"></p><ul><li>结论:将信道分为N个子信道后,每个信道的容量降低为原来的1&#x2F;N,到达率也减少到N分之一,则平均延迟增加N倍,用户体验减少<br><strong>排队论</strong><br>此处有个考点:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image6-6.png" alt="image6"><br>最后的部分,可能出公式的计算<br><strong>猝发性问题</strong><br>简而言之就是分配了子信道后,用户一般也能够用,但是有些时间段可能流量剧增,导致信道分了这么多也没用上<br>分配给用户的资源,用户也没有充分利用<br>解决方案就是在用户需要时才分配信道,避免造成浪费</li></ul><p><strong>竞争式媒体访问技术(MAC在数据链路层)</strong></p><ul><li>广播式信道—最低成本实现最广泛连接<ul><li>两个以上站点使用共享信道</li><li>不能有多个站点同时发送,否则会导致冲突</li></ul></li><li>目的还是为了省钱,低成本控制,实现了信道的高利用率<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image7-6.png" alt="image7"><br>四个竞争式协议</li><li>ALOHA<ul><li>Pure ALOHA</li><li>Slotted ALOHA</li></ul></li><li>CSMA载波侦听多路访问<ul><li>1坚持</li><li>0坚持</li><li>P坚持</li></ul></li><li>CSMA&#x2F;CD(以太网)</li><li>CSMA&#x2F;CA(无线局域网)<br>跟监听和冲突解决有关,一般互联网会采用最后一个协议,因为降低了冲突<br>此处会讲竞争式协议的冲突窗口分析<br>还有竞争式协议的性能分析</li></ul><p><strong>非竞争式协议</strong><br>利用<strong>令牌</strong>指挥发送信息</p><ul><li>监控站向指定站发送一个”令牌”,拿到令牌的站才能发送数据</li><li>监控站确保只有一个令牌出现<ul><li>只有一个站能够发送信息 -&gt; 没有了冲突</li><li>令牌依次沿环传递 — 轮询制<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image8-5.png" alt="image8"><br><strong>重要结论</strong><br>竞争协议与无冲突协议各有优劣</li></ul></li><li>轻载时,竞争式协议具有低发送延时的特性</li><li>重载时,无冲突协议具有较高的信道利用率特性<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image9-4.png" alt="image9"></li></ul><p><strong>共享式以太网</strong><br>媒体访问技术 –CSMA&#x2F;CD<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image10-4.png" alt="image10"><br>一些重要规定:</p><ul><li>最小帧长64字节,最大帧长1518字节</li><li>最多连续冲突次数:16次</li><li>帧间间隔12字节</li></ul><p><strong>网桥与交换机(工作原理)</strong><br><strong>网桥</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image11-3.png" alt="image11"><br>网桥的出现:不同局域网之间需要互联</p><ul><li>不同的局域网之间可能需要进行协议格式转换(至今没有很好解决)</li><li>转发帧到目的地址<ul><li>可以允许多个端口同时收发数据</li><li>对比集线器<ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image12-3.png" alt="image12"></li></ul></li></ul></li><li>存储转发技术<ul><li>解封和重新封装,可以速率匹配,信号转换,协议转换</li></ul></li><li>工作在数据链路层</li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit4-gong-xiang/../resources/image13-3.png" alt="image13"><br><strong>交换机</strong><br><u>交换机仅把收到的数据放到目的站所在的端口_</u><br>交换机提供独享的信道,可以并发<br>交换机是数据链路层的设备<br>交换机是特殊的透明网桥</p><ul><li>端口数量更多</li><li>功能简化—不进行协议转换</li></ul>]]></content>
+        <content type="html"><![CDATA[<p><strong>最优化法则,路由表和分布式路由</strong><br><strong>最优化法则—收敛法则:</strong><br><u>若J位于I到K的最优路径上,则从J到K的最优路径也位于上面(收敛性)</u></p><p>用途:</p><ul><li>是分布式路由算法的基础</li><li>路由表中不用记全部路径,只需要知道下一跳<br><strong>路由表</strong><table><colgroup><col style="width: 30%"><col style="width: 26%"><col style="width: 25%"><col style="width: 17%"></colgroup><thead><tr class="header"><th><p><strong>目的</strong></p><p><strong>Destination</strong></p></th><th><p><strong>下一站</strong></p><p><strong>Next Hop</strong></p></th><th><p><strong>出口</strong></p><p><strong>Interface</strong></p></th><th><p><strong>度量</strong></p><p><strong>Metric</strong></p></th></tr></thead><tbody></tbody></table>**路由选择技术分类**</li><li>表驱动路由<ul><li>事先计算节点之间的最优路径,形成路由表(转发表)</li><li>根据路由表进行PDU的转发<ul><li>静态路由</li><li>独立路由<ul><li>泛射路由,随机路由,反向地址学习</li></ul></li><li>动态路由<ul><li>集中式路由</li><li>分布式路由<ul><li>链路状态</li><li>距离矢量</li></ul></li></ul></li></ul></li></ul></li><li>按需路由<ul><li>需要转发分组时,才发起路由查找过程,生成路由</li><li>用于经常变换拓扑的无线网络</li></ul></li></ul><p><strong>距离矢量算法</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image1-11.png" alt="image1"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image2-10.png" alt="image2"><br>看着像迪杰斯特拉算法<br>有可能成环,一直踢皮球不去找目的地了</p><p><strong>链路状态算法</strong></p><ul><li>链路状态—–”接通”or”断开”</li><li>用<strong>链路质量</strong>评估链路状态<ul><li>常用***<u>链路延时</u>***作为链路质量的度量</li></ul></li></ul><p><strong>路由</strong><br>路由在网络层的寻址和物理层的寻址不同</p><p>网络号的计算:IP地址和掩码按位与<br>ARP协议<br>然后补充了IP协议的帧格式,可以查一查<br><strong>网络互联</strong><br>有连接 —连锁虚电路<br>无连接 –数据报<br><strong>隧道技术</strong><br>在两个同构网络之间是异构网络提供服务</p><ul><li>基础是透明通信<br>例子:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image3-8.png" alt="image3"></li></ul><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/ji-wang/unit5-jiao-huan-yu-lu-you-ji-zhu/../resources/image4-8.png" alt="image4"></p>]]></content>
       
       
       
@@ -581,110 +581,6 @@
     
     
     <entry>
-      <title>case 1  基本语法</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
-      
-        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见运算符</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/</url>
-      
-        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image1-42.png" alt="image1"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微分方程模型与ODE函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/</url>
-      
-        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>符号计算函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/</url>
-      
-        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>线性代数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/</url>
-      
-        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>课程介绍,成绩构成</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/../resources/image1-40.png" alt="image1"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>非线性方程求解</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>homework1</title>
       <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/"/>
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/</url>
@@ -911,6 +807,110 @@
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/</url>
       
         <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={EDA1F8B2-236A-4984-A9E1-31CF029599FA}&amp;71&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">outline</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={2B5827D1-3FCA-49AC-8306-970DD00CA74B}&amp;E1&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">单链表的结构</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={E524CB0E-23BB-4741-BEA8-E11356B4CDA4}&amp;C9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">单链表的实现</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={ED2695E9-6382-4E51-939D-4B1187C8486C}&amp;2D&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">双链表</a></p></th></tr></thead><tbody></tbody></table><p><strong>outline</strong></p><ul><li>单链表的结构</li><li>单链表的实现</li><li>双链表</li><li>循环链表</li></ul><p><strong>单链表的结构</strong><br>定义:链式存储的线性表</p><table><thead><tr><th><strong>data</strong></th><th><strong>next</strong></th></tr></thead><tbody><tr><td>数据域 指针域</td><td></td></tr></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>typedef struct LNode{</p><blockquote><p>ElemType data;</p><p>struct LNode *next;</p><p>}LNode,*LinkList;</p></blockquote></th></tr></thead><tbody></tbody></table>*这里还有个带不带头结点的问题:*<p><u>增加一个头结点的目的是方便运算的实现,在单链表中,如果没有头结点的话需要把第一个结点和后面的结点进行分类,这样就比较麻烦了,先说头指针(链表名),头结点(不必要,但有用,data域不一定有意义,也可以存链表长度),首元结点的概念</u></p><p><strong>单链表的实现</strong><br>(1)按序号查找结点值(按位查找)<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image1-47.png" alt="image1"></p><p>L是头指针</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>LNode *GetElem(LinkList L, int i){</p><blockquote><p>int j = 1;// count</p><p>LNode *p = L -&gt; next;//因为有头结点,所以p指向下一个</p><p>if(i == 0) return L;</p><p>if(i &lt; 0) return NULL;</p><p>while(p&amp;&amp;j&lt;i){</p><p>p = p -&gt; next; j++;</p><p>}</p><p>return p;</p><p>}</p></blockquote></th></tr></thead><tbody></tbody></table>(2)按值查找表结点![image1](../../resources/image1-47.png)<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>LNode *LocateElem(LinkList L, ElemType e){</p><blockquote><p>LNode *p = L -&gt; next;</p><p>while(p != NULL &amp;&amp; p -&gt; data != e)</p><p>p = p -&gt; next;</p><p>return p;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>P.S. 此处应有一道例题(3)插入结点操作(将值为x的新结点插入到单链表的第i个位置上)![image2](../../resources/image2-46.png)实现插入操作的代码如下(前插操作,在某个结点前插入结点):<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>p = GetElem(L,i - 1);</p><blockquote><p>s -&gt; next = p -&gt; next:</p><p>p -&gt; next = s;</p></blockquote></th></tr></thead><tbody></tbody></table>后插操作(在某个结点之后插入新结点)在某个结点之后插入新结点后交换数据域那么就转化为前插<table><colgroup><col style="width: 21%"><col style="width: 78%"></colgroup><thead><tr class="header"><th></th><th><p>s -&gt; next = p -&gt; next;</p><p>p -&gt; next = s;</p><p>temp = p -&gt; data;</p><p>p -&gt; data = s -&gt; data;</p><p>s -&gt; data = temp;</p></th></tr></thead><tbody></tbody></table><p>(4)删除结点操作<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image3-39.png" alt="image3"><br>删除结点的代码片段:</p><table><colgroup><col style="width: 22%"><col style="width: 77%"></colgroup><thead><tr class="header"><th></th><th><p>p = GetElem(L,i - 1);</p><p>q = p -&gt; next;</p><p>p -&gt; next = q -&gt; next;</p><p>free(q);</p></th></tr></thead><tbody></tbody></table><p><strong>双链表</strong><br>双链表结点中有两个指针prior和next,分别指向其前驱节点和后继结点<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image4-38.png" alt="image4"></p><p>代码描述:</p><table><colgroup><col style="width: 18%"><col style="width: 81%"></colgroup><thead><tr class="header"><th></th><th><p>typedef struct DNode{</p><blockquote><p>ElemType data;</p><p>struct DNode *prior, *next;</p><p>}DNode,*DLinkList;</p></blockquote></th></tr></thead><tbody></tbody></table><p>头插法和尾插法的补充<br>循环链表和双向链表的内容</p><p><em><strong><del><u>插入操作等等未完待续…</u></del></strong></em></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case 1  基本语法</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见运算符</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/</url>
+      
+        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image1-42.png" alt="image1"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微分方程模型与ODE函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/</url>
+      
+        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>符号计算函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/</url>
+      
+        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>线性代数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/</url>
+      
+        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>课程介绍,成绩构成</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/../resources/image1-40.png" alt="image1"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>非线性方程求解</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
       
       
       
@@ -2443,7 +2443,7 @@
       <link href="/2022/12/16/hello-world/"/>
       <url>/2022/12/16/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><hr><h1 id="hexo-webpushr-notification"><a href="#hexo-webpushr-notification" class="headerlink" title="hexo-webpushr-notification"></a>hexo-webpushr-notification</h1><p>本仓库&#x2F;插件 内容根据 <strong><a href="https://github.com/glazec/hexo-web-push-notification">原仓库</a></strong> 进行修改<br>感谢原作者 <strong><a href="https://github.com/glazec">@glazec</a></strong></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>推荐使用 <code>npm</code> 以插件形式安装</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i hexo-webpushr-notification<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>如果你想了解推送效果，或者如何获取 <code>key</code>可前往博客查看，否则建议您直接查看配置，因为博客配置内容不会及时更新<br><a href="https://blog.ccknbc.cc/posts/hexo-webpushr-notification/">文档</a></p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>在hexo配置文件 <code>_config.yml</code>粘贴如下内容，并按需配置</p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">webpushr</span><span class="token punctuation">:</span>  <span class="token key atrule">webpushrKey</span><span class="token punctuation">:</span> <span class="token string">"webpushrKey"</span>  <span class="token key atrule">webpushrAuthToken</span><span class="token punctuation">:</span> <span class="token string">"webpushrAuthToken"</span>  <span class="token comment"># 出于安全考虑，建议将上述两个重要参数添加至系统全局环境变量，并删除或注释掉此处配置</span>  <span class="token comment"># 否则可在网页端向访问者或订阅用户发送推送 https://www.webpushr.com/api-playground</span>  <span class="token comment"># 例如GitHub Actions环境变量配置，参数名不变，密钥名自定义，可参考如下</span>  <span class="token comment"># env:</span>  <span class="token comment">#     webpushrKey: $&#123;&#123; secrets.WEBPUSHR_KEY &#125;&#125;</span>  <span class="token comment">#     webpushrAuthToken: $&#123;&#123; secrets.WEBPUSHR_AUTH_TOKEN &#125;&#125;</span>  <span class="token comment"># 如果您的仓库私有，则无需担心此问题</span>  <span class="token key atrule">trackingCode</span><span class="token punctuation">:</span> <span class="token string">"BB9Y-w9p3u0CKA7UP9nupB6I-_NqE2MuODmKJjyC4W2YflX06Ff_hEhrNJfonrut5l6gCa28gC83q2OII7Qv-oA"</span>  <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token string">"https://jsd.cdn.zzko.cn/gh/ccknbc-backup/cdn/image/pwa/192.png"</span> <span class="token comment"># 必须为192*192 png图片</span>  <span class="token comment"># auto_hide: "0" # 默认为 1，代表true，即自动隐藏</span>  <span class="token comment"># sort: "date" # 默认为updated，即只要最新文章更改了更新时间即推送新文章，改为date即文章第一次发布时间</span>  <span class="token comment"># delay: "30" # 延时推送，考虑到CDN缓存更新，默认定时为在 hexo d 10分钟后推送，单位为分钟（最短时间为5min）</span>  <span class="token comment"># expire: "15d" # 推送过期时长，默认值为7天，格式如下：'5m'代表5分钟,'5h'代表5小时, '5d'代表5天.</span>  <span class="token comment"># image: # 默认为文章封面，Front-matter 属性为'cover'(butterfly主题友好选项)，如果您没有定义默认封面或此属性，请在这里设置默认image</span>  <span class="token key atrule">action_buttons</span><span class="token punctuation">:</span> <span class="token comment">#false # ，默认第一个按钮为前往查看文章，您可以关闭false后替换第二个按钮相关属性，因参数需求限制（本人太菜）否则将显示两个前往查看按钮</span>    <span class="token punctuation">[</span>      <span class="token punctuation">&#123;</span>        <span class="token key atrule">"title"</span><span class="token punctuation">:</span> <span class="token string">"订阅页面"</span><span class="token punctuation">,</span>        <span class="token key atrule">"url"</span><span class="token punctuation">:</span> <span class="token string">"https://blog.ccknbc.cc/sub"</span>      <span class="token punctuation">&#125;</span>    <span class="token punctuation">]</span>  <span class="token comment"># 以下配置为按订阅主题推送给不同订阅用户，请按照数组形式，一一对应，具体位置请看使用文档</span>  <span class="token key atrule">categories</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>工作<span class="token punctuation">,</span> 博客<span class="token punctuation">,</span> 工具<span class="token punctuation">,</span> 生活<span class="token punctuation">,</span> 音乐<span class="token punctuation">,</span> 学习<span class="token punctuation">]</span>  <span class="token key atrule">segment</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"484223"</span><span class="token punctuation">,</span> <span class="token string">"484224"</span><span class="token punctuation">,</span> <span class="token string">"484225"</span><span class="token punctuation">,</span> <span class="token string">"484226"</span><span class="token punctuation">,</span> <span class="token string">"484227"</span><span class="token punctuation">,</span> <span class="token string">"484229"</span><span class="token punctuation">]</span>  <span class="token comment"># endpoint: sid # 可选配置 all / segment / sid</span>  <span class="token comment"># 默认为 segment，即根据不同主题推送细分，同时配置上述选项</span>  <span class="token comment"># 官方文档参数见 https://docs.webpushr.com/introduction-to-rest-api</span>  <span class="token comment"># 例如 all，即推送至所有用户；针对测试，可只推送给单个用户即自己，同时设置 sid 选项</span>  <span class="token key atrule">sid</span><span class="token punctuation">:</span> <span class="token string">"119810055"</span> <span class="token comment"># 单个用户ID 可在控制台查看 https://app.webpushr.com/subscribers</span>  <span class="token comment"># 此外，在文章 Frontmatter 处</span>  <span class="token comment"># 可覆盖auto_hide和expire配置，针对特别提醒文章可以设置不自动隐藏及过期时间延长等操作</span>  <span class="token comment"># 以及可指定schedule参数（例如：schedule: 2022-10-01 00:00:00），定时推送，而非延时发送</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="额外配置"><a href="#额外配置" class="headerlink" title="额外配置"></a>额外配置</h2><p>因官方sw脚本注册后，我们无法注册自己的sw脚本，但官方提供了配置，方便我们使用sw的缓存，拦截请求等功能<br>因兼容性未知，不确定是否有其他问题，但我个人目前没什么问题，主要是sw脚本编写问题</p><p>首先在配置项中添加 <code>sw: &quot;none&quot;</code>配置项</p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">webpushr</span><span class="token punctuation">:</span>  <span class="token key atrule">sw</span><span class="token punctuation">:</span> <span class="token string">"none"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>另外，你还需要在你的脚本文件（例如sw.js）中引入</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">importScripts</span><span class="token punctuation">(</span><span class="token string">'https://cdn.webpushr.com/sw-server.min.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果你需要了解如何编写service worker脚本，可以参考以下文章或项目</p><p><a href="https://kmar.top/posts/73014407/">hexo-swpp</a></p><p><a href="https://blog.cyfan.top/p/c0af86bb.html">Service Worker</a></p><p><a href="https://clientworker.js.org/">clientworker</a></p><p><a href="https://github.com/GoogleChrome/workbox">Workbox</a></p><pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
       
       
       <categories>
