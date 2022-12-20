@@ -581,110 +581,6 @@
     
     
     <entry>
-      <title>case 1  基本语法</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
-      
-        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见运算符</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/</url>
-      
-        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image1-42.png" alt="image1"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微分方程模型与ODE函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/</url>
-      
-        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>符号计算函数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/</url>
-      
-        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>线性代数</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/</url>
-      
-        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>课程介绍,成绩构成</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/../resources/image1-40.png" alt="image1"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>非线性方程求解</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>homework1</title>
       <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/"/>
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/</url>
@@ -911,6 +807,110 @@
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/</url>
       
         <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={EDA1F8B2-236A-4984-A9E1-31CF029599FA}&amp;71&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">outline</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={2B5827D1-3FCA-49AC-8306-970DD00CA74B}&amp;E1&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">单链表的结构</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={E524CB0E-23BB-4741-BEA8-E11356B4CDA4}&amp;C9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">单链表的实现</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={ED2695E9-6382-4E51-939D-4B1187C8486C}&amp;2D&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">双链表</a></p></th></tr></thead><tbody></tbody></table><p><strong>outline</strong></p><ul><li>单链表的结构</li><li>单链表的实现</li><li>双链表</li><li>循环链表</li></ul><p><strong>单链表的结构</strong><br>定义:链式存储的线性表</p><table><thead><tr><th><strong>data</strong></th><th><strong>next</strong></th></tr></thead><tbody><tr><td>数据域 指针域</td><td></td></tr></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>typedef struct LNode{</p><blockquote><p>ElemType data;</p><p>struct LNode *next;</p><p>}LNode,*LinkList;</p></blockquote></th></tr></thead><tbody></tbody></table>*这里还有个带不带头结点的问题:*<p><u>增加一个头结点的目的是方便运算的实现,在单链表中,如果没有头结点的话需要把第一个结点和后面的结点进行分类,这样就比较麻烦了,先说头指针(链表名),头结点(不必要,但有用,data域不一定有意义,也可以存链表长度),首元结点的概念</u></p><p><strong>单链表的实现</strong><br>(1)按序号查找结点值(按位查找)<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image1-47.png" alt="image1"></p><p>L是头指针</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>LNode *GetElem(LinkList L, int i){</p><blockquote><p>int j = 1;// count</p><p>LNode *p = L -&gt; next;//因为有头结点,所以p指向下一个</p><p>if(i == 0) return L;</p><p>if(i &lt; 0) return NULL;</p><p>while(p&amp;&amp;j&lt;i){</p><p>p = p -&gt; next; j++;</p><p>}</p><p>return p;</p><p>}</p></blockquote></th></tr></thead><tbody></tbody></table>(2)按值查找表结点![image1](../../resources/image1-47.png)<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>LNode *LocateElem(LinkList L, ElemType e){</p><blockquote><p>LNode *p = L -&gt; next;</p><p>while(p != NULL &amp;&amp; p -&gt; data != e)</p><p>p = p -&gt; next;</p><p>return p;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>P.S. 此处应有一道例题(3)插入结点操作(将值为x的新结点插入到单链表的第i个位置上)![image2](../../resources/image2-46.png)实现插入操作的代码如下(前插操作,在某个结点前插入结点):<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>p = GetElem(L,i - 1);</p><blockquote><p>s -&gt; next = p -&gt; next:</p><p>p -&gt; next = s;</p></blockquote></th></tr></thead><tbody></tbody></table>后插操作(在某个结点之后插入新结点)在某个结点之后插入新结点后交换数据域那么就转化为前插<table><colgroup><col style="width: 21%"><col style="width: 78%"></colgroup><thead><tr class="header"><th></th><th><p>s -&gt; next = p -&gt; next;</p><p>p -&gt; next = s;</p><p>temp = p -&gt; data;</p><p>p -&gt; data = s -&gt; data;</p><p>s -&gt; data = temp;</p></th></tr></thead><tbody></tbody></table><p>(4)删除结点操作<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image3-39.png" alt="image3"><br>删除结点的代码片段:</p><table><colgroup><col style="width: 22%"><col style="width: 77%"></colgroup><thead><tr class="header"><th></th><th><p>p = GetElem(L,i - 1);</p><p>q = p -&gt; next;</p><p>p -&gt; next = q -&gt; next;</p><p>free(q);</p></th></tr></thead><tbody></tbody></table><p><strong>双链表</strong><br>双链表结点中有两个指针prior和next,分别指向其前驱节点和后继结点<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/lian-biao/../resources/image4-38.png" alt="image4"></p><p>代码描述:</p><table><colgroup><col style="width: 18%"><col style="width: 81%"></colgroup><thead><tr class="header"><th></th><th><p>typedef struct DNode{</p><blockquote><p>ElemType data;</p><p>struct DNode *prior, *next;</p><p>}DNode,*DLinkList;</p></blockquote></th></tr></thead><tbody></tbody></table><p>头插法和尾插法的补充<br>循环链表和双向链表的内容</p><p><em><strong><del><u>插入操作等等未完待续…</u></del></strong></em></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case 1  基本语法</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-han-shu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见运算符</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/</url>
+      
+        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image1-42.png" alt="image1"></li><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/chang-jian-yun-suan-fu/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微分方程模型与ODE函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/wei-fen-fang-cheng-mo-xing-yu-ode-han-shu/</url>
+      
+        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>符号计算函数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fu-hao-ji-suan-han-shu/</url>
+      
+        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>线性代数</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/xian-xing-dai-shu/</url>
+      
+        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>课程介绍,成绩构成</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/ke-cheng-jie-shao-cheng-ji-gou-cheng/../resources/image1-40.png" alt="image1"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>非线性方程求解</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
       
       
       
@@ -1387,32 +1387,6 @@
     
     
     <entry>
-      <title>命令总结</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p><a href="../../resources/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a></p><p>git learning over!<br>–2022.8.26</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常用基本操作命令大全了算是,没有init就是</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/</url>
-      
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>开发一个新feature(其实是bug...)，最好新建一个分支；</p><p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D &lt;name&gt;强行删除。</p><p>git push -f origin branchname // 这个-f命令大公司应该都不然用,都是用</p><p>git rebase 先拉回一个最新的commit到本地分支上手动修改,</p></th></tr></thead><tbody></tbody></table>**1.git clone // 到本地  2.git checkout -b xxx 切换至新分支xxx  （相当于复制了remote的仓库到本地的xxx分支上  3.修改或者添加本地代码（部署在硬盘的源文件上）  4.git diff 查看自己对代码做出的改变  5.git add 上传更新后的代码至暂存区  6.git commit 可以将暂存区里更新后的代码更新到本地git  7.git push origin xxx 将本地的xxxgit分支上传至github上的git****（如果在写自己的代码过程中发现远端GitHub上代码出现改变）  1.git checkout main 切换回main分支  2.git pull origin master(main) 将远端修改过的代码再更新到本地  3.git checkout xxx 回到xxx分支  4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  （-f ---》强行）  6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit****远端完成更新后****1.git branch -d xxx 删除本地的git分支****2.git pull origin master 再把远端的最新代码拉至本地**]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Go的代码风格简述</title>
       <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-de-dai-ma-feng-ge-jian-shu/"/>
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-de-dai-ma-feng-ge-jian-shu/</url>
@@ -1652,6 +1626,32 @@
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/yun-suan-cao-zuo-fu/</url>
       
         <content type="html"><![CDATA[<p>基本和C语言的相同,下面只罗列运算符的优先级(实际也不用记,用用就知道了)</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>* / % &lt;&lt; &gt;&gt; &amp; &amp;^</p><p>+ - | ^</p><p><strong>== != &lt; &lt;= &gt; &gt;=</strong></p><p>&amp;&amp;</p><p>||</p></th></tr></thead><tbody></tbody></table>从上到下逐级递减-   值得一提的是Go也支持字符串通过"+"连接,当然"+="也可以,例如<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>println("Go"+"lang")//Golang</p><p>var a = "Go"</p><p>a += "lang"</p><p>println(a)//Golang</p></th></tr></thead><tbody></tbody></table>-   <u>还有,Go也支持"++""--"操作,但是没有返回值,不能当作表达式使用</u>-   <u>Go中的取反操作符不是"\~",而是"^"</u>    -   和其他流行语言一样,Go也支持"+"去连接字符串-   和Java不同,Go支持无符号数,所以不需要无符号右移运算符>\>\>-   Go不支持幂运算符,所以要使用<sub></sub>​math​<sub></sub>标准库包中的<sub></sub>​Pow​<sub></sub>函数进行幂运算-   多了个特殊的**清位运算符**<sub></sub>​&^​<sub></sub>    -   <sub></sub>​m&^n​<sub></sub>等价于<sub></sub>​m&(^n)​<sub></sub>如果是2的幂运算的话,可以使用<sub></sub>​>\>​<sub></sub>(除2的次数)或者<sub></sub>​\<\<​<sub>(乘2的次数)注意:移位操作的结果都是整数移位运算在32和64位架构的机器上有时候如果不注重细节会出大bug</\<​<sub>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>命令总结</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p><a href="../../resources/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a></p><p>git learning over!<br>–2022.8.26</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常用基本操作命令大全了算是,没有init就是</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>开发一个新feature(其实是bug...)，最好新建一个分支；</p><p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D &lt;name&gt;强行删除。</p><p>git push -f origin branchname // 这个-f命令大公司应该都不然用,都是用</p><p>git rebase 先拉回一个最新的commit到本地分支上手动修改,</p></th></tr></thead><tbody></tbody></table>**1.git clone // 到本地  2.git checkout -b xxx 切换至新分支xxx  （相当于复制了remote的仓库到本地的xxx分支上  3.修改或者添加本地代码（部署在硬盘的源文件上）  4.git diff 查看自己对代码做出的改变  5.git add 上传更新后的代码至暂存区  6.git commit 可以将暂存区里更新后的代码更新到本地git  7.git push origin xxx 将本地的xxxgit分支上传至github上的git****（如果在写自己的代码过程中发现远端GitHub上代码出现改变）  1.git checkout main 切换回main分支  2.git pull origin master(main) 将远端修改过的代码再更新到本地  3.git checkout xxx 回到xxx分支  4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  （-f ---》强行）  6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit****远端完成更新后****1.git branch -d xxx 删除本地的git分支****2.git pull origin master 再把远端的最新代码拉至本地**]]></content>
       
       
       
@@ -2232,19 +2232,6 @@
     
     
     <entry>
-      <title>关于上次问题的分析总结</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/guan-yu-shang-ci-wen-ti-de-fen-xi-zong-jie/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/guan-yu-shang-ci-wen-ti-de-fen-xi-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p>Q:现在电脑怎么访问公网<br>A:<br>由于现在IP v4地址匮乏,所以现在拨号光纤默认分配私网地址,现在电脑上网ip是从运营商那里得到一个动态的ip地址(大内网时代,一个小ip池有3-5个ip分配),如果硬要一个公网ip也可以给运营商打电话说装监控需要一个公网ip,客服分配了公网ip后可以方便自家电脑通过DDNS映射到公网上,这样就可以远程访问了.但是这个账号每次PPOE拨号以后会重新分配ip地址,所以需要DDNS.<br>如果想要自己搭建一个网站映射到公网上,这个可行性不高,因为一.带宽不足,二.公网ip不固定,三.需要身份验证才能用http隧道.如果联系ISP网络服务提供商的话,带宽费用大概是50M一年一万多.<br>其实私网ip有利于保护个人电脑信息安全,如果暴露到公网上,容易被攻击</p><p><strong>新名词</strong></p><ul><li>DHCP(Dynamic Host Configuration Protocol)动态主机配置协议,服务器给客户机自动分配ip地址和子网掩码</li><li>子网掩码:为了解决IP v4地址不足诞生的虚拟ip技术,需要结合IP地址一起使用,方便辨别局域网和广域网ip,是个32位地址,还可以把一个大的IP网络划分成小的子网络</li><li>端口转发:将一个IP的端口和另一个ip的端口对应起来</li><li>静态ARP绑定:将内网的机器MAC地址与对应的IP固定起来</li><li>MAC地址(Media Access Control Address)又称物理地址,以太网地址,局域网地址,是一个确定网络设备位置的地址,MAC地址必须具备唯一性,一般被硬件厂商生产时就固化在硬件里,因为厂商不同,所以格式不一.</li><li>DDNS,先要了解DNS(Domain name Server,域名解析服务,作用:域名解析成ip),而DDNS多的那个”D”就是”Dynamic”,动态的,我们访问”<a href="http://www.baidu.com" 时,ping的域名返回的是ip,由于dhcp的存在,我们的ip会不断变化,因此要动态解析,所以就有了ddns服务 ">www.baidu.com&quot;时,ping的域名返回的是IP,由于DHCP的存在,我们的IP会不断变化,因此要动态解析,所以就有了DDNS服务</a>.</li></ul><p>在China,Web服务收到严格管控,因此,Web服务用到的80&#x2F;8080&#x2F;443端口都处于封锁状态,如果一旦被扫描到架设Web服务很可能会被请喝茶,所以不要在公网转发使用这些敏感端口.</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>11 </title>
       <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/11/"/>
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/11/</url>
@@ -2354,6 +2341,19 @@
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/</url>
       
         <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/../resources/image1-6.png" alt="image1"></p><p><strong>&lt;!DOCTYPE&gt;声明</strong><br>放在&lt;html&gt;之前<br>&lt;!DOCTYPE&gt;声明有助于浏览器中正确显示网页。</p><p><em>来自 &lt;<a href="https://www.runoob.com/html/html-intro.html">https://www.runoob.com/html/html-intro.html</a>&gt;</em></p><p>通用声明在不兼容时查看超链接</p><p><strong>中文编码</strong><br>在&lt;head&gt;处把字符声明改成utf-8或者GBK</p><table><thead><tr><th>&lt;meta charset &#x3D; “UTF-8”&gt;</th></tr></thead></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于上次问题的分析总结</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/guan-yu-shang-ci-wen-ti-de-fen-xi-zong-jie/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/guan-yu-shang-ci-wen-ti-de-fen-xi-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p>Q:现在电脑怎么访问公网<br>A:<br>由于现在IP v4地址匮乏,所以现在拨号光纤默认分配私网地址,现在电脑上网ip是从运营商那里得到一个动态的ip地址(大内网时代,一个小ip池有3-5个ip分配),如果硬要一个公网ip也可以给运营商打电话说装监控需要一个公网ip,客服分配了公网ip后可以方便自家电脑通过DDNS映射到公网上,这样就可以远程访问了.但是这个账号每次PPOE拨号以后会重新分配ip地址,所以需要DDNS.<br>如果想要自己搭建一个网站映射到公网上,这个可行性不高,因为一.带宽不足,二.公网ip不固定,三.需要身份验证才能用http隧道.如果联系ISP网络服务提供商的话,带宽费用大概是50M一年一万多.<br>其实私网ip有利于保护个人电脑信息安全,如果暴露到公网上,容易被攻击</p><p><strong>新名词</strong></p><ul><li>DHCP(Dynamic Host Configuration Protocol)动态主机配置协议,服务器给客户机自动分配ip地址和子网掩码</li><li>子网掩码:为了解决IP v4地址不足诞生的虚拟ip技术,需要结合IP地址一起使用,方便辨别局域网和广域网ip,是个32位地址,还可以把一个大的IP网络划分成小的子网络</li><li>端口转发:将一个IP的端口和另一个ip的端口对应起来</li><li>静态ARP绑定:将内网的机器MAC地址与对应的IP固定起来</li><li>MAC地址(Media Access Control Address)又称物理地址,以太网地址,局域网地址,是一个确定网络设备位置的地址,MAC地址必须具备唯一性,一般被硬件厂商生产时就固化在硬件里,因为厂商不同,所以格式不一.</li><li>DDNS,先要了解DNS(Domain name Server,域名解析服务,作用:域名解析成ip),而DDNS多的那个”D”就是”Dynamic”,动态的,我们访问”<a href="http://www.baidu.com" 时,ping的域名返回的是ip,由于dhcp的存在,我们的ip会不断变化,因此要动态解析,所以就有了ddns服务 ">www.baidu.com&quot;时,ping的域名返回的是IP,由于DHCP的存在,我们的IP会不断变化,因此要动态解析,所以就有了DDNS服务</a>.</li></ul><p>在China,Web服务收到严格管控,因此,Web服务用到的80&#x2F;8080&#x2F;443端口都处于封锁状态,如果一旦被扫描到架设Web服务很可能会被请喝茶,所以不要在公网转发使用这些敏感端口.</p>]]></content>
       
       
       
