@@ -33,7 +33,7 @@
       <link href="/2022/12/19/ubuntu-git-ssh/"/>
       <url>/2022/12/19/ubuntu-git-ssh/</url>
       
-        <content type="html"><![CDATA[<h1 id="解决了我的心头大患"><a href="#解决了我的心头大患" class="headerlink" title="解决了我的心头大患"></a>解决了我的心头大患</h1><p><a href="https://stackoverflow.com/questions/59692874/ssh-vt-gitgithub-com-kex-exchange-identification-connection-closed-by-remote" title="stackoverflow帖子,需要翻墙">帖子链接</a></p><p>原因分析:</p><ul><li>Ubuntu翻墙使用的Clash并且所有网络访问走的都是指定端口9494</li><li>导致一直github远程仓库无法认证,生成了ssh公钥都两遍</li><li>还得是\stackoverflow老哥靠谱,指出VPN的可能性</li><li>最后通过先在 <code>.ssh</code>中建立 <code>config</code>文件,随后配置端口Port443以及认证密钥<ul><li><pre><code class="bash">Host github.com    User git    Port 443    HostName ssh.github.com    IdentityFile ~/.ssh/id_rsa </code></pre></li></ul></li><li>最后通过命令 <code>ssh -T git@github.com</code> yes后认证成功</li><li>解决,继续部署静态博客</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="解决了我的心头大患"><a href="#解决了我的心头大患" class="headerlink" title="解决了我的心头大患"></a>解决了我的心头大患</h1><p><a href="https://stackoverflow.com/questions/59692874/ssh-vt-gitgithub-com-kex-exchange-identification-connection-closed-by-remote" title="stackoverflow帖子,需要翻墙">帖子链接</a></p><p>原因分析:</p><ul><li>Ubuntu翻墙使用的Clash并且所有网络访问走的都是指定端口9494</li><li>导致一直github远程仓库无法认证,生成了ssh公钥都两遍</li><li>还得是\stackoverflow老哥靠谱,指出VPN的可能性</li><li>最后通过先在 <code>.ssh</code>中建立 <code>config</code>文件,随后配置端口Port443以及认证密钥<ul><li>&#96;&#96;&#96;bash<br>Host github.com<br>User git<br>Port 443<br>HostName ssh.github.com<br>IdentityFile ~&#x2F;.ssh&#x2F;id_rsa <pre class="line-numbers language-none"><code class="language-none">* 最后通过命令 &#96;ssh -T git@github.com&#96; yes后认证成功* 解决,继续部署静态博客12.20号,在coding上部署的时候发现ssh连接验证又出现了问题!&gt; 具体表现为使用下面的命令直接卡住,还不如github当初的直接拒绝呢使用命令:&#96;ssh -T git@git.coding.net&#96;&#96;ssh -T git@ssh.coding.net&#96;均不奏效,遂更改 &#96;.ssh&#96;文件里面的 &#96;config&#96;文件内容如下:&#96;&#96;&#96;bashHost coding.net    User git    Port 443    HostName ssh.coding.net    IdentityFile ~&#x2F;.ssh&#x2F;id_rsa  Host *.coding.net    User git    Port 443    HostName git.coding.net    HostkeyAlgorithms +ssh-rsa    PubkeyAcceptedAlgorithms +ssh-rsa    IdentityFile ~&#x2F;.ssh&#x2F;id_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul></li></ul><p>两个文件配置都试过,可惜就下面那个加 <code>*.</code>的还稍微靠谱一点,起码连接的时候把端口改为443了,但是都还是卡住了,随后发现这个命令可以完成认证:</p><p><code>ssh -T git@e.coding.net</code></p><p><img src="/2022/12/19/ubuntu-git-ssh/Ubuntu-git-ssh/1671529868758.png" alt="1671529868758"></p>]]></content>
       
       
       
@@ -919,84 +919,6 @@
     
     
     <entry>
-      <title>1&amp;2 线下经济学</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/</url>
-      
-        <content type="html"><![CDATA[<p>1&amp;2 线下经济学<br>2022年10月19日 星期三<br>下午2:31</p><p><strong>第一次线下经济学</strong><br>实证分析和规范分析</p><ul><li>实证分析研究”是”还是”不是”的问题,是脱离社会的理论</li><li>规范分析研究”好”还是”不好”的问题,研究资源的配置</li></ul><p>短期内需求弹性低<br>Supply and Demand and Government policies<br><strong>Control on Price</strong></p><ul><li>Price Ceiling<ul><li>有约束力的Price Ceiling 比均衡价格更<em>低</em><ul><li>当然这会导致有些buyer买不到</li></ul></li></ul></li><li>Price Floor<ul><li>binding price 在均衡价格上方<ul><li>导致一部分seller卖不出去<br><strong>Taxes</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image1-9.jpeg" alt="image1"><br>～ 红色的线类似于楔子 ～<br><strong>The impact of tax</strong></li></ul></li></ul></li><li>减少了购买者的积极性<br><strong>The incident of the tax</strong></li><li>红色的线（即税收）受弹性更少的一方影响更大（此处有一个奢侈品税的例子）</li><li>The burden of a tax falls more heavily on the side of the market that is less elastic.</li></ul><p><strong>The law of the irrelevance of the law</strong><br>法律无效定律</p><ul><li>政府规定的税收，和实际上谁支付无关，只和交易的双方相对弹性有关<ul><li>比方说*钻戒*💍，主要看谁追谁</li></ul></li></ul><p><strong>The incidence of the tax Calculation_1</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image2-38.png" alt="image2"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image3-32.png" alt="image3"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image4-32.png" alt="image4"><br>解四个方程组<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image5-4.jpeg" alt="image5"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image6-1.jpeg" alt="image6"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image7-1.jpeg" alt="image7"><br>里面的Deadweight loss是无谓损失</p><ul><li>税收造成无谓损失，是<strong>因为它使买者和卖者改变了自己的行为</strong>。</li></ul><p><strong>International Trade</strong></p><ul><li>决定一国是进口国还是出口国取决于<em>比较优势</em>，优势又取决于<em>机会成本</em><ul><li>优势体现在<strong>价格</strong>上</li></ul></li></ul><ol><li><p>International Trade in EXPORT country</p></li><li><p>International trade in IMPORTING country<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image8-1.jpg" alt="image8"></p></li><li><p>The Effects of a Tariffs</p><ul><li>Traiffs are taxes on <u>imported</u> goods.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image9-1.jpeg" alt="image9"></li></ul></li></ol><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image10-1.jpeg" alt="image10"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case 1 Ten Principals</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case-1-ten-principals/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case-1-ten-principals/</url>
-      
-        <content type="html"><![CDATA[<p>四次小班研讨,两次美团研究对象</p><p><strong>十大原则</strong><br><strong>How people make decisions.</strong></p><ul><li><p><strong>People face tradeoffs.</strong></p></li><li><p><strong>Opportunity cost</strong></p></li><li><p><strong>Rational people think at the margin</strong></p></li><li><p><strong>People respond to incentives</strong><br><strong>How people interact with each other.</strong></p></li><li><p>Trade can make everyone better off.</p></li><li><p>Markets are usually a good way to organize economic activity.</p></li><li><p>Governments can sometimes improve market outcomes.</p></li><li><p>The standard of living depends on a country’s production.</p></li><li><p>Prices rise when the government prints too much money.</p></li><li><p>Society faces a short-run tradeoff between inflation and unemployment.</p></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case 2 Thinking Like an Economist</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case-2-thinking-like-an-economist/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case-2-thinking-like-an-economist/</url>
-      
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case%25202%2520Thinking%2520Like%2520an%2520Economist&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={8C13B34B-E092-4B1B-BF49-4C6AB1EC6462}&amp;object-id={A47BC73C-1F19-446F-BF22-9D2E983AE745}&amp;47&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Microeconomics and Macroeconomics</a></p><p><a href="onenote:#case%25202%2520Thinking%2520Like%2520an%2520Economist&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={8C13B34B-E092-4B1B-BF49-4C6AB1EC6462}&amp;object-id={AC50BD7F-1155-48B5-9618-8FB818EAD87E}&amp;61&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Positive versus Normative Analysis</a></p></th></tr></thead><tbody></tbody></table><p><strong>Microeconomics and Macroeconomics</strong></p><ul><li>Microeconomics focuses on the individual parts of the economy.</li><li>Macroeconomics looks at the economy as a whole.</li></ul><p><strong>Positive versus Normative Analysis</strong><br>实例分析与规范分析</p><ul><li><p><strong>The Scientific Method : Observation,</strong><br><strong>Theory and More Observation</strong></p></li><li><p><strong>The Role of Assumptions</strong></p></li><li><p><strong>Economic Models</strong></p></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case3 Two Models</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case3-two-models/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case3-two-models/</url>
-      
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={DEBCD2F0-0984-4245-85C5-3B974A349E0B}&amp;46&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Circular-Flow Diagram</a></p><blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={EF1D90BA-BF5D-48EF-9A6F-E38BC3F12146}&amp;83&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">循环流向图</a></p></blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={DEBCD2F0-0984-4245-85C5-3B974A349E0B}&amp;F9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Production Possibilities Frontier(PPF)</a></p><blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={EF1D90BA-BF5D-48EF-9A6F-E38BC3F12146}&amp;2F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">生产可能性边界</a></p><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={FBFBED7E-0FF5-438E-AE7E-8CB9276CFF55}&amp;59&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Economic Growth</a></p></blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={2DC9EAEE-0A83-4D5D-A8C1-B356D0BE0E66}&amp;65&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Below are some examples of PPF</a></p></th></tr></thead><tbody></tbody></table><p><strong>The Circular-Flow Diagram</strong><br><strong>循环流向图</strong></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case3-two-models/../resources/image1-34.png" alt="image1"><br>Firms &lt;–&gt; Households</p><p><strong>The Production Possibilities Frontier(PPF)</strong><br><strong>生产可能性边界</strong><br>线上的每一点都是Trade-off</p><p>——————there need a picture ——————–</p><p><strong>Economic Growth</strong><br>An outward shift in the production possibilities frontier.<br>Influence factors:</p><ul><li>Investment</li><li>Technology</li><li>Education</li><li>Research</li><li>Institution</li></ul><p><strong>Below are some examples of PPF</strong></p><ul><li><strong>Necessities &amp; Luxuries</strong></li><li><strong>Private goods &amp; Public goods</strong></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case4 Interdependence </title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case4-interdependence/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case4-interdependence/</url>
-      
-        <content type="html"><![CDATA[<p><strong>Basic of Trade</strong></p><ul><li>Absolute Advantage<ul><li>The comparison among producers of a good according to their productivity.</li></ul></li><li>Comparative Advantage<ul><li>Compares producers of a good according to their opportunity cost. The producer who has the smaller opportunity cost of producing…</li></ul></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case5 Supply and Demand : How market works</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case5-supply-and-demand-how-market/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case5-supply-and-demand-how-market/</url>
-      
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;43&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Market Forces of Supply and Demand</a></p><blockquote><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;74&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">供给和需求的市场力量</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;A3&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">A market is made of buyers and sellers</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={9F3CEA25-5FEA-428C-AD3A-421EC47548D4}&amp;A9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand_influence factor</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={A957D748-A48D-4343-846C-6CEF0309666A}&amp;89&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand Function</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={F16BA441-928C-465E-8AEA-767117D4B54A}&amp;63&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和需求量的关系</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={E34D92D5-A71E-48F2-BEC5-749402C6E15D}&amp;9F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和供给的关系</a></p></blockquote></th></tr></thead><tbody></tbody></table><p><strong>The Market Forces of Supply and Demand</strong></p><p><strong>供给和需求的市场力量</strong></p><p><strong>A market is made of buyers and sellers</strong></p><ul><li>Buyers determine demand</li><li>Sellers determine supply<br><strong>Demand_influence factor</strong></li><li>The price itself</li><li>The salary of consumers</li><li>Other goods related</li><li>Tastes</li><li>Expectations</li><li>Number of buyers</li></ul><p><strong>Demand Function</strong></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case5-supply-and-demand-how-market/../resources/image1-35.png" alt="image1"></p><p>中点法是个什么?</p><p><strong>需求和需求量的关系</strong></p><ul><li>需求量变动是指由于价格变动引起的 消费者 愿意并且能够购买数量的变动， 需求 的变动是指除价格以外的其他因素变动引起的消费者在每一可能的价格下所有需求量的变动。<br>需求量是需求曲线上的点,需求是一条线</li></ul><p><strong>需求和供给的关系</strong></p><p>会随着<strong>价格</strong>而改变</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>case 协方差,相关系数与矩</title>
       <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/"/>
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/case-xie-fang-chai-xiang-guan-xi-shu-yu-ju/</url>
@@ -1366,6 +1288,162 @@
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/</url>
       
         <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image1-23.png" alt="image1"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image2-24.png" alt="image2"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image3-3.jpeg" alt="image3"><br>区间的开闭需要注意</p><p><strong>离散型随机变量的函数与分布律</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image4-18.png" alt="image4"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image5-10.png" alt="image5"><br><strong>离散卷积公式</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image6-11.png" alt="image6"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image7-12.png" alt="image7"><br>p一样,相互独立的二项分布加在一起也是二项分布,所以二项分布是具有可加性的分布<br>具有可加性的分布还有泊松分布<br>关于如何证明具有可加性,二项见上,剩下的可以根据<em>两个条件</em>推导<br><strong>连续型随机变量的函数及其分布</strong></p><ul><li>设X是连续型随机变量,若Y &#x3D; g(X)也是连续型随机变量,则:<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image8-9.png" alt="image8"></li><li>从前有个人,想研究标准正态分布的平方,还有更多的推导,所以有了以下内容:<ul><li><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/gai-lu-lun/sui-ji-bian-liang-de-han-shu-ji-qi-fen-bu/../resources/image9-7.png" alt="image9"></li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>1&amp;2 线下经济学</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/</url>
+      
+        <content type="html"><![CDATA[<p>1&amp;2 线下经济学<br>2022年10月19日 星期三<br>下午2:31</p><p><strong>第一次线下经济学</strong><br>实证分析和规范分析</p><ul><li>实证分析研究”是”还是”不是”的问题,是脱离社会的理论</li><li>规范分析研究”好”还是”不好”的问题,研究资源的配置</li></ul><p>短期内需求弹性低<br>Supply and Demand and Government policies<br><strong>Control on Price</strong></p><ul><li>Price Ceiling<ul><li>有约束力的Price Ceiling 比均衡价格更<em>低</em><ul><li>当然这会导致有些buyer买不到</li></ul></li></ul></li><li>Price Floor<ul><li>binding price 在均衡价格上方<ul><li>导致一部分seller卖不出去<br><strong>Taxes</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image1-9.jpeg" alt="image1"><br>～ 红色的线类似于楔子 ～<br><strong>The impact of tax</strong></li></ul></li></ul></li><li>减少了购买者的积极性<br><strong>The incident of the tax</strong></li><li>红色的线（即税收）受弹性更少的一方影响更大（此处有一个奢侈品税的例子）</li><li>The burden of a tax falls more heavily on the side of the market that is less elastic.</li></ul><p><strong>The law of the irrelevance of the law</strong><br>法律无效定律</p><ul><li>政府规定的税收，和实际上谁支付无关，只和交易的双方相对弹性有关<ul><li>比方说*钻戒*💍，主要看谁追谁</li></ul></li></ul><p><strong>The incidence of the tax Calculation_1</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image2-38.png" alt="image2"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image3-32.png" alt="image3"><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image4-32.png" alt="image4"><br>解四个方程组<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image5-4.jpeg" alt="image5"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image6-1.jpeg" alt="image6"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image7-1.jpeg" alt="image7"><br>里面的Deadweight loss是无谓损失</p><ul><li>税收造成无谓损失，是<strong>因为它使买者和卖者改变了自己的行为</strong>。</li></ul><p><strong>International Trade</strong></p><ul><li>决定一国是进口国还是出口国取决于<em>比较优势</em>，优势又取决于<em>机会成本</em><ul><li>优势体现在<strong>价格</strong>上</li></ul></li></ul><ol><li><p>International Trade in EXPORT country</p></li><li><p>International trade in IMPORTING country<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image8-1.jpg" alt="image8"></p></li><li><p>The Effects of a Tariffs</p><ul><li>Traiffs are taxes on <u>imported</u> goods.<br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image9-1.jpeg" alt="image9"></li></ul></li></ol><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/1-2-xian-xia-jing-ji-xue/../resources/image10-1.jpeg" alt="image10"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case 1 Ten Principals</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case-1-ten-principals/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case-1-ten-principals/</url>
+      
+        <content type="html"><![CDATA[<p>四次小班研讨,两次美团研究对象</p><p><strong>十大原则</strong><br><strong>How people make decisions.</strong></p><ul><li><p><strong>People face tradeoffs.</strong></p></li><li><p><strong>Opportunity cost</strong></p></li><li><p><strong>Rational people think at the margin</strong></p></li><li><p><strong>People respond to incentives</strong><br><strong>How people interact with each other.</strong></p></li><li><p>Trade can make everyone better off.</p></li><li><p>Markets are usually a good way to organize economic activity.</p></li><li><p>Governments can sometimes improve market outcomes.</p></li><li><p>The standard of living depends on a country’s production.</p></li><li><p>Prices rise when the government prints too much money.</p></li><li><p>Society faces a short-run tradeoff between inflation and unemployment.</p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case 2 Thinking Like an Economist</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case-2-thinking-like-an-economist/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case-2-thinking-like-an-economist/</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case%25202%2520Thinking%2520Like%2520an%2520Economist&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={8C13B34B-E092-4B1B-BF49-4C6AB1EC6462}&amp;object-id={A47BC73C-1F19-446F-BF22-9D2E983AE745}&amp;47&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Microeconomics and Macroeconomics</a></p><p><a href="onenote:#case%25202%2520Thinking%2520Like%2520an%2520Economist&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={8C13B34B-E092-4B1B-BF49-4C6AB1EC6462}&amp;object-id={AC50BD7F-1155-48B5-9618-8FB818EAD87E}&amp;61&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Positive versus Normative Analysis</a></p></th></tr></thead><tbody></tbody></table><p><strong>Microeconomics and Macroeconomics</strong></p><ul><li>Microeconomics focuses on the individual parts of the economy.</li><li>Macroeconomics looks at the economy as a whole.</li></ul><p><strong>Positive versus Normative Analysis</strong><br>实例分析与规范分析</p><ul><li><p><strong>The Scientific Method : Observation,</strong><br><strong>Theory and More Observation</strong></p></li><li><p><strong>The Role of Assumptions</strong></p></li><li><p><strong>Economic Models</strong></p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case3 Two Models</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case3-two-models/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case3-two-models/</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={DEBCD2F0-0984-4245-85C5-3B974A349E0B}&amp;46&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Circular-Flow Diagram</a></p><blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={EF1D90BA-BF5D-48EF-9A6F-E38BC3F12146}&amp;83&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">循环流向图</a></p></blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={DEBCD2F0-0984-4245-85C5-3B974A349E0B}&amp;F9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Production Possibilities Frontier(PPF)</a></p><blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={EF1D90BA-BF5D-48EF-9A6F-E38BC3F12146}&amp;2F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">生产可能性边界</a></p><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={FBFBED7E-0FF5-438E-AE7E-8CB9276CFF55}&amp;59&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Economic Growth</a></p></blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={2DC9EAEE-0A83-4D5D-A8C1-B356D0BE0E66}&amp;65&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Below are some examples of PPF</a></p></th></tr></thead><tbody></tbody></table><p><strong>The Circular-Flow Diagram</strong><br><strong>循环流向图</strong></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case3-two-models/../resources/image1-34.png" alt="image1"><br>Firms &lt;–&gt; Households</p><p><strong>The Production Possibilities Frontier(PPF)</strong><br><strong>生产可能性边界</strong><br>线上的每一点都是Trade-off</p><p>——————there need a picture ——————–</p><p><strong>Economic Growth</strong><br>An outward shift in the production possibilities frontier.<br>Influence factors:</p><ul><li>Investment</li><li>Technology</li><li>Education</li><li>Research</li><li>Institution</li></ul><p><strong>Below are some examples of PPF</strong></p><ul><li><strong>Necessities &amp; Luxuries</strong></li><li><strong>Private goods &amp; Public goods</strong></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case4 Interdependence </title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case4-interdependence/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case4-interdependence/</url>
+      
+        <content type="html"><![CDATA[<p><strong>Basic of Trade</strong></p><ul><li>Absolute Advantage<ul><li>The comparison among producers of a good according to their productivity.</li></ul></li><li>Comparative Advantage<ul><li>Compares producers of a good according to their opportunity cost. The producer who has the smaller opportunity cost of producing…</li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case5 Supply and Demand : How market works</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case5-supply-and-demand-how-market/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case5-supply-and-demand-how-market/</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;43&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Market Forces of Supply and Demand</a></p><blockquote><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;74&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">供给和需求的市场力量</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;A3&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">A market is made of buyers and sellers</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={9F3CEA25-5FEA-428C-AD3A-421EC47548D4}&amp;A9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand_influence factor</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={A957D748-A48D-4343-846C-6CEF0309666A}&amp;89&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand Function</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={F16BA441-928C-465E-8AEA-767117D4B54A}&amp;63&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和需求量的关系</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={E34D92D5-A71E-48F2-BEC5-749402C6E15D}&amp;9F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和供给的关系</a></p></blockquote></th></tr></thead><tbody></tbody></table><p><strong>The Market Forces of Supply and Demand</strong></p><p><strong>供给和需求的市场力量</strong></p><p><strong>A market is made of buyers and sellers</strong></p><ul><li>Buyers determine demand</li><li>Sellers determine supply<br><strong>Demand_influence factor</strong></li><li>The price itself</li><li>The salary of consumers</li><li>Other goods related</li><li>Tastes</li><li>Expectations</li><li>Number of buyers</li></ul><p><strong>Demand Function</strong></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case5-supply-and-demand-how-market/../resources/image1-35.png" alt="image1"></p><p>中点法是个什么?</p><p><strong>需求和需求量的关系</strong></p><ul><li>需求量变动是指由于价格变动引起的 消费者 愿意并且能够购买数量的变动， 需求 的变动是指除价格以外的其他因素变动引起的消费者在每一可能的价格下所有需求量的变动。<br>需求量是需求曲线上的点,需求是一条线</li></ul><p><strong>需求和供给的关系</strong></p><p>会随着<strong>价格</strong>而改变</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>访谈播客</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<ol><li>有什么书影响你成功最大？有什么书是读了绝对不会后悔的吗?</li><li>允许公布个人信息吗还是匿名</li><li>访谈教授预约</li><li>正装</li><li>纸笔录音记录</li><li>对青年人的要求看法</li><li>怎么成为一个leader</li><li>访谈类书籍格式</li><li>此书可以开源可以出版</li><li>您是怎么学习的,都是采用什么方法?信息来源是什么?</li><li>您对未来您所在领域的发展趋势预测</li><li></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>principal</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/</url>
+      
+        <content type="html"><![CDATA[<p>奥卡姆剃刀 如无必要勿增实体<br>一切都会过去<br>做正确的事比正确的做事更重要<br>身体和灵魂总有一个要在路上<br>找到尤达导师<br>辛苦学习和失败后懊恼哪个更痛苦?<br>如何补全短板？<br>很简单，把短板变成优势<br>如何成为第一？<br>很简单，各方面都是第一</p><p>干嘛要等着别人教，自学不行吗</p><p>指望谁都白扯，把希望寄托在自己身上</p><p>自己要相信自己<br>等着吧等着吧</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>soft-skill goal</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/</url>
+      
+        <content type="html"><![CDATA[<ul><li>学会一门乐器(笛子,钢琴)</li><li>英语无碍,第二外语</li><li>体育运动(网球台球举重)</li><li>增肌到143+</li><li>记录更新self</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论不要变成一个直男</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/</url>
+      
+        <content type="html"><![CDATA[<p>收拾一下自己，不要去迎合别人的刻板印象</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论该如何学习</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<p>首先要避免耍小聪明</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>败者为王</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/</url>
+      
+        <content type="html"><![CDATA[<p>这里的人缺少的不是机会，而是一份坚持。</p>]]></content>
       
       
       
@@ -2128,115 +2206,11 @@
     
     
     <entry>
-      <title>访谈播客</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/</url>
-      
-        <content type="html"><![CDATA[<ol><li>有什么书影响你成功最大？有什么书是读了绝对不会后悔的吗?</li><li>允许公布个人信息吗还是匿名</li><li>访谈教授预约</li><li>正装</li><li>纸笔录音记录</li><li>对青年人的要求看法</li><li>怎么成为一个leader</li><li>访谈类书籍格式</li><li>此书可以开源可以出版</li><li>您是怎么学习的,都是采用什么方法?信息来源是什么?</li><li>您对未来您所在领域的发展趋势预测</li><li></li></ol>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>principal</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/</url>
-      
-        <content type="html"><![CDATA[<p>奥卡姆剃刀 如无必要勿增实体<br>一切都会过去<br>做正确的事比正确的做事更重要<br>身体和灵魂总有一个要在路上<br>找到尤达导师<br>辛苦学习和失败后懊恼哪个更痛苦?<br>如何补全短板？<br>很简单，把短板变成优势<br>如何成为第一？<br>很简单，各方面都是第一</p><p>干嘛要等着别人教，自学不行吗</p><p>指望谁都白扯，把希望寄托在自己身上</p><p>自己要相信自己<br>等着吧等着吧</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>soft-skill goal</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/</url>
-      
-        <content type="html"><![CDATA[<ul><li>学会一门乐器(笛子,钢琴)</li><li>英语无碍,第二外语</li><li>体育运动(网球台球举重)</li><li>增肌到143+</li><li>记录更新self</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>论不要变成一个直男</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/</url>
-      
-        <content type="html"><![CDATA[<p>收拾一下自己，不要去迎合别人的刻板印象</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>论该如何学习</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/</url>
-      
-        <content type="html"><![CDATA[<p>首先要避免耍小聪明</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>败者为王</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/</url>
-      
-        <content type="html"><![CDATA[<p>这里的人缺少的不是机会，而是一份坚持。</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>决策树</title>
       <link href="/2022/12/19/mynotes/ji-qi-xue-xi/ji-qi-xue-xi/suan-fa-li-lun/jue-ce-shu/"/>
       <url>/2022/12/19/mynotes/ji-qi-xue-xi/ji-qi-xue-xi/suan-fa-li-lun/jue-ce-shu/</url>
       
         <content type="html"><![CDATA[<p>决策树<br>2022年10月11日 星期二<br>下午6:54</p><p><strong>下面是一个西瓜⬇️（是一个抽象的类的定义，不懂类是什么的可以google一下，2min了解）</strong><br>class 西瓜🍉{<br>“色泽”：“青绿”，“黄色”；<br>”根蒂“： “蜷缩”，“笔直”；<br>“敲声”： “清脆”，“浑浊”；&#x2F;&#x2F;当然以上属性可以有很多个（&gt;2以上）<br>}<br>我们在判断一个西瓜是好瓜还是坏瓜的时候总要对它进行很多判断，每一次判断都是一次决策，最终我们得到最终决策——“这是一个好瓜&#x2F;坏瓜”。<br>每次判断都是对西瓜这个类别的属性（实际是在一个很大的数据集中（datasets）—里面有很多“西瓜”）进行测试。<br>一般的，一颗决策树包含一个根结点，若干个内部结点和若干个叶结点：叶结点对应决策结果，其他的每个结点对应一次测试（判断）。<br>我们的目的是产生一个泛化能力强的决策树，即我们随便给一个瓜它都能判断好坏，基本流程遵循算法中的“分而治之（divide and conquer）”策略。<br><strong>划分选择</strong><br>我们当然希望决策树的分支结点所包含的样本尽可能的属于同一类别，提高结点的“纯度”，可以引入PPT中“0&#x2F;1”的那个例子，非常形象。<br><strong>信息熵（information entropy）</strong><br>度量样本纯度的指标，假定当前样本集合D中第k类样本所占的比例为$p_k(k &#x3D;1,2,3…,|Y|),则D的 信息熵定义为：<br><img src="/2022/12/19/mynotes/ji-qi-xue-xi/ji-qi-xue-xi/suan-fa-li-lun/jue-ce-shu/../resources/image1.png" alt="image1"><br>Ent（D）值越小，则说明纯度越高。 （因为熵是描述不确定性的，越大越混乱）<br><img src="/2022/12/19/mynotes/ji-qi-xue-xi/ji-qi-xue-xi/suan-fa-li-lun/jue-ce-shu/../resources/image2.png" alt="image2"><br><img src="/2022/12/19/mynotes/ji-qi-xue-xi/ji-qi-xue-xi/suan-fa-li-lun/jue-ce-shu/../resources/image3.png" alt="image3"><br>来个小程序：<br>*这是一个判断西瓜🍉好坏的伪代码*\<br>cin&gt;&gt;🍉 ；&#x2F;&#x2F;来了一个西瓜<br>1.色泽函数（🍉）；<br>2.根蒂函数（🍉）；<br>3.敲声函数（🍉）；<br>结果：return 好&#x2F;坏 瓜；<br>形象的说吧，我们怎么判断这个决策树经过123&#x2F;132&#x2F;213&#x2F;…（三个函数随机排,每个顺序都可以试）个函数分叉后得到的分类纯度提升了呢？<br><strong>信息增益（information gain）</strong><br><img src="/2022/12/19/mynotes/ji-qi-xue-xi/ji-qi-xue-xi/suan-fa-li-lun/jue-ce-shu/../resources/image4.png" alt="image4"><br>如上式所言：<em><strong>做差就好了</strong></em>，好与坏一目了然，分类结果多了就按照权重分配各部分信息熵，大的结果权重多，小的权重自然少。（此处缺少更好的例子，不严谨了容易有歧义）</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>命令总结</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p><a href="../../resources/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a></p><p>git learning over!<br>–2022.8.26</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常用基本操作命令大全了算是,没有init就是</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/</url>
-      
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>开发一个新feature(其实是bug...)，最好新建一个分支；</p><p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D &lt;name&gt;强行删除。</p><p>git push -f origin branchname // 这个-f命令大公司应该都不然用,都是用</p><p>git rebase 先拉回一个最新的commit到本地分支上手动修改,</p></th></tr></thead><tbody></tbody></table>**1.git clone // 到本地  2.git checkout -b xxx 切换至新分支xxx  （相当于复制了remote的仓库到本地的xxx分支上  3.修改或者添加本地代码（部署在硬盘的源文件上）  4.git diff 查看自己对代码做出的改变  5.git add 上传更新后的代码至暂存区  6.git commit 可以将暂存区里更新后的代码更新到本地git  7.git push origin xxx 将本地的xxxgit分支上传至github上的git****（如果在写自己的代码过程中发现远端GitHub上代码出现改变）  1.git checkout main 切换回main分支  2.git pull origin master(main) 将远端修改过的代码再更新到本地  3.git checkout xxx 回到xxx分支  4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  （-f ---》强行）  6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit****远端完成更新后****1.git branch -d xxx 删除本地的git分支****2.git pull origin master 再把远端的最新代码拉至本地**]]></content>
       
       
       
@@ -2484,6 +2458,32 @@
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/yun-suan-cao-zuo-fu/</url>
       
         <content type="html"><![CDATA[<p>基本和C语言的相同,下面只罗列运算符的优先级(实际也不用记,用用就知道了)</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>* / % &lt;&lt; &gt;&gt; &amp; &amp;^</p><p>+ - | ^</p><p><strong>== != &lt; &lt;= &gt; &gt;=</strong></p><p>&amp;&amp;</p><p>||</p></th></tr></thead><tbody></tbody></table>从上到下逐级递减-   值得一提的是Go也支持字符串通过"+"连接,当然"+="也可以,例如<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>println("Go"+"lang")//Golang</p><p>var a = "Go"</p><p>a += "lang"</p><p>println(a)//Golang</p></th></tr></thead><tbody></tbody></table>-   <u>还有,Go也支持"++""--"操作,但是没有返回值,不能当作表达式使用</u>-   <u>Go中的取反操作符不是"\~",而是"^"</u>    -   和其他流行语言一样,Go也支持"+"去连接字符串-   和Java不同,Go支持无符号数,所以不需要无符号右移运算符>\>\>-   Go不支持幂运算符,所以要使用<sub></sub>​math​<sub></sub>标准库包中的<sub></sub>​Pow​<sub></sub>函数进行幂运算-   多了个特殊的**清位运算符**<sub></sub>​&^​<sub></sub>    -   <sub></sub>​m&^n​<sub></sub>等价于<sub></sub>​m&(^n)​<sub></sub>如果是2的幂运算的话,可以使用<sub></sub>​>\>​<sub></sub>(除2的次数)或者<sub></sub>​\<\<​<sub>(乘2的次数)注意:移位操作的结果都是整数移位运算在32和64位架构的机器上有时候如果不注重细节会出大bug</\<​<sub>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>命令总结</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/ming-ling-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p><a href="../../resources/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a></p><p>git learning over!<br>–2022.8.26</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常用基本操作命令大全了算是,没有init就是</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>开发一个新feature(其实是bug...)，最好新建一个分支；</p><p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D &lt;name&gt;强行删除。</p><p>git push -f origin branchname // 这个-f命令大公司应该都不然用,都是用</p><p>git rebase 先拉回一个最新的commit到本地分支上手动修改,</p></th></tr></thead><tbody></tbody></table>**1.git clone // 到本地  2.git checkout -b xxx 切换至新分支xxx  （相当于复制了remote的仓库到本地的xxx分支上  3.修改或者添加本地代码（部署在硬盘的源文件上）  4.git diff 查看自己对代码做出的改变  5.git add 上传更新后的代码至暂存区  6.git commit 可以将暂存区里更新后的代码更新到本地git  7.git push origin xxx 将本地的xxxgit分支上传至github上的git****（如果在写自己的代码过程中发现远端GitHub上代码出现改变）  1.git checkout main 切换回main分支  2.git pull origin master(main) 将远端修改过的代码再更新到本地  3.git checkout xxx 回到xxx分支  4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  （-f ---》强行）  6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit****远端完成更新后****1.git branch -d xxx 删除本地的git分支****2.git pull origin master 再把远端的最新代码拉至本地**]]></content>
       
       
       

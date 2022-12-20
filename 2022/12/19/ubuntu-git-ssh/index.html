@@ -589,7 +589,7 @@ Ubuntu翻墙使用的Clash并且所有网络访问走的都是指定端口9494
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    143
+                    351
                 </div>
                 
 
@@ -626,18 +626,43 @@ Ubuntu翻墙使用的Clash并且所有网络访问走的都是指定端口9494
 <li>导致一直github远程仓库无法认证,生成了ssh公钥都两遍</li>
 <li>还得是\stackoverflow老哥靠谱,指出VPN的可能性</li>
 <li>最后通过先在 <code>.ssh</code>中建立 <code>config</code>文件,随后配置端口Port443以及认证密钥<ul>
-<li><pre><code class="bash">Host github.com
+<li>&#96;&#96;&#96;bash<br>Host github.com<br>User git<br>Port 443<br>HostName ssh.github.com<br>IdentityFile ~&#x2F;.ssh&#x2F;id_rsa <pre class="line-numbers language-none"><code class="language-none">* 最后通过命令 &#96;ssh -T git@github.com&#96; yes后认证成功
+* 解决,继续部署静态博客
+
+12.20号,在coding上部署的时候发现ssh连接验证又出现了问题!
+
+&gt; 具体表现为使用下面的命令直接卡住,还不如github当初的直接拒绝呢
+
+使用命令:
+
+&#96;ssh -T git@git.coding.net&#96;
+
+&#96;ssh -T git@ssh.coding.net&#96;
+
+均不奏效,遂更改 &#96;.ssh&#96;文件里面的 &#96;config&#96;文件
+
+内容如下:
+
+&#96;&#96;&#96;bash
+Host coding.net
     User git
     Port 443
-    HostName ssh.github.com
-    IdentityFile ~/.ssh/id_rsa 
-</code></pre>
-</li>
+    HostName ssh.coding.net
+    IdentityFile ~&#x2F;.ssh&#x2F;id_rsa  
+
+Host *.coding.net
+    User git
+    Port 443
+    HostName git.coding.net
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    IdentityFile ~&#x2F;.ssh&#x2F;id_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
-<li>最后通过命令 <code>ssh -T git@github.com</code> yes后认证成功</li>
-<li>解决,继续部署静态博客</li>
 </ul>
+<p>两个文件配置都试过,可惜就下面那个加 <code>*.</code>的还稍微靠谱一点,起码连接的时候把端口改为443了,但是都还是卡住了,随后发现这个命令可以完成认证:</p>
+<p><code>ssh -T git@e.coding.net</code></p>
+<p><img src="/2022/12/19/ubuntu-git-ssh/Ubuntu-git-ssh/1671529868758.png" alt="1671529868758"></p>
 
                 
             </div>
@@ -1305,7 +1330,7 @@ Ubuntu翻墙使用的Clash并且所有网络访问走的都是指定端口9494
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">65k</span>
+                        class="white-color">65.2k</span>
             
             
             
@@ -1576,15 +1601,6 @@ $(function () {
 
     
 
-    
-        
-        <script type="text/javascript">
-            // 只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
-            }
-        </script>
     
 
     <!-- 雪花特效 -->
