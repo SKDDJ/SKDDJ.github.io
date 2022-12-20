@@ -555,6 +555,32 @@
     
     
     <entry>
+      <title>区块链简介</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/../resources/image1-51.png" alt="image1"><br><strong>技术栈</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/../resources/image2-51.png" alt="image2"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/../resources/image3-44.png" alt="image3"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>流程</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/liu-cheng/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/liu-cheng/</url>
+      
+        <content type="html"><![CDATA[<ul><li>基本语法,数据类型</li><li>re正则化</li><li>文件io操作</li><li>对数据操作(xml,和json)</li><li></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>case 1  基本语法</title>
       <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/"/>
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/case-1-ji-ben-yu-fa/</url>
@@ -651,32 +677,6 @@
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-xue-shi-yan/fei-xian-xing-fang-cheng-qiu-jie/</url>
       
         <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>区块链简介</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/../resources/image1-51.png" alt="image1"><br><strong>技术栈</strong><br><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/../resources/image2-51.png" alt="image2"></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/qu-kuai-lian-jian-jie/../resources/image3-44.png" alt="image3"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>流程</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/liu-cheng/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/qu-kuai-lian-yu-go/liu-cheng/</url>
-      
-        <content type="html"><![CDATA[<ul><li>基本语法,数据类型</li><li>re正则化</li><li>文件io操作</li><li>对数据操作(xml,和json)</li><li></li></ul>]]></content>
       
       
       
@@ -1366,84 +1366,6 @@
       <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case5-supply-and-demand-how-market/</url>
       
         <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;43&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Market Forces of Supply and Demand</a></p><blockquote><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;74&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">供给和需求的市场力量</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;A3&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">A market is made of buyers and sellers</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={9F3CEA25-5FEA-428C-AD3A-421EC47548D4}&amp;A9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand_influence factor</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={A957D748-A48D-4343-846C-6CEF0309666A}&amp;89&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand Function</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={F16BA441-928C-465E-8AEA-767117D4B54A}&amp;63&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和需求量的关系</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={E34D92D5-A71E-48F2-BEC5-749402C6E15D}&amp;9F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和供给的关系</a></p></blockquote></th></tr></thead><tbody></tbody></table><p><strong>The Market Forces of Supply and Demand</strong></p><p><strong>供给和需求的市场力量</strong></p><p><strong>A market is made of buyers and sellers</strong></p><ul><li>Buyers determine demand</li><li>Sellers determine supply<br><strong>Demand_influence factor</strong></li><li>The price itself</li><li>The salary of consumers</li><li>Other goods related</li><li>Tastes</li><li>Expectations</li><li>Number of buyers</li></ul><p><strong>Demand Function</strong></p><p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/jing-ji-xue-i/case5-supply-and-demand-how-market/../resources/image1-35.png" alt="image1"></p><p>中点法是个什么?</p><p><strong>需求和需求量的关系</strong></p><ul><li>需求量变动是指由于价格变动引起的 消费者 愿意并且能够购买数量的变动， 需求 的变动是指除价格以外的其他因素变动引起的消费者在每一可能的价格下所有需求量的变动。<br>需求量是需求曲线上的点,需求是一条线</li></ul><p><strong>需求和供给的关系</strong></p><p>会随着<strong>价格</strong>而改变</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>访谈播客</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/</url>
-      
-        <content type="html"><![CDATA[<ol><li>有什么书影响你成功最大？有什么书是读了绝对不会后悔的吗?</li><li>允许公布个人信息吗还是匿名</li><li>访谈教授预约</li><li>正装</li><li>纸笔录音记录</li><li>对青年人的要求看法</li><li>怎么成为一个leader</li><li>访谈类书籍格式</li><li>此书可以开源可以出版</li><li>您是怎么学习的,都是采用什么方法?信息来源是什么?</li><li>您对未来您所在领域的发展趋势预测</li><li></li></ol>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>principal</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/</url>
-      
-        <content type="html"><![CDATA[<p>奥卡姆剃刀 如无必要勿增实体<br>一切都会过去<br>做正确的事比正确的做事更重要<br>身体和灵魂总有一个要在路上<br>找到尤达导师<br>辛苦学习和失败后懊恼哪个更痛苦?<br>如何补全短板？<br>很简单，把短板变成优势<br>如何成为第一？<br>很简单，各方面都是第一</p><p>干嘛要等着别人教，自学不行吗</p><p>指望谁都白扯，把希望寄托在自己身上</p><p>自己要相信自己<br>等着吧等着吧</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>soft-skill goal</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/</url>
-      
-        <content type="html"><![CDATA[<ul><li>学会一门乐器(笛子,钢琴)</li><li>英语无碍,第二外语</li><li>体育运动(网球台球举重)</li><li>增肌到143+</li><li>记录更新self</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>论不要变成一个直男</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/</url>
-      
-        <content type="html"><![CDATA[<p>收拾一下自己，不要去迎合别人的刻板印象</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>论该如何学习</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/</url>
-      
-        <content type="html"><![CDATA[<p>首先要避免耍小聪明</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>败者为王</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/</url>
-      
-        <content type="html"><![CDATA[<p>这里的人缺少的不是机会，而是一份坚持。</p>]]></content>
       
       
       
@@ -2198,6 +2120,84 @@
       <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/you-xie-shi-qing-yao-qu-zuo-de/</url>
       
         <content type="html"><![CDATA[<p>坚持费曼学习法</p><p>坚持跑步坚持锻炼</p><p>坚持写日志，记录自己</p><p>学会一门机器学习框架</p><p>一周看一个方法 决策树回归树</p><p>预习提前完成作业是好事概率论大雾提前写，计网计组下一张开看</p><p>数据结构c的结构实现</p><p>学会前端技术，无论python还是go，我希望是先python进阶</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>principal</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/</url>
+      
+        <content type="html"><![CDATA[<p>奥卡姆剃刀 如无必要勿增实体<br>一切都会过去<br>做正确的事比正确的做事更重要<br>身体和灵魂总有一个要在路上<br>找到尤达导师<br>辛苦学习和失败后懊恼哪个更痛苦?<br>如何补全短板？<br>很简单，把短板变成优势<br>如何成为第一？<br>很简单，各方面都是第一</p><p>干嘛要等着别人教，自学不行吗</p><p>指望谁都白扯，把希望寄托在自己身上</p><p>自己要相信自己<br>等着吧等着吧</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>soft-skill goal</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/</url>
+      
+        <content type="html"><![CDATA[<ul><li>学会一门乐器(笛子,钢琴)</li><li>英语无碍,第二外语</li><li>体育运动(网球台球举重)</li><li>增肌到143+</li><li>记录更新self</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论不要变成一个直男</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/</url>
+      
+        <content type="html"><![CDATA[<p>收拾一下自己，不要去迎合别人的刻板印象</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论该如何学习</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<p>首先要避免耍小聪明</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>败者为王</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/</url>
+      
+        <content type="html"><![CDATA[<p>这里的人缺少的不是机会，而是一份坚持。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>访谈播客</title>
+      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/"/>
+      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<ol><li>有什么书影响你成功最大？有什么书是读了绝对不会后悔的吗?</li><li>允许公布个人信息吗还是匿名</li><li>访谈教授预约</li><li>正装</li><li>纸笔录音记录</li><li>对青年人的要求看法</li><li>怎么成为一个leader</li><li>访谈类书籍格式</li><li>此书可以开源可以出版</li><li>您是怎么学习的,都是采用什么方法?信息来源是什么?</li><li>您对未来您所在领域的发展趋势预测</li><li></li></ol>]]></content>
       
       
       
@@ -3289,9 +3289,9 @@
       
         <tags>
             
-            <tag> PS3 </tag>
-            
             <tag> Games </tag>
+            
+            <tag> PS3 </tag>
             
             <tag> hello </tag>
             
