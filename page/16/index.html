@@ -567,23 +567,20 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-command/">
+                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/git-lei-bi-mei-shi-me-yong/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="go command">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="git类比,没什么用">
                             
-                            <span class="card-title">go command</span>
+                            <span class="card-title">git类比,没什么用</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                : TITLE---: TITLE
-! 务必在任意目录使用go命令之前,将go安装目录下的bin路径配置在PATH环境变量中
-了解GOPATH:此环境变量的默认值是当前用户的HOME目录下面的名为go文件夹对应的目录路径.
--   GOPA
+                                想想我们中学考试，老师改卷的场景吧。你做的试卷就像仓库(repository)，你的试卷肯定会有很多错误，就相当于程序里的 bug。老师把你的试卷拿过来，相当于先 fork。在你的卷子上做一些修改批注，相当于 gitadd 和gitcomm
                             
                         </div>
                         <div class="publish-info">
@@ -607,20 +604,21 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/variable/">
+                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/init/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="variable">
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="init ">
                             
-                            <span class="card-title">variable</span>
+                            <span class="card-title">init </span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                基本格式;1package main2import “fmt”3func main**(){**4var a int5a &#x3D;16fmt**.Println(a)**7f :&#x3D;“Runoob”8fmt**.Println(
+                                1.init初始化本地仓库2.git add3.git commit -m “ “4.git diff5.git status
+查看版本信息6.git log(find the former status)7.git log –pretty
                             
                         </div>
                         <div class="publish-info">
@@ -644,23 +642,20 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/dai-ma-bao-he-bao-yin-ru/">
+                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/tag/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="代码包和包引入">
+                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="tag">
                             
-                            <span class="card-title">代码包和包引入</span>
+                            <span class="card-title">tag</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                关于fmt.Printf打印的有关内容关于init函数模块(module)
-
-基本和python那一套一样,还是举个伪随机数生成的例子就好了
-package mainimport ("fmt""math/rand""time")func m
+                                命令git tag &lt;tagname&gt;用于新建一个标签，默认为HEAD，也可以指定一个commit id；命令git tag -a &lt;tagname&gt; -m "blablabla..."可以指定标签信息；命令git 
                             
                         </div>
                         <div class="publish-info">
@@ -684,46 +679,20 @@ package mainimport ("fmt""math/rand""time")func m
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/guan-jian-zi-he-biao-shi-fu/">
+                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/fen-zhi-ming-ling-xin-jian-qie-huan-shan-chu/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="关键字和标识符">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="分支命令(新建,切换,删除)">
                             
-                            <span class="card-title">关键字和标识符</span>
+                            <span class="card-title">分支命令(新建,切换,删除)</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                关键字标识符
-
-关键字一共就25个关键字
-
-
-
-break
-default
-func
-interface
-select
-
-
-
-case
-defer
-go
-map
-struct
-
-
-chan
-else
-goto
-package
-switch
-
+                                查看分支：git branch创建分支：git branch &lt;name&gt;切换分支：git checkout &lt;name&gt;或者git switch &lt;name&gt;创建+切换分支：git checkout -
                             
                         </div>
                         <div class="publish-info">
@@ -747,45 +716,55 @@ switch
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/han-shu-sheng-ming-he-diao-yong/">
+                    <a href="/2022/12/16/goosegooseduck/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="函数声明和调用">
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="GooseGooseDuck">
                             
-                            <span class="card-title">函数声明和调用</span>
+                            <span class="card-title">GooseGooseDuck</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                函数调用的退出阶段匿名函数内置函数
+                                who likes to play?print('hello world')
 
-类似于Go这种语言都要有一个程序入口,像python这种动态语言也要”伪造”一个入口
-
-
-
-if __name__ &#x3D;&#x3D; ‘__main__‘
-
+More info: Google it
+谁知道呢?人生如浮尘
+大道无形
+了解
 
 
-而Go的程序入口是​main​,
+
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-16
                             </span>
                             <span class="publish-author">
                                 
-                                <i class="fas fa-user fa-fw"></i>
-                                Shiym
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/steamgame/" class="post-category">
+                                    steamgame
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Games/">
+                            <span class="chip bg-color">Games</span>
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -794,268 +773,59 @@ if __name__ &#x3D;&#x3D; ‘__main__‘
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/xie-cheng-yan-chi-han-shu-diao-yong-yi-ji-kong-huang-he-hui-fu/">
+                    <a href="/2022/12/16/hello-world/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="协程,延迟函数调用,以及恐慌和恢复">
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                             
-                            <span class="card-title">协程,延迟函数调用,以及恐慌和恢复</span>
+                            <span class="card-title">Hello World</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                协程(goroutine)并发同步(concurrency synchronization)协程的状态协程的调度延迟函数调用(deferred function call)一个延迟调用可以修改包含此延迟调用的最内层函数的返回值恐慌(pani
+                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-16
                             </span>
                             <span class="publish-author">
                                 
-                                <i class="fas fa-user fa-fw"></i>
-                                Shiym
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/computer/" class="post-category">
+                                    computer
+                                </a>
+                                
+                                <a href="/categories/computer/study/" class="post-category">
+                                    study
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
                     
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/ji-ben-liu-cheng-kong-zhi-yu-fa-ifelse-switch-for/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="基本流程控制语法(ifelse,switch,for)">
-                            
-                            <span class="card-title">基本流程控制语法(ifelse,switch,for)</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                if-else条件分支控制代码块for循环代码块switch-case流程控制代码块goto跳转语句和跳转标签声明
-
-以下都是狭义的流程控制语句,广义上的包括(协程,延迟函数调用,恐慌和恢复,并发同步技术)三种基本的流程控制代码块:
-
-​i
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Shiym
-                                
-                            </span>
-                        </div>
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Games/">
+                            <span class="chip bg-color">Games</span>
+                        </a>
+                        
+                        <a href="/tags/PS3/">
+                            <span class="chip bg-color">PS3</span>
+                        </a>
+                        
+                        <a href="/tags/hello/">
+                            <span class="chip bg-color">hello</span>
+                        </a>
+                        
                     </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/ji-ben-lei-xing-type-he-zi-mian-liang/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="基本类型(Type)和字面量">
-                            
-                            <span class="card-title">基本类型(Type)和字面量</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                基本类型type alias 类型别名零值
-
-基本类型
-
-bool类型 bool
-整型 int8 uint8 int16 uint16 int32 uint32 int64 uint64 int uint(byte) uintptr
-那个”
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Shiym
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/chang-liang-he-bian-liang/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="常量和变量">
-                            
-                            <span class="card-title">常量和变量</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                还介绍了类型不确定值和类型推断
-类型转换类型推断常量声明(constant declaration)类型确定具名常量常量声明中的自动补全常量声明中使用iota变量的声明和赋值标准变量声明形式纯赋值语句(也没什么意义,就展示一下功能)短变量声
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Shiym
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/xun-huan-bian-li/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="循环遍历">
-                            
-                            <span class="card-title">循环遍历</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                a :&#x3D; map[string]string{“name”: “xiaopan”, “gender”: “male”, “age”: “20”}  for k, v :&#x3D; range a {    fmt.Println
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Shiym
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/zhi-zhen-pointer/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="指针Pointer">
-                            
-                            <span class="card-title">指针Pointer</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                a :&#x3D; []int{1, 2, 3}  var p *[]int &#x3D; &amp;a  (*p)[1] &#x3D; 8  fmt.Println(a)
-就是说,跟c一样直接操作指针指向的对象(数组也好字典也好)
-  a
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Shiym
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/jie-kou/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="接口">
-                            
-                            <span class="card-title">接口</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Shiym
-                                
-                            </span>
-                        </div>
-                    </div>
-
                     
                 </div>
             </div>
@@ -1078,12 +848,11 @@ bool类型 bool
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">16 / 21</div>
+            <div class="center-align b-text-gray">16 / 16</div>
         </div>
         <div class="col s6 m4 l4">
             
-            <a href="/page/17/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
+            <a class="right btn-floating btn-large disabled">
                 <i class="fas fa-angle-right"></i>
             </a>
             
@@ -1110,7 +879,7 @@ bool类型 bool
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">65.2k</span>
+                        class="white-color">56.4k</span>
             
             
             

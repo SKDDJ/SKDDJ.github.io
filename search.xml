@@ -685,11 +685,11 @@
     
     
     <entry>
-      <title>homework1</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/</url>
+      <title>homework2</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/</url>
       
-        <content type="html"><![CDATA[<p>homework1<br>2022年10月17日<br>9:58</p><p>&#x2F;&#x2F; 1.设计一个算法，删除递增有序链表中值大于mink且小于maxk的所有元素<br>&#x2F;&#x2F;（mink和maxk是给定的两个参数，其值可以和表中的元素相同，也可以不同 ）。<br>&#x2F;*<br>  传入函数的参数有链表L,最小值mink和最大值maxk<br>  定义p,q是链表类型的指针指向L中第一个结点<br>  动态分配一块内存让新结点作为头结点,pre指向头结点<br>  设计循环,遍历L,条件为p不为空并且p的数据域&lt;&#x3D;mink,则pre&#x3D;p,p&#x3D;p-&gt;next<br>  上面的循环留下了比mink小的元素<br>  下面删除比maxk小的元素<br>  p非空的条件下,并且元素小于maxk,q &#x3D; p,p&#x3D;p-&gt;next,delete q<br>  最后连接两个部分,pre-&gt;next &#x3D; p<br>*&#x2F;<br>&#x2F;&#x2F; 2.已知两个链表A和B分别表示两个集合，其元素递增排列。请设计算法求出A与B的交集，并存放于A链表中。<br>&#x2F;*<br>  传入参数有A和B两条链表(用La和Lb表示),还有新表Lc<br>  创建链表类型的指针pa和pb分别指向La和Lb的第一个结点<br>  创建链表类型的指针pc<br>  让La的头结点作为Lc的头结点(让Lb和La比较)<br>  创建LinkList d<br>  循环,当pa和pb不是NULL时<br>    如果pa指向的元素&#x3D;&#x3D;pb-&gt;data<br>      pc-&gt;next &#x3D; pa;<br>      pc &#x3D; pa;<br>      pa &#x3D; pa-&gt;next;<br>      d &#x3D; pb;<br>      pb &#x3D; pb -&gt; next;<br>      delete d;<br>    else if (pa-&gt;data &lt; pb-&gt;data)<br>      d &#x3D; pa<br>      pa &#x3D; pa-&gt;next;<br>      delete d;<br>    else&#x2F;&#x2F;同理否则删除pb指向的元素<br>      d &#x3D; pa<br>      pa &#x3D; pa-&gt;next;<br>      delete d;<br>  当pa不为空时,d &#x3D; pa;pa &#x3D; pa-&gt;next;delete d;<br>  当pb不为空时,d &#x3D; pb;pb &#x3D; pb-&gt;next;delete d;<br>  pc-&gt;next &#x3D; NULL&#x2F;&#x2F;尾结点置空<br>  delete Lb&#x2F;&#x2F;释放Lb头结点</p><p>*&#x2F;<br>&#x2F;&#x2F; 3.假设以带头结点的循环链表表示队列，并且用指向队尾结点的指针q来命名该队列(注意不设头指针) ，<br>&#x2F;&#x2F; 试编写相应的清空队列、判队空、入队和出队算法。<br>&#x2F;&#x2F;链队列结点类型的结构体定义:<br>typedef struct queuenode{<br>  ElemType data;<br>  struct queuenode *next;<br>  }QueueNode, *LinkQueue;<br>Status ClearQueue(LinkQueue &amp;q){&#x2F;&#x2F;让头结点成为队尾元素<br>  QueueNode *p;<br>  q-&gt;rear &#x3D; q-&gt;rear-&gt;next;&#x2F;&#x2F;队尾指针指向头结点<br>  while(q-&gt;rear!&#x3D; q-&gt;rear-&gt;next){&#x2F;&#x2F;不为空就删除元素<br>    p &#x3D; q-&gt;rear-&gt;next;<br>    q-&gt;rear-&gt;next &#x3D; p-&gt;next;<br>    delete p;<br>  }<br>}<br>Status EmptyQueue( LinkQueue q){<br>  if(q.rear &#x3D;&#x3D; q.rear-&gt;next){<br>    return OK;<br>  }<br>}<br>Status EnQueue(LinkQueue &amp;q, ElemType e){<br>  QueueNode *p;<br>  p &#x3D; new QueueNode;<br>  if(!p)return notOK;<br>  p-&gt;data &#x3D; e;<br>  p-&gt;next &#x3D; q.rear-&gt;next;&#x2F;&#x2F;构成循环,p的下一个元素时q的表头<br>  q.rear-&gt;next &#x3D; p;<br>  q.rear &#x3D; p;<br>  return OK;<br>}<br>Status DeQueue(LinkQueue &amp;q, ElemType &amp;e){<br>  if(q.rear &#x3D;&#x3D; q.rear-&gt;next)return notOK;&#x2F;&#x2F;队列为空没法删除<br>  QueueNode *p;<br>  p &#x3D; q.rear-&gt;next-&gt;next;<br>  q.rear-&gt;next-&gt;next &#x3D; p-&gt;next;<br>  e &#x3D; p-&gt;data;<br>  if(p &#x3D;&#x3D; q.rear)q.rear &#x3D; q.rear-&gt;next;<br>  delete p;<br>  return OK;<br>}</p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/../resources/image1-7.jpg" alt="image1"></p><p>void SelectSort(ElemType A[], int n){<br>for(i &#x3D; 0; i &lt; n-1; i++){</p><p>min &#x3D; i;</p><p>for(j &#x3D; i + 1; j &lt; n; j++){</p><p>if(A[j] &lt; A[min])</p><p>min &#x3D; j;</p><p>if(min!&#x3D;i)</p><p>swap(A[i],A[min]);</p><p>}<br>}</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>void selectSort(LinkList &amp;L){</p><p>LinkList p,q,current;</p><p>int min;</p><p>if(!p || !p-&gt;next){</p><p>return ;</p><p>}</p><p>for(p = L;p;p = p-&gt;next){</p><p>q = p;</p><p>current = p;</p><p>min = q-&gt;data;</p><p>while(q){</p><p>if(min &gt; q-&gt;data){</p><p>min = q-&gt;data;</p><p>current = q;</p><p>}</p><p>q = q-&gt;next;</p><p>}</p><p>if(current != p){</p><p>current-&gt;data = p-&gt;data;</p><p>p-&gt;data = min;</p><p>}</p><p>}</p><p>}</p></th></tr></thead><tbody></tbody></table>]]></content>
       
       
       
@@ -698,11 +698,11 @@
     
     
     <entry>
-      <title>homework2</title>
-      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/"/>
-      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/</url>
+      <title>homework1</title>
+      <link href="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/"/>
+      <url>/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework1/</url>
       
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ke-cheng-bi-ji/ke-cheng-bi-ji/shu-ju-jie-gou-yu-suan-fa/homework2/../resources/image1-7.jpg" alt="image1"></p><p>void SelectSort(ElemType A[], int n){<br>for(i &#x3D; 0; i &lt; n-1; i++){</p><p>min &#x3D; i;</p><p>for(j &#x3D; i + 1; j &lt; n; j++){</p><p>if(A[j] &lt; A[min])</p><p>min &#x3D; j;</p><p>if(min!&#x3D;i)</p><p>swap(A[i],A[min]);</p><p>}<br>}</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>void selectSort(LinkList &amp;L){</p><p>LinkList p,q,current;</p><p>int min;</p><p>if(!p || !p-&gt;next){</p><p>return ;</p><p>}</p><p>for(p = L;p;p = p-&gt;next){</p><p>q = p;</p><p>current = p;</p><p>min = q-&gt;data;</p><p>while(q){</p><p>if(min &gt; q-&gt;data){</p><p>min = q-&gt;data;</p><p>current = q;</p><p>}</p><p>q = q-&gt;next;</p><p>}</p><p>if(current != p){</p><p>current-&gt;data = p-&gt;data;</p><p>p-&gt;data = min;</p><p>}</p><p>}</p><p>}</p></th></tr></thead><tbody></tbody></table>]]></content>
+        <content type="html"><![CDATA[<p>homework1<br>2022年10月17日<br>9:58</p><p>&#x2F;&#x2F; 1.设计一个算法，删除递增有序链表中值大于mink且小于maxk的所有元素<br>&#x2F;&#x2F;（mink和maxk是给定的两个参数，其值可以和表中的元素相同，也可以不同 ）。<br>&#x2F;*<br>  传入函数的参数有链表L,最小值mink和最大值maxk<br>  定义p,q是链表类型的指针指向L中第一个结点<br>  动态分配一块内存让新结点作为头结点,pre指向头结点<br>  设计循环,遍历L,条件为p不为空并且p的数据域&lt;&#x3D;mink,则pre&#x3D;p,p&#x3D;p-&gt;next<br>  上面的循环留下了比mink小的元素<br>  下面删除比maxk小的元素<br>  p非空的条件下,并且元素小于maxk,q &#x3D; p,p&#x3D;p-&gt;next,delete q<br>  最后连接两个部分,pre-&gt;next &#x3D; p<br>*&#x2F;<br>&#x2F;&#x2F; 2.已知两个链表A和B分别表示两个集合，其元素递增排列。请设计算法求出A与B的交集，并存放于A链表中。<br>&#x2F;*<br>  传入参数有A和B两条链表(用La和Lb表示),还有新表Lc<br>  创建链表类型的指针pa和pb分别指向La和Lb的第一个结点<br>  创建链表类型的指针pc<br>  让La的头结点作为Lc的头结点(让Lb和La比较)<br>  创建LinkList d<br>  循环,当pa和pb不是NULL时<br>    如果pa指向的元素&#x3D;&#x3D;pb-&gt;data<br>      pc-&gt;next &#x3D; pa;<br>      pc &#x3D; pa;<br>      pa &#x3D; pa-&gt;next;<br>      d &#x3D; pb;<br>      pb &#x3D; pb -&gt; next;<br>      delete d;<br>    else if (pa-&gt;data &lt; pb-&gt;data)<br>      d &#x3D; pa<br>      pa &#x3D; pa-&gt;next;<br>      delete d;<br>    else&#x2F;&#x2F;同理否则删除pb指向的元素<br>      d &#x3D; pa<br>      pa &#x3D; pa-&gt;next;<br>      delete d;<br>  当pa不为空时,d &#x3D; pa;pa &#x3D; pa-&gt;next;delete d;<br>  当pb不为空时,d &#x3D; pb;pb &#x3D; pb-&gt;next;delete d;<br>  pc-&gt;next &#x3D; NULL&#x2F;&#x2F;尾结点置空<br>  delete Lb&#x2F;&#x2F;释放Lb头结点</p><p>*&#x2F;<br>&#x2F;&#x2F; 3.假设以带头结点的循环链表表示队列，并且用指向队尾结点的指针q来命名该队列(注意不设头指针) ，<br>&#x2F;&#x2F; 试编写相应的清空队列、判队空、入队和出队算法。<br>&#x2F;&#x2F;链队列结点类型的结构体定义:<br>typedef struct queuenode{<br>  ElemType data;<br>  struct queuenode *next;<br>  }QueueNode, *LinkQueue;<br>Status ClearQueue(LinkQueue &amp;q){&#x2F;&#x2F;让头结点成为队尾元素<br>  QueueNode *p;<br>  q-&gt;rear &#x3D; q-&gt;rear-&gt;next;&#x2F;&#x2F;队尾指针指向头结点<br>  while(q-&gt;rear!&#x3D; q-&gt;rear-&gt;next){&#x2F;&#x2F;不为空就删除元素<br>    p &#x3D; q-&gt;rear-&gt;next;<br>    q-&gt;rear-&gt;next &#x3D; p-&gt;next;<br>    delete p;<br>  }<br>}<br>Status EmptyQueue( LinkQueue q){<br>  if(q.rear &#x3D;&#x3D; q.rear-&gt;next){<br>    return OK;<br>  }<br>}<br>Status EnQueue(LinkQueue &amp;q, ElemType e){<br>  QueueNode *p;<br>  p &#x3D; new QueueNode;<br>  if(!p)return notOK;<br>  p-&gt;data &#x3D; e;<br>  p-&gt;next &#x3D; q.rear-&gt;next;&#x2F;&#x2F;构成循环,p的下一个元素时q的表头<br>  q.rear-&gt;next &#x3D; p;<br>  q.rear &#x3D; p;<br>  return OK;<br>}<br>Status DeQueue(LinkQueue &amp;q, ElemType &amp;e){<br>  if(q.rear &#x3D;&#x3D; q.rear-&gt;next)return notOK;&#x2F;&#x2F;队列为空没法删除<br>  QueueNode *p;<br>  p &#x3D; q.rear-&gt;next-&gt;next;<br>  q.rear-&gt;next-&gt;next &#x3D; p-&gt;next;<br>  e &#x3D; p-&gt;data;<br>  if(p &#x3D;&#x3D; q.rear)q.rear &#x3D; q.rear-&gt;next;<br>  delete p;<br>  return OK;<br>}</p>]]></content>
       
       
       
@@ -1374,838 +1374,6 @@
     
     
     <entry>
-      <title>访谈播客</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/method/fang-tan-bo-ke/</url>
-      
-        <content type="html"><![CDATA[<ol><li>有什么书影响你成功最大？有什么书是读了绝对不会后悔的吗?</li><li>允许公布个人信息吗还是匿名</li><li>访谈教授预约</li><li>正装</li><li>纸笔录音记录</li><li>对青年人的要求看法</li><li>怎么成为一个leader</li><li>访谈类书籍格式</li><li>此书可以开源可以出版</li><li>您是怎么学习的,都是采用什么方法?信息来源是什么?</li><li>您对未来您所在领域的发展趋势预测</li><li></li></ol>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>principal</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/principal/</url>
-      
-        <content type="html"><![CDATA[<p>奥卡姆剃刀 如无必要勿增实体<br>一切都会过去<br>做正确的事比正确的做事更重要<br>身体和灵魂总有一个要在路上<br>找到尤达导师<br>辛苦学习和失败后懊恼哪个更痛苦?<br>如何补全短板？<br>很简单，把短板变成优势<br>如何成为第一？<br>很简单，各方面都是第一</p><p>干嘛要等着别人教，自学不行吗</p><p>指望谁都白扯，把希望寄托在自己身上</p><p>自己要相信自己<br>等着吧等着吧</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>soft-skill goal</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/soft-skill-goal/</url>
-      
-        <content type="html"><![CDATA[<ul><li>学会一门乐器(笛子,钢琴)</li><li>英语无碍,第二外语</li><li>体育运动(网球台球举重)</li><li>增肌到143+</li><li>记录更新self</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>论不要变成一个直男</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-bu-yao-bian-cheng-yi-ge-zhi-nan/</url>
-      
-        <content type="html"><![CDATA[<p>收拾一下自己，不要去迎合别人的刻板印象</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>论该如何学习</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/lun-gai-ru-he-xue-xi/</url>
-      
-        <content type="html"><![CDATA[<p>首先要避免耍小聪明</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>败者为王</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/za-gan/bai-zhe-wei-wang/</url>
-      
-        <content type="html"><![CDATA[<p>这里的人缺少的不是机会，而是一份坚持。</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.10 努力吧，努力吧</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.10-nu-li-ba-nu-li-ba/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.10-nu-li-ba-nu-li-ba/</url>
-      
-        <content type="html"><![CDATA[<p>睡了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.11 图书馆三楼 夜21:06</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.11-tu-shu-guan-san-lou-ye-2106/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.11-tu-shu-guan-san-lou-ye-2106/</url>
-      
-        <content type="html"><![CDATA[<p>10.11 图书馆三楼 夜21:06<br>2022年10月11日 星期二<br>下午9:06</p><p>耳机里放的是队长的《11》<br>今晚写了写西瓜书的决策树那一章，也没写完，但是理解加深了一点。<br>上课收获挺大，因为现在上课腰没有那么疼痛了，效率简直了，还需要继续努力💪。<br>下午七八节课的功夫买了大物的实验用纸📄，顺便和YM Z通了电话，交流了一下最近的进程，决定对西瓜书的解读工作还是要继续，并分享了自己的时间管理方法，持续的写作记录还是很有必要的。<br>明天上午的go语言竟然不上课了，有了一上午的空闲时间，概率论的作业还是挺多的，但是我觉得用不了太长的时间精力，题目也不是特别的难，主要是今天去商业街忘买答案了，写完了没办法对照，只能拿手机拍照搜了，明天还是图书馆吧，带着电脑和ipad，把文档的工作搞了，今晚其实更适合去看大物的静电场。<br>目前的工作：</p><ul><li>数据结构的代码练习（尤其是matu，明天上午吧🍅🍅）</li><li>概率论的作业（预计先看笔记半个🍅，写作业两个🍅先）</li><li>大物的静电场我现在就可以搞🍅</li><li>计组的verilog作业，我靠，明天排版一下笔记，感觉也就那样</li><li>计网等下节课的通知</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.12 lib</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.12-lib/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.12-lib/</url>
-      
-        <content type="html"><![CDATA[<p>找了好久才找到座位,下午跑了3.6km,因为第一次线下经济学坐的太久,今天背部不太舒服,晚上的电路实验一会也不知道几点开始,烦啊</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.13 概率课</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.13-gai-lu-ke/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.13-gai-lu-ke/</url>
-      
-        <content type="html"><![CDATA[<p>10.13 概率课<br>2022年10月13日 星期四<br>上午10:51</p><p>今天晚上务必搞数据结构，中午吃饭的时候看一下有关devops的那个内容。<br>概率论课上着感觉还是不错的，昨天看了看朴素贝叶斯，回去可以整理一下西瓜书的那个朴素贝叶斯分类器。<br>“列出你要健身或改善健康状况的原因。从这份清单中，明确三项最重要的激励因素，打印出来并张贴在不同的地方，确保自己每天都能看到。</p><p>从本章讲述的保持动力的做法中选出几条，并在生活中实践。或者找几个可以激励你的人的照片，张贴在你能看到的地方，或者找一个新的有关健身的应用，把锻炼身体变成乐趣。</p><p>在达成健身计划的某个里程碑之后给自己一个奖励。把你的进展状况画成图表，达成目标的时候奖励自己。”</p><p>摘录来自<br>软技能 代码之外的生存指南<br>[美]约翰 Z. 森梅兹（John Z. Sonmez）<br>此材料受版权保护。</p><p>唉,今晚搞搞数据结构</p><p>今晚跑步破了记录，一千米四分四十秒，又进步了三秒，何况我都没用力冲刺，太震惊了，挺好.</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.14  图书馆研修室</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.14-tu-shu-guan-yan-xiu-shi/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.14-tu-shu-guan-yan-xiu-shi/</url>
-      
-        <content type="html"><![CDATA[<p>现在是快八点了,今晚把概率论的作业搞定了,估计一个番茄钟应该,还有大雾的东西,看情况吧,如果想整理就整理,不想整理就明天,今晚把verilog的代码笔记整理完全,还有数据结构的作业给搞了,我先把概率论的作业搞定了吧</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.19 宿舍床上</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.19-su-she-chuang-shang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.19-su-she-chuang-shang/</url>
-      
-        <content type="html"><![CDATA[<p>好累的一天，大物实验好累😔，明天是verilog最后一天期限，晚上才有机会🤔，可能最近这么累也是没午睡导致的，今晚都没跑步了，好累好累，早睡早起，好多任务哟</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.21 图书馆夜</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.21-tu-shu-guan-ye/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.21-tu-shu-guan-ye/</url>
-      
-        <content type="html"><![CDATA[<p>明天上午大物实验理论课,可以把大物实验报告先写完,然后是创业实训的报告写完.<br>下午把概率论的作业写完,写不完可以趋势了,预计两个番茄钟够了,然后是大物的作业,课程需要一个番茄钟,作业一个番茄钟<br>晚上经济学作业,网课大概需要两个番茄钟,作业两个番茄钟<br>好累,我要走走活动一下,然后把计组的课件接着看</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.23 夜 图书馆</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.23-ye-tu-shu-guan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.23-ye-tu-shu-guan/</url>
-      
-        <content type="html"><![CDATA[<p>今天好忙啊,早上起来就开始忙,下午搞团日活动打羽毛球,技术还是有较大提升,体能方面也是非常强,打了两个小时还是活力十足,晚上开了两个会,非常恶心人的就是那个小册子得写了,晚上在搞计组的笔记整理,又开始赶人了,我佛了,走了走了</p><p>大物的习题册需要写三页</p><p>概率论开头的9道题还可以完成</p><p>经济学的pre探讨</p><p>经济学的课后作业</p><p>经济学的网课</p><p>数据结构的预习工作,明晚前必须完成(看疯考)</p><p>计组的整理工作</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.24 夜,图书馆闭馆</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.24-ye-tu-shu-guan-bi-guan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.24-ye-tu-shu-guan-bi-guan/</url>
-      
-        <content type="html"><![CDATA[<p>需要搞得还有,好忙好忙</p><p>大物的习题册两页,明早完成</p><p>经济学的pre工作,明天抽空完成</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.26 夜 床上</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.26-ye-chuang-shang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.26-ye-chuang-shang/</url>
-      
-        <content type="html"><![CDATA[<p>对课程有深入思考，数理逻辑，工程？<br>每天加入正念时间<br>把控当天的安排，在最早就制定好</p><p>今天搞定了大物实验下次的预习工作，go的学习接着进展</p><p>明天需要的工作<br>计组的复习，重中之重<br>概率论，大物学习课程<br>海明码错<br>数学实验作业当场完成✅<br>想着周六上午行测大雾实验接着下一次预习<br>交叉go的学习（可以看发的课件）</p><p>复习总结<br>缺点：<br>预习工作也拉胯<br>对计划分发差，每日任务都不一定完成<br>复习计划拉胯，间隙休息还是不足<br>优点：<br>坚持锻炼，重视健康<br>不断努力💪</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.27 夜 床上</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.27-ye-chuang-shang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.27-ye-chuang-shang/</url>
-      
-        <content type="html"><![CDATA[<p>好累，今天脑子格外的累<br>今天搞了搞go的推进，看到并发了<br>剩下的一个没搞，进展太慢了<br>说说这周的计划吧<br>从宿舍需要带过去的，大物实验纸，键盘，耳机充电线</p><p>周五白天上午早点起的话可以看计组的复习题<br>上午听讲数据结构<br>午睡<br>下午考试计组，然后去锻炼身体，晚上吃完饭，看精神状态，go推进，大雾概率论选一个写上两个番茄钟，一共三个番茄钟</p><p>周六上午行测写大物实验报告，写完如果可以下午就去🏨，把经济学课后作业和计网慕课数学实验（数学实验也可以上午）搞了</p><p>周天电路实验二的拼接？询问一下<br>把概率论大雾接着预习</p><p>经济学课后作业☕☕☕<br>数学实验作业☕☕<br>计算机网络第二刷🍅<br>概率论作业第三章🍅🍅🍅<br>大雾作业三页🍅🍅<br>电路实验二的拼接</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.30 中午in mango</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.30-zhong-wu-in-mango/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.30-zhong-wu-in-mango/</url>
-      
-        <content type="html"><![CDATA[<p>上午起来看了看html和css,目前可以走的路还有很多条可以选择</p><ul><li>devops</li><li>后端</li><li>前端</li><li>产品<br>计组的复习?<br>概率论的作业?<br>今晚去跑步,有点虚弱,4次了基本上,午睡估计也泡汤了,不知道下午学习效率有多高<br>开始学习,我也只想学习</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.31 凌晨</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.31-ling-chen/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.31-ling-chen/</url>
-      
-        <content type="html"><![CDATA[<p>刚洗完澡<br>理财计划要有计划的执行<br>回家买泡沫轴拉伸<br>睡了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.6 月份总结</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.6-yue-fen-zong-jie/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.6-yue-fen-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p><strong>10.6 月份总结</strong><br>2022年10月6日 星期四<br>下午12:30</p><p>国内大厂面试现状：学习google考算法，三面有两面都在考算法，大牛觉得都是在考八股文，而不注重代码风格，工程能力，很多人连个注释都不写<br>但是大家都在搞，如果你不搞就显得格外突出，人家就不要你，也没办法<br>》 这个应该就叫唯物史观，一个人再怎么挣扎也没办法超越整个社会，但是努力可以改变自己的命运<br>江泽民也说过类似的话，🐸<br>中央组织部前部长写的文章&lt;我的大学&gt;中提到:</p><table><thead><tr><th>尽自己的努力,至于能到的什么,是社会给你的.凡是经历过文革的人,都明白这个道理,很多事情是不能超越社会的.但是,反过来,一个人要力求能主宰自己.这就叫做唯物史观和个人努力的结果.</th></tr></thead><tbody><tr><td><strong>大学能给予你的不仅是知识,还有:</strong></td></tr></tbody></table><ul><li>给予你一种进取精神</li><li>给予你一种研究方法</li><li>给予你一种科学思路</li><li>你本来想走进这个房间,结果却走进了另一个房间.人的一生,还是要服从社会的需要,不服从社会的需要,什么事情也做不起来.<br><img src="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.6-yue-fen-zong-jie/../resources/image1.png" alt="image1"></li></ul><p>在过去的一个月里,我有哪些改变呢?</p><table><colgroup><col style="width: 46%"><col style="width: 53%"></colgroup><thead><tr class="header"><th><strong>好习惯</strong></th><th><strong>坏习惯</strong></th></tr></thead><tbody><tr class="odd"><td>坚持体育锻炼</td><td>戒掉了无意识玩手机的习惯</td></tr><tr class="even"><td>愿意去探索</td><td>半夜玩手机有时还是没有改正,绝不能黑灯玩手机</td></tr><tr class="odd"><td><p>抽出时间去阅读,</p><p>但是技术类书籍也要坚持</p></td><td>总是没有坚持读技术类书籍,距离上次读的已经过去很多天了,但是技术blog一直在读</td></tr><tr class="even"><td>坚持记录自己,日志什么的一直在搞</td><td>预习这一块做的还是不够,上课还是有一些概念自己并没有提前了解</td></tr><tr class="odd"><td>愿意走出舒适区</td><td>不起早床,还是赖床,睡不醒</td></tr><tr class="even"><td></td><td>拖延症已经治的差不多了</td></tr></tbody></table><p><strong>我的10月份计划</strong></p><ul><li>每周至少一个费曼学习法的pre准备(可以计网延申接着搞,一章一章的，也可以尝试去搞数据结构)</li><li>日志要坚持去写,公众号坚持发文章</li><li>每周都要有一个技术突破,并记录下来</li><li>提前完成下一周的预习工作十分的重要</li><li>坚持跑步(这个应该没停过 :) )</li></ul><p><strong>长远的计划,大二上学期计划</strong></p><ul><li>sklearn的框架熟悉</li><li>能够不假思索的写出基本数据类型的实现在数据结构与算法上面</li><li>将Go的学习纳入计划中去,每天code</li><li>python的web开发那一章学完后完成至少一个项目</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.7 国学馆外</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.7-guo-xue-guan-wai/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.7-guo-xue-guan-wai/</url>
-      
-        <content type="html"><![CDATA[<p><em>昨日梦有感,梦到自己在环着湖玩滑板速降,结果到湖的西边被一辆车阻拦被迫停止,结果滑板的轮子被车刚倒下来的水泥烫融化了,然后梦到碰到了一个人,涂着紫色的口红,染着紫色的头发,说曾经送过我一支白百合,虽然在我的印象里是枯萎的,然后带我到一个别墅群,应该一栋是四五层的样子,不知为何我知道一楼发生过比较大的爆炸,然后进入其中(房子是危房但是没有塌),在楼梯口遇见4个年轻的男子,看着像是学生的样子</em></p><p>杂感</p><p>妈的要学的东西好他妈多</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10.8 第一次线下上课</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.8-di-yi-ci-xian-xia-shang-ke/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10.8-di-yi-ci-xian-xia-shang-ke/</url>
-      
-        <content type="html"><![CDATA[<p>好累，躺在宿舍床上，腰痛的厉害，眼睛也是酸涩，休息半个小时缓解一下，晚上还要去图书馆自习<br>主要工作就是先回顾一日所学再预习明天内容，再去跑个步休息休息，冲个热水澡，今晚早睡</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>10月9日 身体健康有感</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10-yue-9-ri-shen-ti-jian-kang-you-gan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/10-yue-9-ri-shen-ti-jian-kang-you-gan/</url>
-      
-        <content type="html"><![CDATA[<p>今天第一次线下身体运动功能训练课，认识到了拉伸的重要性，泡沫轴有时候怎么说也是很有必要的，假期可以回家整一个<br>学到了拉伸的几个动作<br>双手交叉❌放胸前坐着扭转<br>双手搭肩膀前后转动<br>床上躺着侧躺拉伸，仰卧交叉腿拉伸<br>还有自己发明的那几个动作<br>挺好，很有效</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.1 凌晨</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.1-ling-chen/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.1-ling-chen/</url>
-      
-        <content type="html"><![CDATA[<p>睡了，刚洗完澡<br>今天上午计通讲的路由<br>下午计组半期考试<br>晚上数据结构讲的排序推进<br>跑了跑步<br>明早写大雾作业，睡啦</p><p>现在是11.1晚上6点20,我刚回图书馆坐下<br>想起来一些话,记录一下:<br>概率论老师王志勇:</p><ul><li>谁都靠不住,你得相信你自己</li><li>真正的好学生都是自学成才</li><li>坚持锻炼,30岁后自然会分晓</li><li>有目标的人眼神会发光</li></ul><p>身体运动功能训练老师:</p><ul><li>你得针对性的训练,不能说我想减脂一遍还能做到增肌,需要有明确的目标</li><li>外国人的身体素质都是每年呈现上升趋势,但是国人却一直下降,令人忧心</li></ul><p>今天晚上,先学半小时Go,然后开始看概率论的网课,再然后做两个番茄钟的题,然后经济学4个番茄钟的题<br>总计今晚消耗7个番茄钟,alright</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.11 双十一图书馆夜晚</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.11-shuang-shi-yi-tu-shu-guan-ye-wan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.11-shuang-shi-yi-tu-shu-guan-ye-wan/</url>
-      
-        <content type="html"><![CDATA[<p>11.11 双十一图书馆夜晚<br>Friday, November 11, 2022<br>9:52 PM</p><p>今天运动会,睡了快一上午.<br>今天搞了搞Ubuntu,还挺有意思的,值得玩一玩.<br>把经济学的任务分了分,明天要做的还有很多,需要继续努力<br>一会回去跑步</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.12 中午图书馆</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.12-zhong-wu-tu-shu-guan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.12-zhong-wu-tu-shu-guan/</url>
-      
-        <content type="html"><![CDATA[<p>11.12 中午图书馆<br>Saturday, November 12, 2022<br>1:56 PM</p><p>继续搞Ubuntu系统,学习了以下操作:</p><ul><li>Sudo命令怎么取消每次键入密码(危险)实际上就是命令行两行参数</li><li>.deb文件的安装,很简单,拖到桌面,然后Ctrl+alt+T 打开终端,输入sudo apt-dpkg – i 把文件拖进命令行安装就可以</li><li>折腾了一下翻墙代理工具,也没折腾完</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.13 月份总结</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.13-yue-fen-zong-jie/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.13-yue-fen-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p>11.13 月份总结<br>Sunday, November 13, 2022<br>1:38 PM</p><p>这一个月是线下上课的一个月,不知不觉一个月过去了,但是感觉却很漫长.<br>概率论,数据结构,身体运动功能训练,都给我留下了深刻印象.<br>计网计组马上要在11月结课了,计网的各个大作业需要搞,计组的cpu代码实现<br>Golang的课后作业与星辰工作室的招新工作也在这个月截止</p><p>上上周,出去住了住,星辰的招新也在那个时候开始,搞了搞html和css的基本概念,但是js还没有开始入门.<br>上周,课后的工作主要是Ubuntu系统的捣鼓,现在也算是入了门</p><p>目前,以上的很多学科都有交叉之处,在计算机领域互相渗透,可以交叉学习.<br>数理方面:概率论课后作业跟的不及时,大物的知识落后于课堂,需要谨慎(mooc)<br>经济学的网课可以在晚上学习累了听一下.</p><p>接下来的半个月,我需要做的有:</p><ul><li>计组的cpu实现verilog</li><li>计网的课后习题一周至少两个,并且把实验搞了,pre工作抽时间讨论</li><li>星辰工作室习题在学习累了就写文档,后端devops交叉写</li><li>晚上可以适当学习新知识关于Golang,观看代码文件</li><li>晚上不要学习概率论或者大物</li><li>坚持锻炼,但是要提高效率,不能呆太晚</li><li>经济学今天晚上看文档,完成自己的那一部分,把课后习题找出来</li></ul><p>我的目标:</p><ul><li>进入星辰工作室,后端或者devops部门</li><li>计组计网顺利结课,尤其是计网,把概念搞清楚,计组把cpu组成原理搞清楚</li><li>身体素质进一步提升,现在腰不是很大的问题,但是背出现了新的问题,还有眼睛</li><li>至少把Go101看完</li></ul><p>关于11.13下午2点开始,我要做的有:</p><ul><li>计算机网络第一章的习题预览,第一个大作业的学习,复习第一个费曼讲稿(1-1.5h)2-3🍅</li><li>经济学自己那部分一定要写完(2🍅左右)</li><li>大概以上会到5点左右,剩下的再规划</li><li>今天可以开始写devops文档?</li></ul><p>&gt; vscode 正是一个神仙软件,插件太强大了,一个中国作者写的typore插件真的好用,我有把笔记转移到其他开源笔记平台上的意思了,onenote不支持markdown还是有点伤</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.14 夜晚 图书馆</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.14-ye-wan-tu-shu-guan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.14-ye-wan-tu-shu-guan/</url>
-      
-        <content type="html"><![CDATA[<p>11.14 夜晚 图书馆<br>Monday, November 14, 2022<br>9:32 PM</p><p>感觉现在已经逐渐往linux系统上一去不复返了<br>Ubuntu系统虽然有一些不太方便,但是用起来还是生产力可以的.<br>学学Go101吧.</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.19 图书馆夜</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.19-tu-shu-guan-ye/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.19-tu-shu-guan-ye/</url>
-      
-        <content type="html"><![CDATA[<p>感觉自己这一周都没有记日记,笔记也少了很多<br>在GO上的学习也少了很多<br>计组的知识还差很多,总感觉时间不够用啊<br>还有很多东西要去学习啊<br>但是昨天晚上把verilog的语法都看完了,还需要看指令级结构,但是奇怪的是我们讲的更多的是MIPS指令级结构,明天白天不看电脑了,静一静<br>还需要搞得有</p><p>计组的知识点,概率论这周需要写完,数据结构与算法写着玩<br>如果累了就写会大物实验报告吧,累了看会网课<br>晚上的时候有数学实验可以写,还有DevOps的开发题目</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.21 下午图书馆</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.21-xia-wu-tu-shu-guan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.21-xia-wu-tu-shu-guan/</url>
-      
-        <content type="html"><![CDATA[<p>这周无论如何都得把DevOps的题目做完<br>下午先把数据结构写了,换换脑子</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.21 凌晨</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.21-ling-chen/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.21-ling-chen/</url>
-      
-        <content type="html"><![CDATA[<p>明早机组仿真<br>睡了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.22 凌晨</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.22-ling-chen/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.22-ling-chen/</url>
-      
-        <content type="html"><![CDATA[<p>搞概率论</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.23 夜 智能合约</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.23-ye-zhi-neng-he-yue/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.23-ye-zhi-neng-he-yue/</url>
-      
-        <content type="html"><![CDATA[<p>go语言区块链<br>区块链技术不需要深究密码学会用就行<br>区块链技术好玩，关于智能合约</p><p>go前端的速成组件</p><p>ppt和演讲的书籍</p><p>敏捷开发docker 等</p><p>计组cpu</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.24 晚,图书馆,规划</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.24-wan-tu-shu-guan-gui-hua/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.24-wan-tu-shu-guan-gui-hua/</url>
-      
-        <content type="html"><![CDATA[<p>今晚现在七点半,正式进入状态大概需要15min</p><p>需要完成的任务:</p><ul><li>概率论剩下的题目(番茄*1,重要,紧急)</li><li>数据结构与算法作业(番茄*1,重要,紧急)</li><li>交团费</li><li>数学实验作业(番茄*2,重要,不那么急)</li></ul><table><colgroup><col style="width: 65%"><col style="width: 34%"></colgroup><thead><tr class="header"><th><strong>需要脑力的任务</strong></th><th><strong>无脑任务</strong></th></tr></thead><tbody><tr class="odd"><td><blockquote><p>概率论剩下题目</p></blockquote></td><td><blockquote><p>团费</p></blockquote></td></tr><tr class="even"><td><blockquote><p>数据结构算法</p></blockquote></td><td></td></tr><tr class="odd"><td><blockquote><p>数学实验作业</p></blockquote></td><td></td></tr></tbody></table><p>总计:4个番茄钟,需要两个小时以上(2-3h)</p><p>剩下时间:go,devops,计组cpu,计网作业,经济学pre都可以搞</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.25 夜 图书馆 周末计划</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.25-ye-tu-shu-guan-zhou-mo-ji-hua/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.25-ye-tu-shu-guan-zhou-mo-ji-hua/</url>
-      
-        <content type="html"><![CDATA[<p>不可能错过的活动:</p><ul><li>周六下午三点图书馆草坪上陪kzh过生日</li></ul><p>必须要完成的工作:</p><ul><li>数学实验作业</li><li>大物实验预习</li><li>计组单周期cpu</li><li>devops的题目搞定</li><li>电路实验1的视频</li><li>经济学的pre</li><li>go的计算器项目</li><li>正装租赁</li></ul><p>其中</p><table><colgroup><col style="width: 14%"><col style="width: 44%"><col style="width: 40%"></colgroup><thead><tr class="header"><th></th><th><strong>有脑工作</strong></th><th><strong>无脑工作</strong></th></tr></thead><tbody><tr class="odd"><td>上午</td><td><blockquote><p>电路实验1的视频(2*番茄)</p></blockquote></td><td><blockquote><p>交团费正装租赁(1*咖啡)</p></blockquote></td></tr><tr class="even"><td></td><td><blockquote><p>计组单周期cpu(5*番茄)</p></blockquote></td><td><blockquote><p>大物实验预习(2*咖啡)</p></blockquote></td></tr><tr class="odd"><td>下午</td><td><blockquote><p>数学实验作业(2*番茄+1*咖啡)</p></blockquote></td><td><blockquote><p>devops的题目搞定(6*咖啡)</p></blockquote></td></tr><tr class="even"><td></td><td><blockquote><p>经济学pre(3*咖啡)</p></blockquote></td><td><blockquote><p>go的计算器项目(4*咖啡)</p></blockquote></td></tr><tr class="odd"><td>总计时间</td><td>9<em>番茄+4</em>咖啡</td><td>13*咖啡</td></tr></tbody></table>总计 : 26\*番茄钟 = 26\*25 = 650 分钟 = 650/60 = 10.8333 小时<p>此外,预习和复习工作的进展:</p><ul><li>概率论的复习和预习工作</li><li>数据结构的复习工作以及最近笔记的整理</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.28 周一规划 图书馆 下午</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.28-zhou-yi-gui-hua-tu-shu-guan-xia-wu/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.28-zhou-yi-gui-hua-tu-shu-guan-xia-wu/</url>
-      
-        <content type="html"><![CDATA[<p>11.28 周一规划 图书馆 下午<br>2022年11月28日<br>8:54</p><table><thead><tr><th><strong>有脑活动</strong></th><th><strong>无脑活动</strong></th></tr></thead><tbody><tr><td>Devops的题目(急迫,3*番茄)</td><td>经济学pre(3*咖啡)</td></tr><tr><td>数学实验作业(2天,3*番茄)</td><td>数据结构笔记整理(1*咖啡)</td></tr><tr><td>概率论作业(不急迫,4*番茄)</td><td></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.29 周二规划 图书馆 下午</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.29-zhou-er-gui-hua-tu-shu-guan-xia-wu/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.29-zhou-er-gui-hua-tu-shu-guan-xia-wu/</url>
-      
-        <content type="html"><![CDATA[<table><thead><tr><th><strong>有脑活动</strong></th><th><strong>无脑活动</strong></th></tr></thead><tbody><tr><td></td><td>经济学pre(3*咖啡) [晚上]</td></tr><tr><td>数学实验作业(2天,3*番茄)</td><td>数据结构笔记整理(1*咖啡)</td></tr><tr><td>概率论作业(不急迫,4*番茄)</td><td></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.3 凌晨</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.3-ling-chen/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.3-ling-chen/</url>
-      
-        <content type="html"><![CDATA[<p>累，电路实验二总算是结课了<br>明早早起md</p><p>今天晚上先写回概率论写上三个番茄钟吧,这是一个半小时<br>大概从七点到九点?<br>然后看看Go,争取把紧要的先搞定了,学上两个番茄钟<br>alright</p><p>缺点与优点</p><table><thead><tr><th><strong>优点</strong></th><th><strong>缺点</strong></th></tr></thead><tbody><tr><td>坚持锻炼,坚持跑步</td><td>回去睡觉太晚了,天天十二点睡早上起不来</td></tr><tr><td>坚持记笔记,写日志记录</td><td>课后的练习总是做不到趁热打铁,总是拖延症,衣服总是洗不来</td></tr><tr><td>番茄钟记录自己的时间分配</td><td>还缺少资金的控制</td></tr><tr><td>愿意学习</td><td>学习深度还是不够</td></tr><tr><td>改正方法:</td><td></td></tr></tbody></table><ul><li>争取每晚9点50就从图书馆收拾离开,这就节省了20min</li><li>今晚开始就把当天的课回顾一遍,把任务搞定了</li><li>寻找比较好的记账软件,记录自己的消费</li><li>今晚把自己的计划好好梳理一遍</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.3 晚上总结</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.3-wan-shang-zong-jie/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.3-wan-shang-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p>也就是还有啥呢,小的目标,格局小一点说:</p><ul><li>概率论作业</li><li>大物作业</li><li>数据结构<br>中等格局:</li><li>计算机组成verilog的cpu设计</li><li>计算机网络的四个实验包</li><li>经济学的pre文献阅读<br>再大一点的格局:</li><li>Go的大作业的设计工作</li><li>DevOps还是后端,好tm难啊woc</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>11.30 夜,图书馆,夜间规划</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.30-ye-tu-shu-guan-ye-jian-gui-hua/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/11.30-ye-tu-shu-guan-ye-jian-gui-hua/</url>
-      
-        <content type="html"><![CDATA[<p>这周的任务:</p><ul><li>计组复习,单周期cpu完成,至少8个番茄钟</li><li>go的计算器项目的完成(tu的js)</li><li>大物的梳理知识体系</li><li>预约devops面试</li></ul><p>今晚的任务:</p><ul><li>数学实验作业,2个咖啡</li><li>概率论的知识整理</li><li>数据结构?</li></ul><p>开始整数学实验</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.10凌晨 </title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.10-ling-chen/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.10-ling-chen/</url>
-      
-        <content type="html"><![CDATA[<p>今天上午数据结构动态规划1&#x2F;3<br>下午体育考试+计组验收（真他妈啥也不会了快）<br>晚上概率论写完作业发送</p><p>这周重心在于计算机组成的复习<br>资料（wjj发送的课后习题ccz版本习题）<br>课本（我他妈找谁借一本）</p><p>先把考试搞定，中间累了看小作业</p><p>考完计组开始搞计通，课后作业和实验</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.11 夜 图书馆 应该阳了</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.11-ye-tu-shu-guan-ying-gai-yang-liao/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.11-ye-tu-shu-guan-ying-gai-yang-liao/</url>
-      
-        <content type="html"><![CDATA[<p>12.11 夜 图书馆 应该阳了<br>2022年12月11日 星期日<br>下午7:35</p><p>今天起来，10点，感觉自己嗓子有点不太舒服（干痒）。怀疑中招<br>中午吃完饭回来于图书馆时间广场玩猜灯谜活动40min，中了一个灯谜，兑换钥匙扣。<br>明日计组考试，遂今晚复习计组5，6，7，8章节，以及习题，预计6&amp;7总计1个半小时，8章重点是LRU</p><p>阳了，阳了，f**k<br>头晕，体温时不时有点想升高，所以现在写下今日的记录。以便日后重阳查阅记录。<br>吃了三顿连花清瘟胶囊，晚上回去喝三九感冒灵。开始复习计组，开整。<br>j</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.13 这本书不错</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.13-zhe-ben-shu-bu-cuo/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.13-zhe-ben-shu-bu-cuo/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.13-zhe-ben-shu-bu-cuo/../resources/image1-1.jpeg" alt="image1"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.16 到家的第二天 </title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.16-dao-jia-de-di-er-tian/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.16-dao-jia-de-di-er-tian/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上搞经济学mooc的网课测试<br>但是这两天都是疯狂熬夜到两点才睡<br>基本没有锻炼woc<br>真他妈烦<br>我佛了啊</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.17 下午 规划一下</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.17-xia-wu-gui-hua-yi-xia/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.17-xia-wu-gui-hua-yi-xia/</url>
-      
-        <content type="html"><![CDATA[<p>12.17 下午 规划一下<br>2022年12月17日<br>7:35</p><p>今天睡到下午两点才起,洗了个澡,准备好好搞<br>目前呢,需要安排计划的事情有:</p><ul><li>计算机网络的课后作业(+实验项目[这个好搞])</li><li>经济学的课后作业(以及挑战性论文的时间安排)</li><li>保证自己技术栈的增长(青训营+博客搭建)</li><li>下学期的课程自学计划</li><li>计算机组成流水线CPU的验收</li><li>数学实验的每日任务</li></ul><p>也就是说,每天都要搞得有:</p><ul><li>数学实验三道题</li><li>经济学课后一章作业</li><li>计算机网络课后习题一份</li></ul><p>今天还需要完成的有<br>数据结构的作业</p><table><thead><tr><th><strong>1</strong></th><th><strong>高亮</strong></th><th></th><th><strong>计划</strong></th><th></th><th><strong>实际</strong></th><th></th><th><strong>% 完成</strong></th><th></th><th><strong>实际（超出计划）</strong></th><th></th><th><strong>% 完成（超出计划）</strong></th></tr></thead></table><table><thead><tr><th><strong>活动</strong></th><th><strong>计划开始</strong></th><th><strong>计划持续时间</strong></th><th><strong>实际开始</strong></th><th><strong>实际持续时间</strong></th><th><strong>完成百分比</strong></th><th></th><th><strong>1</strong></th><th><strong>2</strong></th><th><strong>3</strong></th><th><strong>4</strong></th><th><strong>5</strong></th></tr></thead><tbody><tr><td>ACTIVITY 01</td><td>1</td><td>5</td><td>1</td><td>4</td><td>25%</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.2 周五 一周规划 图书馆</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.2-zhou-wu-yi-zhou-gui-hua-tu-shu-guan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.2-zhou-wu-yi-zhou-gui-hua-tu-shu-guan/</url>
-      
-        <content type="html"><![CDATA[<p>必须完成的任务:</p><ul><li>概率论作业 🍅🍅🍅</li><li>大物作业 ☕</li><li>go的后端代码 🍅🍅☕☕☕</li><li>刷乐健</li><li>经济学mooc 🍅🍅🍅</li><li>经济学中期报告pre ☕☕☕☕<br>紧急程度排序<table><thead><tr><th><strong>有脑任务</strong></th><th><strong>无脑任务</strong></th></tr></thead><tbody><tr><td>概率论作业</td><td>大物作业</td></tr><tr><td>go的后端代码</td><td>刷乐健</td></tr><tr><td>经济学mooc</td><td>经济学中期pre</td></tr><tr><td><img src="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.2-zhou-wu-yi-zhou-gui-hua-tu-shu-guan/../resources/image1-1.png" alt="image1"></td><td></td></tr></tbody></table></li></ul><p>15:43 开始go后端代码阅览一个cafe</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.4 凌晨 床上</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.4-ling-chen-chuang-shang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.4-ling-chen-chuang-shang/</url>
-      
-        <content type="html"><![CDATA[<p>感觉堕落了<br>自从温度降低很少跑步<br>晚上熬夜看直播刷视频白天刷YouTube<br>浪费了很多时间<br>影响第二天精力<br>还导致腰疼重来</p><p>明天上午概率论一页和go计算器<br>外加经济学讨论</p><p><del>下午和trzgo项目</del></p><p>晚上看看流水线cpu</p><p>下一周应该是复习整个计算机组成的周<br>除了新课安排 还需要插入复习计划</p><p>周一周二周三尽量把内容过一遍</p><p>周四写考题</p><p>还有三个屎山项目需要负责分解完成<br>屎山只给了两周时间</p><p>好消息是有个屎山项目可以重点下下一周配合计算机网络复习，有个屎山配合计算机组成复习，还有个屎山也不难，但是需要花时间解决</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.6 凌晨 床上</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.6-ling-chen-chuang-shang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.6-ling-chen-chuang-shang/</url>
-      
-        <content type="html"><![CDATA[<p>感觉自己啥几把也没干<br>佛了<br>效率比过去低多了<br>妈的<br>明天go报告<br>大物实验报告<br>大雾作业提交<br>概率论第七章一页半</p><p>搞完<br>有时间就看数据结构作业妈的</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12.8 夜 床上 颓废</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.8-ye-chuang-shang-tui-fei/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/12.8-ye-chuang-shang-tui-fei/</url>
-      
-        <content type="html"><![CDATA[<p>摆烂了三个晚上了快<br>今晚看直播看了一晚上，学不下去<br>回去删掉手机YouTube平板斗鱼<br>白天概率论结课，下午数学实验听课<br>中午午睡二小时<br>明天上午数据结构上动态规划<br>下午七八体育立定跳远穿欧文<br>考完计组验收<br>同时经济学中期讨论</p><p>如果很无聊可以看看下学期的课程要求<br>甚至下下学期的要求，提前进行规划和预习</p><p>考试已经部分进入Google 日历<br>复习计划怎么说？</p><p>妈的这周的中心还是计算机组成的复习上面，如果流水线看不下去可以慕课</p><p>不能继续摆烂了啊啊啊啊啊啊啊</p><p><strong>一定要杜绝一心二用！不能边看视频边学习！</strong></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>22.8.29  读《软技能2》有感</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/22.8.29-du-ruan-ji-neng-2-you-gan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/22.8.29-du-ruan-ji-neng-2-you-gan/</url>
-      
-        <content type="html"><![CDATA[<ol><li>强大的执行力，不达目的不放弃</li><li>HTML 和 css ，js必学的东西</li><li>作者的go</li><li>和更优秀的人接触</li><li>制定可以执行的计划,对要学习的内容有所了解再开始</li></ol><p>看《软技能1》快速学习法</p><p>把《软技能2》的开头看完</p><p>今晚整理自我反思</p><p>Google Docs and blog</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>22.8.29下午 读《内外兼修》有感</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/22.8.29-xia-wu-du-nei-wai-jian-xiu-you-gan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/22.8.29-xia-wu-du-nei-wai-jian-xiu-you-gan/</url>
-      
-        <content type="html"><![CDATA[<ol><li>积极的自我心理暗示</li><li>强大的执行力与分析能力</li><li>遇到身体报警马上调整</li><li>什么不会学什么，css js html都要学习</li><li>克服潜意识</li><li>学习时要有宏观布局，知道要学习什么<br><img src="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/22.8.29-xia-wu-du-nei-wai-jian-xiu-you-gan/../resources/image1.jpeg" alt="image1"></li></ol><p>图书馆</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>8.31 图书馆夜晚</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/8.31-tu-shu-guan-ye-wan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/8.31-tu-shu-guan-ye-wan/</url>
-      
-        <content type="html"><![CDATA[<p>今天天气变凉了,tmd就这我还是开了空调,脖子还有腰还是不舒服,还有眼睛,但是目前比较重要的事情,<br>电路实验准备,ai work 的pre工作, go 语言的tunnel怎么搞,都是问题,<br>现在先把第二个搞了吧,tnnd,真的是,一会上个厕所,电脑别没电了</p><p>国学馆靠外的门口20.12分</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.10 中午宿舍</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.10-zhong-wu-su-she/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.10-zhong-wu-su-she/</url>
-      
-        <content type="html"><![CDATA[<p>今天中秋节,计划晚上九点左右去图书馆草坪打桌游,拿一副扑克牌,今天下午,先去wc一趟,然后准备溜达溜达,溜达够了,再准备拿着电脑出去,随便搞搞.allright!</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.21 读书有感</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.21-du-shu-you-gan/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.21-du-shu-you-gan/</url>
-      
-        <content type="html"><![CDATA[<p>于国学馆,夜,杨立昆&lt;科学之路&gt;<br>“接受教育重要的是获得知识本身,而不是名校的光环”</p><ul><li>求学是为了知识本身,而不是文凭</li><li>广泛的阅读高水平的专业著作,培养科学的品味</li><li>特立独行,做自己感兴趣的事情,即使那件事在短时间内不被人看好</li><li>长期的坚持</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.23 国学馆那</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.23-guo-xue-guan-na/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.23-guo-xue-guan-na/</url>
-      
-        <content type="html"><![CDATA[<p>学了学正则表达式,感觉就那样,python中有个re的module是搞这个的<br>又看了看sqlite3,感觉写了写,啥也没搞懂<br>还看了看web方向的UDP和TCP协议下的网络连接,简直了,懂了又没有完全懂,我是真的服了…<br>小潘在旁边,现在脑子晕晕的,坐了一晚上了,外面的雨可算是停了,她还是没理我,只知道自己刷手机,得了,我头疼的慌,明天还是得穿厚的…<br>明天到图书馆估计都上午11点左右了,今天网上回去听听那个经济学一的网课,然后就睡了,困得慌,再然后就是明天的工作.<br>明天想想经济学的pre把,这个还是挺重要的,再然后,我的stack总是断<br>md那个go,ts,还有python的机器学习,怎么nm这么多东西要学习,这周还必须要完成那个大物的作业<br>大雾的作业必须想办法解决了<br>真的是</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.24 还是国学馆那里</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.24-huan-shi-guo-xue-guan-na-li/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.24-huan-shi-guo-xue-guan-na-li/</url>
-      
-        <content type="html"><![CDATA[<p>感觉没睡好,还是困,果然不能熬夜啊,腰部隐隐作痛<br>总感觉要做的事情好多怎么办,好烦啊<br>等我捋捋我必须要做的:<br>看看经济学的要求,10min把,还有创业管理的ppt也需要10min<br>这是一个番茄钟,我今天还剩下了5个番茄钟<br>我还有个什么来着,哦对了,电路实验<br>明天去买大物作业测,花费2个钟把大物写了吧,真的是啊<br>这次<br>…<br>我还必须把书给他们捎回去,如果,那么就好了<br>算了,先看要求把,番茄钟看看<br>现在是下午三点零七分,我在国学馆坐着,我觉得今天的东西也不一定要搬走,因为有些人不一定能把所有的位置占完,但是哈,我的书今天需要找个地方放起来,而且哈,我的什么作业呢,概率论写完了,大物是明天的任务,今天待会的任务是看计算机网络的慕课,一定要坚持两个番茄钟至少,我决定到五点左右再去打球,那么我4点半开始收拾,我在三点半开始看慕课,所以我现在还可以看会&lt;科学之路&gt;</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.26 床上</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.26-chuang-shang/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.26-chuang-shang/</url>
-      
-        <content type="html"><![CDATA[<p>今天看了看Django的应用算是初步入门，对web开发还是有点兴趣的，科学之路看了一半了，也快看完，</p><p>电路实验必须要看了</p><p>还试了试python的邮件smtp功能可惜失败了，玩了玩pycharm的功能</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.27  国学馆外面</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.27-guo-xue-guan-wai-mian/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.27-guo-xue-guan-wai-mian/</url>
-      
-        <content type="html"><![CDATA[<p>现在耳机里面放着创业实训1的结课报告,中午是导师见面会没睡午觉,好困<br>导师说:我有变得卓越,优秀的品质,相信我能够做好,我也相信我自己<br>今晚看了看&lt;科学之路&gt;记载笑话两则:<br>笑话一:<br>诚然,这个实践虽然成功了,但是在理论上行不通啊<br>笑话二:<br>工程师,物理学家,数学家去一个国家旅游,看到五头黑牛跟在一个农民后面<br>工程师脱口而出:”看啊,这个国家的牛都是黑色的!”<br>物理学家紧接着说:”不对,这只能说明这个国家至少有五头牛是黑色的”<br>数学家最后说:”你们都错了,这个国家的牛至少有五头身体右侧是黑色的”</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.28 国学馆老位置</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.28-guo-xue-guan-lao-wei-zhi/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.28-guo-xue-guan-lao-wei-zhi/</url>
-      
-        <content type="html"><![CDATA[<p>今天写了大概得有450+行Go的代码,上午的速通课程把go的基本操作学了一个遍,下午练了练对go有了更深的理解,但是也是对面向对象以及并发处理这一块不理解,还有包的导入,gomod的实际功能,希望在接下来的课程中可以学会更多<br>科学之路看不下去了快,太复杂了<br>今天中午的电路实验补考我没有去,因为我想清楚了,我决定坚持走下去!<br>很多时候,只有经历痛苦,才能够提高认知,才能有更深度的思考<br>哦对了,今天还知道了win +.或者win +;是可以调用emoji进行输入表情的</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.29 还是国学馆,下午</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.29-huan-shi-guo-xue-guan-xia-wu/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.29-huan-shi-guo-xue-guan-xia-wu/</url>
-      
-        <content type="html"><![CDATA[<p>穿的短袖,今天温度一般,手有一点冷,脑子也不是特别的清醒,但是好歹能看点东西<br>&lt;败者为王&gt;中有句话挺好忘记了整理:</p><table><thead><tr><th>那一晚我知道一个人要为自己的梦想去付出,不能停留在口头上;要为自己的梦想去坚持,不能因为外界一时的阻力就自暴自弃.每一个人都有无限的潜能,只要你坚持下去.</th></tr></thead><tbody><tr><td>今晚从七点吃完饭就开始和zym聊工作室的话题,一聊结果聊到今晚9点钟,晚上还要等待12点给小潘过生日,今天晚上的谈话收获不少</td></tr></tbody></table><ul><li>费曼学习法,具体形式就是开个腾讯会议,两个人限定时长给对方讲东西,我建议时间一个人15-20min最开始,第一次也不用太深太难就是简单的基础操作就挺好</li><li>组建工作室,招新工作依靠宣讲,宣讲能力依靠费曼学习法锻炼,工作室脱离行政,主要依靠学习技术,前后端,算法什么比赛什么</li><li>先把蓝桥杯打了,把个人能力提升上去,每天都要记录自己的成长</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>9.8 宿舍网课</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.8-su-she-wang-ke/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/9.8-su-she-wang-ke/</url>
-      
-        <content type="html"><![CDATA[<p>md在上计网.</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>假期Stack</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/jia-qi-stack/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/jia-qi-stack/</url>
-      
-        <content type="html"><![CDATA[<ul><li>青训营?</li><li>微软开源项目?</li><li>基本书?</li><li>预习计划?</li><li>健身计划?</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于结课前的必要任务</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/guan-yu-jie-ke-qian-de-bi-yao-ren-wu/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/guan-yu-jie-ke-qian-de-bi-yao-ren-wu/</url>
-      
-        <content type="html"><![CDATA[<p>又臭又长的大任务:</p><ul><li>经济学作业</li><li>计组cpu</li><li>计网课后作业</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>有些事情要去做的</title>
-      <link href="/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/you-xie-shi-qing-yao-qu-zuo-de/"/>
-      <url>/2022/12/19/mynotes/ri-ji-ben/ri-ji-ben/22-nian/you-xie-shi-qing-yao-qu-zuo-de/</url>
-      
-        <content type="html"><![CDATA[<p>坚持费曼学习法</p><p>坚持跑步坚持锻炼</p><p>坚持写日志，记录自己</p><p>学会一门机器学习框架</p><p>一周看一个方法 决策树回归树</p><p>预习提前完成作业是好事概率论大雾提前写，计网计组下一张开看</p><p>数据结构c的结构实现</p><p>学会前端技术，无论python还是go，我希望是先python进阶</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>决策树</title>
       <link href="/2022/12/19/mynotes/ji-qi-xue-xi/ji-qi-xue-xi/suan-fa-li-lun/jue-ce-shu/"/>
       <url>/2022/12/19/mynotes/ji-qi-xue-xi/ji-qi-xue-xi/suan-fa-li-lun/jue-ce-shu/</url>
@@ -2237,84 +1405,6 @@
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/git/chang-yong-ji-ben-cao-zuo-ming-ling-da-quan-liao-suan-shi-mei-you-init-jiu-shi/</url>
       
         <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>开发一个新feature(其实是bug...)，最好新建一个分支；</p><p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D &lt;name&gt;强行删除。</p><p>git push -f origin branchname // 这个-f命令大公司应该都不然用,都是用</p><p>git rebase 先拉回一个最新的commit到本地分支上手动修改,</p></th></tr></thead><tbody></tbody></table>**1.git clone // 到本地  2.git checkout -b xxx 切换至新分支xxx  （相当于复制了remote的仓库到本地的xxx分支上  3.修改或者添加本地代码（部署在硬盘的源文件上）  4.git diff 查看自己对代码做出的改变  5.git add 上传更新后的代码至暂存区  6.git commit 可以将暂存区里更新后的代码更新到本地git  7.git push origin xxx 将本地的xxxgit分支上传至github上的git****（如果在写自己的代码过程中发现远端GitHub上代码出现改变）  1.git checkout main 切换回main分支  2.git pull origin master(main) 将远端修改过的代码再更新到本地  3.git checkout xxx 回到xxx分支  4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  （-f ---》强行）  6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit****远端完成更新后****1.git branch -d xxx 删除本地的git分支****2.git pull origin master 再把远端的最新代码拉至本地**]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Bar柱状图</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/</url>
-      
-        <content type="html"><![CDATA[<p>Bar柱状图<br>2022年8月1日<br>0:58</p><p>我们可以使用 pyplot 中的 bar() 方法来绘制柱形图。</p><p>Add:<br>中文不兼容怎么搞</p><p>1# fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径，size 参数设置字体大小<br>2 zhfont1 &#x3D; matplotlib.font_manager.FontProperties(fname&#x3D;”E:&#x2F;OneDrive - 6x26s6&#x2F;Lan&#x2F;SourceHanSansSC-Bold.otf”, size&#x3D;18)<br>3<br>4# fontdict 可以使用 css 来设置字体样式<br>5plt.title(“菜鸟教程 - 测试”, fontproperties&#x3D;zhfont1, fontdict &#x3D; font1, loc&#x3D;”center”)<br>6<br>7# fontproperties 设置中文显示，fontsize 设置字体大小</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Pie饼状图</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/pie-bing-zhuang-tu/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/pie-bing-zhuang-tu/</url>
-      
-        <content type="html"><![CDATA[<p>Pie饼状图<br>2022年8月1日<br>1:13<br>我们可以使用 pyplot 中的 pie() 方法来绘制饼图。</p><p>设置饼图各个扇形的标签与颜色：<br><strong>实例</strong><br>1<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>2</strong>import<strong>numpy</strong>as<strong>np<br>3<br>4y</strong>&#x3D;<strong>np</strong>.<strong>array</strong>([35,<strong><strong>25,<strong><strong>25,<strong><strong>15])</strong><br>5<br>6plt</strong>.<strong>pie</strong>(<strong>y</strong>,</strong><br>7    labels</strong>&#x3D;[</strong>‘A’<strong>,</strong>‘B’<strong>,</strong>‘C’<strong>,</strong>‘D’<strong>],</strong></strong># 设置饼图标签**<br>8    colors**&#x3D;[<strong>“#d5695d”</strong>,<strong>“#5d8ca8”</strong>,<strong>“#65a479”</strong>,<strong>“#a564c9”<strong>],</strong># <strong>设置饼图颜色</strong><br>9   <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)<strong><strong># 设置标题</strong><br>11plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-pie.html">https://www.runoob.com/matplotlib/matplotlib-pie.html</a>&gt;</em></p><p>labels用来设置标签,一般用不到colors感觉</p><p>突出显示某一个扇形:</p><p>1<br>2<strong>import</strong>matplotlib**.<strong>pyplot <strong>as</strong>plt<br>3</strong>import<strong>numpy <strong>as</strong>np<br>4y <strong>&#x3D;<strong>np</strong>.<strong>array</strong>([12,25,25,35])</strong><br>5plt</strong>.<strong>pie</strong>(<strong>y</strong>,**<br>6      labels <strong>&#x3D; [</strong>‘AAA’<strong>,</strong>‘BBB’<strong>,</strong>‘CCC’<strong>,</strong>‘DDD’<strong>],</strong><br>7      explode**&#x3D;(0,0.1,0.2,0),#设置第二部分的突出显示**<br>8      autopct**&#x3D;<strong>‘%.2f%%’ <strong># 格式化输出百分比</strong><br>9      <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)**<br>11plt**.<strong>show</strong>()**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Plt and np : 2D</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/</url>
-      
-        <content type="html"><![CDATA[<p><strong>import</strong>matplotlib.pyplot<strong>as</strong>plt<br><strong>import</strong>numpy<strong>as</strong>np</p><p>x&#x3D;np.arange(0,4*np.pi,0.1)# start,stop,step<br>y&#x3D;np.sin(x)<br>z&#x3D;np.cos(x)<br>plt.plot(x,y,x,z)<br>plt.show()</p><p>Marker 类型</p><table><thead><tr><th><strong>标记</strong></th><th><strong>符号</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>“.”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image1-2.png" alt="image1"></td><td>点</td></tr><tr><td>“,”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image2.png" alt="image2"></td><td>像素点</td></tr><tr><td>“o”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image3.png" alt="image3"></td><td>实心圆</td></tr><tr><td>“v”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image4.png" alt="image4"></td><td>下三角</td></tr><tr><td>“^”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image5.png" alt="image5"></td><td>上三角</td></tr><tr><td>“&lt;“</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image6.png" alt="image6"></td><td>左三角</td></tr><tr><td>“&gt;”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image7.png" alt="image7"></td><td>右三角</td></tr><tr><td>“1”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image8.png" alt="image8"></td><td>下三叉</td></tr><tr><td>“2”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image9.png" alt="image9"></td><td>上三叉</td></tr><tr><td>“3”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image10.png" alt="image10"></td><td>左三叉</td></tr><tr><td>“4”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image11.png" alt="image11"></td><td>右三叉</td></tr><tr><td>“8”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image12.png" alt="image12"></td><td>八角形</td></tr><tr><td>“s”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image13.png" alt="image13"></td><td>正方形</td></tr><tr><td>“p”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image14.png" alt="image14"></td><td>五边形</td></tr><tr><td>“P”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image15.png" alt="image15"></td><td>加号（填充）</td></tr><tr><td>“*“</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image16.png" alt="image16"></td><td>星号</td></tr><tr><td>“h”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image17.png" alt="image17"></td><td>六边形 1</td></tr><tr><td>“H”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image18.png" alt="image18"></td><td>六边形 2</td></tr><tr><td>“+”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image19.png" alt="image19"></td><td>加号</td></tr><tr><td>“x”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image20.png" alt="image20"></td><td>乘号 x</td></tr><tr><td>“X”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image21.png" alt="image21"></td><td>乘号 x (填充)</td></tr><tr><td>“D”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image22.png" alt="image22"></td><td>菱形</td></tr><tr><td>“d”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image23.png" alt="image23"></td><td>瘦菱形</td></tr><tr><td>“|”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image24.png" alt="image24"></td><td>竖线</td></tr><tr><td>“_“</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image25.png" alt="image25"></td><td>横线</td></tr><tr><td>0 (TICKLEFT)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image26.png" alt="image26"></td><td>左横线</td></tr><tr><td>1 (TICKRIGHT)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image27.png" alt="image27"></td><td>右横线</td></tr><tr><td>2 (TICKUP)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image28.png" alt="image28"></td><td>上竖线</td></tr><tr><td>3 (TICKDOWN)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image29.png" alt="image29"></td><td>下竖线</td></tr><tr><td>4 (CARETLEFT)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image30.png" alt="image30"></td><td>左箭头</td></tr><tr><td>5 (CARETRIGHT)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image31.png" alt="image31"></td><td>右箭头</td></tr><tr><td>6 (CARETUP)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image32.png" alt="image32"></td><td>上箭头</td></tr><tr><td>7 (CARETDOWN)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image33.png" alt="image33"></td><td>下箭头</td></tr><tr><td>8 (CARETLEFTBASE)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image34.png" alt="image34"></td><td>左箭头 (中间点为基准)</td></tr><tr><td>9 (CARETRIGHTBASE)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image35.png" alt="image35"></td><td>右箭头 (中间点为基准)</td></tr><tr><td>10 (CARETUPBASE)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image36.png" alt="image36"></td><td>上箭头 (中间点为基准)</td></tr><tr><td>11 (CARETDOWNBASE)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image37.png" alt="image37"></td><td>下箭头 (中间点为基准)</td></tr><tr><td>“None”, “” or “”</td><td></td><td>没有任何标记</td></tr><tr><td>‘$…$’</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image38.png" alt="image38"></td><td>渲染指定的字符。例如 “$f$” 以字母 f 为标记。</td></tr></tbody></table><table><thead><tr><th><strong>线类型标记</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>‘-‘</td><td>实线</td></tr><tr><td>‘:’</td><td>虚线</td></tr><tr><td>‘–’</td><td>破折线</td></tr><tr><td>‘-.’</td><td>点划线</td></tr></tbody></table><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-marker.html">https://www.runoob.com/matplotlib/matplotlib-marker.html</a>&gt;</em></p><p>plt.rcParams[‘font.family’]&#x3D;[‘STFangsong’]<br>绘图时加入中文仿宋字体的代码<br>–in matplotlib<br>plt提供了三种标签方法<br>1Plt**.<strong>title</strong>(<strong>“ “</strong>)**<br>2Plt**.<strong>xlabel</strong>(<strong>“ “</strong>)**<br>3Plt**.<strong>ylabel</strong>(<strong>“ “</strong>)**</p><p>绘图网格线:<br>1Plt**.<strong>grid</strong>()**<br>2grid**(<strong>color <strong>&#x3D;</strong>‘color’</strong>,<strong>linestyle <strong>&#x3D;</strong>‘linestyle’</strong>,**linewidth <strong>&#x3D;<strong>number</strong>)</strong></p><p>绘制多图<br>1subplot**(<strong>nrows</strong>,<strong>ncols</strong>,<strong>index</strong>, **<strong>kwargs</strong>)**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Scatter散点图</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/scatter-san-dian-tu/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/scatter-san-dian-tu/</url>
-      
-        <content type="html"><![CDATA[<p>Scatter散点图<br>2022年8月1日<br>0:30</p><p>使用随机数来设置散点图：<br><strong>实例</strong><br>1<strong>import</strong>numpy<strong>as</strong>np<br>2<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>3<br>4# 随机数生成器的种子<br>5np</strong>.<strong>random</strong>.<strong>seed</strong>(19680801)**<br>6<br>7<br>8N**&#x3D;<strong><strong>50</strong><br>9x</strong>&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>10y**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>11colors**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>12area**&#x3D;<strong><strong>(30</strong></strong>*<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>))**2**# 0 to 15 point radii<br>13<br>14plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>s</strong>&#x3D;<strong>area</strong>,<strong>c</strong>&#x3D;<strong>colors</strong>,<strong>alpha</strong>&#x3D;0.5)<strong># 设置颜色及透明度<br>15<br>16plt</strong>.<strong>title</strong>(<strong>“RUNOOB Scatter Test”</strong>)<strong># 设置标题<br>17<br>18plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-scatter.html">https://www.runoob.com/matplotlib/matplotlib-scatter.html</a>&gt;</em></p><p>设置颜色条使用cmap:<br>1plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>c <strong>&#x3D;<strong>colors</strong>,<strong>cmap</strong>&#x3D;</strong>‘viridis’</strong>)**</p><p>显示颜色条:<br>1plt**.<strong>colorbar</strong>()**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>魔法命令</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/mo-fa-ming-ling/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/mo-fa-ming-ling/</url>
-      
-        <content type="html"><![CDATA[<p>增加图片清晰度</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>%config InlineBackend.figure_format = 'retina'</p><p># 以上命令可以使图片的清晰度更高</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>无标题页</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/numpy/wu-biao-ti-ye/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/numpy/wu-biao-ti-ye/</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
       
       
@@ -2557,11 +1647,89 @@
     
     
     <entry>
+      <title>Bar柱状图</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/bar-zhu-zhuang-tu/</url>
+      
+        <content type="html"><![CDATA[<p>Bar柱状图<br>2022年8月1日<br>0:58</p><p>我们可以使用 pyplot 中的 bar() 方法来绘制柱形图。</p><p>Add:<br>中文不兼容怎么搞</p><p>1# fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径，size 参数设置字体大小<br>2 zhfont1 &#x3D; matplotlib.font_manager.FontProperties(fname&#x3D;”E:&#x2F;OneDrive - 6x26s6&#x2F;Lan&#x2F;SourceHanSansSC-Bold.otf”, size&#x3D;18)<br>3<br>4# fontdict 可以使用 css 来设置字体样式<br>5plt.title(“菜鸟教程 - 测试”, fontproperties&#x3D;zhfont1, fontdict &#x3D; font1, loc&#x3D;”center”)<br>6<br>7# fontproperties 设置中文显示，fontsize 设置字体大小</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>运算操作符</title>
       <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/yun-suan-cao-zuo-fu/"/>
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/yun-suan-cao-zuo-fu/</url>
       
         <content type="html"><![CDATA[<p>基本和C语言的相同,下面只罗列运算符的优先级(实际也不用记,用用就知道了)</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>* / % &lt;&lt; &gt;&gt; &amp; &amp;^</p><p>+ - | ^</p><p><strong>== != &lt; &lt;= &gt; &gt;=</strong></p><p>&amp;&amp;</p><p>||</p></th></tr></thead><tbody></tbody></table>从上到下逐级递减-   值得一提的是Go也支持字符串通过"+"连接,当然"+="也可以,例如<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>println("Go"+"lang")//Golang</p><p>var a = "Go"</p><p>a += "lang"</p><p>println(a)//Golang</p></th></tr></thead><tbody></tbody></table>-   <u>还有,Go也支持"++""--"操作,但是没有返回值,不能当作表达式使用</u>-   <u>Go中的取反操作符不是"\~",而是"^"</u>    -   和其他流行语言一样,Go也支持"+"去连接字符串-   和Java不同,Go支持无符号数,所以不需要无符号右移运算符>\>\>-   Go不支持幂运算符,所以要使用<sub></sub>​math​<sub></sub>标准库包中的<sub></sub>​Pow​<sub></sub>函数进行幂运算-   多了个特殊的**清位运算符**<sub></sub>​&^​<sub></sub>    -   <sub></sub>​m&^n​<sub></sub>等价于<sub></sub>​m&(^n)​<sub></sub>如果是2的幂运算的话,可以使用<sub></sub>​>\>​<sub></sub>(除2的次数)或者<sub></sub>​\<\<​<sub>(乘2的次数)注意:移位操作的结果都是整数移位运算在32和64位架构的机器上有时候如果不注重细节会出大bug</\<​<sub>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pie饼状图</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/pie-bing-zhuang-tu/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/pie-bing-zhuang-tu/</url>
+      
+        <content type="html"><![CDATA[<p>Pie饼状图<br>2022年8月1日<br>1:13<br>我们可以使用 pyplot 中的 pie() 方法来绘制饼图。</p><p>设置饼图各个扇形的标签与颜色：<br><strong>实例</strong><br>1<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>2</strong>import<strong>numpy</strong>as<strong>np<br>3<br>4y</strong>&#x3D;<strong>np</strong>.<strong>array</strong>([35,<strong><strong>25,<strong><strong>25,<strong><strong>15])</strong><br>5<br>6plt</strong>.<strong>pie</strong>(<strong>y</strong>,</strong><br>7    labels</strong>&#x3D;[</strong>‘A’<strong>,</strong>‘B’<strong>,</strong>‘C’<strong>,</strong>‘D’<strong>],</strong></strong># 设置饼图标签**<br>8    colors**&#x3D;[<strong>“#d5695d”</strong>,<strong>“#5d8ca8”</strong>,<strong>“#65a479”</strong>,<strong>“#a564c9”<strong>],</strong># <strong>设置饼图颜色</strong><br>9   <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)<strong><strong># 设置标题</strong><br>11plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-pie.html">https://www.runoob.com/matplotlib/matplotlib-pie.html</a>&gt;</em></p><p>labels用来设置标签,一般用不到colors感觉</p><p>突出显示某一个扇形:</p><p>1<br>2<strong>import</strong>matplotlib**.<strong>pyplot <strong>as</strong>plt<br>3</strong>import<strong>numpy <strong>as</strong>np<br>4y <strong>&#x3D;<strong>np</strong>.<strong>array</strong>([12,25,25,35])</strong><br>5plt</strong>.<strong>pie</strong>(<strong>y</strong>,**<br>6      labels <strong>&#x3D; [</strong>‘AAA’<strong>,</strong>‘BBB’<strong>,</strong>‘CCC’<strong>,</strong>‘DDD’<strong>],</strong><br>7      explode**&#x3D;(0,0.1,0.2,0),#设置第二部分的突出显示**<br>8      autopct**&#x3D;<strong>‘%.2f%%’ <strong># 格式化输出百分比</strong><br>9      <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)**<br>11plt**.<strong>show</strong>()**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Plt and np : 2D</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/</url>
+      
+        <content type="html"><![CDATA[<p><strong>import</strong>matplotlib.pyplot<strong>as</strong>plt<br><strong>import</strong>numpy<strong>as</strong>np</p><p>x&#x3D;np.arange(0,4*np.pi,0.1)# start,stop,step<br>y&#x3D;np.sin(x)<br>z&#x3D;np.cos(x)<br>plt.plot(x,y,x,z)<br>plt.show()</p><p>Marker 类型</p><table><thead><tr><th><strong>标记</strong></th><th><strong>符号</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>“.”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image1-2.png" alt="image1"></td><td>点</td></tr><tr><td>“,”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image2.png" alt="image2"></td><td>像素点</td></tr><tr><td>“o”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image3.png" alt="image3"></td><td>实心圆</td></tr><tr><td>“v”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image4.png" alt="image4"></td><td>下三角</td></tr><tr><td>“^”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image5.png" alt="image5"></td><td>上三角</td></tr><tr><td>“&lt;“</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image6.png" alt="image6"></td><td>左三角</td></tr><tr><td>“&gt;”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image7.png" alt="image7"></td><td>右三角</td></tr><tr><td>“1”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image8.png" alt="image8"></td><td>下三叉</td></tr><tr><td>“2”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image9.png" alt="image9"></td><td>上三叉</td></tr><tr><td>“3”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image10.png" alt="image10"></td><td>左三叉</td></tr><tr><td>“4”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image11.png" alt="image11"></td><td>右三叉</td></tr><tr><td>“8”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image12.png" alt="image12"></td><td>八角形</td></tr><tr><td>“s”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image13.png" alt="image13"></td><td>正方形</td></tr><tr><td>“p”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image14.png" alt="image14"></td><td>五边形</td></tr><tr><td>“P”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image15.png" alt="image15"></td><td>加号（填充）</td></tr><tr><td>“*“</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image16.png" alt="image16"></td><td>星号</td></tr><tr><td>“h”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image17.png" alt="image17"></td><td>六边形 1</td></tr><tr><td>“H”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image18.png" alt="image18"></td><td>六边形 2</td></tr><tr><td>“+”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image19.png" alt="image19"></td><td>加号</td></tr><tr><td>“x”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image20.png" alt="image20"></td><td>乘号 x</td></tr><tr><td>“X”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image21.png" alt="image21"></td><td>乘号 x (填充)</td></tr><tr><td>“D”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image22.png" alt="image22"></td><td>菱形</td></tr><tr><td>“d”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image23.png" alt="image23"></td><td>瘦菱形</td></tr><tr><td>“|”</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image24.png" alt="image24"></td><td>竖线</td></tr><tr><td>“_“</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image25.png" alt="image25"></td><td>横线</td></tr><tr><td>0 (TICKLEFT)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image26.png" alt="image26"></td><td>左横线</td></tr><tr><td>1 (TICKRIGHT)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image27.png" alt="image27"></td><td>右横线</td></tr><tr><td>2 (TICKUP)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image28.png" alt="image28"></td><td>上竖线</td></tr><tr><td>3 (TICKDOWN)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image29.png" alt="image29"></td><td>下竖线</td></tr><tr><td>4 (CARETLEFT)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image30.png" alt="image30"></td><td>左箭头</td></tr><tr><td>5 (CARETRIGHT)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image31.png" alt="image31"></td><td>右箭头</td></tr><tr><td>6 (CARETUP)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image32.png" alt="image32"></td><td>上箭头</td></tr><tr><td>7 (CARETDOWN)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image33.png" alt="image33"></td><td>下箭头</td></tr><tr><td>8 (CARETLEFTBASE)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image34.png" alt="image34"></td><td>左箭头 (中间点为基准)</td></tr><tr><td>9 (CARETRIGHTBASE)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image35.png" alt="image35"></td><td>右箭头 (中间点为基准)</td></tr><tr><td>10 (CARETUPBASE)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image36.png" alt="image36"></td><td>上箭头 (中间点为基准)</td></tr><tr><td>11 (CARETDOWNBASE)</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image37.png" alt="image37"></td><td>下箭头 (中间点为基准)</td></tr><tr><td>“None”, “” or “”</td><td></td><td>没有任何标记</td></tr><tr><td>‘$…$’</td><td><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/plt-and-np-2d/../resources/image38.png" alt="image38"></td><td>渲染指定的字符。例如 “$f$” 以字母 f 为标记。</td></tr></tbody></table><table><thead><tr><th><strong>线类型标记</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>‘-‘</td><td>实线</td></tr><tr><td>‘:’</td><td>虚线</td></tr><tr><td>‘–’</td><td>破折线</td></tr><tr><td>‘-.’</td><td>点划线</td></tr></tbody></table><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-marker.html">https://www.runoob.com/matplotlib/matplotlib-marker.html</a>&gt;</em></p><p>plt.rcParams[‘font.family’]&#x3D;[‘STFangsong’]<br>绘图时加入中文仿宋字体的代码<br>–in matplotlib<br>plt提供了三种标签方法<br>1Plt**.<strong>title</strong>(<strong>“ “</strong>)**<br>2Plt**.<strong>xlabel</strong>(<strong>“ “</strong>)**<br>3Plt**.<strong>ylabel</strong>(<strong>“ “</strong>)**</p><p>绘图网格线:<br>1Plt**.<strong>grid</strong>()**<br>2grid**(<strong>color <strong>&#x3D;</strong>‘color’</strong>,<strong>linestyle <strong>&#x3D;</strong>‘linestyle’</strong>,**linewidth <strong>&#x3D;<strong>number</strong>)</strong></p><p>绘制多图<br>1subplot**(<strong>nrows</strong>,<strong>ncols</strong>,<strong>index</strong>, **<strong>kwargs</strong>)**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Scatter散点图</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/scatter-san-dian-tu/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/scatter-san-dian-tu/</url>
+      
+        <content type="html"><![CDATA[<p>Scatter散点图<br>2022年8月1日<br>0:30</p><p>使用随机数来设置散点图：<br><strong>实例</strong><br>1<strong>import</strong>numpy<strong>as</strong>np<br>2<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>3<br>4# 随机数生成器的种子<br>5np</strong>.<strong>random</strong>.<strong>seed</strong>(19680801)**<br>6<br>7<br>8N**&#x3D;<strong><strong>50</strong><br>9x</strong>&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>10y**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>11colors**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>12area**&#x3D;<strong><strong>(30</strong></strong>*<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>))**2**# 0 to 15 point radii<br>13<br>14plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>s</strong>&#x3D;<strong>area</strong>,<strong>c</strong>&#x3D;<strong>colors</strong>,<strong>alpha</strong>&#x3D;0.5)<strong># 设置颜色及透明度<br>15<br>16plt</strong>.<strong>title</strong>(<strong>“RUNOOB Scatter Test”</strong>)<strong># 设置标题<br>17<br>18plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-scatter.html">https://www.runoob.com/matplotlib/matplotlib-scatter.html</a>&gt;</em></p><p>设置颜色条使用cmap:<br>1plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>c <strong>&#x3D;<strong>colors</strong>,<strong>cmap</strong>&#x3D;</strong>‘viridis’</strong>)**</p><p>显示颜色条:<br>1plt**.<strong>colorbar</strong>()**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>魔法命令</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/mo-fa-ming-ling/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/matplotlib/mo-fa-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<p>增加图片清晰度</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>%config InlineBackend.figure_format = 'retina'</p><p># 以上命令可以使图片的清晰度更高</p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无标题页</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/numpy/wu-biao-ti-ye/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/numpy/wu-biao-ti-ye/</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
       
       
