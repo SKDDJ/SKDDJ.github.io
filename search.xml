@@ -1413,11 +1413,11 @@
     
     
     <entry>
-      <title>If else 和 Switch</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/if-else-he-switch/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/if-else-he-switch/</url>
+      <title>Go的代码风格简述</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-de-dai-ma-feng-ge-jian-shu/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-de-dai-ma-feng-ge-jian-shu/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>package main</p><p>import “math&#x2F;rand”</p><p>const MaxRand &#x3D; 16</p><p>func StatRandomNumbers(numRands int) (int, int) {</p><p>  var a, b int</p><p>  for i :&#x3D; 0; i &lt; numRands; i++ {</p><pre><code>if rand.Intn(MaxRand) \&lt; MaxRand/2 &#123;  a = a + 1&#125; else &#123;  b++&#125;</code></pre><p>  }</p><p>  return a, b</p><p>}</p><p>func main() {</p><p>  var num &#x3D; 100</p><p>  x, y :&#x3D; StatRandomNumbers(num)</p><p>  print(“Result:”, x, “+”, y, “&#x3D;”, num, “?”)</p><p>  println(x+y &#x3D;&#x3D; num)</p><p>}</p><p>有其他语言基础看懂基本结构应该问题不大</p><ul><li>Go为了规范代码风格,甚至<strong>不允许大括号单独另起一行(也有特殊情况)</strong>,据说和编译器的某些机制有关,在编译时检测到大括号位置不对就会报错,避免编译途中报错,也算是提高了效率吧 :)</li></ul>]]></content>
       
       
       
@@ -1426,11 +1426,11 @@
     
     
     <entry>
-      <title>Go的代码风格简述</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-de-dai-ma-feng-ge-jian-shu/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/go-de-dai-ma-feng-ge-jian-shu/</url>
+      <title>If else 和 Switch</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/if-else-he-switch/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/golang/if-else-he-switch/</url>
       
-        <content type="html"><![CDATA[<p>package main</p><p>import “math&#x2F;rand”</p><p>const MaxRand &#x3D; 16</p><p>func StatRandomNumbers(numRands int) (int, int) {</p><p>  var a, b int</p><p>  for i :&#x3D; 0; i &lt; numRands; i++ {</p><pre><code>if rand.Intn(MaxRand) \&lt; MaxRand/2 &#123;  a = a + 1&#125; else &#123;  b++&#125;</code></pre><p>  }</p><p>  return a, b</p><p>}</p><p>func main() {</p><p>  var num &#x3D; 100</p><p>  x, y :&#x3D; StatRandomNumbers(num)</p><p>  print(“Result:”, x, “+”, y, “&#x3D;”, num, “?”)</p><p>  println(x+y &#x3D;&#x3D; num)</p><p>}</p><p>有其他语言基础看懂基本结构应该问题不大</p><ul><li>Go为了规范代码风格,甚至<strong>不允许大括号单独另起一行(也有特殊情况)</strong>,据说和编译器的某些机制有关,在编译时检测到大括号位置不对就会报错,避免编译途中报错,也算是提高了效率吧 :)</li></ul>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       
@@ -2232,6 +2232,19 @@
     
     
     <entry>
+      <title>关于上次问题的分析总结</title>
+      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/guan-yu-shang-ci-wen-ti-de-fen-xi-zong-jie/"/>
+      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/guan-yu-shang-ci-wen-ti-de-fen-xi-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p>Q:现在电脑怎么访问公网<br>A:<br>由于现在IP v4地址匮乏,所以现在拨号光纤默认分配私网地址,现在电脑上网ip是从运营商那里得到一个动态的ip地址(大内网时代,一个小ip池有3-5个ip分配),如果硬要一个公网ip也可以给运营商打电话说装监控需要一个公网ip,客服分配了公网ip后可以方便自家电脑通过DDNS映射到公网上,这样就可以远程访问了.但是这个账号每次PPOE拨号以后会重新分配ip地址,所以需要DDNS.<br>如果想要自己搭建一个网站映射到公网上,这个可行性不高,因为一.带宽不足,二.公网ip不固定,三.需要身份验证才能用http隧道.如果联系ISP网络服务提供商的话,带宽费用大概是50M一年一万多.<br>其实私网ip有利于保护个人电脑信息安全,如果暴露到公网上,容易被攻击</p><p><strong>新名词</strong></p><ul><li>DHCP(Dynamic Host Configuration Protocol)动态主机配置协议,服务器给客户机自动分配ip地址和子网掩码</li><li>子网掩码:为了解决IP v4地址不足诞生的虚拟ip技术,需要结合IP地址一起使用,方便辨别局域网和广域网ip,是个32位地址,还可以把一个大的IP网络划分成小的子网络</li><li>端口转发:将一个IP的端口和另一个ip的端口对应起来</li><li>静态ARP绑定:将内网的机器MAC地址与对应的IP固定起来</li><li>MAC地址(Media Access Control Address)又称物理地址,以太网地址,局域网地址,是一个确定网络设备位置的地址,MAC地址必须具备唯一性,一般被硬件厂商生产时就固化在硬件里,因为厂商不同,所以格式不一.</li><li>DDNS,先要了解DNS(Domain name Server,域名解析服务,作用:域名解析成ip),而DDNS多的那个”D”就是”Dynamic”,动态的,我们访问”<a href="http://www.baidu.com" 时,ping的域名返回的是ip,由于dhcp的存在,我们的ip会不断变化,因此要动态解析,所以就有了ddns服务 ">www.baidu.com&quot;时,ping的域名返回的是IP,由于DHCP的存在,我们的IP会不断变化,因此要动态解析,所以就有了DDNS服务</a>.</li></ul><p>在China,Web服务收到严格管控,因此,Web服务用到的80&#x2F;8080&#x2F;443端口都处于封锁状态,如果一旦被扫描到架设Web服务很可能会被请喝茶,所以不要在公网转发使用这些敏感端口.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>11 </title>
       <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/11/"/>
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/11/</url>
@@ -2341,19 +2354,6 @@
       <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/</url>
       
         <content type="html"><![CDATA[<p><img src="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/qian-duan-san-jian-tao/jie-gou-ge-shi/../resources/image1-6.png" alt="image1"></p><p><strong>&lt;!DOCTYPE&gt;声明</strong><br>放在&lt;html&gt;之前<br>&lt;!DOCTYPE&gt;声明有助于浏览器中正确显示网页。</p><p><em>来自 &lt;<a href="https://www.runoob.com/html/html-intro.html">https://www.runoob.com/html/html-intro.html</a>&gt;</em></p><p>通用声明在不兼容时查看超链接</p><p><strong>中文编码</strong><br>在&lt;head&gt;处把字符声明改成utf-8或者GBK</p><table><thead><tr><th>&lt;meta charset &#x3D; “UTF-8”&gt;</th></tr></thead></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于上次问题的分析总结</title>
-      <link href="/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/guan-yu-shang-ci-wen-ti-de-fen-xi-zong-jie/"/>
-      <url>/2022/12/19/mynotes/code-sui-xiang/code-sui-xiang/fei-man-xue-xi-fa/guan-yu-shang-ci-wen-ti-de-fen-xi-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p>Q:现在电脑怎么访问公网<br>A:<br>由于现在IP v4地址匮乏,所以现在拨号光纤默认分配私网地址,现在电脑上网ip是从运营商那里得到一个动态的ip地址(大内网时代,一个小ip池有3-5个ip分配),如果硬要一个公网ip也可以给运营商打电话说装监控需要一个公网ip,客服分配了公网ip后可以方便自家电脑通过DDNS映射到公网上,这样就可以远程访问了.但是这个账号每次PPOE拨号以后会重新分配ip地址,所以需要DDNS.<br>如果想要自己搭建一个网站映射到公网上,这个可行性不高,因为一.带宽不足,二.公网ip不固定,三.需要身份验证才能用http隧道.如果联系ISP网络服务提供商的话,带宽费用大概是50M一年一万多.<br>其实私网ip有利于保护个人电脑信息安全,如果暴露到公网上,容易被攻击</p><p><strong>新名词</strong></p><ul><li>DHCP(Dynamic Host Configuration Protocol)动态主机配置协议,服务器给客户机自动分配ip地址和子网掩码</li><li>子网掩码:为了解决IP v4地址不足诞生的虚拟ip技术,需要结合IP地址一起使用,方便辨别局域网和广域网ip,是个32位地址,还可以把一个大的IP网络划分成小的子网络</li><li>端口转发:将一个IP的端口和另一个ip的端口对应起来</li><li>静态ARP绑定:将内网的机器MAC地址与对应的IP固定起来</li><li>MAC地址(Media Access Control Address)又称物理地址,以太网地址,局域网地址,是一个确定网络设备位置的地址,MAC地址必须具备唯一性,一般被硬件厂商生产时就固化在硬件里,因为厂商不同,所以格式不一.</li><li>DDNS,先要了解DNS(Domain name Server,域名解析服务,作用:域名解析成ip),而DDNS多的那个”D”就是”Dynamic”,动态的,我们访问”<a href="http://www.baidu.com" 时,ping的域名返回的是ip,由于dhcp的存在,我们的ip会不断变化,因此要动态解析,所以就有了ddns服务 ">www.baidu.com&quot;时,ping的域名返回的是IP,由于DHCP的存在,我们的IP会不断变化,因此要动态解析,所以就有了DDNS服务</a>.</li></ul><p>在China,Web服务收到严格管控,因此,Web服务用到的80&#x2F;8080&#x2F;443端口都处于封锁状态,如果一旦被扫描到架设Web服务很可能会被请喝茶,所以不要在公网转发使用这些敏感端口.</p>]]></content>
       
       
       
