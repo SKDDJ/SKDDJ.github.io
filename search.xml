@@ -640,110 +640,6 @@
     
     
     <entry>
-      <title>case 1  基本语法</title>
-      <link href="/article/6c4c1072.html"/>
-      <url>/article/6c4c1072.html</url>
-      
-        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/article/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见函数</title>
-      <link href="/article/1ce2db89.html"/>
-      <url>/article/1ce2db89.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见运算符</title>
-      <link href="/article/85826fea.html"/>
-      <url>/article/85826fea.html</url>
-      
-        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/article/../resources/image1-42.png" alt="image1"></li><li><img src="/article/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微分方程模型与ODE函数</title>
-      <link href="/article/614ccd14.html"/>
-      <url>/article/614ccd14.html</url>
-      
-        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>符号计算函数</title>
-      <link href="/article/46d0dedd.html"/>
-      <url>/article/46d0dedd.html</url>
-      
-        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>线性代数</title>
-      <link href="/article/c23efd5b.html"/>
-      <url>/article/c23efd5b.html</url>
-      
-        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>课程介绍,成绩构成</title>
-      <link href="/article/478d9011.html"/>
-      <url>/article/478d9011.html</url>
-      
-        <content type="html"><![CDATA[<p><img src="/article/../resources/image1-40.png" alt="image1"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>非线性方程求解</title>
-      <link href="/article/99ff7dcd.html"/>
-      <url>/article/99ff7dcd.html</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>homework1</title>
       <link href="/article/1234e32b.html"/>
       <url>/article/1234e32b.html</url>
@@ -970,6 +866,110 @@
       <url>/article/2362a8ea.html</url>
       
         <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={EDA1F8B2-236A-4984-A9E1-31CF029599FA}&amp;71&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">outline</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={2B5827D1-3FCA-49AC-8306-970DD00CA74B}&amp;E1&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">单链表的结构</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={E524CB0E-23BB-4741-BEA8-E11356B4CDA4}&amp;C9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">单链表的实现</a></p><p><a href="onenote:#%E9%93%BE%E8%A1%A8&amp;section-id={C556DED5-B10C-40F2-9865-1BF211703905}&amp;page-id={0DFCA6DB-3F18-46B4-A213-7C56D2205512}&amp;object-id={ED2695E9-6382-4E51-939D-4B1187C8486C}&amp;2D&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/数据结构与算法.one">双链表</a></p></th></tr></thead><tbody></tbody></table><p><strong>outline</strong></p><ul><li>单链表的结构</li><li>单链表的实现</li><li>双链表</li><li>循环链表</li></ul><p><strong>单链表的结构</strong><br>定义:链式存储的线性表</p><table><thead><tr><th><strong>data</strong></th><th><strong>next</strong></th></tr></thead><tbody><tr><td>数据域 指针域</td><td></td></tr></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>typedef struct LNode{</p><blockquote><p>ElemType data;</p><p>struct LNode *next;</p><p>}LNode,*LinkList;</p></blockquote></th></tr></thead><tbody></tbody></table>*这里还有个带不带头结点的问题:*<p><u>增加一个头结点的目的是方便运算的实现,在单链表中,如果没有头结点的话需要把第一个结点和后面的结点进行分类,这样就比较麻烦了,先说头指针(链表名),头结点(不必要,但有用,data域不一定有意义,也可以存链表长度),首元结点的概念</u></p><p><strong>单链表的实现</strong><br>(1)按序号查找结点值(按位查找)<br><img src="/article/../resources/image1-47.png" alt="image1"></p><p>L是头指针</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>LNode *GetElem(LinkList L, int i){</p><blockquote><p>int j = 1;// count</p><p>LNode *p = L -&gt; next;//因为有头结点,所以p指向下一个</p><p>if(i == 0) return L;</p><p>if(i &lt; 0) return NULL;</p><p>while(p&amp;&amp;j&lt;i){</p><p>p = p -&gt; next; j++;</p><p>}</p><p>return p;</p><p>}</p></blockquote></th></tr></thead><tbody></tbody></table>(2)按值查找表结点![image1](../../resources/image1-47.png)<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>LNode *LocateElem(LinkList L, ElemType e){</p><blockquote><p>LNode *p = L -&gt; next;</p><p>while(p != NULL &amp;&amp; p -&gt; data != e)</p><p>p = p -&gt; next;</p><p>return p;</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>P.S. 此处应有一道例题(3)插入结点操作(将值为x的新结点插入到单链表的第i个位置上)![image2](../../resources/image2-46.png)实现插入操作的代码如下(前插操作,在某个结点前插入结点):<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>p = GetElem(L,i - 1);</p><blockquote><p>s -&gt; next = p -&gt; next:</p><p>p -&gt; next = s;</p></blockquote></th></tr></thead><tbody></tbody></table>后插操作(在某个结点之后插入新结点)在某个结点之后插入新结点后交换数据域那么就转化为前插<table><colgroup><col style="width: 21%"><col style="width: 78%"></colgroup><thead><tr class="header"><th></th><th><p>s -&gt; next = p -&gt; next;</p><p>p -&gt; next = s;</p><p>temp = p -&gt; data;</p><p>p -&gt; data = s -&gt; data;</p><p>s -&gt; data = temp;</p></th></tr></thead><tbody></tbody></table><p>(4)删除结点操作<br><img src="/article/../resources/image3-39.png" alt="image3"><br>删除结点的代码片段:</p><table><colgroup><col style="width: 22%"><col style="width: 77%"></colgroup><thead><tr class="header"><th></th><th><p>p = GetElem(L,i - 1);</p><p>q = p -&gt; next;</p><p>p -&gt; next = q -&gt; next;</p><p>free(q);</p></th></tr></thead><tbody></tbody></table><p><strong>双链表</strong><br>双链表结点中有两个指针prior和next,分别指向其前驱节点和后继结点<br><img src="/article/../resources/image4-38.png" alt="image4"></p><p>代码描述:</p><table><colgroup><col style="width: 18%"><col style="width: 81%"></colgroup><thead><tr class="header"><th></th><th><p>typedef struct DNode{</p><blockquote><p>ElemType data;</p><p>struct DNode *prior, *next;</p><p>}DNode,*DLinkList;</p></blockquote></th></tr></thead><tbody></tbody></table><p>头插法和尾插法的补充<br>循环链表和双向链表的内容</p><p><em><strong><del><u>插入操作等等未完待续…</u></del></strong></em></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case 1  基本语法</title>
+      <link href="/article/6c4c1072.html"/>
+      <url>/article/6c4c1072.html</url>
+      
+        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/article/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见函数</title>
+      <link href="/article/1ce2db89.html"/>
+      <url>/article/1ce2db89.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见运算符</title>
+      <link href="/article/85826fea.html"/>
+      <url>/article/85826fea.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/article/../resources/image1-42.png" alt="image1"></li><li><img src="/article/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微分方程模型与ODE函数</title>
+      <link href="/article/614ccd14.html"/>
+      <url>/article/614ccd14.html</url>
+      
+        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>符号计算函数</title>
+      <link href="/article/46d0dedd.html"/>
+      <url>/article/46d0dedd.html</url>
+      
+        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>线性代数</title>
+      <link href="/article/c23efd5b.html"/>
+      <url>/article/c23efd5b.html</url>
+      
+        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>课程介绍,成绩构成</title>
+      <link href="/article/478d9011.html"/>
+      <url>/article/478d9011.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="/article/../resources/image1-40.png" alt="image1"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>非线性方程求解</title>
+      <link href="/article/99ff7dcd.html"/>
+      <url>/article/99ff7dcd.html</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
       
       
       
@@ -1550,11 +1550,11 @@
     
     
     <entry>
-      <title>函数声明和调用</title>
-      <link href="/article/8c56f370.html"/>
-      <url>/article/8c56f370.html</url>
+      <title>关键字和标识符</title>
+      <link href="/article/28e02bb2.html"/>
+      <url>/article/28e02bb2.html</url>
       
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E5%92%8C%E8%B0%83%E7%94%A8&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={1C246853-2D76-4155-907E-6E2D9AD120AF}&amp;object-id={7A5492D6-D789-454D-B233-02EBBFBE8BE7}&amp;51&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">函数调用的退出阶段</a></p><p><a href="onenote:#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E5%92%8C%E8%B0%83%E7%94%A8&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={1C246853-2D76-4155-907E-6E2D9AD120AF}&amp;object-id={F04DA2D1-AB95-4DCD-8E01-C9E1B68478B0}&amp;89&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">匿名函数</a></p><p><a href="onenote:#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E5%92%8C%E8%B0%83%E7%94%A8&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={1C246853-2D76-4155-907E-6E2D9AD120AF}&amp;object-id={B2870CA9-FDAB-4017-ACA2-1692F27A11A1}&amp;F8&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">内置函数</a></p></th></tr></thead><tbody></tbody></table><p>类似于Go这种语言都要有一个程序入口,像python这种动态语言也要”伪造”一个入口</p><table><thead><tr><th>if <strong>__name__</strong> &#x3D;&#x3D; ‘<strong>__main__</strong>‘</th></tr></thead><tbody><tr><td>而Go的程序入口是<sub></sub>​main​<sub></sub>,入口函数不能携带任何输入参数和返回结果</td></tr></tbody></table><p>一个例子:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>func SquaresOfSumAndDiff(a int64, b int64)(s int64, d int64){</p><blockquote><p>x,y := a + b, a - b</p><p>s = x*x</p><p>d =y * y</p><p>return // &lt;=&gt; return s,d</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>-   Go允许返回多个值,但是必须指定类型-   return可以缩写一次返回完毕-   输出结果声明列表中的所有声明中的结果名称必须同时出现或者同时省略    -   结果名称没有省略叫具名返回结果,否则叫匿名返回结果下面的代码和上面是等价的:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>func SquaresOfSumAndDiff(a int64, b int64)(int64 int64){</p><blockquote><p>return (a+b)*(a+b),(a-b)*(a-b)</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>更多的例子:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>func CompareLower4bits(m,n uint32)(r bool){</p><blockquote><p>r = m&amp;0xF &gt; n&amp;0xf</p><p>return</p><p>// &lt;=&gt; return m&amp;0xFF &gt; n&amp;0xff</p></blockquote><p>}</p><p></p><p>func VersionString()string{</p><blockquote><p>return "go1.0"</p></blockquote><p>}</p><p></p><p>func doNothing(string,int){</p><p>}</p><p></p></th></tr></thead><tbody></tbody></table>**函数调用的退出阶段**函数执行完<sub></sub>​return​<sub></sub>或者最后一条语句并不是立刻退出,还有个最终退出阶段,从返回开始到最终退出的阶段叫做函数调用的退出阶段(exiting phase)**匿名函数**一个例子应该就够了其中,main函数里面接着使用函数,里面的函数可以使用main里面的变量,这样的函数称为闭包(closure).事实上,Go中所有自定义函数(包括声明的函数和匿名函数)都可以被视为闭包<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>package main</p><p></p><p>func main() {</p><p>x, y := func() (int, int) {</p><p>println("This function has no parameters")</p><p>return 3, 4</p><p>}()</p><p>func(a, b int) {</p><p>println("a*a + b*b = ", a*a+b*b)</p><p>}(x, y)</p><p>func(x int) {</p><p>println("x*x + y*y = ", x*x+y*y)</p><p>}(y)//这一步很可以,形参x遮挡了实参x,把y传给了形参x,导致算了两次y*y</p><p>func() {</p><p>println("x*x+ y*y = ", x*x+y*y)</p><p>}()</p><p>}</p></th></tr></thead><tbody></tbody></table>**内置函数**Go的内置函数有一直在用的<sub></sub>​println​<sub></sub>和<sub></sub>​print​<sub></sub>,不需要import任何包还有其他的]]></content>
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={C158F6C6-88BE-40E1-BA57-C18E0C9A58ED}&amp;object-id={96CF3FE7-035B-4472-94B5-89C307DC727B}&amp;56&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">关键字</a></p><p><a href="onenote:#%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={C158F6C6-88BE-40E1-BA57-C18E0C9A58ED}&amp;object-id={2DD59755-3390-447B-8FF5-2FBDCC06275E}&amp;8E&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">标识符</a></p></th></tr></thead><tbody></tbody></table><p><strong>关键字</strong><br>一共就25个关键字</p><table><thead><tr><th><strong>break</strong></th><th><strong>default</strong></th><th><strong>func</strong></th><th><strong>interface</strong></th><th><strong>select</strong></th></tr></thead><tbody><tr><td><strong>case</strong></td><td><strong>defer</strong></td><td><strong>go</strong></td><td><strong>map</strong></td><td><strong>struct</strong></td></tr><tr><td><strong>chan</strong></td><td><strong>else</strong></td><td><strong>goto</strong></td><td><strong>package</strong></td><td><strong>switch</strong></td></tr><tr><td><strong>const</strong></td><td><strong>fallthough</strong></td><td><strong>if</strong></td><td><strong>range</strong></td><td><strong>type</strong></td></tr><tr><td><strong>continue</strong></td><td><strong>for</strong></td><td><strong>import</strong></td><td><strong>return</strong></td><td><strong>var</strong></td></tr><tr><td>有些关键字真是越看越眼熟,根本不用记,用用就很熟悉了</td><td></td><td></td><td></td><td></td></tr></tbody></table><p><strong>标识符</strong><br>和python一样,<br>_这个特殊字符叫空标识符,用来当作一个垃圾变量,就是占空用的<br>和python中的可否被导出不同,python在变量名前加_或__表明是否是私有的<br>go使用大小写表明(更简单了)<br>大写字母开头的标识符被称为<strong>导出标识符</strong>,<em>导出</em>就是<em>公开(public)</em><br>其他的都是非导出,也即是<em>私有(private)</em><br><em><del>标识符命名规则不再细说,也没必要说</del></em><br>好吧还是说说:</p><ul><li>只是用数字,大小写字母和_</li><li>数字不能开头使用</li><li>大小写开头有特殊意义</li></ul>]]></content>
       
       
       
@@ -1563,11 +1563,11 @@
     
     
     <entry>
-      <title>关键字和标识符</title>
-      <link href="/article/28e02bb2.html"/>
-      <url>/article/28e02bb2.html</url>
+      <title>函数声明和调用</title>
+      <link href="/article/8c56f370.html"/>
+      <url>/article/8c56f370.html</url>
       
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={C158F6C6-88BE-40E1-BA57-C18E0C9A58ED}&amp;object-id={96CF3FE7-035B-4472-94B5-89C307DC727B}&amp;56&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">关键字</a></p><p><a href="onenote:#%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={C158F6C6-88BE-40E1-BA57-C18E0C9A58ED}&amp;object-id={2DD59755-3390-447B-8FF5-2FBDCC06275E}&amp;8E&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">标识符</a></p></th></tr></thead><tbody></tbody></table><p><strong>关键字</strong><br>一共就25个关键字</p><table><thead><tr><th><strong>break</strong></th><th><strong>default</strong></th><th><strong>func</strong></th><th><strong>interface</strong></th><th><strong>select</strong></th></tr></thead><tbody><tr><td><strong>case</strong></td><td><strong>defer</strong></td><td><strong>go</strong></td><td><strong>map</strong></td><td><strong>struct</strong></td></tr><tr><td><strong>chan</strong></td><td><strong>else</strong></td><td><strong>goto</strong></td><td><strong>package</strong></td><td><strong>switch</strong></td></tr><tr><td><strong>const</strong></td><td><strong>fallthough</strong></td><td><strong>if</strong></td><td><strong>range</strong></td><td><strong>type</strong></td></tr><tr><td><strong>continue</strong></td><td><strong>for</strong></td><td><strong>import</strong></td><td><strong>return</strong></td><td><strong>var</strong></td></tr><tr><td>有些关键字真是越看越眼熟,根本不用记,用用就很熟悉了</td><td></td><td></td><td></td><td></td></tr></tbody></table><p><strong>标识符</strong><br>和python一样,<br>_这个特殊字符叫空标识符,用来当作一个垃圾变量,就是占空用的<br>和python中的可否被导出不同,python在变量名前加_或__表明是否是私有的<br>go使用大小写表明(更简单了)<br>大写字母开头的标识符被称为<strong>导出标识符</strong>,<em>导出</em>就是<em>公开(public)</em><br>其他的都是非导出,也即是<em>私有(private)</em><br><em><del>标识符命名规则不再细说,也没必要说</del></em><br>好吧还是说说:</p><ul><li>只是用数字,大小写字母和_</li><li>数字不能开头使用</li><li>大小写开头有特殊意义</li></ul>]]></content>
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E5%92%8C%E8%B0%83%E7%94%A8&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={1C246853-2D76-4155-907E-6E2D9AD120AF}&amp;object-id={7A5492D6-D789-454D-B233-02EBBFBE8BE7}&amp;51&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">函数调用的退出阶段</a></p><p><a href="onenote:#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E5%92%8C%E8%B0%83%E7%94%A8&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={1C246853-2D76-4155-907E-6E2D9AD120AF}&amp;object-id={F04DA2D1-AB95-4DCD-8E01-C9E1B68478B0}&amp;89&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">匿名函数</a></p><p><a href="onenote:#%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E5%92%8C%E8%B0%83%E7%94%A8&amp;section-id={F20BDF7A-7E65-423F-83B2-9AB74D6EA9C4}&amp;page-id={1C246853-2D76-4155-907E-6E2D9AD120AF}&amp;object-id={B2870CA9-FDAB-4017-ACA2-1692F27A11A1}&amp;F8&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/Code随想/Golang.one">内置函数</a></p></th></tr></thead><tbody></tbody></table><p>类似于Go这种语言都要有一个程序入口,像python这种动态语言也要”伪造”一个入口</p><table><thead><tr><th>if <strong>__name__</strong> &#x3D;&#x3D; ‘<strong>__main__</strong>‘</th></tr></thead><tbody><tr><td>而Go的程序入口是<sub></sub>​main​<sub></sub>,入口函数不能携带任何输入参数和返回结果</td></tr></tbody></table><p>一个例子:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>func SquaresOfSumAndDiff(a int64, b int64)(s int64, d int64){</p><blockquote><p>x,y := a + b, a - b</p><p>s = x*x</p><p>d =y * y</p><p>return // &lt;=&gt; return s,d</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>-   Go允许返回多个值,但是必须指定类型-   return可以缩写一次返回完毕-   输出结果声明列表中的所有声明中的结果名称必须同时出现或者同时省略    -   结果名称没有省略叫具名返回结果,否则叫匿名返回结果下面的代码和上面是等价的:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>func SquaresOfSumAndDiff(a int64, b int64)(int64 int64){</p><blockquote><p>return (a+b)*(a+b),(a-b)*(a-b)</p></blockquote><p>}</p></th></tr></thead><tbody></tbody></table>更多的例子:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>func CompareLower4bits(m,n uint32)(r bool){</p><blockquote><p>r = m&amp;0xF &gt; n&amp;0xf</p><p>return</p><p>// &lt;=&gt; return m&amp;0xFF &gt; n&amp;0xff</p></blockquote><p>}</p><p></p><p>func VersionString()string{</p><blockquote><p>return "go1.0"</p></blockquote><p>}</p><p></p><p>func doNothing(string,int){</p><p>}</p><p></p></th></tr></thead><tbody></tbody></table>**函数调用的退出阶段**函数执行完<sub></sub>​return​<sub></sub>或者最后一条语句并不是立刻退出,还有个最终退出阶段,从返回开始到最终退出的阶段叫做函数调用的退出阶段(exiting phase)**匿名函数**一个例子应该就够了其中,main函数里面接着使用函数,里面的函数可以使用main里面的变量,这样的函数称为闭包(closure).事实上,Go中所有自定义函数(包括声明的函数和匿名函数)都可以被视为闭包<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>package main</p><p></p><p>func main() {</p><p>x, y := func() (int, int) {</p><p>println("This function has no parameters")</p><p>return 3, 4</p><p>}()</p><p>func(a, b int) {</p><p>println("a*a + b*b = ", a*a+b*b)</p><p>}(x, y)</p><p>func(x int) {</p><p>println("x*x + y*y = ", x*x+y*y)</p><p>}(y)//这一步很可以,形参x遮挡了实参x,把y传给了形参x,导致算了两次y*y</p><p>func() {</p><p>println("x*x+ y*y = ", x*x+y*y)</p><p>}()</p><p>}</p></th></tr></thead><tbody></tbody></table>**内置函数**Go的内置函数有一直在用的<sub></sub>​println​<sub></sub>和<sub></sub>​print​<sub></sub>,不需要import任何包还有其他的]]></content>
       
       
       
@@ -1836,11 +1836,11 @@
     
     
     <entry>
-      <title>Decorator</title>
-      <link href="/article/b19e87b0.html"/>
-      <url>/article/b19e87b0.html</url>
+      <title>FP:Higher-order function</title>
+      <link href="/article/2ed104db.html"/>
+      <url>/article/2ed104db.html</url>
       
-        <content type="html"><![CDATA[<p><strong>装饰器必看闭包原理</strong></p><table><thead><tr><th>假设我们要增强now()函数的功能，比如，在函数调用前后自动打印日志，但又不希望修改now()函数的定义，这种在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。</th></tr></thead><tbody><tr><td>如果decorator本身需要传入参数，那就需要编写一个返回decorator的高阶函数，写出来会更复杂。</td></tr></tbody></table><p>一个完整的decorator的写法如下：</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>import functools</p><p></p><p>def log(func):</p><p>@functools.wraps(func)</p><p>def wrapper(*args, **kw):</p><p>print('call %s():' % func.__name__)</p><p>return func(*args, **kw)</p><p>return wrapper</p></th></tr></thead><tbody></tbody></table>或者针对带参数的decorator：<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>import functools</p><p></p><p>def log(text):</p><p>def decorator(func):</p><p>@functools.wraps(func)</p><p>def wrapper(*args, **kw):</p><p>print('%s %s():' % (text, func.__name__))</p><p>return func(*args, **kw)</p><p>return wrapper</p><p>return decorator</p></th></tr></thead><tbody></tbody></table><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584">https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584</a>&gt;</em></p><p><strong>致命误区</strong><br><strong>原代码</strong></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>import time, functools</p><p>def metric(fn):</p><p> @functools.wraps(fn)</p><p> def wrapper(*args,**kw):</p><p>  t1 = time.time()</p><p>  fn(*args,**kw)</p><p>  t2 = time.time()</p><p>  print('%s executed in %s ms' % (fn.__name__, t2-t1))</p><p>  return fn</p><p> return wrapper</p></th></tr></thead><tbody></tbody></table>**修改后**<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>import time, functools</p><p>def metric(fn):</p><p> @functools.wraps(fn)</p><p> def wrapper(*args,**kw):</p><p>  t1 = time.time()</p><p>  <u>ref = fn(*args,**kw)</u></p><p>  t2 = time.time()</p><p>  print('%s executed in %s ms' % (fn.__name__, t2-t1))</p><p>  <u>return ref</u></p><p> return wrapper</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>不用硬把fn的调用写在return的地方。外面那层函数只是传递fn给里面的函数，里面的函数定义新的行为，行为中一般会用到fn，当然多次使用或者不用都没关系，最后外面的函数再把里面的函数return出去。所以最终装饰器的效果是你传给他一个fn，他返回一个新的行为的函数</p><p></p><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584#0">https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584#0</a>&gt;</em></p><p></p></th></tr></thead><tbody></tbody></table>]]></content>
+        <content type="html"><![CDATA[<p>FP:Higher-order function<br>2022年8月2日<br>1:29</p><ol><li>Higher-order function<br>高阶函数的优势</li></ol><ul><li>变量可以指向函数<table><thead><tr><th>f &#x3D; abs</th></tr></thead></table></li><li>函数名也是变量<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>abs = 10</p><p>! 这会破坏python环境</p></th></tr></thead><tbody></tbody></table>编写高阶函数目的是让函数可以相互嵌套</li></ul><p><strong>map</strong></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举例说明，比如我们有一个函数f(x)=x^2，要把这个函数作用在一个list[1, 2, 3, 4, 5, 6, 7, 8, 9]上，就可以用map()实现如下：</p><p>def f(x):</p><blockquote><p>return x*x</p></blockquote><p>r = map(f,[1,2,3,4,5])</p></th></tr></thead><tbody></tbody></table>等价于利用循环:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>L = []</p><p>for n in [1, 2, 3, 4, 5, 6, 7, 8, 9]:</p><p>L.append(f(n))</p><p>print(L)</p></th></tr></thead><tbody></tbody></table><p><strong>reduce</strong></p><table><thead><tr><th>reduce把一个函数作用在一个序列[x1, x2, x3, …]上，这个函数必须接收两个参数，reduce把结果继续和序列的下一个元素做累积计算</th></tr></thead></table><p><strong>filter</strong></p><table><thead><tr><th>和map()不同的是，filter()把传入的函数依次作用于每个元素，然后根据返回值是True还是False决定保留还是丢弃该元素。</th></tr></thead><tbody><tr><td>举个例子,可以删除一个字符串中的空字符:</td></tr></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>def not_empty(s):</p><blockquote><p>return s and s.strip()</p></blockquote><p>list(filter(not_empty,['A','','B',None,'C',' ']))</p></th></tr></thead><tbody></tbody></table><p>判断回文数:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>def is_palindrome(n):</p><p>  L = [i for i in str(n)]</p><p>  return L == L[::-1]</p></th></tr></thead><tbody></tbody></table>利用str()方法＋切片倒叙可以很快比较<p><strong>sorted</strong></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>Python内置的sorted()函数就可以对list,string进行排序</p><p>给sorted传入key函数，即可实现忽略大小写的排序</p><p>要进行反向排序，不必改动key函数，可以传入第三个参数reverse=True：</p><p>&gt;&gt;&gt; sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True)</p><p>['Zoo', 'Credit', 'bob', 'about']</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>练习</p><p>假设我们用一组tuple表示学生名字和成绩：</p><p>L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]</p><p>请用sorted()对上述列表分别按名字排序：</p><p></p><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0">https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0</a>&gt;</em></p></th></tr></thead><tbody></tbody></table>sorted函数并不是直接对列表进行映射,而是把列表拆分成元素，然后对元素一个一个映射为新元素，再对新元素排序，然后再把新元素还原成旧元素，就成了按照key规则排序的sorted的输出结果参数key所对应的映射，**调用时使用的参数是每个列表元素而不是整个列**表，也就是是列表内的元组（‘名字’，‘数字’）这样t\[0\]就是名字t\[1\]就是数字了<p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0">https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0</a>&gt;</em></p>]]></content>
       
       
       
@@ -1849,11 +1849,11 @@
     
     
     <entry>
-      <title>FP:Higher-order function</title>
-      <link href="/article/2ed104db.html"/>
-      <url>/article/2ed104db.html</url>
+      <title>Decorator</title>
+      <link href="/article/b19e87b0.html"/>
+      <url>/article/b19e87b0.html</url>
       
-        <content type="html"><![CDATA[<p>FP:Higher-order function<br>2022年8月2日<br>1:29</p><ol><li>Higher-order function<br>高阶函数的优势</li></ol><ul><li>变量可以指向函数<table><thead><tr><th>f &#x3D; abs</th></tr></thead></table></li><li>函数名也是变量<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>abs = 10</p><p>! 这会破坏python环境</p></th></tr></thead><tbody></tbody></table>编写高阶函数目的是让函数可以相互嵌套</li></ul><p><strong>map</strong></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举例说明，比如我们有一个函数f(x)=x^2，要把这个函数作用在一个list[1, 2, 3, 4, 5, 6, 7, 8, 9]上，就可以用map()实现如下：</p><p>def f(x):</p><blockquote><p>return x*x</p></blockquote><p>r = map(f,[1,2,3,4,5])</p></th></tr></thead><tbody></tbody></table>等价于利用循环:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>L = []</p><p>for n in [1, 2, 3, 4, 5, 6, 7, 8, 9]:</p><p>L.append(f(n))</p><p>print(L)</p></th></tr></thead><tbody></tbody></table><p><strong>reduce</strong></p><table><thead><tr><th>reduce把一个函数作用在一个序列[x1, x2, x3, …]上，这个函数必须接收两个参数，reduce把结果继续和序列的下一个元素做累积计算</th></tr></thead></table><p><strong>filter</strong></p><table><thead><tr><th>和map()不同的是，filter()把传入的函数依次作用于每个元素，然后根据返回值是True还是False决定保留还是丢弃该元素。</th></tr></thead><tbody><tr><td>举个例子,可以删除一个字符串中的空字符:</td></tr></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>def not_empty(s):</p><blockquote><p>return s and s.strip()</p></blockquote><p>list(filter(not_empty,['A','','B',None,'C',' ']))</p></th></tr></thead><tbody></tbody></table><p>判断回文数:</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>def is_palindrome(n):</p><p>  L = [i for i in str(n)]</p><p>  return L == L[::-1]</p></th></tr></thead><tbody></tbody></table>利用str()方法＋切片倒叙可以很快比较<p><strong>sorted</strong></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>Python内置的sorted()函数就可以对list,string进行排序</p><p>给sorted传入key函数，即可实现忽略大小写的排序</p><p>要进行反向排序，不必改动key函数，可以传入第三个参数reverse=True：</p><p>&gt;&gt;&gt; sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True)</p><p>['Zoo', 'Credit', 'bob', 'about']</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>练习</p><p>假设我们用一组tuple表示学生名字和成绩：</p><p>L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]</p><p>请用sorted()对上述列表分别按名字排序：</p><p></p><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0">https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0</a>&gt;</em></p></th></tr></thead><tbody></tbody></table>sorted函数并不是直接对列表进行映射,而是把列表拆分成元素，然后对元素一个一个映射为新元素，再对新元素排序，然后再把新元素还原成旧元素，就成了按照key规则排序的sorted的输出结果参数key所对应的映射，**调用时使用的参数是每个列表元素而不是整个列**表，也就是是列表内的元组（‘名字’，‘数字’）这样t\[0\]就是名字t\[1\]就是数字了<p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0">https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0</a>&gt;</em></p>]]></content>
+        <content type="html"><![CDATA[<p><strong>装饰器必看闭包原理</strong></p><table><thead><tr><th>假设我们要增强now()函数的功能，比如，在函数调用前后自动打印日志，但又不希望修改now()函数的定义，这种在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。</th></tr></thead><tbody><tr><td>如果decorator本身需要传入参数，那就需要编写一个返回decorator的高阶函数，写出来会更复杂。</td></tr></tbody></table><p>一个完整的decorator的写法如下：</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>import functools</p><p></p><p>def log(func):</p><p>@functools.wraps(func)</p><p>def wrapper(*args, **kw):</p><p>print('call %s():' % func.__name__)</p><p>return func(*args, **kw)</p><p>return wrapper</p></th></tr></thead><tbody></tbody></table>或者针对带参数的decorator：<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>import functools</p><p></p><p>def log(text):</p><p>def decorator(func):</p><p>@functools.wraps(func)</p><p>def wrapper(*args, **kw):</p><p>print('%s %s():' % (text, func.__name__))</p><p>return func(*args, **kw)</p><p>return wrapper</p><p>return decorator</p></th></tr></thead><tbody></tbody></table><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584">https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584</a>&gt;</em></p><p><strong>致命误区</strong><br><strong>原代码</strong></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>import time, functools</p><p>def metric(fn):</p><p> @functools.wraps(fn)</p><p> def wrapper(*args,**kw):</p><p>  t1 = time.time()</p><p>  fn(*args,**kw)</p><p>  t2 = time.time()</p><p>  print('%s executed in %s ms' % (fn.__name__, t2-t1))</p><p>  return fn</p><p> return wrapper</p></th></tr></thead><tbody></tbody></table>**修改后**<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>import time, functools</p><p>def metric(fn):</p><p> @functools.wraps(fn)</p><p> def wrapper(*args,**kw):</p><p>  t1 = time.time()</p><p>  <u>ref = fn(*args,**kw)</u></p><p>  t2 = time.time()</p><p>  print('%s executed in %s ms' % (fn.__name__, t2-t1))</p><p>  <u>return ref</u></p><p> return wrapper</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>不用硬把fn的调用写在return的地方。外面那层函数只是传递fn给里面的函数，里面的函数定义新的行为，行为中一般会用到fn，当然多次使用或者不用都没关系，最后外面的函数再把里面的函数return出去。所以最终装饰器的效果是你传给他一个fn，他返回一个新的行为的函数</p><p></p><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584#0">https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584#0</a>&gt;</em></p><p></p></th></tr></thead><tbody></tbody></table>]]></content>
       
       
       
@@ -2161,19 +2161,6 @@
     
     
     <entry>
-      <title>关于Ubuntu的DNS失效问题</title>
-      <link href="/article/615aa60.html"/>
-      <url>/article/615aa60.html</url>
-      
-        <content type="html"><![CDATA[<p>关于Ubuntu的DNS失效问题<br>Sunday, November 13, 2022<br>5:25 PM</p><p><a href="https://blog.csdn.net/yuan_MM/article/details/116708070">https://blog.csdn.net/yuan_MM/article/details/116708070</a><br>Ubuntu被广泛认为DNS 这块设置不太全面<br>今天下午不知道怎么了,那个打开网页每过一会就显示DNS失效,查了查原来是得配置一下<br>自带的gedit文本编辑还挺好用<br>&gt; sudo gedit可以用管理员身份打开</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>命令行删除软件</title>
       <link href="/article/7842682.html"/>
       <url>/article/7842682.html</url>
@@ -2192,6 +2179,19 @@
       <url>/article/804de35a.html</url>
       
         <content type="html"><![CDATA[<p>把sudoers文件改崩溃了<br>Sunday, November 13, 2022<br>5:28 PM</p><p>起因是因为嫌每次都要sudo输入密码太麻烦,结果损坏文件后所有用户都失去了admin身份.<br>没办法,有个哥们做法非常赞,成功解决问题<br><a href="http://t.csdn.cn/0BFSG">http://t.csdn.cn/0BFSG</a><br>Goodjob</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于Ubuntu的DNS失效问题</title>
+      <link href="/article/615aa60.html"/>
+      <url>/article/615aa60.html</url>
+      
+        <content type="html"><![CDATA[<p>关于Ubuntu的DNS失效问题<br>Sunday, November 13, 2022<br>5:25 PM</p><p><a href="https://blog.csdn.net/yuan_MM/article/details/116708070">https://blog.csdn.net/yuan_MM/article/details/116708070</a><br>Ubuntu被广泛认为DNS 这块设置不太全面<br>今天下午不知道怎么了,那个打开网页每过一会就显示DNS失效,查了查原来是得配置一下<br>自带的gedit文本编辑还挺好用<br>&gt; sudo gedit可以用管理员身份打开</p>]]></content>
       
       
       
@@ -2304,11 +2304,11 @@
     
     
     <entry>
-      <title>css部分</title>
-      <link href="/article/6bc262f5.html"/>
-      <url>/article/6bc262f5.html</url>
+      <title>div&amp;span</title>
+      <link href="/article/47c03dfd.html"/>
+      <url>/article/47c03dfd.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/Obito_TXP/article/details/120106931">(100条消息) span和div的区别是什么？_Obito_TXP的博客-CSDN博客_span div</a></p>]]></content>
       
       
       
@@ -2317,11 +2317,11 @@
     
     
     <entry>
-      <title>div&amp;span</title>
-      <link href="/article/47c03dfd.html"/>
-      <url>/article/47c03dfd.html</url>
+      <title>css部分</title>
+      <link href="/article/6bc262f5.html"/>
+      <url>/article/6bc262f5.html</url>
       
-        <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/Obito_TXP/article/details/120106931">(100条消息) span和div的区别是什么？_Obito_TXP的博客-CSDN博客_span div</a></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       
@@ -2421,11 +2421,11 @@
     
     
     <entry>
-      <title>tag</title>
-      <link href="/article/389b783.html"/>
-      <url>/article/389b783.html</url>
+      <title>init </title>
+      <link href="/article/bec20e84.html"/>
+      <url>/article/bec20e84.html</url>
       
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>命令git tag &lt;tagname&gt;用于新建一个标签，默认为HEAD，也可以指定一个commit id；</p><p></p><p>命令git tag -a &lt;tagname&gt; -m "blablabla..."可以指定标签信息；</p><p></p><p>命令git tag可以查看所有标签。</p><p>tag一般是看版本1.0 1.X那种</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>命令git push origin &lt;tagname&gt;可以推送一个本地标签；</p><p></p><p>命令git push origin --tags可以推送全部未推送过的本地标签；</p><p></p><p>命令git tag -d &lt;tagname&gt;可以删除一个本地标签；</p><p></p><p>命令git push origin :refs/tags/&lt;tagname&gt;可以删除一个远程标签。</p></th></tr></thead><tbody></tbody></table>]]></content>
+        <content type="html"><![CDATA[<p>1.init初始化本地仓库<br>2.git add<br>3.git commit -m “ “<br>4.git diff<br>5.git status</p><p>查看版本信息<br>6.git log(find the former status)<br>7.git log –pretty&#x3D;oneline(简化日志信息)</p><p>git 的版本回溯功能以及返回新版本功能<br>git reset</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>Git管理的文件分为：工作区，版本库，版本库又分为暂存区stage和暂存区分支master(仓库)</p><p>工作区&gt;&gt;&gt;&gt;暂存区&gt;&gt;&gt;&gt;仓库</p><p>git add把文件从工作区&gt;&gt;&gt;&gt;暂存区，git commit把文件从暂存区&gt;&gt;&gt;&gt;仓库，</p><p>git diff查看工作区和暂存区差异，</p><p>git diff --cached查看暂存区和仓库差异，</p><p>git diff HEAD 查看工作区和仓库的差异，</p><p>git add的反向命令git checkout，撤销工作区修改，即把暂存区最新版本转移到工作区，</p><p>git commit的反向命令git reset HEAD，就是把仓库最新版本转移到暂存区。</p></th></tr></thead><tbody></tbody></table><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576">https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576</a>&gt;</em></p>]]></content>
       
       
       
@@ -2434,11 +2434,11 @@
     
     
     <entry>
-      <title>init </title>
-      <link href="/article/bec20e84.html"/>
-      <url>/article/bec20e84.html</url>
+      <title>tag</title>
+      <link href="/article/389b783.html"/>
+      <url>/article/389b783.html</url>
       
-        <content type="html"><![CDATA[<p>1.init初始化本地仓库<br>2.git add<br>3.git commit -m “ “<br>4.git diff<br>5.git status</p><p>查看版本信息<br>6.git log(find the former status)<br>7.git log –pretty&#x3D;oneline(简化日志信息)</p><p>git 的版本回溯功能以及返回新版本功能<br>git reset</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>Git管理的文件分为：工作区，版本库，版本库又分为暂存区stage和暂存区分支master(仓库)</p><p>工作区&gt;&gt;&gt;&gt;暂存区&gt;&gt;&gt;&gt;仓库</p><p>git add把文件从工作区&gt;&gt;&gt;&gt;暂存区，git commit把文件从暂存区&gt;&gt;&gt;&gt;仓库，</p><p>git diff查看工作区和暂存区差异，</p><p>git diff --cached查看暂存区和仓库差异，</p><p>git diff HEAD 查看工作区和仓库的差异，</p><p>git add的反向命令git checkout，撤销工作区修改，即把暂存区最新版本转移到工作区，</p><p>git commit的反向命令git reset HEAD，就是把仓库最新版本转移到暂存区。</p></th></tr></thead><tbody></tbody></table><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576">https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576</a>&gt;</em></p>]]></content>
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>命令git tag &lt;tagname&gt;用于新建一个标签，默认为HEAD，也可以指定一个commit id；</p><p></p><p>命令git tag -a &lt;tagname&gt; -m "blablabla..."可以指定标签信息；</p><p></p><p>命令git tag可以查看所有标签。</p><p>tag一般是看版本1.0 1.X那种</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>命令git push origin &lt;tagname&gt;可以推送一个本地标签；</p><p></p><p>命令git push origin --tags可以推送全部未推送过的本地标签；</p><p></p><p>命令git tag -d &lt;tagname&gt;可以删除一个本地标签；</p><p></p><p>命令git push origin :refs/tags/&lt;tagname&gt;可以删除一个远程标签。</p></th></tr></thead><tbody></tbody></table>]]></content>
       
       
       
