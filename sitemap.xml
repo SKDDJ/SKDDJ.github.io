@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://shiym.top/article/d209c58e</loc>
+    
+    <lastmod>2022-12-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://shiym.top/friends/index.html</loc>
     
     <lastmod>2022-12-19</lastmod>
@@ -587,15 +596,6 @@
   </url>
   
   <url>
-    <loc>https://shiym.top/article/c2a52b83</loc>
-    
-    <lastmod>1970-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://shiym.top/article/815c16ca</loc>
     
     <lastmod>1970-01-01</lastmod>
@@ -813,15 +813,6 @@
   
   <url>
     <loc>https://shiym.top/article/808adad0</loc>
-    
-    <lastmod>1970-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shiym.top/article/4c04a56a</loc>
     
     <lastmod>1970-01-01</lastmod>
     
@@ -1424,24 +1415,6 @@
   </url>
   
   <url>
-    <loc>https://shiym.top/article/d209c58e</loc>
-    
-    <lastmod>1970-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shiym.top/article/31edab30</loc>
-    
-    <lastmod>1970-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://shiym.top/article/31c36041</loc>
     
     <lastmod>1970-01-01</lastmod>
@@ -1767,7 +1740,7 @@
   </url>
   
   <url>
-    <loc>https://shiym.top/tags/untagged/</loc>
+    <loc>https://shiym.top/tags/new-tag/</loc>
     <lastmod>2022-12-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1797,7 +1770,7 @@
   </url>
   
   <url>
-    <loc>https://shiym.top/categories/uncategorized/</loc>
+    <loc>https://shiym.top/categories/newone/</loc>
     <lastmod>2022-12-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

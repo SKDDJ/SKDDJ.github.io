@@ -84,10 +84,10 @@
     
     
     
-    <category term="uncategorized" scheme="https://shiym.top/categories/uncategorized/"/>
+    <category term="newone" scheme="https://shiym.top/categories/newone/"/>
     
     
-    <category term="untagged" scheme="https://shiym.top/tags/untagged/"/>
+    <category term="new tag" scheme="https://shiym.top/tags/new-tag/"/>
     
   </entry>
   
@@ -230,7 +230,7 @@
     <link href="https://shiym.top/article/d209c58e"/>
     <id>https://shiym.top/article/d209c58e</id>
     <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
+    <updated>2022-12-20T21:37:37.751Z</updated>
     
     
       
@@ -242,28 +242,6 @@
 &lt;/ul&gt;
 &lt;p&gt;假设一个人拥有美国所有的土地，为了简化分析，假设所有的土地质量一致。再假设土地所有人不能自己耕种土地，土地所有权没有效用，处置土地不涉及任何成本。&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;来自 &amp;lt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第三,四次作业</title>
-    <link href="https://shiym.top/article/31edab30"/>
-    <id>https://shiym.top/article/31edab30</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/article/../resources/image1-38.png&quot; alt=&quot;image1&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1&quot;&gt;&lt;/a&gt;1&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -459,6 +437,28 @@
         
     <summary type="html">&lt;p&gt;Unit2 交互&lt;br&gt;2022年10月13日 星期四&lt;br&gt;下午3:20&lt;/p&gt;
 &lt;p&gt;Outline：&lt;br&gt;点到点（link），端到端（path）&lt;br&gt;数据是流（flow），以帧（frame）的形式发送&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Unit4 共享</title>
+    <link href="https://shiym.top/article/f8ac5737"/>
+    <id>https://shiym.top/article/f8ac5737</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Unit4 共享&lt;br&gt;2022年10月20日 星期四&lt;br&gt;下午3:53&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/article/../resources/image1-9.png&quot;</summary>
         
       
     
