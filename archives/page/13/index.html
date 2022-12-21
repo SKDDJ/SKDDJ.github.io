@@ -1591,12 +1591,7 @@ $(function () {
 
     
 
-    <!-- start webpushr code --> 
-<script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";
-    fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));
-    webpushr('setup',{'key':'BEoz710KIVYEyyYAtilnex1F8gsExN53adzLzXMY8RdMWItW2vgMH9N4LxSqk09DqngSXKPysgIvDU0L3S-UbrE' });</script>
-    <!-- end webpushr code -->
-
+  
     
 
     <!-- 雪花特效 -->
@@ -1655,4 +1650,42 @@ $(function () {
                         document.getElementById("tidio-chat-iframe").style.zIndex="997";
                     }
                     else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+  <!-- start webpushr code --> 
+  <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";
+    fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));
+    webpushr('setup',{'key':'BEoz710KIVYEyyYAtilnex1F8gsExN53adzLzXMY8RdMWItW2vgMH9N4LxSqk09DqngSXKPysgIvDU0L3S-UbrE' });</script>
+    <!-- end webpushr code -->
+
+ 
+<script>(function (w, d, s, id) {
+            if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': 'BEoz710KIVYEyyYAtilnex1F8gsExN53adzLzXMY8RdMWItW2vgMH9N4LxSqk09DqngSXKPysgIvDU0L3S-UbrE' });</script></body>
+
+</html>
