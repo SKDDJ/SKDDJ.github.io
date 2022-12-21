@@ -17,31 +17,6 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>GooseGooseDuck</title>
-    <link href="https://shiym.top/article/16daa1c0"/>
-    <id>https://shiym.top/article/16daa1c0</id>
-    <published>2022-12-21T04:41:48.460Z</published>
-    <updated>2022-12-21T04:41:48.460Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;who-likes-to-play&quot;&gt;&lt;a href=&quot;#who-likes-to-play&quot; class=&quot;headerlink&quot; title=&quot;who likes to play?&quot;&gt;&lt;/a&gt;who likes to play?&lt;/h2&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="steamgame" scheme="https://shiym.top/categories/steamgame/"/>
-    
-    
-    <category term="Games" scheme="https://shiym.top/tags/Games/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="https://shiym.top/article/4a17b156"/>
     <id>https://shiym.top/article/4a17b156</id>
@@ -64,11 +39,65 @@
     <category term="study" scheme="https://shiym.top/categories/computer/study/"/>
     
     
-    <category term="Games" scheme="https://shiym.top/tags/Games/"/>
-    
     <category term="PS3" scheme="https://shiym.top/tags/PS3/"/>
     
+    <category term="Games" scheme="https://shiym.top/tags/Games/"/>
+    
     <category term="hello" scheme="https://shiym.top/tags/hello/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>matery食用指南</title>
+    <link href="https://shiym.top/article/4c867599"/>
+    <id>https://shiym.top/article/4c867599</id>
+    <published>2022-12-21T01:26:00.000Z</published>
+    <updated>2022-12-21T10:20:49.162Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;hexo-theme-matery&quot;&gt;&lt;a href=&quot;#hexo-theme-matery&quot; class=&quot;headerlink&quot; title=&quot;hexo-theme-matery&quot;&gt;&lt;/a&gt;hexo-theme-matery&lt;/h1&gt;&lt;p&gt; &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://shiym.top/categories/Markdown/"/>
+    
+    
+    <category term="Typora" scheme="https://shiym.top/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="https://shiym.top/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GooseGooseDuck</title>
+    <link href="https://shiym.top/article/16daa1c0"/>
+    <id>https://shiym.top/article/16daa1c0</id>
+    <published>2022-12-21T01:25:00.000Z</published>
+    <updated>2022-12-21T10:34:50.146Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;who-likes-to-play&quot;&gt;&lt;a href=&quot;#who-likes-to-play&quot; class=&quot;headerlink&quot; title=&quot;who likes to play?&quot;&gt;&lt;/a&gt;who likes to play?&lt;/h2&gt;&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://shiym.top/categories/Markdown/"/>
+    
+    
+    <category term="Typora" scheme="https://shiym.top/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="https://shiym.top/tags/Markdown/"/>
     
   </entry>
   
@@ -96,7 +125,7 @@
     <link href="https://shiym.top/article/847ddabe"/>
     <id>https://shiym.top/article/847ddabe</id>
     <published>2022-12-19T15:53:28.000Z</published>
-    <updated>2022-12-21T09:33:22.680Z</updated>
+    <updated>2022-12-21T09:36:35.623Z</updated>
     
     
     <summary type="html">是否有意外呢?</summary>
@@ -353,6 +382,27 @@
   </entry>
   
   <entry>
+    <title>第六章 现代处理器的高级实现技术</title>
+    <link href="https://shiym.top/article/4d36cce8"/>
+    <id>https://shiym.top/article/4d36cce8</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;流水线&lt;/strong&gt;&lt;br&gt;流水线技术(pipeline):多条指令重叠执行,实现指令级并行(instruction-level parallelism)&lt;br&gt;&lt;img src=&quot;/article/../resources/image1-6.png&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>第四章 计算机芯片的基本电路组成</title>
     <link href="https://shiym.top/article/bcd0e82"/>
     <id>https://shiym.top/article/bcd0e82</id>
@@ -366,27 +416,6 @@
         
     <summary type="html">&lt;p&gt;第四章 计算机芯片的基本电路组成&lt;br&gt;2022年10月10日 星期一&lt;br&gt;下午2:33&lt;/p&gt;
 &lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第六章 现代处理器的高级实现技术</title>
-    <link href="https://shiym.top/article/4d36cce8"/>
-    <id>https://shiym.top/article/4d36cce8</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;流水线&lt;/strong&gt;&lt;br&gt;流水线技术(pipeline):多条指令重叠执行,实现指令级并行(instruction-level parallelism)&lt;br&gt;&lt;img src=&quot;/article/../resources/image1-6.png&quot;</summary>
         
       
     
@@ -431,28 +460,6 @@
         
     <summary type="html">&lt;p&gt;Unit2 交互&lt;br&gt;2022年10月13日 星期四&lt;br&gt;下午3:20&lt;/p&gt;
 &lt;p&gt;Outline：&lt;br&gt;点到点（link），端到端（path）&lt;br&gt;数据是流（flow），以帧（frame）的形式发送&lt;br&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Unit4 共享</title>
-    <link href="https://shiym.top/article/f8ac5737"/>
-    <id>https://shiym.top/article/f8ac5737</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Unit4 共享&lt;br&gt;2022年10月20日 星期四&lt;br&gt;下午3:53&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/article/../resources/image1-9.png&quot;</summary>
         
       
     
