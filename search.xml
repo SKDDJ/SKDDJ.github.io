@@ -1719,6 +1719,19 @@
     
     
     <entry>
+      <title>无标题页</title>
+      <link href="/article/c2a52b83.html"/>
+      <url>/article/c2a52b83.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Bar柱状图</title>
       <link href="/article/24aea42b.html"/>
       <url>/article/24aea42b.html</url>
@@ -1776,19 +1789,6 @@
       <url>/article/cd732a5c.html</url>
       
         <content type="html"><![CDATA[<p>增加图片清晰度</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>%config InlineBackend.figure_format = 'retina'</p><p># 以上命令可以使图片的清晰度更高</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>无标题页</title>
-      <link href="/article/c2a52b83.html"/>
-      <url>/article/c2a52b83.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
       
       
@@ -1953,11 +1953,11 @@
     
     
     <entry>
-      <title>Slice and Iteration</title>
-      <link href="/article/555e5d1f.html"/>
-      <url>/article/555e5d1f.html</url>
+      <title>Turtle Graphics</title>
+      <link href="/article/f37264d5.html"/>
+      <url>/article/f37264d5.html</url>
       
-        <content type="html"><![CDATA[<p>Slice and Iteration<br>2022年7月28日<br>0:19</p><p>Slice:<br><strong>列表名[ start : stop : step ]</strong><br>取前10个数:<br>[:10]<br>或者[0:10]<br>左开右闭</p><p>取11到20:<br>[10:20]</p><p>取后10个数:<br>[-10:]</p><h2 id="所有数字-隔五个取一个-5"><a href="#所有数字-隔五个取一个-5" class="headerlink" title="所有数字,隔五个取一个:[::5]"></a>所有数字,隔五个取一个:<br>[::5]</h2><h2 id="List-tuple-string都可以用slice"><a href="#List-tuple-string都可以用slice" class="headerlink" title="List,tuple,string都可以用slice"></a>List,tuple,string都可以用slice</h2><p>切片加递归可以去除空字符并且避免循环</p><p>1<strong>def</strong>trim**(<strong>s</strong>):**<br>2  <strong>if</strong>s<strong>[:1] &#x3D;&#x3D;</strong>‘ ‘<strong>:</strong><br>3    <strong>return</strong> trim**(<strong>s</strong>[1:])**<br>4  <strong>elif</strong>s<strong>[-1:] &#x3D;&#x3D;</strong>‘ ‘<strong>:</strong><br>5    <strong>return</strong> trim**(<strong>s</strong>[:-1])**<br>6  <strong>else:</strong><br>7    <strong>return</strong> s<br>Iteration:</p><p>1d <strong>&#x3D; {</strong>‘a’<strong>:1,</strong>‘b’<strong>:2,</strong>‘c’<strong>:3}</strong><br>2for key in d**:**<br>3 <strong>print(<strong>key</strong>)</strong></p><p>因为dict的存储不是按照list的方式顺序排列，所以，迭代出的结果顺序很可能不一样。<br>默认情况下，dict迭代的是key。如果要迭代value，可以用<br>1<strong>for</strong> value <strong>in</strong> d**.<strong>values</strong>()**<br>如果要同时迭代key和value，可以用<br>1<strong>for</strong> k**,<strong>v <strong>in</strong> d</strong>.<strong>items</strong>()**</p><p>判断一个对象是否是可迭代对象的办法:<br>方法是通过collections.abc模块的Iterable类型判断：<br>1from collections**.<strong>abc import Iterable<br>2</strong>isinstance(<strong>‘abc’</strong>,<strong>Iterable</strong>)<strong># str是否可迭代<br>如果要对list实现类似Java那样的下标循环怎么办？Python内置的enumerate函数可以把一个list变成索引-元素对，这样就可以在for循环中同时迭代索引和元素本身：<br>1</strong>&gt;&gt;&gt;<strong>for i</strong>,<strong>value in enumerate</strong>([<strong>‘A’</strong>,<strong>‘B’</strong>,<strong>‘C’<strong>]):</strong><br>2</strong>…print(<strong>i</strong>,<strong>value</strong>)**<br>3**…**<br>4<strong>0</strong> A<br>5<strong>1</strong> B<br>6<strong>2</strong> C</p><p>来自 <a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017316949097888">https://www.liaoxuefeng.com/wiki/1016959663602400/1017316949097888</a></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>remember:</p><p>there is a better choice</p><p>use pandas to deal with the data</p><p></p></th></tr></thead><tbody></tbody></table>Homework:汉诺塔 Hanoi]]></content>
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p># 导入turtle包的所有内容:</p><p>from turtle import *</p><p></p><p># 设置笔刷宽度:</p><p>width(4)</p><p></p><p># 前进:</p><p>forward(200)</p><p># 右转90度:</p><p>right(90)</p><p></p><p># 笔刷颜色:</p><p>pencolor('red')</p><p>forward(100)</p><p>right(90)</p><p></p><p>pencolor('green')</p><p>forward(200)</p><p>right(90)</p><p></p><p>pencolor('blue')</p><p>forward(100)</p><p>right(90)</p><p></p><p># 调用done()使得窗口等待被关闭，否则将立刻关闭窗口:</p><p>done()</p></th></tr></thead><tbody></tbody></table>]]></content>
       
       
       
@@ -1966,11 +1966,11 @@
     
     
     <entry>
-      <title>Turtle Graphics</title>
-      <link href="/article/f37264d5.html"/>
-      <url>/article/f37264d5.html</url>
+      <title>Slice and Iteration</title>
+      <link href="/article/555e5d1f.html"/>
+      <url>/article/555e5d1f.html</url>
       
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p># 导入turtle包的所有内容:</p><p>from turtle import *</p><p></p><p># 设置笔刷宽度:</p><p>width(4)</p><p></p><p># 前进:</p><p>forward(200)</p><p># 右转90度:</p><p>right(90)</p><p></p><p># 笔刷颜色:</p><p>pencolor('red')</p><p>forward(100)</p><p>right(90)</p><p></p><p>pencolor('green')</p><p>forward(200)</p><p>right(90)</p><p></p><p>pencolor('blue')</p><p>forward(100)</p><p>right(90)</p><p></p><p># 调用done()使得窗口等待被关闭，否则将立刻关闭窗口:</p><p>done()</p></th></tr></thead><tbody></tbody></table>]]></content>
+        <content type="html"><![CDATA[<p>Slice and Iteration<br>2022年7月28日<br>0:19</p><p>Slice:<br><strong>列表名[ start : stop : step ]</strong><br>取前10个数:<br>[:10]<br>或者[0:10]<br>左开右闭</p><p>取11到20:<br>[10:20]</p><p>取后10个数:<br>[-10:]</p><h2 id="所有数字-隔五个取一个-5"><a href="#所有数字-隔五个取一个-5" class="headerlink" title="所有数字,隔五个取一个:[::5]"></a>所有数字,隔五个取一个:<br>[::5]</h2><h2 id="List-tuple-string都可以用slice"><a href="#List-tuple-string都可以用slice" class="headerlink" title="List,tuple,string都可以用slice"></a>List,tuple,string都可以用slice</h2><p>切片加递归可以去除空字符并且避免循环</p><p>1<strong>def</strong>trim**(<strong>s</strong>):**<br>2  <strong>if</strong>s<strong>[:1] &#x3D;&#x3D;</strong>‘ ‘<strong>:</strong><br>3    <strong>return</strong> trim**(<strong>s</strong>[1:])**<br>4  <strong>elif</strong>s<strong>[-1:] &#x3D;&#x3D;</strong>‘ ‘<strong>:</strong><br>5    <strong>return</strong> trim**(<strong>s</strong>[:-1])**<br>6  <strong>else:</strong><br>7    <strong>return</strong> s<br>Iteration:</p><p>1d <strong>&#x3D; {</strong>‘a’<strong>:1,</strong>‘b’<strong>:2,</strong>‘c’<strong>:3}</strong><br>2for key in d**:**<br>3 <strong>print(<strong>key</strong>)</strong></p><p>因为dict的存储不是按照list的方式顺序排列，所以，迭代出的结果顺序很可能不一样。<br>默认情况下，dict迭代的是key。如果要迭代value，可以用<br>1<strong>for</strong> value <strong>in</strong> d**.<strong>values</strong>()**<br>如果要同时迭代key和value，可以用<br>1<strong>for</strong> k**,<strong>v <strong>in</strong> d</strong>.<strong>items</strong>()**</p><p>判断一个对象是否是可迭代对象的办法:<br>方法是通过collections.abc模块的Iterable类型判断：<br>1from collections**.<strong>abc import Iterable<br>2</strong>isinstance(<strong>‘abc’</strong>,<strong>Iterable</strong>)<strong># str是否可迭代<br>如果要对list实现类似Java那样的下标循环怎么办？Python内置的enumerate函数可以把一个list变成索引-元素对，这样就可以在for循环中同时迭代索引和元素本身：<br>1</strong>&gt;&gt;&gt;<strong>for i</strong>,<strong>value in enumerate</strong>([<strong>‘A’</strong>,<strong>‘B’</strong>,<strong>‘C’<strong>]):</strong><br>2</strong>…print(<strong>i</strong>,<strong>value</strong>)**<br>3**…**<br>4<strong>0</strong> A<br>5<strong>1</strong> B<br>6<strong>2</strong> C</p><p>来自 <a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017316949097888">https://www.liaoxuefeng.com/wiki/1016959663602400/1017316949097888</a></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>remember:</p><p>there is a better choice</p><p>use pandas to deal with the data</p><p></p></th></tr></thead><tbody></tbody></table>Homework:汉诺塔 Hanoi]]></content>
       
       
       
@@ -2421,11 +2421,11 @@
     
     
     <entry>
-      <title>init </title>
-      <link href="/article/bec20e84.html"/>
-      <url>/article/bec20e84.html</url>
+      <title>tag</title>
+      <link href="/article/389b783.html"/>
+      <url>/article/389b783.html</url>
       
-        <content type="html"><![CDATA[<p>1.init初始化本地仓库<br>2.git add<br>3.git commit -m “ “<br>4.git diff<br>5.git status</p><p>查看版本信息<br>6.git log(find the former status)<br>7.git log –pretty&#x3D;oneline(简化日志信息)</p><p>git 的版本回溯功能以及返回新版本功能<br>git reset</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>Git管理的文件分为：工作区，版本库，版本库又分为暂存区stage和暂存区分支master(仓库)</p><p>工作区&gt;&gt;&gt;&gt;暂存区&gt;&gt;&gt;&gt;仓库</p><p>git add把文件从工作区&gt;&gt;&gt;&gt;暂存区，git commit把文件从暂存区&gt;&gt;&gt;&gt;仓库，</p><p>git diff查看工作区和暂存区差异，</p><p>git diff --cached查看暂存区和仓库差异，</p><p>git diff HEAD 查看工作区和仓库的差异，</p><p>git add的反向命令git checkout，撤销工作区修改，即把暂存区最新版本转移到工作区，</p><p>git commit的反向命令git reset HEAD，就是把仓库最新版本转移到暂存区。</p></th></tr></thead><tbody></tbody></table><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576">https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576</a>&gt;</em></p>]]></content>
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>命令git tag &lt;tagname&gt;用于新建一个标签，默认为HEAD，也可以指定一个commit id；</p><p></p><p>命令git tag -a &lt;tagname&gt; -m "blablabla..."可以指定标签信息；</p><p></p><p>命令git tag可以查看所有标签。</p><p>tag一般是看版本1.0 1.X那种</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>命令git push origin &lt;tagname&gt;可以推送一个本地标签；</p><p></p><p>命令git push origin --tags可以推送全部未推送过的本地标签；</p><p></p><p>命令git tag -d &lt;tagname&gt;可以删除一个本地标签；</p><p></p><p>命令git push origin :refs/tags/&lt;tagname&gt;可以删除一个远程标签。</p></th></tr></thead><tbody></tbody></table>]]></content>
       
       
       
@@ -2434,11 +2434,11 @@
     
     
     <entry>
-      <title>tag</title>
-      <link href="/article/389b783.html"/>
-      <url>/article/389b783.html</url>
+      <title>init </title>
+      <link href="/article/bec20e84.html"/>
+      <url>/article/bec20e84.html</url>
       
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>命令git tag &lt;tagname&gt;用于新建一个标签，默认为HEAD，也可以指定一个commit id；</p><p></p><p>命令git tag -a &lt;tagname&gt; -m "blablabla..."可以指定标签信息；</p><p></p><p>命令git tag可以查看所有标签。</p><p>tag一般是看版本1.0 1.X那种</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>命令git push origin &lt;tagname&gt;可以推送一个本地标签；</p><p></p><p>命令git push origin --tags可以推送全部未推送过的本地标签；</p><p></p><p>命令git tag -d &lt;tagname&gt;可以删除一个本地标签；</p><p></p><p>命令git push origin :refs/tags/&lt;tagname&gt;可以删除一个远程标签。</p></th></tr></thead><tbody></tbody></table>]]></content>
+        <content type="html"><![CDATA[<p>1.init初始化本地仓库<br>2.git add<br>3.git commit -m “ “<br>4.git diff<br>5.git status</p><p>查看版本信息<br>6.git log(find the former status)<br>7.git log –pretty&#x3D;oneline(简化日志信息)</p><p>git 的版本回溯功能以及返回新版本功能<br>git reset</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>Git管理的文件分为：工作区，版本库，版本库又分为暂存区stage和暂存区分支master(仓库)</p><p>工作区&gt;&gt;&gt;&gt;暂存区&gt;&gt;&gt;&gt;仓库</p><p>git add把文件从工作区&gt;&gt;&gt;&gt;暂存区，git commit把文件从暂存区&gt;&gt;&gt;&gt;仓库，</p><p>git diff查看工作区和暂存区差异，</p><p>git diff --cached查看暂存区和仓库差异，</p><p>git diff HEAD 查看工作区和仓库的差异，</p><p>git add的反向命令git checkout，撤销工作区修改，即把暂存区最新版本转移到工作区，</p><p>git commit的反向命令git reset HEAD，就是把仓库最新版本转移到暂存区。</p></th></tr></thead><tbody></tbody></table><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576">https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576</a>&gt;</em></p>]]></content>
       
       
       
