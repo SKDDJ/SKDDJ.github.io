@@ -96,16 +96,10 @@
     <link href="https://shiym.top/article/847ddabe"/>
     <id>https://shiym.top/article/847ddabe</id>
     <published>2022-12-19T15:53:28.000Z</published>
-    <updated>2022-12-21T04:41:48.460Z</updated>
+    <updated>2022-12-21T09:33:22.680Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;解决了我的心头大患&quot;&gt;&lt;a href=&quot;#解决了我的心头大患&quot; class=&quot;headerlink&quot; title=&quot;解决了我的心头大患&quot;&gt;&lt;/a&gt;解决了我的心头大患&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
-        
-      
+    <summary type="html">是否有意外呢?</summary>
     
     
     
@@ -359,27 +353,6 @@
   </entry>
   
   <entry>
-    <title>第六章 现代处理器的高级实现技术</title>
-    <link href="https://shiym.top/article/4d36cce8"/>
-    <id>https://shiym.top/article/4d36cce8</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;流水线&lt;/strong&gt;&lt;br&gt;流水线技术(pipeline):多条指令重叠执行,实现指令级并行(instruction-level parallelism)&lt;br&gt;&lt;img src=&quot;/article/../resources/image1-6.png&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>第四章 计算机芯片的基本电路组成</title>
     <link href="https://shiym.top/article/bcd0e82"/>
     <id>https://shiym.top/article/bcd0e82</id>
@@ -393,6 +366,27 @@
         
     <summary type="html">&lt;p&gt;第四章 计算机芯片的基本电路组成&lt;br&gt;2022年10月10日 星期一&lt;br&gt;下午2:33&lt;/p&gt;
 &lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第六章 现代处理器的高级实现技术</title>
+    <link href="https://shiym.top/article/4d36cce8"/>
+    <id>https://shiym.top/article/4d36cce8</id>
+    <published>2022-12-18T16:29:30.063Z</published>
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;流水线&lt;/strong&gt;&lt;br&gt;流水线技术(pipeline):多条指令重叠执行,实现指令级并行(instruction-level parallelism)&lt;br&gt;&lt;img src=&quot;/article/../resources/image1-6.png&quot;</summary>
         
       
     
