@@ -1472,71 +1472,6 @@
     
     
     <entry>
-      <title>Bar柱状图</title>
-      <link href="/article/24aea42b.html"/>
-      <url>/article/24aea42b.html</url>
-      
-        <content type="html"><![CDATA[<p>Bar柱状图<br>2022年8月1日<br>0:58</p><p>我们可以使用 pyplot 中的 bar() 方法来绘制柱形图。</p><p>Add:<br>中文不兼容怎么搞</p><p>1# fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径，size 参数设置字体大小<br>2 zhfont1 &#x3D; matplotlib.font_manager.FontProperties(fname&#x3D;”E:&#x2F;OneDrive - 6x26s6&#x2F;Lan&#x2F;SourceHanSansSC-Bold.otf”, size&#x3D;18)<br>3<br>4# fontdict 可以使用 css 来设置字体样式<br>5plt.title(“菜鸟教程 - 测试”, fontproperties&#x3D;zhfont1, fontdict &#x3D; font1, loc&#x3D;”center”)<br>6<br>7# fontproperties 设置中文显示，fontsize 设置字体大小</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Pie饼状图</title>
-      <link href="/article/115f4d38.html"/>
-      <url>/article/115f4d38.html</url>
-      
-        <content type="html"><![CDATA[<p>Pie饼状图<br>2022年8月1日<br>1:13<br>我们可以使用 pyplot 中的 pie() 方法来绘制饼图。</p><p>设置饼图各个扇形的标签与颜色：<br><strong>实例</strong><br>1<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>2</strong>import<strong>numpy</strong>as<strong>np<br>3<br>4y</strong>&#x3D;<strong>np</strong>.<strong>array</strong>([35,<strong><strong>25,<strong><strong>25,<strong><strong>15])</strong><br>5<br>6plt</strong>.<strong>pie</strong>(<strong>y</strong>,</strong><br>7    labels</strong>&#x3D;[</strong>‘A’<strong>,</strong>‘B’<strong>,</strong>‘C’<strong>,</strong>‘D’<strong>],</strong></strong># 设置饼图标签**<br>8    colors**&#x3D;[<strong>“#d5695d”</strong>,<strong>“#5d8ca8”</strong>,<strong>“#65a479”</strong>,<strong>“#a564c9”<strong>],</strong># <strong>设置饼图颜色</strong><br>9   <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)<strong><strong># 设置标题</strong><br>11plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-pie.html">https://www.runoob.com/matplotlib/matplotlib-pie.html</a>&gt;</em></p><p>labels用来设置标签,一般用不到colors感觉</p><p>突出显示某一个扇形:</p><p>1<br>2<strong>import</strong>matplotlib**.<strong>pyplot <strong>as</strong>plt<br>3</strong>import<strong>numpy <strong>as</strong>np<br>4y <strong>&#x3D;<strong>np</strong>.<strong>array</strong>([12,25,25,35])</strong><br>5plt</strong>.<strong>pie</strong>(<strong>y</strong>,**<br>6      labels <strong>&#x3D; [</strong>‘AAA’<strong>,</strong>‘BBB’<strong>,</strong>‘CCC’<strong>,</strong>‘DDD’<strong>],</strong><br>7      explode**&#x3D;(0,0.1,0.2,0),#设置第二部分的突出显示**<br>8      autopct**&#x3D;<strong>‘%.2f%%’ <strong># 格式化输出百分比</strong><br>9      <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)**<br>11plt**.<strong>show</strong>()**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Plt and np : 2D</title>
-      <link href="/article/11e3615e.html"/>
-      <url>/article/11e3615e.html</url>
-      
-        <content type="html"><![CDATA[<p><strong>import</strong>matplotlib.pyplot<strong>as</strong>plt<br><strong>import</strong>numpy<strong>as</strong>np</p><p>x&#x3D;np.arange(0,4*np.pi,0.1)# start,stop,step<br>y&#x3D;np.sin(x)<br>z&#x3D;np.cos(x)<br>plt.plot(x,y,x,z)<br>plt.show()</p><p>Marker 类型</p><table><thead><tr><th><strong>标记</strong></th><th><strong>符号</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>“.”</td><td><img src="/article/../resources/image1-2.png" alt="image1"></td><td>点</td></tr><tr><td>“,”</td><td><img src="/article/../resources/image2.png" alt="image2"></td><td>像素点</td></tr><tr><td>“o”</td><td><img src="/article/../resources/image3.png" alt="image3"></td><td>实心圆</td></tr><tr><td>“v”</td><td><img src="/article/../resources/image4.png" alt="image4"></td><td>下三角</td></tr><tr><td>“^”</td><td><img src="/article/../resources/image5.png" alt="image5"></td><td>上三角</td></tr><tr><td>“&lt;“</td><td><img src="/article/../resources/image6.png" alt="image6"></td><td>左三角</td></tr><tr><td>“&gt;”</td><td><img src="/article/../resources/image7.png" alt="image7"></td><td>右三角</td></tr><tr><td>“1”</td><td><img src="/article/../resources/image8.png" alt="image8"></td><td>下三叉</td></tr><tr><td>“2”</td><td><img src="/article/../resources/image9.png" alt="image9"></td><td>上三叉</td></tr><tr><td>“3”</td><td><img src="/article/../resources/image10.png" alt="image10"></td><td>左三叉</td></tr><tr><td>“4”</td><td><img src="/article/../resources/image11.png" alt="image11"></td><td>右三叉</td></tr><tr><td>“8”</td><td><img src="/article/../resources/image12.png" alt="image12"></td><td>八角形</td></tr><tr><td>“s”</td><td><img src="/article/../resources/image13.png" alt="image13"></td><td>正方形</td></tr><tr><td>“p”</td><td><img src="/article/../resources/image14.png" alt="image14"></td><td>五边形</td></tr><tr><td>“P”</td><td><img src="/article/../resources/image15.png" alt="image15"></td><td>加号（填充）</td></tr><tr><td>“*“</td><td><img src="/article/../resources/image16.png" alt="image16"></td><td>星号</td></tr><tr><td>“h”</td><td><img src="/article/../resources/image17.png" alt="image17"></td><td>六边形 1</td></tr><tr><td>“H”</td><td><img src="/article/../resources/image18.png" alt="image18"></td><td>六边形 2</td></tr><tr><td>“+”</td><td><img src="/article/../resources/image19.png" alt="image19"></td><td>加号</td></tr><tr><td>“x”</td><td><img src="/article/../resources/image20.png" alt="image20"></td><td>乘号 x</td></tr><tr><td>“X”</td><td><img src="/article/../resources/image21.png" alt="image21"></td><td>乘号 x (填充)</td></tr><tr><td>“D”</td><td><img src="/article/../resources/image22.png" alt="image22"></td><td>菱形</td></tr><tr><td>“d”</td><td><img src="/article/../resources/image23.png" alt="image23"></td><td>瘦菱形</td></tr><tr><td>“|”</td><td><img src="/article/../resources/image24.png" alt="image24"></td><td>竖线</td></tr><tr><td>“_“</td><td><img src="/article/../resources/image25.png" alt="image25"></td><td>横线</td></tr><tr><td>0 (TICKLEFT)</td><td><img src="/article/../resources/image26.png" alt="image26"></td><td>左横线</td></tr><tr><td>1 (TICKRIGHT)</td><td><img src="/article/../resources/image27.png" alt="image27"></td><td>右横线</td></tr><tr><td>2 (TICKUP)</td><td><img src="/article/../resources/image28.png" alt="image28"></td><td>上竖线</td></tr><tr><td>3 (TICKDOWN)</td><td><img src="/article/../resources/image29.png" alt="image29"></td><td>下竖线</td></tr><tr><td>4 (CARETLEFT)</td><td><img src="/article/../resources/image30.png" alt="image30"></td><td>左箭头</td></tr><tr><td>5 (CARETRIGHT)</td><td><img src="/article/../resources/image31.png" alt="image31"></td><td>右箭头</td></tr><tr><td>6 (CARETUP)</td><td><img src="/article/../resources/image32.png" alt="image32"></td><td>上箭头</td></tr><tr><td>7 (CARETDOWN)</td><td><img src="/article/../resources/image33.png" alt="image33"></td><td>下箭头</td></tr><tr><td>8 (CARETLEFTBASE)</td><td><img src="/article/../resources/image34.png" alt="image34"></td><td>左箭头 (中间点为基准)</td></tr><tr><td>9 (CARETRIGHTBASE)</td><td><img src="/article/../resources/image35.png" alt="image35"></td><td>右箭头 (中间点为基准)</td></tr><tr><td>10 (CARETUPBASE)</td><td><img src="/article/../resources/image36.png" alt="image36"></td><td>上箭头 (中间点为基准)</td></tr><tr><td>11 (CARETDOWNBASE)</td><td><img src="/article/../resources/image37.png" alt="image37"></td><td>下箭头 (中间点为基准)</td></tr><tr><td>“None”, “” or “”</td><td></td><td>没有任何标记</td></tr><tr><td>‘$…$’</td><td><img src="/article/../resources/image38.png" alt="image38"></td><td>渲染指定的字符。例如 “$f$” 以字母 f 为标记。</td></tr></tbody></table><table><thead><tr><th><strong>线类型标记</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>‘-‘</td><td>实线</td></tr><tr><td>‘:’</td><td>虚线</td></tr><tr><td>‘–’</td><td>破折线</td></tr><tr><td>‘-.’</td><td>点划线</td></tr></tbody></table><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-marker.html">https://www.runoob.com/matplotlib/matplotlib-marker.html</a>&gt;</em></p><p>plt.rcParams[‘font.family’]&#x3D;[‘STFangsong’]<br>绘图时加入中文仿宋字体的代码<br>–in matplotlib<br>plt提供了三种标签方法<br>1Plt**.<strong>title</strong>(<strong>“ “</strong>)**<br>2Plt**.<strong>xlabel</strong>(<strong>“ “</strong>)**<br>3Plt**.<strong>ylabel</strong>(<strong>“ “</strong>)**</p><p>绘图网格线:<br>1Plt**.<strong>grid</strong>()**<br>2grid**(<strong>color <strong>&#x3D;</strong>‘color’</strong>,<strong>linestyle <strong>&#x3D;</strong>‘linestyle’</strong>,**linewidth <strong>&#x3D;<strong>number</strong>)</strong></p><p>绘制多图<br>1subplot**(<strong>nrows</strong>,<strong>ncols</strong>,<strong>index</strong>, **<strong>kwargs</strong>)**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Scatter散点图</title>
-      <link href="/article/28d2288e.html"/>
-      <url>/article/28d2288e.html</url>
-      
-        <content type="html"><![CDATA[<p>Scatter散点图<br>2022年8月1日<br>0:30</p><p>使用随机数来设置散点图：<br><strong>实例</strong><br>1<strong>import</strong>numpy<strong>as</strong>np<br>2<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>3<br>4# 随机数生成器的种子<br>5np</strong>.<strong>random</strong>.<strong>seed</strong>(19680801)**<br>6<br>7<br>8N**&#x3D;<strong><strong>50</strong><br>9x</strong>&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>10y**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>11colors**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>12area**&#x3D;<strong><strong>(30</strong></strong>*<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>))**2**# 0 to 15 point radii<br>13<br>14plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>s</strong>&#x3D;<strong>area</strong>,<strong>c</strong>&#x3D;<strong>colors</strong>,<strong>alpha</strong>&#x3D;0.5)<strong># 设置颜色及透明度<br>15<br>16plt</strong>.<strong>title</strong>(<strong>“RUNOOB Scatter Test”</strong>)<strong># 设置标题<br>17<br>18plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-scatter.html">https://www.runoob.com/matplotlib/matplotlib-scatter.html</a>&gt;</em></p><p>设置颜色条使用cmap:<br>1plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>c <strong>&#x3D;<strong>colors</strong>,<strong>cmap</strong>&#x3D;</strong>‘viridis’</strong>)**</p><p>显示颜色条:<br>1plt**.<strong>colorbar</strong>()**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>魔法命令</title>
-      <link href="/article/cd732a5c.html"/>
-      <url>/article/cd732a5c.html</url>
-      
-        <content type="html"><![CDATA[<p>增加图片清晰度</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>%config InlineBackend.figure_format = 'retina'</p><p># 以上命令可以使图片的清晰度更高</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Go的代码风格简述</title>
       <link href="/article/dd024554.html"/>
       <url>/article/dd024554.html</url>
@@ -1784,6 +1719,71 @@
     
     
     <entry>
+      <title>Bar柱状图</title>
+      <link href="/article/24aea42b.html"/>
+      <url>/article/24aea42b.html</url>
+      
+        <content type="html"><![CDATA[<p>Bar柱状图<br>2022年8月1日<br>0:58</p><p>我们可以使用 pyplot 中的 bar() 方法来绘制柱形图。</p><p>Add:<br>中文不兼容怎么搞</p><p>1# fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径，size 参数设置字体大小<br>2 zhfont1 &#x3D; matplotlib.font_manager.FontProperties(fname&#x3D;”E:&#x2F;OneDrive - 6x26s6&#x2F;Lan&#x2F;SourceHanSansSC-Bold.otf”, size&#x3D;18)<br>3<br>4# fontdict 可以使用 css 来设置字体样式<br>5plt.title(“菜鸟教程 - 测试”, fontproperties&#x3D;zhfont1, fontdict &#x3D; font1, loc&#x3D;”center”)<br>6<br>7# fontproperties 设置中文显示，fontsize 设置字体大小</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pie饼状图</title>
+      <link href="/article/115f4d38.html"/>
+      <url>/article/115f4d38.html</url>
+      
+        <content type="html"><![CDATA[<p>Pie饼状图<br>2022年8月1日<br>1:13<br>我们可以使用 pyplot 中的 pie() 方法来绘制饼图。</p><p>设置饼图各个扇形的标签与颜色：<br><strong>实例</strong><br>1<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>2</strong>import<strong>numpy</strong>as<strong>np<br>3<br>4y</strong>&#x3D;<strong>np</strong>.<strong>array</strong>([35,<strong><strong>25,<strong><strong>25,<strong><strong>15])</strong><br>5<br>6plt</strong>.<strong>pie</strong>(<strong>y</strong>,</strong><br>7    labels</strong>&#x3D;[</strong>‘A’<strong>,</strong>‘B’<strong>,</strong>‘C’<strong>,</strong>‘D’<strong>],</strong></strong># 设置饼图标签**<br>8    colors**&#x3D;[<strong>“#d5695d”</strong>,<strong>“#5d8ca8”</strong>,<strong>“#65a479”</strong>,<strong>“#a564c9”<strong>],</strong># <strong>设置饼图颜色</strong><br>9   <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)<strong><strong># 设置标题</strong><br>11plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-pie.html">https://www.runoob.com/matplotlib/matplotlib-pie.html</a>&gt;</em></p><p>labels用来设置标签,一般用不到colors感觉</p><p>突出显示某一个扇形:</p><p>1<br>2<strong>import</strong>matplotlib**.<strong>pyplot <strong>as</strong>plt<br>3</strong>import<strong>numpy <strong>as</strong>np<br>4y <strong>&#x3D;<strong>np</strong>.<strong>array</strong>([12,25,25,35])</strong><br>5plt</strong>.<strong>pie</strong>(<strong>y</strong>,**<br>6      labels <strong>&#x3D; [</strong>‘AAA’<strong>,</strong>‘BBB’<strong>,</strong>‘CCC’<strong>,</strong>‘DDD’<strong>],</strong><br>7      explode**&#x3D;(0,0.1,0.2,0),#设置第二部分的突出显示**<br>8      autopct**&#x3D;<strong>‘%.2f%%’ <strong># 格式化输出百分比</strong><br>9      <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)**<br>11plt**.<strong>show</strong>()**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Plt and np : 2D</title>
+      <link href="/article/11e3615e.html"/>
+      <url>/article/11e3615e.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>import</strong>matplotlib.pyplot<strong>as</strong>plt<br><strong>import</strong>numpy<strong>as</strong>np</p><p>x&#x3D;np.arange(0,4*np.pi,0.1)# start,stop,step<br>y&#x3D;np.sin(x)<br>z&#x3D;np.cos(x)<br>plt.plot(x,y,x,z)<br>plt.show()</p><p>Marker 类型</p><table><thead><tr><th><strong>标记</strong></th><th><strong>符号</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>“.”</td><td><img src="/article/../resources/image1-2.png" alt="image1"></td><td>点</td></tr><tr><td>“,”</td><td><img src="/article/../resources/image2.png" alt="image2"></td><td>像素点</td></tr><tr><td>“o”</td><td><img src="/article/../resources/image3.png" alt="image3"></td><td>实心圆</td></tr><tr><td>“v”</td><td><img src="/article/../resources/image4.png" alt="image4"></td><td>下三角</td></tr><tr><td>“^”</td><td><img src="/article/../resources/image5.png" alt="image5"></td><td>上三角</td></tr><tr><td>“&lt;“</td><td><img src="/article/../resources/image6.png" alt="image6"></td><td>左三角</td></tr><tr><td>“&gt;”</td><td><img src="/article/../resources/image7.png" alt="image7"></td><td>右三角</td></tr><tr><td>“1”</td><td><img src="/article/../resources/image8.png" alt="image8"></td><td>下三叉</td></tr><tr><td>“2”</td><td><img src="/article/../resources/image9.png" alt="image9"></td><td>上三叉</td></tr><tr><td>“3”</td><td><img src="/article/../resources/image10.png" alt="image10"></td><td>左三叉</td></tr><tr><td>“4”</td><td><img src="/article/../resources/image11.png" alt="image11"></td><td>右三叉</td></tr><tr><td>“8”</td><td><img src="/article/../resources/image12.png" alt="image12"></td><td>八角形</td></tr><tr><td>“s”</td><td><img src="/article/../resources/image13.png" alt="image13"></td><td>正方形</td></tr><tr><td>“p”</td><td><img src="/article/../resources/image14.png" alt="image14"></td><td>五边形</td></tr><tr><td>“P”</td><td><img src="/article/../resources/image15.png" alt="image15"></td><td>加号（填充）</td></tr><tr><td>“*“</td><td><img src="/article/../resources/image16.png" alt="image16"></td><td>星号</td></tr><tr><td>“h”</td><td><img src="/article/../resources/image17.png" alt="image17"></td><td>六边形 1</td></tr><tr><td>“H”</td><td><img src="/article/../resources/image18.png" alt="image18"></td><td>六边形 2</td></tr><tr><td>“+”</td><td><img src="/article/../resources/image19.png" alt="image19"></td><td>加号</td></tr><tr><td>“x”</td><td><img src="/article/../resources/image20.png" alt="image20"></td><td>乘号 x</td></tr><tr><td>“X”</td><td><img src="/article/../resources/image21.png" alt="image21"></td><td>乘号 x (填充)</td></tr><tr><td>“D”</td><td><img src="/article/../resources/image22.png" alt="image22"></td><td>菱形</td></tr><tr><td>“d”</td><td><img src="/article/../resources/image23.png" alt="image23"></td><td>瘦菱形</td></tr><tr><td>“|”</td><td><img src="/article/../resources/image24.png" alt="image24"></td><td>竖线</td></tr><tr><td>“_“</td><td><img src="/article/../resources/image25.png" alt="image25"></td><td>横线</td></tr><tr><td>0 (TICKLEFT)</td><td><img src="/article/../resources/image26.png" alt="image26"></td><td>左横线</td></tr><tr><td>1 (TICKRIGHT)</td><td><img src="/article/../resources/image27.png" alt="image27"></td><td>右横线</td></tr><tr><td>2 (TICKUP)</td><td><img src="/article/../resources/image28.png" alt="image28"></td><td>上竖线</td></tr><tr><td>3 (TICKDOWN)</td><td><img src="/article/../resources/image29.png" alt="image29"></td><td>下竖线</td></tr><tr><td>4 (CARETLEFT)</td><td><img src="/article/../resources/image30.png" alt="image30"></td><td>左箭头</td></tr><tr><td>5 (CARETRIGHT)</td><td><img src="/article/../resources/image31.png" alt="image31"></td><td>右箭头</td></tr><tr><td>6 (CARETUP)</td><td><img src="/article/../resources/image32.png" alt="image32"></td><td>上箭头</td></tr><tr><td>7 (CARETDOWN)</td><td><img src="/article/../resources/image33.png" alt="image33"></td><td>下箭头</td></tr><tr><td>8 (CARETLEFTBASE)</td><td><img src="/article/../resources/image34.png" alt="image34"></td><td>左箭头 (中间点为基准)</td></tr><tr><td>9 (CARETRIGHTBASE)</td><td><img src="/article/../resources/image35.png" alt="image35"></td><td>右箭头 (中间点为基准)</td></tr><tr><td>10 (CARETUPBASE)</td><td><img src="/article/../resources/image36.png" alt="image36"></td><td>上箭头 (中间点为基准)</td></tr><tr><td>11 (CARETDOWNBASE)</td><td><img src="/article/../resources/image37.png" alt="image37"></td><td>下箭头 (中间点为基准)</td></tr><tr><td>“None”, “” or “”</td><td></td><td>没有任何标记</td></tr><tr><td>‘$…$’</td><td><img src="/article/../resources/image38.png" alt="image38"></td><td>渲染指定的字符。例如 “$f$” 以字母 f 为标记。</td></tr></tbody></table><table><thead><tr><th><strong>线类型标记</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>‘-‘</td><td>实线</td></tr><tr><td>‘:’</td><td>虚线</td></tr><tr><td>‘–’</td><td>破折线</td></tr><tr><td>‘-.’</td><td>点划线</td></tr></tbody></table><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-marker.html">https://www.runoob.com/matplotlib/matplotlib-marker.html</a>&gt;</em></p><p>plt.rcParams[‘font.family’]&#x3D;[‘STFangsong’]<br>绘图时加入中文仿宋字体的代码<br>–in matplotlib<br>plt提供了三种标签方法<br>1Plt**.<strong>title</strong>(<strong>“ “</strong>)**<br>2Plt**.<strong>xlabel</strong>(<strong>“ “</strong>)**<br>3Plt**.<strong>ylabel</strong>(<strong>“ “</strong>)**</p><p>绘图网格线:<br>1Plt**.<strong>grid</strong>()**<br>2grid**(<strong>color <strong>&#x3D;</strong>‘color’</strong>,<strong>linestyle <strong>&#x3D;</strong>‘linestyle’</strong>,**linewidth <strong>&#x3D;<strong>number</strong>)</strong></p><p>绘制多图<br>1subplot**(<strong>nrows</strong>,<strong>ncols</strong>,<strong>index</strong>, **<strong>kwargs</strong>)**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Scatter散点图</title>
+      <link href="/article/28d2288e.html"/>
+      <url>/article/28d2288e.html</url>
+      
+        <content type="html"><![CDATA[<p>Scatter散点图<br>2022年8月1日<br>0:30</p><p>使用随机数来设置散点图：<br><strong>实例</strong><br>1<strong>import</strong>numpy<strong>as</strong>np<br>2<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>3<br>4# 随机数生成器的种子<br>5np</strong>.<strong>random</strong>.<strong>seed</strong>(19680801)**<br>6<br>7<br>8N**&#x3D;<strong><strong>50</strong><br>9x</strong>&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>10y**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>11colors**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>12area**&#x3D;<strong><strong>(30</strong></strong>*<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>))**2**# 0 to 15 point radii<br>13<br>14plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>s</strong>&#x3D;<strong>area</strong>,<strong>c</strong>&#x3D;<strong>colors</strong>,<strong>alpha</strong>&#x3D;0.5)<strong># 设置颜色及透明度<br>15<br>16plt</strong>.<strong>title</strong>(<strong>“RUNOOB Scatter Test”</strong>)<strong># 设置标题<br>17<br>18plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-scatter.html">https://www.runoob.com/matplotlib/matplotlib-scatter.html</a>&gt;</em></p><p>设置颜色条使用cmap:<br>1plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>c <strong>&#x3D;<strong>colors</strong>,<strong>cmap</strong>&#x3D;</strong>‘viridis’</strong>)**</p><p>显示颜色条:<br>1plt**.<strong>colorbar</strong>()**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>魔法命令</title>
+      <link href="/article/cd732a5c.html"/>
+      <url>/article/cd732a5c.html</url>
+      
+        <content type="html"><![CDATA[<p>增加图片清晰度</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>%config InlineBackend.figure_format = 'retina'</p><p># 以上命令可以使图片的清晰度更高</p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>无标题页</title>
       <link href="/article/c2a52b83.html"/>
       <url>/article/c2a52b83.html</url>
@@ -1810,11 +1810,11 @@
     
     
     <entry>
-      <title>4 arguments</title>
-      <link href="/article/a1b6a922.html"/>
-      <url>/article/a1b6a922.html</url>
+      <title>@property and @setter</title>
+      <link href="/article/17ca39f3.html"/>
+      <url>/article/17ca39f3.html</url>
       
-        <content type="html"><![CDATA[<p>4 arguments<br>2022年7月28日<br>0:19</p><p>对于位置参数,想要参数可变,最早想到传入一个list或者tuple,如果使用可变参数的话:<br>可变参数 ( * ) 允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。<br>而关键字参数 ( **kw ) 允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict。</p><p>尾递归调用时，如果做了优化，栈不会增长，因此，无论多少次调用也不会导致栈溢出。<br>遗憾的是，大多数编程语言没有针对尾递归做优化，Python解释器也没有做优化，所以，即使把fact(n)函数改成尾递归方式，也会导致栈溢出。</p>]]></content>
+        <content type="html"><![CDATA[<p>既能检查参数，又可以用类似属性这样简单的方式来访问类的变量</p><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017502538658208">https://www.liaoxuefeng.com/wiki/1016959663602400/1017502538658208</a>&gt;</em></p><p><strong>属性的方法名不要和实例变量重名</strong></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>class Student(object):</p><p></p><p># 方法名称和实例变量均为birth:</p><p>@property</p><p>def birth(self):</p><p>return self.birth</p></th></tr></thead><tbody></tbody></table>这会导致栈溢出,不断递归,解决办法就是不要重名:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>class Student(object):</p><p></p><p># 方法名称和实例变量均为birth:</p><p>@property</p><p>def birth(self):</p><p>return self._birth # 加上下划线就好了</p></th></tr></thead><tbody></tbody></table><p><strong>homework</strong><br>请利用@property给一个Screen对象加上width<br>和height属性，以及一个只读属性resolution：</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>class Screen(object):</p><p></p><p>@property</p><p>def width(self):</p><p>return self._width</p><p>@width.setter</p><p>def width(self,value):</p><p>if not isinstance(value,int):</p><p>raise ValueError('width must be an integer!')</p><p>if value &lt; 0:</p><p>raise ValueError('width must over 0!')</p><p>self._width = value</p><p></p><p>@property</p><p>def height(self):</p><p>return self._height</p><p>@height.setter</p><p>def height(self,value):</p><p>if not isinstance(value,int):</p><p>raise ValueError('height must be an integer!')</p><p>if value &lt; 0 :</p><p>raise ValueError('height must be over 0!')</p><p>self._height = value</p><p></p><p>@property</p><p>def resolution(self):</p><p>return self.width*self.height</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><strong>测试用例:</strong></p><p>s = Screen()</p><p>s.width = 1024</p><p>print(s.width)</p><p>s.height = 768</p><p>print('resolution =', s.resolution)</p><p>if s.resolution == 786432:</p><p>  print('测试通过!')</p><p>else:</p><p>  print('测试失败!')</p></th></tr></thead><tbody></tbody></table>**]]></content>
       
       
       
@@ -1823,11 +1823,11 @@
     
     
     <entry>
-      <title>@property and @setter</title>
-      <link href="/article/17ca39f3.html"/>
-      <url>/article/17ca39f3.html</url>
+      <title>4 arguments</title>
+      <link href="/article/a1b6a922.html"/>
+      <url>/article/a1b6a922.html</url>
       
-        <content type="html"><![CDATA[<p>既能检查参数，又可以用类似属性这样简单的方式来访问类的变量</p><p><em>来自 &lt;<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017502538658208">https://www.liaoxuefeng.com/wiki/1016959663602400/1017502538658208</a>&gt;</em></p><p><strong>属性的方法名不要和实例变量重名</strong></p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>class Student(object):</p><p></p><p># 方法名称和实例变量均为birth:</p><p>@property</p><p>def birth(self):</p><p>return self.birth</p></th></tr></thead><tbody></tbody></table>这会导致栈溢出,不断递归,解决办法就是不要重名:<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>class Student(object):</p><p></p><p># 方法名称和实例变量均为birth:</p><p>@property</p><p>def birth(self):</p><p>return self._birth # 加上下划线就好了</p></th></tr></thead><tbody></tbody></table><p><strong>homework</strong><br>请利用@property给一个Screen对象加上width<br>和height属性，以及一个只读属性resolution：</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p></p><p>class Screen(object):</p><p></p><p>@property</p><p>def width(self):</p><p>return self._width</p><p>@width.setter</p><p>def width(self,value):</p><p>if not isinstance(value,int):</p><p>raise ValueError('width must be an integer!')</p><p>if value &lt; 0:</p><p>raise ValueError('width must over 0!')</p><p>self._width = value</p><p></p><p>@property</p><p>def height(self):</p><p>return self._height</p><p>@height.setter</p><p>def height(self,value):</p><p>if not isinstance(value,int):</p><p>raise ValueError('height must be an integer!')</p><p>if value &lt; 0 :</p><p>raise ValueError('height must be over 0!')</p><p>self._height = value</p><p></p><p>@property</p><p>def resolution(self):</p><p>return self.width*self.height</p></th></tr></thead><tbody></tbody></table><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><strong>测试用例:</strong></p><p>s = Screen()</p><p>s.width = 1024</p><p>print(s.width)</p><p>s.height = 768</p><p>print('resolution =', s.resolution)</p><p>if s.resolution == 786432:</p><p>  print('测试通过!')</p><p>else:</p><p>  print('测试失败!')</p></th></tr></thead><tbody></tbody></table>**]]></content>
+        <content type="html"><![CDATA[<p>4 arguments<br>2022年7月28日<br>0:19</p><p>对于位置参数,想要参数可变,最早想到传入一个list或者tuple,如果使用可变参数的话:<br>可变参数 ( * ) 允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。<br>而关键字参数 ( **kw ) 允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict。</p><p>尾递归调用时，如果做了优化，栈不会增长，因此，无论多少次调用也不会导致栈溢出。<br>遗憾的是，大多数编程语言没有针对尾递归做优化，Python解释器也没有做优化，所以，即使把fact(n)函数改成尾递归方式，也会导致栈溢出。</p>]]></content>
       
       
       
