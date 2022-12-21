@@ -640,110 +640,6 @@
     
     
     <entry>
-      <title>case 1  基本语法</title>
-      <link href="/article/6c4c1072.html"/>
-      <url>/article/6c4c1072.html</url>
-      
-        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/article/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见函数</title>
-      <link href="/article/1ce2db89.html"/>
-      <url>/article/1ce2db89.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见运算符</title>
-      <link href="/article/85826fea.html"/>
-      <url>/article/85826fea.html</url>
-      
-        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/article/../resources/image1-42.png" alt="image1"></li><li><img src="/article/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微分方程模型与ODE函数</title>
-      <link href="/article/614ccd14.html"/>
-      <url>/article/614ccd14.html</url>
-      
-        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>符号计算函数</title>
-      <link href="/article/46d0dedd.html"/>
-      <url>/article/46d0dedd.html</url>
-      
-        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>线性代数</title>
-      <link href="/article/c23efd5b.html"/>
-      <url>/article/c23efd5b.html</url>
-      
-        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>课程介绍,成绩构成</title>
-      <link href="/article/478d9011.html"/>
-      <url>/article/478d9011.html</url>
-      
-        <content type="html"><![CDATA[<p><img src="/article/../resources/image1-40.png" alt="image1"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>非线性方程求解</title>
-      <link href="/article/99ff7dcd.html"/>
-      <url>/article/99ff7dcd.html</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>homework1</title>
       <link href="/article/1234e32b.html"/>
       <url>/article/1234e32b.html</url>
@@ -978,24 +874,11 @@
     
     
     <entry>
-      <title>1&amp;2 线下经济学</title>
-      <link href="/article/f98c178d.html"/>
-      <url>/article/f98c178d.html</url>
+      <title>case 1  基本语法</title>
+      <link href="/article/6c4c1072.html"/>
+      <url>/article/6c4c1072.html</url>
       
-        <content type="html"><![CDATA[<p>1&amp;2 线下经济学<br>2022年10月19日 星期三<br>下午2:31</p><p><strong>第一次线下经济学</strong><br>实证分析和规范分析</p><ul><li>实证分析研究”是”还是”不是”的问题,是脱离社会的理论</li><li>规范分析研究”好”还是”不好”的问题,研究资源的配置</li></ul><p>短期内需求弹性低<br>Supply and Demand and Government policies<br><strong>Control on Price</strong></p><ul><li>Price Ceiling<ul><li>有约束力的Price Ceiling 比均衡价格更<em>低</em><ul><li>当然这会导致有些buyer买不到</li></ul></li></ul></li><li>Price Floor<ul><li>binding price 在均衡价格上方<ul><li>导致一部分seller卖不出去<br><strong>Taxes</strong><br><img src="/article/../resources/image1-9.jpeg" alt="image1"><br>～ 红色的线类似于楔子 ～<br><strong>The impact of tax</strong></li></ul></li></ul></li><li>减少了购买者的积极性<br><strong>The incident of the tax</strong></li><li>红色的线（即税收）受弹性更少的一方影响更大（此处有一个奢侈品税的例子）</li><li>The burden of a tax falls more heavily on the side of the market that is less elastic.</li></ul><p><strong>The law of the irrelevance of the law</strong><br>法律无效定律</p><ul><li>政府规定的税收，和实际上谁支付无关，只和交易的双方相对弹性有关<ul><li>比方说*钻戒*💍，主要看谁追谁</li></ul></li></ul><p><strong>The incidence of the tax Calculation_1</strong><br><img src="/article/../resources/image2-38.png" alt="image2"><br><img src="/article/../resources/image3-32.png" alt="image3"><br><img src="/article/../resources/image4-32.png" alt="image4"><br>解四个方程组<br><img src="/article/../resources/image5-4.jpeg" alt="image5"></p><p><img src="/article/../resources/image6-1.jpeg" alt="image6"></p><p><img src="/article/../resources/image7-1.jpeg" alt="image7"><br>里面的Deadweight loss是无谓损失</p><ul><li>税收造成无谓损失，是<strong>因为它使买者和卖者改变了自己的行为</strong>。</li></ul><p><strong>International Trade</strong></p><ul><li>决定一国是进口国还是出口国取决于<em>比较优势</em>，优势又取决于<em>机会成本</em><ul><li>优势体现在<strong>价格</strong>上</li></ul></li></ul><ol><li><p>International Trade in EXPORT country</p></li><li><p>International trade in IMPORTING country<br><img src="/article/../resources/image8-1.jpg" alt="image8"></p></li><li><p>The Effects of a Tariffs</p><ul><li>Traiffs are taxes on <u>imported</u> goods.<br><img src="/article/../resources/image9-1.jpeg" alt="image9"></li></ul></li></ol><p><img src="/article/../resources/image10-1.jpeg" alt="image10"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case 1 Ten Principals</title>
-      <link href="/article/132b2373.html"/>
-      <url>/article/132b2373.html</url>
-      
-        <content type="html"><![CDATA[<p>四次小班研讨,两次美团研究对象</p><p><strong>十大原则</strong><br><strong>How people make decisions.</strong></p><ul><li><p><strong>People face tradeoffs.</strong></p></li><li><p><strong>Opportunity cost</strong></p></li><li><p><strong>Rational people think at the margin</strong></p></li><li><p><strong>People respond to incentives</strong><br><strong>How people interact with each other.</strong></p></li><li><p>Trade can make everyone better off.</p></li><li><p>Markets are usually a good way to organize economic activity.</p></li><li><p>Governments can sometimes improve market outcomes.</p></li><li><p>The standard of living depends on a country’s production.</p></li><li><p>Prices rise when the government prints too much money.</p></li><li><p>Society faces a short-run tradeoff between inflation and unemployment.</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<ol><li>随机数矩阵<br>rand()方法</li><li>幻方矩阵<br>magic()方法</li><li>求和方法<br>sum()方法</li><li>对于不清楚功能的函数<br>help()方法</li></ol><p>helpwin 方法可以打开相关文档<br>who查看变量<br>clear清除变量</p><p><strong>数组的建立</strong></p><ol><li>冒号操作符</li><li>a:step:b其中a:b等于a:1:b</li><li>linspace(a,b,n) %n是步长<br>n-1等分的区间[a,b]的节点组成的行向量,含端点</li><li>拼接</li><li>空矩阵</li><li>调用函数创建<ol><li>zeros,eye,ones等等<br><strong>提取和修改数组中的元素</strong></li></ol></li><li>通过下标访问,例如:x(i),x(a:b:c)</li><li>获取子阵:<ol><li>获取某一行 A(r,:) 第r行</li><li>获取某一列 A(:,c) 第c列<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>举个例子</p><p>x = [1 2 3 4 ;</p><p>5,6,7,8;</p><p>9,10,11,12]</p><p>y1 = x([1,2],:) %取第1,2行</p><p>y2 = x([2 3],[1 3 4]) % 取第2,3行,第1,3,4列</p></th></tr></thead><tbody></tbody></table></li></ol></li></ol><p><strong>基础语法如</strong></p><ul><li>矩阵乘法用”*“</li><li>注释语句是用%开头<br><strong>变量的命名规则很简单,懂得都懂</strong></li></ul><p>小tips:在语句的末尾不适用分号时,系统会显示执行结果.<br><img src="/article/../resources/image1-41.png" alt="image1"></p><p><strong>常用快捷命令:</strong></p><ul><li>clear 清除变量<ul><li>例如clear A,B %清除变量A,B</li></ul></li><li>clc 清除命令窗口内容</li><li>who 列出当前工作空间所有变量名称</li><li>whos 列出当前变量的更多信息<ul><li>还可以指定变量列出详细信息</li></ul></li></ul><p>写一个循环,从M(2027,5)-M(2026,5),<br>即for I &#x3D; 1:100,y(i) &#x3D; (M(1928+I,5)-M(1927+I,5)) 打印就好了</p>]]></content>
       
       
       
@@ -1004,24 +887,11 @@
     
     
     <entry>
-      <title>case 2 Thinking Like an Economist</title>
-      <link href="/article/46e94d3a.html"/>
-      <url>/article/46e94d3a.html</url>
+      <title>常见函数</title>
+      <link href="/article/1ce2db89.html"/>
+      <url>/article/1ce2db89.html</url>
       
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case%25202%2520Thinking%2520Like%2520an%2520Economist&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={8C13B34B-E092-4B1B-BF49-4C6AB1EC6462}&amp;object-id={A47BC73C-1F19-446F-BF22-9D2E983AE745}&amp;47&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Microeconomics and Macroeconomics</a></p><p><a href="onenote:#case%25202%2520Thinking%2520Like%2520an%2520Economist&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={8C13B34B-E092-4B1B-BF49-4C6AB1EC6462}&amp;object-id={AC50BD7F-1155-48B5-9618-8FB818EAD87E}&amp;61&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Positive versus Normative Analysis</a></p></th></tr></thead><tbody></tbody></table><p><strong>Microeconomics and Macroeconomics</strong></p><ul><li>Microeconomics focuses on the individual parts of the economy.</li><li>Macroeconomics looks at the economy as a whole.</li></ul><p><strong>Positive versus Normative Analysis</strong><br>实例分析与规范分析</p><ul><li><p><strong>The Scientific Method : Observation,</strong><br><strong>Theory and More Observation</strong></p></li><li><p><strong>The Role of Assumptions</strong></p></li><li><p><strong>Economic Models</strong></p></li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>case3 Two Models</title>
-      <link href="/article/d7fdefe2.html"/>
-      <url>/article/d7fdefe2.html</url>
-      
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={DEBCD2F0-0984-4245-85C5-3B974A349E0B}&amp;46&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Circular-Flow Diagram</a></p><blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={EF1D90BA-BF5D-48EF-9A6F-E38BC3F12146}&amp;83&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">循环流向图</a></p></blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={DEBCD2F0-0984-4245-85C5-3B974A349E0B}&amp;F9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Production Possibilities Frontier(PPF)</a></p><blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={EF1D90BA-BF5D-48EF-9A6F-E38BC3F12146}&amp;2F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">生产可能性边界</a></p><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={FBFBED7E-0FF5-438E-AE7E-8CB9276CFF55}&amp;59&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Economic Growth</a></p></blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={2DC9EAEE-0A83-4D5D-A8C1-B356D0BE0E66}&amp;65&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Below are some examples of PPF</a></p></th></tr></thead><tbody></tbody></table><p><strong>The Circular-Flow Diagram</strong><br><strong>循环流向图</strong></p><p><img src="/article/../resources/image1-34.png" alt="image1"><br>Firms &lt;–&gt; Households</p><p><strong>The Production Possibilities Frontier(PPF)</strong><br><strong>生产可能性边界</strong><br>线上的每一点都是Trade-off</p><p>——————there need a picture ——————–</p><p><strong>Economic Growth</strong><br>An outward shift in the production possibilities frontier.<br>Influence factors:</p><ul><li>Investment</li><li>Technology</li><li>Education</li><li>Research</li><li>Institution</li></ul><p><strong>Below are some examples of PPF</strong></p><ul><li><strong>Necessities &amp; Luxuries</strong></li><li><strong>Private goods &amp; Public goods</strong></li></ul>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       
@@ -1030,11 +900,11 @@
     
     
     <entry>
-      <title>case4 Interdependence </title>
-      <link href="/article/2c0f2657.html"/>
-      <url>/article/2c0f2657.html</url>
+      <title>常见运算符</title>
+      <link href="/article/85826fea.html"/>
+      <url>/article/85826fea.html</url>
       
-        <content type="html"><![CDATA[<p><strong>Basic of Trade</strong></p><ul><li>Absolute Advantage<ul><li>The comparison among producers of a good according to their productivity.</li></ul></li><li>Comparative Advantage<ul><li>Compares producers of a good according to their opportunity cost. The producer who has the smaller opportunity cost of producing…</li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<p><strong>算数运算符</strong></p><ul><li>矩阵转置 B.’ 矩阵共轭转置 B’</li><li>矩阵加减 A+或者-B</li><li>矩阵相乘 A*B</li><li><img src="/article/../resources/image1-42.png" alt="image1"></li><li><img src="/article/../resources/image2-42.png" alt="image2"><br><strong>关系运算符</strong></li><li>&lt; &gt; &#x3D;&#x3D;<br><strong>逻辑运算符</strong></li><li>且(and) &amp;</li><li>或(or) |</li><li>非(not) ~</li></ul>]]></content>
       
       
       
@@ -1043,11 +913,63 @@
     
     
     <entry>
-      <title>case5 Supply and Demand : How market works</title>
-      <link href="/article/97a62a47.html"/>
-      <url>/article/97a62a47.html</url>
+      <title>微分方程模型与ODE函数</title>
+      <link href="/article/614ccd14.html"/>
+      <url>/article/614ccd14.html</url>
       
-        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;43&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Market Forces of Supply and Demand</a></p><blockquote><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;74&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">供给和需求的市场力量</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;A3&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">A market is made of buyers and sellers</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={9F3CEA25-5FEA-428C-AD3A-421EC47548D4}&amp;A9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand_influence factor</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={A957D748-A48D-4343-846C-6CEF0309666A}&amp;89&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand Function</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={F16BA441-928C-465E-8AEA-767117D4B54A}&amp;63&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和需求量的关系</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={E34D92D5-A71E-48F2-BEC5-749402C6E15D}&amp;9F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和供给的关系</a></p></blockquote></th></tr></thead><tbody></tbody></table><p><strong>The Market Forces of Supply and Demand</strong></p><p><strong>供给和需求的市场力量</strong></p><p><strong>A market is made of buyers and sellers</strong></p><ul><li>Buyers determine demand</li><li>Sellers determine supply<br><strong>Demand_influence factor</strong></li><li>The price itself</li><li>The salary of consumers</li><li>Other goods related</li><li>Tastes</li><li>Expectations</li><li>Number of buyers</li></ul><p><strong>Demand Function</strong></p><p><img src="/article/../resources/image1-35.png" alt="image1"></p><p>中点法是个什么?</p><p><strong>需求和需求量的关系</strong></p><ul><li>需求量变动是指由于价格变动引起的 消费者 愿意并且能够购买数量的变动， 需求 的变动是指除价格以外的其他因素变动引起的消费者在每一可能的价格下所有需求量的变动。<br>需求量是需求曲线上的点,需求是一条线</li></ul><p><strong>需求和供给的关系</strong></p><p>会随着<strong>价格</strong>而改变</p>]]></content>
+        <content type="html"><![CDATA[<p>ip.src&#x3D;&#x3D; 113.54.195.225&amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;182.61.200.6</p><p>client</p><p>ip.src&#x3D;&#x3D;182.61.200.6 &amp;&amp;ssl&amp;&amp;ip.dst&#x3D;&#x3D;113.54.195.225</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>符号计算函数</title>
+      <link href="/article/46d0dedd.html"/>
+      <url>/article/46d0dedd.html</url>
+      
+        <content type="html"><![CDATA[<ul><li>compose</li><li>limit</li><li>diff</li><li>int</li><li>taylor</li><li>symsum</li><li>solve</li><li>dsolve</li></ul><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>syms y(x)</p><p>d1 = diff(y,1)</p><p>dsolve(d1 == (50-.01*y)*y,y(0)==4)</p></th></tr></thead><tbody></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>线性代数</title>
+      <link href="/article/c23efd5b.html"/>
+      <url>/article/c23efd5b.html</url>
+      
+        <content type="html"><![CDATA[<ul><li>diag(diag(a)</li><li>triu上三角</li><li>tril下三角</li><li>eig求特征值</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>课程介绍,成绩构成</title>
+      <link href="/article/478d9011.html"/>
+      <url>/article/478d9011.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="/article/../resources/image1-40.png" alt="image1"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>非线性方程求解</title>
+      <link href="/article/99ff7dcd.html"/>
+      <url>/article/99ff7dcd.html</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>solve</p></li><li><p>roots</p></li><li><p>fzero</p></li><li><p>fsolve</p></li><li><p>bisection</p></li><li><p>不动点迭代法stablepoint_solver</p></li><li><p>Newton迭代法</p></li></ul>]]></content>
       
       
       
@@ -1433,6 +1355,84 @@
     
     
     <entry>
+      <title>1&amp;2 线下经济学</title>
+      <link href="/article/f98c178d.html"/>
+      <url>/article/f98c178d.html</url>
+      
+        <content type="html"><![CDATA[<p>1&amp;2 线下经济学<br>2022年10月19日 星期三<br>下午2:31</p><p><strong>第一次线下经济学</strong><br>实证分析和规范分析</p><ul><li>实证分析研究”是”还是”不是”的问题,是脱离社会的理论</li><li>规范分析研究”好”还是”不好”的问题,研究资源的配置</li></ul><p>短期内需求弹性低<br>Supply and Demand and Government policies<br><strong>Control on Price</strong></p><ul><li>Price Ceiling<ul><li>有约束力的Price Ceiling 比均衡价格更<em>低</em><ul><li>当然这会导致有些buyer买不到</li></ul></li></ul></li><li>Price Floor<ul><li>binding price 在均衡价格上方<ul><li>导致一部分seller卖不出去<br><strong>Taxes</strong><br><img src="/article/../resources/image1-9.jpeg" alt="image1"><br>～ 红色的线类似于楔子 ～<br><strong>The impact of tax</strong></li></ul></li></ul></li><li>减少了购买者的积极性<br><strong>The incident of the tax</strong></li><li>红色的线（即税收）受弹性更少的一方影响更大（此处有一个奢侈品税的例子）</li><li>The burden of a tax falls more heavily on the side of the market that is less elastic.</li></ul><p><strong>The law of the irrelevance of the law</strong><br>法律无效定律</p><ul><li>政府规定的税收，和实际上谁支付无关，只和交易的双方相对弹性有关<ul><li>比方说*钻戒*💍，主要看谁追谁</li></ul></li></ul><p><strong>The incidence of the tax Calculation_1</strong><br><img src="/article/../resources/image2-38.png" alt="image2"><br><img src="/article/../resources/image3-32.png" alt="image3"><br><img src="/article/../resources/image4-32.png" alt="image4"><br>解四个方程组<br><img src="/article/../resources/image5-4.jpeg" alt="image5"></p><p><img src="/article/../resources/image6-1.jpeg" alt="image6"></p><p><img src="/article/../resources/image7-1.jpeg" alt="image7"><br>里面的Deadweight loss是无谓损失</p><ul><li>税收造成无谓损失，是<strong>因为它使买者和卖者改变了自己的行为</strong>。</li></ul><p><strong>International Trade</strong></p><ul><li>决定一国是进口国还是出口国取决于<em>比较优势</em>，优势又取决于<em>机会成本</em><ul><li>优势体现在<strong>价格</strong>上</li></ul></li></ul><ol><li><p>International Trade in EXPORT country</p></li><li><p>International trade in IMPORTING country<br><img src="/article/../resources/image8-1.jpg" alt="image8"></p></li><li><p>The Effects of a Tariffs</p><ul><li>Traiffs are taxes on <u>imported</u> goods.<br><img src="/article/../resources/image9-1.jpeg" alt="image9"></li></ul></li></ol><p><img src="/article/../resources/image10-1.jpeg" alt="image10"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case 1 Ten Principals</title>
+      <link href="/article/132b2373.html"/>
+      <url>/article/132b2373.html</url>
+      
+        <content type="html"><![CDATA[<p>四次小班研讨,两次美团研究对象</p><p><strong>十大原则</strong><br><strong>How people make decisions.</strong></p><ul><li><p><strong>People face tradeoffs.</strong></p></li><li><p><strong>Opportunity cost</strong></p></li><li><p><strong>Rational people think at the margin</strong></p></li><li><p><strong>People respond to incentives</strong><br><strong>How people interact with each other.</strong></p></li><li><p>Trade can make everyone better off.</p></li><li><p>Markets are usually a good way to organize economic activity.</p></li><li><p>Governments can sometimes improve market outcomes.</p></li><li><p>The standard of living depends on a country’s production.</p></li><li><p>Prices rise when the government prints too much money.</p></li><li><p>Society faces a short-run tradeoff between inflation and unemployment.</p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case 2 Thinking Like an Economist</title>
+      <link href="/article/46e94d3a.html"/>
+      <url>/article/46e94d3a.html</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case%25202%2520Thinking%2520Like%2520an%2520Economist&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={8C13B34B-E092-4B1B-BF49-4C6AB1EC6462}&amp;object-id={A47BC73C-1F19-446F-BF22-9D2E983AE745}&amp;47&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Microeconomics and Macroeconomics</a></p><p><a href="onenote:#case%25202%2520Thinking%2520Like%2520an%2520Economist&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={8C13B34B-E092-4B1B-BF49-4C6AB1EC6462}&amp;object-id={AC50BD7F-1155-48B5-9618-8FB818EAD87E}&amp;61&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Positive versus Normative Analysis</a></p></th></tr></thead><tbody></tbody></table><p><strong>Microeconomics and Macroeconomics</strong></p><ul><li>Microeconomics focuses on the individual parts of the economy.</li><li>Macroeconomics looks at the economy as a whole.</li></ul><p><strong>Positive versus Normative Analysis</strong><br>实例分析与规范分析</p><ul><li><p><strong>The Scientific Method : Observation,</strong><br><strong>Theory and More Observation</strong></p></li><li><p><strong>The Role of Assumptions</strong></p></li><li><p><strong>Economic Models</strong></p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case3 Two Models</title>
+      <link href="/article/d7fdefe2.html"/>
+      <url>/article/d7fdefe2.html</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={DEBCD2F0-0984-4245-85C5-3B974A349E0B}&amp;46&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Circular-Flow Diagram</a></p><blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={EF1D90BA-BF5D-48EF-9A6F-E38BC3F12146}&amp;83&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">循环流向图</a></p></blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={DEBCD2F0-0984-4245-85C5-3B974A349E0B}&amp;F9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Production Possibilities Frontier(PPF)</a></p><blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={EF1D90BA-BF5D-48EF-9A6F-E38BC3F12146}&amp;2F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">生产可能性边界</a></p><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={FBFBED7E-0FF5-438E-AE7E-8CB9276CFF55}&amp;59&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Economic Growth</a></p></blockquote><p><a href="onenote:#case3%2520Two%2520Models&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={AC7C258F-AEF2-4F76-9ACF-E0525B7270F1}&amp;object-id={2DC9EAEE-0A83-4D5D-A8C1-B356D0BE0E66}&amp;65&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Below are some examples of PPF</a></p></th></tr></thead><tbody></tbody></table><p><strong>The Circular-Flow Diagram</strong><br><strong>循环流向图</strong></p><p><img src="/article/../resources/image1-34.png" alt="image1"><br>Firms &lt;–&gt; Households</p><p><strong>The Production Possibilities Frontier(PPF)</strong><br><strong>生产可能性边界</strong><br>线上的每一点都是Trade-off</p><p>——————there need a picture ——————–</p><p><strong>Economic Growth</strong><br>An outward shift in the production possibilities frontier.<br>Influence factors:</p><ul><li>Investment</li><li>Technology</li><li>Education</li><li>Research</li><li>Institution</li></ul><p><strong>Below are some examples of PPF</strong></p><ul><li><strong>Necessities &amp; Luxuries</strong></li><li><strong>Private goods &amp; Public goods</strong></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case4 Interdependence </title>
+      <link href="/article/2c0f2657.html"/>
+      <url>/article/2c0f2657.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>Basic of Trade</strong></p><ul><li>Absolute Advantage<ul><li>The comparison among producers of a good according to their productivity.</li></ul></li><li>Comparative Advantage<ul><li>Compares producers of a good according to their opportunity cost. The producer who has the smaller opportunity cost of producing…</li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>case5 Supply and Demand : How market works</title>
+      <link href="/article/97a62a47.html"/>
+      <url>/article/97a62a47.html</url>
+      
+        <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;43&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">The Market Forces of Supply and Demand</a></p><blockquote><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;74&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">供给和需求的市场力量</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={960E8F15-CDCD-4F64-A7EA-3DAC95C249BE}&amp;A3&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">A market is made of buyers and sellers</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={9F3CEA25-5FEA-428C-AD3A-421EC47548D4}&amp;A9&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand_influence factor</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={A957D748-A48D-4343-846C-6CEF0309666A}&amp;89&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">Demand Function</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={F16BA441-928C-465E-8AEA-767117D4B54A}&amp;63&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和需求量的关系</a></p><p><a href="onenote:#case5%2520Supply%2520and%2520Demand%2520%2520How%2520market%2520works&amp;section-id={513D28A5-D64F-4F08-80DC-F9FE61FEB860}&amp;page-id={C8CFFB60-B9EA-44E1-9168-DD5D65F9D95E}&amp;object-id={E34D92D5-A71E-48F2-BEC5-749402C6E15D}&amp;9F&amp;base-path=https://6x26s6-my.sharepoint.com/personal/yimingshi666_6x26s6_onmicrosoft_com/Documents/OneNote-Freeman/课程笔记/经济学I.one">需求和供给的关系</a></p></blockquote></th></tr></thead><tbody></tbody></table><p><strong>The Market Forces of Supply and Demand</strong></p><p><strong>供给和需求的市场力量</strong></p><p><strong>A market is made of buyers and sellers</strong></p><ul><li>Buyers determine demand</li><li>Sellers determine supply<br><strong>Demand_influence factor</strong></li><li>The price itself</li><li>The salary of consumers</li><li>Other goods related</li><li>Tastes</li><li>Expectations</li><li>Number of buyers</li></ul><p><strong>Demand Function</strong></p><p><img src="/article/../resources/image1-35.png" alt="image1"></p><p>中点法是个什么?</p><p><strong>需求和需求量的关系</strong></p><ul><li>需求量变动是指由于价格变动引起的 消费者 愿意并且能够购买数量的变动， 需求 的变动是指除价格以外的其他因素变动引起的消费者在每一可能的价格下所有需求量的变动。<br>需求量是需求曲线上的点,需求是一条线</li></ul><p><strong>需求和供给的关系</strong></p><p>会随着<strong>价格</strong>而改变</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>决策树</title>
       <link href="/article/8ddc7426.html"/>
       <url>/article/8ddc7426.html</url>
@@ -1464,6 +1464,71 @@
       <url>/article/9296b07e.html</url>
       
         <content type="html"><![CDATA[<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>开发一个新feature(其实是bug...)，最好新建一个分支；</p><p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D &lt;name&gt;强行删除。</p><p>git push -f origin branchname // 这个-f命令大公司应该都不然用,都是用</p><p>git rebase 先拉回一个最新的commit到本地分支上手动修改,</p></th></tr></thead><tbody></tbody></table>**1.git clone // 到本地  2.git checkout -b xxx 切换至新分支xxx  （相当于复制了remote的仓库到本地的xxx分支上  3.修改或者添加本地代码（部署在硬盘的源文件上）  4.git diff 查看自己对代码做出的改变  5.git add 上传更新后的代码至暂存区  6.git commit 可以将暂存区里更新后的代码更新到本地git  7.git push origin xxx 将本地的xxxgit分支上传至github上的git****（如果在写自己的代码过程中发现远端GitHub上代码出现改变）  1.git checkout main 切换回main分支  2.git pull origin master(main) 将远端修改过的代码再更新到本地  3.git checkout xxx 回到xxx分支  4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  （-f ---》强行）  6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit****远端完成更新后****1.git branch -d xxx 删除本地的git分支****2.git pull origin master 再把远端的最新代码拉至本地**]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bar柱状图</title>
+      <link href="/article/24aea42b.html"/>
+      <url>/article/24aea42b.html</url>
+      
+        <content type="html"><![CDATA[<p>Bar柱状图<br>2022年8月1日<br>0:58</p><p>我们可以使用 pyplot 中的 bar() 方法来绘制柱形图。</p><p>Add:<br>中文不兼容怎么搞</p><p>1# fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径，size 参数设置字体大小<br>2 zhfont1 &#x3D; matplotlib.font_manager.FontProperties(fname&#x3D;”E:&#x2F;OneDrive - 6x26s6&#x2F;Lan&#x2F;SourceHanSansSC-Bold.otf”, size&#x3D;18)<br>3<br>4# fontdict 可以使用 css 来设置字体样式<br>5plt.title(“菜鸟教程 - 测试”, fontproperties&#x3D;zhfont1, fontdict &#x3D; font1, loc&#x3D;”center”)<br>6<br>7# fontproperties 设置中文显示，fontsize 设置字体大小</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pie饼状图</title>
+      <link href="/article/115f4d38.html"/>
+      <url>/article/115f4d38.html</url>
+      
+        <content type="html"><![CDATA[<p>Pie饼状图<br>2022年8月1日<br>1:13<br>我们可以使用 pyplot 中的 pie() 方法来绘制饼图。</p><p>设置饼图各个扇形的标签与颜色：<br><strong>实例</strong><br>1<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>2</strong>import<strong>numpy</strong>as<strong>np<br>3<br>4y</strong>&#x3D;<strong>np</strong>.<strong>array</strong>([35,<strong><strong>25,<strong><strong>25,<strong><strong>15])</strong><br>5<br>6plt</strong>.<strong>pie</strong>(<strong>y</strong>,</strong><br>7    labels</strong>&#x3D;[</strong>‘A’<strong>,</strong>‘B’<strong>,</strong>‘C’<strong>,</strong>‘D’<strong>],</strong></strong># 设置饼图标签**<br>8    colors**&#x3D;[<strong>“#d5695d”</strong>,<strong>“#5d8ca8”</strong>,<strong>“#65a479”</strong>,<strong>“#a564c9”<strong>],</strong># <strong>设置饼图颜色</strong><br>9   <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)<strong><strong># 设置标题</strong><br>11plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-pie.html">https://www.runoob.com/matplotlib/matplotlib-pie.html</a>&gt;</em></p><p>labels用来设置标签,一般用不到colors感觉</p><p>突出显示某一个扇形:</p><p>1<br>2<strong>import</strong>matplotlib**.<strong>pyplot <strong>as</strong>plt<br>3</strong>import<strong>numpy <strong>as</strong>np<br>4y <strong>&#x3D;<strong>np</strong>.<strong>array</strong>([12,25,25,35])</strong><br>5plt</strong>.<strong>pie</strong>(<strong>y</strong>,**<br>6      labels <strong>&#x3D; [</strong>‘AAA’<strong>,</strong>‘BBB’<strong>,</strong>‘CCC’<strong>,</strong>‘DDD’<strong>],</strong><br>7      explode**&#x3D;(0,0.1,0.2,0),#设置第二部分的突出显示**<br>8      autopct**&#x3D;<strong>‘%.2f%%’ <strong># 格式化输出百分比</strong><br>9      <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)**<br>11plt**.<strong>show</strong>()**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Plt and np : 2D</title>
+      <link href="/article/11e3615e.html"/>
+      <url>/article/11e3615e.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>import</strong>matplotlib.pyplot<strong>as</strong>plt<br><strong>import</strong>numpy<strong>as</strong>np</p><p>x&#x3D;np.arange(0,4*np.pi,0.1)# start,stop,step<br>y&#x3D;np.sin(x)<br>z&#x3D;np.cos(x)<br>plt.plot(x,y,x,z)<br>plt.show()</p><p>Marker 类型</p><table><thead><tr><th><strong>标记</strong></th><th><strong>符号</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>“.”</td><td><img src="/article/../resources/image1-2.png" alt="image1"></td><td>点</td></tr><tr><td>“,”</td><td><img src="/article/../resources/image2.png" alt="image2"></td><td>像素点</td></tr><tr><td>“o”</td><td><img src="/article/../resources/image3.png" alt="image3"></td><td>实心圆</td></tr><tr><td>“v”</td><td><img src="/article/../resources/image4.png" alt="image4"></td><td>下三角</td></tr><tr><td>“^”</td><td><img src="/article/../resources/image5.png" alt="image5"></td><td>上三角</td></tr><tr><td>“&lt;“</td><td><img src="/article/../resources/image6.png" alt="image6"></td><td>左三角</td></tr><tr><td>“&gt;”</td><td><img src="/article/../resources/image7.png" alt="image7"></td><td>右三角</td></tr><tr><td>“1”</td><td><img src="/article/../resources/image8.png" alt="image8"></td><td>下三叉</td></tr><tr><td>“2”</td><td><img src="/article/../resources/image9.png" alt="image9"></td><td>上三叉</td></tr><tr><td>“3”</td><td><img src="/article/../resources/image10.png" alt="image10"></td><td>左三叉</td></tr><tr><td>“4”</td><td><img src="/article/../resources/image11.png" alt="image11"></td><td>右三叉</td></tr><tr><td>“8”</td><td><img src="/article/../resources/image12.png" alt="image12"></td><td>八角形</td></tr><tr><td>“s”</td><td><img src="/article/../resources/image13.png" alt="image13"></td><td>正方形</td></tr><tr><td>“p”</td><td><img src="/article/../resources/image14.png" alt="image14"></td><td>五边形</td></tr><tr><td>“P”</td><td><img src="/article/../resources/image15.png" alt="image15"></td><td>加号（填充）</td></tr><tr><td>“*“</td><td><img src="/article/../resources/image16.png" alt="image16"></td><td>星号</td></tr><tr><td>“h”</td><td><img src="/article/../resources/image17.png" alt="image17"></td><td>六边形 1</td></tr><tr><td>“H”</td><td><img src="/article/../resources/image18.png" alt="image18"></td><td>六边形 2</td></tr><tr><td>“+”</td><td><img src="/article/../resources/image19.png" alt="image19"></td><td>加号</td></tr><tr><td>“x”</td><td><img src="/article/../resources/image20.png" alt="image20"></td><td>乘号 x</td></tr><tr><td>“X”</td><td><img src="/article/../resources/image21.png" alt="image21"></td><td>乘号 x (填充)</td></tr><tr><td>“D”</td><td><img src="/article/../resources/image22.png" alt="image22"></td><td>菱形</td></tr><tr><td>“d”</td><td><img src="/article/../resources/image23.png" alt="image23"></td><td>瘦菱形</td></tr><tr><td>“|”</td><td><img src="/article/../resources/image24.png" alt="image24"></td><td>竖线</td></tr><tr><td>“_“</td><td><img src="/article/../resources/image25.png" alt="image25"></td><td>横线</td></tr><tr><td>0 (TICKLEFT)</td><td><img src="/article/../resources/image26.png" alt="image26"></td><td>左横线</td></tr><tr><td>1 (TICKRIGHT)</td><td><img src="/article/../resources/image27.png" alt="image27"></td><td>右横线</td></tr><tr><td>2 (TICKUP)</td><td><img src="/article/../resources/image28.png" alt="image28"></td><td>上竖线</td></tr><tr><td>3 (TICKDOWN)</td><td><img src="/article/../resources/image29.png" alt="image29"></td><td>下竖线</td></tr><tr><td>4 (CARETLEFT)</td><td><img src="/article/../resources/image30.png" alt="image30"></td><td>左箭头</td></tr><tr><td>5 (CARETRIGHT)</td><td><img src="/article/../resources/image31.png" alt="image31"></td><td>右箭头</td></tr><tr><td>6 (CARETUP)</td><td><img src="/article/../resources/image32.png" alt="image32"></td><td>上箭头</td></tr><tr><td>7 (CARETDOWN)</td><td><img src="/article/../resources/image33.png" alt="image33"></td><td>下箭头</td></tr><tr><td>8 (CARETLEFTBASE)</td><td><img src="/article/../resources/image34.png" alt="image34"></td><td>左箭头 (中间点为基准)</td></tr><tr><td>9 (CARETRIGHTBASE)</td><td><img src="/article/../resources/image35.png" alt="image35"></td><td>右箭头 (中间点为基准)</td></tr><tr><td>10 (CARETUPBASE)</td><td><img src="/article/../resources/image36.png" alt="image36"></td><td>上箭头 (中间点为基准)</td></tr><tr><td>11 (CARETDOWNBASE)</td><td><img src="/article/../resources/image37.png" alt="image37"></td><td>下箭头 (中间点为基准)</td></tr><tr><td>“None”, “” or “”</td><td></td><td>没有任何标记</td></tr><tr><td>‘$…$’</td><td><img src="/article/../resources/image38.png" alt="image38"></td><td>渲染指定的字符。例如 “$f$” 以字母 f 为标记。</td></tr></tbody></table><table><thead><tr><th><strong>线类型标记</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>‘-‘</td><td>实线</td></tr><tr><td>‘:’</td><td>虚线</td></tr><tr><td>‘–’</td><td>破折线</td></tr><tr><td>‘-.’</td><td>点划线</td></tr></tbody></table><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-marker.html">https://www.runoob.com/matplotlib/matplotlib-marker.html</a>&gt;</em></p><p>plt.rcParams[‘font.family’]&#x3D;[‘STFangsong’]<br>绘图时加入中文仿宋字体的代码<br>–in matplotlib<br>plt提供了三种标签方法<br>1Plt**.<strong>title</strong>(<strong>“ “</strong>)**<br>2Plt**.<strong>xlabel</strong>(<strong>“ “</strong>)**<br>3Plt**.<strong>ylabel</strong>(<strong>“ “</strong>)**</p><p>绘图网格线:<br>1Plt**.<strong>grid</strong>()**<br>2grid**(<strong>color <strong>&#x3D;</strong>‘color’</strong>,<strong>linestyle <strong>&#x3D;</strong>‘linestyle’</strong>,**linewidth <strong>&#x3D;<strong>number</strong>)</strong></p><p>绘制多图<br>1subplot**(<strong>nrows</strong>,<strong>ncols</strong>,<strong>index</strong>, **<strong>kwargs</strong>)**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Scatter散点图</title>
+      <link href="/article/28d2288e.html"/>
+      <url>/article/28d2288e.html</url>
+      
+        <content type="html"><![CDATA[<p>Scatter散点图<br>2022年8月1日<br>0:30</p><p>使用随机数来设置散点图：<br><strong>实例</strong><br>1<strong>import</strong>numpy<strong>as</strong>np<br>2<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>3<br>4# 随机数生成器的种子<br>5np</strong>.<strong>random</strong>.<strong>seed</strong>(19680801)**<br>6<br>7<br>8N**&#x3D;<strong><strong>50</strong><br>9x</strong>&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>10y**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>11colors**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>12area**&#x3D;<strong><strong>(30</strong></strong>*<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>))**2**# 0 to 15 point radii<br>13<br>14plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>s</strong>&#x3D;<strong>area</strong>,<strong>c</strong>&#x3D;<strong>colors</strong>,<strong>alpha</strong>&#x3D;0.5)<strong># 设置颜色及透明度<br>15<br>16plt</strong>.<strong>title</strong>(<strong>“RUNOOB Scatter Test”</strong>)<strong># 设置标题<br>17<br>18plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-scatter.html">https://www.runoob.com/matplotlib/matplotlib-scatter.html</a>&gt;</em></p><p>设置颜色条使用cmap:<br>1plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>c <strong>&#x3D;<strong>colors</strong>,<strong>cmap</strong>&#x3D;</strong>‘viridis’</strong>)**</p><p>显示颜色条:<br>1plt**.<strong>colorbar</strong>()**</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>魔法命令</title>
+      <link href="/article/cd732a5c.html"/>
+      <url>/article/cd732a5c.html</url>
+      
+        <content type="html"><![CDATA[<p>增加图片清晰度</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>%config InlineBackend.figure_format = 'retina'</p><p># 以上命令可以使图片的清晰度更高</p></th></tr></thead><tbody></tbody></table>]]></content>
       
       
       
@@ -1711,71 +1776,6 @@
       <url>/article/c092369d.html</url>
       
         <content type="html"><![CDATA[<p>基本和C语言的相同,下面只罗列运算符的优先级(实际也不用记,用用就知道了)</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>* / % &lt;&lt; &gt;&gt; &amp; &amp;^</p><p>+ - | ^</p><p><strong>== != &lt; &lt;= &gt; &gt;=</strong></p><p>&amp;&amp;</p><p>||</p></th></tr></thead><tbody></tbody></table>从上到下逐级递减-   值得一提的是Go也支持字符串通过"+"连接,当然"+="也可以,例如<table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>println("Go"+"lang")//Golang</p><p>var a = "Go"</p><p>a += "lang"</p><p>println(a)//Golang</p></th></tr></thead><tbody></tbody></table>-   <u>还有,Go也支持"++""--"操作,但是没有返回值,不能当作表达式使用</u>-   <u>Go中的取反操作符不是"\~",而是"^"</u>    -   和其他流行语言一样,Go也支持"+"去连接字符串-   和Java不同,Go支持无符号数,所以不需要无符号右移运算符>\>\>-   Go不支持幂运算符,所以要使用<sub></sub>​math​<sub></sub>标准库包中的<sub></sub>​Pow​<sub></sub>函数进行幂运算-   多了个特殊的**清位运算符**<sub></sub>​&^​<sub></sub>    -   <sub></sub>​m&^n​<sub></sub>等价于<sub></sub>​m&(^n)​<sub></sub>如果是2的幂运算的话,可以使用<sub></sub>​>\>​<sub></sub>(除2的次数)或者<sub></sub>​\<\<​<sub>(乘2的次数)注意:移位操作的结果都是整数移位运算在32和64位架构的机器上有时候如果不注重细节会出大bug</\<​<sub>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Bar柱状图</title>
-      <link href="/article/24aea42b.html"/>
-      <url>/article/24aea42b.html</url>
-      
-        <content type="html"><![CDATA[<p>Bar柱状图<br>2022年8月1日<br>0:58</p><p>我们可以使用 pyplot 中的 bar() 方法来绘制柱形图。</p><p>Add:<br>中文不兼容怎么搞</p><p>1# fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径，size 参数设置字体大小<br>2 zhfont1 &#x3D; matplotlib.font_manager.FontProperties(fname&#x3D;”E:&#x2F;OneDrive - 6x26s6&#x2F;Lan&#x2F;SourceHanSansSC-Bold.otf”, size&#x3D;18)<br>3<br>4# fontdict 可以使用 css 来设置字体样式<br>5plt.title(“菜鸟教程 - 测试”, fontproperties&#x3D;zhfont1, fontdict &#x3D; font1, loc&#x3D;”center”)<br>6<br>7# fontproperties 设置中文显示，fontsize 设置字体大小</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Pie饼状图</title>
-      <link href="/article/115f4d38.html"/>
-      <url>/article/115f4d38.html</url>
-      
-        <content type="html"><![CDATA[<p>Pie饼状图<br>2022年8月1日<br>1:13<br>我们可以使用 pyplot 中的 pie() 方法来绘制饼图。</p><p>设置饼图各个扇形的标签与颜色：<br><strong>实例</strong><br>1<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>2</strong>import<strong>numpy</strong>as<strong>np<br>3<br>4y</strong>&#x3D;<strong>np</strong>.<strong>array</strong>([35,<strong><strong>25,<strong><strong>25,<strong><strong>15])</strong><br>5<br>6plt</strong>.<strong>pie</strong>(<strong>y</strong>,</strong><br>7    labels</strong>&#x3D;[</strong>‘A’<strong>,</strong>‘B’<strong>,</strong>‘C’<strong>,</strong>‘D’<strong>],</strong></strong># 设置饼图标签**<br>8    colors**&#x3D;[<strong>“#d5695d”</strong>,<strong>“#5d8ca8”</strong>,<strong>“#65a479”</strong>,<strong>“#a564c9”<strong>],</strong># <strong>设置饼图颜色</strong><br>9   <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)<strong><strong># 设置标题</strong><br>11plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-pie.html">https://www.runoob.com/matplotlib/matplotlib-pie.html</a>&gt;</em></p><p>labels用来设置标签,一般用不到colors感觉</p><p>突出显示某一个扇形:</p><p>1<br>2<strong>import</strong>matplotlib**.<strong>pyplot <strong>as</strong>plt<br>3</strong>import<strong>numpy <strong>as</strong>np<br>4y <strong>&#x3D;<strong>np</strong>.<strong>array</strong>([12,25,25,35])</strong><br>5plt</strong>.<strong>pie</strong>(<strong>y</strong>,**<br>6      labels <strong>&#x3D; [</strong>‘AAA’<strong>,</strong>‘BBB’<strong>,</strong>‘CCC’<strong>,</strong>‘DDD’<strong>],</strong><br>7      explode**&#x3D;(0,0.1,0.2,0),#设置第二部分的突出显示**<br>8      autopct**&#x3D;<strong>‘%.2f%%’ <strong># 格式化输出百分比</strong><br>9      <strong>)</strong><br>10plt</strong>.<strong>title</strong>(<strong>“RUNOOB Pie Test”</strong>)**<br>11plt**.<strong>show</strong>()**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Plt and np : 2D</title>
-      <link href="/article/11e3615e.html"/>
-      <url>/article/11e3615e.html</url>
-      
-        <content type="html"><![CDATA[<p><strong>import</strong>matplotlib.pyplot<strong>as</strong>plt<br><strong>import</strong>numpy<strong>as</strong>np</p><p>x&#x3D;np.arange(0,4*np.pi,0.1)# start,stop,step<br>y&#x3D;np.sin(x)<br>z&#x3D;np.cos(x)<br>plt.plot(x,y,x,z)<br>plt.show()</p><p>Marker 类型</p><table><thead><tr><th><strong>标记</strong></th><th><strong>符号</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>“.”</td><td><img src="/article/../resources/image1-2.png" alt="image1"></td><td>点</td></tr><tr><td>“,”</td><td><img src="/article/../resources/image2.png" alt="image2"></td><td>像素点</td></tr><tr><td>“o”</td><td><img src="/article/../resources/image3.png" alt="image3"></td><td>实心圆</td></tr><tr><td>“v”</td><td><img src="/article/../resources/image4.png" alt="image4"></td><td>下三角</td></tr><tr><td>“^”</td><td><img src="/article/../resources/image5.png" alt="image5"></td><td>上三角</td></tr><tr><td>“&lt;“</td><td><img src="/article/../resources/image6.png" alt="image6"></td><td>左三角</td></tr><tr><td>“&gt;”</td><td><img src="/article/../resources/image7.png" alt="image7"></td><td>右三角</td></tr><tr><td>“1”</td><td><img src="/article/../resources/image8.png" alt="image8"></td><td>下三叉</td></tr><tr><td>“2”</td><td><img src="/article/../resources/image9.png" alt="image9"></td><td>上三叉</td></tr><tr><td>“3”</td><td><img src="/article/../resources/image10.png" alt="image10"></td><td>左三叉</td></tr><tr><td>“4”</td><td><img src="/article/../resources/image11.png" alt="image11"></td><td>右三叉</td></tr><tr><td>“8”</td><td><img src="/article/../resources/image12.png" alt="image12"></td><td>八角形</td></tr><tr><td>“s”</td><td><img src="/article/../resources/image13.png" alt="image13"></td><td>正方形</td></tr><tr><td>“p”</td><td><img src="/article/../resources/image14.png" alt="image14"></td><td>五边形</td></tr><tr><td>“P”</td><td><img src="/article/../resources/image15.png" alt="image15"></td><td>加号（填充）</td></tr><tr><td>“*“</td><td><img src="/article/../resources/image16.png" alt="image16"></td><td>星号</td></tr><tr><td>“h”</td><td><img src="/article/../resources/image17.png" alt="image17"></td><td>六边形 1</td></tr><tr><td>“H”</td><td><img src="/article/../resources/image18.png" alt="image18"></td><td>六边形 2</td></tr><tr><td>“+”</td><td><img src="/article/../resources/image19.png" alt="image19"></td><td>加号</td></tr><tr><td>“x”</td><td><img src="/article/../resources/image20.png" alt="image20"></td><td>乘号 x</td></tr><tr><td>“X”</td><td><img src="/article/../resources/image21.png" alt="image21"></td><td>乘号 x (填充)</td></tr><tr><td>“D”</td><td><img src="/article/../resources/image22.png" alt="image22"></td><td>菱形</td></tr><tr><td>“d”</td><td><img src="/article/../resources/image23.png" alt="image23"></td><td>瘦菱形</td></tr><tr><td>“|”</td><td><img src="/article/../resources/image24.png" alt="image24"></td><td>竖线</td></tr><tr><td>“_“</td><td><img src="/article/../resources/image25.png" alt="image25"></td><td>横线</td></tr><tr><td>0 (TICKLEFT)</td><td><img src="/article/../resources/image26.png" alt="image26"></td><td>左横线</td></tr><tr><td>1 (TICKRIGHT)</td><td><img src="/article/../resources/image27.png" alt="image27"></td><td>右横线</td></tr><tr><td>2 (TICKUP)</td><td><img src="/article/../resources/image28.png" alt="image28"></td><td>上竖线</td></tr><tr><td>3 (TICKDOWN)</td><td><img src="/article/../resources/image29.png" alt="image29"></td><td>下竖线</td></tr><tr><td>4 (CARETLEFT)</td><td><img src="/article/../resources/image30.png" alt="image30"></td><td>左箭头</td></tr><tr><td>5 (CARETRIGHT)</td><td><img src="/article/../resources/image31.png" alt="image31"></td><td>右箭头</td></tr><tr><td>6 (CARETUP)</td><td><img src="/article/../resources/image32.png" alt="image32"></td><td>上箭头</td></tr><tr><td>7 (CARETDOWN)</td><td><img src="/article/../resources/image33.png" alt="image33"></td><td>下箭头</td></tr><tr><td>8 (CARETLEFTBASE)</td><td><img src="/article/../resources/image34.png" alt="image34"></td><td>左箭头 (中间点为基准)</td></tr><tr><td>9 (CARETRIGHTBASE)</td><td><img src="/article/../resources/image35.png" alt="image35"></td><td>右箭头 (中间点为基准)</td></tr><tr><td>10 (CARETUPBASE)</td><td><img src="/article/../resources/image36.png" alt="image36"></td><td>上箭头 (中间点为基准)</td></tr><tr><td>11 (CARETDOWNBASE)</td><td><img src="/article/../resources/image37.png" alt="image37"></td><td>下箭头 (中间点为基准)</td></tr><tr><td>“None”, “” or “”</td><td></td><td>没有任何标记</td></tr><tr><td>‘$…$’</td><td><img src="/article/../resources/image38.png" alt="image38"></td><td>渲染指定的字符。例如 “$f$” 以字母 f 为标记。</td></tr></tbody></table><table><thead><tr><th><strong>线类型标记</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td>‘-‘</td><td>实线</td></tr><tr><td>‘:’</td><td>虚线</td></tr><tr><td>‘–’</td><td>破折线</td></tr><tr><td>‘-.’</td><td>点划线</td></tr></tbody></table><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-marker.html">https://www.runoob.com/matplotlib/matplotlib-marker.html</a>&gt;</em></p><p>plt.rcParams[‘font.family’]&#x3D;[‘STFangsong’]<br>绘图时加入中文仿宋字体的代码<br>–in matplotlib<br>plt提供了三种标签方法<br>1Plt**.<strong>title</strong>(<strong>“ “</strong>)**<br>2Plt**.<strong>xlabel</strong>(<strong>“ “</strong>)**<br>3Plt**.<strong>ylabel</strong>(<strong>“ “</strong>)**</p><p>绘图网格线:<br>1Plt**.<strong>grid</strong>()**<br>2grid**(<strong>color <strong>&#x3D;</strong>‘color’</strong>,<strong>linestyle <strong>&#x3D;</strong>‘linestyle’</strong>,**linewidth <strong>&#x3D;<strong>number</strong>)</strong></p><p>绘制多图<br>1subplot**(<strong>nrows</strong>,<strong>ncols</strong>,<strong>index</strong>, **<strong>kwargs</strong>)**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Scatter散点图</title>
-      <link href="/article/28d2288e.html"/>
-      <url>/article/28d2288e.html</url>
-      
-        <content type="html"><![CDATA[<p>Scatter散点图<br>2022年8月1日<br>0:30</p><p>使用随机数来设置散点图：<br><strong>实例</strong><br>1<strong>import</strong>numpy<strong>as</strong>np<br>2<strong>import</strong>matplotlib**.<strong>pyplot</strong>as<strong>plt<br>3<br>4# 随机数生成器的种子<br>5np</strong>.<strong>random</strong>.<strong>seed</strong>(19680801)**<br>6<br>7<br>8N**&#x3D;<strong><strong>50</strong><br>9x</strong>&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>10y**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>11colors**&#x3D;<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>)**<br>12area**&#x3D;<strong><strong>(30</strong></strong>*<strong>np</strong>.<strong>random</strong>.<strong>rand</strong>(<strong>N</strong>))**2**# 0 to 15 point radii<br>13<br>14plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>s</strong>&#x3D;<strong>area</strong>,<strong>c</strong>&#x3D;<strong>colors</strong>,<strong>alpha</strong>&#x3D;0.5)<strong># 设置颜色及透明度<br>15<br>16plt</strong>.<strong>title</strong>(<strong>“RUNOOB Scatter Test”</strong>)<strong># 设置标题<br>17<br>18plt</strong>.<strong>show</strong>()**</p><p><em>来自 &lt;<a href="https://www.runoob.com/matplotlib/matplotlib-scatter.html">https://www.runoob.com/matplotlib/matplotlib-scatter.html</a>&gt;</em></p><p>设置颜色条使用cmap:<br>1plt**.<strong>scatter</strong>(<strong>x</strong>,<strong>y</strong>,<strong>c <strong>&#x3D;<strong>colors</strong>,<strong>cmap</strong>&#x3D;</strong>‘viridis’</strong>)**</p><p>显示颜色条:<br>1plt**.<strong>colorbar</strong>()**</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>魔法命令</title>
-      <link href="/article/cd732a5c.html"/>
-      <url>/article/cd732a5c.html</url>
-      
-        <content type="html"><![CDATA[<p>增加图片清晰度</p><table><colgroup><col style="width: 100%"></colgroup><thead><tr class="header"><th><p>%config InlineBackend.figure_format = 'retina'</p><p># 以上命令可以使图片的清晰度更高</p></th></tr></thead><tbody></tbody></table>]]></content>
       
       
       
