@@ -6,7 +6,7 @@
   <link href="https://shiym.top/atom.xml" rel="self"/>
   
   <link href="https://shiym.top/"/>
-  <updated>2022-12-21T17:44:27.776Z</updated>
+  <updated>2022-12-22T08:26:36.240Z</updated>
   <id>https://shiym.top/</id>
   
   <author>
@@ -17,33 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://shiym.top/article/4a17b156"/>
-    <id>https://shiym.top/article/4a17b156</id>
-    <published>2022-12-21T04:41:48.460Z</published>
-    <updated>2022-12-21T17:44:27.776Z</updated>
+    <title>博客搭建避坑</title>
+    <link href="https://shiym.top/article/acd393eb"/>
+    <id>https://shiym.top/article/acd393eb</id>
+    <published>2022-12-22T06:21:06.000Z</published>
+    <updated>2022-12-22T08:26:36.240Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;个人Blog的搭建避坑&quot;&gt;&lt;a href=&quot;#个人Blog的搭建避坑&quot; class=&quot;headerlink&quot; title=&quot;个人Blog的搭建避坑&quot;&gt;&lt;/a&gt;个人Blog的搭建避坑&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;因为晚上的攻略过于老旧,</summary>
         
       
     
     
     
-    <category term="computer" scheme="https://shiym.top/categories/computer/"/>
-    
-    <category term="study" scheme="https://shiym.top/categories/computer/study/"/>
+    <category term="技术分享" scheme="https://shiym.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="PS3" scheme="https://shiym.top/tags/PS3/"/>
+    <category term="Hexo" scheme="https://shiym.top/tags/Hexo/"/>
     
-    <category term="Games" scheme="https://shiym.top/tags/Games/"/>
+    <category term="博客" scheme="https://shiym.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-    <category term="hello" scheme="https://shiym.top/tags/hello/"/>
+    <category term="插件" scheme="https://shiym.top/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="软技能" scheme="https://shiym.top/tags/%E8%BD%AF%E6%8A%80%E8%83%BD/"/>
     
   </entry>
   
@@ -75,57 +76,11 @@
   </entry>
   
   <entry>
-    <title>GooseGooseDuck</title>
-    <link href="https://shiym.top/article/16daa1c0"/>
-    <id>https://shiym.top/article/16daa1c0</id>
-    <published>2022-12-21T01:25:00.000Z</published>
-    <updated>2022-12-21T17:44:44.293Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;who-likes-to-play&quot;&gt;&lt;a href=&quot;#who-likes-to-play&quot; class=&quot;headerlink&quot; title=&quot;who likes to play?&quot;&gt;&lt;/a&gt;who likes to play?&lt;/h2&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="Markdown" scheme="https://shiym.top/categories/Markdown/"/>
-    
-    
-    <category term="Typora" scheme="https://shiym.top/tags/Typora/"/>
-    
-    <category term="Markdown" scheme="https://shiym.top/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TCPIP</title>
-    <link href="https://shiym.top/article/a47ce2cd"/>
-    <id>https://shiym.top/article/a47ce2cd</id>
-    <published>2022-12-19T16:31:11.000Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-    <summary type="html">description</summary>
-    
-    
-    
-    <category term="newone" scheme="https://shiym.top/categories/newone/"/>
-    
-    
-    <category term="new tag" scheme="https://shiym.top/tags/new-tag/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Ubuntu_git_ssh</title>
     <link href="https://shiym.top/article/847ddabe"/>
     <id>https://shiym.top/article/847ddabe</id>
     <published>2022-12-19T15:53:28.000Z</published>
-    <updated>2022-12-21T09:36:35.623Z</updated>
+    <updated>2022-12-22T06:30:12.789Z</updated>
     
     
     <summary type="html">是否有意外呢?</summary>
@@ -134,337 +89,6 @@
     
     
     <category term="Ubuntu" scheme="https://shiym.top/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>case6 Elasticity and Its Application</title>
-    <link href="https://shiym.top/article/3b69093c"/>
-    <id>https://shiym.top/article/3b69093c</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>case7 Consumers, Producers, and the Efficiency of ...</title>
-    <link href="https://shiym.top/article/2406e49b"/>
-    <id>https://shiym.top/article/2406e49b</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>case8 The Economics of the Public Sector</title>
-    <link href="https://shiym.top/article/c3e7321b"/>
-    <id>https://shiym.top/article/c3e7321b</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;case8 The Economics of the Public Sector&lt;br&gt;2022年10月19日 星期三&lt;br&gt;下午3:42&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width:</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>case9 Firm behavior and the organization of indust...</title>
-    <link href="https://shiym.top/article/a3fbe846"/>
-    <id>https://shiym.top/article/a3fbe846</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;The Costs of Production(生产成本)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What are the input (cost) of Katherine’s Cookies</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ch18 生产要素市场</title>
-    <link href="https://shiym.top/article/c7e1e6ac"/>
-    <id>https://shiym.top/article/c7e1e6ac</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;Factors of Production&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Inputs used to produce goods and services&lt;/li&gt;
-&lt;li&gt;Labors…&lt;br&gt;&lt;strong&gt;Two</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>coase </title>
-    <link href="https://shiym.top/article/d209c58e"/>
-    <id>https://shiym.top/article/d209c58e</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>2022-12-20T21:37:37.751Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;主要观点,如何论证?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;假设一个人拥有美国所有的土地，为了简化分析，假设所有的土地质量一致。再假设土地所有人不能自己耕种土地，土地所有权没有效用，处置土地不涉及任何成本。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;来自 &amp;lt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第一章 计算机系统概述</title>
-    <link href="https://shiym.top/article/31c36041"/>
-    <id>https://shiym.top/article/31c36041</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;outline:&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第七章 存储系统</title>
-    <link href="https://shiym.top/article/c6008702"/>
-    <id>https://shiym.top/article/c6008702</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;第七章 存储系统&lt;br&gt;2022年11月23日</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第三章 芯片的数电基础</title>
-    <link href="https://shiym.top/article/b722933d"/>
-    <id>https://shiym.top/article/b722933d</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;outline:&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第二章 计算机的数值和编码</title>
-    <link href="https://shiym.top/article/409f14a"/>
-    <id>https://shiym.top/article/409f14a</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;outline:&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第五章 现代处理器基础</title>
-    <link href="https://shiym.top/article/3a8589f7"/>
-    <id>https://shiym.top/article/3a8589f7</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第六章 现代处理器的高级实现技术</title>
-    <link href="https://shiym.top/article/4d36cce8"/>
-    <id>https://shiym.top/article/4d36cce8</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;流水线&lt;/strong&gt;&lt;br&gt;流水线技术(pipeline):多条指令重叠执行,实现指令级并行(instruction-level parallelism)&lt;br&gt;&lt;img src=&quot;/article/../resources/image1-6.png&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>第四章 计算机芯片的基本电路组成</title>
-    <link href="https://shiym.top/article/bcd0e82"/>
-    <id>https://shiym.top/article/bcd0e82</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;第四章 计算机芯片的基本电路组成&lt;br&gt;2022年10月10日 星期一&lt;br&gt;下午2:33&lt;/p&gt;
-&lt;table&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 100%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr class=&quot;header&quot;&gt;&lt;th&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>课程介绍和目标</title>
-    <link href="https://shiym.top/article/8416727"/>
-    <id>https://shiym.top/article/8416727</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/article/../resources/image1.png&quot; alt=&quot;image1&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/article/../resources/image2.png&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Unit2 交互</title>
-    <link href="https://shiym.top/article/ee2c8de7"/>
-    <id>https://shiym.top/article/ee2c8de7</id>
-    <published>2022-12-18T16:29:30.063Z</published>
-    <updated>1970-01-01T00:00:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Unit2 交互&lt;br&gt;2022年10月13日 星期四&lt;br&gt;下午3:20&lt;/p&gt;
-&lt;p&gt;Outline：&lt;br&gt;点到点（link），端到端（path）&lt;br&gt;数据是流（flow），以帧（frame）的形式发送&lt;br&gt;&lt;img</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
