@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://shiym.top/contact/index.html</loc>
-    
-    <lastmod>2022-12-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://shiym.top/friends/index.html</loc>
     
     <lastmod>2022-12-24</lastmod>
@@ -92,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://shiym.top/books/index.html</loc>
+    <loc>https://shiym.top/contact/index.html</loc>
     
     <lastmod>2022-12-24</lastmod>
     
@@ -102,6 +93,15 @@
   
   <url>
     <loc>https://shiym.top/categories/index.html</loc>
+    
+    <lastmod>2022-12-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shiym.top/books/index.html</loc>
     
     <lastmod>2022-12-24</lastmod>
     
@@ -165,6 +165,13 @@
   </url>
   
   <url>
+    <loc>https://shiym.top/tags/Markdown/</loc>
+    <lastmod>2022-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://shiym.top/tags/Hexo/</loc>
     <lastmod>2022-12-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -187,13 +194,6 @@
   
   <url>
     <loc>https://shiym.top/tags/%E8%BD%AF%E6%8A%80%E8%83%BD/</loc>
-    <lastmod>2022-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shiym.top/tags/Markdown/</loc>
     <lastmod>2022-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
