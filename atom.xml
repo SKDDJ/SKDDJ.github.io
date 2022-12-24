@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Shiym&#39;s blog</title>
+  
+  <subtitle>Shiym的个人博客</subtitle>
+  <link href="https://shiym.top/atom.xml" rel="self"/>
+  
+  <link href="https://shiym.top/"/>
+  <updated>2022-12-24T07:10:23.167Z</updated>
+  <id>https://shiym.top/</id>
+  
+  <author>
+    <name>Shiym</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>概率论与数理统计</title>
+    <link href="https://shiym.top/article/28d5cef4"/>
+    <id>https://shiym.top/article/28d5cef4</id>
+    <published>2022-12-24T06:58:00.000Z</published>
+    <updated>2022-12-24T07:10:23.167Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;概率论与数理统计&quot;&gt;&lt;a href=&quot;#概率论与数理统计&quot; class=&quot;headerlink&quot; title=&quot;概率论与数理统计&quot;&gt;&lt;/a&gt;概率论与数理统计&lt;/h1&gt;&lt;h2 id=&quot;第一章-随机事件与概率&quot;&gt;&lt;a href=&quot;#第一章-随机事件与概率&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="课程笔记" scheme="https://shiym.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="概率论与数理统计" scheme="https://shiym.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客搭建避坑</title>
+    <link href="https://shiym.top/article/acd393eb"/>
+    <id>https://shiym.top/article/acd393eb</id>
+    <published>2022-12-22T06:21:06.000Z</published>
+    <updated>2022-12-24T07:07:00.567Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;个人Blog的搭建避坑&quot;&gt;&lt;a href=&quot;#个人Blog的搭建避坑&quot; class=&quot;headerlink&quot; title=&quot;个人Blog的搭建避坑&quot;&gt;&lt;/a&gt;个人Blog的搭建避坑&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;因为晚上的攻略过于老旧,</summary>
+        
+      
+    
+    
+    
+    <category term="技术分享" scheme="https://shiym.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="Hexo" scheme="https://shiym.top/tags/Hexo/"/>
+    
+    <category term="博客" scheme="https://shiym.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="插件" scheme="https://shiym.top/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="软技能" scheme="https://shiym.top/tags/%E8%BD%AF%E6%8A%80%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>matery食用指南</title>
+    <link href="https://shiym.top/article/4c867599"/>
+    <id>https://shiym.top/article/4c867599</id>
+    <published>2022-12-21T01:26:00.000Z</published>
+    <updated>2022-12-24T07:20:44.601Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;hexo-theme-matery&quot;&gt;&lt;a href=&quot;#hexo-theme-matery&quot; class=&quot;headerlink&quot; title=&quot;hexo-theme-matery&quot;&gt;&lt;/a&gt;hexo-theme-matery&lt;/h1&gt;&lt;p&gt; &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术分享" scheme="https://shiym.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="Markdown" scheme="https://shiym.top/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu_git_ssh</title>
+    <link href="https://shiym.top/article/847ddabe"/>
+    <id>https://shiym.top/article/847ddabe</id>
+    <published>2022-12-19T15:53:28.000Z</published>
+    <updated>2022-12-24T07:09:07.880Z</updated>
+    
+    
+    <summary type="html">是否有意外呢?</summary>
+    
+    
+    
+    <category term="技术分享" scheme="https://shiym.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="Ubuntu" scheme="https://shiym.top/tags/Ubuntu/"/>
+    
+    <category term="Clash" scheme="https://shiym.top/tags/Clash/"/>
+    
+    <category term="ssh" scheme="https://shiym.top/tags/ssh/"/>
+    
+    <category term="git" scheme="https://shiym.top/tags/git/"/>
+    
+  </entry>
+  
+</feed>
