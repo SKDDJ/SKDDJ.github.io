@@ -751,7 +751,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    329
+                    342
                 </div>
                 
 
@@ -784,11 +784,11 @@
                 <h1 id="解决了我的心头大患"><a href="#解决了我的心头大患" class="headerlink" title="解决了我的心头大患"></a>解决了我的心头大患</h1><p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/59692874/ssh-vt-gitgithub-com-kex-exchange-identification-connection-closed-by-remote" title="stackoverflow帖子,需要翻墙">帖子链接</a></p>
 <p>原因分析:</p>
 <ul>
-<li><p>Ubuntu使用的Clash并且所有网络访问走的都是指定端口9494</p>
+<li><p>Ubuntu使用的$clash$并且所有网络访问走的都是指定端口9494</p>
 </li>
 <li><p>导致一直github远程仓库无法认证,生成了ssh公钥都两遍</p>
 </li>
-<li><p>还得是<a href="www.stackoverflow.com">stackoverflow</a>老哥靠谱,指出VPN的可能性</p>
+<li><p>还得是<a href="www.stackoverflow.com">stackoverflow</a>老哥靠谱,指出代理(那三个字母沈河过不了)的可能性</p>
 </li>
 <li><p>最后通过先在 <code>.ssh</code>中建立 <code>config</code>文件,随后配置端口Port443以及认证密钥</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Host github.com
