@@ -6,7 +6,7 @@
   <link href="https://shiym.top/atom.xml" rel="self"/>
   
   <link href="https://shiym.top/"/>
-  <updated>2022-12-22T08:38:31.540Z</updated>
+  <updated>2023-01-13T04:01:11.000Z</updated>
   <id>https://shiym.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>视频制作学习总结</title>
+    <link href="https://shiym.top/article/eed73e40"/>
+    <id>https://shiym.top/article/eed73e40</id>
+    <published>2023-01-13T12:02:12.743Z</published>
+    <updated>2023-01-13T04:01:11.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;传统的视频制作人工参与成本高昂，做到一定规模很可能需要小规模的团队，以往的视频制作推荐也大多需要较强的视频制作剪辑技术，而这并不适合信息爆炸短视频流行的今天，根据观看诸多视频教程，结合很火的AIGC（Artificial Intelligent</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>博客搭建避坑</title>
