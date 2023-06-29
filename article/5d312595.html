@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="经济学II, Shiym&#39;s blog">
-    <meta name="description" content="经济学II课程笔记">
+    <meta name="keywords" content="数据挖掘与大数据分析, Shiym&#39;s blog">
+    <meta name="description" content="笔记">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>经济学II | Shiym&#39;s blog</title>
+    <title>数据挖掘与大数据分析 | Shiym&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -549,7 +549,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">经济学II</h1>
+                    <h1 class="description center-align post-title">数据挖掘与大数据分析</h1>
                 </div>
             </div>
         </div>
@@ -573,8 +573,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6II/">
-                                <span class="chip bg-color">经济学II</span>
+                            <a href="/tags/Machine-Learning/">
+                                <span class="chip bg-color">Machine Learning</span>
+                            </a>
+                        
+                            <a href="/tags/Big-Data/">
+                                <span class="chip bg-color">Big Data</span>
+                            </a>
+                        
+                            <a href="/tags/Data-Mining/">
+                                <span class="chip bg-color">Data Mining</span>
                             </a>
                         
                     </div>
@@ -598,28 +606,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2023-03-04
+                    2023-06-29
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-01-02
+                    2023-06-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.2k
+                    3.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    6 Min
+                    13 Min
                 </div>
                 
 
@@ -642,256 +650,560 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-1-Chapter1-宏观经济学概述"><a href="#1-1-Chapter1-宏观经济学概述" class="headerlink" title="1.1. Chapter1 宏观经济学概述"></a>1.1. Chapter1 宏观经济学概述</h2><h3 id="1-1-1-宏观经济学的产生与发展概述"><a href="#1-1-1-宏观经济学的产生与发展概述" class="headerlink" title="1.1.1. 宏观经济学的产生与发展概述"></a>1.1.1. 宏观经济学的产生与发展概述</h3><h3 id="1-1-2-宏观经济学的基本概念"><a href="#1-1-2-宏观经济学的基本概念" class="headerlink" title="1.1.2. 宏观经济学的基本概念"></a>1.1.2. 宏观经济学的基本概念</h3><h3 id="1-1-3-国内生产总值及其核算方法"><a href="#1-1-3-国内生产总值及其核算方法" class="headerlink" title="1.1.3. 国内生产总值及其核算方法"></a>1.1.3. 国内生产总值及其核算方法</h3><p>GDP（Gross Demostic Production） $Y &#x3D; C + I + NX + G$ GDP &#x3D; private consumption + gross private investment + government investment + government spending + (exports – imports).</p>
-<h3 id="1-1-4-其他宏观经济指标"><a href="#1-1-4-其他宏观经济指标" class="headerlink" title="1.1.4. 其他宏观经济指标"></a>1.1.4. 其他宏观经济指标</h3><h4 id="Consumer-Price-Index"><a href="#Consumer-Price-Index" class="headerlink" title="Consumer Price Index"></a>Consumer Price Index</h4><p>This index can also be used to calculate the $inflation$:</p>
-<p>$$<br>inflation\ rate\ in\ year2 &#x3D; \frac{CPI year2 - CPI year1}{CPI year1}\times 100</p>
-<p>$$</p>
-<p>which is constucted of a basket of goods and services. problems:</p>
-<ul>
-<li>substitution bias</li>
-<li>introduction of new goods</li>
-<li>unmeasured quanlity change</li>
-</ul>
-<p>K:capital L:labor</p>
-<h4 id="The-production-function"><a href="#The-production-function" class="headerlink" title="The production function"></a>The production function</h4><p>$Y &#x3D; F(K,L)$</p>
-<h4 id="AK模型"><a href="#AK模型" class="headerlink" title="AK模型"></a>AK模型</h4><p>Solow模型： $Y &#x3D; Af(\frac{K}{L})$ or $Y&#x3D;Af(k)$ :where k is tech fixed factor supplies and fixed tech.</p>
-<p>Determing GDP:$Y&#x3D;F(\hat{K},\hat{L})$</p>
-<h4 id="Constant-returns-to-scale"><a href="#Constant-returns-to-scale" class="headerlink" title="Constant returns to scale"></a>Constant returns to scale</h4><ul>
-<li>decreasing returns to scale</li>
-<li>increasing returns to scale<ul>
-<li>if technology is fixed, then $K &#x3D; \hat{K},L &#x3D; \hat{L}$</li>
+                <h3 id="1-3-1-关联规则概述"><a href="#1-3-1-关联规则概述" class="headerlink" title="1.3.1. 关联规则概述"></a>1.3.1. 关联规则概述</h3><ul>
+<li>支持度</li>
+<li>置信度</li>
+<li>频繁项集<ul>
+<li>项集<ul>
+<li>项 其中（少青老、高低、胖瘦）属于nominal</li>
 </ul>
 </li>
 </ul>
-<h4 id="W-R-P"><a href="#W-R-P" class="headerlink" title="W R P"></a>W R P</h4><p>W: nominal wage R: nominal rental rete P: price of output W&#x2F;P: real wage R&#x2F;P: real rental rate</p>
-<h4 id="Marginal-product-of-labor"><a href="#Marginal-product-of-labor" class="headerlink" title="Marginal product of labor"></a>Marginal product of labor</h4><p>$MPL &#x3D; F(K,L+1)-F(K,L)$</p>
-<h4 id="Diminishing-marginal-returns"><a href="#Diminishing-marginal-returns" class="headerlink" title="Diminishing marginal returns"></a>Diminishing marginal returns</h4><p>while K is fixed and L is increasing</p>
-<ul>
-<li>fewer machines per worker</li>
-<li>lower worker producting cause marginal product decreasing</li>
+</li>
+<li>Brute Force 蛮力算法（类似于决策树）<ul>
+<li>降低候选集需要使用Aprior算法，利用两条性质<ul>
+<li>频繁子集也频繁</li>
+<li>不频繁超急也不频繁</li>
 </ul>
-<blockquote>
-<p>the firms should hire worker s.t. $MPL &#x3D; \frac{W}{P}$</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-3-2-由事务数据库挖掘关联规则"><a href="#1-3-2-由事务数据库挖掘关联规则" class="headerlink" title="1.3.2. 由事务数据库挖掘关联规则"></a>1.3.2. 由事务数据库挖掘关联规则</h3><h3 id="1-3-3-FP增长树算法"><a href="#1-3-3-FP增长树算法" class="headerlink" title="1.3.3. FP增长树算法"></a>1.3.3. FP增长树算法</h3><h3 id="1-3-4-关联模式的评估"><a href="#1-3-4-关联模式的评估" class="headerlink" title="1.3.4. 关联模式的评估"></a>1.3.4. 关联模式的评估</h3><p>不重要</p>
+<h2 id="1-4-Chapter4-分类"><a href="#1-4-Chapter4-分类" class="headerlink" title="1.4. Chapter4 分类"></a>1.4. Chapter4 分类</h2><h3 id="1-4-1-分类和预测概述"><a href="#1-4-1-分类和预测概述" class="headerlink" title="1.4.1. 分类和预测概述"></a>1.4.1. 分类和预测概述</h3><ul>
+<li>有监督学习（连续型数据，既有feature也有label）</li>
+<li>无监督学习（离散型数据，只有feature没有label）<ul>
+<li>Generative Model<ul>
+<li>Naive Bayers</li>
+</ul>
+</li>
+<li>Discriminative Model<ul>
+<li>SVM、Decision Tree</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-4-2-决策树分类算法"><a href="#1-4-2-决策树分类算法" class="headerlink" title="1.4.2. 决策树分类算法"></a>1.4.2. 决策树分类算法</h3><h4 id="信息增益选择划分节点（ID3）"><a href="#信息增益选择划分节点（ID3）" class="headerlink" title="信息增益选择划分节点（ID3）"></a><strong>信息增益</strong>选择划分节点（ID3）</h4><p>信息增益率（C4.5）<br>$$信息熵E &#x3D; -\sum_{i &#x3D;1}^{n}p_ilogp_i$$<br>信息增益率为两次作差再比上第一次的信息熵<br>Gini率（CART）<br>$$Gini(D) &#x3D; 1-\sum_{i&#x3D;1}^{n}p_i^2$$<br>测算不纯度，和信息增益反过来</p>
+<h4 id="过拟合问题"><a href="#过拟合问题" class="headerlink" title="过拟合问题"></a>过拟合问题</h4><p>过拟合原因是数据量太小<br>剪枝可以降低过拟合</p>
+<h3 id="1-4-3-KNN最邻近算法"><a href="#1-4-3-KNN最邻近算法" class="headerlink" title="1.4.3. KNN最邻近算法"></a>1.4.3. KNN最邻近算法</h3><p>K-nearest-neighbor<br>优缺点<br>性能问题</p>
+<h3 id="1-4-4-朴素贝叶斯分类算法"><a href="#1-4-4-朴素贝叶斯分类算法" class="headerlink" title="1.4.4. 朴素贝叶斯分类算法"></a>1.4.4. 朴素贝叶斯分类算法</h3><p>Naive-Bayers<br>$$Pr(c|x) &#x3D; \frac{Pr(c\cap x)}{Pr(x)} &#x3D; \frac{Pr(c)Pr(x|c)}{Pr(x)}$$<br>Where $Pr(c|x)$ is Posterior  probability and $Pr(c)$ is Prior probability.<br>And $Pr(x|c)$ is 似然概率.</p>
+<h3 id="1-4-5-SVM和其他经典分类方法"><a href="#1-4-5-SVM和其他经典分类方法" class="headerlink" title="1.4.5. SVM和其他经典分类方法"></a>1.4.5. SVM和其他经典分类方法</h3><p>Support Vector Machine<br>$Y^* &#x3D; H(x|\theta)$<br>for Training :<br>Empired Risk<br>$$min\sum_{i &#x3D; 1}^{n}(Y_i^*-Y_i)^2 \to loss$$<br>核心问题：最大间隔化</p>
+<h3 id="w、b使分类正确"><a href="#w、b使分类正确" class="headerlink" title="w、b使分类正确"></a>w、b使分类正确</h3><p> $wx_i +b\geq 1$<br> $wx_i+b\leq 1$<br> $\to$ $y_i(wx_i+b)\geq 1$</p>
+<h3 id="距离最大间隔"><a href="#距离最大间隔" class="headerlink" title="距离最大间隔"></a>距离最大间隔</h3><p>$$d(x_0,wx+b &#x3D; 0) &#x3D; \frac{|wx_0+b|}{||w||} &#x3D; \frac{1}{||w||}$$<br>使用拉格朗日乘子法<br>求解凸二次规划问题</p>
+<ul>
+<li>convex	</li>
+<li>KTT condition<br>从极大值求极小值</li>
+</ul>
+<h3 id="核函数"><a href="#核函数" class="headerlink" title="核函数"></a>核函数</h3><p>Kernel Function<br>$$K(x_1,x_2) &#x3D; \Phi (x_1) * \Phi(x_2)$$<br>通过低维到高维的映射，使线性不可分 $\to$ 线性可分</p>
+<h3 id="ANN"><a href="#ANN" class="headerlink" title="ANN"></a>ANN</h3><p>Artificial Nerual Nerwork</p>
+<h4 id="作用函数"><a href="#作用函数" class="headerlink" title="作用函数"></a>作用函数</h4><ul>
+<li>阈值型<br>等两个</li>
+</ul>
+<h4 id="拓扑结构"><a href="#拓扑结构" class="headerlink" title="拓扑结构"></a>拓扑结构</h4><ul>
+<li>FeedForward(一般神经元都是全连接)</li>
+<li>FeedBack（类似于时序逻辑电路，输入受输出的影响）</li>
+</ul>
+<h4 id="优化模型"><a href="#优化模型" class="headerlink" title="优化模型"></a>优化模型</h4><ul>
+<li>调整权重<ul>
+<li>相关学习（旧方法）</li>
+<li>误差修正学习<br>$\delta$学习规则（改权值）<br>$$w_{ji}(t+1)&#x3D;w_{ji}(t)+\eta[d_j-y_j(t)]x_i(t)$$</li>
+</ul>
+</li>
+</ul>
+<h3 id="感知机"><a href="#感知机" class="headerlink" title="感知机"></a>感知机</h3><h3 id="后向传播算法（BP）"><a href="#后向传播算法（BP）" class="headerlink" title="后向传播算法（BP）"></a>后向传播算法（BP）</h3><ul>
+<li>信息的正向输入</li>
+<li>误差的反向传播<ul>
+<li>利用梯度下降</li>
+</ul>
+</li>
+</ul>
+<h3 id="集成学习"><a href="#集成学习" class="headerlink" title="集成学习"></a>集成学习</h3><ul>
+<li>同质（多）&#x2F;异质（少）<ul>
+<li>增加学习器的多样性</li>
+</ul>
+</li>
+<li>Bagging<ul>
+<li>Random Forest<ul>
+<li>传统决策树节点利用信息增益选出划分</li>
+<li>RF算法随机选每个节点中的k个属性，再选最优划分（增加随机性）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Boosting<ul>
+<li>(Ada-Boost)	由弱到强<ul>
+<li>关注错误，增大权重，调整样本，n个学习器套娃</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stacking <ul>
+<li>对初始样本集–处理后的新样本集（经过初级学习器）</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-4-6-分类算法评估"><a href="#1-4-6-分类算法评估" class="headerlink" title="1.4.6. 分类算法评估"></a>1.4.6. 分类算法评估</h3><h4 id="评价指标"><a href="#评价指标" class="headerlink" title="评价指标"></a>评价指标</h4><ul>
+<li>精确度<br>$$Accuracy &#x3D; (TP+TN)&#x2F;ALL$$</li>
+<li>误差率<br>$$(FP+FN)&#x2F;ALL$$</li>
+<li>$F_1$分数<br>$$F_1 &#x3D; \frac{2\times Precision\times Recall}{Precision+Recall}$$</li>
+<li>Precision<br>$$Precision &#x3D; \frac{TP}{TP+FP}$$</li>
+<li>Recall<br>$$Recall &#x3D; \frac{TP}{TP+FN}$$</li>
+</ul>
+<h2 id="1-5-Chapter5-聚类分析和噪声检测"><a href="#1-5-Chapter5-聚类分析和噪声检测" class="headerlink" title="1.5. Chapter5 聚类分析和噪声检测"></a>1.5. Chapter5 聚类分析和噪声检测</h2><h3 id="1-5-1-聚类分析概述"><a href="#1-5-1-聚类分析概述" class="headerlink" title="1.5.1. 聚类分析概述"></a>1.5.1. 聚类分析概述</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><blockquote>
+<p>聚类分析是一种数据挖掘技术，将数据集中的对象按照相似性分成不同的簇（cluster），每个簇内的对象都具有较高的相似性，而不同簇之间的对象则具有较大的差异性。<br>应用巨大：</p>
 </blockquote>
-<h4 id="diminishing-the-rental-rate"><a href="#diminishing-the-rental-rate" class="headerlink" title="diminishing the rental rate"></a>diminishing the rental rate</h4><p>Same logic: $MPK &#x3D; \frac{R}{P}$</p>
-<h4 id="The-neoclassical-theory-of-distribution"><a href="#The-neoclassical-theory-of-distribution" class="headerlink" title="The neoclassical theory of distribution"></a>The neoclassical theory of distribution</h4><h2 id="1-2-Chapter2-商品市场"><a href="#1-2-Chapter2-商品市场" class="headerlink" title="1.2. Chapter2 商品市场"></a>1.2. Chapter2 商品市场</h2><h3 id="Types-of-Financial-institution-and-their-function"><a href="#Types-of-Financial-institution-and-their-function" class="headerlink" title="Types of Financial institution and their function"></a>Types of Financial institution and their function</h3><h4 id="Financial-Institution"><a href="#Financial-Institution" class="headerlink" title="Financial Institution"></a>Financial Institution</h4><ul>
-<li>the Bond Market<ul>
-<li>Term</li>
-<li>Credit Risk:Probability of default</li>
-</ul>
-</li>
-<li>the Stock Market</li>
-<li>Financial immediaries<ul>
-<li>bank</li>
-<li>mutual funds</li>
-</ul>
-</li>
-</ul>
-<h3 id="1-2-1-消费"><a href="#1-2-1-消费" class="headerlink" title="1.2.1. 消费"></a>1.2.1. 消费</h3><h3 id="1-2-2-储蓄与投资"><a href="#1-2-2-储蓄与投资" class="headerlink" title="1.2.2. 储蓄与投资"></a>1.2.2. 储蓄与投资</h3><p>Saving V.S. Investment Saving:</p>
 <ul>
-<li>buy stocks</li>
+<li>价格歧视为用户制定画像</li>
+<li>数据预处理</li>
+<li>离群点检测</li>
+<li>等等</li>
 </ul>
-<p>Investment:</p>
+<h4 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h4><p>找出数据中潜在的自然规律</p>
+<h4 id="划分方法（Partitioning-method）"><a href="#划分方法（Partitioning-method）" class="headerlink" title="划分方法（Partitioning method）"></a>划分方法（Partitioning method）</h4><h5 id="K-means"><a href="#K-means" class="headerlink" title="K-means"></a>K-means</h5><p>目标函数：<br>$$min\sum_{i&#x3D;1}^{k}\sum_{x_i-x_j}(x_i-x_j)^2-\sum_{i&#x3D;1}^k\sum_{x_i\in C_k}\sum_{x_j\in C_m}(x_i-x_j)^2$$<br>这玩意谁算的过来，so<br>$$E &#x3D; \sum_{i&#x3D;1}^k\sum_{x\in C_i}|x-\hat{x_i}|^2$$<br>which:<br>$\hat{x_i}$ 是第 $i$个簇的均值</p>
+<p>$C_i$为第 $i$ 个簇</p>
+<h3 id="1-5-2-聚类分析中的数据类型"><a href="#1-5-2-聚类分析中的数据类型" class="headerlink" title="1.5.2. 聚类分析中的数据类型"></a>1.5.2. 聚类分析中的数据类型</h3><h4 id="基于划分"><a href="#基于划分" class="headerlink" title="基于划分"></a>基于划分</h4><h4 id="基于层次"><a href="#基于层次" class="headerlink" title="基于层次"></a>基于层次</h4><ul>
+<li>凝聚<ul>
+<li>AGNES</li>
+</ul>
+</li>
+<li>分裂<ul>
+<li>DIANA</li>
+</ul>
+</li>
+</ul>
+<h4 id="距离度量"><a href="#距离度量" class="headerlink" title="距离度量"></a>距离度量</h4><ul>
+<li>minimum distance</li>
+<li>maximum distance</li>
+<li>mean distance</li>
+</ul>
+<h3 id="1-5-3-聚类分析方法"><a href="#1-5-3-聚类分析方法" class="headerlink" title="1.5.3. 聚类分析方法"></a>1.5.3. 聚类分析方法</h3><h4 id="DBSCAN-Destiny-Based-Spatial-Clusters-of-Applications-with-Noise"><a href="#DBSCAN-Destiny-Based-Spatial-Clusters-of-Applications-with-Noise" class="headerlink" title="DBSCAN Destiny-Based Spatial Clusters of Applications with Noise"></a>DBSCAN Destiny-Based Spatial Clusters of Applications with Noise</h4><ul>
+<li>$\epsilon$邻域</li>
+<li>核心对象</li>
+<li>直接密度可达</li>
+<li>间接密度可达</li>
+</ul>
+<p>从k的选取改为$\epsilon$与MinPst的选取<br>I&#x2F;O开销比较大</p>
+<h4 id="网格聚类"><a href="#网格聚类" class="headerlink" title="网格聚类"></a>网格聚类</h4><h5 id="STING算法"><a href="#STING算法" class="headerlink" title="STING算法"></a>STING算法</h5><p>Statistical Information Grid-based Method<br>多分辨率聚类技术</p>
+<h3 id="补充内容（无监督学习）"><a href="#补充内容（无监督学习）" class="headerlink" title="* 补充内容（无监督学习）"></a>* 补充内容（无监督学习）</h3><h4 id="Auto-Encoder"><a href="#Auto-Encoder" class="headerlink" title="Auto Encoder"></a>Auto Encoder</h4><p>$$X \to Encoder \to E \to Decoder \to X’$$<br>Expection: $min||X-X’||$</p>
+<h4 id="Word2Vector-词向量"><a href="#Word2Vector-词向量" class="headerlink" title="Word2Vector(词向量)"></a>Word2Vector(词向量)</h4><p>相似性度量<br>由词带模型推广<br>缺点：<br>    举个例子，you love I， I love you<br>    都可以表示为101，但是词义不同</p>
+<h4 id="提示补全"><a href="#提示补全" class="headerlink" title="提示补全"></a>提示补全</h4><p>比如 I love __ , 这个__ 就是利用极大似然估计推断可能是“you”。<br>$$f(x|\theta) &#x3D; \prod_{i&#x3D;1}^{n}f(x_i|\theta)$$<br>使得联合概率密度最大</p>
+<p>$$Pr(\omega_1,\omega_2,…,\omega_n|context(\omega_i))$$<br>$$log\prod_{i&#x3D;1}^{N}Pr(\omega_i|context(\omega_i))$$<br>$$max\sum_{i&#x3D;1}^{N}logPr(\omega_i|context(\omega_i))$$<br>然后使用$sigmoid$函数</p>
+<h3 id="异常点检测"><a href="#异常点检测" class="headerlink" title="异常点检测"></a>异常点检测</h3><h4 id="基于距离的检测"><a href="#基于距离的检测" class="headerlink" title="基于距离的检测"></a>基于距离的检测</h4><p>低维中使用</p>
 <ul>
-<li>buying a house</li>
+<li>基于单元（cell- based）的算法</li>
 </ul>
-<h4 id="Assumption"><a href="#Assumption" class="headerlink" title="Assumption"></a>Assumption</h4><p>As is known:</p>
-<p>$$<br>Y &#x3D; C + I + G + NX </p>
-<p>$$</p>
-<p>Assumpting NX &#x3D; 0 then:</p>
-<p>$$<br>Y-C-G &#x3D; I</p>
-<p>$$</p>
-<p>$$<br>(Y-T-C)+(T-G) &#x3D; I</p>
-<p>$$</p>
-<p>where T is Taxes and $(Y-T-C)$ is private saving $(T-G)$ is public saving when $T-G &lt;0$ $\to$ Budget Deficit when $T-G &gt; 0$ $\to$ Budget Supplies</p>
-<h3 id="1-2-3-商品市场均衡"><a href="#1-2-3-商品市场均衡" class="headerlink" title="1.2.3. 商品市场均衡"></a>1.2.3. 商品市场均衡</h3><h4 id="How-the-financial-system-candinate-saving-amp-investment"><a href="#How-the-financial-system-candinate-saving-amp-investment" class="headerlink" title="How the financial system candinate saving &amp; investment?"></a>How the financial system candinate saving &amp; investment?</h4><h5 id="The-Market-for-Loanable-Funds"><a href="#The-Market-for-Loanable-Funds" class="headerlink" title="The Market for Loanable Funds"></a>The Market for Loanable Funds</h5><p>which y-axis is Interest rate and x-axis is Loanable Funds Supply &#x3D; Saving Demand &#x3D; Investment</p>
-<h4 id="How-government-policies-affect-saving-investment-and-the-interest-rate"><a href="#How-government-policies-affect-saving-investment-and-the-interest-rate" class="headerlink" title="How government policies affect saving, investment and the interest rate?"></a>How government policies affect saving, investment and the interest rate?</h4><blockquote>
-<p>by using Taxes</p>
-</blockquote>
+<h4 id="基于统计量的检测"><a href="#基于统计量的检测" class="headerlink" title="基于统计量的检测"></a>基于统计量的检测</h4><p>需要知道分布（现实情况中有些不知道）</p>
+<h4 id="基于偏离的检测"><a href="#基于偏离的检测" class="headerlink" title="基于偏离的检测"></a>基于偏离的检测</h4><ul>
+<li>基于序列<ul>
+<li>模仿人类推理、去除方差</li>
+<li>平滑因子（smoothing factor）</li>
+</ul>
+</li>
+<li>异常集（exception set）</li>
+</ul>
+<h4 id="基于密度的方法（LOF）"><a href="#基于密度的方法（LOF）" class="headerlink" title="基于密度的方法（LOF）"></a>基于密度的方法（LOF）</h4><ul>
+<li>对象p的k距离（$k- distance$）</li>
+<li>对象p的k邻域（$N_k-distance$）<ul>
+<li>关于这个$N_k-distance$有个计算公式</li>
+</ul>
+</li>
+<li>对象p相对于O的可达距离<ul>
+<li>$$reach-distance(p,o) &#x3D; max{k-distance(p),d(p,o)}$$</li>
+</ul>
+</li>
+<li>对象p的局部可达密度（Local Reachable Distance）<ul>
+<li>$$lrdMinPst(p) &#x3D; 1&#x2F; \frac{o\in N_MinPst(p)\sum reach-distMinPst(p,o)}{NMinPst(p)}$$</li>
+</ul>
+</li>
+<li>对象p的局部异常因子（Local Outlier Factor）<ul>
+<li>$$LOF_{MinPts}(p)&#x3D;\frac{\sum_{o\in N_{MinPts(p)}} \frac{lrd_{MinPts}(o)}{lrd_{MinPts}(p)}}{|N_{MinPts}(p)|}$$</li>
+</ul>
+</li>
+</ul>
+<h4 id="Synchronization"><a href="#Synchronization" class="headerlink" title="Synchronization"></a>Synchronization</h4><p>压缩簇、最后剩下的就都是outliers</p>
+<h2 id="1-6-Chapter6-大数据分析"><a href="#1-6-Chapter6-大数据分析" class="headerlink" title="1.6. Chapter6 大数据分析"></a>1.6. Chapter6 大数据分析</h2><ol>
+<li>哈希的作用</li>
+<li>k- shingling（k from 3-10）</li>
+<li>MinHash<br> 3.1 定义：首次提出行号<br> 3.2 如何计算签名矩阵<br> 3.3 可选&#x2F;近似<br>$$sim(c_1,c_2) &#x3D; \frac{a}{a+b+c} &#x3D; Pr(h(c_1))&#x3D;h(c_2)$$</li>
+<li>LSH（局部敏感哈希）<br> 4.1 基本思想： Hash Bond<br> take the similarities into different bucket</li>
+</ol>
+<h3 id="1-6-1-大数据简介"><a href="#1-6-1-大数据简介" class="headerlink" title="1.6.1. 大数据简介"></a>1.6.1. 大数据简介</h3><h3 id="1-6-2-哈希技术"><a href="#1-6-2-哈希技术" class="headerlink" title="1.6.2. 哈希技术"></a>1.6.2. 哈希技术</h3><ul>
+<li>信息检索</li>
+<li>存储</li>
+<li>最邻近点检索</li>
+</ul>
+<h4 id="局部敏感哈希（LSH）"><a href="#局部敏感哈希（LSH）" class="headerlink" title="局部敏感哈希（LSH）"></a>局部敏感哈希（LSH）</h4><ol>
+<li>shingling： convert document emails … – sets</li>
+<li>Minhashing: large sets – signature</li>
+<li>locality-sensitive hashing:focus on pairs of signatures</li>
+</ol>
+<h3 id="1-6-3-数据流挖掘"><a href="#1-6-3-数据流挖掘" class="headerlink" title="1.6.3. 数据流挖掘"></a>1.6.3. 数据流挖掘</h3><h4 id="数据流（Data-Stream）-lt-x3D-实时性"><a href="#数据流（Data-Stream）-lt-x3D-实时性" class="headerlink" title="数据流（Data Stream） &lt;&#x3D; 实时性"></a>数据流（Data Stream） &lt;&#x3D; 实时性</h4><h4 id="Concept-Drift"><a href="#Concept-Drift" class="headerlink" title="Concept Drift"></a>Concept Drift</h4><p>hyper-plane</p>
+<h4 id="Concept-Drift-Detection"><a href="#Concept-Drift-Detection" class="headerlink" title="Concept Drift Detection"></a>Concept Drift Detection</h4><ul>
+<li>Distribution-based detector<ul>
+<li>Adaptive window(ADWIN)</li>
+<li>Error-rate Based detector</li>
+<li>DDM</li>
+</ul>
+</li>
+<li>KNN(可以直接处理Concept Drift Detection，需要压缩数据)</li>
+<li>SVM等需要</li>
+</ul>
+<h4 id="VFDT-very-fast-dicision-tree"><a href="#VFDT-very-fast-dicision-tree" class="headerlink" title="VFDT(very fast dicision tree)"></a>VFDT(very fast dicision tree)</h4><p>$$\overline{G}(x_i) - \overline{G}(x_j) &gt; \epsilon$$<br>处理流式数据</p>
+<h4 id="Data-Stream-Cluster"><a href="#Data-Stream-Cluster" class="headerlink" title="Data Stream Cluster"></a>Data Stream Cluster</h4><p>The clustream framework<br>线上阶段： 压缩（数据结构）<br>线下阶段： k-means，DBSCAN、STING</p>
+<h5 id="Micro-Cluster-微簇"><a href="#Micro-Cluster-微簇" class="headerlink" title="Micro Cluster 微簇"></a>Micro Cluster 微簇</h5><h6 id="Cluster-feature"><a href="#Cluster-feature" class="headerlink" title="Cluster feature"></a>Cluster feature</h6><p>$$CF &#x3D; (N,\vec{LS},\vec{SS})$$<br>Where:<br>N : <code>data point</code><br>LS &#x3D;  $\sum_{i&#x3D;1}^{N}\vec{X_i}$<br>SS &#x3D; $\sum_{i&#x3D;1}^{N}\vec{X_i}^2$</p>
+<p> Stream:<br>$$CF(N+1,\vec{LS}+x,\vec{SS}+x^2)$$<br>     key point: additivity property</p>
+<p>压缩everything from a circle into a array</p>
+<h4 id="Clusteam-Pyramical-Time-Frame"><a href="#Clusteam-Pyramical-Time-Frame" class="headerlink" title="Clusteam : Pyramical Time Frame"></a>Clusteam : Pyramical Time Frame</h4><p>金字塔时间窗口</p>
+<h3 id="1-6-4-大数据处理平台-Hadoop-x2F-Spark"><a href="#1-6-4-大数据处理平台-Hadoop-x2F-Spark" class="headerlink" title="1.6.4. 大数据处理平台 Hadoop&#x2F;Spark"></a>1.6.4. 大数据处理平台 Hadoop&#x2F;Spark</h3><p> 复习：</p>
+<ol>
+<li>数据流面临的挑战</li>
+<li>什么是概念漂移$P(c|x)$</li>
+<li>概念漂移检测方法<br> 3.1 基于分布（缺点）<br> 3.2 基于错误率 （$3\sigma$ 原则）</li>
+<li>分类（VFDT）<br> Hoeffding Tree:<br> VFDT（Very Fast Decision Tree）算法中，有一种基于 Hoeffding 不等式的增量式决策树叫做 Hoeffding Tree。Hoeffding Tree 是 VFDT 算法的一种实现方式，它使用 Hoeffding 不等式来估计节点分裂的置信度，并在满足一定置信度要求时进行节点分裂，从而构建出决策树模型。与传统的决策树算法不同，Hoeffding Tree 可以在处理大规模数据时快速构建决策树，并且具有较好的泛化性能和可解释性。</li>
+<li>数据流聚类<br> 5.1 在线数据抽象<br> $CF(N,\vec{LS},\vec{SS}$)<br> 5.2 线下聚类（DBSCAN，k-means）</li>
+</ol>
+<h4 id="Hadoop"><a href="#Hadoop" class="headerlink" title="Hadoop"></a>Hadoop</h4><p>分布式并行计算 parallel<br>心跳机制判断单点故障<br>Essence：Divide and Conquer</p>
 <ul>
-<li>Saving incentive (S moves to right)</li>
-<li>Investment incentive (D moves to right)</li>
-<li>Government budget deficits or surpluses (S moves to left or right)</li>
+<li>HDFS: Hadoop Distribution File System<ul>
+<li>Centralized namenode<ul>
+<li>maintains metedata info about files</li>
 </ul>
-<h2 id="1-3-Chapter3-货币市场"><a href="#1-3-Chapter3-货币市场" class="headerlink" title="1.3. Chapter3 货币市场"></a>1.3. Chapter3 货币市场</h2><h3 id="1-3-1-货币简介"><a href="#1-3-1-货币简介" class="headerlink" title="1.3.1. 货币简介"></a>1.3.1. 货币简介</h3><h4 id="What-is-money"><a href="#What-is-money" class="headerlink" title="What is money?"></a>What is money?</h4><p>123</p>
-<h5 id="Money-Functions-Types-of-money"><a href="#Money-Functions-Types-of-money" class="headerlink" title="Money Functions?Types of money"></a>Money Functions?Types of money</h5><ul>
-<li><p>medium of exchange</p>
 </li>
-<li><p>unit of account</p>
+<li>Data Nodes<ul>
+<li>Files are divided into blocks</li>
+</ul>
 </li>
-<li><p>store of value</p>
+</ul>
 </li>
-<li><p>liquidity</p>
-</li>
-<li><p>Commodity money</p>
+</ul>
+<h4 id="Spark"><a href="#Spark" class="headerlink" title="Spark"></a>Spark</h4><p>Reduce I&#x2F;O Costs, use cache<br>弹性分布式数据集（Resilient distributed datasets）<br>Essentials：</p>
 <ul>
-<li>with instrinct money</li>
+<li>Transformations</li>
 </ul>
+<h1 id="期末复习"><a href="#期末复习" class="headerlink" title="期末复习"></a>期末复习</h1><h1 id="CH1-简介"><a href="#CH1-简介" class="headerlink" title="CH1 简介"></a>CH1 简介</h1><ol>
+<li>什么是大数据</li>
+<li>大数据三大驱动力</li>
+<li>大数据4V特征</li>
+<li>什么是数据挖掘</li>
+<li>（重点）知识发现的流程是什么？（核心：数据挖掘）</li>
+<li>数据挖掘的四大任务<ol>
+<li>关联规则挖掘</li>
+<li>分类&#x2F;回归</li>
+<li>聚类分析</li>
+<li>离群点检测</li>
+</ol>
 </li>
-<li><p>fiat money</p>
-<ul>
-<li>with govn power</li>
-</ul>
+<li>数据挖掘与其他学科的关系<ol>
+<li>数学&#x2F;机器学习&#x2F;统计</li>
+</ol>
 </li>
-</ul>
-<h6 id="Money-Stock"><a href="#Money-Stock" class="headerlink" title="Money Stock"></a>Money Stock</h6><ul>
-<li>currency</li>
-<li>demand deposit</li>
-</ul>
-<h6 id="Measurement"><a href="#Measurement" class="headerlink" title="Measurement"></a>Measurement</h6><p>$M_1 : currency + Demand$ $M_2: M_1 + savings + mutual funds$</p>
-<h6 id="For-China"><a href="#For-China" class="headerlink" title="For China"></a>For China</h6><p>There exists $M_0,M_1,M_2$</p>
-<h3 id="1-3-2-现代金融系统和货币政策"><a href="#1-3-2-现代金融系统和货币政策" class="headerlink" title="1.3.2. 现代金融系统和货币政策"></a>1.3.2. 现代金融系统和货币政策</h3><h3 id="1-3-3-中央银行与货币政策"><a href="#1-3-3-中央银行与货币政策" class="headerlink" title="1.3.3. 中央银行与货币政策"></a>1.3.3. 中央银行与货币政策</h3><h4 id="Banlc-and-money-supply-How-banks-create-money"><a href="#Banlc-and-money-supply-How-banks-create-money" class="headerlink" title="Banlc and money supply. How banks create money?"></a>Banlc and money supply. How banks create money?</h4><ul>
-<li>Fractional reserve Banking<ul>
-<li>reserve ratio</li>
-<li>reserve requirement</li>
-<li>excess reserve</li>
-</ul>
+</ol>
+<h1 id="CH2-认识数据与数据预处理"><a href="#CH2-认识数据与数据预处理" class="headerlink" title="CH2 认识数据与数据预处理"></a>CH2 认识数据与数据预处理</h1><ol>
+<li>数据对象属性<ol>
+<li>分类性（离散）<ol>
+<li>标称型</li>
+<li>序数型</li>
+</ol>
 </li>
-</ul>
-<h4 id="How-does-the-central-bank-control-the-money-supply"><a href="#How-does-the-central-bank-control-the-money-supply" class="headerlink" title="How does the central bank control the money supply"></a>How does the central bank control the money supply</h4><p>$$<br>Money supply &#x3D; (Initial Doposit\times \frac{1}{1-R})</p>
-<p>$$</p>
-<h5 id="Money-Multiplier"><a href="#Money-Multiplier" class="headerlink" title="Money Multiplier"></a>Money Multiplier</h5><p>$$<br>&#x3D; \frac{Money Supply}{Initial Doposit} &#x3D; \frac{1}{R}</p>
-<p>$$</p>
-<h4 id="Reserve-Rate"><a href="#Reserve-Rate" class="headerlink" title="Reserve Rate"></a>Reserve Rate</h4><ul>
-<li>Reserve Rate<ul>
-<li>paying interest on reserves<ul>
-<li>high -&gt; less money supply</li>
-<li>low -&gt; more money supply</li>
-</ul>
+<li>数值型（连续）</li>
+</ol>
 </li>
-</ul>
+<li>二值型<ol>
+<li>对称</li>
+<li>非对称</li>
+</ol>
 </li>
-<li>Discount Rate<ul>
-<li>high -&gt; less money supply</li>
-<li>low -&gt; more money supply</li>
-</ul>
+<li>数据类型</li>
+<li>数据相似性度量<ol>
+<li>标称型（非对称二值型）</li>
+<li>序数型</li>
+<li>数值型<ol>
+<li>欧氏距离</li>
+<li>曼哈顿距离</li>
+<li>闵可夫斯基距离</li>
+</ol>
 </li>
-</ul>
-<h3 id="1-3-4-货币数量论"><a href="#1-3-4-货币数量论" class="headerlink" title="1.3.4. 货币数量论"></a>1.3.4. 货币数量论</h3><h4 id="How-close-the-MS-affect-infiation-and-nominal-interest-rate"><a href="#How-close-the-MS-affect-infiation-and-nominal-interest-rate" class="headerlink" title="How close the MS affect infiation and nominal interest rate?"></a>How close the MS affect infiation and nominal interest rate?</h4><p>The classic theory of infiation</p>
-<ul>
-<li>Money supply:vertical</li>
-<li>Money demand:downward sloping<ul>
-<li>interest rate</li>
-<li>the average level of price</li>
-</ul>
+</ol>
 </li>
-</ul>
-<h5 id="Two-conclusion"><a href="#Two-conclusion" class="headerlink" title="Two conclusion:"></a>Two conclusion:</h5><ul>
-<li>The quantity of money determines the price level</li>
-</ul>
-<p>$$<br>Price Level &#x3D; Nominal GDP &#x2F; Real GDP</p>
-<p>$$</p>
-<ul>
-<li>The growth of money avaiable determines inflation rate</li>
-</ul>
-<h5 id="The-Velocity-and-quantity-equation"><a href="#The-Velocity-and-quantity-equation" class="headerlink" title="The Velocity and quantity equation"></a>The Velocity and quantity equation</h5><h6 id="Velocity-of-money-V"><a href="#Velocity-of-money-V" class="headerlink" title="Velocity of money(V)"></a>Velocity of money(V)</h6><ul>
-<li>Rate at which money changes hands</li>
-</ul>
-<p>$$<br>V &#x3D; (P\times Y)&#x2F;M</p>
-<p>$$</p>
-<p>where P &#x3D; Price level (GDP deflator) Y &#x3D; nominal GDP M &#x3D; money supply</p>
-<h6 id="Quantity-equation"><a href="#Quantity-equation" class="headerlink" title="Quantity equation"></a>Quantity equation</h6><p>$$<br>M\times V &#x3D; P\times Y</p>
-<p>$$</p>
-<h6 id="The-infiation-Tax"><a href="#The-infiation-Tax" class="headerlink" title="The infiation Tax"></a>The infiation Tax</h6><h6 id="The-fisher-effect"><a href="#The-fisher-effect" class="headerlink" title="The fisher effect"></a>The fisher effect</h6><p>$$<br>\frac{1+i}{1+\pi} &#x3D; 1+r</p>
-<p>$$</p>
-<p>$$<br>\to i &#x3D; r+\pi</p>
-<p>$$</p>
-<p>where $i &#x3D; nominal rate$ $r &#x3D; real rate$ $\pi &#x3D; inflation rate$</p>
-<h2 id="1-4-Chapter4-总需求与总供给"><a href="#1-4-Chapter4-总需求与总供给" class="headerlink" title="1.4. Chapter4 总需求与总供给"></a>1.4. Chapter4 总需求与总供给</h2><h3 id="1-4-1-IS-LM模型"><a href="#1-4-1-IS-LM模型" class="headerlink" title="1.4.1. IS-LM模型"></a>1.4.1. IS-LM模型</h3><h3 id="1-4-2-AD-AS模型"><a href="#1-4-2-AD-AS模型" class="headerlink" title="1.4.2. AD-AS模型"></a>1.4.2. AD-AS模型</h3><ul>
-<li>aggregate-demand curve</li>
-</ul>
-<p>$$<br>Y &#x3D; C + I + G + NX</p>
-<p>$$</p>
-<p>for long run where: $C : wealth$ $I:interest rate$ $NX:exchange rate$ $G: assumpted policy fixed$ downward slope</p>
-<ul>
-<li>aggregate-supply curve</li>
-<li>Services&amp;products upward slope</li>
-</ul>
+<li>其他度量<ol>
+<li>余弦距离</li>
+<li>相关系数</li>
+<li>（*）马氏距离</li>
+<li>（*）KL散度</li>
+</ol>
+</li>
+<li>数据描述<ol>
+<li>中心性描述<ol>
+<li>均值&#x2F;中位数&#x2F;中间数&#x2F;众数</li>
+</ol>
+</li>
+<li>散度描述<ol>
+<li>方差&#x2F;标准差&#x2F;百分位数&#x2F;极差</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>数据预处理（可选）<ol>
+<li>数据清理<ol>
+<li>缺失值填充<ol>
+<li>忽略&#x2F;NaN&#x2F;均值&#x2F;类似值&#x2F;预测</li>
+</ol>
+</li>
+<li>噪声<ol>
+<li>平滑、滤波（不会）</li>
+<li>离群点检测</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>数据集成<ol>
+<li>相关分析<ol>
+<li>分类（标称）</li>
+<li>数值（相关系数）</li>
+</ol>
+</li>
+<li>卡方分析<ol>
+<li>这该有个公式</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>数据规约<ol>
+<li>维度压缩<ol>
+<li>PCA、小波分析（不会）</li>
+<li>特征筛选<ol>
+<li>相关性分析（卡方、信息增益）</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>数据量规约<ol>
+<li>采样</li>
+<li>直方图</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>数据归一化<ol>
+<li>最小最大归一化</li>
+<li>Z-Score</li>
+</ol>
+</li>
+<li>数据离散化<ol>
+<li>直方图 xmin—xmax</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="CH3-关联规则挖掘"><a href="#CH3-关联规则挖掘" class="headerlink" title="CH3 关联规则挖掘"></a>CH3 关联规则挖掘</h1><ol>
+<li>基本定义</li>
+<li>（重点）Aporior算法<ol>
+<li>性质（两大性质）</li>
+<li>流程（计算）（不会）</li>
+</ol>
+</li>
+<li>Aporiori的性能影响（支持度、置信度）</li>
+<li>Aporiori改进方法<ol>
+<li>4个（看ppt）</li>
+</ol>
+</li>
+<li>FP- Growth<ol>
+<li>范式比较（Aporiori）-》产生测试</li>
+<li>生成FP树（重点、不会）</li>
+<li>流程</li>
+</ol>
+</li>
+</ol>
+<h1 id="CH4-分类问题"><a href="#CH4-分类问题" class="headerlink" title="CH4 分类问题"></a>CH4 分类问题</h1><ol>
+<li>机器学习的分类<ol>
+<li>有监督&#x2F;无监督&#x2F;半监督</li>
+</ol>
+</li>
+<li>有监督vs无监督</li>
+<li>有监督学习<ol>
+<li>生成模型</li>
+<li>判别模型</li>
+</ol>
+</li>
+<li>经典算法<ol>
+<li>决策树<ol>
+<li>决策树的构造流程</li>
+<li>选择属性划分的准则（使得划分后的数据类别越准越好）</li>
+<li>常见的属性选择指标<ol>
+<li>信息增益</li>
+<li>信息增益率</li>
+<li>基尼指数（不会）</li>
+</ol>
+</li>
+<li>过拟合问题<ol>
+<li>原因：训练集和测试集分布不一致</li>
+<li>如何避免过拟合问题<ol>
+<li>增加样本量</li>
+<li>去除噪声</li>
+<li>降低模型复杂度</li>
+<li>加正则</li>
+<li>Train- Validation-Test</li>
+</ol>
+</li>
+<li>如何在决策树中避免过拟合<ol>
+<li>降低层数</li>
+<li>控制叶子结点个数</li>
+<li>先剪枝&#x2F;后剪枝</li>
+</ol>
+</li>
+<li>决策树优点<ol>
+<li>可解释性强IF&#x2F;Then</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>KNN<ol>
+<li>注释</li>
+<li>懒惰学习（Lazy Learning）无需训练</li>
+<li>算法优缺点<ol>
+<li>优点：适合流式增量数据</li>
+<li>适合大量类别数据</li>
+<li>准确率一般较高</li>
+<li>缺点：K值敏感</li>
+<li>类别不平衡问题</li>
+<li>测试耗时</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Naive-Bayers<ol>
+<li>思想：求后验分布</li>
+<li>优点：概率输出</li>
+</ol>
+</li>
+<li>SVM<ol>
+<li>基本思想：间隔最大化</li>
+<li>SVM为什么支持小样本（决策边界只由几个支持向量决定）</li>
+<li>SVM为什么泛化能力强（因为结构风险最小化【置信风险】）</li>
+<li>SVM如何实现线性不可分问题（核技巧，通过点积运算实现了数据从低维到高维的映射；核技巧不一定解决线性不可分问题）</li>
+</ol>
+</li>
+<li>ANN<ol>
+<li>信息正向传播，梯度反向传播</li>
+<li>优点：拟合几乎所有函数</li>
+<li>缺点：慢、过拟合</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>集成学习<ol>
+<li>准则：<ol>
+<li>基学习器足够好</li>
+<li>有多样性</li>
+</ol>
+</li>
+<li>Bagging（Random Forest）<ol>
+<li>Boosting（Ada Boost）</li>
+<li>Stacking</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>分类评估<ol>
+<li>常见指标：pre、rec、f1、acc</li>
+<li>类别不平衡：sensitivity、specificity</li>
+</ol>
+</li>
+</ol>
+<h1 id="CH5-聚类分析与离群点检测"><a href="#CH5-聚类分析与离群点检测" class="headerlink" title="CH5 聚类分析与离群点检测"></a>CH5 聚类分析与离群点检测</h1><ol>
+<li>什么是聚类分析</li>
+<li>聚类的作用（检测离群点、噪声）</li>
+<li>聚类的分类<ol>
+<li>（重点）基于划分的方法（k-means）【kmeans流程计算】（不会）</li>
+<li>基于层次的方法（AGENS、DIANA）</li>
+<li>基于密度的方法（DBSCAN）</li>
+<li>基于网格的方法（STING）</li>
+</ol>
+</li>
+<li>k-means流程（计算）</li>
+<li>k-means优缺点<ol>
+<li>优点：快</li>
+<li>缺点：<ol>
+<li>对k值敏感</li>
+<li>对初始值敏感</li>
+<li>对噪声敏感</li>
+<li>不能发现非球形（任意形状）的簇</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>DBSCAN优缺点：<ol>
+<li>优点：<ol>
+<li>可以发现任意形状的簇</li>
+<li>无需设置k</li>
+<li>可以任意检测噪声</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>什么是离群点</li>
+<li>离群点分类<ol>
+<li>全局&#x2F;局部&#x2F;集成</li>
+</ol>
+</li>
+<li>离群点检测方法<ol>
+<li>基于统计&#x2F;距离&#x2F;密度（LOF）&#x2F;序列</li>
+</ol>
+</li>
+</ol>
+<h1 id="CH6-大数据分析"><a href="#CH6-大数据分析" class="headerlink" title="CH6 大数据分析"></a>CH6 大数据分析</h1><ol>
+<li>哈希技术<ol>
+<li>作用</li>
+<li>k- shingling（不会）</li>
+<li>minHash（定义）【如何计算签名矩阵】（近似计算；不会）</li>
+<li>LSH（局部敏感哈希）思想：找哈希函数把相似的对象映射到同一个桶中</li>
+</ol>
+</li>
+<li>数据流挑战<ol>
+<li>挑战（四大）（忘了）</li>
+<li>什么是概念漂移（不会）</li>
+<li>概念漂移检测方法（不会）<ol>
+<li>基于分布</li>
+<li>基于错误率【都有缺点】</li>
+</ol>
+</li>
+<li>分类（VFDT）（忘了）</li>
+<li>数据流聚类<ol>
+<li>线上数据抽象（簇特征）</li>
+<li>线下聚类CF（N，LS，SS）可加减性（忘了）</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Hadoop&amp;Spark<ol>
+<li>什么是Hadoop</li>
+<li>Hadoop设计准则</li>
+<li>Hadoop组件<ol>
+<li>HDFS（hadoop distribution file system） 存储<ol>
+<li>Meta data 《- Meta node》 + data node（实际数据）心跳机制维持</li>
+</ol>
+</li>
+<li>mapreduce</li>
+</ol>
+</li>
+<li>spark是什么<ol>
+<li>RDD（弹性分布式数据集）</li>
+<li>RDD操作（Transform &#x2F;Action）</li>
+</ol>
+</li>
+<li>MapReduce与Spark区别<ol>
+<li>mapreduce是one pass</li>
+<li>spark是多轮、共享机制、RDD内存、API</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
-
-<h4 id="Natural-level-of-output-might-shift-right"><a href="#Natural-level-of-output-might-shift-right" class="headerlink" title="Natural level of output(might shift right)"></a>Natural level of output(might shift right)</h4><p>in short run:</p>
-<ul>
-<li>labor</li>
-<li>capital</li>
-<li>natural resource</li>
-<li>technological knowledge</li>
-</ul>
-<h4 id="Short-run-about-AS-curve"><a href="#Short-run-about-AS-curve" class="headerlink" title="Short run about AS curve"></a>Short run about AS curve</h4><p>shifts depends on:</p>
-<h5 id="Sticky-wage-theory"><a href="#Sticky-wage-theory" class="headerlink" title="Sticky wage theory"></a>Sticky wage theory</h5><ul>
-<li>expected theory</li>
-</ul>
-<h5 id="Sticky-price-theory"><a href="#Sticky-price-theory" class="headerlink" title="Sticky-price theory"></a>Sticky-price theory</h5><ul>
-<li>expected price(about goods&amp;services)<ul>
-<li>adjusted to macro economics condition(unexpected)</li>
-</ul>
-</li>
-</ul>
-<h5 id="Misperceptions-theory"><a href="#Misperceptions-theory" class="headerlink" title="Misperceptions theory"></a>Misperceptions theory</h5><ul>
-<li>unexpeted price of overall level might mislead supplies</li>
-</ul>
-<p>$$<br>Quantity\ of\ output\ supplied &#x3D; Natural\ level\ of\ output + a(real\  price-expected\  price)</p>
-<p>$$</p>
-<h3 id="1-4-3-财政政策和货币政策的影响"><a href="#1-4-3-财政政策和货币政策的影响" class="headerlink" title="1.4.3. 财政政策和货币政策的影响"></a>1.4.3. 财政政策和货币政策的影响</h3><h4 id="Economics-Fluctuations"><a href="#Economics-Fluctuations" class="headerlink" title="Economics Fluctuations"></a>Economics Fluctuations</h4><ul>
-<li>Three fluctuations<ul>
-<li>short run</li>
-<li>medium run</li>
-<li>long run</li>
-</ul>
-</li>
-<li>Three variables<ul>
-<li>real GDP</li>
-<li>Invest Spending</li>
-<li>Unemployment rate</li>
-</ul>
-</li>
-</ul>
-<h4 id="For-short-x2F-long-run"><a href="#For-short-x2F-long-run" class="headerlink" title="For short&#x2F;long run"></a>For short&#x2F;long run</h4><h5 id="Economics-fluctuations-in-long-run"><a href="#Economics-fluctuations-in-long-run" class="headerlink" title="Economics fluctuations in long run"></a>Economics fluctuations in long run</h5><ul>
-<li>classic dichotomy &amp; monetary neotrality<ul>
-<li>affect price &amp; other nominal variables</li>
-<li>not affect real GDP</li>
-</ul>
-</li>
-<li>in short run<ul>
-<li>push the real GDP away</li>
-</ul>
-</li>
-</ul>
-<h2 id="1-5-Chapter5-失业与通货膨胀"><a href="#1-5-Chapter5-失业与通货膨胀" class="headerlink" title="1.5. Chapter5 失业与通货膨胀"></a>1.5. Chapter5 失业与通货膨胀</h2><h3 id="1-5-1-失业"><a href="#1-5-1-失业" class="headerlink" title="1.5.1. 失业"></a>1.5.1. 失业</h3><h4 id="How-is-unemployment-measured"><a href="#How-is-unemployment-measured" class="headerlink" title="How is unemployment measured"></a>How is unemployment measured</h4><h5 id="Labor-Force-Statistics"><a href="#Labor-Force-Statistics" class="headerlink" title="Labor Force Statistics"></a>Labor Force Statistics</h5><ul>
-<li>unemployment rate(u-rate)<ul>
-<li>&#x3D; $100\times \frac{unemployment}{labor force}$</li>
-</ul>
-</li>
-<li>Labor-Paticipation Rate(LFP-rate)<ul>
-<li>&#x3D; $100\times \frac{labor force}{population}$</li>
-</ul>
-</li>
-</ul>
-<p>$$<br>Labor Force &#x3D; Employed + Unemployed</p>
-<p>$$</p>
-<ul>
-<li>lost job then finding news U-rate$\uparrow$</li>
-<li>lost job for 1 year then exit U-rate$\downarrow$</li>
-<li>lost job then do part-time U-rate -</li>
-</ul>
-<h4 id="What-is-the-natural-rate-of-unemployment"><a href="#What-is-the-natural-rate-of-unemployment" class="headerlink" title="What is the natural rate of unemployment"></a>What is the natural rate of unemployment</h4><ul>
-<li>natural rate of unemployment</li>
-<li>cyclical unemployment</li>
-</ul>
-<h4 id="Why-are-there-always-some-people-unemployed"><a href="#Why-are-there-always-some-people-unemployed" class="headerlink" title="Why are there always some people unemployed"></a>Why are there always some people unemployed</h4><ul>
-<li>frictional unemployment</li>
-<li>structural unemployment</li>
-</ul>
-<h5 id="Job-Search"><a href="#Job-Search" class="headerlink" title="Job Search"></a>Job Search</h5><ul>
-<li>job search</li>
-<li>sectoral shifts</li>
-</ul>
-<h5 id="Unemployment-Insurance"><a href="#Unemployment-Insurance" class="headerlink" title="Unemployment Insurance"></a>Unemployment Insurance</h5><h4 id="Minimum-Wage-amp-Union"><a href="#Minimum-Wage-amp-Union" class="headerlink" title="Minimum Wage &amp; Union"></a>Minimum Wage &amp; Union</h4><h4 id="Efficiency-Wage"><a href="#Efficiency-Wage" class="headerlink" title="Efficiency Wage"></a>Efficiency Wage</h4><ul>
-<li>worker health</li>
-<li>hiring &amp; traininig costing</li>
-<li>worker quanlity</li>
-<li>worker effort</li>
-</ul>
-<h3 id="1-5-2-通货膨胀"><a href="#1-5-2-通货膨胀" class="headerlink" title="1.5.2. 通货膨胀"></a>1.5.2. 通货膨胀</h3><h3 id="1-5-3-失业与通货膨胀的关系"><a href="#1-5-3-失业与通货膨胀的关系" class="headerlink" title="1.5.3. 失业与通货膨胀的关系"></a>1.5.3. 失业与通货膨胀的关系</h3><h2 id="1-6-Chapter6-经济增长"><a href="#1-6-Chapter6-经济增长" class="headerlink" title="1.6. Chapter6 经济增长"></a>1.6. Chapter6 经济增长</h2><h3 id="1-6-1-经济增长概述"><a href="#1-6-1-经济增长概述" class="headerlink" title="1.6.1. 经济增长概述"></a>1.6.1. 经济增长概述</h3><h3 id="1-6-2-影响经济增长的公共政策"><a href="#1-6-2-影响经济增长的公共政策" class="headerlink" title="1.6.2. 影响经济增长的公共政策"></a>1.6.2. 影响经济增长的公共政策</h3><h3 id="1-6-3-中国的经济增长"><a href="#1-6-3-中国的经济增长" class="headerlink" title="1.6.3. 中国的经济增长"></a>1.6.3. 中国的经济增长</h3><h2 id="1-7-Chapter7-开放经济"><a href="#1-7-Chapter7-开放经济" class="headerlink" title="1.7. Chapter7 开放经济"></a>1.7. Chapter7 开放经济</h2><h3 id="1-7-1-开放经济的基本概念"><a href="#1-7-1-开放经济的基本概念" class="headerlink" title="1.7.1. 开放经济的基本概念"></a>1.7.1. 开放经济的基本概念</h3><h3 id="1-7-2-开放经济的基本理论及应用"><a href="#1-7-2-开放经济的基本理论及应用" class="headerlink" title="1.7.2. 开放经济的基本理论及应用"></a>1.7.2. 开放经济的基本理论及应用</h3>
                 
             </div>
             <hr/>
@@ -917,7 +1229,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shiym.top/article/1540240c">https://shiym.top/article/1540240c</a>
+                    <a href="https://shiym.top/article/5d312595">https://shiym.top/article/5d312595</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -955,8 +1267,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6II/">
-                                    <span class="chip bg-color">经济学II</span>
+                                <a href="/tags/Machine-Learning/">
+                                    <span class="chip bg-color">Machine Learning</span>
+                                </a>
+                            
+                                <a href="/tags/Big-Data/">
+                                    <span class="chip bg-color">Big Data</span>
+                                </a>
+                            
+                                <a href="/tags/Data-Mining/">
+                                    <span class="chip bg-color">Data Mining</span>
                                 </a>
                             
                         </div>
@@ -1302,29 +1622,88 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/article/bf637e11">
+                <a href="/article/5d312595">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Alpaca Plan">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="数据挖掘与大数据分析">
                         
-                        <span class="card-title">Alpaca Plan</span>
+                        <span class="card-title">数据挖掘与大数据分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            初稿
+                            笔记
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-04
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Course/" class="post-category">
+                                    Course
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Machine-Learning/">
+                        <span class="chip bg-color">Machine Learning</span>
+                    </a>
+                    
+                    <a href="/tags/Big-Data/">
+                        <span class="chip bg-color">Big Data</span>
+                    </a>
+                    
+                    <a href="/tags/Data-Mining/">
+                        <span class="chip bg-color">Data Mining</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/article/b5c3f382">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="飞书gptbot使用指南">
+                        
+                        <span class="card-title">飞书gptbot使用指南</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1340,65 +1719,20 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA/">
+                        <span class="chip bg-color">飞书机器人</span>
                     </a>
                     
-                    <a href="/tags/LLM/">
-                        <span class="chip bg-color">LLM</span>
+                    <a href="/tags/GPT/">
+                        <span class="chip bg-color">GPT</span>
                     </a>
                     
-                    <a href="/tags/Commercial/">
-                        <span class="chip bg-color">Commercial</span>
+                    <a href="/tags/Engineering/">
+                        <span class="chip bg-color">Engineering</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/article/a0d51f41">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="金融学基础">
-                        
-                        <span class="card-title">金融学基础</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            金融学基础课程笔记
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-04
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Course/" class="post-category">
-                                    Course
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/">
-                        <span class="chip bg-color">金融学基础</span>
+                    <a href="/tags/DevOps/">
+                        <span class="chip bg-color">DevOps</span>
                     </a>
                     
                 </div>

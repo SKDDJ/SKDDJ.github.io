@@ -646,7 +646,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-1-Chapter1-GaussDB数据库概述"><a href="#1-1-Chapter1-GaussDB数据库概述" class="headerlink" title="1.1. Chapter1 GaussDB数据库概述"></a>1.1. Chapter1 GaussDB数据库概述</h2><h3 id="1-1-1-数据库系统基本概念"><a href="#1-1-1-数据库系统基本概念" class="headerlink" title="1.1.1. 数据库系统基本概念"></a>1.1.1. 数据库系统基本概念</h3><blockquote>
+                <h2 id="1-1-Chapter1-GaussDB数据库概述"><a href="#1-1-Chapter1-GaussDB数据库概述" class="headerlink" title="1.1. Chapter1 GaussDB数据库概述"></a>1.1. Chapter1 GaussDB数据库概述</h2><p>edition：opengauss 3.1.0 </p>
+<h3 id="1-1-1-数据库系统基本概念"><a href="#1-1-1-数据库系统基本概念" class="headerlink" title="1.1.1. 数据库系统基本概念"></a>1.1.1. 数据库系统基本概念</h3><blockquote>
 <p>定义：数据库是长期存储在计算机内，有组织的，可共享的大量数据集合。（目前定义，新定义与云原生数据库有关）</p>
 </blockquote>
 <h4 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h4><ul>
@@ -662,7 +663,7 @@
 </blockquote>
 <p>组成：查询处理器和存储处理器</p>
 <h4 id="三层模式体系结构"><a href="#三层模式体系结构" class="headerlink" title="三层模式体系结构"></a>三层模式体系结构</h4><ul>
-<li>内模式（internal schema）物理数据库<ul>
+<li>内模式（internal schema）物理数据库 <ul>
 <li>Index 定义数据<ul>
 <li>例如 （non）cluster index （非）聚集索引</li>
 </ul>
@@ -670,7 +671,7 @@
 </ul>
 </li>
 <li>概念模式（conceptual schema）概念数据库</li>
-<li>外模式（external schema）<ul>
+<li>外模式（external schema） <ul>
 <li>是概念模式的子集</li>
 <li>保证了数据库数据的安全，每个用户对数据的访问权限不同</li>
 </ul>
@@ -682,7 +683,7 @@
 </ul>
 </li>
 </ul>
-<p>可以用作唯一标识的属性可以当作 <code>候选建（Candidate key）</code>	，DBA可以根据需要选一个当 <code>主键（Primary Key）</code><br><code>外键（Foreign Key）</code>：这个键在某个表中是主键，但是在另外一个表中不是主键，那么在非主键关系表中这个键叫做<strong>外键</strong></p>
+<p>可以用作唯一标识的属性可以当作<code>候选建（Candidate key）</code>	，DBA可以根据需要选一个当<code>主键（Primary Key）</code><br><code>外键（Foreign Key）</code>：这个键在某个表中是主键，但是在另外一个表中不是主键，那么在非主键关系表中这个键叫做<strong>外键</strong> </p>
 <h4 id="关系完整性"><a href="#关系完整性" class="headerlink" title="关系完整性"></a>关系完整性</h4><p>三类完整性约束：</p>
 <ul>
 <li>实体完整性：主码不能取空值</li>
@@ -698,7 +699,8 @@
 <li>DML: SELECT INSERT UPDATE DELETE</li>
 <li>DCL: GRANT REMOVE</li>
 </ul>
-<h3 id="1-2-2-数据库对象定义"><a href="#1-2-2-数据库对象定义" class="headerlink" title="1.2.2. 数据库对象定义"></a>1.2.2. 数据库对象定义</h3><h3 id="1-2-3-数据查询和数据修改SQL语句"><a href="#1-2-3-数据查询和数据修改SQL语句" class="headerlink" title="1.2.3. 数据查询和数据修改SQL语句"></a>1.2.3. 数据查询和数据修改SQL语句</h3><h4 id="数据查询"><a href="#数据查询" class="headerlink" title="数据查询"></a>数据查询</h4><ul>
+<h3 id="1-2-2-数据库对象定义"><a href="#1-2-2-数据库对象定义" class="headerlink" title="1.2.2. 数据库对象定义"></a>1.2.2. 数据库对象定义</h3><h3 id="1-2-3-数据查询和数据修改SQL语句"><a href="#1-2-3-数据查询和数据修改SQL语句" class="headerlink" title="1.2.3. 数据查询和数据修改SQL语句"></a>1.2.3. 数据查询和数据修改SQL语句</h3><p>许多检测工具会执行一条SELECT 1;来测试数据库连接</p>
+<h4 id="数据查询"><a href="#数据查询" class="headerlink" title="数据查询"></a>数据查询</h4><ul>
 <li>无条件查询</li>
 <li>聚集查询</li>
 <li>多表查询<ul>
@@ -707,20 +709,17 @@
 <li>自连接：可以比较不同表的不同列</li>
 <li>非等值连接：比较关系是其他比较符号</li>
 <li>嵌套查询：<code>SELECT</code>嵌套，理论上限为200个</li>
-<li>联合查询：关键字 <code>UNION</code>，就是并运算</li>
-</ul>
-</li>
-</ul>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token punctuation">[</span><span class="token keyword">ALL</span><span class="token operator">|</span><span class="token keyword">DISTINCT</span><span class="token punctuation">]</span><span class="token operator">&lt;</span>目标列表达式<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token operator">></span>目标列表达式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<li>联合查询：关键字<code>UNION</code>，就是并运算<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token punctuation">[</span><span class="token keyword">ALL</span><span class="token operator">|</span><span class="token keyword">DISTINCT</span><span class="token punctuation">]</span><span class="token operator">&lt;</span>目标列表达式<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token operator">></span>目标列表达式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 	<span class="token punctuation">[</span><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span><span class="token operator">&lt;</span>新表名<span class="token operator">></span><span class="token punctuation">]</span>
 	<span class="token keyword">FROM</span> <span class="token operator">&lt;</span>表名或视图名<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token operator">&lt;</span>表名或视图名<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 	<span class="token punctuation">[</span><span class="token keyword">WHERE</span><span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span>
 	<span class="token punctuation">[</span><span class="token keyword">GROUP</span> <span class="token keyword">BY</span><span class="token operator">&lt;</span>列名<span class="token number">1</span><span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">HAVING</span><span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span>
-	<span class="token punctuation">[</span><span class="token keyword">ORDER</span> <span class="token keyword">BY</span><span class="token operator">&lt;</span>列名<span class="token number">2</span><span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">ASC</span><span class="token operator">|</span><span class="token keyword">DESC</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+	<span class="token punctuation">[</span><span class="token keyword">ORDER</span> <span class="token keyword">BY</span><span class="token operator">&lt;</span>列名<span class="token number">2</span><span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">ASC</span><span class="token operator">|</span><span class="token keyword">DESC</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+</li>
+</ul>
 <h4 id="数据增加"><a href="#数据增加" class="headerlink" title="数据增加"></a>数据增加</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> 表一 <span class="token punctuation">[</span><span class="token operator">&lt;</span>列<span class="token operator">></span><span class="token punctuation">]</span> 
 VALUEE 表二<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <h4 id="数据修改"><a href="#数据修改" class="headerlink" title="数据修改"></a>数据修改</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">UPDATE</span><span class="token operator">&lt;</span>基表名<span class="token operator">></span>
 <span class="token keyword">SET</span> <span class="token operator">&lt;</span>列名<span class="token number">1</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token operator">&lt;</span>表达式<span class="token number">2</span><span class="token operator">></span>
 <span class="token punctuation">[</span><span class="token keyword">WHERE</span> <span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -732,9 +731,8 @@ VALUEE 表二<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 <p>当使用WITH CHECK OPTION约束条件时，它可以确保插入或更新的行满足指定的WHERE子句。如果插入或更新的行不符合WHERE子句，则操作将被拒绝，并返回错误信息。</p>
 </blockquote>
 <h5 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> CLUSTER <span class="token keyword">INDEX</span> stusname <span class="token keyword">ON</span> Student<span class="token punctuation">(</span>Sname<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>在建立好索引后，需要按照顺序在条件判断中使用索引：比如先建立索引A，然后B，就不能先判断B再判断A</p>
-<h5 id="目标列表达式格式"><a href="#目标列表达式格式" class="headerlink" title="目标列表达式格式"></a>目标列表达式格式</h5><p><code> */表名.属性列/count(*)/属性列表达式</code><br>其中 <code>count(*)</code>自动去重，计算主码分量个数</p>
+<h5 id="目标列表达式格式"><a href="#目标列表达式格式" class="headerlink" title="目标列表达式格式"></a>目标列表达式格式</h5><p><code> */表名.属性列/count(*)/属性列表达式</code><br>其中<code>count(*)</code>自动去重，计算主码分量个数</p>
 <h2 id="1-3-Chapter3-GaussDB的运行环境及安装"><a href="#1-3-Chapter3-GaussDB的运行环境及安装" class="headerlink" title="1.3. Chapter3 GaussDB的运行环境及安装"></a>1.3. Chapter3 GaussDB的运行环境及安装</h2><h3 id="1-3-1-GaussDB单机版运行环境搭建"><a href="#1-3-1-GaussDB单机版运行环境搭建" class="headerlink" title="1.3.1. GaussDB单机版运行环境搭建"></a>1.3.1. GaussDB单机版运行环境搭建</h3><p>见pdf文件<br>利用ssh终端连接软件</p>
 <h3 id="1-3-2-数据库连接管理"><a href="#1-3-2-数据库连接管理" class="headerlink" title="1.3.2. 数据库连接管理"></a>1.3.2. 数据库连接管理</h3><p>TableSpace DataBase<br>一个表空间可以有多个数据库，数据库是逻辑概念<br>Segment</p>
 <ul>
@@ -1161,19 +1159,19 @@ VALUEE 表二<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/article/a0d51f41">
+                <a href="/article/488818ef">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="金融学基础">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="量化交易与商业银行">
                         
-                        <span class="card-title">金融学基础</span>
+                        <span class="card-title">量化交易与商业银行</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            金融学基础课程笔记
+                            量化交易和商业银行的相关知识
                         
                     </div>
                     <div class="publish-info">
@@ -1195,8 +1193,12 @@ VALUEE 表二<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/">
-                        <span class="chip bg-color">金融学基础</span>
+                    <a href="/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E4%B8%8E%E5%95%86%E4%B8%9A%E9%93%B6%E8%A1%8C/">
+                        <span class="chip bg-color">量化交易与商业银行</span>
+                    </a>
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                 </div>
@@ -1432,7 +1434,7 @@ VALUEE 表二<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">27.9k</span>
+                        class="white-color">39.6k</span>
             
             
             

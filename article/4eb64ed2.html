@@ -612,14 +612,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.5k
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    5 Min
+                    6 Min
                 </div>
                 
 
@@ -812,7 +812,138 @@
 <li>程序空间分类</li>
 <li>链接技术</li>
 </ul>
-<h2 id="1-4-Chapter4-软件系统程序编译"><a href="#1-4-Chapter4-软件系统程序编译" class="headerlink" title="1.4. Chapter4 软件系统程序编译"></a>1.4. Chapter4 软件系统程序编译</h2><h3 id="1-4-1-编译概述"><a href="#1-4-1-编译概述" class="headerlink" title="1.4.1. 编译概述"></a>1.4.1. 编译概述</h3><h3 id="1-4-2-语言及文法"><a href="#1-4-2-语言及文法" class="headerlink" title="1.4.2. 语言及文法"></a>1.4.2. 语言及文法</h3><h3 id="1-4-3-词法分析"><a href="#1-4-3-词法分析" class="headerlink" title="1.4.3. 词法分析"></a>1.4.3. 词法分析</h3><h3 id="1-4-4-语法分析"><a href="#1-4-4-语法分析" class="headerlink" title="1.4.4. 语法分析"></a>1.4.4. 语法分析</h3><h3 id="1-4-5-语义分析和中间代码生成"><a href="#1-4-5-语义分析和中间代码生成" class="headerlink" title="1.4.5. 语义分析和中间代码生成"></a>1.4.5. 语义分析和中间代码生成</h3><h2 id="1-5-Chapter5-软件系统数据管理"><a href="#1-5-Chapter5-软件系统数据管理" class="headerlink" title="1.5. Chapter5 软件系统数据管理"></a>1.5. Chapter5 软件系统数据管理</h2><h3 id="1-5-1-数据库的基本概念-数据库技术发展概述"><a href="#1-5-1-数据库的基本概念-数据库技术发展概述" class="headerlink" title="1.5.1. 数据库的基本概念,数据库技术发展概述"></a>1.5.1. 数据库的基本概念,数据库技术发展概述</h3><h3 id="1-5-2-关系数据库-及标准语言SQL-数据库安全性"><a href="#1-5-2-关系数据库-及标准语言SQL-数据库安全性" class="headerlink" title="1.5.2. 关系数据库,及标准语言SQL,数据库安全性"></a>1.5.2. 关系数据库,及标准语言SQL,数据库安全性</h3><h3 id="1-5-3-数据库设计和数据库编程"><a href="#1-5-3-数据库设计和数据库编程" class="headerlink" title="1.5.3. 数据库设计和数据库编程"></a>1.5.3. 数据库设计和数据库编程</h3><h3 id="1-5-4-数据库新技术-大数据与hadoop"><a href="#1-5-4-数据库新技术-大数据与hadoop" class="headerlink" title="1.5.4. 数据库新技术:大数据与hadoop"></a>1.5.4. 数据库新技术:大数据与hadoop</h3>
+<h2 id="1-4-Chapter4-软件系统程序编译"><a href="#1-4-Chapter4-软件系统程序编译" class="headerlink" title="1.4. Chapter4 软件系统程序编译"></a>1.4. Chapter4 软件系统程序编译</h2><h3 id="1-4-1-编译概述"><a href="#1-4-1-编译概述" class="headerlink" title="1.4.1. 编译概述"></a>1.4.1. 编译概述</h3><h3 id="1-4-2-语言及文法"><a href="#1-4-2-语言及文法" class="headerlink" title="1.4.2. 语言及文法"></a>1.4.2. 语言及文法</h3><h3 id="1-4-3-词法分析"><a href="#1-4-3-词法分析" class="headerlink" title="1.4.3. 词法分析"></a>1.4.3. 词法分析</h3><h4 id="词法分析器"><a href="#词法分析器" class="headerlink" title="词法分析器"></a>词法分析器</h4><p>词：二元组（type，value）<br>符号表（名称｜value）<br>（*）DFS，NFS</p>
+<h3 id="1-4-4-语法分析"><a href="#1-4-4-语法分析" class="headerlink" title="1.4.4. 语法分析"></a>1.4.4. 语法分析</h3><ul>
+<li>上下文无关文法</li>
+<li>下推自动机<br>文法：</li>
+<li>上-下<ul>
+<li>使用左递归<ul>
+<li>不确定-词法分析过程中不确定分析过程</li>
+<li>确定-清除回溯-无左递归<ul>
+<li>1&#x2F;2</li>
+<li>右递归<br>（*）First集&#x2F;Follow集</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-4-5-语义分析和中间代码生成"><a href="#1-4-5-语义分析和中间代码生成" class="headerlink" title="1.4.5. 语义分析和中间代码生成"></a>1.4.5. 语义分析和中间代码生成</h3><ul>
+<li>词法分析-&gt;语法分析-&gt;语义分析</li>
+</ul>
+<h4 id="词法分析"><a href="#词法分析" class="headerlink" title="词法分析"></a>词法分析</h4><ul>
+<li>自上而下（LL）<ul>
+<li>递归下降</li>
+<li>词汇表<ul>
+<li>构建</li>
+<li>递归栈<ul>
+<li>AST树<ul>
+<li>自下而上构建AST</li>
+<li>AST树离散</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>自下而上（LR）<ul>
+<li>规约<ul>
+<li>递归栈</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="语法分析"><a href="#语法分析" class="headerlink" title="语法分析"></a>语法分析</h4><ul>
+<li>语法翻译制导<ul>
+<li>依赖图</li>
+<li>语法树</li>
+</ul>
+</li>
+</ul>
+<h4 id="语义分析"><a href="#语义分析" class="headerlink" title="语义分析"></a>语义分析</h4><ul>
+<li>依赖图</li>
+<li>遍历<ul>
+<li>自上而下<ul>
+<li>翻译模式<ul>
+<li>推导</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>自下而上<ul>
+<li>加一个语义化<ul>
+<li>规约<br>最后得到</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>执行结果</li>
+<li>中间代码（AST、三&#x2F;四地址）<pre class="line-numbers language-none"><code class="language-none">语法分析
+  |
+  ├── 语法翻译制导
+  |      |
+  |      ├── 依赖图
+  |      |
+  |      └── 语法树
+  |
+  └── 语义分析
+          |
+          ├── 依赖图
+          |
+          └── 遍历
+                |
+                ├── 自上而下
+                |       |
+                |       ├── 翻译模式
+                |       |      |
+                |       |      └── 推导
+                |       |
+                |       └── 执行结果
+                |
+                └── 自下而上
+                        |
+                        ├── 加一个语义化
+                        |        |
+                        |        └── 规约
+                        |
+                        └── 中间代码（AST、三&#x2F;四地址）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<p>汇总：<br>词法-语法-「「解释API；生成中间代码」-「什么样子-「三地址，四元式；三元式」；间接三元式-「间接对象（代码执行顺序）；三元式表（内容）」；-语义-「自上而下；自下而上」-「OP；Type」</p>
+<pre class="line-numbers language-ASCII" data-language="ASCII"><code class="language-ASCII">词法
+  |
+  └── 语法
+          |
+          ├── 解释API；生成中间代码
+          |         |
+          |         ├── 什么样子
+          |         |      |
+          |         |      ├── 三地址，四元式
+          |         |      |
+          |         |      └── 三元式
+          |         |
+          |         └── 间接三元式
+          |                 |
+          |                 ├── 间接对象（代码执行顺序）
+          |                 |
+          |                 └── 三元式表（内容）
+          |
+          └── 语义 |
+                           └── Type
+						              |        
+                  |        └── OP
+                  |
+                  ├── 自上而下
+       
+                  |
+                  └── 自下而上
+                          <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="1-5-Chapter5-软件系统数据管理"><a href="#1-5-Chapter5-软件系统数据管理" class="headerlink" title="1.5. Chapter5 软件系统数据管理"></a>1.5. Chapter5 软件系统数据管理</h2><h3 id="1-5-1-数据库的基本概念-数据库技术发展概述"><a href="#1-5-1-数据库的基本概念-数据库技术发展概述" class="headerlink" title="1.5.1. 数据库的基本概念,数据库技术发展概述"></a>1.5.1. 数据库的基本概念,数据库技术发展概述</h3><h3 id="1-5-2-关系数据库-及标准语言SQL-数据库安全性"><a href="#1-5-2-关系数据库-及标准语言SQL-数据库安全性" class="headerlink" title="1.5.2. 关系数据库,及标准语言SQL,数据库安全性"></a>1.5.2. 关系数据库,及标准语言SQL,数据库安全性</h3><h3 id="1-5-3-数据库设计和数据库编程"><a href="#1-5-3-数据库设计和数据库编程" class="headerlink" title="1.5.3. 数据库设计和数据库编程"></a>1.5.3. 数据库设计和数据库编程</h3><h3 id="1-5-4-数据库新技术-大数据与hadoop"><a href="#1-5-4-数据库新技术-大数据与hadoop" class="headerlink" title="1.5.4. 数据库新技术:大数据与hadoop"></a>1.5.4. 数据库新技术:大数据与hadoop</h3>
                 
             </div>
             <hr/>
@@ -1227,19 +1358,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/article/1540240c">
+                <a href="/article/a0d51f41">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="经济学II">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="金融学基础">
                         
-                        <span class="card-title">经济学II</span>
+                        <span class="card-title">金融学基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            经济学II课程笔记
+                            金融学基础课程笔记
                         
                     </div>
                     <div class="publish-info">
@@ -1261,8 +1392,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6II/">
-                        <span class="chip bg-color">经济学II</span>
+                    <a href="/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">金融学基础</span>
                     </a>
                     
                 </div>
@@ -1502,7 +1633,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">27.9k</span>
+                        class="white-color">39.6k</span>
             
             
             
