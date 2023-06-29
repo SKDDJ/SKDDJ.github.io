@@ -8,12 +8,12 @@
       <link href="/article/b5c3f382.html"/>
       <url>/article/b5c3f382.html</url>
       
-        <content type="html"><![CDATA[<p align="center">   飞书 ×（GPT-3.5 + DALL·E + Whisper）<br><br>    🚀 Feishu OpenAI 🚀</p><h2 id="👻-机器人功能"><a href="#👻-机器人功能" class="headerlink" title="👻 机器人功能"></a>👻 机器人功能</h2><p>🗣 语音交流：私人直接与机器人畅所欲言</p><p>💬 多话题对话：支持私人和群聊多话题讨论，高效连贯</p><p>🖼 文本成图：支持文本成图和以图搜图</p><p>🛖 场景预设：内置丰富场景列表，一键切换AI角色</p><p>🎭 角色扮演：支持场景模式，增添讨论乐趣和创意</p><p>🔄 上下文保留：回复对话框即可继续同一话题讨论</p><p>⏰ 自动结束：超时自动结束对话，支持清除讨论历史</p><p>📝 富文本卡片：支持富文本卡片回复，信息更丰富多彩</p><p>👍 交互式反馈：即时获取机器人处理结果</p><p>🎰 余额查询：即时获取token消耗情况</p><h2 id="🌟-项目特点"><a href="#🌟-项目特点" class="headerlink" title="🌟 项目特点"></a>🌟 项目特点</h2><ul><li>🍏 对话基于 OpenAI-<a href="https://platform.openai.com/account/api-keys">gpt-3.5-turbo</a> 接口</li></ul><h2 id="🚩关于本项目"><a href="#🚩关于本项目" class="headerlink" title="🚩关于本项目"></a>🚩关于本项目</h2><p>欢迎了解👏<br><a href="https://github.com/Leizhenpeng/feishu-chatgpt/blob/master/readme.md">feishu-chatgpt</a></p>]]></content>
+        <content type="html"><![CDATA[<p align="center">   飞书 ×（GPT-3.5 + DALL·E + Whisper）<br><br>    🚀 Feishu OpenAI 🚀</p><h2 id="👻-机器人功能"><a href="#👻-机器人功能" class="headerlink" title="👻 机器人功能"></a>👻 机器人功能</h2><p>🗣 语音交流：私人直接与机器人畅所欲言</p><p>💬 多话题对话：支持私人和群聊多话题讨论，高效连贯</p><p>🖼 文本成图：支持文本成图和以图搜图</p><p>🛖 场景预设：内置丰富场景列表，一键切换AI角色</p><p>🎭 角色扮演：支持场景模式，增添讨论乐趣和创意</p><p>🔄 上下文保留：回复对话框即可继续同一话题讨论</p><p>⏰ 自动结束：超时自动结束对话，支持清除讨论历史</p><p>📝 富文本卡片：支持富文本卡片回复，信息更丰富多彩</p><p>👍 交互式反馈：即时获取机器人处理结果</p><h2 id="🚩关于本项目"><a href="#🚩关于本项目" class="headerlink" title="🚩关于本项目"></a>🚩关于本项目</h2><p><a href="https://github.com/Leizhenpeng/feishu-chatgpt/blob/master/readme.md">feishu-chatgpt</a></p>]]></content>
       
       
       <categories>
           
-          <category> 工程指南 </category>
+          <category> Engineering </category>
           
       </categories>
       
@@ -22,7 +22,9 @@
             
             <tag> 飞书机器人 </tag>
             
-            <tag> gpt二次开发 </tag>
+            <tag> GPT </tag>
+            
+            <tag> Engineering </tag>
             
             <tag> DevOps </tag>
             
@@ -42,14 +44,14 @@
       
       <categories>
           
-          <category> 技术分享 </category>
+          <category> Technology </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软技能 </tag>
+            <tag> softskills </tag>
             
             <tag> YouTuber </tag>
             
@@ -73,7 +75,7 @@
       
       <categories>
           
-          <category> 技术分享 </category>
+          <category> Engineering </category>
           
       </categories>
       
@@ -82,57 +84,9 @@
             
             <tag> Markdown </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>经济学II</title>
-      <link href="/article/1540240c.html"/>
-      <url>/article/1540240c.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="1-1-Chapter1-宏观经济学概述"><a href="#1-1-Chapter1-宏观经济学概述" class="headerlink" title="1.1. Chapter1 宏观经济学概述"></a>1.1. Chapter1 宏观经济学概述</h2><h3 id="1-1-1-宏观经济学的产生与发展概述"><a href="#1-1-1-宏观经济学的产生与发展概述" class="headerlink" title="1.1.1. 宏观经济学的产生与发展概述"></a>1.1.1. 宏观经济学的产生与发展概述</h3><h3 id="1-1-2-宏观经济学的基本概念"><a href="#1-1-2-宏观经济学的基本概念" class="headerlink" title="1.1.2. 宏观经济学的基本概念"></a>1.1.2. 宏观经济学的基本概念</h3><h3 id="1-1-3-国内生产总值及其核算方法"><a href="#1-1-3-国内生产总值及其核算方法" class="headerlink" title="1.1.3. 国内生产总值及其核算方法"></a>1.1.3. 国内生产总值及其核算方法</h3><p>GDP（Gross Demostic Production）<br>$Y &#x3D; C + I + NX + G$<br>GDP &#x3D; private consumption + gross private investment + government investment + government spending + (exports – imports).</p><h3 id="1-1-4-其他宏观经济指标"><a href="#1-1-4-其他宏观经济指标" class="headerlink" title="1.1.4. 其他宏观经济指标"></a>1.1.4. 其他宏观经济指标</h3><h4 id="Consumer-Price-Index"><a href="#Consumer-Price-Index" class="headerlink" title="Consumer Price Index"></a>Consumer Price Index</h4><p>This index can also be used to calculate the $inflation$:</p><p>$$<br>inflation\ rate\ in\ year2 &#x3D; \frac{CPI year2 - CPI year1}{CPI year1}\times 100<br>$$</p><p>which is constucted of a basket of goods and services.<br>problems:</p><ul><li>substitution bias</li><li>introduction of new goods</li><li>unmeasured quanlity change</li></ul><p>K:capital<br>L:labor</p><h4 id="The-production-function"><a href="#The-production-function" class="headerlink" title="The production function"></a>The production function</h4><p>$Y &#x3D; F(K,L)$</p><h4 id="AK模型"><a href="#AK模型" class="headerlink" title="AK模型"></a>AK模型</h4><p>Solow模型：<br>$Y &#x3D; Af(\frac{K}{L})$<br>or<br>$Y&#x3D;Af(k)$ :where k is tech fixed factor supplies and fixed tech.</p><p>Determing GDP:$Y&#x3D;F(\hat{K},\hat{L})$</p><h4 id="Constant-returns-to-scale"><a href="#Constant-returns-to-scale" class="headerlink" title="Constant returns to scale"></a>Constant returns to scale</h4><ul><li>decreasing returns to scale</li><li>increasing returns to scale<ul><li>if technology is fixed, then $K &#x3D; \hat{K},L &#x3D; \hat{L}$</li></ul></li></ul><h4 id="W-R-P"><a href="#W-R-P" class="headerlink" title="W R P"></a>W R P</h4><p>W: nominal wage<br>R: nominal rental rete<br>P: price of output<br>W&#x2F;P: real wage<br>R&#x2F;P: real rental rate</p><h4 id="Marginal-product-of-labor"><a href="#Marginal-product-of-labor" class="headerlink" title="Marginal product of labor"></a>Marginal product of labor</h4><p>$MPL &#x3D; F(K,L+1)-F(K,L)$</p><h4 id="Diminishing-marginal-returns"><a href="#Diminishing-marginal-returns" class="headerlink" title="Diminishing marginal returns"></a>Diminishing marginal returns</h4><p>while K is fixed and L is increasing</p><ul><li>fewer machines per worker</li><li>lower worker producting<br>cause marginal product decreasing</li></ul><blockquote><p>the firms should hire worker s.t. $MPL &#x3D; \frac{W}{P}$</p></blockquote><h4 id="diminishing-the-rental-rate"><a href="#diminishing-the-rental-rate" class="headerlink" title="diminishing the rental rate"></a>diminishing the rental rate</h4><p>Same logic: $MPK &#x3D; \frac{R}{P}$</p><h4 id="The-neoclassical-theory-of-distribution"><a href="#The-neoclassical-theory-of-distribution" class="headerlink" title="The neoclassical theory of distribution"></a>The neoclassical theory of distribution</h4><h2 id="1-2-Chapter2-商品市场"><a href="#1-2-Chapter2-商品市场" class="headerlink" title="1.2. Chapter2 商品市场"></a>1.2. Chapter2 商品市场</h2><h3 id="Types-of-Financial-institution-and-their-function"><a href="#Types-of-Financial-institution-and-their-function" class="headerlink" title="Types of Financial institution and their function"></a>Types of Financial institution and their function</h3><h4 id="Financial-Institution"><a href="#Financial-Institution" class="headerlink" title="Financial Institution"></a>Financial Institution</h4><ul><li>the Bond Market<ul><li>Term</li><li>Credit Risk:Probability of default</li></ul></li><li>the Stock Market</li><li>Financial immediaries<ul><li>bank</li><li>mutual funds</li></ul></li></ul><h3 id="1-2-1-消费"><a href="#1-2-1-消费" class="headerlink" title="1.2.1. 消费"></a>1.2.1. 消费</h3><h3 id="1-2-2-储蓄与投资"><a href="#1-2-2-储蓄与投资" class="headerlink" title="1.2.2. 储蓄与投资"></a>1.2.2. 储蓄与投资</h3><p>Saving V.S. Investment<br>Saving:</p><ul><li>buy stocks</li></ul><p>Investment:</p><ul><li>buying a house</li></ul><h4 id="Assumption"><a href="#Assumption" class="headerlink" title="Assumption"></a>Assumption</h4><p>As is known:</p><p>$$<br>Y &#x3D; C + I + G + NX<br>$$</p><p>Assumpting NX &#x3D; 0<br>then:</p><p>$$<br>Y-C-G &#x3D; I<br>$$</p><p>$$<br>(Y-T-C)+(T-G) &#x3D; I<br>$$</p><p>where T is Taxes<br>and $(Y-T-C)$ is private saving<br>$(T-G)$ is public saving<br>when $T-G &lt;0$ $\to$ Budget Deficit<br>when $T-G &gt; 0$ $\to$ Budget Supplies</p><h3 id="1-2-3-商品市场均衡"><a href="#1-2-3-商品市场均衡" class="headerlink" title="1.2.3. 商品市场均衡"></a>1.2.3. 商品市场均衡</h3><h4 id="How-the-financial-system-condinate-saving-amp-investment"><a href="#How-the-financial-system-condinate-saving-amp-investment" class="headerlink" title="How the financial system condinate saving &amp; investment?"></a>How the financial system condinate saving &amp; investment?</h4><h5 id="The-Market-for-Loanable-Funds"><a href="#The-Market-for-Loanable-Funds" class="headerlink" title="The Market for Loanable Funds"></a>The Market for Loanable Funds</h5><p>which y-axis is Interest rate and x-axis is Loanable Funds<br>Supply &#x3D; Saving<br>Demand &#x3D; Investment</p><h4 id="How-government-policies-affect-saving-investment-and-the-interest-rate"><a href="#How-government-policies-affect-saving-investment-and-the-interest-rate" class="headerlink" title="How government policies affect saving, investment and the interest rate?"></a>How government policies affect saving, investment and the interest rate?</h4><blockquote><p>by using Taxes</p></blockquote><ul><li>Saving incentive    (S moves to right)</li><li>Investment incentive   (D moves to right)</li><li>Government budget deficits or surpluses   (S moves to left or right)</li></ul><h2 id="1-3-Chapter3-货币市场"><a href="#1-3-Chapter3-货币市场" class="headerlink" title="1.3. Chapter3 货币市场"></a>1.3. Chapter3 货币市场</h2><h3 id="1-3-1-货币简介"><a href="#1-3-1-货币简介" class="headerlink" title="1.3.1. 货币简介"></a>1.3.1. 货币简介</h3><h3 id="1-3-2-现代金融系统和货币政策"><a href="#1-3-2-现代金融系统和货币政策" class="headerlink" title="1.3.2. 现代金融系统和货币政策"></a>1.3.2. 现代金融系统和货币政策</h3><h3 id="1-3-3-中央银行与货币政策"><a href="#1-3-3-中央银行与货币政策" class="headerlink" title="1.3.3. 中央银行与货币政策"></a>1.3.3. 中央银行与货币政策</h3><h3 id="1-3-4-货币数量论"><a href="#1-3-4-货币数量论" class="headerlink" title="1.3.4. 货币数量论"></a>1.3.4. 货币数量论</h3><h2 id="1-4-Chapter4-总需求与总供给"><a href="#1-4-Chapter4-总需求与总供给" class="headerlink" title="1.4. Chapter4 总需求与总供给"></a>1.4. Chapter4 总需求与总供给</h2><h3 id="1-4-1-IS-LM模型"><a href="#1-4-1-IS-LM模型" class="headerlink" title="1.4.1. IS-LM模型"></a>1.4.1. IS-LM模型</h3><h3 id="1-4-2-AD-AS模型"><a href="#1-4-2-AD-AS模型" class="headerlink" title="1.4.2. AD-AS模型"></a>1.4.2. AD-AS模型</h3><h3 id="1-4-3-财政政策和货币政策的影响"><a href="#1-4-3-财政政策和货币政策的影响" class="headerlink" title="1.4.3. 财政政策和货币政策的影响"></a>1.4.3. 财政政策和货币政策的影响</h3><h2 id="1-5-Chapter5-失业与通货膨胀"><a href="#1-5-Chapter5-失业与通货膨胀" class="headerlink" title="1.5. Chapter5 失业与通货膨胀"></a>1.5. Chapter5 失业与通货膨胀</h2><h3 id="1-5-1-失业"><a href="#1-5-1-失业" class="headerlink" title="1.5.1. 失业"></a>1.5.1. 失业</h3><h3 id="1-5-2-通货膨胀"><a href="#1-5-2-通货膨胀" class="headerlink" title="1.5.2. 通货膨胀"></a>1.5.2. 通货膨胀</h3><h3 id="1-5-3-失业与通货膨胀的关系"><a href="#1-5-3-失业与通货膨胀的关系" class="headerlink" title="1.5.3. 失业与通货膨胀的关系"></a>1.5.3. 失业与通货膨胀的关系</h3><h2 id="1-6-Chapter6-经济增长"><a href="#1-6-Chapter6-经济增长" class="headerlink" title="1.6. Chapter6 经济增长"></a>1.6. Chapter6 经济增长</h2><h3 id="1-6-1-经济增长概述"><a href="#1-6-1-经济增长概述" class="headerlink" title="1.6.1. 经济增长概述"></a>1.6.1. 经济增长概述</h3><h3 id="1-6-2-影响经济增长的公共政策"><a href="#1-6-2-影响经济增长的公共政策" class="headerlink" title="1.6.2. 影响经济增长的公共政策"></a>1.6.2. 影响经济增长的公共政策</h3><h3 id="1-6-3-中国的经济增长"><a href="#1-6-3-中国的经济增长" class="headerlink" title="1.6.3. 中国的经济增长"></a>1.6.3. 中国的经济增长</h3><h2 id="1-7-Chapter7-开放经济"><a href="#1-7-Chapter7-开放经济" class="headerlink" title="1.7. Chapter7 开放经济"></a>1.7. Chapter7 开放经济</h2><h3 id="1-7-1-开放经济的基本概念"><a href="#1-7-1-开放经济的基本概念" class="headerlink" title="1.7.1. 开放经济的基本概念"></a>1.7.1. 开放经济的基本概念</h3><h3 id="1-7-2-开放经济的基本理论及应用"><a href="#1-7-2-开放经济的基本理论及应用" class="headerlink" title="1.7.2. 开放经济的基本理论及应用"></a>1.7.2. 开放经济的基本理论及应用</h3>]]></content>
-      
-      
-      <categories>
-          
-          <category> 课程笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
+            <tag> LLM </tag>
             
-            <tag> 经济学II </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>量化交易与商业银行</title>
-      <link href="/article/488818ef.html"/>
-      <url>/article/488818ef.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="1-1-Chapter1-课程概述"><a href="#1-1-Chapter1-课程概述" class="headerlink" title="1.1. Chapter1 课程概述"></a>1.1. Chapter1 课程概述</h2><h3 id="1-1-1-课程简介"><a href="#1-1-1-课程简介" class="headerlink" title="1.1.1. 课程简介"></a>1.1.1. 课程简介</h3><ul><li>小组作业与汇报（4次）：60%</li><li>期货交易仿真（1次）：20%</li><li>期末设计报告（1次）：20%<ul><li>加分：讲义的修改</li></ul></li></ul><h3 id="1-1-2-量化交易简介"><a href="#1-1-2-量化交易简介" class="headerlink" title="1.1.2. 量化交易简介"></a>1.1.2. 量化交易简介</h3><blockquote><p>量化交易是指以数据为基础，以数量化手段为核心，利用计算机技术进行程序化交易的投资方式。这里的数量化手段，包括对整个交易流程和交易目标的数量刻画、数学模型的构建、对 量化目标的最优化、对策略结果的数量化评价等方式方法。</p></blockquote><p>量化交易的缺点和优点</p><h4 id="金融学逻辑"><a href="#金融学逻辑" class="headerlink" title="金融学逻辑"></a>金融学逻辑</h4><ul><li>有效市场假说<ul><li>人们会因为情绪和对信息的理解，导致时间上股价的内在价值的偏移，由于定价误差的存在，量化交易可以捕捉到投资的机会。</li></ul></li><li>行为经济学<ul><li>人们会对自己的行为过度自信，导致股价的变化并不是即时性的。</li></ul></li></ul><h3 id="1-1-3-商业银行简介"><a href="#1-1-3-商业银行简介" class="headerlink" title="1.1.3. 商业银行简介"></a>1.1.3. 商业银行简介</h3><h2 id="1-2-Chapter2-股票量化交易"><a href="#1-2-Chapter2-股票量化交易" class="headerlink" title="1.2. Chapter2 股票量化交易"></a>1.2. Chapter2 股票量化交易</h2><h3 id="1-2-1-选股逻辑与交易策略"><a href="#1-2-1-选股逻辑与交易策略" class="headerlink" title="1.2.1. 选股逻辑与交易策略"></a>1.2.1. 选股逻辑与交易策略</h3><ul><li>多因子模型<ul><li>套利定价理论为基础，买入满足因子条件的股票卖出不满足的（如市盈率因子）</li><li>多因子组合可以使用加权打分法和收益回归法</li></ul></li><li>套利类策略<ul><li>Call Option</li><li>Put Option</li></ul></li><li>统计套利(Statistical Arbitrage)<ul><li>Pairs Trading</li></ul></li><li>衍生品策略</li><li>事件驱动策略</li></ul><h3 id="1-2-2-因子分析"><a href="#1-2-2-因子分析" class="headerlink" title="1.2.2. 因子分析"></a>1.2.2. 因子分析</h3><p>There are a few different ways to determine factors in quantitative trading:</p><ul><li><strong>Backtesting.</strong> Backtesting involves running a historical simulation of a trading strategy to see how it would have performed in the past. This can help you to identify factors that were historically associated with success.</li><li><strong>Statistical analysis.</strong> Statistical analysis can be used to identify factors that are correlated with stock prices. This can help you to develop a model that can predict future stock prices.</li><li><strong>Expert opinion.</strong> You can also consult with experts in the field of quantitative trading to get their recommendations on factors.</li></ul><p>Once you have identified some potential factors, you need to test them to see if they are actually effective in predicting stock prices. This can be done by running a backtest or by using statistical analysis.</p><p>It is important to note that there is no one-size-fits-all answer to this question. The best way to determine factors will vary depending on your specific investment goals and objectives.</p><p>There are a few things you can do to determine your stock pool when using a multi-factor strategy:</p><ol><li><strong>Identify your factors.</strong> What factors do you want to use to select stocks? Some common factors include price momentum, value, and technical indicators.</li><li><strong>Rank your factors.</strong> Once you have identified your factors, you need to rank them in order of importance. This will help you to narrow down your stock pool.</li><li><strong>Screen for stocks.</strong> Once you have ranked your factors, you can screen for stocks that meet your criteria. This will help you to identify a smaller pool of stocks to further analyze.</li><li><strong>Analyze your stocks.</strong> Once you have screened for stocks, you need to analyze them further. This will help you to identify the best stocks to include in your portfolio.</li></ol><p>It is important to note that there is no one-size-fits-all answer to this question. The best way to determine your stock pool will vary depending on your specific investment goals and objectives.</p><p>Here are some additional tips for determining your stock pool:</p><ul><li><strong>Consider your risk tolerance.</strong> The stocks you choose should be consistent with your risk tolerance. If you are a conservative investor, you will want to choose stocks with a lower risk profile.</li><li><strong>Diversify your portfolio.</strong> It is important to diversify your portfolio to reduce risk. This means investing in a variety of different stocks from different sectors.</li><li><strong>Monitor your portfolio.</strong> Once you have chosen your stocks, you need to monitor your portfolio regularly. This will help you to identify any stocks that are no longer meeting your criteria and make changes as needed.</li></ul><blockquote><p>So isn’t this a contradiction? In quantitative trading, my stock selection needs to be determined by factors, but the determination of factors needs to be determined by the backtest data of the stock pool</p></blockquote><p>Not necessarily. You can use backtesting to identify factors that were historically associated with success, but you can also use other methods, such as expert opinion or statistical analysis. Ultimately, the decision of which factors to use is up to you.</p><p>Backtesting can be a helpful tool, but it is important to remember that it is not a perfect tool. There are a number of limitations to backtesting, such as the fact that it uses historical data and does not take into account current market conditions. However, backtesting can be a valuable tool for identifying potential problems with a trading strategy and for identifying factors that were historically associated with success.</p><p>If you are using backtesting to identify factors, it is important to use a variety of different data sets and to backtest your strategy over a long period of time. This will help you to get a more accurate picture of how your strategy would have performed in the past.</p><p>It is also important to remember that backtesting is just one tool that you can use to make investment decisions. You also need to consider your own risk tolerance, your investment goals, and your investment horizon. Ultimately, the decision of whether or not to use a particular trading strategy is up to you.</p><h3 id="1-2-3-交易策略的编程实现"><a href="#1-2-3-交易策略的编程实现" class="headerlink" title="1.2.3. 交易策略的编程实现"></a>1.2.3. 交易策略的编程实现</h3><p>聚宽量化交易平台</p><h2 id="1-3-Chapter3-期货量化交易"><a href="#1-3-Chapter3-期货量化交易" class="headerlink" title="1.3. Chapter3 期货量化交易"></a>1.3. Chapter3 期货量化交易</h2><h3 id="1-3-1-期货和期权的简介"><a href="#1-3-1-期货和期权的简介" class="headerlink" title="1.3.1. 期货和期权的简介"></a>1.3.1. 期货和期权的简介</h3><h3 id="1-3-2-期货量化交易"><a href="#1-3-2-期货量化交易" class="headerlink" title="1.3.2. 期货量化交易"></a>1.3.2. 期货量化交易</h3><h3 id="1-3-3-期货的基本面分析"><a href="#1-3-3-期货的基本面分析" class="headerlink" title="1.3.3. 期货的基本面分析"></a>1.3.3. 期货的基本面分析</h3><h2 id="1-4-Chapter4-商业银行经营与业务逻辑"><a href="#1-4-Chapter4-商业银行经营与业务逻辑" class="headerlink" title="1.4. Chapter4 商业银行经营与业务逻辑"></a>1.4. Chapter4 商业银行经营与业务逻辑</h2><h3 id="1-4-1-商业银行业务概述"><a href="#1-4-1-商业银行业务概述" class="headerlink" title="1.4.1. 商业银行业务概述"></a>1.4.1. 商业银行业务概述</h3><h3 id="1-4-2-商业银行的经营绩效评估"><a href="#1-4-2-商业银行的经营绩效评估" class="headerlink" title="1.4.2. 商业银行的经营绩效评估"></a>1.4.2. 商业银行的经营绩效评估</h3><h3 id="1-4-3-上市商业银行的财务报表分析"><a href="#1-4-3-上市商业银行的财务报表分析" class="headerlink" title="1.4.3. 上市商业银行的财务报表分析"></a>1.4.3. 上市商业银行的财务报表分析</h3><h2 id="1-5-Chapter5-个人信用风险评估与消费信贷产品设计"><a href="#1-5-Chapter5-个人信用风险评估与消费信贷产品设计" class="headerlink" title="1.5. Chapter5 个人信用风险评估与消费信贷产品设计"></a>1.5. Chapter5 个人信用风险评估与消费信贷产品设计</h2><h3 id="1-5-1-个人信用风险评估原理与方法"><a href="#1-5-1-个人信用风险评估原理与方法" class="headerlink" title="1.5.1. 个人信用风险评估原理与方法"></a>1.5.1. 个人信用风险评估原理与方法</h3><h3 id="1-5-2-个人信用分类训练模型"><a href="#1-5-2-个人信用分类训练模型" class="headerlink" title="1.5.2. 个人信用分类训练模型"></a>1.5.2. 个人信用分类训练模型</h3>]]></content>
-      
-      
-      <categories>
-          
-          <category> 课程笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 量化交易与商业银行 </tag>
-            
-            <tag> Python </tag>
+            <tag> Commercial </tag>
             
         </tags>
       
@@ -150,7 +104,7 @@
       
       <categories>
           
-          <category> 课程笔记 </category>
+          <category> Course </category>
           
       </categories>
       
@@ -166,23 +120,23 @@
     
     
     <entry>
-      <title>鲲鹏聚数:基于华为GaussDB数据库的应用与实践</title>
-      <link href="/article/8fe4ecaf.html"/>
-      <url>/article/8fe4ecaf.html</url>
+      <title>经济学II</title>
+      <link href="/article/1540240c.html"/>
+      <url>/article/1540240c.html</url>
       
-        <content type="html"><![CDATA[<h2 id="1-1-Chapter1-GaussDB数据库概述"><a href="#1-1-Chapter1-GaussDB数据库概述" class="headerlink" title="1.1. Chapter1 GaussDB数据库概述"></a>1.1. Chapter1 GaussDB数据库概述</h2><h3 id="1-1-1-数据库系统基本概念"><a href="#1-1-1-数据库系统基本概念" class="headerlink" title="1.1.1. 数据库系统基本概念"></a>1.1.1. 数据库系统基本概念</h3><blockquote><p>定义：数据库是长期存储在计算机内，有组织的，可共享的大量数据集合。（目前定义，新定义与云原生数据库有关）</p></blockquote><h4 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h4><ul><li>数据按一定的数据模型组织、描述、和存储</li><li>可为各种用户共享</li><li>冗余度较小</li><li>数据独立性高</li><li>易扩展</li></ul><p>关于数据独立性和逻辑独立性：<br>逻辑独立性通过 <strong>视图（view）</strong> 实现一个映射关系</p><h4 id="数据库管理系统（DBMS）"><a href="#数据库管理系统（DBMS）" class="headerlink" title="数据库管理系统（DBMS）"></a>数据库管理系统（DBMS）</h4><blockquote><p>定义：能够让用户定义、创建和维护数据库以及对数据库访问的软件系统。</p></blockquote><p>组成：查询处理器和存储处理器</p><h4 id="三层模式体系结构"><a href="#三层模式体系结构" class="headerlink" title="三层模式体系结构"></a>三层模式体系结构</h4><ul><li>内模式（internal schema）物理数据库<ul><li>Index 定义数据<ul><li>例如 （non）cluster index （非）聚集索引</li></ul></li></ul></li><li>概念模式（conceptual schema）概念数据库</li><li>外模式（external schema）<ul><li>是概念模式的子集</li><li>保证了数据库数据的安全，每个用户对数据的访问权限不同</li></ul></li></ul><h4 id="关系数据模型"><a href="#关系数据模型" class="headerlink" title="关系数据模型"></a>关系数据模型</h4><ul><li>关系模式<ul><li>关系必须是规范化的，满足第一范式（1NF），每一个分量必须是不可分的数据项，不能表中有表</li></ul></li></ul><p>可以用作唯一标识的属性可以当作 <code>候选建（Candidate key）</code>，DBA可以根据需要选一个当 <code>主键（Primary Key）</code><br><code>外键（Foreign Key）</code>：这个键在某个表中是主键，但是在另外一个表中不是主键，那么在非主键关系表中这个键叫做<strong>外键</strong></p><h4 id="关系完整性"><a href="#关系完整性" class="headerlink" title="关系完整性"></a>关系完整性</h4><p>三类完整性约束：</p><ul><li>实体完整性：主码不能取空值</li><li>参照完整性：<ul><li>取空</li><li>和主码一样的值</li></ul></li></ul><h3 id="1-1-2-鲲鹏生态体系"><a href="#1-1-2-鲲鹏生态体系" class="headerlink" title="1.1.2. 鲲鹏生态体系"></a>1.1.2. 鲲鹏生态体系</h3><h3 id="1-1-3-GaussDB数据库的发展历程及其特点"><a href="#1-1-3-GaussDB数据库的发展历程及其特点" class="headerlink" title="1.1.3. GaussDB数据库的发展历程及其特点"></a>1.1.3. GaussDB数据库的发展历程及其特点</h3><h3 id="1-1-4-GuassDB数据库的体系结构和主要功能"><a href="#1-1-4-GuassDB数据库的体系结构和主要功能" class="headerlink" title="1.1.4. GuassDB数据库的体系结构和主要功能"></a>1.1.4. GuassDB数据库的体系结构和主要功能</h3><h2 id="1-2-Chapter2-结构化查询语言SQL"><a href="#1-2-Chapter2-结构化查询语言SQL" class="headerlink" title="1.2. Chapter2 结构化查询语言SQL"></a>1.2. Chapter2 结构化查询语言SQL</h2><h3 id="1-2-1-SQL语言基础"><a href="#1-2-1-SQL语言基础" class="headerlink" title="1.2.1. SQL语言基础"></a>1.2.1. SQL语言基础</h3><p>核心功能只有九个指令：</p><ul><li>DDL: CREATE DROP ALTER</li><li>DML: SELECT INSERT UPDATE DELETE</li><li>DCL: GRANT REMOVE</li></ul><h3 id="1-2-2-数据库对象定义"><a href="#1-2-2-数据库对象定义" class="headerlink" title="1.2.2. 数据库对象定义"></a>1.2.2. 数据库对象定义</h3><h3 id="1-2-3-数据查询和数据修改SQL语句"><a href="#1-2-3-数据查询和数据修改SQL语句" class="headerlink" title="1.2.3. 数据查询和数据修改SQL语句"></a>1.2.3. 数据查询和数据修改SQL语句</h3><h4 id="数据查询"><a href="#数据查询" class="headerlink" title="数据查询"></a>数据查询</h4><ul><li>无条件查询</li><li>聚集查询</li><li>多表查询<ul><li>自然连接：相同属性列下面的值必须相等，最终返回的视图会删掉重复的列</li><li>等值连接：不会删除重复的列，会显示来自哪张表中的属性</li><li>自连接：可以比较不同表的不同列</li><li>非等值连接：比较关系是其他比较符号</li><li>嵌套查询：<code>SELECT</code>嵌套，理论上限为200个</li><li>联合查询：关键字 <code>UNION</code>，就是并运算</li></ul></li></ul><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token punctuation">[</span><span class="token keyword">ALL</span><span class="token operator">|</span><span class="token keyword">DISTINCT</span><span class="token punctuation">]</span><span class="token operator">&lt;</span>目标列表达式<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token operator">></span>目标列表达式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span><span class="token operator">&lt;</span>新表名<span class="token operator">></span><span class="token punctuation">]</span><span class="token keyword">FROM</span> <span class="token operator">&lt;</span>表名或视图名<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token operator">&lt;</span>表名或视图名<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token keyword">WHERE</span><span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">GROUP</span> <span class="token keyword">BY</span><span class="token operator">&lt;</span>列名<span class="token number">1</span><span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">HAVING</span><span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">ORDER</span> <span class="token keyword">BY</span><span class="token operator">&lt;</span>列名<span class="token number">2</span><span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">ASC</span><span class="token operator">|</span><span class="token keyword">DESC</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="数据增加"><a href="#数据增加" class="headerlink" title="数据增加"></a>数据增加</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> 表一 <span class="token punctuation">[</span><span class="token operator">&lt;</span>列<span class="token operator">></span><span class="token punctuation">]</span> VALUEE 表二<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="数据修改"><a href="#数据修改" class="headerlink" title="数据修改"></a>数据修改</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">UPDATE</span><span class="token operator">&lt;</span>基表名<span class="token operator">></span><span class="token keyword">SET</span> <span class="token operator">&lt;</span>列名<span class="token number">1</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token operator">&lt;</span>表达式<span class="token number">2</span><span class="token operator">></span><span class="token punctuation">[</span><span class="token keyword">WHERE</span> <span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>WITH CHECK OPTION是一个SQL语言中的约束条件，它用于限制向数据库中插入或更新数据的行为。</p></blockquote><blockquote><p>当使用WITH CHECK OPTION约束条件时，它可以确保插入或更新的行满足指定的WHERE子句。如果插入或更新的行不符合WHERE子句，则操作将被拒绝，并返回错误信息。</p></blockquote><h5 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> CLUSTER <span class="token keyword">INDEX</span> stusname <span class="token keyword">ON</span> Student<span class="token punctuation">(</span>Sname<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在建立好索引后，需要按照顺序在条件判断中使用索引：比如先建立索引A，然后B，就不能先判断B再判断A</p><h5 id="目标列表达式格式"><a href="#目标列表达式格式" class="headerlink" title="目标列表达式格式"></a>目标列表达式格式</h5><p><code> */表名.属性列/count(*)/属性列表达式</code><br>其中 <code>count(*)</code>自动去重，计算主码分量个数</p><h2 id="1-3-Chapter3-GaussDB的运行环境及安装"><a href="#1-3-Chapter3-GaussDB的运行环境及安装" class="headerlink" title="1.3. Chapter3 GaussDB的运行环境及安装"></a>1.3. Chapter3 GaussDB的运行环境及安装</h2><h3 id="1-3-1-GaussDB单机版运行环境搭建"><a href="#1-3-1-GaussDB单机版运行环境搭建" class="headerlink" title="1.3.1. GaussDB单机版运行环境搭建"></a>1.3.1. GaussDB单机版运行环境搭建</h3><p>见pdf文件<br>利用ssh终端连接软件</p><h3 id="1-3-2-数据库连接管理"><a href="#1-3-2-数据库连接管理" class="headerlink" title="1.3.2. 数据库连接管理"></a>1.3.2. 数据库连接管理</h3><p>TableSpace DataBase<br>一个表空间可以有多个数据库，数据库是逻辑概念<br>Segment</p><ul><li>表空间table space</li><li>模式scheme</li><li>用户user</li></ul><h3 id="1-3-3-数据库实例管理"><a href="#1-3-3-数据库实例管理" class="headerlink" title="1.3.3. 数据库实例管理"></a>1.3.3. 数据库实例管理</h3><h2 id="1-4-Chapter4-SQL基础实验"><a href="#1-4-Chapter4-SQL基础实验" class="headerlink" title="1.4. Chapter4 SQL基础实验"></a>1.4. Chapter4 SQL基础实验</h2><h3 id="1-4-1-在GaussDB数据库环境下执行SQL命令的方式"><a href="#1-4-1-在GaussDB数据库环境下执行SQL命令的方式" class="headerlink" title="1.4.1. 在GaussDB数据库环境下执行SQL命令的方式"></a>1.4.1. 在GaussDB数据库环境下执行SQL命令的方式</h3><h3 id="1-4-2-使用数据定义-数据查询以及数据操纵SQL命令完成数据库实验"><a href="#1-4-2-使用数据定义-数据查询以及数据操纵SQL命令完成数据库实验" class="headerlink" title="1.4.2. 使用数据定义,数据查询以及数据操纵SQL命令完成数据库实验"></a>1.4.2. 使用数据定义,数据查询以及数据操纵SQL命令完成数据库实验</h3><h2 id="1-5-Chapter5-数据库应用程序设计实验"><a href="#1-5-Chapter5-数据库应用程序设计实验" class="headerlink" title="1.5. Chapter5 数据库应用程序设计实验"></a>1.5. Chapter5 数据库应用程序设计实验</h2><h3 id="1-5-1-数据库应用程序设计的方式"><a href="#1-5-1-数据库应用程序设计的方式" class="headerlink" title="1.5.1. 数据库应用程序设计的方式"></a>1.5.1. 数据库应用程序设计的方式</h3><h3 id="1-5-2-SQL语言嵌入到高级程序语言中访问和操纵数据库的方法"><a href="#1-5-2-SQL语言嵌入到高级程序语言中访问和操纵数据库的方法" class="headerlink" title="1.5.2. SQL语言嵌入到高级程序语言中访问和操纵数据库的方法"></a>1.5.2. SQL语言嵌入到高级程序语言中访问和操纵数据库的方法</h3><h3 id="1-5-3-高级语言访问GaussDB数据库的接口"><a href="#1-5-3-高级语言访问GaussDB数据库的接口" class="headerlink" title="1.5.3. 高级语言访问GaussDB数据库的接口"></a>1.5.3. 高级语言访问GaussDB数据库的接口</h3>]]></content>
+        <content type="html"><![CDATA[<h2 id="1-1-Chapter1-宏观经济学概述"><a href="#1-1-Chapter1-宏观经济学概述" class="headerlink" title="1.1. Chapter1 宏观经济学概述"></a>1.1. Chapter1 宏观经济学概述</h2><h3 id="1-1-1-宏观经济学的产生与发展概述"><a href="#1-1-1-宏观经济学的产生与发展概述" class="headerlink" title="1.1.1. 宏观经济学的产生与发展概述"></a>1.1.1. 宏观经济学的产生与发展概述</h3><h3 id="1-1-2-宏观经济学的基本概念"><a href="#1-1-2-宏观经济学的基本概念" class="headerlink" title="1.1.2. 宏观经济学的基本概念"></a>1.1.2. 宏观经济学的基本概念</h3><h3 id="1-1-3-国内生产总值及其核算方法"><a href="#1-1-3-国内生产总值及其核算方法" class="headerlink" title="1.1.3. 国内生产总值及其核算方法"></a>1.1.3. 国内生产总值及其核算方法</h3><p>GDP（Gross Demostic Production）<br>$Y &#x3D; C + I + NX + G$<br>GDP &#x3D; private consumption + gross private investment + government investment + government spending + (exports – imports).</p><h3 id="1-1-4-其他宏观经济指标"><a href="#1-1-4-其他宏观经济指标" class="headerlink" title="1.1.4. 其他宏观经济指标"></a>1.1.4. 其他宏观经济指标</h3><h4 id="Consumer-Price-Index"><a href="#Consumer-Price-Index" class="headerlink" title="Consumer Price Index"></a>Consumer Price Index</h4><p>This index can also be used to calculate the $inflation$:</p><p>$$<br>inflation\ rate\ in\ year2 &#x3D; \frac{CPI year2 - CPI year1}{CPI year1}\times 100<br>$$</p><p>which is constucted of a basket of goods and services.<br>problems:</p><ul><li>substitution bias</li><li>introduction of new goods</li><li>unmeasured quanlity change</li></ul><p>K:capital<br>L:labor</p><h4 id="The-production-function"><a href="#The-production-function" class="headerlink" title="The production function"></a>The production function</h4><p>$Y &#x3D; F(K,L)$</p><h4 id="AK模型"><a href="#AK模型" class="headerlink" title="AK模型"></a>AK模型</h4><p>Solow模型：<br>$Y &#x3D; Af(\frac{K}{L})$<br>or<br>$Y&#x3D;Af(k)$ :where k is tech fixed factor supplies and fixed tech.</p><p>Determing GDP:$Y&#x3D;F(\hat{K},\hat{L})$</p><h4 id="Constant-returns-to-scale"><a href="#Constant-returns-to-scale" class="headerlink" title="Constant returns to scale"></a>Constant returns to scale</h4><ul><li>decreasing returns to scale</li><li>increasing returns to scale<ul><li>if technology is fixed, then $K &#x3D; \hat{K},L &#x3D; \hat{L}$</li></ul></li></ul><h4 id="W-R-P"><a href="#W-R-P" class="headerlink" title="W R P"></a>W R P</h4><p>W: nominal wage<br>R: nominal rental rete<br>P: price of output<br>W&#x2F;P: real wage<br>R&#x2F;P: real rental rate</p><h4 id="Marginal-product-of-labor"><a href="#Marginal-product-of-labor" class="headerlink" title="Marginal product of labor"></a>Marginal product of labor</h4><p>$MPL &#x3D; F(K,L+1)-F(K,L)$</p><h4 id="Diminishing-marginal-returns"><a href="#Diminishing-marginal-returns" class="headerlink" title="Diminishing marginal returns"></a>Diminishing marginal returns</h4><p>while K is fixed and L is increasing</p><ul><li>fewer machines per worker</li><li>lower worker producting<br>cause marginal product decreasing</li></ul><blockquote><p>the firms should hire worker s.t. $MPL &#x3D; \frac{W}{P}$</p></blockquote><h4 id="diminishing-the-rental-rate"><a href="#diminishing-the-rental-rate" class="headerlink" title="diminishing the rental rate"></a>diminishing the rental rate</h4><p>Same logic: $MPK &#x3D; \frac{R}{P}$</p><h4 id="The-neoclassical-theory-of-distribution"><a href="#The-neoclassical-theory-of-distribution" class="headerlink" title="The neoclassical theory of distribution"></a>The neoclassical theory of distribution</h4><h2 id="1-2-Chapter2-商品市场"><a href="#1-2-Chapter2-商品市场" class="headerlink" title="1.2. Chapter2 商品市场"></a>1.2. Chapter2 商品市场</h2><h3 id="Types-of-Financial-institution-and-their-function"><a href="#Types-of-Financial-institution-and-their-function" class="headerlink" title="Types of Financial institution and their function"></a>Types of Financial institution and their function</h3><h4 id="Financial-Institution"><a href="#Financial-Institution" class="headerlink" title="Financial Institution"></a>Financial Institution</h4><ul><li>the Bond Market<ul><li>Term</li><li>Credit Risk:Probability of default</li></ul></li><li>the Stock Market</li><li>Financial immediaries<ul><li>bank</li><li>mutual funds</li></ul></li></ul><h3 id="1-2-1-消费"><a href="#1-2-1-消费" class="headerlink" title="1.2.1. 消费"></a>1.2.1. 消费</h3><h3 id="1-2-2-储蓄与投资"><a href="#1-2-2-储蓄与投资" class="headerlink" title="1.2.2. 储蓄与投资"></a>1.2.2. 储蓄与投资</h3><p>Saving V.S. Investment<br>Saving:</p><ul><li>buy stocks</li></ul><p>Investment:</p><ul><li>buying a house</li></ul><h4 id="Assumption"><a href="#Assumption" class="headerlink" title="Assumption"></a>Assumption</h4><p>As is known:</p><p>$$<br>Y &#x3D; C + I + G + NX<br>$$</p><p>Assumpting NX &#x3D; 0<br>then:</p><p>$$<br>Y-C-G &#x3D; I<br>$$</p><p>$$<br>(Y-T-C)+(T-G) &#x3D; I<br>$$</p><p>where T is Taxes<br>and $(Y-T-C)$ is private saving<br>$(T-G)$ is public saving<br>when $T-G &lt;0$ $\to$ Budget Deficit<br>when $T-G &gt; 0$ $\to$ Budget Supplies</p><h3 id="1-2-3-商品市场均衡"><a href="#1-2-3-商品市场均衡" class="headerlink" title="1.2.3. 商品市场均衡"></a>1.2.3. 商品市场均衡</h3><h4 id="How-the-financial-system-condinate-saving-amp-investment"><a href="#How-the-financial-system-condinate-saving-amp-investment" class="headerlink" title="How the financial system condinate saving &amp; investment?"></a>How the financial system condinate saving &amp; investment?</h4><h5 id="The-Market-for-Loanable-Funds"><a href="#The-Market-for-Loanable-Funds" class="headerlink" title="The Market for Loanable Funds"></a>The Market for Loanable Funds</h5><p>which y-axis is Interest rate and x-axis is Loanable Funds<br>Supply &#x3D; Saving<br>Demand &#x3D; Investment</p><h4 id="How-government-policies-affect-saving-investment-and-the-interest-rate"><a href="#How-government-policies-affect-saving-investment-and-the-interest-rate" class="headerlink" title="How government policies affect saving, investment and the interest rate?"></a>How government policies affect saving, investment and the interest rate?</h4><blockquote><p>by using Taxes</p></blockquote><ul><li>Saving incentive    (S moves to right)</li><li>Investment incentive   (D moves to right)</li><li>Government budget deficits or surpluses   (S moves to left or right)</li></ul><h2 id="1-3-Chapter3-货币市场"><a href="#1-3-Chapter3-货币市场" class="headerlink" title="1.3. Chapter3 货币市场"></a>1.3. Chapter3 货币市场</h2><h3 id="1-3-1-货币简介"><a href="#1-3-1-货币简介" class="headerlink" title="1.3.1. 货币简介"></a>1.3.1. 货币简介</h3><h3 id="1-3-2-现代金融系统和货币政策"><a href="#1-3-2-现代金融系统和货币政策" class="headerlink" title="1.3.2. 现代金融系统和货币政策"></a>1.3.2. 现代金融系统和货币政策</h3><h3 id="1-3-3-中央银行与货币政策"><a href="#1-3-3-中央银行与货币政策" class="headerlink" title="1.3.3. 中央银行与货币政策"></a>1.3.3. 中央银行与货币政策</h3><h3 id="1-3-4-货币数量论"><a href="#1-3-4-货币数量论" class="headerlink" title="1.3.4. 货币数量论"></a>1.3.4. 货币数量论</h3><h2 id="1-4-Chapter4-总需求与总供给"><a href="#1-4-Chapter4-总需求与总供给" class="headerlink" title="1.4. Chapter4 总需求与总供给"></a>1.4. Chapter4 总需求与总供给</h2><h3 id="1-4-1-IS-LM模型"><a href="#1-4-1-IS-LM模型" class="headerlink" title="1.4.1. IS-LM模型"></a>1.4.1. IS-LM模型</h3><h3 id="1-4-2-AD-AS模型"><a href="#1-4-2-AD-AS模型" class="headerlink" title="1.4.2. AD-AS模型"></a>1.4.2. AD-AS模型</h3><h3 id="1-4-3-财政政策和货币政策的影响"><a href="#1-4-3-财政政策和货币政策的影响" class="headerlink" title="1.4.3. 财政政策和货币政策的影响"></a>1.4.3. 财政政策和货币政策的影响</h3><h2 id="1-5-Chapter5-失业与通货膨胀"><a href="#1-5-Chapter5-失业与通货膨胀" class="headerlink" title="1.5. Chapter5 失业与通货膨胀"></a>1.5. Chapter5 失业与通货膨胀</h2><h3 id="1-5-1-失业"><a href="#1-5-1-失业" class="headerlink" title="1.5.1. 失业"></a>1.5.1. 失业</h3><h3 id="1-5-2-通货膨胀"><a href="#1-5-2-通货膨胀" class="headerlink" title="1.5.2. 通货膨胀"></a>1.5.2. 通货膨胀</h3><h3 id="1-5-3-失业与通货膨胀的关系"><a href="#1-5-3-失业与通货膨胀的关系" class="headerlink" title="1.5.3. 失业与通货膨胀的关系"></a>1.5.3. 失业与通货膨胀的关系</h3><h2 id="1-6-Chapter6-经济增长"><a href="#1-6-Chapter6-经济增长" class="headerlink" title="1.6. Chapter6 经济增长"></a>1.6. Chapter6 经济增长</h2><h3 id="1-6-1-经济增长概述"><a href="#1-6-1-经济增长概述" class="headerlink" title="1.6.1. 经济增长概述"></a>1.6.1. 经济增长概述</h3><h3 id="1-6-2-影响经济增长的公共政策"><a href="#1-6-2-影响经济增长的公共政策" class="headerlink" title="1.6.2. 影响经济增长的公共政策"></a>1.6.2. 影响经济增长的公共政策</h3><h3 id="1-6-3-中国的经济增长"><a href="#1-6-3-中国的经济增长" class="headerlink" title="1.6.3. 中国的经济增长"></a>1.6.3. 中国的经济增长</h3><h2 id="1-7-Chapter7-开放经济"><a href="#1-7-Chapter7-开放经济" class="headerlink" title="1.7. Chapter7 开放经济"></a>1.7. Chapter7 开放经济</h2><h3 id="1-7-1-开放经济的基本概念"><a href="#1-7-1-开放经济的基本概念" class="headerlink" title="1.7.1. 开放经济的基本概念"></a>1.7.1. 开放经济的基本概念</h3><h3 id="1-7-2-开放经济的基本理论及应用"><a href="#1-7-2-开放经济的基本理论及应用" class="headerlink" title="1.7.2. 开放经济的基本理论及应用"></a>1.7.2. 开放经济的基本理论及应用</h3>]]></content>
       
       
       <categories>
           
-          <category> 课程笔记 </category>
+          <category> Course </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> GaussDB数据库 </tag>
+            <tag> 经济学II </tag>
             
         </tags>
       
@@ -200,7 +154,7 @@
       
       <categories>
           
-          <category> 课程笔记 </category>
+          <category> Course </category>
           
       </categories>
       
@@ -209,7 +163,59 @@
             
             <tag> 软件技术基础 </tag>
             
-            <tag> Java </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>量化交易与商业银行</title>
+      <link href="/article/488818ef.html"/>
+      <url>/article/488818ef.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-1-Chapter1-课程概述"><a href="#1-1-Chapter1-课程概述" class="headerlink" title="1.1. Chapter1 课程概述"></a>1.1. Chapter1 课程概述</h2><h3 id="1-1-1-课程简介"><a href="#1-1-1-课程简介" class="headerlink" title="1.1.1. 课程简介"></a>1.1.1. 课程简介</h3><ul><li>小组作业与汇报（4次）：60%</li><li>期货交易仿真（1次）：20%</li><li>期末设计报告（1次）：20%<ul><li>加分：讲义的修改</li></ul></li></ul><h3 id="1-1-2-量化交易简介"><a href="#1-1-2-量化交易简介" class="headerlink" title="1.1.2. 量化交易简介"></a>1.1.2. 量化交易简介</h3><blockquote><p>量化交易是指以数据为基础，以数量化手段为核心，利用计算机技术进行程序化交易的投资方式。这里的数量化手段，包括对整个交易流程和交易目标的数量刻画、数学模型的构建、对 量化目标的最优化、对策略结果的数量化评价等方式方法。</p></blockquote><p>量化交易的缺点和优点</p><h4 id="金融学逻辑"><a href="#金融学逻辑" class="headerlink" title="金融学逻辑"></a>金融学逻辑</h4><ul><li>有效市场假说<ul><li>人们会因为情绪和对信息的理解，导致时间上股价的内在价值的偏移，由于定价误差的存在，量化交易可以捕捉到投资的机会。</li></ul></li><li>行为经济学<ul><li>人们会对自己的行为过度自信，导致股价的变化并不是即时性的。</li></ul></li></ul><h3 id="1-1-3-商业银行简介"><a href="#1-1-3-商业银行简介" class="headerlink" title="1.1.3. 商业银行简介"></a>1.1.3. 商业银行简介</h3><h2 id="1-2-Chapter2-股票量化交易"><a href="#1-2-Chapter2-股票量化交易" class="headerlink" title="1.2. Chapter2 股票量化交易"></a>1.2. Chapter2 股票量化交易</h2><h3 id="1-2-1-选股逻辑与交易策略"><a href="#1-2-1-选股逻辑与交易策略" class="headerlink" title="1.2.1. 选股逻辑与交易策略"></a>1.2.1. 选股逻辑与交易策略</h3><ul><li>多因子模型<ul><li>套利定价理论为基础，买入满足因子条件的股票卖出不满足的（如市盈率因子）</li><li>多因子组合可以使用加权打分法和收益回归法</li></ul></li><li>套利类策略<ul><li>Call Option</li><li>Put Option</li></ul></li><li>统计套利(Statistical Arbitrage)<ul><li>Pairs Trading</li></ul></li><li>衍生品策略</li><li>事件驱动策略</li></ul><h3 id="1-2-2-因子分析"><a href="#1-2-2-因子分析" class="headerlink" title="1.2.2. 因子分析"></a>1.2.2. 因子分析</h3><p>There are a few different ways to determine factors in quantitative trading:</p><ul><li><strong>Backtesting.</strong> Backtesting involves running a historical simulation of a trading strategy to see how it would have performed in the past. This can help you to identify factors that were historically associated with success.</li><li><strong>Statistical analysis.</strong> Statistical analysis can be used to identify factors that are correlated with stock prices. This can help you to develop a model that can predict future stock prices.</li><li><strong>Expert opinion.</strong> You can also consult with experts in the field of quantitative trading to get their recommendations on factors.</li></ul><p>Once you have identified some potential factors, you need to test them to see if they are actually effective in predicting stock prices. This can be done by running a backtest or by using statistical analysis.</p><p>It is important to note that there is no one-size-fits-all answer to this question. The best way to determine factors will vary depending on your specific investment goals and objectives.</p><p>There are a few things you can do to determine your stock pool when using a multi-factor strategy:</p><ol><li><strong>Identify your factors.</strong> What factors do you want to use to select stocks? Some common factors include price momentum, value, and technical indicators.</li><li><strong>Rank your factors.</strong> Once you have identified your factors, you need to rank them in order of importance. This will help you to narrow down your stock pool.</li><li><strong>Screen for stocks.</strong> Once you have ranked your factors, you can screen for stocks that meet your criteria. This will help you to identify a smaller pool of stocks to further analyze.</li><li><strong>Analyze your stocks.</strong> Once you have screened for stocks, you need to analyze them further. This will help you to identify the best stocks to include in your portfolio.</li></ol><p>It is important to note that there is no one-size-fits-all answer to this question. The best way to determine your stock pool will vary depending on your specific investment goals and objectives.</p><p>Here are some additional tips for determining your stock pool:</p><ul><li><strong>Consider your risk tolerance.</strong> The stocks you choose should be consistent with your risk tolerance. If you are a conservative investor, you will want to choose stocks with a lower risk profile.</li><li><strong>Diversify your portfolio.</strong> It is important to diversify your portfolio to reduce risk. This means investing in a variety of different stocks from different sectors.</li><li><strong>Monitor your portfolio.</strong> Once you have chosen your stocks, you need to monitor your portfolio regularly. This will help you to identify any stocks that are no longer meeting your criteria and make changes as needed.</li></ul><blockquote><p>So isn’t this a contradiction? In quantitative trading, my stock selection needs to be determined by factors, but the determination of factors needs to be determined by the backtest data of the stock pool</p></blockquote><p>Not necessarily. You can use backtesting to identify factors that were historically associated with success, but you can also use other methods, such as expert opinion or statistical analysis. Ultimately, the decision of which factors to use is up to you.</p><p>Backtesting can be a helpful tool, but it is important to remember that it is not a perfect tool. There are a number of limitations to backtesting, such as the fact that it uses historical data and does not take into account current market conditions. However, backtesting can be a valuable tool for identifying potential problems with a trading strategy and for identifying factors that were historically associated with success.</p><p>If you are using backtesting to identify factors, it is important to use a variety of different data sets and to backtest your strategy over a long period of time. This will help you to get a more accurate picture of how your strategy would have performed in the past.</p><p>It is also important to remember that backtesting is just one tool that you can use to make investment decisions. You also need to consider your own risk tolerance, your investment goals, and your investment horizon. Ultimately, the decision of whether or not to use a particular trading strategy is up to you.</p><h3 id="1-2-3-交易策略的编程实现"><a href="#1-2-3-交易策略的编程实现" class="headerlink" title="1.2.3. 交易策略的编程实现"></a>1.2.3. 交易策略的编程实现</h3><p>聚宽量化交易平台</p><h2 id="1-3-Chapter3-期货量化交易"><a href="#1-3-Chapter3-期货量化交易" class="headerlink" title="1.3. Chapter3 期货量化交易"></a>1.3. Chapter3 期货量化交易</h2><h3 id="1-3-1-期货和期权的简介"><a href="#1-3-1-期货和期权的简介" class="headerlink" title="1.3.1. 期货和期权的简介"></a>1.3.1. 期货和期权的简介</h3><h3 id="1-3-2-期货量化交易"><a href="#1-3-2-期货量化交易" class="headerlink" title="1.3.2. 期货量化交易"></a>1.3.2. 期货量化交易</h3><h3 id="1-3-3-期货的基本面分析"><a href="#1-3-3-期货的基本面分析" class="headerlink" title="1.3.3. 期货的基本面分析"></a>1.3.3. 期货的基本面分析</h3><h2 id="1-4-Chapter4-商业银行经营与业务逻辑"><a href="#1-4-Chapter4-商业银行经营与业务逻辑" class="headerlink" title="1.4. Chapter4 商业银行经营与业务逻辑"></a>1.4. Chapter4 商业银行经营与业务逻辑</h2><h3 id="1-4-1-商业银行业务概述"><a href="#1-4-1-商业银行业务概述" class="headerlink" title="1.4.1. 商业银行业务概述"></a>1.4.1. 商业银行业务概述</h3><h3 id="1-4-2-商业银行的经营绩效评估"><a href="#1-4-2-商业银行的经营绩效评估" class="headerlink" title="1.4.2. 商业银行的经营绩效评估"></a>1.4.2. 商业银行的经营绩效评估</h3><h3 id="1-4-3-上市商业银行的财务报表分析"><a href="#1-4-3-上市商业银行的财务报表分析" class="headerlink" title="1.4.3. 上市商业银行的财务报表分析"></a>1.4.3. 上市商业银行的财务报表分析</h3><h2 id="1-5-Chapter5-个人信用风险评估与消费信贷产品设计"><a href="#1-5-Chapter5-个人信用风险评估与消费信贷产品设计" class="headerlink" title="1.5. Chapter5 个人信用风险评估与消费信贷产品设计"></a>1.5. Chapter5 个人信用风险评估与消费信贷产品设计</h2><h3 id="1-5-1-个人信用风险评估原理与方法"><a href="#1-5-1-个人信用风险评估原理与方法" class="headerlink" title="1.5.1. 个人信用风险评估原理与方法"></a>1.5.1. 个人信用风险评估原理与方法</h3><h3 id="1-5-2-个人信用分类训练模型"><a href="#1-5-2-个人信用分类训练模型" class="headerlink" title="1.5.2. 个人信用分类训练模型"></a>1.5.2. 个人信用分类训练模型</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Course </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 量化交易与商业银行 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>鲲鹏聚数:基于华为GaussDB数据库的应用与实践</title>
+      <link href="/article/8fe4ecaf.html"/>
+      <url>/article/8fe4ecaf.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-1-Chapter1-GaussDB数据库概述"><a href="#1-1-Chapter1-GaussDB数据库概述" class="headerlink" title="1.1. Chapter1 GaussDB数据库概述"></a>1.1. Chapter1 GaussDB数据库概述</h2><h3 id="1-1-1-数据库系统基本概念"><a href="#1-1-1-数据库系统基本概念" class="headerlink" title="1.1.1. 数据库系统基本概念"></a>1.1.1. 数据库系统基本概念</h3><blockquote><p>定义：数据库是长期存储在计算机内，有组织的，可共享的大量数据集合。（目前定义，新定义与云原生数据库有关）</p></blockquote><h4 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h4><ul><li>数据按一定的数据模型组织、描述、和存储</li><li>可为各种用户共享</li><li>冗余度较小</li><li>数据独立性高</li><li>易扩展</li></ul><p>关于数据独立性和逻辑独立性：<br>逻辑独立性通过 <strong>视图（view）</strong> 实现一个映射关系</p><h4 id="数据库管理系统（DBMS）"><a href="#数据库管理系统（DBMS）" class="headerlink" title="数据库管理系统（DBMS）"></a>数据库管理系统（DBMS）</h4><blockquote><p>定义：能够让用户定义、创建和维护数据库以及对数据库访问的软件系统。</p></blockquote><p>组成：查询处理器和存储处理器</p><h4 id="三层模式体系结构"><a href="#三层模式体系结构" class="headerlink" title="三层模式体系结构"></a>三层模式体系结构</h4><ul><li>内模式（internal schema）物理数据库<ul><li>Index 定义数据<ul><li>例如 （non）cluster index （非）聚集索引</li></ul></li></ul></li><li>概念模式（conceptual schema）概念数据库</li><li>外模式（external schema）<ul><li>是概念模式的子集</li><li>保证了数据库数据的安全，每个用户对数据的访问权限不同</li></ul></li></ul><h4 id="关系数据模型"><a href="#关系数据模型" class="headerlink" title="关系数据模型"></a>关系数据模型</h4><ul><li>关系模式<ul><li>关系必须是规范化的，满足第一范式（1NF），每一个分量必须是不可分的数据项，不能表中有表</li></ul></li></ul><p>可以用作唯一标识的属性可以当作 <code>候选建（Candidate key）</code>，DBA可以根据需要选一个当 <code>主键（Primary Key）</code><br><code>外键（Foreign Key）</code>：这个键在某个表中是主键，但是在另外一个表中不是主键，那么在非主键关系表中这个键叫做<strong>外键</strong></p><h4 id="关系完整性"><a href="#关系完整性" class="headerlink" title="关系完整性"></a>关系完整性</h4><p>三类完整性约束：</p><ul><li>实体完整性：主码不能取空值</li><li>参照完整性：<ul><li>取空</li><li>和主码一样的值</li></ul></li></ul><h3 id="1-1-2-鲲鹏生态体系"><a href="#1-1-2-鲲鹏生态体系" class="headerlink" title="1.1.2. 鲲鹏生态体系"></a>1.1.2. 鲲鹏生态体系</h3><h3 id="1-1-3-GaussDB数据库的发展历程及其特点"><a href="#1-1-3-GaussDB数据库的发展历程及其特点" class="headerlink" title="1.1.3. GaussDB数据库的发展历程及其特点"></a>1.1.3. GaussDB数据库的发展历程及其特点</h3><h3 id="1-1-4-GuassDB数据库的体系结构和主要功能"><a href="#1-1-4-GuassDB数据库的体系结构和主要功能" class="headerlink" title="1.1.4. GuassDB数据库的体系结构和主要功能"></a>1.1.4. GuassDB数据库的体系结构和主要功能</h3><h2 id="1-2-Chapter2-结构化查询语言SQL"><a href="#1-2-Chapter2-结构化查询语言SQL" class="headerlink" title="1.2. Chapter2 结构化查询语言SQL"></a>1.2. Chapter2 结构化查询语言SQL</h2><h3 id="1-2-1-SQL语言基础"><a href="#1-2-1-SQL语言基础" class="headerlink" title="1.2.1. SQL语言基础"></a>1.2.1. SQL语言基础</h3><p>核心功能只有九个指令：</p><ul><li>DDL: CREATE DROP ALTER</li><li>DML: SELECT INSERT UPDATE DELETE</li><li>DCL: GRANT REMOVE</li></ul><h3 id="1-2-2-数据库对象定义"><a href="#1-2-2-数据库对象定义" class="headerlink" title="1.2.2. 数据库对象定义"></a>1.2.2. 数据库对象定义</h3><h3 id="1-2-3-数据查询和数据修改SQL语句"><a href="#1-2-3-数据查询和数据修改SQL语句" class="headerlink" title="1.2.3. 数据查询和数据修改SQL语句"></a>1.2.3. 数据查询和数据修改SQL语句</h3><h4 id="数据查询"><a href="#数据查询" class="headerlink" title="数据查询"></a>数据查询</h4><ul><li>无条件查询</li><li>聚集查询</li><li>多表查询<ul><li>自然连接：相同属性列下面的值必须相等，最终返回的视图会删掉重复的列</li><li>等值连接：不会删除重复的列，会显示来自哪张表中的属性</li><li>自连接：可以比较不同表的不同列</li><li>非等值连接：比较关系是其他比较符号</li><li>嵌套查询：<code>SELECT</code>嵌套，理论上限为200个</li><li>联合查询：关键字 <code>UNION</code>，就是并运算</li></ul></li></ul><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token punctuation">[</span><span class="token keyword">ALL</span><span class="token operator">|</span><span class="token keyword">DISTINCT</span><span class="token punctuation">]</span><span class="token operator">&lt;</span>目标列表达式<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token operator">></span>目标列表达式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span><span class="token operator">&lt;</span>新表名<span class="token operator">></span><span class="token punctuation">]</span><span class="token keyword">FROM</span> <span class="token operator">&lt;</span>表名或视图名<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token operator">&lt;</span>表名或视图名<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token keyword">WHERE</span><span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">GROUP</span> <span class="token keyword">BY</span><span class="token operator">&lt;</span>列名<span class="token number">1</span><span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">HAVING</span><span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">ORDER</span> <span class="token keyword">BY</span><span class="token operator">&lt;</span>列名<span class="token number">2</span><span class="token operator">></span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">ASC</span><span class="token operator">|</span><span class="token keyword">DESC</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="数据增加"><a href="#数据增加" class="headerlink" title="数据增加"></a>数据增加</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> 表一 <span class="token punctuation">[</span><span class="token operator">&lt;</span>列<span class="token operator">></span><span class="token punctuation">]</span> VALUEE 表二<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="数据修改"><a href="#数据修改" class="headerlink" title="数据修改"></a>数据修改</h4><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">UPDATE</span><span class="token operator">&lt;</span>基表名<span class="token operator">></span><span class="token keyword">SET</span> <span class="token operator">&lt;</span>列名<span class="token number">1</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token operator">&lt;</span>表达式<span class="token number">2</span><span class="token operator">></span><span class="token punctuation">[</span><span class="token keyword">WHERE</span> <span class="token operator">&lt;</span>条件表达式<span class="token operator">></span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>WITH CHECK OPTION是一个SQL语言中的约束条件，它用于限制向数据库中插入或更新数据的行为。</p></blockquote><blockquote><p>当使用WITH CHECK OPTION约束条件时，它可以确保插入或更新的行满足指定的WHERE子句。如果插入或更新的行不符合WHERE子句，则操作将被拒绝，并返回错误信息。</p></blockquote><h5 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h5><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">CREATE</span> CLUSTER <span class="token keyword">INDEX</span> stusname <span class="token keyword">ON</span> Student<span class="token punctuation">(</span>Sname<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在建立好索引后，需要按照顺序在条件判断中使用索引：比如先建立索引A，然后B，就不能先判断B再判断A</p><h5 id="目标列表达式格式"><a href="#目标列表达式格式" class="headerlink" title="目标列表达式格式"></a>目标列表达式格式</h5><p><code> */表名.属性列/count(*)/属性列表达式</code><br>其中 <code>count(*)</code>自动去重，计算主码分量个数</p><h2 id="1-3-Chapter3-GaussDB的运行环境及安装"><a href="#1-3-Chapter3-GaussDB的运行环境及安装" class="headerlink" title="1.3. Chapter3 GaussDB的运行环境及安装"></a>1.3. Chapter3 GaussDB的运行环境及安装</h2><h3 id="1-3-1-GaussDB单机版运行环境搭建"><a href="#1-3-1-GaussDB单机版运行环境搭建" class="headerlink" title="1.3.1. GaussDB单机版运行环境搭建"></a>1.3.1. GaussDB单机版运行环境搭建</h3><p>见pdf文件<br>利用ssh终端连接软件</p><h3 id="1-3-2-数据库连接管理"><a href="#1-3-2-数据库连接管理" class="headerlink" title="1.3.2. 数据库连接管理"></a>1.3.2. 数据库连接管理</h3><p>TableSpace DataBase<br>一个表空间可以有多个数据库，数据库是逻辑概念<br>Segment</p><ul><li>表空间table space</li><li>模式scheme</li><li>用户user</li></ul><h3 id="1-3-3-数据库实例管理"><a href="#1-3-3-数据库实例管理" class="headerlink" title="1.3.3. 数据库实例管理"></a>1.3.3. 数据库实例管理</h3><h2 id="1-4-Chapter4-SQL基础实验"><a href="#1-4-Chapter4-SQL基础实验" class="headerlink" title="1.4. Chapter4 SQL基础实验"></a>1.4. Chapter4 SQL基础实验</h2><h3 id="1-4-1-在GaussDB数据库环境下执行SQL命令的方式"><a href="#1-4-1-在GaussDB数据库环境下执行SQL命令的方式" class="headerlink" title="1.4.1. 在GaussDB数据库环境下执行SQL命令的方式"></a>1.4.1. 在GaussDB数据库环境下执行SQL命令的方式</h3><h3 id="1-4-2-使用数据定义-数据查询以及数据操纵SQL命令完成数据库实验"><a href="#1-4-2-使用数据定义-数据查询以及数据操纵SQL命令完成数据库实验" class="headerlink" title="1.4.2. 使用数据定义,数据查询以及数据操纵SQL命令完成数据库实验"></a>1.4.2. 使用数据定义,数据查询以及数据操纵SQL命令完成数据库实验</h3><h2 id="1-5-Chapter5-数据库应用程序设计实验"><a href="#1-5-Chapter5-数据库应用程序设计实验" class="headerlink" title="1.5. Chapter5 数据库应用程序设计实验"></a>1.5. Chapter5 数据库应用程序设计实验</h2><h3 id="1-5-1-数据库应用程序设计的方式"><a href="#1-5-1-数据库应用程序设计的方式" class="headerlink" title="1.5.1. 数据库应用程序设计的方式"></a>1.5.1. 数据库应用程序设计的方式</h3><h3 id="1-5-2-SQL语言嵌入到高级程序语言中访问和操纵数据库的方法"><a href="#1-5-2-SQL语言嵌入到高级程序语言中访问和操纵数据库的方法" class="headerlink" title="1.5.2. SQL语言嵌入到高级程序语言中访问和操纵数据库的方法"></a>1.5.2. SQL语言嵌入到高级程序语言中访问和操纵数据库的方法</h3><h3 id="1-5-3-高级语言访问GaussDB数据库的接口"><a href="#1-5-3-高级语言访问GaussDB数据库的接口" class="headerlink" title="1.5.3. 高级语言访问GaussDB数据库的接口"></a>1.5.3. 高级语言访问GaussDB数据库的接口</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Course </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GaussDB数据库 </tag>
+            
+            <tag> Open Euler </tag>
             
         </tags>
       
@@ -227,7 +233,7 @@
       
       <categories>
           
-          <category> 课程笔记 </category>
+          <category> Course </category>
           
       </categories>
       
@@ -243,7 +249,7 @@
     
     
     <entry>
-      <title>博客搭建避坑</title>
+      <title>博客搭建指北</title>
       <link href="/article/acd393eb.html"/>
       <url>/article/acd393eb.html</url>
       
@@ -252,20 +258,20 @@
       
       <categories>
           
-          <category> 技术分享 </category>
+          <category> Technology </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> blog </tag>
+            
             <tag> Hexo </tag>
             
-            <tag> 博客 </tag>
+            <tag> plugin </tag>
             
-            <tag> 插件 </tag>
-            
-            <tag> 软技能 </tag>
+            <tag> softskills </tag>
             
         </tags>
       
@@ -274,7 +280,7 @@
     
     
     <entry>
-      <title>matery食用指南</title>
+      <title>matery Theme指北</title>
       <link href="/article/4c867599.html"/>
       <url>/article/4c867599.html</url>
       
@@ -283,7 +289,7 @@
       
       <categories>
           
-          <category> 技术分享 </category>
+          <category> Technology </category>
           
       </categories>
       
@@ -292,6 +298,8 @@
             
             <tag> Markdown </tag>
             
+            <tag> blog </tag>
+            
         </tags>
       
     </entry>
@@ -299,7 +307,7 @@
     
     
     <entry>
-      <title>Ubuntu_git_ssh</title>
+      <title>Ubuntu-Git-SSH 推送</title>
       <link href="/article/847ddabe.html"/>
       <url>/article/847ddabe.html</url>
       
@@ -308,7 +316,7 @@
       
       <categories>
           
-          <category> 技术分享 </category>
+          <category> Technology </category>
           
       </categories>
       
