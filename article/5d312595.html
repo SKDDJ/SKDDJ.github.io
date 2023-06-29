@@ -620,14 +620,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    4.1k
+                    4.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    17 Min
+                    18 Min
                 </div>
                 
 
@@ -756,6 +756,50 @@
 </ul>
 </li>
 </ul>
+<h2 id="1-2-Chapter2-认识数据与数据预处理"><a href="#1-2-Chapter2-认识数据与数据预处理" class="headerlink" title="1.2. Chapter2 认识数据与数据预处理"></a>1.2. Chapter2 认识数据与数据预处理</h2><h3 id="1-2-2-为什么要预处理数据"><a href="#1-2-2-为什么要预处理数据" class="headerlink" title="1.2.2. 为什么要预处理数据"></a>1.2.2. 为什么要预处理数据</h3><h3 id="1-2-3-数据清洗"><a href="#1-2-3-数据清洗" class="headerlink" title="1.2.3. 数据清洗"></a>1.2.3. 数据清洗</h3><ul>
+<li>空缺值 <ul>
+<li>平均值代替空值</li>
+<li>直接删去</li>
+<li>矩阵分解（不考）<ul>
+<li>如果是nominal类型的数据就是采用大多数类型赋值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>去噪<ul>
+<li>平滑值</li>
+<li>利用中值滤波</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-4-数据集成和变换"><a href="#1-2-4-数据集成和变换" class="headerlink" title="1.2.4. 数据集成和变换"></a>1.2.4. 数据集成和变换</h3><ul>
+<li>数值值 相关分析</li>
+<li>标称型 卡方分析（考试计算）</li>
+</ul>
+<p>$$\chi^2 &#x3D; \frac{\sum_{i&#x3D;1}^{n}(a_{ij}-e_{ij})^2}{e_{ij}}$$<br>$$e_{ij} &#x3D; \frac{cout(a_i&#x3D;a)\times cout(b_i &#x3D; b)}{N}$$</p>
+<p>变换是为了规范化</p>
+<ul>
+<li>最小最大规范化<br>$$Z_i &#x3D; \frac{x_i - minV}{maxV - minV}$$</li>
+<li>z- score 把变量当成正态分布进行标准化操作<br>$$\frac{x_i - \mu}{\delta}$$</li>
+</ul>
+<h3 id="1-2-5-数据归约"><a href="#1-2-5-数据归约" class="headerlink" title="1.2.5. 数据归约"></a>1.2.5. 数据归约</h3><h4 id="维度归约"><a href="#维度归约" class="headerlink" title="维度归约"></a>维度归约</h4><ul>
+<li>降维<ul>
+<li>PCA主成分分析（方差最大化）</li>
+<li>小波分析</li>
+</ul>
+</li>
+<li>特征筛选<ul>
+<li>信息增益 - 信息熵</li>
+<li>（均匀分布熵最大）</li>
+</ul>
+</li>
+</ul>
+<h4 id="数量归约"><a href="#数量归约" class="headerlink" title="数量归约"></a>数量归约</h4><ul>
+<li>直方图</li>
+<li>聚类</li>
+<li>采样</li>
+</ul>
+<h3 id="数据离散化处理"><a href="#数据离散化处理" class="headerlink" title="数据离散化处理"></a>数据离散化处理</h3><p>比如年龄、身高、体重</p>
 <h2 id="1-3-Chapter3-关联规则挖掘"><a href="#1-3-Chapter3-关联规则挖掘" class="headerlink" title="1.3. Chapter3 关联规则挖掘"></a>1.3. Chapter3 关联规则挖掘</h2><h3 id="1-3-1-关联规则概述"><a href="#1-3-1-关联规则概述" class="headerlink" title="1.3.1. 关联规则概述"></a>1.3.1. 关联规则概述</h3><ul>
 <li>支持度</li>
 <li>置信度</li>
@@ -2025,7 +2069,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">40.3k</span>
+                        class="white-color">40.6k</span>
             
             
             
