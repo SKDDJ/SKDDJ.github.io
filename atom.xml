@@ -322,13 +322,13 @@
     <category term="Technology" scheme="https://shiym.top/categories/Technology/"/>
     
     
+    <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
+    
     <category term="YouTuber" scheme="https://shiym.top/tags/YouTuber/"/>
     
     <category term="视频制作" scheme="https://shiym.top/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/"/>
     
     <category term="AIGC" scheme="https://shiym.top/tags/AIGC/"/>
-    
-    <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
     
   </entry>
   
@@ -449,31 +449,6 @@
   </entry>
   
   <entry>
-    <title>金融学基础</title>
-    <link href="https://shiym.top/article/a0d51f41"/>
-    <id>https://shiym.top/article/a0d51f41</id>
-    <published>2023-03-04T13:18:11.000Z</published>
-    <updated>2023-01-02T21:25:14.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-1-Module1-金融和金融系统&quot;&gt;&lt;a href=&quot;#1-1-Module1-金融和金融系统&quot; class=&quot;headerlink&quot; title=&quot;1.1. Module1 金融和金融系统&quot;&gt;&lt;/a&gt;1.1. Module1</summary>
-        
-      
-    
-    
-    
-    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
-    
-    
-    <category term="金融学基础" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>量化交易与商业银行</title>
     <link href="https://shiym.top/article/488818ef"/>
     <id>https://shiym.top/article/488818ef</id>
@@ -524,6 +499,31 @@
     <category term="GaussDB数据库" scheme="https://shiym.top/tags/GaussDB%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     <category term="Open Euler" scheme="https://shiym.top/tags/Open-Euler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>金融学基础</title>
+    <link href="https://shiym.top/article/a0d51f41"/>
+    <id>https://shiym.top/article/a0d51f41</id>
+    <published>2023-03-04T13:18:11.000Z</published>
+    <updated>2023-01-02T21:25:14.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-1-Module1-金融和金融系统&quot;&gt;&lt;a href=&quot;#1-1-Module1-金融和金融系统&quot; class=&quot;headerlink&quot; title=&quot;1.1. Module1 金融和金融系统&quot;&gt;&lt;/a&gt;1.1. Module1</summary>
+        
+      
+    
+    
+    
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
+    
+    
+    <category term="金融学基础" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
