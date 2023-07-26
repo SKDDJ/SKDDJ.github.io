@@ -6,7 +6,7 @@
   <link href="https://shiym.top/atom.xml" rel="self"/>
   
   <link href="https://shiym.top/"/>
-  <updated>2023-07-25T07:36:08.833Z</updated>
+  <updated>2023-07-26T16:38:20.683Z</updated>
   <id>https://shiym.top/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>计算机网络课程实验：手动访问 404 网站</title>
+    <link href="https://shiym.top/article/3af5c2d7"/>
+    <id>https://shiym.top/article/3af5c2d7</id>
+    <published>2023-07-26T16:15:28.367Z</published>
+    <updated>2023-07-26T16:38:20.683Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;免责声明：&quot;&gt;&lt;a href=&quot;#免责声明：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
+    
+    
+    <category term="计算机网络" scheme="https://shiym.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="科学上网" scheme="https://shiym.top/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="VPN" scheme="https://shiym.top/tags/VPN/"/>
+    
+    <category term="Computer Network" scheme="https://shiym.top/tags/Computer-Network/"/>
+    
+  </entry>
+  
+  <entry>
     <title>彼得林奇投资经典著作读书笔记 - 长期投资的智慧</title>
     <link href="https://shiym.top/article/a0866f96"/>
     <id>https://shiym.top/article/a0866f96</id>
     <published>2023-07-25T06:34:11.771Z</published>
-    <updated>2023-07-25T07:36:08.833Z</updated>
+    <updated>2023-07-26T07:40:42.197Z</updated>
     
     
       
@@ -397,7 +428,7 @@
     <link href="https://shiym.top/article/bf637e11"/>
     <id>https://shiym.top/article/bf637e11</id>
     <published>2023-04-04T03:28:30.000Z</published>
-    <updated>2023-07-03T05:41:36.324Z</updated>
+    <updated>2023-07-26T08:57:09.636Z</updated>
     
     
       
@@ -412,8 +443,6 @@
     
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
-    
-    <category term="Markdown" scheme="https://shiym.top/tags/Markdown/"/>
     
     <category term="LLM" scheme="https://shiym.top/tags/LLM/"/>
     
@@ -442,11 +471,36 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
-    <category term="Markdown" scheme="https://shiym.top/tags/Markdown/"/>
-    
     <category term="LLM" scheme="https://shiym.top/tags/LLM/"/>
     
     <category term="Commercial" scheme="https://shiym.top/tags/Commercial/"/>
+    
+    <category term="Markdown" scheme="https://shiym.top/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Macro Economic</title>
+    <link href="https://shiym.top/article/1540240c"/>
+    <id>https://shiym.top/article/1540240c</id>
+    <published>2023-03-04T13:18:11.000Z</published>
+    <updated>2023-01-02T02:07:17.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-1-Chapter1-宏观经济学概述&quot;&gt;&lt;a href=&quot;#1-1-Chapter1-宏观经济学概述&quot; class=&quot;headerlink&quot; title=&quot;1.1. Chapter1 宏观经济学概述&quot;&gt;&lt;/a&gt;1.1. Chapter1</summary>
+        
+      
+    
+    
+    
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
+    
+    
+    <category term="宏观经济学" scheme="https://shiym.top/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     
   </entry>
   
@@ -484,31 +538,6 @@
   </entry>
   
   <entry>
-    <title>金融学基础</title>
-    <link href="https://shiym.top/article/a0d51f41"/>
-    <id>https://shiym.top/article/a0d51f41</id>
-    <published>2023-03-04T13:18:11.000Z</published>
-    <updated>2023-01-02T21:25:14.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-1-Module1-金融和金融系统&quot;&gt;&lt;a href=&quot;#1-1-Module1-金融和金融系统&quot; class=&quot;headerlink&quot; title=&quot;1.1. Module1 金融和金融系统&quot;&gt;&lt;/a&gt;1.1. Module1</summary>
-        
-      
-    
-    
-    
-    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
-    
-    
-    <category term="金融学基础" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>量化交易与商业银行</title>
     <link href="https://shiym.top/article/488818ef"/>
     <id>https://shiym.top/article/488818ef</id>
@@ -532,31 +561,6 @@
     <category term="量化交易与商业银行" scheme="https://shiym.top/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E4%B8%8E%E5%95%86%E4%B8%9A%E9%93%B6%E8%A1%8C/"/>
     
     <category term="Python" scheme="https://shiym.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Macro Economic</title>
-    <link href="https://shiym.top/article/1540240c"/>
-    <id>https://shiym.top/article/1540240c</id>
-    <published>2023-03-04T13:18:11.000Z</published>
-    <updated>2023-01-02T02:07:17.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-1-Chapter1-宏观经济学概述&quot;&gt;&lt;a href=&quot;#1-1-Chapter1-宏观经济学概述&quot; class=&quot;headerlink&quot; title=&quot;1.1. Chapter1 宏观经济学概述&quot;&gt;&lt;/a&gt;1.1. Chapter1</summary>
-        
-      
-    
-    
-    
-    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
-    
-    
-    <category term="宏观经济学" scheme="https://shiym.top/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     
   </entry>
   
