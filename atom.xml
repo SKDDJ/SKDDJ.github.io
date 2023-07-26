@@ -6,7 +6,7 @@
   <link href="https://shiym.top/atom.xml" rel="self"/>
   
   <link href="https://shiym.top/"/>
-  <updated>2023-07-26T16:38:20.683Z</updated>
+  <updated>2023-07-26T16:50:05.467Z</updated>
   <id>https://shiym.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://shiym.top/article/3af5c2d7"/>
     <id>https://shiym.top/article/3af5c2d7</id>
     <published>2023-07-26T16:15:28.367Z</published>
-    <updated>2023-07-26T16:38:20.683Z</updated>
+    <updated>2023-07-26T16:50:05.467Z</updated>
     
     
       
@@ -36,6 +36,8 @@
     
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
+    
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
     <category term="计算机网络" scheme="https://shiym.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
@@ -112,7 +114,7 @@
     <link href="https://shiym.top/article/33115a55"/>
     <id>https://shiym.top/article/33115a55</id>
     <published>2023-07-01T08:10:52.743Z</published>
-    <updated>2023-07-01T08:12:00.810Z</updated>
+    <updated>2023-07-26T16:49:17.742Z</updated>
     
     
       
@@ -128,6 +130,8 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
     <category term="深度学习" scheme="https://shiym.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
@@ -137,7 +141,7 @@
     <link href="https://shiym.top/article/c1fcb27d"/>
     <id>https://shiym.top/article/c1fcb27d</id>
     <published>2023-07-01T08:10:23.800Z</published>
-    <updated>2023-07-01T08:12:00.812Z</updated>
+    <updated>2023-07-26T16:49:14.001Z</updated>
     
     
       
@@ -153,6 +157,8 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
     <category term="人工智能" scheme="https://shiym.top/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
@@ -162,7 +168,7 @@
     <link href="https://shiym.top/article/77b1bbb0"/>
     <id>https://shiym.top/article/77b1bbb0</id>
     <published>2023-07-01T08:09:50.616Z</published>
-    <updated>2023-07-01T08:12:00.809Z</updated>
+    <updated>2023-07-26T16:49:21.382Z</updated>
     
     
       
@@ -178,6 +184,8 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
     <category term="数据库原理及应用" scheme="https://shiym.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/"/>
     
   </entry>
@@ -187,13 +195,23 @@
     <link href="https://shiym.top/article/dbeddcc1"/>
     <id>https://shiym.top/article/dbeddcc1</id>
     <published>2023-07-01T08:09:25.124Z</published>
-    <updated>2023-07-01T08:12:00.811Z</updated>
+    <updated>2023-07-26T16:49:03.854Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;第一章：概述&quot;&gt;&lt;a href=&quot;#第一章：概述&quot; class=&quot;headerlink&quot; title=&quot;第一章：概述&quot;&gt;&lt;/a&gt;第一章：概述&lt;/h1&gt;&lt;h2 id=&quot;操作系统概念引入&quot;&gt;&lt;a href=&quot;#操作系统概念引入&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
+    
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
     
     <category term="计算机操作系统" scheme="https://shiym.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
@@ -204,7 +222,7 @@
     <link href="https://shiym.top/article/1b5aea18"/>
     <id>https://shiym.top/article/1b5aea18</id>
     <published>2023-07-01T08:08:38.840Z</published>
-    <updated>2023-07-01T08:12:00.808Z</updated>
+    <updated>2023-07-26T16:48:54.961Z</updated>
     
     
       
@@ -222,6 +240,8 @@
     
     <category term="公司金融" scheme="https://shiym.top/tags/%E5%85%AC%E5%8F%B8%E9%87%91%E8%9E%8D/"/>
     
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
   </entry>
   
   <entry>
@@ -229,7 +249,7 @@
     <link href="https://shiym.top/article/f1b79b2a"/>
     <id>https://shiym.top/article/f1b79b2a</id>
     <published>2023-07-01T08:08:10.363Z</published>
-    <updated>2023-07-01T08:12:00.813Z</updated>
+    <updated>2023-07-26T16:49:11.155Z</updated>
     
     
       
@@ -245,6 +265,8 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
     <category term="金融衍生工具" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E8%A1%8D%E7%94%9F%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
@@ -254,7 +276,7 @@
     <link href="https://shiym.top/article/f6199005"/>
     <id>https://shiym.top/article/f6199005</id>
     <published>2023-07-01T08:07:27.854Z</published>
-    <updated>2023-07-01T08:12:00.811Z</updated>
+    <updated>2023-07-26T16:49:01.317Z</updated>
     
     
       
@@ -270,6 +292,8 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
     <category term="计量经济学" scheme="https://shiym.top/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     
   </entry>
@@ -279,7 +303,7 @@
     <link href="https://shiym.top/article/53aac4c6"/>
     <id>https://shiym.top/article/53aac4c6</id>
     <published>2023-07-01T08:06:12.336Z</published>
-    <updated>2023-07-01T08:12:00.812Z</updated>
+    <updated>2023-07-26T16:49:07.602Z</updated>
     
     
       
@@ -295,6 +319,8 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
     <category term="金融市场与机构" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E4%B8%8E%E6%9C%BA%E6%9E%84/"/>
     
   </entry>
@@ -304,7 +330,7 @@
     <link href="https://shiym.top/article/bae2e029"/>
     <id>https://shiym.top/article/bae2e029</id>
     <published>2023-07-01T08:04:20.133Z</published>
-    <updated>2023-07-01T08:12:00.809Z</updated>
+    <updated>2023-07-26T16:48:58.154Z</updated>
     
     
       
@@ -320,6 +346,8 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
     <category term="国际金融" scheme="https://shiym.top/tags/%E5%9B%BD%E9%99%85%E9%87%91%E8%9E%8D/"/>
     
   </entry>
@@ -329,7 +357,7 @@
     <link href="https://shiym.top/article/5d312595"/>
     <id>https://shiym.top/article/5d312595</id>
     <published>2023-06-29T10:34:49.112Z</published>
-    <updated>2023-07-01T11:01:46.399Z</updated>
+    <updated>2023-07-26T16:48:43.427Z</updated>
     
     
       
@@ -350,6 +378,8 @@
     <category term="Big Data" scheme="https://shiym.top/tags/Big-Data/"/>
     
     <category term="Data Mining" scheme="https://shiym.top/tags/Data-Mining/"/>
+    
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
     
   </entry>
   
@@ -480,31 +510,6 @@
   </entry>
   
   <entry>
-    <title>Macro Economic</title>
-    <link href="https://shiym.top/article/1540240c"/>
-    <id>https://shiym.top/article/1540240c</id>
-    <published>2023-03-04T13:18:11.000Z</published>
-    <updated>2023-01-02T02:07:17.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-1-Chapter1-宏观经济学概述&quot;&gt;&lt;a href=&quot;#1-1-Chapter1-宏观经济学概述&quot; class=&quot;headerlink&quot; title=&quot;1.1. Chapter1 宏观经济学概述&quot;&gt;&lt;/a&gt;1.1. Chapter1</summary>
-        
-      
-    
-    
-    
-    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
-    
-    
-    <category term="宏观经济学" scheme="https://shiym.top/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>软件技术基础</title>
     <link href="https://shiym.top/article/4eb64ed2"/>
     <id>https://shiym.top/article/4eb64ed2</id>
@@ -533,6 +538,8 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
     <category term="软件技术基础" scheme="https://shiym.top/tags/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
@@ -558,9 +565,38 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
     <category term="量化交易与商业银行" scheme="https://shiym.top/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E4%B8%8E%E5%95%86%E4%B8%9A%E9%93%B6%E8%A1%8C/"/>
     
     <category term="Python" scheme="https://shiym.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>金融学基础</title>
+    <link href="https://shiym.top/article/a0d51f41"/>
+    <id>https://shiym.top/article/a0d51f41</id>
+    <published>2023-03-04T13:18:11.000Z</published>
+    <updated>2023-01-02T21:25:14.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-1-Module1-金融和金融系统&quot;&gt;&lt;a href=&quot;#1-1-Module1-金融和金融系统&quot; class=&quot;headerlink&quot; title=&quot;1.1. Module1 金融和金融系统&quot;&gt;&lt;/a&gt;1.1. Module1</summary>
+        
+      
+    
+    
+    
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
+    
+    
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
+    <category term="金融学基础" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
