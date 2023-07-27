@@ -650,36 +650,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>你已经学习的主要内容:</p>
-<ul>
-<li>基础数据类型:字符串、列表、元组、字典、集合</li>
-<li>函数:定义、参数、递归、高阶函数</li>
-<li>面向对象编程:类、对象、继承、多态</li>
-<li>错误处理和调试</li>
-<li>模块、包管理</li>
-<li>文件和IO</li>
-<li>序列化:pickle、JSON</li>
-</ul>
-<p>可以继续学习的内容:</p>
-<ul>
-<li>网络编程:Socket、WSGI、Web框架</li>
-<li>GUI编程:Tkinter、PyQt等</li>
-<li>科学计算和数据分析:NumPy、Pandas、Matplotlib等</li>
-<li>Web爬虫:requests、BeautifulSoup、Scrapy等</li>
-<li>图像处理:OpenCV、Pillow等</li>
-<li>神经网络:TensorFlow、PyTorch等</li>
-<li>游戏开发:PyGame等</li>
-<li>系统管理:进程、线程、正则表达式等</li>
-</ul>
-<h1 id="一、基础数据类型"><a href="#一、基础数据类型" class="headerlink" title="一、基础数据类型"></a>一、<strong><strong>基础数据类型</strong></strong></h1><h1 id="List、Tuple、Dict、Set四种数据类型"><a href="#List、Tuple、Dict、Set四种数据类型" class="headerlink" title="List、Tuple、Dict、Set四种数据类型"></a><strong>List、Tuple、Dict、Set四种数据类型</strong></h1><h2 id="1-List-和-Tuple"><a href="#1-List-和-Tuple" class="headerlink" title="1. List 和 Tuple"></a><strong>1. List 和 Tuple</strong></h2><ul>
+                <h2 id="一、基础数据类型"><a href="#一、基础数据类型" class="headerlink" title="一、基础数据类型"></a>一、<strong><strong>基础数据类型</strong></strong></h2><h3 id="List、Tuple、Dict、Set四种数据类型"><a href="#List、Tuple、Dict、Set四种数据类型" class="headerlink" title="List、Tuple、Dict、Set四种数据类型"></a><strong>List、Tuple、Dict、Set四种数据类型</strong></h3><h4 id="1-List-和-Tuple"><a href="#1-List-和-Tuple" class="headerlink" title="1. List 和 Tuple"></a><strong>1. List 和 Tuple</strong></h4><ul>
 <li>List 是一种可变的有序表,可以随时添加和删除其中的元素</li>
 <li>Tuple 是一种不可变的有序序列,不能对其进行修改</li>
 </ul>
-<h2 id="2-Dict-和-Set"><a href="#2-Dict-和-Set" class="headerlink" title="2. Dict 和 Set"></a><strong>2. Dict 和 Set</strong></h2><ul>
+<h4 id="2-Dict-和-Set"><a href="#2-Dict-和-Set" class="headerlink" title="2. Dict 和 Set"></a><strong>2. Dict 和 Set</strong></h4><ul>
 <li>Dict 是一种映射类型,key-value 对的集合</li>
 <li>Set 是一种无序不重复元素的集合</li>
 </ul>
-<h2 id="3-定义可变参数和默认参数"><a href="#3-定义可变参数和默认参数" class="headerlink" title="3. 定义可变参数和默认参数"></a><strong>3. 定义可变参数和默认参数</strong></h2><ul>
+<h4 id="3-定义可变参数和默认参数"><a href="#3-定义可变参数和默认参数" class="headerlink" title="3. 定义可变参数和默认参数"></a><strong>3. 定义可变参数和默认参数</strong></h4><ul>
 <li><p>写函数定义可变参数时,在参数前加&#96;&#96;,参数本身就从 list 变成了 tuple</p>
 </li>
 <li><p>定义默认参数需要指向不变对象:</p>
@@ -691,19 +670,19 @@
 <li><p><code>nums</code> 表示把 <code>nums</code> 这个 list 的所有元素作为可变参数传进去。这种写法相当有用,而且很常见。</p>
 </li>
 </ul>
-<p>来自 <a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017261630425888">https://www.liaoxuefeng.com/wiki/1016959663602400/1017261630425888</a></p>
-<h2 id="4-arguments"><a href="#4-arguments" class="headerlink" title="4 arguments"></a><strong>4 arguments</strong></h2><h2 id="可变参数和关键字参数"><a href="#可变参数和关键字参数" class="headerlink" title="可变参数和关键字参数"></a><strong>可变参数和关键字参数</strong></h2><ul>
+<p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017261630425888">提高自己的姿势水平 from</a></p>
+<h3 id="4-arguments"><a href="#4-arguments" class="headerlink" title="4 arguments"></a><strong>4 arguments</strong></h3><h4 id="可变参数和关键字参数"><a href="#可变参数和关键字参数" class="headerlink" title="可变参数和关键字参数"></a><strong>可变参数和关键字参数</strong></h4><ul>
 <li>对于位置参数,想要参数可变,最早想到传入一个 list 或者 tuple。如果使用可变参数的话:<ul>
 <li>可变参数(<code>args</code>)允许你传入0个或任意个参数,这些可变参数在函数调用时自动组装为一个 tuple。</li>
 <li>而关键字参数(<code>*kw</code>)允许你传入0个或任意个含参数名的参数,这些关键字参数在函数内部自动组装为一个 dict。</li>
 </ul>
 </li>
 </ul>
-<h2 id="尾递归优化"><a href="#尾递归优化" class="headerlink" title="尾递归优化"></a><strong>尾递归优化</strong></h2><ul>
+<h4 id="尾递归优化"><a href="#尾递归优化" class="headerlink" title="尾递归优化"></a><strong>尾递归优化</strong></h4><ul>
 <li>尾递归调用时,如果做了优化,栈不会增长,因此,无论多少次调用也不会导致栈溢出。</li>
 <li>遗憾的是,大多数编程语言没有针对尾递归做优化,Python 解释器也没有做优化,所以,即使把 fact(n) 函数改成尾递归方式,也会导致栈溢出。</li>
 </ul>
-<h1 id="Slice-和迭代"><a href="#Slice-和迭代" class="headerlink" title="Slice 和迭代"></a><strong>Slice 和迭代</strong></h1><h2 id="Slice"><a href="#Slice" class="headerlink" title="Slice"></a><strong>Slice</strong></h2><p><strong>列表名[start : stop : step]</strong></p>
+<h3 id="Slice-和迭代"><a href="#Slice-和迭代" class="headerlink" title="Slice 和迭代"></a><strong>Slice 和迭代</strong></h3><h4 id="Slice"><a href="#Slice" class="headerlink" title="Slice"></a><strong>Slice</strong></h4><p><strong>列表名[start : stop : step]</strong></p>
 <ul>
 <li><p>取前10个数:</p>
 <p>  <code>[:10]</code> 或者 <code>[0:10]</code></p>
@@ -721,7 +700,7 @@
 </li>
 </ul>
 <p>List、Tuple、String 都可以使用 slice。</p>
-<h2 id="使用切片和递归移除空白字符"><a href="#使用切片和递归移除空白字符" class="headerlink" title="使用切片和递归移除空白字符"></a><strong>使用切片和递归移除空白字符</strong></h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">pythonCopy codedef trim<span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<h4 id="使用切片和递归移除空白字符"><a href="#使用切片和递归移除空白字符" class="headerlink" title="使用切片和递归移除空白字符"></a><strong>使用切片和递归移除空白字符</strong></h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">pythonCopy codedef trim<span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">if</span> s<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">' '</span><span class="token punctuation">:</span>
         <span class="token keyword">return</span> trim<span class="token punctuation">(</span>s<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     <span class="token keyword">elif</span> s<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">' '</span><span class="token punctuation">:</span>
@@ -730,7 +709,7 @@
         <span class="token keyword">return</span> s
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h1 id="列表生成式"><a href="#列表生成式" class="headerlink" title="列表生成式"></a>列表生成式</h1><h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p>理论上生成{1x1,2x2,3x3,…,10x10}可以利用循环:</p>
+<h3 id="列表生成式"><a href="#列表生成式" class="headerlink" title="列表生成式"></a>列表生成式</h3><h4 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h4><p>理论上生成{1x1,2x2,3x3,…,10x10}可以利用循环:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">L <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     L<span class="token punctuation">.</span>append<span class="token punctuation">(</span>x <span class="token operator">*</span> x<span class="token punctuation">)</span>
@@ -741,22 +720,22 @@
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">[</span>x <span class="token operator">*</span> x <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="添加条件筛选"><a href="#添加条件筛选" class="headerlink" title="添加条件筛选"></a>添加条件筛选</h2><p>可以在列表生成式中加上 if 来筛选:</p>
+<h4 id="添加条件筛选"><a href="#添加条件筛选" class="headerlink" title="添加条件筛选"></a>添加条件筛选</h4><p>可以在列表生成式中加上 if 来筛选:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">[</span>x <span class="token operator">*</span> x <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span> <span class="token keyword">if</span> x <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">]</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="嵌套循环"><a href="#嵌套循环" class="headerlink" title="嵌套循环"></a>嵌套循环</h2><p>可以使用双循环生成全排列:</p>
+<h4 id="嵌套循环"><a href="#嵌套循环" class="headerlink" title="嵌套循环"></a>嵌套循环</h4><p>可以使用双循环生成全排列:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">[</span>m <span class="token operator">+</span> n <span class="token keyword">for</span> m <span class="token keyword">in</span> <span class="token string">'ABC'</span> <span class="token keyword">for</span> n <span class="token keyword">in</span> <span class="token string">'XYZ'</span><span class="token punctuation">]</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="结合字符串方法"><a href="#结合字符串方法" class="headerlink" title="结合字符串方法"></a>结合字符串方法</h2><p>将字符串列表转换为小写:</p>
+<h4 id="结合字符串方法"><a href="#结合字符串方法" class="headerlink" title="结合字符串方法"></a>结合字符串方法</h4><p>将字符串列表转换为小写:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">L <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Hello'</span><span class="token punctuation">,</span> <span class="token string">'World'</span><span class="token punctuation">,</span> <span class="token string">'IBM'</span><span class="token punctuation">,</span> <span class="token string">'Apple'</span><span class="token punctuation">]</span>
 <span class="token punctuation">[</span>s<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> s <span class="token keyword">in</span> L<span class="token punctuation">]</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="if-else-用法"><a href="#if-else-用法" class="headerlink" title="if-else 用法"></a>if-else 用法</h2><p>在一个列表生成式中,for 前面的 if-else 是表达式,而 for 后面的 if 是过滤条件,不能带 else。</p>
-<h1 id="生成器-generator"><a href="#生成器-generator" class="headerlink" title="生成器 generator"></a>生成器 generator</h1><p>在 Python 中,这种一边循环一边计算的机制,称为生成器(generator)。</p>
-<h2 id="yield-语句"><a href="#yield-语句" class="headerlink" title="yield 语句"></a>yield 语句</h2><p>注意,赋值语句:</p>
+<h3 id="if-else-用法"><a href="#if-else-用法" class="headerlink" title="if-else 用法"></a>if-else 用法</h3><p>在一个列表生成式中,for 前面的 if-else 是表达式,而 for 后面的 if 是过滤条件,不能带 else。</p>
+<h3 id="生成器-generator"><a href="#生成器-generator" class="headerlink" title="生成器 generator"></a>生成器 generator</h3><p>在 Python 中,这种一边循环一边计算的机制,称为生成器(generator)。</p>
+<h4 id="yield-语句"><a href="#yield-语句" class="headerlink" title="yield 语句"></a>yield 语句</h4><p>注意,赋值语句:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">a<span class="token punctuation">,</span> b <span class="token operator">=</span> b<span class="token punctuation">,</span> a <span class="token operator">+</span> b
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -767,7 +746,7 @@ b <span class="token operator">=</span> t<span class="token punctuation">[</span
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>yield</strong> 与 <strong>print</strong> 不同,不会输出到屏幕。</p>
-<h2 id="获取返回值"><a href="#获取返回值" class="headerlink" title="获取返回值"></a>获取返回值</h2><p>但是用 for 循环调用 generator 时,拿不到 generator 的 return 语句的返回值。如果想要拿到返回值,必须捕获 StopIteration 错误,返回值包含在 StopIteration 的 value 中:</p>
+<h4 id="获取返回值"><a href="#获取返回值" class="headerlink" title="获取返回值"></a>获取返回值</h4><p>但是用 for 循环调用 generator 时,拿不到 generator 的 return 语句的返回值。如果想要拿到返回值,必须捕获 StopIteration 错误,返回值包含在 StopIteration 的 value 中:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">g <span class="token operator">=</span> fib<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span>
 
 <span class="token keyword">try</span><span class="token punctuation">:</span>
@@ -778,7 +757,7 @@ b <span class="token operator">=</span> t<span class="token punctuation">[</span
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Generator return value:'</span><span class="token punctuation">,</span> e<span class="token punctuation">.</span>value<span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h1 id="迭代器-Iterator"><a href="#迭代器-Iterator" class="headerlink" title="迭代器 Iterator"></a>迭代器 Iterator</h1><p>可以被 next() 函数调用并不断返回下一个值的对象称为迭代器(Iterator)。</p>
+<h3 id="迭代器-Iterator"><a href="#迭代器-Iterator" class="headerlink" title="迭代器 Iterator"></a>迭代器 Iterator</h3><p>可以被 next() 函数调用并不断返回下一个值的对象称为迭代器(Iterator)。</p>
 <ul>
 <li><p>生成器都是 Iterator 对象,但 list、dict、str 虽然是可迭代的(Iterable),却不是 Iterator。</p>
 </li>
@@ -788,7 +767,7 @@ b <span class="token operator">=</span> t<span class="token punctuation">[</span
 <span class="token builtin">isinstance</span><span class="token punctuation">(</span><span class="token builtin">iter</span><span class="token punctuation">(</span><span class="token string">'abc'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Iterator<span class="token punctuation">)</span> <span class="token comment"># True</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<h1 id="二、函数定义及使用"><a href="#二、函数定义及使用" class="headerlink" title="二、函数定义及使用"></a>二、函数定义及使用</h1><h1 id="函数式编程-高阶函数-FP-Higher-order-function"><a href="#函数式编程-高阶函数-FP-Higher-order-function" class="headerlink" title="函数式编程:高阶函数 FP:Higher-order function"></a>函数式编程:高阶函数 <strong><strong>FP:Higher-order function</strong></strong></h1><h2 id="高阶函数Higher-order-function"><a href="#高阶函数Higher-order-function" class="headerlink" title="高阶函数Higher-order function"></a>高阶函数<strong><strong>Higher-order function</strong></strong></h2><p>高阶函数的优势:</p>
+<h2 id="二、函数定义及使用"><a href="#二、函数定义及使用" class="headerlink" title="二、函数定义及使用"></a>二、函数定义及使用</h2><h3 id="函数式编程-高阶函数-FP-Higher-order-function"><a href="#函数式编程-高阶函数-FP-Higher-order-function" class="headerlink" title="函数式编程:高阶函数 FP:Higher-order function"></a>函数式编程:高阶函数 <strong><strong>FP:Higher-order function</strong></strong></h3><h4 id="高阶函数Higher-order-function"><a href="#高阶函数Higher-order-function" class="headerlink" title="高阶函数Higher-order function"></a>高阶函数<strong><strong>Higher-order function</strong></strong></h4><p>高阶函数的优势:</p>
 <ul>
 <li><p>变量可以指向函数</p>
   <pre class="line-numbers language-python" data-language="python"><code class="language-python">f <span class="token operator">=</span> <span class="token builtin">abs</span>
@@ -799,7 +778,7 @@ b <span class="token operator">=</span> t<span class="token punctuation">[</span
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 </ul>
 <p>编写高阶函数目的是让函数可以相互嵌套调用。</p>
-<h2 id="map"><a href="#map" class="headerlink" title="map()"></a>map()</h2><p>比如我们有一个函数 <code>f(x) = x^2</code>,要把这个函数作用在一个列表 <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code> 上,就可以用 <code>map()</code> 实现:</p>
+<h4 id="map"><a href="#map" class="headerlink" title="map()"></a>map()</h4><p>比如我们有一个函数 <code>f(x) = x^2</code>,要把这个函数作用在一个列表 <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code> 上,就可以用 <code>map()</code> 实现:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">map</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -809,8 +788,8 @@ b <span class="token operator">=</span> t<span class="token punctuation">[</span
     L<span class="token punctuation">.</span>append<span class="token punctuation">(</span>f<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="reduce"><a href="#reduce" class="headerlink" title="reduce()"></a>reduce()</h2><p><code>reduce()</code> 把一个函数作用在一个序列 <code>[x1, x2, x3, ...]</code> 上,这个函数必须接收两个参数,<code>reduce()</code> 把结果继续和序列的下一个元素做累积计算。</p>
-<h2 id="filter"><a href="#filter" class="headerlink" title="filter()"></a>filter()</h2><p><code>filter()</code> 把传入的函数依次作用于每个元素,然后根据返回值是 <code>True</code> 还是 <code>False</code> 决定保留还是丢弃该元素。</p>
+<h4 id="reduce"><a href="#reduce" class="headerlink" title="reduce()"></a>reduce()</h4><p><code>reduce()</code> 把一个函数作用在一个序列 <code>[x1, x2, x3, ...]</code> 上,这个函数必须接收两个参数,<code>reduce()</code> 把结果继续和序列的下一个元素做累积计算。</p>
+<h4 id="filter"><a href="#filter" class="headerlink" title="filter()"></a>filter()</h4><p><code>filter()</code> 把传入的函数依次作用于每个元素,然后根据返回值是 <code>True</code> 还是 <code>False</code> 决定保留还是丢弃该元素。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">not_empty</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">return</span> s <span class="token keyword">and</span> s<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
@@ -818,11 +797,11 @@ b <span class="token operator">=</span> t<span class="token punctuation">[</span
 <span class="token comment"># ['A', 'B', 'C']</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="sorted"><a href="#sorted" class="headerlink" title="sorted()"></a>sorted()</h2><p><code>sorted()</code> 可以对 list、string 等进行排序。要进行反向排序,可以传入 <code>reverse=True</code> 参数。</p>
+<h4 id="sorted"><a href="#sorted" class="headerlink" title="sorted()"></a>sorted()</h4><p><code>sorted()</code> 可以对 list、string 等进行排序。要进行反向排序,可以传入 <code>reverse=True</code> 参数。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'Zoo'</span><span class="token punctuation">,</span> <span class="token string">'Credit'</span><span class="token punctuation">,</span> <span class="token string">'bob'</span><span class="token punctuation">,</span> <span class="token string">'about'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="参数key"><a href="#参数key" class="headerlink" title="参数key"></a>参数key</h2><p><code>key</code> 参数指定排序时所用的映射函数。</p>
+<h4 id="参数key"><a href="#参数key" class="headerlink" title="参数key"></a>参数key</h4><p><code>key</code> 参数指定排序时所用的映射函数。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">L <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token string">'Bob'</span><span class="token punctuation">,</span> <span class="token number">75</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'Adam'</span><span class="token punctuation">,</span> <span class="token number">92</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'Bart'</span><span class="token punctuation">,</span> <span class="token number">66</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'Lisa'</span><span class="token punctuation">,</span> <span class="token number">88</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
 
 <span class="token keyword">def</span> <span class="token function">by_name</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -832,9 +811,9 @@ b <span class="token operator">=</span> t<span class="token punctuation">[</span
 <span class="token comment"># [('Adam', 92), ('Bart', 66), ('Bob', 75), ('Lisa', 88)]</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p> <a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0">https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0</a></p>
-<h2 id><a href="#" class="headerlink" title></a></h2><h1 id="返回函数"><a href="#返回函数" class="headerlink" title="返回函数"></a>返回函数</h1><h2 id="函数作为返回值"><a href="#函数作为返回值" class="headerlink" title="函数作为返回值"></a>函数作为返回值</h2><p>相关参数和变量都保存在返回的函数中,这种称为“闭包(Closure)”的程序结构拥有极大的威力。</p>
-<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><p>返回闭包时牢记一点:返回函数不要引用任何循环变量,或者后续会发生变化的变量。</p>
+<p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017408670135712#0">学习一个</a></p>
+<h3 id="返回函数"><a href="#返回函数" class="headerlink" title="返回函数"></a>返回函数</h3><h4 id="函数作为返回值"><a href="#函数作为返回值" class="headerlink" title="函数作为返回值"></a>函数作为返回值</h4><p>相关参数和变量都保存在返回的函数中,这种称为“闭包(Closure)”的程序结构拥有极大的威力。</p>
+<h4 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h4><p>返回闭包时牢记一点:返回函数不要引用任何循环变量,或者后续会发生变化的变量。</p>
 <p><strong>关于闭包值得一提的是:</strong></p>
 <p>从函数中返回函数其实并不需要在一个函数里去执行另一个函数,我们也可以将其作为输出返回出来:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">hi</span><span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">"yasoob"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -849,7 +828,7 @@ a <span class="token operator">=</span> hi<span class="token punctuation">(</spa
 
 <p>在 if&#x2F;else 语句中我们返回 greet 和 welcome,而不是 greet() 和 welcome()。因为带括号会执行函数,而没有括号可以赋值给其他变量。</p>
 <p>括号代表函数执行,可以重复执行。</p>
-<h2 id="nonlocal"><a href="#nonlocal" class="headerlink" title="nonlocal"></a>nonlocal</h2><p>可以通过 nonlocal 改变全局变量。</p>
+<h4 id="nonlocal"><a href="#nonlocal" class="headerlink" title="nonlocal"></a>nonlocal</h4><p>可以通过 nonlocal 改变全局变量。</p>
 <p><strong>练习:</strong></p>
 <p>利用闭包返回一个计数器函数,每次调用它返回递增整数:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">createCounter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -861,10 +840,10 @@ a <span class="token operator">=</span> hi<span class="token punctuation">(</spa
     <span class="token keyword">return</span> counter
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<hr>
-<h2 id="-1"><a href="#-1" class="headerlink" title></a></h2><h1 id="装饰器Decorator"><a href="#装饰器Decorator" class="headerlink" title="装饰器Decorator"></a>装饰器Decorator</h1><p><strong>装饰器相关要注意闭包的用法。</strong></p>
+
+<h3 id="装饰器Decorator"><a href="#装饰器Decorator" class="headerlink" title="装饰器Decorator"></a>装饰器Decorator</h3><p><strong>装饰器相关要注意闭包的用法。</strong></p>
 <p>假设我们要增强 now() 函数的功能,比如在函数调用前后自动打印日志,但又不希望修改 now() 函数的定义,这种在代码运行期间动态增加功能的方式,称之为“装饰器”(Decorator)。</p>
-<h2 id="基本装饰器写法"><a href="#基本装饰器写法" class="headerlink" title="基本装饰器写法"></a>基本装饰器写法</h2><p>一个不带参数的装饰器写法如下:</p>
+<h4 id="基本装饰器写法"><a href="#基本装饰器写法" class="headerlink" title="基本装饰器写法"></a>基本装饰器写法</h4><p>一个不带参数的装饰器写法如下:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> functools
 
 <span class="token keyword">def</span> <span class="token function">log</span><span class="token punctuation">(</span>func<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -875,7 +854,7 @@ a <span class="token operator">=</span> hi<span class="token punctuation">(</spa
     <span class="token keyword">return</span> wrapper
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="针对带参数的装饰器"><a href="#针对带参数的装饰器" class="headerlink" title="针对带参数的装饰器"></a>针对带参数的装饰器</h2><p>如果装饰器本身需要传入参数,可以编写一个返回装饰器的高阶函数:</p>
+<h4 id="针对带参数的装饰器"><a href="#针对带参数的装饰器" class="headerlink" title="针对带参数的装饰器"></a>针对带参数的装饰器</h4><p>如果装饰器本身需要传入参数,可以编写一个返回装饰器的高阶函数:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> functools
 
 <span class="token keyword">def</span> <span class="token function">log</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -888,7 +867,7 @@ a <span class="token operator">=</span> hi<span class="token punctuation">(</spa
     <span class="token keyword">return</span> decorator
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="注意返回值"><a href="#注意返回值" class="headerlink" title="注意返回值"></a>注意返回值</h2><p><strong>不能忘记返回函数调用的返回值</strong>,否则会导致修饰后函数失效。</p>
+<h4 id="注意返回值"><a href="#注意返回值" class="headerlink" title="注意返回值"></a>注意返回值</h4><p><strong>不能忘记返回函数调用的返回值</strong>,否则会导致修饰后函数失效。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 错误示例</span>
 <span class="token keyword">def</span> <span class="token function">metric</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">wrapper</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kw<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -899,8 +878,7 @@ a <span class="token operator">=</span> hi<span class="token punctuation">(</spa
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>装饰器的效果是你传给它一个函数,它返回一个新的函数。</p>
-<hr>
-<h2 id="-2"><a href="#-2" class="headerlink" title></a></h2><h1 id="偏函数-Partial-Function"><a href="#偏函数-Partial-Function" class="headerlink" title="偏函数 Partial Function"></a>偏函数 Partial Function</h1><p>当函数的参数个数太多,需要简化时,可以使用 <code>functools.partial</code> 创建一个新的函数,这个新函数可以固定住原函数的部分参数,从而在调用时更简单。</p>
+<h3 id="偏函数-Partial-Function"><a href="#偏函数-Partial-Function" class="headerlink" title="偏函数 Partial Function"></a>偏函数 Partial Function</h3><p>当函数的参数个数太多,需要简化时,可以使用 <code>functools.partial</code> 创建一个新的函数,这个新函数可以固定住原函数的部分参数,从而在调用时更简单。</p>
 <p><strong>举个例子,二进制字符串转整数的函数:</strong></p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token string">'12345'</span><span class="token punctuation">,</span> base<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -914,9 +892,7 @@ int2<span class="token punctuation">(</span><span class="token string">'1000000'
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>通过偏函数,可以使代码更加简洁</p>
-<hr>
-<h1 id="三、面向对象编程"><a href="#三、面向对象编程" class="headerlink" title="三、面向对象编程"></a>三、面向对象编程</h1><hr>
-<h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><p>面向对象编程(Object Oriented Programming, OOP)是一种程序设计思想。OOP 把对象作为程序的基本单元,一个对象包含了数据和操作数据的函数。</p>
+<h2 id="三、面向对象编程"><a href="#三、面向对象编程" class="headerlink" title="三、面向对象编程"></a>三、面向对象编程</h2><h3 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h3><p>面向对象编程(Object Oriented Programming, OOP)是一种程序设计思想。OOP 把对象作为程序的基本单元,一个对象包含了数据和操作数据的函数。</p>
 <ul>
 <li>类是创建实例的模板,而实例则是具体的对象,各个实例的数据互相独立。</li>
 <li>方法就是与实例绑定的函数,可以直接访问实例的数据。</li>
@@ -945,9 +921,7 @@ int2<span class="token punctuation">(</span><span class="token string">'1000000'
 bart <span class="token operator">=</span> Student<span class="token punctuation">(</span><span class="token string">'Bart'</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>bart<span class="token punctuation">.</span>get_gender<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<h2 id="-3"><a href="#-3" class="headerlink" title></a></h2><h1 id="继承和多态"><a href="#继承和多态" class="headerlink" title="继承和多态"></a><strong>继承和多态</strong></h1><ul>
+<h3 id="继承和多态"><a href="#继承和多态" class="headerlink" title="继承和多态"></a><strong>继承和多态</strong></h3><ul>
 <li>子类继承父类的所有属性和方法。</li>
 <li>子类可以定义自己特有的方法,也可以对父类方法进行重写,这称为多态。</li>
 <li>Python 中,类可以作为数据类型传入函数,根据鸭子类型,不关心参数是什么类型,只关心参数是否有调用的属性和方法。</li>
@@ -971,7 +945,7 @@ func<span class="token punctuation">(</span>dog<span class="token punctuation">)
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>这里 <code>func()</code> 函数接收一个 <code>Animal</code> 类型的参数。在调用时,不关心它的实际类型是 <code>Animal</code> 还是 <code>Dog</code>,只要保证传入的对象有 <code>run()</code> 方法即可。这就是多态的一种体现。</p>
-<h2 id="-4"><a href="#-4" class="headerlink" title></a></h2><h1 id="获取对象信息"><a href="#获取对象信息" class="headerlink" title="获取对象信息"></a>获取对象信息</h1><p><strong>判断类型</strong></p>
+<h3 id="获取对象信息"><a href="#获取对象信息" class="headerlink" title="获取对象信息"></a>获取对象信息</h3><p><strong>判断类型</strong></p>
 <ul>
 <li><p>使用 <code>type()</code> 获取类型:</p>
   <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token builtin">type</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span> <span class="token comment"># &lt;class 'int'></span>
@@ -992,7 +966,7 @@ func<span class="token punctuation">(</span>dog<span class="token punctuation">)
 <span class="token builtin">setattr</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">)</span> <span class="token comment"># 设置一个属性'y'</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<h2 id="-5"><a href="#-5" class="headerlink" title></a></h2><h1 id="实例属性和类属性"><a href="#实例属性和类属性" class="headerlink" title="实例属性和类属性"></a>实例属性和类属性</h1><ul>
+<h3 id="实例属性和类属性"><a href="#实例属性和类属性" class="headerlink" title="实例属性和类属性"></a>实例属性和类属性</h3><ul>
 <li>实例属性属于各个实例所有,互不干扰。</li>
 <li>不要对实例属性和类属性使用相同的名字,否则将产生难以发现的错误。</li>
 </ul>
@@ -1016,7 +990,7 @@ lisa <span class="token operator">=</span> Student<span class="token punctuation
 
 <p>为什么要使用 <code>Student.count</code> 而不能是 <code>self.count</code>?</p>
 <p>因为 <code>self.count</code> 是实例属性,而 <code>Student.count</code> 是类属性。两者不应该使用相同的名字。</p>
-<h1 id="多重继承和MixIn"><a href="#多重继承和MixIn" class="headerlink" title="多重继承和MixIn"></a>多重继承和MixIn</h1><ul>
+<h3 id="多重继承和MixIn"><a href="#多重继承和MixIn" class="headerlink" title="多重继承和MixIn"></a>多重继承和MixIn</h3><ul>
 <li>通过多重继承,一个子类可以同时获得多个父类的所有功能。</li>
 <li><strong>MixIn的目的就是给一个类增加多个功能,通过多重继承来组合多个MixIn的功能,而不是设计多层次的复杂继承关系。</strong></li>
 <li>MixIn 类包含其他类要用到的方法,但不必充当父类。</li>
@@ -1044,7 +1018,7 @@ lisa <span class="token operator">=</span> Student<span class="token punctuation
     <span class="token keyword">pass</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h1 id="定制类和枚举类"><a href="#定制类和枚举类" class="headerlink" title="定制类和枚举类"></a>定制类和枚举类</h1><h2 id="定制类"><a href="#定制类" class="headerlink" title="定制类"></a>定制类</h2><p>可以针对不同的场景定制类:</p>
+<h3 id="定制类和枚举类"><a href="#定制类和枚举类" class="headerlink" title="定制类和枚举类"></a>定制类和枚举类</h3><h4 id="定制类"><a href="#定制类" class="headerlink" title="定制类"></a>定制类</h4><p>可以针对不同的场景定制类:</p>
 <ul>
 <li><code>__str__()</code> 定制打印输出</li>
 <li><code>__iter__()</code> 定制为可迭代对象</li>
@@ -1068,7 +1042,7 @@ lisa <span class="token operator">=</span> Student<span class="token punctuation
 <span class="token comment"># /users/michael/repos</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h2><p>枚举类可以定义常量,例如:</p>
+<h4 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h4><p>枚举类可以定义常量,例如:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> enum <span class="token keyword">import</span> Enum
 
 <span class="token keyword">class</span> <span class="token class-name">Gender</span><span class="token punctuation">(</span>Enum<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -1083,8 +1057,8 @@ lisa <span class="token operator">=</span> Student<span class="token punctuation
 bart <span class="token operator">=</span> Student<span class="token punctuation">(</span><span class="token string">'Bart'</span><span class="token punctuation">,</span> Gender<span class="token punctuation">.</span>Male<span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h1 id="使用元类"><a href="#使用元类" class="headerlink" title="使用元类"></a>使用元类</h1><p>Python 中类也是对象,类型就是 <code>type</code>。</p>
-<h2 id="使用-type-创建类"><a href="#使用-type-创建类" class="headerlink" title="使用 type 创建类"></a>使用 type 创建类</h2><p>要创建一个类对象,可以使用 <code>type()</code> 函数:</p>
+<h3 id="使用元类"><a href="#使用元类" class="headerlink" title="使用元类"></a>使用元类</h3><p>Python 中类也是对象,类型就是 <code>type</code>。</p>
+<h4 id="使用-type-创建类"><a href="#使用-type-创建类" class="headerlink" title="使用 type 创建类"></a>使用 type 创建类</h4><p>要创建一个类对象,可以使用 <code>type()</code> 函数:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">fn</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">)</span>
 
@@ -1097,7 +1071,7 @@ Hello <span class="token operator">=</span> <span class="token builtin">type</sp
 <li>继承的父类集合,注意 Python 支持多重继承</li>
 <li>类的方法名称与函数绑定</li>
 </ul>
-<h2 id="metaclass"><a href="#metaclass" class="headerlink" title="metaclass"></a>metaclass</h2><p>元类可以控制类的创建过程:</p>
+<h4 id="metaclass"><a href="#metaclass" class="headerlink" title="metaclass"></a>metaclass</h4><p>元类可以控制类的创建过程:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># metaclass是类的模板,所以必须从`type`类型派生:</span>
 <span class="token keyword">class</span> <span class="token class-name">ListMetaclass</span><span class="token punctuation">(</span><span class="token builtin">type</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__new__</span><span class="token punctuation">(</span>cls<span class="token punctuation">,</span> name<span class="token punctuation">,</span> bases<span class="token punctuation">,</span> attrs<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -1114,8 +1088,8 @@ L
 <span class="token comment"># [1]</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h1 id="四、其他核心概念"><a href="#四、其他核心概念" class="headerlink" title="四、其他核心概念"></a>四、其他核心概念</h1><h2 id="slots"><a href="#slots" class="headerlink" title="slots"></a><strong>slots</strong></h2><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2daca18-4237-461d-afee-72bae284b0b2/Untitled.jpeg" alt="Untitled"></p>
-<h2 id="-6"><a href="#-6" class="headerlink" title></a></h2><h1 id="property"><a href="#property" class="headerlink" title="@property"></a>@property</h1><p>@property 装饰器可以让方法像属性一样访问,既能检查参数,又可以简化代码。</p>
+<h2 id="四、其他核心概念"><a href="#四、其他核心概念" class="headerlink" title="四、其他核心概念"></a>四、其他核心概念</h2><h3 id="slots"><a href="#slots" class="headerlink" title="slots"></a><strong>slots</strong></h3><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2daca18-4237-461d-afee-72bae284b0b2/Untitled.jpeg" alt="Untitled"></p>
+<h3 id="property"><a href="#property" class="headerlink" title="@property"></a>@property</h3><p>@property 装饰器可以让方法像属性一样访问,既能检查参数,又可以简化代码。</p>
 <p><strong>注意方法名不要和实例变量同名,以免递归错误。</strong></p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">:</span>
 
@@ -1163,7 +1137,7 @@ L
         <span class="token keyword">return</span> self<span class="token punctuation">.</span>_width <span class="token operator">*</span> self<span class="token punctuation">.</span>_height
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="-7"><a href="#-7" class="headerlink" title></a></h2><h1 id="模块-Module"><a href="#模块-Module" class="headerlink" title="模块 Module"></a>模块 Module</h1><p><strong>使用模块的好处:</strong></p>
+<h3 id="模块-Module"><a href="#模块-Module" class="headerlink" title="模块 Module"></a>模块 Module</h3><p><strong>使用模块的好处:</strong></p>
 <ol>
 <li>最大的好处是大大提高了代码的可维护性</li>
 <li>使用模块还可以避免函数名和变量名冲突。相同名字的函数和变量完全可以分别存在不同的模块中。</li>
@@ -1176,11 +1150,11 @@ L
 <li><code>_xxx</code> 和 <code>__xxx</code> 这样的函数或变量就是非公开的(private),不应该被直接引用。</li>
 <li><code>__name__</code> 变量取值为模块名字,当模块被直接执行时值为<code>&#39;__main__&#39;</code>。</li>
 </ul>
-<h1 id="错误处理和调试"><a href="#错误处理和调试" class="headerlink" title="错误处理和调试"></a>错误处理和调试</h1><h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><ul>
+<h3 id="错误处理和调试"><a href="#错误处理和调试" class="headerlink" title="错误处理和调试"></a>错误处理和调试</h3><h4 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h4><ul>
 <li>测试数据出错时,可以用 <code>print()</code> 打印错误信息,或者使用 <code>assert</code> 进行断言。</li>
 <li><code>assert</code> 后面表达式若为 False 将抛出 <code>AssertionError</code>。</li>
 </ul>
-<h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><ul>
+<h4 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h4><ul>
 <li><p>使用 <code>print()</code> 打印变量信息,可以查看程序执行过程。</p>
 </li>
 <li><p>使用 debugger 调试,如 pdb:</p>
@@ -1194,8 +1168,8 @@ pdb<span class="token punctuation">.</span>set_trace<span class="token punctuati
 </li>
 </ul>
 <p>标准库 <code>logging</code> 模块可以进行日志记录,设置日志级别、日志文件保存等,方便追踪问题。</p>
-<h1 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h1><p>序列化就是将对象转换为可存储或传输的格式,在Python中可以使用pickle模块。</p>
-<h2 id="pickle-序列化"><a href="#pickle-序列化" class="headerlink" title="pickle 序列化"></a>pickle 序列化</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> pickle
+<h3 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h3><p>序列化就是将对象转换为可存储或传输的格式,在Python中可以使用pickle模块。</p>
+<h4 id="pickle-序列化"><a href="#pickle-序列化" class="headerlink" title="pickle 序列化"></a>pickle 序列化</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> pickle
 
 data <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">&#125;</span> <span class="token comment"># 对象</span>
 
@@ -1211,7 +1185,7 @@ f<span class="token punctuation">.</span>close<span class="token punctuation">(<
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>pickle可以序列化大多数Python对象,但有些类型可能需要 handling 模块支持。</p>
-<h2 id="JSON-序列化"><a href="#JSON-序列化" class="headerlink" title="JSON 序列化"></a>JSON 序列化</h2><p>JSON是一种通用的数据格式,也可以用于序列化。</p>
+<h4 id="JSON-序列化"><a href="#JSON-序列化" class="headerlink" title="JSON 序列化"></a>JSON 序列化</h4><p>JSON是一种通用的数据格式,也可以用于序列化。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> json
 
 json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token comment"># 序列化为JSON字符串</span>
@@ -1222,7 +1196,7 @@ data <span class="token operator">=</span> json<span class="token punctuation">.
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>JSON支持更多语言,可以作为通用数据格式,但只能序列化基本类型。</p>
-<h1 id="Turtle图形"><a href="#Turtle图形" class="headerlink" title="Turtle图形"></a>Turtle图形</h1><p>Turtle可以用来绘制简单的图形。</p>
+<h3 id="Turtle图形"><a href="#Turtle图形" class="headerlink" title="Turtle图形"></a>Turtle图形</h3><p>Turtle可以用来绘制简单的图形。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> turtle
 
 turtle<span class="token punctuation">.</span>forward<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token comment"># 向前移动100单位长度</span>
@@ -1237,6 +1211,31 @@ turtle<span class="token punctuation">.</span>end_fill<span class="token punctua
 
 turtle<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 保持窗口打开</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<p>至此</p>
+<p>已学习的主要内容:</p>
+<ul>
+<li>基础数据类型:字符串、列表、元组、字典、集合</li>
+<li>函数:定义、参数、递归、高阶函数</li>
+<li>面向对象编程:类、对象、继承、多态</li>
+<li>错误处理和调试</li>
+<li>模块、包管理</li>
+<li>文件和IO</li>
+<li>序列化:pickle、JSON</li>
+</ul>
+<p>进阶内容:</p>
+<ul>
+<li>网络编程:Socket、WSGI、Web框架</li>
+<li>GUI编程:Tkinter、PyQt等</li>
+<li>科学计算和数据分析:NumPy、Pandas、Matplotlib等</li>
+<li>Web爬虫:requests、BeautifulSoup、Scrapy等</li>
+<li>图像处理:OpenCV、Pillow等</li>
+<li>神经网络:TensorFlow、PyTorch等</li>
+<li>游戏开发:PyGame等</li>
+<li>系统管理:进程、线程、正则表达式等</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -1939,7 +1938,7 @@ turtle<span class="token punctuation">.</span>done<span class="token punctuation
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">53.7k</span>
+                        class="white-color">53.6k</span>
             
             
             
