@@ -570,18 +570,18 @@
   </entry>
   
   <entry>
-    <title>金融学基础</title>
-    <link href="https://shiym.top/article/a0d51f41"/>
-    <id>https://shiym.top/article/a0d51f41</id>
+    <title>鲲鹏聚数:基于华为GaussDB数据库的应用与实践</title>
+    <link href="https://shiym.top/article/8fe4ecaf"/>
+    <id>https://shiym.top/article/8fe4ecaf</id>
     <published>2023-03-04T13:18:11.000Z</published>
-    <updated>2023-01-02T21:25:14.000Z</updated>
+    <updated>2023-01-02T02:07:29.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-1-Module1-金融和金融系统&quot;&gt;&lt;a href=&quot;#1-1-Module1-金融和金融系统&quot; class=&quot;headerlink&quot; title=&quot;1.1. Module1 金融和金融系统&quot;&gt;&lt;/a&gt;1.1. Module1</summary>
+    <summary type="html">&lt;h2 id=&quot;1-1-Chapter1-GaussDB数据库概述&quot;&gt;&lt;a href=&quot;#1-1-Chapter1-GaussDB数据库概述&quot; class=&quot;headerlink&quot; title=&quot;1.1. Chapter1 GaussDB数据库概述&quot;&gt;&lt;/a&gt;1.1.</summary>
         
       
     
@@ -590,11 +590,11 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
-    
     <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
     
-    <category term="金融学基础" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    <category term="GaussDB数据库" scheme="https://shiym.top/tags/GaussDB%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="Open Euler" scheme="https://shiym.top/tags/Open-Euler/"/>
     
   </entry>
   
