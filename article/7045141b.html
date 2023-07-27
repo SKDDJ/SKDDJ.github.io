@@ -4,16 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="飞书gptbot使用指南, Shiym&#39;s blog">
-    <meta name="description" content="
-   飞书 ×（GPT-3.5 + DALL·E + Whisper）
-
-
-    🚀 Feishu OpenAI 🚀
-
-
-👻 机器人功能🗣 语音交流：私人直接与机器人畅所欲言
-💬 多话题对话：支持私人和群聊多话题讨论，高效连贯">
+    <meta name="keywords" content="Verilog学习笔记:基础语法与代码规范总结, Shiym&#39;s blog">
+    <meta name="description" content="本文对Verilog语言进行简要概览,并给出学习过程中的代码案例,旨在梳理语法要点,帮助快速入门Verilog语法。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -25,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>飞书gptbot使用指南 | Shiym&#39;s blog</title>
+    <title>Verilog学习笔记:基础语法与代码规范总结 | Shiym&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -552,12 +544,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">飞书gptbot使用指南</h1>
+                    <h1 class="description center-align post-title">Verilog学习笔记:基础语法与代码规范总结</h1>
                 </div>
             </div>
         </div>
@@ -581,20 +573,28 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/DevOps/">
-                                <span class="chip bg-color">DevOps</span>
+                            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">编程学习</span>
                             </a>
                         
-                            <a href="/tags/%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA/">
-                                <span class="chip bg-color">飞书机器人</span>
+                            <a href="/tags/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+                                <span class="chip bg-color">基础语法</span>
                             </a>
                         
-                            <a href="/tags/GPT/">
-                                <span class="chip bg-color">GPT</span>
+                            <a href="/tags/Verilog/">
+                                <span class="chip bg-color">Verilog</span>
                             </a>
                         
-                            <a href="/tags/Engineering/">
-                                <span class="chip bg-color">Engineering</span>
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
+                                <span class="chip bg-color">计算机组成原理</span>
+                            </a>
+                        
+                            <a href="/tags/CPU/">
+                                <span class="chip bg-color">CPU</span>
+                            </a>
+                        
+                            <a href="/tags/Vivado/">
+                                <span class="chip bg-color">Vivado</span>
                             </a>
                         
                     </div>
@@ -605,8 +605,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Engineering/" class="post-category">
-                                Engineering
+                            <a href="/categories/Technology/" class="post-category">
+                                Technology
                             </a>
                         
                     </div>
@@ -618,28 +618,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2023-04-05
+                    2022-10-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-04-05
+                    2023-07-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    189
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    4 Min
                 </div>
                 
 
@@ -662,23 +662,213 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p align="center">
-   飞书 ×（GPT-3.5 + DALL·E + Whisper）
-<br>
-<br>
-    🚀 Feishu OpenAI 🚀
-</p>
+                <h2 id="Verilog基本代码规范"><a href="#Verilog基本代码规范" class="headerlink" title="Verilog基本代码规范"></a>Verilog基本代码规范</h2><h3 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h3><ul>
+<li>推荐使用<strong>驼峰命名法</strong></li>
+<li>注释规则与C语言类似</li>
+<li>标识符和关键字命名同C语言</li>
+</ul>
+<h3 id="数值表示"><a href="#数值表示" class="headerlink" title="数值表示"></a>数值表示</h3><p>共有4种方法表示数字逻辑电平:</p>
+<ol>
+<li>0: 低电平</li>
+<li>1: 高电平</li>
+<li>x: 未知电平</li>
+<li>z: 高阻状态</li>
+</ol>
+<p>数值声明中可以使用4种进制:</p>
+<ul>
+<li>十进制 (<code>&#39;d</code>或<code>&#39;D</code>)</li>
+<li>十六进制 (<code>&#39;h</code>或<code>&#39;H</code>)</li>
+<li>二进制 (<code>&#39;b</code>或<code>&#39;B</code>)</li>
+<li>八进制 (<code>&#39;o</code>或<code>&#39;O</code>)</li>
+</ul>
+<p>可以指定数值位宽,也可以不指定。例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token number">32</span> <span class="token number">'h3022_c0de</span> <span class="token comment">// 32位十六进制数</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="👻-机器人功能"><a href="#👻-机器人功能" class="headerlink" title="👻 机器人功能"></a>👻 机器人功能</h2><p>🗣 语音交流：私人直接与机器人畅所欲言</p>
-<p>💬 多话题对话：支持私人和群聊多话题讨论，高效连贯</p>
-<p>🖼 文本成图：支持文本成图和以图搜图</p>
-<p>🛖 场景预设：内置丰富场景列表，一键切换AI角色</p>
-<p>🎭 角色扮演：支持场景模式，增添讨论乐趣和创意</p>
-<p>🔄 上下文保留：回复对话框即可继续同一话题讨论</p>
-<p>⏰ 自动结束：超时自动结束对话，支持清除讨论历史</p>
-<p>📝 富文本卡片：支持富文本卡片回复，信息更丰富多彩</p>
-<p>👍 交互式反馈：即时获取机器人处理结果</p>
-<h2 id="🚩关于本项目"><a href="#🚩关于本项目" class="headerlink" title="🚩关于本项目"></a>🚩关于本项目</h2><p><a target="_blank" rel="noopener" href="https://github.com/Leizhenpeng/feishu-chatgpt/blob/master/readme.md">feishu-chatgpt</a></p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>使用双引号包裹字符串。</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>两种主要数据类型:<strong>线网</strong>(wire)和<strong>寄存器</strong>(reg)。</p>
+<h4 id="线网-wire"><a href="#线网-wire" class="headerlink" title="线网(wire)"></a>线网(wire)</h4><p>用于表示硬件逻辑之间的物理连线,例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">wire</span> flag1<span class="token punctuation">,</span> flag2<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="寄存器-reg"><a href="#寄存器-reg" class="headerlink" title="寄存器(reg)"></a>寄存器(reg)</h4><p>用于保持数据值,直到被重写。例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">reg</span> flag1<span class="token punctuation">,</span> flag2<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="向量-Vector"><a href="#向量-Vector" class="headerlink" title="向量(Vector)"></a>向量(Vector)</h4><p>当位宽大于1时使用,wire和reg都可以声明为向量。类似编程语言中的数组。</p>
+<p>例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">wire</span> <span class="token punctuation">[</span><span class="token number">31</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">]</span> gpio_data<span class="token punctuation">;</span> <span class="token comment">// 声明32位线网变量gpio_data</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="其他数据类型"><a href="#其他数据类型" class="headerlink" title="其他数据类型"></a>其他数据类型</h3><ul>
+<li><strong>整数</strong>(integer): 一般32位,直接使用<code>integer</code>声明</li>
+<li><strong>实数</strong>(real): 默认值为0</li>
+<li><strong>时间</strong>(time): 用于保存仿真时间,一般为64位。通过<code>$time</code>系统函数获取</li>
+<li><strong>数组</strong>: 可以声明reg、wire、integer、time、real和向量等类型的数组</li>
+</ul>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">wire</span>  data_bit<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 声明二维1位wire数组</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="存储器和字符串"><a href="#存储器和字符串" class="headerlink" title="存储器和字符串"></a>存储器和字符串</h3><h4 id="存储器-Memory"><a href="#存储器-Memory" class="headerlink" title="存储器(Memory)"></a>存储器(Memory)</h4><p>Verilog中可以声明存储器,用于保存大量数据。存储器需要定义存储器类型、宽度和深度。</p>
+<p>例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">reg</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">]</span> ram<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">255</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 8位宽,256深度的寄存器型存储器</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>读取存储器使用中括号访问,写入使用赋值语句。</p>
+<h4 id="字符串-String"><a href="#字符串-String" class="headerlink" title="字符串(String)"></a>字符串(String)</h4><p>Verilog没有专门的字符串类型,可以使用reg或wire向量来表示字符串。</p>
+<p>例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">reg</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">]</span> str <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">15</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 16个8位寄存器组成的字符串</span>
+
+str <span class="token operator">=</span> <span class="token string">"Hello World"</span><span class="token punctuation">;</span> <span class="token comment">// 初始化字符串</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="Verilog速通代码示例"><a href="#Verilog速通代码示例" class="headerlink" title="Verilog速通代码示例"></a>Verilog速通代码示例</h2><h3 id="基本组成单元-模块-module"><a href="#基本组成单元-模块-module" class="headerlink" title="基本组成单元 - 模块(module)"></a>基本组成单元 - 模块(module)</h3><p>一般形式:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">module</span> 模块名<span class="token punctuation">(</span>接口信号<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 信号声明</span>
+
+<span class="token comment">// 功能描述</span>
+
+<span class="token keyword">endmodule</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>注意:</p>
+<ul>
+<li>模块名要有意义</li>
+<li>一个.v文件中只能有一个模块</li>
+</ul>
+<h3 id="数据类型-1"><a href="#数据类型-1" class="headerlink" title="数据类型"></a>数据类型</h3><p>常用的四种数据类型:</p>
+<ul>
+<li>reg:寄存器</li>
+<li>wire:线网</li>
+<li>parameter:参数</li>
+<li>integer:整数</li>
+</ul>
+<h3 id="数值表示-1"><a href="#数值表示-1" class="headerlink" title="数值表示"></a>数值表示</h3><p>格式为:<code>&lt;位宽&gt;&lt;类型&gt;&lt;数值&gt;</code></p>
+<p>例如:<code>8&#39;b1100_0010</code></p>
+<h3 id="参数-parameter"><a href="#参数-parameter" class="headerlink" title="参数(parameter)"></a>参数(parameter)</h3><p>使用<code>parameter</code>定义常量。例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">parameter</span> SIZE <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><code>define</code>定义的宏可以跨模块使用,<code>localparam</code>仅在模块内可用。</p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ul>
+<li>wire<ul>
+<li>用于模块间输入输出信号,电路连线</li>
+<li>例如:<code>wire [7:0] a;</code></li>
+<li>使用<code>assign</code>进行连续赋值(阻塞赋值)</li>
+</ul>
+</li>
+<li>reg<ul>
+<li>代表寄存器</li>
+<li>必须在<code>always</code>块中使用,赋值需用非阻塞”<code>&lt;=</code>“</li>
+<li>例如:<code>reg [7:0] a;</code></li>
+</ul>
+</li>
+</ul>
+<p>运算符和C语言类似,这里不再赘述。</p>
+<h3 id="赋值语句"><a href="#赋值语句" class="headerlink" title="赋值语句"></a>赋值语句</h3><ul>
+<li>非阻塞赋值(如<code>b &lt;= a;</code>):在块结束时才赋值</li>
+<li>阻塞赋值(如<code>b = a;</code>):立即赋值</li>
+</ul>
+<p>规范:</p>
+<ol>
+<li>always块中使用非阻塞赋值</li>
+<li>assign中使用阻塞赋值</li>
+</ol>
+<h3 id="块语句"><a href="#块语句" class="headerlink" title="块语句"></a>块语句</h3><ul>
+<li>顺序块:顺序执行语句</li>
+<li>并行块:同时执行语句</li>
+</ul>
+<p>示例:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token comment">// 顺序块</span>
+<span class="token keyword">begin</span>
+  语句<span class="token number">1</span><span class="token punctuation">;</span>
+  语句<span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">// 并行块</span>
+<span class="token keyword">fork</span>
+  语句<span class="token number">1</span><span class="token punctuation">;</span>
+  语句<span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">end</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="条件和循环语句"><a href="#条件和循环语句" class="headerlink" title="条件和循环语句"></a>条件和循环语句</h3><ul>
+<li>if…else语句、case语句</li>
+<li>for循环语句</li>
+</ul>
+<h3 id="always块"><a href="#always块" class="headerlink" title="always块"></a>always块</h3><p>在仿真中持续重复执行的语句块。</p>
+<p>格式:<code>always @(控制信号) 语句</code></p>
+<p>例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token important">always @</span><span class="token punctuation">(</span><span class="token keyword">posedge</span> clock <span class="token keyword">or</span> <span class="token keyword">posedge</span> reset<span class="token punctuation">)</span> <span class="token comment">// 时序逻辑</span>
+
+<span class="token important">always @</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token comment">// 组合逻辑</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>按位运算符</strong></p>
+<p>Verilog中包含以下按位运算符:</p>
+<ul>
+<li>取反:~</li>
+<li>与:&amp;</li>
+<li>或:|</li>
+<li>异或:^</li>
+<li>同或:~^</li>
+</ul>
+<p>这些运算符对两个操作数的每1位进行逐位运算。</p>
+<p>如果两个操作数位数不等,则用0在短操作数左侧进行填充。</p>
+<h3 id="连续赋值-Continuous-Assignment"><a href="#连续赋值-Continuous-Assignment" class="headerlink" title="连续赋值(Continuous Assignment)"></a>连续赋值(Continuous Assignment)</h3><p>用于对wire类型变量进行赋值。格式如下:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">assign</span> <span class="token operator">&lt;</span>目标变量<span class="token operator">></span> <span class="token operator">=</span> <span class="token operator">&lt;</span>表达式<span class="token operator">></span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>例如:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">wire</span> Cout<span class="token punctuation">,</span> A<span class="token punctuation">,</span> B<span class="token punctuation">;</span>
+
+<span class="token keyword">assign</span> Cout <span class="token operator">=</span> A <span class="token operator">&amp;</span> B<span class="token punctuation">;</span> <span class="token comment">// 实现A与B的按位与运算</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="门电路实现"><a href="#门电路实现" class="headerlink" title="门电路实现"></a>门电路实现</h3><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1bc428ca-9435-4186-b50e-c6ff1ae3fb48/Untitled.png" alt="Untitled"></p>
+<h2 id="《Verilog简明教程》读书笔记"><a href="#《Verilog简明教程》读书笔记" class="headerlink" title="《Verilog简明教程》读书笔记"></a>《Verilog简明教程》读书笔记</h2><ul>
+<li>模块之间并行执行</li>
+<li><code>parameter</code>声明常量</li>
+<li><code>testbench</code>是编写模块的高层测试模块</li>
+<li><code>&#39;timescale</code>定义时间单位和精度</li>
+<li>数值表示:<code>5&#39;O37</code> <code>4&#39;D2</code></li>
+<li><code>wire</code>:<ul>
+<li>声明:<code>wire [2:0] Start</code></li>
+<li>赋值使用<code>assign</code>语句,例如<code>assign Start = Blt;</code></li>
+<li>连续赋值,用于驱动wire变量</li>
+</ul>
+</li>
+<li><code>reg</code>:<ul>
+<li>只能在<code>initial</code>和<code>always</code>块中赋值</li>
+<li><code>initial</code>只在开始时执行一次</li>
+<li><code>always</code>可反复执行</li>
+<li>时序控制,例如:<code>always #5 Clk=~Clk</code></li>
+<li>事件触发,例如:<code>always @(posedge Clock)</code></li>
+</ul>
+</li>
+<li>寄存器和存储器:<ul>
+<li><code>reg [3:0] Sat;</code></li>
+<li><code>reg [3:0] Mem [63:0]</code></li>
+<li><code>reg Bog [1:5];</code></li>
+</ul>
+</li>
+<li><code>reg</code>不能用<code>assign</code>赋值</li>
+<li><code>#3</code>暂停3个时间单位</li>
+<li><code>forever</code>实现永久循环</li>
+</ul>
+<p>模块实例化示例:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token function">Gang3</span><span class="token punctuation">(</span>Out<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>InA<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>InB<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token function">Gang3</span><span class="token punctuation">(</span>Out<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>InA<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>InB<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>等价于:</p>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token keyword">wire</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">]</span> Out<span class="token punctuation">,</span>InA<span class="token punctuation">,</span>InB<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>关于模块的替换工作可以在书吴戈的&lt;verilog简明教程&gt;中的测试单元里找到相应的模块</li>
+</ul>
 
                 
             </div>
@@ -705,7 +895,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shiym.top/article/b5c3f382">https://shiym.top/article/b5c3f382</a>
+                    <a href="https://shiym.top/article/7045141b">https://shiym.top/article/7045141b</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -743,20 +933,28 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/DevOps/">
-                                    <span class="chip bg-color">DevOps</span>
+                                <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">编程学习</span>
                                 </a>
                             
-                                <a href="/tags/%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA/">
-                                    <span class="chip bg-color">飞书机器人</span>
+                                <a href="/tags/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+                                    <span class="chip bg-color">基础语法</span>
                                 </a>
                             
-                                <a href="/tags/GPT/">
-                                    <span class="chip bg-color">GPT</span>
+                                <a href="/tags/Verilog/">
+                                    <span class="chip bg-color">Verilog</span>
                                 </a>
                             
-                                <a href="/tags/Engineering/">
-                                    <span class="chip bg-color">Engineering</span>
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
+                                    <span class="chip bg-color">计算机组成原理</span>
+                                </a>
+                            
+                                <a href="/tags/CPU/">
+                                    <span class="chip bg-color">CPU</span>
+                                </a>
+                            
+                                <a href="/tags/Vivado/">
+                                    <span class="chip bg-color">Vivado</span>
                                 </a>
                             
                         </div>
@@ -1106,31 +1304,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/article/5d312595">
+                <a href="/article/847ddabe">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="数据挖掘与大数据分析">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Ubuntu-Git-SSH 推送">
                         
-                        <span class="card-title">数据挖掘与大数据分析</span>
+                        <span class="card-title">Ubuntu-Git-SSH 推送</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            主要介绍了数据挖掘与大数据分析的基础知识，包括大数据的定义与理念、数据挖掘的产生背景及原因、数据挖掘的应用、数据挖掘的主要功能、数据挖掘面临的挑战等内容。
+                            解决了代理模式下Ubuntu使用Git推送Hexo的心头之患
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-29
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Course/" class="post-category">
-                                    Course
+                            <a href="/categories/Technology/" class="post-category">
+                                    Technology
                                 </a>
                             
                             
@@ -1140,20 +1338,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/">
-                        <span class="chip bg-color">大二下</span>
-                    </a>
-                    
-                    <a href="/tags/Machine-Learning/">
-                        <span class="chip bg-color">Machine Learning</span>
-                    </a>
-                    
-                    <a href="/tags/Big-Data/">
-                        <span class="chip bg-color">Big Data</span>
-                    </a>
-                    
-                    <a href="/tags/Data-Mining/">
-                        <span class="chip bg-color">Data Mining</span>
+                    <a href="/tags/Ubuntu/">
+                        <span class="chip bg-color">Ubuntu</span>
                     </a>
                     
                 </div>
@@ -1167,31 +1353,31 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/article/eed73e40">
+                <a href="/article/8e458014">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="视频制作学习总结">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="我的Python编程学习笔记总结">
                         
-                        <span class="card-title">视频制作学习总结</span>
+                        <span class="card-title">我的Python编程学习笔记总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            YouTube频道制作学习整理，加上AIGC功能
+                            本文总结我学习Python的第一阶段,包括基础语法、函数、面向对象等核心知识点,以及12天的学习过程。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Skills/" class="post-category">
-                                    Skills
+                            <a href="/categories/Technology/" class="post-category">
+                                    Technology
                                 </a>
                             
                             
@@ -1201,20 +1387,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/softskills/">
-                        <span class="chip bg-color">softskills</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
-                    <a href="/tags/YouTuber/">
-                        <span class="chip bg-color">YouTuber</span>
+                    <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">编程学习</span>
                     </a>
                     
-                    <a href="/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/">
-                        <span class="chip bg-color">视频制作</span>
-                    </a>
-                    
-                    <a href="/tags/AIGC/">
-                        <span class="chip bg-color">AIGC</span>
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+                        <span class="chip bg-color">基础语法</span>
                     </a>
                     
                 </div>
@@ -1375,6 +1557,13 @@
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 
