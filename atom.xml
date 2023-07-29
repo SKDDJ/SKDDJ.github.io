@@ -157,9 +157,9 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="人工智能" scheme="https://shiym.top/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
+    <category term="人工智能" scheme="https://shiym.top/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -238,9 +238,9 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
-    
     <category term="公司金融" scheme="https://shiym.top/tags/%E5%85%AC%E5%8F%B8%E9%87%91%E8%9E%8D/"/>
+    
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
     
   </entry>
   
@@ -466,13 +466,13 @@
     <category term="Skills" scheme="https://shiym.top/categories/Skills/"/>
     
     
+    <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
+    
     <category term="YouTuber" scheme="https://shiym.top/tags/YouTuber/"/>
     
     <category term="视频制作" scheme="https://shiym.top/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/"/>
     
     <category term="AIGC" scheme="https://shiym.top/tags/AIGC/"/>
-    
-    <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
     
   </entry>
   
@@ -555,11 +555,11 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
     <category term="宏观经济学" scheme="https://shiym.top/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     
     <category term="Macro Economic" scheme="https://shiym.top/tags/Macro-Economic/"/>
-    
-    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
     
   </entry>
   
@@ -592,9 +592,9 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
-    
     <category term="软件技术基础" scheme="https://shiym.top/tags/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
     
   </entry>
   
