@@ -54,14 +54,14 @@
     <link href="https://shiym.top/article/a0866f96"/>
     <id>https://shiym.top/article/a0866f96</id>
     <published>2023-07-25T06:34:11.771Z</published>
-    <updated>2023-07-27T06:05:42.369Z</updated>
+    <updated>2023-07-29T11:35:50.707Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;彼得林奇著作读书笔记&quot;&gt;&lt;a href=&quot;#彼得林奇著作读书笔记&quot; class=&quot;headerlink&quot; title=&quot;彼得林奇著作读书笔记&quot;&gt;&lt;/a&gt;彼得林奇著作读书笔记&lt;/h1&gt;&lt;h2 id=&quot;一、长期投资&quot;&gt;&lt;a href=&quot;#一、长期投资&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;彼得林奇著作读书笔记&quot;&gt;&lt;a href=&quot;#彼得林奇著作读书笔记&quot; class=&quot;headerlink&quot; title=&quot;彼得林奇著作读书笔记&quot;&gt;&lt;/a&gt;彼得林奇著作读书笔记&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -555,27 +555,35 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
-    
     <category term="宏观经济学" scheme="https://shiym.top/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     
     <category term="Macro Economic" scheme="https://shiym.top/tags/Macro-Economic/"/>
     
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
   </entry>
   
   <entry>
-    <title>数据挖掘与大数据分析</title>
-    <link href="https://shiym.top/article/5d312595"/>
-    <id>https://shiym.top/article/5d312595</id>
+    <title>软件技术基础</title>
+    <link href="https://shiym.top/article/4eb64ed2"/>
+    <id>https://shiym.top/article/4eb64ed2</id>
     <published>2022-12-26T21:24:12.000Z</published>
-    <updated>2023-07-29T06:42:45.816Z</updated>
+    <updated>2023-01-02T02:42:36.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-1-Chapter1-数据挖掘与大数据简介&quot;&gt;&lt;a href=&quot;#1-1-Chapter1-数据挖掘与大数据简介&quot; class=&quot;headerlink&quot; title=&quot;1.1. Chapter1 数据挖掘与大数据简介&quot;&gt;&lt;/a&gt;1.1. Chapter1</summary>
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Chapter1 编写单机API&lt;ul&gt;
+&lt;li&gt;排序&lt;/li&gt;
+&lt;li&gt;归类&lt;/li&gt;
+&lt;li&gt;最短路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Chapter2 多进程API&lt;/li&gt;
+&lt;li&gt;Chapter4 SQL</summary>
         
       
     
@@ -584,13 +592,9 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="Machine Learning" scheme="https://shiym.top/tags/Machine-Learning/"/>
-    
-    <category term="Big Data" scheme="https://shiym.top/tags/Big-Data/"/>
-    
-    <category term="Data Mining" scheme="https://shiym.top/tags/Data-Mining/"/>
-    
     <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
+    <category term="软件技术基础" scheme="https://shiym.top/tags/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
