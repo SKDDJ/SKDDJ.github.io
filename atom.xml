@@ -37,8 +37,6 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
-    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
-    
     <category term="计算机网络" scheme="https://shiym.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     <category term="科学上网" scheme="https://shiym.top/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
@@ -46,6 +44,8 @@
     <category term="VPN" scheme="https://shiym.top/tags/VPN/"/>
     
     <category term="Computer Network" scheme="https://shiym.top/tags/Computer-Network/"/>
+    
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
   </entry>
   
@@ -157,9 +157,9 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
-    
     <category term="人工智能" scheme="https://shiym.top/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
     
   </entry>
   
@@ -238,9 +238,9 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="公司金融" scheme="https://shiym.top/tags/%E5%85%AC%E5%8F%B8%E9%87%91%E8%9E%8D/"/>
-    
     <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
+    <category term="公司金融" scheme="https://shiym.top/tags/%E5%85%AC%E5%8F%B8%E9%87%91%E8%9E%8D/"/>
     
   </entry>
   
@@ -380,13 +380,13 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
+    
     <category term="飞书机器人" scheme="https://shiym.top/tags/%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
     <category term="GPT" scheme="https://shiym.top/tags/GPT/"/>
     
     <category term="Engineering" scheme="https://shiym.top/tags/Engineering/"/>
-    
-    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
   </entry>
   
@@ -466,13 +466,13 @@
     <category term="Skills" scheme="https://shiym.top/categories/Skills/"/>
     
     
-    <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
-    
     <category term="YouTuber" scheme="https://shiym.top/tags/YouTuber/"/>
     
     <category term="视频制作" scheme="https://shiym.top/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/"/>
     
     <category term="AIGC" scheme="https://shiym.top/tags/AIGC/"/>
+    
+    <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
     
   </entry>
   
@@ -564,26 +564,18 @@
   </entry>
   
   <entry>
-    <title>软件技术基础</title>
-    <link href="https://shiym.top/article/4eb64ed2"/>
-    <id>https://shiym.top/article/4eb64ed2</id>
+    <title>数据挖掘与大数据分析</title>
+    <link href="https://shiym.top/article/5d312595"/>
+    <id>https://shiym.top/article/5d312595</id>
     <published>2022-12-26T21:24:12.000Z</published>
-    <updated>2023-01-02T02:42:36.000Z</updated>
+    <updated>2023-07-29T06:42:45.816Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;Chapter1 编写单机API&lt;ul&gt;
-&lt;li&gt;排序&lt;/li&gt;
-&lt;li&gt;归类&lt;/li&gt;
-&lt;li&gt;最短路径&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Chapter2 多进程API&lt;/li&gt;
-&lt;li&gt;Chapter4 SQL</summary>
+    <summary type="html">&lt;h2 id=&quot;1-1-Chapter1-数据挖掘与大数据简介&quot;&gt;&lt;a href=&quot;#1-1-Chapter1-数据挖掘与大数据简介&quot; class=&quot;headerlink&quot; title=&quot;1.1. Chapter1 数据挖掘与大数据简介&quot;&gt;&lt;/a&gt;1.1. Chapter1</summary>
         
       
     
@@ -592,7 +584,11 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="软件技术基础" scheme="https://shiym.top/tags/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
+    <category term="Machine Learning" scheme="https://shiym.top/tags/Machine-Learning/"/>
+    
+    <category term="Big Data" scheme="https://shiym.top/tags/Big-Data/"/>
+    
+    <category term="Data Mining" scheme="https://shiym.top/tags/Data-Mining/"/>
     
     <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
     
