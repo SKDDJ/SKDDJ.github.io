@@ -37,6 +37,8 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
+    
     <category term="计算机网络" scheme="https://shiym.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     <category term="科学上网" scheme="https://shiym.top/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
@@ -44,8 +46,6 @@
     <category term="VPN" scheme="https://shiym.top/tags/VPN/"/>
     
     <category term="Computer Network" scheme="https://shiym.top/tags/Computer-Network/"/>
-    
-    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
   </entry>
   
@@ -380,13 +380,13 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
-    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
-    
     <category term="飞书机器人" scheme="https://shiym.top/tags/%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
     <category term="GPT" scheme="https://shiym.top/tags/GPT/"/>
     
     <category term="Engineering" scheme="https://shiym.top/tags/Engineering/"/>
+    
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
   </entry>
   
@@ -466,13 +466,13 @@
     <category term="Skills" scheme="https://shiym.top/categories/Skills/"/>
     
     
+    <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
+    
     <category term="YouTuber" scheme="https://shiym.top/tags/YouTuber/"/>
     
     <category term="视频制作" scheme="https://shiym.top/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/"/>
     
     <category term="AIGC" scheme="https://shiym.top/tags/AIGC/"/>
-    
-    <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
     
   </entry>
   
