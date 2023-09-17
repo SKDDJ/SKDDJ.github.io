@@ -618,21 +618,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-09-07
+                    2023-09-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.8k
+                    3.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    10 Min
+                    13 Min
                 </div>
                 
 
@@ -1021,7 +1021,102 @@
 <p>归还资源给其父进程或系统；</p>
 <p>从PCB队列中移出PCB。</p>
 <p><img src="https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202309072211069.jpg" alt="UNIX进程终止"></p>
-<h2 id="2-3-进程并发"><a href="#2-3-进程并发" class="headerlink" title="2.3 进程并发"></a>2.3 进程并发</h2><h2 id="2-4-进程死锁与饥饿"><a href="#2-4-进程死锁与饥饿" class="headerlink" title="2.4 进程死锁与饥饿"></a>2.4 进程死锁与饥饿</h2><h1 id="第三章：存储管理"><a href="#第三章：存储管理" class="headerlink" title="第三章：存储管理"></a>第三章：存储管理</h1><h2 id="操作系统的存储管理需求分析"><a href="#操作系统的存储管理需求分析" class="headerlink" title="操作系统的存储管理需求分析"></a>操作系统的存储管理需求分析</h2><h2 id="存储划分技术：分区技术"><a href="#存储划分技术：分区技术" class="headerlink" title="存储划分技术：分区技术"></a>存储划分技术：分区技术</h2><h2 id="伙伴系统"><a href="#伙伴系统" class="headerlink" title="伙伴系统"></a>伙伴系统</h2><h2 id="存储划分技术：简单分页技术"><a href="#存储划分技术：简单分页技术" class="headerlink" title="存储划分技术：简单分页技术"></a>存储划分技术：简单分页技术</h2><h2 id="存储划分技术：简单分段技术"><a href="#存储划分技术：简单分段技术" class="headerlink" title="存储划分技术：简单分段技术"></a>存储划分技术：简单分段技术</h2><h2 id="虚拟存储管理的软件策略"><a href="#虚拟存储管理的软件策略" class="headerlink" title="虚拟存储管理的软件策略"></a>虚拟存储管理的软件策略</h2><h2 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h2><h2 id="虚拟存储管理的页面清除与负载控制策略"><a href="#虚拟存储管理的页面清除与负载控制策略" class="headerlink" title="虚拟存储管理的页面清除与负载控制策略"></a>虚拟存储管理的页面清除与负载控制策略</h2><h1 id="第四章：I-x2F-O设备管理"><a href="#第四章：I-x2F-O设备管理" class="headerlink" title="第四章：I&#x2F;O设备管理"></a>第四章：I&#x2F;O设备管理</h1><h2 id="设备管理概述与I-x2F-O控制方式"><a href="#设备管理概述与I-x2F-O控制方式" class="headerlink" title="设备管理概述与I&#x2F;O控制方式"></a>设备管理概述与I&#x2F;O控制方式</h2><h2 id="I-x2F-O缓冲技术"><a href="#I-x2F-O缓冲技术" class="headerlink" title="I&#x2F;O缓冲技术"></a>I&#x2F;O缓冲技术</h2><h2 id="磁盘调度策略"><a href="#磁盘调度策略" class="headerlink" title="磁盘调度策略"></a>磁盘调度策略</h2><h2 id="磁盘容错技术"><a href="#磁盘容错技术" class="headerlink" title="磁盘容错技术"></a>磁盘容错技术</h2><h2 id="磁盘阵列RAID技术"><a href="#磁盘阵列RAID技术" class="headerlink" title="磁盘阵列RAID技术"></a>磁盘阵列RAID技术</h2><h1 id="第五章：文件管理"><a href="#第五章：文件管理" class="headerlink" title="第五章：文件管理"></a>第五章：文件管理</h1><h2 id="文件管理概述"><a href="#文件管理概述" class="headerlink" title="文件管理概述"></a>文件管理概述</h2><h2 id="文件的逻辑结构与访问方式"><a href="#文件的逻辑结构与访问方式" class="headerlink" title="文件的逻辑结构与访问方式"></a>文件的逻辑结构与访问方式</h2><h2 id="文件目录管理、文件共享和记录组块方式"><a href="#文件目录管理、文件共享和记录组块方式" class="headerlink" title="文件目录管理、文件共享和记录组块方式"></a>文件目录管理、文件共享和记录组块方式</h2><h2 id="文件的物理组织和外存空闲空间管理"><a href="#文件的物理组织和外存空闲空间管理" class="headerlink" title="文件的物理组织和外存空闲空间管理"></a>文件的物理组织和外存空闲空间管理</h2>
+<h3 id="2-2-6-waitpid"><a href="#2-2-6-waitpid" class="headerlink" title="2.2.6 waitpid()"></a>2.2.6 waitpid()</h3><p><img src="https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202309141657202.jpg" alt="example"><br>由于这个进程由当前会话创建，所以返回值 5 会在最后返回<br><img src="https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202309141658216.jpg" alt="output"></p>
+<h3 id="2-2-7-进程切换"><a href="#2-2-7-进程切换" class="headerlink" title="2.2.7 进程切换"></a>2.2.7 进程切换</h3><p><img src="https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202309141707711.jpg"></p>
+<h3 id="2-2-8-Linux-中的系统调用过程"><a href="#2-2-8-Linux-中的系统调用过程" class="headerlink" title="2.2.8 Linux 中的系统调用过程"></a>2.2.8 Linux 中的系统调用过程</h3><p><img src="https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202309141708440.jpg"></p>
+<h2 id="2-3-线程"><a href="#2-3-线程" class="headerlink" title="2.3 线程"></a>2.3 线程</h2><p>recap：</p>
+<p>two features of process:</p>
+<ol>
+<li>资源所有权：一个进程包括一个保存进程映像的虚地址空间，并且不时地被分配给对资源的控制或所有权</li>
+<li>调度&#x2F;执行：一个具有执行状态和调度优先级的进程是一个被操作系统调度并分配的实体</li>
+</ol>
+<blockquote>
+<p>为区分这两个特点，调度并分派的部分通常称为线程或轻量级进程（light-weight process），而资源所有权的部分通常称为进程。</p>
+</blockquote>
+<h3 id="2-3-1-线程的优势"><a href="#2-3-1-线程的优势" class="headerlink" title="2.3.1 线程的优势"></a>2.3.1 线程的优势</h3><ol>
+<li>减少并发执行时的时空开销<br>进程的创建、撤消、切换开销较大</li>
+<li>线程是系统独立调度的基本单位<br>基本不拥有系统资源，只有少量资源（PC，寄存器，栈），<strong>共享其所属进程所拥有的全部资源。</strong></li>
+</ol>
+<blockquote>
+<p>线程阻塞不一定会引起进程阻塞</p>
+</blockquote>
+<h3 id="2-3-2-线程数据"><a href="#2-3-2-线程数据" class="headerlink" title="2.3.2 线程数据"></a>2.3.2 线程数据</h3><ul>
+<li>状态参数<ul>
+<li>寄存器状态</li>
+<li>堆栈</li>
+<li>优先级</li>
+<li>线程专有存储器<ul>
+<li>TLS：Thread Local Storage</li>
+</ul>
+</li>
+<li>信号屏蔽</li>
+<li>运行状态</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202309141715455.jpg"></p>
+<h3 id="2-3-3-线程状态"><a href="#2-3-3-线程状态" class="headerlink" title="2.3.3 线程状态"></a>2.3.3 线程状态</h3><ol>
+<li>派生（Spawn)：当产生一个新进程时，同时也为该进程派生了一个线程，随后，可以在同一个进程中派生另一个线程，新线程被放置在就绪队列中。</li>
+<li>结束（Finish）：线程完成时，其寄存器信息和栈都被释放。</li>
+<li>就绪（Ready）</li>
+<li>运行（Running）</li>
+<li>阻塞（Blocked)：当线程需要等待一个事件时，它将阻塞，此时处理器转而执行另一个就绪线程。</li>
+</ol>
+<h3 id="2-3-4-内核线程和用户线程的不同"><a href="#2-3-4-内核线程和用户线程的不同" class="headerlink" title="2.3.4 内核线程和用户线程的不同"></a>2.3.4 内核线程和用户线程的不同</h3><ol>
+<li>调度开销</li>
+</ol>
+<ul>
+<li>内核级线程切换类似于进程切换，开销较大。</li>
+<li>用户级线程切换发生在同一用户进程内，无需进入内核，更快。</li>
+</ul>
+<ol start="2">
+<li>并发效率</li>
+</ol>
+<ul>
+<li>用户线程：某一个线程阻塞，由于内核不知道这些线程的存在，因此将进程阻塞。</li>
+<li>内核线程：某一线程阻塞，则阻塞该线程，进程（其它线程）仍可运行。</li>
+</ul>
+<ol start="3">
+<li>执行时间</li>
+</ol>
+<ul>
+<li>用户级线程以进程为单位平均分配时间，对线程间并发执行不利（一个CPU）。</li>
+<li>内核级线程以线程为单位分配时间（多个CPU）。</li>
+</ul>
+<h3 id="2-3-5-线程实例（以-Linux-为例）"><a href="#2-3-5-线程实例（以-Linux-为例）" class="headerlink" title="2.3.5 线程实例（以 Linux 为例）"></a>2.3.5 线程实例（以 Linux 为例）</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">NUM_THREADS</span>     <span class="token expression"><span class="token number">5</span></span></span>
+
+<span class="token keyword">void</span> <span class="token operator">*</span><span class="token function">PrintHello</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>threadid<span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+   <span class="token keyword">long</span> tid<span class="token punctuation">;</span>
+   tid <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">long</span><span class="token punctuation">)</span>threadid<span class="token punctuation">;</span>
+   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello World! It's me, thread #%ld!\n"</span><span class="token punctuation">,</span> tid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">pthread_exit</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span> <span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+   <span class="token class-name">pthread_t</span> threads<span class="token punctuation">[</span>NUM_THREADS<span class="token punctuation">]</span><span class="token punctuation">;</span>
+   <span class="token keyword">int</span> rc<span class="token punctuation">;</span>
+   <span class="token keyword">long</span> t<span class="token punctuation">;</span>
+   <span class="token keyword">for</span><span class="token punctuation">(</span>t<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> t<span class="token operator">&lt;</span>NUM_THREADS<span class="token punctuation">;</span> t<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"In main: creating thread %ld\n"</span><span class="token punctuation">,</span> t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      rc <span class="token operator">=</span> <span class="token function">pthread_create</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>threads<span class="token punctuation">[</span>t<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> PrintHello<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">)</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>rc<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"ERROR; return code from pthread_create() is %d\n"</span><span class="token punctuation">,</span> rc<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">exit</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">&#125;</span>
+   <span class="token punctuation">&#125;</span>
+
+   <span class="token comment">/* Last thing that main() should do */</span>
+   <span class="token function">pthread_exit</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这里有一个 trick，为了传入线程的 id 同时保证能够在线程函数中重新定义变量类型，将线程 id 当成引用<code>(void *)t</code> 传入进去来“欺骗”编译器。</p>
+<h4 id="课后练习："><a href="#课后练习：" class="headerlink" title="课后练习："></a>课后练习：</h4><blockquote>
+<p>阅读了解.NET Task异步工作机制，思考其与线程的关系</p>
+</blockquote>
+<h2 id="2-4-进程并发"><a href="#2-4-进程并发" class="headerlink" title="2.4 进程并发"></a>2.4 进程并发</h2><h2 id="2-5-进程死锁与饥饿"><a href="#2-5-进程死锁与饥饿" class="headerlink" title="2.5 进程死锁与饥饿"></a>2.5 进程死锁与饥饿</h2><h1 id="第三章：存储管理"><a href="#第三章：存储管理" class="headerlink" title="第三章：存储管理"></a>第三章：存储管理</h1><h2 id="操作系统的存储管理需求分析"><a href="#操作系统的存储管理需求分析" class="headerlink" title="操作系统的存储管理需求分析"></a>操作系统的存储管理需求分析</h2><h2 id="存储划分技术：分区技术"><a href="#存储划分技术：分区技术" class="headerlink" title="存储划分技术：分区技术"></a>存储划分技术：分区技术</h2><h2 id="伙伴系统"><a href="#伙伴系统" class="headerlink" title="伙伴系统"></a>伙伴系统</h2><h2 id="存储划分技术：简单分页技术"><a href="#存储划分技术：简单分页技术" class="headerlink" title="存储划分技术：简单分页技术"></a>存储划分技术：简单分页技术</h2><h2 id="存储划分技术：简单分段技术"><a href="#存储划分技术：简单分段技术" class="headerlink" title="存储划分技术：简单分段技术"></a>存储划分技术：简单分段技术</h2><h2 id="虚拟存储管理的软件策略"><a href="#虚拟存储管理的软件策略" class="headerlink" title="虚拟存储管理的软件策略"></a>虚拟存储管理的软件策略</h2><h2 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h2><h2 id="虚拟存储管理的页面清除与负载控制策略"><a href="#虚拟存储管理的页面清除与负载控制策略" class="headerlink" title="虚拟存储管理的页面清除与负载控制策略"></a>虚拟存储管理的页面清除与负载控制策略</h2><h1 id="第四章：I-x2F-O设备管理"><a href="#第四章：I-x2F-O设备管理" class="headerlink" title="第四章：I&#x2F;O设备管理"></a>第四章：I&#x2F;O设备管理</h1><h2 id="设备管理概述与I-x2F-O控制方式"><a href="#设备管理概述与I-x2F-O控制方式" class="headerlink" title="设备管理概述与I&#x2F;O控制方式"></a>设备管理概述与I&#x2F;O控制方式</h2><h2 id="I-x2F-O缓冲技术"><a href="#I-x2F-O缓冲技术" class="headerlink" title="I&#x2F;O缓冲技术"></a>I&#x2F;O缓冲技术</h2><h2 id="磁盘调度策略"><a href="#磁盘调度策略" class="headerlink" title="磁盘调度策略"></a>磁盘调度策略</h2><h2 id="磁盘容错技术"><a href="#磁盘容错技术" class="headerlink" title="磁盘容错技术"></a>磁盘容错技术</h2><h2 id="磁盘阵列RAID技术"><a href="#磁盘阵列RAID技术" class="headerlink" title="磁盘阵列RAID技术"></a>磁盘阵列RAID技术</h2><h1 id="第五章：文件管理"><a href="#第五章：文件管理" class="headerlink" title="第五章：文件管理"></a>第五章：文件管理</h1><h2 id="文件管理概述"><a href="#文件管理概述" class="headerlink" title="文件管理概述"></a>文件管理概述</h2><h2 id="文件的逻辑结构与访问方式"><a href="#文件的逻辑结构与访问方式" class="headerlink" title="文件的逻辑结构与访问方式"></a>文件的逻辑结构与访问方式</h2><h2 id="文件目录管理、文件共享和记录组块方式"><a href="#文件目录管理、文件共享和记录组块方式" class="headerlink" title="文件目录管理、文件共享和记录组块方式"></a>文件目录管理、文件共享和记录组块方式</h2><h2 id="文件的物理组织和外存空闲空间管理"><a href="#文件的物理组织和外存空闲空间管理" class="headerlink" title="文件的物理组织和外存空闲空间管理"></a>文件的物理组织和外存空闲空间管理</h2>
                 
             </div>
             <hr/>
@@ -1715,7 +1810,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">69.3k</span>
+                        class="white-color">71.3k</span>
             
             
             
