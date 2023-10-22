@@ -49,11 +49,11 @@
       
         <tags>
             
+            <tag> DevOps </tag>
+            
             <tag> Linux </tag>
             
             <tag> Disk </tag>
-            
-            <tag> DevOps </tag>
             
         </tags>
       
@@ -78,11 +78,11 @@
       
         <tags>
             
+            <tag> DevOps </tag>
+            
             <tag> Linux </tag>
             
             <tag> Disk </tag>
-            
-            <tag> DevOps </tag>
             
             <tag> Ubuntu </tag>
             
@@ -272,6 +272,8 @@
             
             <tag> 计算机操作系统 </tag>
             
+            <tag> Operating System </tag>
+            
         </tags>
       
     </entry>
@@ -295,9 +297,9 @@
       
         <tags>
             
-            <tag> 大三上 </tag>
-            
             <tag> 公司金融 </tag>
+            
+            <tag> 大三上 </tag>
             
         </tags>
       
@@ -306,7 +308,7 @@
     
     
     <entry>
-      <title>金融衍生工具</title>
+      <title>Derivatives</title>
       <link href="/article/f1b79b2a.html"/>
       <url>/article/f1b79b2a.html</url>
       
@@ -326,6 +328,8 @@
             
             <tag> 金融衍生工具 </tag>
             
+            <tag> Derivatives </tag>
+            
         </tags>
       
     </entry>
@@ -333,7 +337,7 @@
     
     
     <entry>
-      <title>计量经济学</title>
+      <title>Econometrics</title>
       <link href="/article/f6199005.html"/>
       <url>/article/f6199005.html</url>
       
@@ -352,6 +356,8 @@
             <tag> 大三上 </tag>
             
             <tag> 计量经济学 </tag>
+            
+            <tag> Econometrics </tag>
             
         </tags>
       
@@ -387,7 +393,7 @@
     
     
     <entry>
-      <title>国际金融</title>
+      <title>International Finance</title>
       <link href="/article/bae2e029.html"/>
       <url>/article/bae2e029.html</url>
       
@@ -403,9 +409,11 @@
       
         <tags>
             
+            <tag> 大三上 </tag>
+            
             <tag> 国际金融 </tag>
             
-            <tag> 大三上 </tag>
+            <tag> International Finance </tag>
             
         </tags>
       
@@ -430,13 +438,13 @@
       
         <tags>
             
-            <tag> DevOps </tag>
-            
             <tag> 飞书机器人 </tag>
             
             <tag> GPT </tag>
             
             <tag> Engineering </tag>
+            
+            <tag> DevOps </tag>
             
         </tags>
       
