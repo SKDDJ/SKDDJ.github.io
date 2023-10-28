@@ -227,9 +227,9 @@
     <category term="Skills" scheme="https://shiym.top/categories/Skills/"/>
     
     
-    <category term="Investment" scheme="https://shiym.top/tags/Investment/"/>
-    
     <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
+    
+    <category term="Investment" scheme="https://shiym.top/tags/Investment/"/>
     
     <category term="Stocks" scheme="https://shiym.top/tags/Stocks/"/>
     
@@ -327,7 +327,7 @@
     <link href="https://shiym.top/article/f1b79b2a"/>
     <id>https://shiym.top/article/f1b79b2a</id>
     <published>2023-07-01T08:08:10.363Z</published>
-    <updated>2023-10-22T12:09:07.575Z</updated>
+    <updated>2023-10-22T12:12:18.529Z</updated>
     
     
       
@@ -357,7 +357,7 @@
     <link href="https://shiym.top/article/f6199005"/>
     <id>https://shiym.top/article/f6199005</id>
     <published>2023-07-01T08:07:27.854Z</published>
-    <updated>2023-10-22T12:10:29.800Z</updated>
+    <updated>2023-10-22T12:12:08.557Z</updated>
     
     
       
@@ -612,11 +612,11 @@
     <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
-    
     <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
     
     <category term="金融学基础" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
     
   </entry>
   
