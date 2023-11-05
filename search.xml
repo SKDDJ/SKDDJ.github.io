@@ -82,9 +82,9 @@
             
             <tag> Linux </tag>
             
-            <tag> Disk </tag>
-            
             <tag> Ubuntu </tag>
+            
+            <tag> Disk </tag>
             
         </tags>
       
@@ -208,9 +208,9 @@
       
         <tags>
             
-            <tag> Investment </tag>
-            
             <tag> Finance </tag>
+            
+            <tag> Investment </tag>
             
             <tag> Stocks </tag>
             
@@ -523,13 +523,13 @@
       
         <tags>
             
-            <tag> softskills </tag>
-            
             <tag> YouTuber </tag>
             
             <tag> 视频制作 </tag>
             
             <tag> AIGC </tag>
+            
+            <tag> softskills </tag>
             
         </tags>
       
@@ -583,11 +583,11 @@
       
         <tags>
             
-            <tag> Finance </tag>
-            
             <tag> 大二下 </tag>
             
             <tag> 金融学基础 </tag>
+            
+            <tag> Finance </tag>
             
         </tags>
       
@@ -612,11 +612,11 @@
       
         <tags>
             
-            <tag> 大二下 </tag>
-            
             <tag> 宏观经济学 </tag>
             
             <tag> Macro Economic </tag>
+            
+            <tag> 大二下 </tag>
             
         </tags>
       
@@ -641,13 +641,13 @@
       
         <tags>
             
+            <tag> 大二下 </tag>
+            
             <tag> Machine Learning </tag>
             
             <tag> Big Data </tag>
             
             <tag> Data Mining </tag>
-            
-            <tag> 大二下 </tag>
             
         </tags>
       
@@ -699,11 +699,11 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 大二下 </tag>
             
             <tag> 量化交易与商业银行 </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -759,9 +759,9 @@
             
             <tag> blog </tag>
             
-            <tag> plugin </tag>
-            
             <tag> softskills </tag>
+            
+            <tag> plugin </tag>
             
         </tags>
       
