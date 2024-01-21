@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/article/0.html"/>
+      <url>/article/0.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="我的粤港澳湾区AI算法竞赛之旅"><a href="#我的粤港澳湾区AI算法竞赛之旅" class="headerlink" title="我的粤港澳湾区AI算法竞赛之旅"></a>我的粤港澳湾区AI算法竞赛之旅</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><ul><li>介绍你的AI算法竞赛经历的背景和动机。</li><li>提到你对AI的兴趣以及为什么决定参加这个竞赛。</li></ul><h2 id="报名和准备阶段"><a href="#报名和准备阶段" class="headerlink" title="报名和准备阶段"></a>报名和准备阶段</h2><ul><li>描述你是如何得知这个竞赛并报名参加的。</li><li>讨论你在竞赛前期的准备工作，包括学习资料、技能培训等。</li></ul><h2 id="竞赛规则和挑战"><a href="#竞赛规则和挑战" class="headerlink" title="竞赛规则和挑战"></a>竞赛规则和挑战</h2><ul><li>介绍竞赛的规则和要求。</li><li>分享在比赛中面临的挑战，包括技术难题和时间管理。</li></ul><h2 id="团队合作"><a href="#团队合作" class="headerlink" title="团队合作"></a>团队合作</h2><ul><li>如果有的话，讨论你与队友的合作经验。</li><li>强调团队合作在竞赛中的重要性。</li></ul><h2 id="算法开发"><a href="#算法开发" class="headerlink" title="算法开发"></a>算法开发</h2><ul><li>详细描述你使用的AI算法和方法。</li><li>说明你是如何解决竞赛任务的。</li></ul><h2 id="比赛过程"><a href="#比赛过程" class="headerlink" title="比赛过程"></a>比赛过程</h2><ul><li>讲述你在竞赛期间的日常经历，包括工作时间、挑战、突破等。</li><li>可以加入一些有趣的故事和趣闻。</li></ul><h2 id="成果和奖项"><a href="#成果和奖项" class="headerlink" title="成果和奖项"></a>成果和奖项</h2><ul><li>描述你在竞赛中的表现和最终的成绩。</li><li>如果有的话，分享你获得的奖项和荣誉。</li></ul><h2 id="总结与反思"><a href="#总结与反思" class="headerlink" title="总结与反思"></a>总结与反思</h2><ul><li>总结你的竞赛经历，包括成功和挫折。</li><li>提到你从中学到的教训和经验。</li></ul><h2 id="未来展望"><a href="#未来展望" class="headerlink" title="未来展望"></a>未来展望</h2><ul><li>讨论你对未来在AI领域的计划和抱负。</li></ul><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><ul><li>表达对参加竞赛的感激之情。</li><li>鼓励其他人积极参与类似的活动。</li></ul><p>希望这个大纲框架对你写博客有所帮助。如果你需要更多的建议或具体的内容，请随时告诉我！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>My Questions and Learnings from Exploring  Process Management</title>
       <link href="/article/e2f5e0f7.html"/>
       <url>/article/e2f5e0f7.html</url>
@@ -208,9 +221,9 @@
       
         <tags>
             
-            <tag> Investment </tag>
-            
             <tag> Finance </tag>
+            
+            <tag> Investment </tag>
             
             <tag> Stocks </tag>
             
@@ -583,11 +596,11 @@
       
         <tags>
             
-            <tag> Finance </tag>
-            
             <tag> 大二下 </tag>
             
             <tag> 金融学基础 </tag>
+            
+            <tag> Finance </tag>
             
         </tags>
       
@@ -612,11 +625,11 @@
       
         <tags>
             
+            <tag> 大二下 </tag>
+            
             <tag> 宏观经济学 </tag>
             
             <tag> Macro Economic </tag>
-            
-            <tag> 大二下 </tag>
             
         </tags>
       
@@ -641,13 +654,13 @@
       
         <tags>
             
-            <tag> 大二下 </tag>
-            
             <tag> Machine Learning </tag>
             
             <tag> Big Data </tag>
             
             <tag> Data Mining </tag>
+            
+            <tag> 大二下 </tag>
             
         </tags>
       
@@ -699,9 +712,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> 大二下 </tag>
+            
+            <tag> Python </tag>
             
             <tag> 量化交易与商业银行 </tag>
             
