@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Shiym&#39;s blog</title>
+  <title>Yiming Shi&#39;s blog</title>
   
-  <subtitle>Yiming Shi Writes</subtitle>
+  <subtitle>Yiming Shi</subtitle>
   <link href="https://shiym.top/atom.xml" rel="self"/>
   
   <link href="https://shiym.top/"/>
-  <updated>2024-01-30T14:07:22.022Z</updated>
+  <updated>2024-03-01T14:24:42.372Z</updated>
   <id>https://shiym.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://shiym.top/article/f0b89bcc"/>
     <id>https://shiym.top/article/f0b89bcc</id>
     <published>2024-01-21T14:14:19.279Z</published>
-    <updated>2024-01-30T14:07:22.022Z</updated>
+    <updated>2024-03-01T14:24:42.372Z</updated>
     
     
       
@@ -39,6 +39,8 @@
     
     <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
     
+    <category term="Fine tuning" scheme="https://shiym.top/tags/Fine-tuning/"/>
+    
     <category term="PEFT" scheme="https://shiym.top/tags/PEFT/"/>
     
     <category term="AIGC" scheme="https://shiym.top/tags/AIGC/"/>
@@ -46,8 +48,6 @@
     <category term="Google" scheme="https://shiym.top/tags/Google/"/>
     
     <category term="Pytorch" scheme="https://shiym.top/tags/Pytorch/"/>
-    
-    <category term="Fine tuning" scheme="https://shiym.top/tags/Fine-tuning/"/>
     
     <category term="Chengdu" scheme="https://shiym.top/tags/Chengdu/"/>
     
@@ -58,7 +58,7 @@
     <link href="https://shiym.top/article/0"/>
     <id>https://shiym.top/article/0</id>
     <published>2024-01-21T13:13:34.311Z</published>
-    <updated>2024-01-28T14:00:36.042Z</updated>
+    <updated>2024-03-01T14:24:25.178Z</updated>
     
     
       
@@ -74,9 +74,9 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
-    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
-    
     <category term="Competition" scheme="https://shiym.top/tags/Competition/"/>
+    
+    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
     
     <category term="Fine tuning" scheme="https://shiym.top/tags/Fine-tuning/"/>
     
@@ -198,15 +198,15 @@
     
     <category term="Python" scheme="https://shiym.top/tags/Python/"/>
     
+    <category term="Competition" scheme="https://shiym.top/tags/Competition/"/>
+    
+    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
+    
     <category term="Diffusers" scheme="https://shiym.top/tags/Diffusers/"/>
     
     <category term="PyTorch" scheme="https://shiym.top/tags/PyTorch/"/>
     
     <category term="Large Model" scheme="https://shiym.top/tags/Large-Model/"/>
-    
-    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
-    
-    <category term="Competition" scheme="https://shiym.top/tags/Competition/"/>
     
   </entry>
   
@@ -295,9 +295,9 @@
     <category term="Skills" scheme="https://shiym.top/categories/Skills/"/>
     
     
-    <category term="Investment" scheme="https://shiym.top/tags/Investment/"/>
-    
     <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
+    
+    <category term="Investment" scheme="https://shiym.top/tags/Investment/"/>
     
     <category term="Stocks" scheme="https://shiym.top/tags/Stocks/"/>
     
