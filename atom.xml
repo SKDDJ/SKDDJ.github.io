@@ -6,7 +6,7 @@
   <link href="https://shiym.top/atom.xml" rel="self"/>
   
   <link href="https://shiym.top/"/>
-  <updated>2024-03-01T14:24:42.372Z</updated>
+  <updated>2023-09-07T15:22:00.074Z</updated>
   <id>https://shiym.top/</id>
   
   <author>
@@ -15,74 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>谷歌开发者日 2023 成都篇 - 体验与见解</title>
-    <link href="https://shiym.top/article/f0b89bcc"/>
-    <id>https://shiym.top/article/f0b89bcc</id>
-    <published>2024-01-21T14:14:19.279Z</published>
-    <updated>2024-03-01T14:24:42.372Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;谷歌开发者日-2023-成都篇-体验与见解&quot;&gt;&lt;a href=&quot;#谷歌开发者日-2023-成都篇-体验与见解&quot; class=&quot;headerlink&quot; title=&quot;谷歌开发者日 2023 成都篇 - 体验与见解&quot;&gt;&lt;/a&gt;谷歌开发者日 2023 成都篇 -</summary>
-        
-      
-    
-    
-    
-    <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
-    
-    
-    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
-    
-    <category term="Fine tuning" scheme="https://shiym.top/tags/Fine-tuning/"/>
-    
-    <category term="PEFT" scheme="https://shiym.top/tags/PEFT/"/>
-    
-    <category term="AIGC" scheme="https://shiym.top/tags/AIGC/"/>
-    
-    <category term="Google" scheme="https://shiym.top/tags/Google/"/>
-    
-    <category term="Pytorch" scheme="https://shiym.top/tags/Pytorch/"/>
-    
-    <category term="Chengdu" scheme="https://shiym.top/tags/Chengdu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的粤港澳湾区AI算法竞赛之旅</title>
-    <link href="https://shiym.top/article/0"/>
-    <id>https://shiym.top/article/0</id>
-    <published>2024-01-21T13:13:34.311Z</published>
-    <updated>2024-03-01T14:24:25.178Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;我的粤港澳湾区AI算法竞赛之旅&quot;&gt;&lt;a href=&quot;#我的粤港澳湾区AI算法竞赛之旅&quot; class=&quot;headerlink&quot; title=&quot;我的粤港澳湾区AI算法竞赛之旅&quot;&gt;&lt;/a&gt;我的粤港澳湾区AI算法竞赛之旅&lt;/h1&gt;&lt;h2 id=&quot;引言&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
-    
-    
-    <category term="Competition" scheme="https://shiym.top/tags/Competition/"/>
-    
-    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
-    
-    <category term="Fine tuning" scheme="https://shiym.top/tags/Fine-tuning/"/>
-    
-    <category term="Guangzhou" scheme="https://shiym.top/tags/Guangzhou/"/>
-    
-  </entry>
   
   <entry>
     <title>My Questions and Learnings from Exploring  Process Management</title>
@@ -135,11 +67,11 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
-    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
-    
     <category term="Linux" scheme="https://shiym.top/tags/Linux/"/>
     
     <category term="Disk" scheme="https://shiym.top/tags/Disk/"/>
+    
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
   </entry>
   
@@ -165,11 +97,11 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
-    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
-    
     <category term="Linux" scheme="https://shiym.top/tags/Linux/"/>
     
     <category term="Disk" scheme="https://shiym.top/tags/Disk/"/>
+    
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
     <category term="Ubuntu" scheme="https://shiym.top/tags/Ubuntu/"/>
     
@@ -198,15 +130,15 @@
     
     <category term="Python" scheme="https://shiym.top/tags/Python/"/>
     
-    <category term="Competition" scheme="https://shiym.top/tags/Competition/"/>
-    
-    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
-    
     <category term="Diffusers" scheme="https://shiym.top/tags/Diffusers/"/>
     
     <category term="PyTorch" scheme="https://shiym.top/tags/PyTorch/"/>
     
     <category term="Large Model" scheme="https://shiym.top/tags/Large-Model/"/>
+    
+    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
+    
+    <category term="Competition" scheme="https://shiym.top/tags/Competition/"/>
     
   </entry>
   
@@ -295,9 +227,9 @@
     <category term="Skills" scheme="https://shiym.top/categories/Skills/"/>
     
     
-    <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
-    
     <category term="Investment" scheme="https://shiym.top/tags/Investment/"/>
+    
+    <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
     
     <category term="Stocks" scheme="https://shiym.top/tags/Stocks/"/>
     
@@ -534,13 +466,13 @@
     <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
+    
     <category term="飞书机器人" scheme="https://shiym.top/tags/%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
     <category term="GPT" scheme="https://shiym.top/tags/GPT/"/>
     
     <category term="Engineering" scheme="https://shiym.top/tags/Engineering/"/>
-    
-    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
   </entry>
   
@@ -620,13 +552,71 @@
     <category term="Skills" scheme="https://shiym.top/categories/Skills/"/>
     
     
-    <category term="AIGC" scheme="https://shiym.top/tags/AIGC/"/>
-    
     <category term="softskills" scheme="https://shiym.top/tags/softskills/"/>
     
     <category term="YouTuber" scheme="https://shiym.top/tags/YouTuber/"/>
     
     <category term="视频制作" scheme="https://shiym.top/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/"/>
+    
+    <category term="AIGC" scheme="https://shiym.top/tags/AIGC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>鲲鹏聚数:基于华为GaussDB数据库的应用与实践</title>
+    <link href="https://shiym.top/article/8fe4ecaf"/>
+    <id>https://shiym.top/article/8fe4ecaf</id>
+    <published>2022-12-26T22:39:05.000Z</published>
+    <updated>2023-01-02T02:07:29.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-1-Chapter1-GaussDB数据库概述&quot;&gt;&lt;a href=&quot;#1-1-Chapter1-GaussDB数据库概述&quot; class=&quot;headerlink&quot; title=&quot;1.1. Chapter1 GaussDB数据库概述&quot;&gt;&lt;/a&gt;1.1.</summary>
+        
+      
+    
+    
+    
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
+    
+    
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
+    <category term="GaussDB数据库" scheme="https://shiym.top/tags/GaussDB%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="Open Euler" scheme="https://shiym.top/tags/Open-Euler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>金融学基础</title>
+    <link href="https://shiym.top/article/a0d51f41"/>
+    <id>https://shiym.top/article/a0d51f41</id>
+    <published>2022-12-26T22:17:38.000Z</published>
+    <updated>2023-01-02T21:25:14.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-1-Module1-金融和金融系统&quot;&gt;&lt;a href=&quot;#1-1-Module1-金融和金融系统&quot; class=&quot;headerlink&quot; title=&quot;1.1. Module1 金融和金融系统&quot;&gt;&lt;/a&gt;1.1. Module1</summary>
+        
+      
+    
+    
+    
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
+    
+    
+    <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
+    
+    <category term="大二下" scheme="https://shiym.top/tags/%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
+    <category term="金融学基础" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
