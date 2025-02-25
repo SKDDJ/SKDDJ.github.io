@@ -1,125 +1,602 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Shiym&#39;s blog</title>
+  <title>Yiming Shi&#39;s blog</title>
   
-  <subtitle>Shiym的个人博客</subtitle>
+  <subtitle>Yiming Shi</subtitle>
   <link href="https://shiym.top/atom.xml" rel="self"/>
   
   <link href="https://shiym.top/"/>
-  <updated>2023-04-04T13:50:33.970Z</updated>
+  <updated>2025-02-25T03:39:43.610Z</updated>
   <id>https://shiym.top/</id>
   
   <author>
-    <name>Shiym</name>
+    <name>Yiming Shi</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>概率论与数理统计</title>
-    <link href="https://shiym.top/article/28d5cef4"/>
-    <id>https://shiym.top/article/28d5cef4</id>
-    <published>2022-12-24T06:58:00.000Z</published>
-    <updated>2023-04-04T13:50:33.970Z</updated>
+    <title>计算机操作系统</title>
+    <link href="https://shiym.top/article/dbeddcc1"/>
+    <id>https://shiym.top/article/dbeddcc1</id>
+    <published>2025-02-25T03:39:43.610Z</published>
+    <updated>2025-02-25T03:39:43.610Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;概率论与数理统计&quot;&gt;&lt;a href=&quot;#概率论与数理统计&quot; class=&quot;headerlink&quot; title=&quot;概率论与数理统计&quot;&gt;&lt;/a&gt;概率论与数理统计&lt;/h1&gt;&lt;h2 id=&quot;第一章-随机事件与概率&quot;&gt;&lt;a href=&quot;#第一章-随机事件与概率&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;第一章：概述&quot;&gt;&lt;a href=&quot;#第一章：概述&quot; class=&quot;headerlink&quot; title=&quot;第一章：概述&quot;&gt;&lt;/a&gt;第一章：概述&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
     
     
-    <category term="课程笔记" scheme="https://shiym.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="概率论与数理统计" scheme="https://shiym.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"/>
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
+    <category term="计算机操作系统" scheme="https://shiym.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="Operating System" scheme="https://shiym.top/tags/Operating-System/"/>
     
   </entry>
   
   <entry>
-    <title>博客搭建避坑</title>
-    <link href="https://shiym.top/article/acd393eb"/>
-    <id>https://shiym.top/article/acd393eb</id>
-    <published>2022-12-22T06:21:06.000Z</published>
-    <updated>2023-03-31T14:26:31.102Z</updated>
+    <title>Econometrics</title>
+    <link href="https://shiym.top/article/f6199005"/>
+    <id>https://shiym.top/article/f6199005</id>
+    <published>2025-02-25T03:39:43.610Z</published>
+    <updated>2025-02-25T03:39:43.610Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;个人Blog的搭建避坑&quot;&gt;&lt;a href=&quot;#个人Blog的搭建避坑&quot; class=&quot;headerlink&quot; title=&quot;个人Blog的搭建避坑&quot;&gt;&lt;/a&gt;个人Blog的搭建避坑&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;因为晚上的攻略过于老旧,</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202308301038752.jpg&quot;&gt; &lt;img</summary>
         
       
     
     
     
-    <category term="技术分享" scheme="https://shiym.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="Hexo" scheme="https://shiym.top/tags/Hexo/"/>
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
     
-    <category term="博客" scheme="https://shiym.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="计量经济学" scheme="https://shiym.top/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     
-    <category term="插件" scheme="https://shiym.top/tags/%E6%8F%92%E4%BB%B6/"/>
-    
-    <category term="软技能" scheme="https://shiym.top/tags/%E8%BD%AF%E6%8A%80%E8%83%BD/"/>
+    <category term="Econometrics" scheme="https://shiym.top/tags/Econometrics/"/>
     
   </entry>
   
   <entry>
-    <title>matery食用指南</title>
-    <link href="https://shiym.top/article/4c867599"/>
-    <id>https://shiym.top/article/4c867599</id>
-    <published>2022-12-21T01:26:00.000Z</published>
-    <updated>2022-12-24T07:20:44.000Z</updated>
+    <title>金融市场与机构</title>
+    <link href="https://shiym.top/article/53aac4c6"/>
+    <id>https://shiym.top/article/53aac4c6</id>
+    <published>2025-02-25T03:39:43.610Z</published>
+    <updated>2025-02-25T03:39:43.610Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;hexo-theme-matery&quot;&gt;&lt;a href=&quot;#hexo-theme-matery&quot; class=&quot;headerlink&quot; title=&quot;hexo-theme-matery&quot;&gt;&lt;/a&gt;hexo-theme-matery&lt;/h1&gt;&lt;p&gt; &lt;a</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202308311649113.jpg&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-第一章：导论&quot;&gt;&lt;a href=&quot;#1-第一章：导论&quot;</summary>
         
       
     
     
     
-    <category term="技术分享" scheme="https://shiym.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
     
     
-    <category term="Markdown" scheme="https://shiym.top/tags/Markdown/"/>
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
+    <category term="金融市场与机构" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E4%B8%8E%E6%9C%BA%E6%9E%84/"/>
     
   </entry>
   
   <entry>
-    <title>Ubuntu_git_ssh</title>
-    <link href="https://shiym.top/article/847ddabe"/>
-    <id>https://shiym.top/article/847ddabe</id>
-    <published>2022-12-19T15:53:28.000Z</published>
-    <updated>2023-03-31T14:30:03.035Z</updated>
+    <title>Derivatives</title>
+    <link href="https://shiym.top/article/f1b79b2a"/>
+    <id>https://shiym.top/article/f1b79b2a</id>
+    <published>2025-02-25T03:39:43.610Z</published>
+    <updated>2025-02-25T03:39:43.610Z</updated>
     
     
-    <summary type="html">是否有意外呢?</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202309011440006.jpg&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;第一章：引言&quot;&gt;&lt;a href=&quot;#第一章：引言&quot;</summary>
+        
+      
     
     
     
-    <category term="技术分享" scheme="https://shiym.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
+    
+    
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
+    <category term="金融衍生工具" scheme="https://shiym.top/tags/%E9%87%91%E8%9E%8D%E8%A1%8D%E7%94%9F%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="Derivatives" scheme="https://shiym.top/tags/Derivatives/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>公司金融</title>
+    <link href="https://shiym.top/article/1b5aea18"/>
+    <id>https://shiym.top/article/1b5aea18</id>
+    <published>2025-02-25T03:39:43.609Z</published>
+    <updated>2025-02-25T03:39:43.609Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Lecture1-第一章：公司目标和治理&quot;&gt;&lt;a href=&quot;#Lecture1-第一章：公司目标和治理&quot; class=&quot;headerlink&quot; title=&quot;Lecture1 第一章：公司目标和治理&quot;&gt;&lt;/a&gt;Lecture1</summary>
+        
+      
+    
+    
+    
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
+    
+    
+    <category term="公司金融" scheme="https://shiym.top/tags/%E5%85%AC%E5%8F%B8%E9%87%91%E8%9E%8D/"/>
+    
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>International Finance</title>
+    <link href="https://shiym.top/article/bae2e029"/>
+    <id>https://shiym.top/article/bae2e029</id>
+    <published>2025-02-25T03:39:43.609Z</published>
+    <updated>2025-02-25T03:39:43.610Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-第一章：课程概述&quot;&gt;&lt;a href=&quot;#1-第一章：课程概述&quot; class=&quot;headerlink&quot; title=&quot;1 第一章：课程概述&quot;&gt;&lt;/a&gt;1 第一章：课程概述&lt;/h2&gt;&lt;p&gt;Chapter1 Intro &lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Course" scheme="https://shiym.top/categories/Course/"/>
+    
+    
+    <category term="大三上" scheme="https://shiym.top/tags/%E5%A4%A7%E4%B8%89%E4%B8%8A/"/>
+    
+    <category term="国际金融" scheme="https://shiym.top/tags/%E5%9B%BD%E9%99%85%E9%87%91%E8%9E%8D/"/>
+    
+    <category term="International Finance" scheme="https://shiym.top/tags/International-Finance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://shiym.top/article/0"/>
+    <id>https://shiym.top/article/0</id>
+    <published>2025-02-25T03:39:43.608Z</published>
+    <updated>2025-02-25T03:39:43.608Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;lt-lt-lt-lt-lt-lt-lt-HEAD-source-x2F-posts-x2F-博客搭建避坑-md&quot;&gt;&lt;a href=&quot;#lt-lt-lt-lt-lt-lt-lt-HEAD-source-x2F-posts-x2F-博客搭建避坑-md&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络课程实验：手动访问 404 网站</title>
+    <link href="https://shiym.top/article/3af5c2d7"/>
+    <id>https://shiym.top/article/3af5c2d7</id>
+    <published>2025-02-25T03:39:43.607Z</published>
+    <updated>2025-02-25T03:39:43.607Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;免责声明：&quot;&gt;&lt;a href=&quot;#免责声明：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
+    
+    
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
+    
+    <category term="计算机网络" scheme="https://shiym.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="科学上网" scheme="https://shiym.top/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    <category term="VPN" scheme="https://shiym.top/tags/VPN/"/>
+    
+    <category term="Computer Network" scheme="https://shiym.top/tags/Computer-Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ZCA白化 (Whitening)</title>
+    <link href="https://shiym.top/article/803a0aab"/>
+    <id>https://shiym.top/article/803a0aab</id>
+    <published>2025-02-25T03:39:43.607Z</published>
+    <updated>2025-02-25T03:39:43.608Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;什么是ZCA白化？&quot;&gt;&lt;a href=&quot;#什么是ZCA白化？&quot; class=&quot;headerlink&quot; title=&quot;什么是ZCA白化？&quot;&gt;&lt;/a&gt;什么是ZCA白化？&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;ZCA白化&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Technology" scheme="https://shiym.top/categories/Technology/"/>
+    
+    
+    <category term="PyTorch" scheme="https://shiym.top/tags/PyTorch/"/>
+    
+    <category term="Data Augmentation" scheme="https://shiym.top/tags/Data-Augmentation/"/>
+    
+    <category term="Pre-Processing" scheme="https://shiym.top/tags/Pre-Processing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Recap PyTorch Tensor &amp; Einops API</title>
+    <link href="https://shiym.top/article/10f3127e"/>
+    <id>https://shiym.top/article/10f3127e</id>
+    <published>2025-02-25T03:39:43.606Z</published>
+    <updated>2025-02-25T03:39:43.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在深度学习中，对 Tensor 的维度和形状变换是日常操作。本文简单介绍 PyTorch 的 Tensor 自带的 API（&lt;code&gt;view&lt;/code&gt;, &lt;code&gt;reshape&lt;/code&gt;, &lt;code&gt;unsqueeze&lt;/code&gt;,</summary>
+        
+      
+    
+    
+    
+    <category term="Technology" scheme="https://shiym.top/categories/Technology/"/>
+    
+    
+    <category term="PyTorch" scheme="https://shiym.top/tags/PyTorch/"/>
+    
+    <category term="Tensor" scheme="https://shiym.top/tags/Tensor/"/>
+    
+    <category term="Einops" scheme="https://shiym.top/tags/Einops/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>梯度范数与梯度裁剪的详细解释 Gradient Norm and Clipping</title>
+    <link href="https://shiym.top/article/3ff1f570"/>
+    <id>https://shiym.top/article/3ff1f570</id>
+    <published>2025-02-25T03:39:43.606Z</published>
+    <updated>2025-02-25T03:39:43.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-梯度范数-Gradient-Norm&quot;&gt;&lt;a href=&quot;#1-梯度范数-Gradient-Norm&quot; class=&quot;headerlink&quot; title=&quot;1. 梯度范数 (Gradient Norm)&quot;&gt;&lt;/a&gt;1. 梯度范数 (Gradient</summary>
+        
+      
+    
+    
+    
+    <category term="Technology" scheme="https://shiym.top/categories/Technology/"/>
+    
+    
+    <category term="Neural Network" scheme="https://shiym.top/tags/Neural-Network/"/>
+    
+    <category term="Training Process" scheme="https://shiym.top/tags/Training-Process/"/>
+    
+    <category term="Trick" scheme="https://shiym.top/tags/Trick/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>彼得林奇投资经典著作读书笔记 - 长期投资的智慧</title>
+    <link href="https://shiym.top/article/a0866f96"/>
+    <id>https://shiym.top/article/a0866f96</id>
+    <published>2025-02-25T03:39:43.606Z</published>
+    <updated>2025-02-25T03:39:43.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;彼得林奇著作读书笔记&quot;&gt;&lt;a href=&quot;#彼得林奇著作读书笔记&quot; class=&quot;headerlink&quot; title=&quot;彼得林奇著作读书笔记&quot;&gt;&lt;/a&gt;彼得林奇著作读书笔记&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Skills" scheme="https://shiym.top/categories/Skills/"/>
+    
+    
+    <category term="Investment" scheme="https://shiym.top/tags/Investment/"/>
+    
+    <category term="Finance" scheme="https://shiym.top/tags/Finance/"/>
+    
+    <category term="Stocks" scheme="https://shiym.top/tags/Stocks/"/>
+    
+    <category term="Strategy" scheme="https://shiym.top/tags/Strategy/"/>
+    
+    <category term="Analysis" scheme="https://shiym.top/tags/Analysis/"/>
+    
+    <category term="A 股" scheme="https://shiym.top/tags/A-%E8%82%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My Questions and Learnings from Exploring  Process Management</title>
+    <link href="https://shiym.top/article/e2f5e0f7"/>
+    <id>https://shiym.top/article/e2f5e0f7</id>
+    <published>2025-02-25T03:39:43.605Z</published>
+    <updated>2025-02-25T03:39:43.605Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-Analyzing-Process-States&quot;&gt;&lt;a href=&quot;#1-Analyzing-Process-States&quot; class=&quot;headerlink&quot; title=&quot;1. Analyzing Process States&quot;&gt;&lt;/a&gt;1.</summary>
+        
+      
+    
+    
+    
+    <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
+    
+    
+    <category term="Linux" scheme="https://shiym.top/tags/Linux/"/>
+    
+    <category term="processmanagement" scheme="https://shiym.top/tags/processmanagement/"/>
+    
+    <category term="Commands" scheme="https://shiym.top/tags/Commands/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://shiym.top/article/0"/>
+    <id>https://shiym.top/article/0</id>
+    <published>2025-02-25T03:39:43.605Z</published>
+    <updated>2025-02-25T03:39:43.605Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;lt-lt-lt-lt-lt-lt-lt-HEAD-source-x2F-posts-x2F-Ubuntu-git-ssh-md&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Fix entering Emergency Mode during startup</title>
+    <link href="https://shiym.top/article/2185f868"/>
+    <id>https://shiym.top/article/2185f868</id>
+    <published>2025-02-25T03:39:43.605Z</published>
+    <updated>2025-02-25T03:39:43.605Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;关于解决Ubuntu22启动时进入Emergency Mode的问题&lt;/p&gt;
+&lt;h1 id=&quot;修复启动时进入Emergency-Mode&quot;&gt;&lt;a href=&quot;#修复启动时进入Emergency-Mode&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
     
     
     <category term="Ubuntu" scheme="https://shiym.top/tags/Ubuntu/"/>
     
-    <category term="Clash" scheme="https://shiym.top/tags/Clash/"/>
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
     
-    <category term="ssh" scheme="https://shiym.top/tags/ssh/"/>
+    <category term="Linux" scheme="https://shiym.top/tags/Linux/"/>
     
-    <category term="git" scheme="https://shiym.top/tags/git/"/>
+    <category term="Disk" scheme="https://shiym.top/tags/Disk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Learning Diffusers Library</title>
+    <link href="https://shiym.top/article/d3a6f586"/>
+    <id>https://shiym.top/article/d3a6f586</id>
+    <published>2025-02-25T03:39:43.605Z</published>
+    <updated>2025-02-25T03:39:43.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Diffusers&quot;&gt;&lt;a href=&quot;#Diffusers&quot; class=&quot;headerlink&quot; title=&quot;Diffusers&quot;&gt;&lt;/a&gt;Diffusers&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Technology" scheme="https://shiym.top/categories/Technology/"/>
+    
+    
+    <category term="Python" scheme="https://shiym.top/tags/Python/"/>
+    
+    <category term="Diffusers" scheme="https://shiym.top/tags/Diffusers/"/>
+    
+    <category term="PyTorch" scheme="https://shiym.top/tags/PyTorch/"/>
+    
+    <category term="Large Model" scheme="https://shiym.top/tags/Large-Model/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vision Transformer (ViT) -&gt; Towards a Modality-Agnostic Transformer?</title>
+    <link href="https://shiym.top/article/8ad3e72a"/>
+    <id>https://shiym.top/article/8ad3e72a</id>
+    <published>2025-02-25T03:39:43.604Z</published>
+    <updated>2025-02-25T03:39:43.604Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Forward-Process-of-Vision-Transformer-ViT&quot;&gt;&lt;a href=&quot;#Forward-Process-of-Vision-Transformer-ViT&quot; class=&quot;headerlink&quot; title=&quot;Forward</summary>
+        
+      
+    
+    
+    
+    <category term="Idea" scheme="https://shiym.top/categories/Idea/"/>
+    
+    
+    <category term="Diffusion" scheme="https://shiym.top/tags/Diffusion/"/>
+    
+    <category term="Transformer" scheme="https://shiym.top/tags/Transformer/"/>
+    
+    <category term="Weight2Weight" scheme="https://shiym.top/tags/Weight2Weight/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fine-Tuning Face Based on UniDiffuser</title>
+    <link href="https://shiym.top/article/3fe63e99"/>
+    <id>https://shiym.top/article/3fe63e99</id>
+    <published>2025-02-25T03:39:43.604Z</published>
+    <updated>2025-02-25T03:39:43.604Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-UniDiffuser&quot;&gt;&lt;a href=&quot;#1-UniDiffuser&quot; class=&quot;headerlink&quot; title=&quot;1. UniDiffuser&quot;&gt;&lt;/a&gt;1. UniDiffuser&lt;/h2&gt;&lt;h3 id=&quot;1-1-Architect&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
+    
+    
+    <category term="Python" scheme="https://shiym.top/tags/Python/"/>
+    
+    <category term="Diffusers" scheme="https://shiym.top/tags/Diffusers/"/>
+    
+    <category term="PyTorch" scheme="https://shiym.top/tags/PyTorch/"/>
+    
+    <category term="Large Model" scheme="https://shiym.top/tags/Large-Model/"/>
+    
+    <category term="Diffusion Model" scheme="https://shiym.top/tags/Diffusion-Model/"/>
+    
+    <category term="Competition" scheme="https://shiym.top/tags/Competition/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hard Disk Mounting Under Linux System</title>
+    <link href="https://shiym.top/article/8350d4a"/>
+    <id>https://shiym.top/article/8350d4a</id>
+    <published>2025-02-25T03:39:43.604Z</published>
+    <updated>2025-02-25T03:39:43.605Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近在管理一台Linux服务器时,遇到了一些硬盘挂载和权限管理的问题,在此做一个简单的总结记录。&lt;/p&gt;
+&lt;h2 id=&quot;一、硬盘检测和分区&quot;&gt;&lt;a href=&quot;#一、硬盘检测和分区&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Engineering" scheme="https://shiym.top/categories/Engineering/"/>
+    
+    
+    <category term="DevOps" scheme="https://shiym.top/tags/DevOps/"/>
+    
+    <category term="Linux" scheme="https://shiym.top/tags/Linux/"/>
+    
+    <category term="Disk" scheme="https://shiym.top/tags/Disk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Diffusion Sampling Techniques</title>
+    <link href="https://shiym.top/article/714df5a"/>
+    <id>https://shiym.top/article/714df5a</id>
+    <published>2025-02-25T03:39:43.604Z</published>
+    <updated>2025-02-25T03:39:43.604Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Understanding-Diffusion-Model-Sampling-Techniques&quot;&gt;&lt;a href=&quot;#Understanding-Diffusion-Model-Sampling-Techniques&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Technology" scheme="https://shiym.top/categories/Technology/"/>
+    
+    
+    <category term="Diffusion Models" scheme="https://shiym.top/tags/Diffusion-Models/"/>
+    
+    <category term="Sampling Techniques" scheme="https://shiym.top/tags/Sampling-Techniques/"/>
+    
+    <category term="Numerical Methods" scheme="https://shiym.top/tags/Numerical-Methods/"/>
     
   </entry>
   
