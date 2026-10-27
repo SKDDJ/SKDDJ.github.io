@@ -1,0 +1,167 @@
+/* _sass/_taste.scss
+   White, teal, and gray. Helvetica Neue. Sparse color, light rules. */
+
+:root {
+  --global-bg-color: #ffffff;
+  --global-text-color: #3f3f46;
+  --global-text-color-light: #71717a;
+  --global-theme-color: #0f766e;
+  --global-hover-color: #0f766e;
+  --global-hover-text-color: #ffffff;
+  --global-footer-bg-color: #fafafa;
+  --global-footer-text-color: #71717a;
+  --global-footer-link-color: #0f766e;
+  --global-divider-color: #e4e4e7;
+  --global-card-bg-color: #ffffff;
+  --global-highlight-color: #0f766e;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #18181b;
+  --global-text-color: #e4e4e7;
+  --global-text-color-light: #a1a1aa;
+  --global-theme-color: #5eead4;
+  --global-hover-color: #5eead4;
+  --global-footer-bg-color: #18181b;
+  --global-footer-text-color: #a1a1aa;
+  --global-footer-link-color: #5eead4;
+  --global-divider-color: #3f3f46;
+  --global-card-bg-color: #18181b;
+}
+
+html,
+body,
+button,
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #18181b;
+}
+
+.post-title {
+  font-size: 2.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.desc,
+.post-description {
+  color: #71717a;
+  font-size: 1.02rem;
+  margin-bottom: 1.75rem;
+}
+
+.container.mt-5 {
+  margin-top: 3.25rem !important;
+}
+
+.post article p,
+.post article li {
+  margin-bottom: 1.15rem;
+}
+
+.post article h2 {
+  margin-top: 2.75rem;
+  margin-bottom: 0.85rem;
+  font-size: 1.15rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #99f6e4;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: #0f766e;
+}
+
+.navbar a,
+.nav-link {
+  text-decoration: none;
+}
+
+.profile {
+  margin: 0 0 1.25rem 2rem;
+}
+
+.profile img,
+.z-depth-1,
+.z-depth-0 {
+  box-shadow: none !important;
+}
+
+.profile img {
+  border-radius: 2px;
+}
+
+.more-info {
+  color: #71717a;
+  margin-top: 0.75rem;
+}
+
+.news .table,
+.cv .card,
+.cv .table {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.news th {
+  color: #71717a;
+  font-weight: 500;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.publications .title {
+  font-weight: 500;
+}
+
+.btn,
+.badge {
+  box-shadow: none !important;
+  border-radius: 2px;
+}
+
+.danger-color-dark,
+.badge.danger-color-dark {
+  background-color: #f4f4f5 !important;
+  color: #3f3f46 !important;
+}
+
+.list-group-item {
+  border-color: #e4e4e7;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] .post-title {
+  color: #fafafa;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #5eead4;
+}

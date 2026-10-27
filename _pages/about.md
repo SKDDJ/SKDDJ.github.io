@@ -1,63 +1,56 @@
 ---
+layout: about
+title: about
 permalink: /
-title: "Yiming Shi (史一鸣)"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+subtitle: Beijing · Ace Top Intern, Dots Studio · Incoming Ph.D., The University of Queensland
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: false
+  more_info: >
+    <p>Beijing, China</p>
+
+selected_papers: true
+social: true
+
+announcements:
+  enabled: true
+  scrollable: false
+  limit: 5
+
+latest_posts:
+  enabled: false
 ---
 
-<div style="border-bottom: 1px solid #000; display: inline-block; color: red;">
-    <strong><em>**Pursuing a PhD journey in multimodal research! If you're intrigued and considering collaboration or have insights, reach out via email. Let's innovate together!**</em></strong>
-</div>
+Yiming Shi (史一鸣) is an Ace Top Intern at [Dots Studio](https://studio.dots.ai/) (Xiaohongshu), through the [Ace Top Intern Program](https://job.xiaohongshu.com/campus/landing/top_intern). He is an incoming Ph.D. student in computer science at The University of Queensland, co-advised by Prof. Zhifeng Bao and Dr. Hai Lan, and is awaiting a student visa. Open to collaboration.
 
+Now, data agents and memory. Next, doctoral study at UQ, once the visa is issued. Before that, research internships at Zhipu AI, Tsinghua University, and UESTC.
 
-Hi, I'm [**Yiming Shi**](https://skddj.github.io/blog/about/), an undergraduate at the University of Electronic Science and Technology of China (UESTC) enrolled in the Internet+ Dual Degree Program. 
-I'm pursuing a BSc in Computer Science and a BEc in Finance.
+## Now
 
-## Current Position
+Ace Top Intern at [Dots Studio](https://studio.dots.ai/), Xiaohongshu (rednote), on the [Ace program](https://job.xiaohongshu.com/campus/landing/top_intern). August 2025 to present. Onboarding was 11 August 2025.
 
-I'm currently an intern at [TSAIL](https://ml.cs.tsinghua.edu.cn/) at Tsinghua University, co-advised by [Prof. Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/) and [Dr. Zehua Chen](https://scholar.google.com/citations?user=wa04fD4AAAAJ&hl=en). Currently I'm working with [Dr. Duo Su](https://suduo94.github.io/) in the area of dataset distillation, with a focus on Efficient AI.
+The work is data agents and memory: long-term memory, personalization, and lifelong learning, within the Ace talent program at Xiaohongshu.
 
-## News
+## Before
 
-<!-- Display latest 3 news items -->
-- [24/10/18] Our paper "LoLDU: Low-Rank Adaptation via Lower-Diag-Upper Decomposition for Parameter-Efficient Fine-Tuning" has been published on arXiv. You can read the full paper [here](https://arxiv.org/abs/2410.13618). Our code can be accessed at [here](https://github.com/SKDDJ/LoLDU).
+Research Intern, Multimodal Understanding, at [Zhipu AI](https://z.ai) (北京智谱华章), AI Lab. March 2025 to August 2025. The offer title was AI院-多模态理解-算法研究员（实习）. The appointment began from that offer and ended before Xiaohongshu.
 
-- [24/08/11] Our paper "DiffLoRA: Generating Personalized Low-Rank Adaptation Weights with Diffusion" has been published on arXiv. You can read the full paper [here](https://arxiv.org/pdf/2408.06740).
+Research Intern at [TSAIL](https://ml.cs.tsinghua.edu.cn/) (Tsinghua SAIL Group), Tsinghua University. July 2024 to September 2025. Co-advised by [Prof. Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/) and [Dr. Zehua Chen](https://scholar.google.com/citations?user=wa04fD4AAAAJ&hl=en), with [Dr. Duo Su](https://suduo94.github.io/) on dataset distillation and efficient AI.
 
-<details markdown="1">
-<summary>News Archived</summary>
+Research Intern at the [Center for Future Media](https://cfm.uestc.edu.cn/index), UESTC. May 2023 to July 2024. Co-advised by [Prof. Yang Yang](https://cfm.uestc.edu.cn/~yangyang/) and [Dr. Jiwei Wei](https://scholar.google.com/citations?user=2Jmbr6AAAAAJ&hl=zh-CN&oi=ao).
 
-<!-- Archive of past research activities -->
-- [24/01/12] In the final round of the [International Algorithm and Case Competition (IACC)](https://iacc.pazhoulab-huangpu.com/contestdetail?id=64af50464a0ed647faca6266&award=1,000,000), we secured the 4th place (ranked 4/815). Our code is [available](https://github.com/SKDDJ/GHM-Greater-Bay-AI-Challenge-Final-Round). You can find our award certificate [here](../files/xiugo-certificate.pdf).
+DevOps with [Star Studio](https://github.com/StarStudio) at UESTC, from November 2022.
 
-</details>
+## Study
 
+B.Sc. in Computer Science and B.Ec. in Finance, University of Electronic Science and Technology of China, Internet+ Dual Degree, completed in June 2025.
 
+Incoming Ph.D. student in Computer Science at The University of Queensland, co-advised by Prof. Zhifeng Bao and Dr. Hai Lan. The Australian student visa is pending.
 
-## Previous Experience
+## Research
 
-- **Research Intern** (May 2023 - Present)  
-  [Center for Future Media](https://cfm.uestc.edu.cn/index) at University of Electronic Science and Technology of China (UESTC)  
-  Co-advised by [Prof. Yang Yang](https://cfm.uestc.edu.cn/~yangyang/) and [Dr. Jiwei Wei](https://scholar.google.com/citations?user=2Jmbr6AAAAAJ&hl=zh-CN&oi=ao)
+Current work is on data agents and memory.
 
-- **DevOps Team Member** (Nov 2022 - Present)  
-  [Star Studio](https://github.com/StarStudio) at UESTC
-
-## Research Interests
-
-My research primarily focuses on the following areas:
-
-- **Parameter-Efficient Fine-Tuning (PEFT)**
-- **Diffusion Models**
-- **Dataset Distillation**
-- **Schrodinger Bridge**
-- **Multimodal**
-
-I'm deeply passionate about deep learning and its applications in these fields. 
-
-For a curated list of the latest research papers related to my interests, please visit [my ArXiv daily digest](https://skddj.github.io/cv-arxiv-daily/). This resource leverages the ArXiv API to aggregate and present relevant topics in an easily digestible format.
-
-
-[Email](mailto:yimingshi666@gmail.com) / [GitHub](https://github.com/SKDDJ) / [Wechat](https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202402121720081.jpeg) / [Blog](https://skddj.github.io/blog)
+Earlier work is in post-training and multimodal models, including parameter-efficient fine-tuning and diffusion-based adaptation, and in dataset distillation. A separate interest is abstract reasoning, including ARC-AGI-2 and ARC-AGI-3.

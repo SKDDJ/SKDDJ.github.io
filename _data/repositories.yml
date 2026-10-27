@@ -1,0 +1,8 @@
+github_users:
+  - SKDDJ
+
+repo_description_lines_max: 2
+
+github_repos:
+  - SKDDJ/LoLDU
+  - SKDDJ/DiffLoRA_datasets

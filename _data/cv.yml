@@ -1,0 +1,63 @@
+cv:
+  name: Yiming Shi
+  label: Ace Top Intern
+  email: yimingshi666@gmail.com
+  location: Beijing, China
+  website: https://yiming-shi.com
+  image: ""
+  summary: Ace Top Intern at Dots Studio (Xiaohongshu), working on data agents and memory. Incoming Ph.D. student in computer science at The University of Queensland. Student visa pending.
+
+  social_networks:
+    - network: GitHub
+      username: SKDDJ
+    - network: X
+      username: yyyyyyyiming
+
+  sections:
+    Education:
+      - institution: The University of Queensland
+        location: Brisbane, Australia
+        area: Computer Science
+        studyType: Ph.D., incoming
+        highlights:
+          - Co-advised by Prof. Zhifeng Bao and Dr. Hai Lan.
+          - Australian student visa pending.
+
+      - institution: University of Electronic Science and Technology of China
+        location: Chengdu, China
+        area: Computer Science and Finance
+        studyType: B.Sc. and B.Ec., Internet+ Dual Degree
+        end_date: 2025-06
+        highlights:
+          - Completed in June 2025.
+
+    Experience:
+      - company: Dots Studio, Xiaohongshu
+        position: Ace Top Intern
+        location: Beijing, China
+        start_date: 2025-08
+        end_date: present
+        summary: Data agents and memory, on the Ace talent program. Onboarding 11 August 2025.
+        highlights:
+          - Long-term memory, personalization, and lifelong learning.
+
+      - company: Zhipu AI
+        position: Research Intern, Multimodal Understanding
+        location: Beijing, China
+        start_date: 2025-03
+        end_date: 2025-08
+        summary: AI Lab. Offer title AI院-多模态理解-算法研究员（实习）. March is the offer date. Ended before Xiaohongshu.
+
+      - company: TSAIL, Tsinghua University
+        position: Research Intern
+        location: Beijing, China
+        start_date: 2024-07
+        end_date: 2025-09
+        summary: Co-advised by Prof. Jun Zhu and Dr. Zehua Chen. With Dr. Duo Su on dataset distillation and efficient AI.
+
+      - company: Center for Future Media, UESTC
+        position: Research Intern
+        location: Chengdu, China
+        start_date: 2023-05
+        end_date: 2024-07
+        summary: Co-advised by Prof. Yang Yang and Dr. Jiwei Wei.
