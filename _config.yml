@@ -12,9 +12,9 @@ title                    : "Home"
 title_separator          : "-"
 name                     : &name "Yiming Shi"
 description              : &description "Research Intern @ 1-508 FIT Building, Tsinghua University"
-url                      : https://academic.shiym.top # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "SKDDJ/yiming_shi.github.io"
+url                      : https://skddj.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/yimingshi.github.io" # the subpath of your site, e.g. "/blog"
+repository               : "SKDDJ/yimingshi.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -27,7 +27,7 @@ author:
   bio              : "Research Intern @ 1-508 FIT Building, Tsinghua University"
   location         : "Beijing, 100084, China"
   # employer         : ""
-  uri              : "https://shiym.top" 
+  uri              : "https://skddj.github.io" 
   email            : "yimingshi666@gmail.com" 
 
   # Academic websites

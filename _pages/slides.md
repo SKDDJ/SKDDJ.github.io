@@ -14,7 +14,7 @@ author_profile: true
     <p><strong>Date:</strong> December 15, 2023</p>
     <p>A presentation about our novel PEFT method.</p>
     <div class="links">
-      <a href="/files/loldu_slides.pdf">View Slides</a>
+      <a href="{{ site.baseurl }}/files/loldu_slides.pdf">View Slides</a>
       <a href="https://github.com/SKDDJ/LoLDU">GitHub Repo</a>
     </div>
   </div>
@@ -36,7 +36,7 @@ author_profile: true
     <p><strong>Authors:</strong> Zhang San, Li Si</p>
     <p>A brief introduction to the main content and contributions of the paper.</p>
     <div class="links">
-      <a href="/files/example_paper.pdf">View Paper</a>
+      <a href="{{ site.baseurl }}/files/example_paper.pdf">View Paper</a>
       <a href="https://arxiv.org/abs/example">View Original</a>
     </div>
   </div> -->
@@ -50,11 +50,11 @@ author_profile: true
   <div class="introductions">
     <div class="intro">
       <h4>UESTC Style Introduction</h4>
-      <a href="/files/yimingshi_intro_uestc.pdf">View Slides</a>
+      <a href="{{ site.baseurl }}/files/yimingshi_intro_uestc.pdf">View Slides</a>
     </div>
     <div class="intro">
       <h4>CFM Style Introduction</h4>
-      <a href="/files/yimingshi_intro_cfm.pdf">View Slides</a>
+      <a href="{{ site.baseurl }}/files/yimingshi_intro_cfm.pdf">View Slides</a>
     </div>
   </div>
 </div>

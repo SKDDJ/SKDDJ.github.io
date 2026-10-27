@@ -12,7 +12,7 @@ redirect_from:
 </div>
 
 
-Hi, I'm [**Yiming Shi**](https://shiym.top/about/), an undergraduate at the University of Electronic Science and Technology of China (UESTC) enrolled in the Internet+ Dual Degree Program. 
+Hi, I'm [**Yiming Shi**](https://skddj.github.io/about/), an undergraduate at the University of Electronic Science and Technology of China (UESTC) enrolled in the Internet+ Dual Degree Program. 
 I'm pursuing a BSc in Computer Science and a BEc in Finance.
 
 ## Current Position
@@ -57,7 +57,7 @@ My research primarily focuses on the following areas:
 
 I'm deeply passionate about deep learning and its applications in these fields. 
 
-For a curated list of the latest research papers related to my interests, please visit [my ArXiv daily digest](https://shiym.top/cv-arxiv-daily/). This resource leverages the ArXiv API to aggregate and present relevant topics in an easily digestible format.
+For a curated list of the latest research papers related to my interests, please visit [my ArXiv daily digest](https://skddj.github.io/cv-arxiv-daily/). This resource leverages the ArXiv API to aggregate and present relevant topics in an easily digestible format.
 
 
-[Email](mailto:yimingshi666@gmail.com) / [GitHub](https://github.com/SKDDJ) / [Wechat](https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202402121720081.jpeg) / [Blog](https://shiym.top)
+[Email](mailto:yimingshi666@gmail.com) / [GitHub](https://github.com/SKDDJ) / [Wechat](https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202402121720081.jpeg) / [Blog](https://skddj.github.io)

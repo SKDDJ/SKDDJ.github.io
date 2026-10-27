@@ -112,7 +112,7 @@ author_profile: true
         <p>{{ item.description }}</p>
         <div style="margin-top: 15px;">
           {% if item.slide_link %}
-            <a href="{{ item.slide_link }}" class="btn">View Slides</a>
+            <a href="{{ item.slide_link | relative_url }}" class="btn">View Slides</a>
           {% endif %}
           {% if item.repo_link %}
             <a href="{{ item.repo_link }}" class="btn secondary">GitHub Repo</a>
@@ -131,13 +131,13 @@ author_profile: true
     <div class="intro-card">
       <img src="https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202411180930255.png" alt="UESTC Style">
       <h4>UESTC Style Introduction</h4>
-      <a href="/files/yimingshi_intro_uestc.pdf" class="btn">View Slides</a>
+      <a href="{{ site.baseurl }}/files/yimingshi_intro_uestc.pdf" class="btn">View Slides</a>
     </div>
 
     <div class="intro-card">
       <img src="https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202411180930458.png" alt="CFM Style">
       <h4>CFM Style Introduction</h4>
-      <a href="/files/yimingshi_intro_cfm.pdf" class="btn secondary">View Slides</a>
+      <a href="{{ site.baseurl }}/files/yimingshi_intro_cfm.pdf" class="btn secondary">View Slides</a>
     </div>
   </div>
 </div>
