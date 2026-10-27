@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Preprints. No venue acceptances are claimed here.
+description: Journal articles, conference papers, and preprints.
 nav: true
 nav_order: 2
 ---

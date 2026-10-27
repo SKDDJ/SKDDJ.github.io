@@ -17,21 +17,25 @@ social: true
 announcements:
   enabled: true
   scrollable: false
-  limit: 5
+  limit: 6
 
 latest_posts:
   enabled: false
 ---
 
-Yiming Shi (史一鸣) is an Ace Top Intern at [Dots Studio](https://studio.dots.ai/) (Xiaohongshu), through the [Ace Top Intern Program](https://job.xiaohongshu.com/campus/landing/top_intern). He is an incoming Ph.D. student in computer science at The University of Queensland, co-advised by Prof. Zhifeng Bao and Dr. Hai Lan, and is awaiting a student visa. Open to collaboration.
+Yiming Shi (史一鸣) is an Ace Top Intern at [Dots Studio](https://studio.dots.ai/) (Xiaohongshu / rednote). He is an incoming Ph.D. student in computer science at The University of Queensland, co-advised by Prof. Zhifeng Bao and Dr. Hai Lan, and is awaiting a student visa.
 
-Now, data agents and memory. Next, doctoral study at UQ, once the visa is issued. Before that, research internships at Zhipu AI, Tsinghua University, and UESTC.
+Now, abstract reasoning at Dots Studio, on ARC-AGI-2 and ARC-AGI-3. Next, doctoral research at UQ on data agents and memory, once the visa is issued. Before that, research internships at Zhipu AI, Tsinghua University, and UESTC.
 
 ## Now
 
-Ace Top Intern at [Dots Studio](https://studio.dots.ai/), Xiaohongshu (rednote), on the [Ace program](https://job.xiaohongshu.com/campus/landing/top_intern). August 2025 to present. Onboarding was 11 August 2025.
+Ace Top Intern at [Dots Studio](https://studio.dots.ai/), Xiaohongshu (rednote). August 2025 to present. Onboarding was 11 August 2025.
 
-The work is data agents and memory: long-term memory, personalization, and lifelong learning, within the Ace talent program at Xiaohongshu.
+The work is abstract reasoning: ARC-AGI-2 and ARC-AGI-3.
+
+He contributed to [dots3-note Preview](https://studio.dots.ai/dots/dots3-en.html), a Dots Studio model. As of 21 September 2026 it is the top open-weight result on ARC Prize’s [verified ARC-AGI-2 leaderboard](https://arcprize.org/results/dots-studio-dots3-note-prev-max), at 76.8% (Max). The project page separately reports 81.4% on the public set.
+
+Invited poster at the ARC Prize Research Summit 2026 (Boston, 23 October 2026): *Reasoning and Learning Across Puzzles and Games*. The poster covers ARC-AGI-2 abstract reasoning with Binary-KL and DPPO-style updates, and long-horizon ARC-AGI-3 ([TEMPO](https://studio.dots.ai/dots/tempo-blog.html)). Because of student-visa timing, the poster was presented in his place.
 
 ## Before
 
@@ -51,6 +55,8 @@ Incoming Ph.D. student in Computer Science at The University of Queensland, co-a
 
 ## Research
 
-Current work is on data agents and memory.
+Incoming doctoral research at UQ is on data agents and memory.
 
-Earlier work is in post-training and multimodal models, including parameter-efficient fine-tuning and diffusion-based adaptation, and in dataset distillation. A separate interest is abstract reasoning, including ARC-AGI-2 and ARC-AGI-3.
+Work at Dots Studio is abstract reasoning, including ARC-AGI-2 and ARC-AGI-3.
+
+Earlier internships, at Zhipu AI, TSAIL, and the Center for Future Media, were on parameter-efficient fine-tuning, multimodal models, and dataset distillation.
