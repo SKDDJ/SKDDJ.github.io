@@ -43,8 +43,8 @@ cv:
         url: https://studio.dots.ai/
         logo: xiaohongshu.svg
         highlights:
-          - Contributed to [dots3-note Preview](https://studio.dots.ai/dots/dots3-en.html), which reached about 76.8% and achieved open-weight SOTA on [ARC Prize](https://arcprize.org/)’s verified ARC-AGI-2 track.
-          - Invited poster, ARC Prize Research Summit 2026 (Boston, 23 October 2026), *Reasoning and Learning Across Puzzles and Games* — ARC-AGI-2/3 abstract reasoning ([TEMPO](https://studio.dots.ai/dots/tempo-blog.html)).
+          - Open-weight SOTA (~76.8%) on [ARC Prize](https://arcprize.org/)’s verified ARC-AGI-2 with [dots3-note Preview](https://studio.dots.ai/dots/dots3-en.html).
+          - "Invited poster, ARC Prize Research Summit 2026 (Boston, 23 Oct 2026): *Reasoning and Learning Across Puzzles and Games* ([PDF](https://yiming-shi.com/assets/pdf/arc-prize-research-summit-2026-poster.pdf))."
 
       - company: Zhipu AI
         position: Research Intern
@@ -53,6 +53,8 @@ cv:
         end_date: 2025-08
         url: https://z.ai
         logo: zai.svg
+        highlights:
+          - Designed and open-sourced [GLM-V](https://github.com/zai-org/GLM-V)’s VLM reward system (training infra for GLM-4.1V-Thinking).
 
       - company: TSAIL, Tsinghua University
         position: Research Intern
