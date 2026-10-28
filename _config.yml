@@ -700,3 +700,8 @@ jsonresume:
   - languages
   - interests
   - references
+
+# Redeploy marker (2026-10-28): workflow_dispatch is unavailable to this token,
+# and an empty commit does not match Deploy site path filters. Touching this
+# file retriggers the build so GitHub Pages can purge the stale Fastly 404 on
+# /blog/2024/diffusion-sampling-techniques/. Safe to remove after that URL is 200.
