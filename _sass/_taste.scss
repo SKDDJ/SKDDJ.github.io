@@ -334,3 +334,45 @@ html[data-theme="dark"] a:hover {
 .post-list li p {
   margin-bottom: 0.45rem;
 }
+
+/* Body headings sit under the page H1. Keep h2 > h3 > h4.
+   The shared .post article h2 rule is a small lowercase label; that inverts this ladder. */
+.post article.post-content h2 {
+  font-size: 1.55rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  text-transform: none;
+  color: #18181b;
+  margin-top: 2.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.post article.post-content h2 a {
+  text-transform: none;
+}
+
+.post article.post-content h3 {
+  font-size: 1.22rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: #18181b;
+  margin-top: 1.7rem;
+  margin-bottom: 0.55rem;
+}
+
+.post article.post-content h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #18181b;
+  margin-top: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+html[data-theme="dark"] .post article.post-content h2,
+html[data-theme="dark"] .post article.post-content h3,
+html[data-theme="dark"] .post article.post-content h4 {
+  color: #fafafa;
+}

@@ -9,13 +9,13 @@ categories: ["research"]
 tags: ["diffusion"]
 math: true
 ---
-# Understanding Diffusion Model Sampling Techniques
-## Introduction
+## Understanding Diffusion Model Sampling Techniques
+### Introduction
 As I explored diffusion models, I found that sampling techniques play a crucial role in the quality and efficiency of image generation. Here's my comprehensive analysis of different sampling methods and their mathematical foundations.
 
-## 1. Basic Sampling Methods
+### 1. Basic Sampling Methods
 
-### 1.1 Euler Method
+#### 1.1 Euler Method
 This is the simplest numerical method I encountered. The basic formula is:
 $$
 y_{n+1} = y_n + h f(t_n, y_n)
@@ -33,7 +33,7 @@ x_{t-1} = x_t + \Delta t \cdot \epsilon_\theta(x_t, t)
 $$
 
 
-### 1.2 Heun Method
+#### 1.2 Heun Method
 I found this to be more accurate than Euler as it uses a predictor-corrector approach:
 
 Predictor step:
@@ -48,9 +48,9 @@ y_{n+1} = y_n + \frac{h}{2}[f(t_n, y_n) + f(t_{n+1}, \tilde{y}_{n+1})]
 $$
 
 
-## 2. Advanced Sampling Methods
+### 2. Advanced Sampling Methods
 
-### 2.1 Dormand-Prince (DOPRI5)
+#### 2.1 Dormand-Prince (DOPRI5)
 This was interesting as it uses adaptive step sizes. The method uses six function evaluations to calculate both fourth and fifth-order accurate solutions:
 
 $$
@@ -65,7 +65,7 @@ error = \|y_{n+1}^{(5)} - y_{n+1}^{(4)}\|
 $$
 
 
-### 2.2 RK4 (Fourth-order Runge-Kutta)
+#### 2.2 RK4 (Fourth-order Runge-Kutta)
 This provides a good balance between accuracy and computational cost:
 
 $$
@@ -79,39 +79,39 @@ y_{n+1} &= y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)
 $$
 
 
-## 3. Diffusion Forms
+### 3. Diffusion Forms
 
-### 3.1 Linear Diffusion
+#### 3.1 Linear Diffusion
 The simplest form I worked with:
 $$
 dx_t = -\frac{1}{2}\beta(t)x_t dt + \sqrt{\beta(t)}dW_t
 $$
 
 
-### 3.2 SBDM (Score-Based Diffusion Models)
+#### 3.2 SBDM (Score-Based Diffusion Models)
 Uses score function:
 $$
 dx_t = [\mu(x_t, t) + \frac{1}{2}\sigma^2(t)\nabla_x \log p_t(x_t)]dt + \sigma(t)dW_t
 $$
 
 
-## 4. Error Control Parameters
+### 4. Error Control Parameters
 
-### 4.1 Absolute Tolerance (atol)
+#### 4.1 Absolute Tolerance (atol)
 Controls absolute error:
 $$
 |error| \leq atol
 $$
 
 
-### 4.2 Relative Tolerance (rtol)
+#### 4.2 Relative Tolerance (rtol)
 Controls relative error:
 $$
 \frac{|error|}{|y|} \leq rtol
 $$
 
 
-## 5. Practical Implementation Tips
+### 5. Practical Implementation Tips
 
 From my experience:
 
@@ -121,6 +121,7 @@ From my experience:
    - Balanced: RK4 with moderate parameters
 
 2. Parameter Selection:
+
 ```python
 # For high quality
 sampling_kwargs = {
@@ -141,7 +142,7 @@ sampling_kwargs = {
    - DOPRI5 requires more memory for adaptive steps
    - Euler is memory-efficient but less accurate
 
-## Conclusion
+### Conclusion
 
 Understanding these sampling techniques helped me:
 1. Better control the generation process
@@ -150,7 +151,7 @@ Understanding these sampling techniques helped me:
 
 This knowledge is crucial for anyone working with diffusion models, as sampling directly impacts the final output quality and generation speed.
 
-## References
+### References
 1. Diffusion Models Paper
 2. Numerical Methods in Scientific Computing
 3. Score-Based Generative Modeling Papers

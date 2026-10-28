@@ -9,9 +9,9 @@ categories: ["notes"]
 tags: ["diffusion"]
 math: true
 ---
-# Diffusers
+## Diffusers
 
-## Unit1: An Introduction to Diffusion Models
+### Unit1: An Introduction to Diffusion Models
 
 Train diffusion model through:
 1. Load in some images from the training data
@@ -20,7 +20,7 @@ Train diffusion model through:
 4. Evaluate how well the model does at denoising these inputs
 5. Use this information to update the model weights
 
-### 1.1 DataSets and Dataloder
+#### 1.1 DataSets and Dataloder
 
 download online datasets and do some data augmentation
 ```python
@@ -69,7 +69,7 @@ print("X shape:", xb.shape)
 show_images(xb).resize((8 * 64, 64), resample=Image.NEAREST)
 ```
 
-### 1.2 Scheduler
+#### 1.2 Scheduler
 Paper: [DDPM](https://arxiv.org/abs/2006.11239)
 $$q(x_t|x_{t-1}) = N(x_t;\sqrt{1-\beta_t}x_{t-1},\beta_tI)$$
 $$q(x_{1:T}|x_0) = \prod_{t=1}^{T}q(x_t|x_{t-1})$$
@@ -128,7 +128,7 @@ for epoch in range(30):
         print(f"Epoch:{epoch+1}, loss: {loss_last_epoch}")
 ```
 
-### 1.4 Sampling Loop
+#### 1.4 Sampling Loop
 
 ```python
 # Random starting point ( 8 random images)
@@ -142,7 +142,7 @@ for i,t in enumerate(noise_scheduler.timesteps):
 show_image(sample)
 ```
 
-#### plotting the loss
+##### plotting the loss
 ```python
 fig, axs = plt.subplots(1, 2, figsize=(12, 4))
 axs[0].plot(losses)
@@ -150,8 +150,8 @@ axs[1].plot(np.log(losses))
 plt.show()
 ```
 
-### 1.5 Generate Images with pipeline
-#### 1.5.1 use pipeline
+#### 1.5 Generate Images with pipeline
+##### 1.5.1 use pipeline
 ```python
 from diffusers import DDPMPipeline
 
@@ -161,7 +161,7 @@ pipeline_output = image_pipe()
 pipeline_output.images[0]
 
 ```
-#### 1.5.2 use sampling loop
+##### 1.5.2 use sampling loop
 ```python
 # Random starting point (8 random images):
 sample = torch.randn(8, 3, 32, 32).to(device)
@@ -181,7 +181,7 @@ show_images(sample)
 
 The noise_scheduler.step() function does the maths required to update sample appropriately.
 
-### 1.6 Scaling up with Accelerate
+#### 1.6 Scaling up with Accelerate
 example:
 ```shell
 accelerate launch train_unconditional.py \
@@ -198,7 +198,7 @@ accelerate launch train_unconditional.py \
 ```
 
 
-### Some Additional Resources
+#### Some Additional Resources
 The Annotated Diffusion Model is a very in-depth walk-through of the code and theory behind DDPMs with maths and code showing all the different components. It also links to a number of papers for further reading.
 
 Hugging Face documentation on Unconditional Image-Generation for some examples of how to train diffusion models using the official training example script, including code showing how to create your own dataset.
@@ -207,7 +207,7 @@ AI Coffee Break video on Diffusion Models: https://www.youtube.com/watch?v=344w5
 
 Yannic Kilcher Video on DDPMs: https://www.youtube.com/watch?v=W-O7AZNzbzQ
 
-## Unit2: Fine-Tuning, Guidance and Conditioning
+### Unit2: Fine-Tuning, Guidance and Conditioning
 In this Unit we will look at how this process can be modified to add additional control over the model outputs through extra conditioning (such as a class label) or with techniques such as guidance
 
 * Create a sampling loop and generate samples faster using a new scheduler
@@ -220,20 +220,20 @@ In this Unit we will look at how this process can be modified to add additional 
 	* Using CLIP to guide generation using a text prompt
 	* Sharing a custom sampling loop using Gradio and 🤗 Spaces
 
-### 2.1 Ways to pass in conditioning information
+#### 2.1 Ways to pass in conditioning information
 
 1. Feeding it in as additional channels in the input to the UNet. This is often used when the conditioning information is the same shape as the image, such as a segmentation mask, a depth map or a blurry version of the image (in the case of a restoration/superresolution model). It does work for other types of conditioning too. For example, in the notebook, the class label is mapped to an embedding and then expanded to be the same width and height as the input image so that it can be fed in as additional channels.
 2. Creating an embedding and then projecting it down to a size that matches the number of channels at the output of one or more internal layers of the UNet, and then adding it to those outputs. This is how the timestep conditioning is handled, for example. The output of each Resnet block has a projected timestep embedding added to it. This is useful when you have a vector such as a CLIP image embedding as your conditioning information. A notable example is the 'Image Variations' version of Stable Diffusion which does exactly this.
 3. Adding cross-attention layers that can 'attend' to a sequence passed in as conditioning. This is most useful when the conditioning is in the form of some text - the text is mapped to a sequence of embeddings using a transformer model, and then cross-attention layers in the UNet are used to incorporate this information into the denoising path. We'll see this in action in Unit 3 as we examine how Stable Diffusion handles text conditioning.
 
-### 2.2 Fine-Tuning and Guidance
+#### 2.2 Fine-Tuning and Guidance
 
 
 
-### 2.3 Class-Conditioned Diffusion Model
+#### 2.3 Class-Conditioned Diffusion Model
 
 
-### Some Additional Resources
+#### Some Additional Resources
 Denoising Diffusion Implicit Models - Introduced the DDIM sampling method (used by DDIMScheduler)
 
 GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models - Introduced methods for conditioning diffusion models on text
@@ -241,22 +241,22 @@ GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diff
 eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers - Shows how many different kinds of conditioning can be used together to give even more control over the kinds of samples generated
 
 
-## Unit3 
+### Unit3 
 
 
 
-## Unit4
+### Unit4
 
 
-## Appendix
-### pred img directly or noise 
+### Appendix
+#### pred img directly or noise 
 You may think that predicting the noise (from which we can derive what the denoised image looks like) is equivalent to just predicting the denoised image directly. So why favour one over the other - is it just for mathematical convenience?
 
 It turns out there's another subtlety here. We compute the loss across different (randomly chosen) timesteps during training. These different objectives will lead to different 'implicit weighting' of these losses, where predicting the noise puts more weight on lower noise levels. You can pick more complex objectives to change this 'implicit loss weighting'. Or perhaps you choose a noise schedule that will result in more examples at a higher noise level. Perhaps you have the model predict a 'velocity' v which we define as being a combination of both the image and the noise dependent on the noise level (see 'PROGRESSIVE DISTILLATION FOR FAST SAMPLING OF DIFFUSION MODELS'). Perhaps you have the model predict the noise but then scale the loss by some factor dependent on the amount of noise based on a bit of theory (see 'Perception Prioritized Training of Diffusion Models') or based on experiments trying to see what noise levels are most informative to the model (see 'Elucidating the Design Space of Diffusion-Based Generative Models'). TL;DR: choosing the objective has an effect on model performance, and research in ongoing into what the 'best' option is.
 
 At the moment, predicting the noise (epsilon or eps you'll see in some places) is the favoured approach but over time we will likely see other objectives supported in the library and used in different situations.
 
-### key points
+#### key points
 Exactly how we take these steps depends on the sampling method used. We won't go into the theory too deeply, but some key design questions are:
 
 How large of a step should you take? In other words, what 'noise schedule' should you follow?
@@ -266,7 +266,7 @@ Do you add in additional noise (sometimes called churn) to add more stochasticit
 The brave and curious might find it interesting to browse through the code of the different implementations available in the diffusers library here or check out the docs which often link to the relevant papers.
 
 
-## refs
+### refs
 
 https://github.com/huggingface/diffusion-models-class/blob/main/
 
