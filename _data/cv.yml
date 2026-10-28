@@ -27,12 +27,10 @@ cv:
       - institution: University of Electronic Science and Technology of China
         location: Chengdu, China
         area: Computer Science and Finance
-        studyType: B.Sc. and B.Ec., Internet+ Dual Degree
+        studyType: B.Sc. and B.Ec.
         start_date: 2021-08
         end_date: 2025-06
         logo: uestc.svg
-        highlights:
-          - Completed in June 2025.
 
     Experience:
       - company: Dots Studio, Xiaohongshu
@@ -54,7 +52,7 @@ cv:
         url: https://z.ai
         logo: zai.svg
         highlights:
-          - Designed and open-sourced [GLM-V’s VLM reward system](https://github.com/zai-org/GLM-V/tree/main/glmv_reward), used in GLM-4.1V-Thinking RL training.
+          - Designed and open-sourced [GLM-V’s VLM reward system](https://github.com/zai-org/GLM-V/tree/main/glmv_reward), used in GLM-4.1V-Thinking RL post-training.
 
       - company: TSAIL, Tsinghua University
         position: Research Intern
