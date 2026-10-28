@@ -29,17 +29,42 @@ html[data-theme="dark"] {
   --global-card-bg-color: #18181b;
 }
 
+html {
+  font-size: 17px;
+}
+
 html,
 body,
+.post,
+.navbar,
 button,
-input {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+td,
+th,
+.nav-link {
+  font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
+
+code,
+pre,
+kbd,
+samp,
+.bibtex {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 body {
   font-weight: 400;
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.0625rem;
+  line-height: 1.75;
   color: var(--global-text-color);
   background: var(--global-bg-color);
 }
@@ -51,37 +76,57 @@ h4,
 h5,
 h6,
 .post-title {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: -0.02em;
   color: #18181b;
+  line-height: 1.25;
 }
 
 .post-title {
-  font-size: 2.15rem;
-  margin-bottom: 0.35rem;
+  font-size: 2.35rem;
+  font-weight: 500;
+  margin-bottom: 0.45rem;
 }
 
 .desc,
 .post-description {
   color: #71717a;
-  font-size: 1.02rem;
-  margin-bottom: 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.55;
+  margin-bottom: 2.4rem;
 }
 
 .container.mt-5 {
-  margin-top: 3.25rem !important;
+  margin-top: 4.25rem !important;
 }
 
 .post article p,
 .post article li {
-  margin-bottom: 1.15rem;
+  margin-bottom: 1.35rem;
+}
+
+.post article strong {
+  font-weight: 600;
+  color: #18181b;
 }
 
 .post article h2 {
-  margin-top: 2.75rem;
-  margin-bottom: 0.85rem;
-  font-size: 1.15rem;
+  margin-top: 3.25rem;
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.post article h2 a {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.navbar .nav-link {
+  font-weight: 400;
+  font-size: 0.95rem;
 }
 
 a {
@@ -102,7 +147,8 @@ a:hover {
 }
 
 .profile {
-  margin: 0 0 1.25rem 2rem;
+  margin: 0.15rem 0 1.75rem 2.75rem;
+  max-width: 210px;
 }
 
 .profile img,
@@ -112,7 +158,9 @@ a:hover {
 }
 
 .profile img {
-  border-radius: 2px;
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
 }
 
 .more-info {
@@ -128,15 +176,46 @@ a:hover {
   background: transparent;
 }
 
+.news .table {
+  margin-bottom: 0;
+}
+
+.news th,
+.news td {
+  padding: 0.7rem 0.85rem 0.7rem 0;
+  vertical-align: baseline;
+  font-weight: 400;
+  line-height: 1.55;
+  border: 0;
+}
+
 .news th {
   color: #71717a;
-  font-weight: 500;
-  font-size: 0.85rem;
+  font-weight: 400;
+  font-size: 0.95rem;
   white-space: nowrap;
+  width: 8.5rem;
 }
 
 .publications .title {
   font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.publications .author,
+.publications .periodical {
+  color: #52525b;
+  line-height: 1.55;
+}
+
+ol.bibliography > li,
+.bibliography > li {
+  margin-bottom: 2.15rem;
+}
+
+.social {
+  margin-top: 2.75rem;
 }
 
 .btn,
