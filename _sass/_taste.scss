@@ -538,3 +538,13 @@ ol.bibliography > li,
   margin-top: 1.3rem;
   margin-bottom: 0.4rem;
 }
+
+/* Picgo and other post images must stay inside the content column.
+   Covers markdown images and figure images on every post. */
+.post article img,
+.post article.post-content img,
+.post article figure img,
+.post figure img {
+  max-width: 100%;
+  height: auto;
+}
