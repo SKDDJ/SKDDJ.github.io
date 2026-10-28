@@ -2,7 +2,7 @@
 layout: page
 permalink: /blog/
 title: blog
-description: Notes moved from the previous site. Earlier posts remain at skddj.github.io/blog.
+description: ""
 nav: true
 nav_order: 4
 pagination:
