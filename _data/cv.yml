@@ -43,7 +43,7 @@ cv:
         url: https://studio.dots.ai/
         logo: xiaohongshu.svg
         highlights:
-          - Contributed to [dots3-note Preview](https://studio.dots.ai/dots/dots3-en.html), which reached about 76.8% and achieved open-weight SOTA on ARC Prize’s verified ARC-AGI-2 track (~21 September 2026).
+          - Contributed to [dots3-note Preview](https://studio.dots.ai/dots/dots3-en.html), which reached about 76.8% and achieved open-weight SOTA on [ARC Prize](https://arcprize.org/)’s verified ARC-AGI-2 track.
           - Invited poster, ARC Prize Research Summit 2026 (Boston, 23 October 2026), *Reasoning and Learning Across Puzzles and Games* — ARC-AGI-2/3 abstract reasoning ([TEMPO](https://studio.dots.ai/dots/tempo-blog.html)).
 
       - company: Zhipu AI

@@ -152,7 +152,12 @@
             <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
             <div>
               {% if section_title == 'Education' %}
-                {% assign entries = section_entries | al_cv_sort_by_date %}
+                {% comment %}
+                  Keep _data/cv.yml order. al_cv_sort_by_date ranks an undated
+                  entry last, which put the dated UESTC degree above the
+                  incoming Queensland Ph.D.
+                {% endcomment %}
+                {% assign entries = section_entries %}
                 {% include cv/education.liquid %}
               {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
                 {% assign entries = section_entries %}
