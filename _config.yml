@@ -6,12 +6,10 @@ title: Yiming Shi # the website title (if blank, full name will be used instead)
 first_name: Yiming
 middle_name:
 last_name: Shi
-contact_note: >
-  Email for collaboration.
+contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Yiming Shi. Ace Top Talent Intern at Dots Studio (Xiaohongshu), working on abstract reasoning. Incoming Ph.D. student in computer science at The University of Queensland.
-footer_text: >
-  <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+footer_text: ""
 keywords: machine learning, abstract reasoning, ARC-AGI, data agents, memory, multimodal # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: Y # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -135,7 +133,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: blog # blog_name will be displayed in your blog page
-blog_description: Notes moved from the previous site. Earlier posts remain at skddj.github.io/blog.
+blog_description: ""
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
