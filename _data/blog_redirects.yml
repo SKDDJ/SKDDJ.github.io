@@ -75,3 +75,97 @@ redirects:
     to: /blog/2024/greater-bay-area-ai-algorithm-competition/
     source_abbrlink: "0"
     note: Source file abbrlink differs from the live URL; redirect the live hash.
+
+  # Batch 2: remaining 技术/学术 posts, plus the two trick/ Engineering and Technology notes.
+  # Draft rows only. Not applied to Cloudflare or GitHub Pages.
+  - bucket: batch2
+    published: true
+    title: "Hard Disk Mounting Under Linux System"
+    from: /blog/article/8350d4a
+    old_url: https://skddj.github.io/blog/article/8350d4a
+    to: /blog/2023/linux-mount-disk/
+
+  - bucket: batch2
+    published: true
+    title: "Fix entering Emergency Mode during startup"
+    from: /blog/article/2185f868
+    old_url: https://skddj.github.io/blog/article/2185f868
+    to: /blog/2023/ubuntu-emergency-mode/
+
+  - bucket: batch2
+    published: true
+    title: "计算机网络课程实验：手动访问 404 网站"
+    from: /blog/article/3af5c2d7
+    old_url: https://skddj.github.io/blog/article/3af5c2d7
+    to: /blog/2023/computer-network-vpn-404/
+
+  - bucket: batch2
+    published: true
+    title: "飞书ChatGPTBot使用指南"
+    from: /blog/article/b5c3f382
+    old_url: https://skddj.github.io/blog/article/b5c3f382
+    to: /blog/2023/feishu-chatgpt-bot-guide/
+
+  - bucket: batch2
+    published: true
+    title: "Alpaca Plan"
+    from: /blog/article/bf637e11
+    old_url: https://skddj.github.io/blog/article/bf637e11
+    to: /blog/2023/alpaca-plan/
+    note: Hexo source had hide true and a SHA256 password. The migrated post is published without that gate.
+
+  - bucket: batch2
+    published: true
+    title: "视频制作学习总结"
+    from: /blog/article/eed73e40
+    old_url: https://skddj.github.io/blog/article/eed73e40
+    to: /blog/2023/video-production-notes/
+
+  - bucket: batch2
+    published: true
+    title: "博客搭建指北"
+    from: /blog/article/acd393eb
+    old_url: https://skddj.github.io/blog/article/acd393eb
+    to: /blog/2022/blog-setup-guide/
+
+  - bucket: batch2
+    published: true
+    title: "matery Theme指北"
+    from: /blog/article/4c867599
+    old_url: https://skddj.github.io/blog/article/4c867599
+    to: /blog/2022/matery-theme-guide/
+
+  - bucket: batch2
+    published: true
+    title: "Ubuntu-Git-SSH 推送"
+    from: /blog/article/847ddabe
+    old_url: https://skddj.github.io/blog/article/847ddabe
+    to: /blog/2022/ubuntu-git-ssh/
+
+  - bucket: batch2
+    published: true
+    title: "Verilog学习笔记:基础语法与代码规范总结"
+    from: /blog/article/7045141b
+    old_url: https://skddj.github.io/blog/article/7045141b
+    to: /blog/2022/verilog-notes/
+
+  - bucket: batch2
+    published: true
+    title: "OSI v.s. TCP/IP：网络模型和协议的比较"
+    from: /blog/article/d3f72afd
+    old_url: https://skddj.github.io/blog/article/d3f72afd
+    to: /blog/2022/osi-vs-tcpip/
+
+  - bucket: batch2
+    published: true
+    title: "Go语言学习笔记:数据类型、流程控制和其他基础"
+    from: /blog/article/ada7eeb
+    old_url: https://skddj.github.io/blog/article/ada7eeb
+    to: /blog/2022/golang-notes/
+
+  - bucket: batch2
+    published: true
+    title: "我的Python编程学习笔记总结"
+    from: /blog/article/8e458014
+    old_url: https://skddj.github.io/blog/article/8e458014
+    to: /blog/2022/python-notes/
