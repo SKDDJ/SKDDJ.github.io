@@ -54,7 +54,7 @@ cv:
         url: https://z.ai
         logo: zai.svg
         highlights:
-          - Designed and open-sourced [GLM-V](https://github.com/zai-org/GLM-V)’s VLM reward system (training infra for GLM-4.1V-Thinking).
+          - Designed and open-sourced [GLM-V’s VLM reward system](https://github.com/zai-org/GLM-V/tree/main/glmv_reward), used in GLM-4.1V-Thinking RL training.
 
       - company: TSAIL, Tsinghua University
         position: Research Intern
