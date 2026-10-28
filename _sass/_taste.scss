@@ -1,15 +1,15 @@
 /* _sass/_taste.scss
-   White, teal, and gray. Helvetica Neue. Sparse color, light rules. */
+   White, teal, and near-black. System Latin stack. Sparse color, light rules. */
 
 :root {
   --global-bg-color: #ffffff;
-  --global-text-color: #3f3f46;
-  --global-text-color-light: #71717a;
+  --global-text-color: #141414;
+  --global-text-color-light: #3f3f46;
   --global-theme-color: #0f766e;
   --global-hover-color: #0f766e;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #fafafa;
-  --global-footer-text-color: #71717a;
+  --global-footer-text-color: #3a3a3a;
   --global-footer-link-color: #0f766e;
   --global-divider-color: #e4e4e7;
   --global-card-bg-color: #ffffff;
@@ -31,14 +31,20 @@ html[data-theme="dark"] {
 
 html {
   font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
+/* Latin-first so English does not pick up a soft CJK UI face. */
 html,
 body,
 .post,
 .navbar,
 button,
 input,
+textarea,
+select,
 h1,
 h2,
 h3,
@@ -49,8 +55,12 @@ p,
 li,
 td,
 th,
-.nav-link {
-  font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+.nav-link,
+.publications,
+.news,
+.cv,
+footer {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 code,
@@ -64,7 +74,7 @@ samp,
 body {
   font-weight: 400;
   font-size: 1.0625rem;
-  line-height: 1.85;
+  line-height: 1.65;
   color: var(--global-text-color);
   background: var(--global-bg-color);
 }
@@ -76,22 +86,22 @@ h4,
 h5,
 h6,
 .post-title {
-  font-weight: 500;
-  letter-spacing: -0.015em;
-  color: #18181b;
-  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #111111;
+  line-height: 1.25;
 }
 
 .post-title {
   font-size: 2.35rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0.55rem;
-  color: #18181b;
+  color: #111111;
 }
 
 .desc,
 .post-description {
-  color: #71717a;
+  color: #3f3f46;
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.55;
@@ -109,17 +119,17 @@ h6,
 
 .post article strong {
   font-weight: 600;
-  color: #18181b;
+  color: #111111;
 }
 
 .post article h2 {
   margin-top: 3.75rem;
   margin-bottom: 1.25rem;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: lowercase;
-  color: #71717a;
+  color: #111111;
 }
 
 .post article h2 a {
@@ -167,7 +177,7 @@ a:hover {
 }
 
 .more-info {
-  color: #71717a;
+  color: #3f3f46;
   margin-top: 0.75rem;
 }
 
@@ -216,7 +226,7 @@ html[data-theme="dark"] .cv .cv-org-logo-mono {
 }
 
 .news th {
-  color: #71717a;
+  color: #3f3f46;
   font-weight: 400;
   font-size: 0.95rem;
   white-space: nowrap;
@@ -231,8 +241,12 @@ html[data-theme="dark"] .cv .cv-org-logo-mono {
 
 .publications .author,
 .publications .periodical {
-  color: #52525b;
+  color: #242424;
   line-height: 1.55;
+}
+
+.publications .periodical:empty {
+  display: none;
 }
 
 ol.bibliography > li,
@@ -320,6 +334,10 @@ ol.bibliography > li,
   margin-top: 2.75rem;
 }
 
+.contact-note:empty {
+  display: none;
+}
+
 .btn,
 .badge {
   box-shadow: none !important;
@@ -329,7 +347,13 @@ ol.bibliography > li,
 .danger-color-dark,
 .badge.danger-color-dark {
   background-color: #f4f4f5 !important;
-  color: #3f3f46 !important;
+  color: #242424 !important;
+}
+
+/* CV templates ship a light weight that reads gray and soft next to the body. */
+.cv .font-weight-light {
+  font-weight: 400 !important;
+  color: var(--global-text-color);
 }
 
 .list-group-item {
