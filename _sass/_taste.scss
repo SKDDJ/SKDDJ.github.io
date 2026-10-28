@@ -195,6 +195,35 @@ a:hover {
   background: transparent;
 }
 
+/* Date tables are table.table-cv and not .table, so the theme rule
+   table:not(.table) td { border-top } draws a rule on every cell.
+   That is the line above the date and the line under it (above the location). */
+.cv table.table-cv td,
+.cv table.table-cv th {
+  border: 0;
+  border-top: 0;
+}
+
+.cv .date-column {
+  width: 10.75rem;
+  max-width: 46%;
+  flex: 0 0 10.75rem;
+}
+
+.cv .date-column + [class*="col-"] {
+  flex: 1 1 auto;
+  width: auto;
+  max-width: none;
+}
+
+.cv .cv-date {
+  display: inline-block;
+  min-width: 0;
+  white-space: nowrap;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 /* Organization and school marks in the CV date column.
    Transparent artwork, shared max size, no plate or shadow. */
 .cv .cv-org-logo {

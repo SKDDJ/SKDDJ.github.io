@@ -28,6 +28,7 @@ cv:
         location: Chengdu, China
         area: Computer Science and Finance
         studyType: B.Sc. and B.Ec., Internet+ Dual Degree
+        start_date: 2021-08
         end_date: 2025-06
         logo: uestc.svg
         highlights:
@@ -53,7 +54,7 @@ cv:
         end_date: 2025-08
         url: https://z.ai
         logo: zai.svg
-        summary: Research intern in multimodal understanding. Offer dated March 2025.
+        summary: Research intern in multimodal understanding.
 
       - company: TSAIL, Tsinghua University
         position: Research Intern

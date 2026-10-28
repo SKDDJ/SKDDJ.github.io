@@ -1,0 +1,21 @@
+{% comment %}
+  _includes/cv/format_date.liquid
+  One CV date token. YYYY-MM already in the source becomes YYYY.MM.
+  A year with no month stays a year. present stays present.
+  This does not invent a month that is not in the source.
+{% endcomment %}
+{%- assign raw = include.raw | default: '' | strip -%}
+{%- assign lower = raw | downcase -%}
+{%- if lower == 'present' -%}
+present
+{%- elsif lower == 'open' or raw == '' -%}
+{%- else -%}
+{%- assign parts = raw | split: '-' -%}
+{%- assign year = parts[0] | strip -%}
+{%- assign month = parts[1] | default: '' | strip -%}
+{%- if month != '' -%}
+{{- year }}.{{ month -}}
+{%- else -%}
+{{- year -}}
+{%- endif -%}
+{%- endif -%}
