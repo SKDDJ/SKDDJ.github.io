@@ -179,6 +179,21 @@ a:hover {
   background: transparent;
 }
 
+/* Organization and school marks in the CV date column. The white plate
+   keeps seals and wordmarks readable in both themes. */
+.cv .cv-org-logo {
+  display: block;
+  box-sizing: border-box;
+  width: min(4.5rem, 100%);
+  height: 2.85rem;
+  margin: 0.1rem auto 0.45rem;
+  padding: 0.18rem;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+}
+
 .news .table {
   margin-bottom: 0;
 }
