@@ -5,6 +5,8 @@
   --global-bg-color: #ffffff;
   --global-text-color: #141414;
   --global-text-color-light: #3f3f46;
+  --global-heading-color: #111111;
+  --global-author-color: #242424;
   --global-theme-color: #0f766e;
   --global-hover-color: #0f766e;
   --global-hover-text-color: #ffffff;
@@ -20,6 +22,8 @@ html[data-theme="dark"] {
   --global-bg-color: #18181b;
   --global-text-color: #e4e4e7;
   --global-text-color-light: #a1a1aa;
+  --global-heading-color: #fafafa;
+  --global-author-color: #d4d4d8;
   --global-theme-color: #5eead4;
   --global-hover-color: #5eead4;
   --global-footer-bg-color: #18181b;
@@ -88,7 +92,7 @@ h6,
 .post-title {
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: #111111;
+  color: var(--global-heading-color);
   line-height: 1.25;
 }
 
@@ -96,12 +100,12 @@ h6,
   font-size: 2.35rem;
   font-weight: 600;
   margin-bottom: 0.55rem;
-  color: #111111;
+  color: var(--global-heading-color);
 }
 
 .desc,
 .post-description {
-  color: #3f3f46;
+  color: var(--global-text-color-light);
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.55;
@@ -125,7 +129,7 @@ h6,
 
 .post article strong {
   font-weight: 600;
-  color: #111111;
+  color: var(--global-heading-color);
 }
 
 .post article h2 {
@@ -135,7 +139,7 @@ h6,
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: lowercase;
-  color: #111111;
+  color: var(--global-heading-color);
 }
 
 .post article h2 a {
@@ -157,7 +161,12 @@ a {
 }
 
 a:hover {
-  color: #0f766e;
+  color: var(--global-hover-color);
+}
+
+/* Blog pagination hover is hardcoded to #000 in the theme stylesheet. */
+.af-page-link:hover {
+  color: var(--global-text-color);
 }
 
 .navbar a,
@@ -183,8 +192,13 @@ a:hover {
 }
 
 .more-info {
-  color: #3f3f46;
+  color: var(--global-text-color-light);
   margin-top: 0.75rem;
+}
+
+.more-info:empty {
+  display: none;
+  margin: 0;
 }
 
 .news .table,
@@ -326,7 +340,7 @@ html[data-theme="dark"] .cv .cv-org-logo-mono {
 }
 
 .news th {
-  color: #3f3f46;
+  color: var(--global-text-color-light);
   font-weight: 400;
   font-size: 0.95rem;
   white-space: nowrap;
@@ -341,8 +355,13 @@ html[data-theme="dark"] .cv .cv-org-logo-mono {
 
 .publications .author,
 .publications .periodical {
-  color: #242424;
+  color: var(--global-author-color);
   line-height: 1.55;
+}
+
+/* jekyll-scholar wraps the self name in em. Keep that name in the primary text color. */
+.publications .author em {
+  color: var(--global-text-color);
 }
 
 .publications .periodical:empty {
@@ -456,19 +475,21 @@ ol.bibliography > li,
   color: var(--global-text-color);
 }
 
+/* Entry titles and org lines are h6, so the heading token applies.
+   Highlights and the date-column location are body copy. */
+.cv .item,
+.cv .items,
+.cv .location {
+  color: var(--global-text-color);
+}
+
+.cv h6,
+.cv .title {
+  color: var(--global-heading-color);
+}
+
 .list-group-item {
-  border-color: #e4e4e7;
-}
-
-html[data-theme="dark"] h1,
-html[data-theme="dark"] h2,
-html[data-theme="dark"] h3,
-html[data-theme="dark"] .post-title {
-  color: #fafafa;
-}
-
-html[data-theme="dark"] a:hover {
-  color: #5eead4;
+  border-color: var(--global-divider-color);
 }
 
 /* Index links reuse .post-title. Keep them smaller than the post-page heading. */
@@ -489,7 +510,7 @@ html[data-theme="dark"] a:hover {
   font-weight: 500;
   letter-spacing: -0.015em;
   text-transform: none;
-  color: #18181b;
+  color: var(--global-heading-color);
   margin-top: 2.25rem;
   margin-bottom: 0.8rem;
 }
@@ -503,7 +524,7 @@ html[data-theme="dark"] a:hover {
   font-weight: 500;
   letter-spacing: -0.01em;
   text-transform: none;
-  color: #18181b;
+  color: var(--global-heading-color);
   margin-top: 1.7rem;
   margin-bottom: 0.55rem;
 }
@@ -513,13 +534,7 @@ html[data-theme="dark"] a:hover {
   font-weight: 500;
   letter-spacing: 0;
   text-transform: none;
-  color: #18181b;
+  color: var(--global-heading-color);
   margin-top: 1.3rem;
   margin-bottom: 0.4rem;
-}
-
-html[data-theme="dark"] .post article.post-content h2,
-html[data-theme="dark"] .post article.post-content h3,
-html[data-theme="dark"] .post article.post-content h4 {
-  color: #fafafa;
 }
