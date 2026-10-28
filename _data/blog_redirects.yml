@@ -1,0 +1,77 @@
+# _data/blog_redirects.yml
+# Draft 301 map only. Not applied to Cloudflare or GitHub Pages.
+# The Matery site at https://skddj.github.io/blog stays up for now.
+# Later: /blog/article/<abbrlink> -> the al-folio permalink on https://yiming-shi.com
+# Rewrite rows are unpublished drafts; do not 301 those URLs until they are public.
+redirects:
+  - bucket: keep
+    published: true
+    title: "ZCA白化 (Whitening)"
+    from: /blog/article/803a0aab
+    old_url: https://skddj.github.io/blog/article/803a0aab
+    to: /blog/2024/zca-whitening/
+
+  - bucket: keep
+    published: true
+    title: "Diffusion Sampling Techniques"
+    from: /blog/article/714df5a
+    old_url: https://skddj.github.io/blog/article/714df5a
+    to: /blog/2024/diffusion-sampling-techniques/
+
+  - bucket: keep
+    published: true
+    title: "Recap PyTorch Tensor & Einops API"
+    from: /blog/article/10f3127e
+    old_url: https://skddj.github.io/blog/article/10f3127e
+    to: /blog/2024/recap-pytorch-tensor-einops-api/
+
+  - bucket: keep
+    published: true
+    title: "Vision Transformer (ViT) -> Towards a Modality-Agnostic Transformer?"
+    from: /blog/article/8ad3e72a
+    old_url: https://skddj.github.io/blog/article/8ad3e72a
+    to: /blog/2024/vision-transformer-vit-modality-agnostic/
+
+  - bucket: keep
+    published: true
+    title: "梯度范数与梯度裁剪的详细解释 Gradient Norm and Clipping"
+    from: /blog/article/3ff1f570
+    old_url: https://skddj.github.io/blog/article/3ff1f570
+    to: /blog/2024/gradient-norm-and-clipping/
+
+  - bucket: keep
+    published: true
+    title: "Learning Diffusers Library"
+    from: /blog/article/d3a6f586
+    old_url: https://skddj.github.io/blog/article/d3a6f586
+    to: /blog/2023/learning-diffusers-library/
+
+  - bucket: keep
+    published: true
+    title: "Fine-Tuning Face Based on UniDiffuser"
+    from: /blog/article/3fe63e99
+    old_url: https://skddj.github.io/blog/article/3fe63e99
+    to: /blog/2023/fine-tuning-face-unidiffuser/
+
+  - bucket: keep
+    published: true
+    title: "My Questions and Learnings from Exploring  Process Management"
+    from: /blog/article/e2f5e0f7
+    old_url: https://skddj.github.io/blog/article/e2f5e0f7
+    to: /blog/2023/process-management/
+
+  - bucket: rewrite
+    published: false
+    title: "[TODO]谷歌开发者日 2023 成都篇 - 体验与见解"
+    from: /blog/article/f0b89bcc
+    old_url: https://skddj.github.io/blog/article/f0b89bcc
+    to: /blog/2024/gdg-google-developer-day-chengdu-2023/
+
+  - bucket: rewrite
+    published: false
+    title: "[TODO]我的粤港澳湾区AI算法竞赛之旅"
+    from: /blog/article/d0c627b
+    old_url: https://skddj.github.io/blog/article/d0c627b
+    to: /blog/2024/greater-bay-area-ai-algorithm-competition/
+    source_abbrlink: "0"
+    note: Source file abbrlink differs from the live URL; redirect the live hash.

@@ -323,3 +323,14 @@ html[data-theme="dark"] .post-title {
 html[data-theme="dark"] a:hover {
   color: #5eead4;
 }
+
+/* Index links reuse .post-title. Keep them smaller than the post-page heading. */
+.post-list .post-title {
+  font-size: 1.35rem;
+  line-height: 1.35;
+  margin-bottom: 0.35rem;
+}
+
+.post-list li p {
+  margin-bottom: 0.45rem;
+}
