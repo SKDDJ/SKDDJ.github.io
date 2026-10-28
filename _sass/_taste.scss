@@ -239,13 +239,26 @@ a:hover {
   content: initial;
 }
 
+/* A row is flex-wrap: wrap, and the text column was flex: 1 1 auto.
+   flex-basis auto is the max-content width, so a long highlight or
+   summary (Dots, Tsinghua) wrapped onto the next line while a short
+   entry (Zhipu, CFM) stayed beside the date column. Nowrap plus a
+   zero basis keeps every title on the same left edge. The date
+   column stays a fixed width so logo, badge, and location share
+   one center line. */
+.cv .cv-entries > .list-group-item > .row {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
 .cv .date-column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 10.75rem;
-  max-width: 46%;
   flex: 0 0 10.75rem;
+  width: 10.75rem;
+  min-width: 10.75rem;
+  max-width: 10.75rem;
   transform: none;
   text-align: center;
 }
@@ -261,9 +274,11 @@ a:hover {
 }
 
 .cv .date-column + [class*="col-"] {
-  flex: 1 1 auto;
+  flex: 1 1 0%;
+  min-width: 0;
   width: auto;
   max-width: none;
+  overflow-wrap: break-word;
 }
 
 .cv .cv-date {
