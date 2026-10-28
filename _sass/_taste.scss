@@ -179,6 +179,29 @@ a:hover {
   background: transparent;
 }
 
+/* Organization and school marks in the CV date column.
+   Transparent artwork, shared max size, no plate or shadow. */
+.cv .cv-org-logo {
+  display: block;
+  box-sizing: content-box;
+  width: auto;
+  height: auto;
+  max-width: min(4.75rem, 100%);
+  max-height: 3.35rem;
+  margin: 0.2rem auto 0.5rem;
+  padding: 0;
+  object-fit: contain;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Official z.ai mark is near-black. On the dark theme it is the white mark. */
+html[data-theme="dark"] .cv .cv-org-logo-mono {
+  filter: brightness(0) invert(1);
+}
+
 .news .table {
   margin-bottom: 0;
 }

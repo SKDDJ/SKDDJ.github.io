@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ace Top Intern @ Dots · Incoming PhD @ UQ
+subtitle: Ace Top Talent Intern @ Dots · Incoming PhD @ UQ
 
 profile:
   align: right
@@ -23,10 +23,10 @@ latest_posts:
   enabled: false
 ---
 
-Yiming Shi (史一鸣) is an Ace Top Intern at [Dots](https://studio.dots.ai/) (Xiaohongshu), on abstract reasoning for ARC-AGI-2 and ARC-AGI-3. Incoming Ph.D. student in computer science at The University of Queensland, co-advised by Prof. Zhifeng Bao and Dr. Hai Lan.
+Yiming Shi (史一鸣) is an Ace Top Talent Intern at [Dots](https://studio.dots.ai/) (Xiaohongshu), on abstract reasoning for ARC-AGI-2 and ARC-AGI-3. Incoming Ph.D. student in computer science at The University of Queensland, co-advised by Prof. Zhifeng Bao and Dr. Hai Lan.
 
 **Research:** Abstract reasoning for ARC-AGI-2 and ARC-AGI-3 at Dots. Data agents and memory for the incoming Ph.D. at UQ.
 
-**Previously:** Research intern in multimodal understanding at [Zhipu AI](https://z.ai) (March–August 2025). Research intern at [TSAIL](https://ml.cs.tsinghua.edu.cn/), Tsinghua University (July 2024–September 2025), with Prof. Jun Zhu, Dr. Zehua Chen, and Dr. Duo Su. Research intern at the [Center for Future Media](https://cfm.uestc.edu.cn/index), UESTC (May 2023–July 2024), with Prof. Yang Yang and Dr. Jiwei Wei. DevOps with [Star Studio](https://github.com/StarStudio), UESTC, from November 2022.
+**Previously:** Research intern in multimodal understanding at [Zhipu AI (z.ai)](https://z.ai) (March–August 2025). Research intern at [TSAIL](https://ml.cs.tsinghua.edu.cn/), Tsinghua University (July 2024–September 2025), with Prof. Jun Zhu, Dr. Zehua Chen, and Dr. Duo Su. Research intern at the [Center for Future Media](https://cfm.uestc.edu.cn/index), UESTC (May 2023–July 2024), with Prof. Yang Yang and Dr. Jiwei Wei. DevOps with [Star Studio](https://github.com/StarStudio), UESTC, from November 2022.
 
 B.Sc. in Computer Science and B.Ec. in Finance, Internet+ Dual Degree, University of Electronic Science and Technology of China, June 2025.

@@ -1,0 +1,21 @@
+{% comment %}
+  _includes/cv/org_logo.liquid
+  Left-column mark for a CV entry.
+  `logo` is a filename in assets/img/cv_logos/, or an absolute URL.
+{% endcomment %}
+{% if include.entry.logo %}
+  {% assign logo_file = include.entry.logo | strip %}
+  {% if logo_file contains '://' or logo_file contains '/' %}
+    {% assign logo_src = logo_file %}
+  {% else %}
+    {% assign logo_src = logo_file | prepend: '/assets/img/cv_logos/' %}
+  {% endif %}
+  {% capture logo_alt %}
+    {% if include.entry.company %}{{ include.entry.company }}{% elsif include.entry.institution %}{{ include.entry.institution }}{% elsif include.entry.organization %}{{ include.entry.organization }}{% elsif include.entry.name %}{{ include.entry.name }}{% endif %}
+  {% endcapture %}
+  {% assign logo_class = 'cv-org-logo' %}
+  {% if logo_file == 'zai.svg' %}
+    {% assign logo_class = 'cv-org-logo cv-org-logo-mono' %}
+  {% endif %}
+  <img class="{{ logo_class }}" src="{{ logo_src | relative_url }}" alt="{{ logo_alt | strip }}" loading="lazy" decoding="async">
+{% endif %}
