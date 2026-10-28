@@ -1,11 +1,11 @@
 cv:
   name: Yiming Shi
-  label: Ace Top Intern
+  label: Ace Top Talent Intern
   email: yimingshi666@gmail.com
   location: Beijing, China
   website: https://yiming-shi.com
   image: ""
-  summary: Ace Top Intern at Dots Studio (Xiaohongshu), working on abstract reasoning (ARC-AGI-2 and ARC-AGI-3). Incoming Ph.D. student in computer science at The University of Queensland, on data agents and memory.
+  summary: Ace Top Talent Intern at Dots Studio (Xiaohongshu), working on abstract reasoning (ARC-AGI-2 and ARC-AGI-3). Incoming Ph.D. student in computer science at The University of Queensland, on data agents and memory.
 
   social_networks:
     - network: GitHub
@@ -35,25 +35,25 @@ cv:
 
     Experience:
       - company: Dots Studio, Xiaohongshu
-        position: Ace Top Intern
+        position: Ace Top Talent Intern
         location: Beijing, China
         start_date: 2025-08
         end_date: present
         url: https://studio.dots.ai/
-        logo: xiaohongshu.png
+        logo: xiaohongshu.svg
         summary: Abstract reasoning on ARC-AGI-2 and ARC-AGI-3. Onboarding 11 August 2025.
         highlights:
           - Contributed to [dots3-note Preview](https://studio.dots.ai/dots/dots3-en.html). ARC Prize’s verified open-weight ARC-AGI-2 score is 76.8% (Max, 21 September 2026). The project page reports 81.4% on the public set, separately.
           - Invited poster, ARC Prize Research Summit 2026 (Boston, 23 October 2026), *Reasoning and Learning Across Puzzles and Games*. ARC-AGI-2 abstract reasoning with Binary-KL and DPPO-style updates, and long-horizon ARC-AGI-3 ([TEMPO](https://studio.dots.ai/dots/tempo-blog.html)).
 
-      - company: Zhipu AI
+      - company: Zhipu AI (z.ai)
         position: Research Intern, Multimodal Understanding
         location: Beijing, China
         start_date: 2025-03
         end_date: 2025-08
         url: https://z.ai
-        logo: zhipu.png
-        summary: Research intern in multimodal understanding. Offer dated March 2025. Ended before Xiaohongshu (Dots Studio).
+        logo: zai.svg
+        summary: Research intern in multimodal understanding. Offer dated March 2025.
 
       - company: TSAIL, Tsinghua University
         position: Research Intern
@@ -70,7 +70,7 @@ cv:
         start_date: 2023-05
         end_date: 2024-07
         url: https://cfm.uestc.edu.cn/index
-        logo: uestc.svg
+        logo: cfm.png
         summary: Co-advised by Prof. Yang Yang and Dr. Jiwei Wei.
 
       - company: Star Studio, UESTC

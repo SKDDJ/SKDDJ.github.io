@@ -179,19 +179,27 @@ a:hover {
   background: transparent;
 }
 
-/* Organization and school marks in the CV date column. The white plate
-   keeps seals and wordmarks readable in both themes. */
+/* Organization and school marks in the CV date column.
+   Transparent artwork, shared max size, no plate or shadow. */
 .cv .cv-org-logo {
   display: block;
-  box-sizing: border-box;
-  width: min(4.5rem, 100%);
-  height: 2.85rem;
-  margin: 0.1rem auto 0.45rem;
-  padding: 0.18rem;
+  box-sizing: content-box;
+  width: auto;
+  height: auto;
+  max-width: min(4.75rem, 100%);
+  max-height: 3.35rem;
+  margin: 0.2rem auto 0.5rem;
+  padding: 0;
   object-fit: contain;
-  background: #ffffff;
-  border: 1px solid #e4e4e7;
-  border-radius: 8px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Official z.ai mark is near-black. On the dark theme it is the white mark. */
+html[data-theme="dark"] .cv .cv-org-logo-mono {
+  filter: brightness(0) invert(1);
 }
 
 .news .table {

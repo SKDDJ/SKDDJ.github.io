@@ -13,5 +13,9 @@
   {% capture logo_alt %}
     {% if include.entry.company %}{{ include.entry.company }}{% elsif include.entry.institution %}{{ include.entry.institution }}{% elsif include.entry.organization %}{{ include.entry.organization }}{% elsif include.entry.name %}{{ include.entry.name }}{% endif %}
   {% endcapture %}
-  <img class="cv-org-logo" src="{{ logo_src | relative_url }}" alt="{{ logo_alt | strip }}" loading="lazy" decoding="async">
+  {% assign logo_class = 'cv-org-logo' %}
+  {% if logo_file == 'zai.svg' %}
+    {% assign logo_class = 'cv-org-logo cv-org-logo-mono' %}
+  {% endif %}
+  <img class="{{ logo_class }}" src="{{ logo_src | relative_url }}" alt="{{ logo_alt | strip }}" loading="lazy" decoding="async">
 {% endif %}

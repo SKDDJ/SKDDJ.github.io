@@ -27,6 +27,9 @@
             {% assign startDate = start_date | split: '-' | first %}
             {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
             {% assign date = startDate | append: ' - ' | append: endDate %}
+          {% elsif end_date != '' %}
+            {% comment %}Graduation year only. Do not invent a start year.{% endcomment %}
+            {% assign date = end_date | split: '-' | first %}
           {% elsif point_date != '' %}
             {% assign date = point_date | split: '-' | first %}
           {% else %}
