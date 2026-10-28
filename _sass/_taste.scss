@@ -64,7 +64,7 @@ samp,
 body {
   font-weight: 400;
   font-size: 1.0625rem;
-  line-height: 1.75;
+  line-height: 1.85;
   color: var(--global-text-color);
   background: var(--global-bg-color);
 }
@@ -77,15 +77,16 @@ h5,
 h6,
 .post-title {
   font-weight: 500;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
   color: #18181b;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .post-title {
   font-size: 2.35rem;
   font-weight: 500;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.55rem;
+  color: #18181b;
 }
 
 .desc,
@@ -112,11 +113,13 @@ h6,
 }
 
 .post article h2 {
-  margin-top: 3.25rem;
-  margin-bottom: 1.1rem;
-  font-size: 1.05rem;
+  margin-top: 3.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: #71717a;
 }
 
 .post article h2 a {
@@ -211,7 +214,83 @@ a:hover {
 
 ol.bibliography > li,
 .bibliography > li {
-  margin-bottom: 2.15rem;
+  margin-bottom: 2.75rem;
+}
+
+.publications ol.bibliography li .row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 1.35rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.publications ol.bibliography li .abbr {
+  flex: 0 0 13.25rem;
+  width: 13.25rem;
+  max-width: 13.25rem;
+  min-width: 13.25rem;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.publications ol.bibliography li .abbr:not(:has(img, video, abbr)) {
+  display: none;
+}
+
+.publications ol.bibliography li .abbr:has(img.preview) > abbr,
+.publications ol.bibliography li .abbr:has(.preview) > abbr {
+  display: none;
+}
+
+.publications ol.bibliography li .row > div[id] {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.publications img.preview,
+.publications .preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: none !important;
+}
+
+.publications pre,
+.publications .bibtex {
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .publications ol.bibliography li .row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+
+  .publications ol.bibliography li .abbr {
+    width: min(100%, 16rem);
+    max-width: 16rem;
+    min-width: 0;
+    flex-basis: auto;
+  }
+
+  .publications ol.bibliography li .row > div[id] {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
 }
 
 .social {

@@ -76,7 +76,8 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          # Latest 3.3.x. Pin 3.3.5 is not available on ubuntu-26.04 runners.
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v7
