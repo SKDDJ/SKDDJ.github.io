@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Invited poster, ARC Prize Research Summit 2026, Boston: <em>Reasoning and Learning Across Puzzles and Games</em>.
+Invited poster, ARC Prize Research Summit 2026 (Boston): <em>Reasoning and Learning Across Puzzles and Games</em> (<a href="{{ '/assets/pdf/arc-prize-research-summit-2026-poster.pdf' | relative_url }}">PDF</a>).
