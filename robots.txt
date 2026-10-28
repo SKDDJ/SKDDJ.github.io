@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://yiming-shi.com/sitemap.xml
