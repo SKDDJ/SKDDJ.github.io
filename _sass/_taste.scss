@@ -204,10 +204,60 @@ a:hover {
   border-top: 0;
 }
 
+/* Experience and education are ul.list-group. The Tailwind build does not
+   include Bootstrap's list-group reset, so the user agent draws a disc on
+   every entry. That disc sits in the ul padding, beside the date column.
+   The theme's .date-column also translates the column (-15px, -5px), which
+   pulls the logo, badge, and location onto that disc and off one axis.
+   Kill the marker on the entry list only. Highlight lists (ul.items) set
+   their own markers below, because list-style inherits. */
+.cv ul.cv-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv ul.cv-entries > li {
+  list-style: none;
+}
+
+.cv ul.cv-entries > li::marker {
+  content: none;
+}
+
+.cv ul.cv-entries ul.items {
+  list-style: disc outside;
+  margin: 0.35rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.cv ul.cv-entries ul.items > li {
+  list-style: disc outside;
+}
+
+.cv ul.cv-entries ul.items > li::marker {
+  content: initial;
+}
+
 .cv .date-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 10.75rem;
   max-width: 46%;
   flex: 0 0 10.75rem;
+  transform: none;
+  text-align: center;
+}
+
+.cv .date-column .table-cv {
+  width: auto;
+  margin: 0 auto;
+}
+
+.cv .date-column .location {
+  margin: 0.2rem 0 0;
+  text-align: center;
 }
 
 .cv .date-column + [class*="col-"] {
