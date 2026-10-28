@@ -1,0 +1,34 @@
+{% comment %}
+  _includes/cv/format_range.liquid
+  Date badge for one CV entry.
+  Months already stored as YYYY-MM render as YYYY.MM, for example 2025.08 – present.
+  end_date "open" is an unfinished past role and stays a trailing en dash, not present.
+  end_date "present" renders as present.
+  mode "education": an end date with no start is that date alone.
+{% endcomment %}
+{%- assign start_raw = include.start_date | default: '' | strip -%}
+{%- assign end_raw = include.end_date | default: '' | strip -%}
+{%- assign point_raw = include.point_date | default: '' | strip -%}
+{%- assign mode = include.mode | default: 'experience' | strip -%}
+{%- if start_raw != '' -%}
+{%- capture start_label -%}{%- include cv/format_date.liquid raw=start_raw -%}{%- endcapture -%}
+{%- assign start_label = start_label | strip -%}
+{%- if end_raw == 'open' -%}
+{{- start_label }} –
+{%- elsif end_raw == '' -%}
+{%- if mode == 'education' -%}
+{{- start_label -}}
+{%- else -%}
+{{- start_label }} – present
+{%- endif -%}
+{%- else -%}
+{%- capture end_label -%}{%- include cv/format_date.liquid raw=end_raw -%}{%- endcapture -%}
+{{- start_label }} – {{ end_label | strip -}}
+{%- endif -%}
+{%- elsif end_raw != '' -%}
+{%- capture end_label -%}{%- include cv/format_date.liquid raw=end_raw -%}{%- endcapture -%}
+{{- end_label | strip -}}
+{%- elsif point_raw != '' -%}
+{%- capture point_label -%}{%- include cv/format_date.liquid raw=point_raw -%}{%- endcapture -%}
+{{- point_label | strip -}}
+{%- endif -%}

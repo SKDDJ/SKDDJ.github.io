@@ -1,7 +1,7 @@
 {% comment %}
   _includes/cv/education.liquid
   Local override so school crests render from the RenderCV `logo` field.
-  Date badges match the al-folio education list.
+  Date badges include the month already stored on the entry (YYYY.MM).
 {% endcomment %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
@@ -23,25 +23,15 @@
           {% endcapture %}
           {% assign point_date = point_date | strip %}
 
-          {% if start_date != '' %}
-            {% assign startDate = start_date | split: '-' | first %}
-            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' | append: endDate %}
-          {% elsif end_date != '' %}
-            {% comment %}Graduation year only. Do not invent a start year.{% endcomment %}
-            {% assign date = end_date | split: '-' | first %}
-          {% elsif point_date != '' %}
-            {% assign date = point_date | split: '-' | first %}
-          {% else %}
-            {% assign date = null %}
-          {% endif %}
+          {% capture date %}{% include cv/format_range.liquid start_date=start_date end_date=end_date point_date=point_date mode='education' %}{% endcapture %}
+          {% assign date = date | strip %}
 
           <table class="table-cv">
             <tbody>
               <tr>
                 <td>
-                  {% if date %}
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+                  {% if date != '' %}
+                    <span class="badge cv-date font-weight-bold danger-color-dark align-middle">{{ date }}</span>
                   {% endif %}
                 </td>
               </tr>
