@@ -179,6 +179,20 @@ a:hover {
   max-width: 210px;
 }
 
+/* Mobile: stack avatar above bio (Yadan-style), not cramped float side-by-side.
+   Theme floats .profile; our max-width + margin kept it squeezed under ~576px. */
+@media (max-width: 575.98px) {
+  .profile,
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    display: block;
+    width: 100% !important;
+    max-width: 210px;
+    margin: 0 auto 1.5rem;
+  }
+}
+
 .profile img,
 .z-depth-1,
 .z-depth-0 {
