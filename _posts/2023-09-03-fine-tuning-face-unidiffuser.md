@@ -7,7 +7,7 @@ description: >
   Competition.
 categories: ["research"]
 tags: ["diffusion", "peft"]
-math: true
+math: false
 ---
 ## 1. UniDiffuser
 

@@ -6,7 +6,7 @@ description: >
   Summary of experience in hard disk mounting and permission management under Linux system
 categories: ["engineering"]
 tags: ["systems"]
-math: true
+math: false
 ---
 最近在管理一台Linux服务器时,遇到了一些硬盘挂载和权限管理的问题,在此做一个简单的总结记录。
 

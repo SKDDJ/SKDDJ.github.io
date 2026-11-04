@@ -5,7 +5,7 @@ date: 2023-09-03 12:00:00
 description: >
   File-System Read-Only. Reboot and enter recovery mode to make it Write/Read.
 categories: ["engineering"]
-math: true
+math: false
 ---
 关于解决Ubuntu22启动时进入Emergency Mode的问题
 

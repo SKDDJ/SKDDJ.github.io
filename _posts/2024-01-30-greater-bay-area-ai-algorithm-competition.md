@@ -6,7 +6,7 @@ description: >
   关于粤港澳湾区AI算法竞赛-文生图赛道的总结复盘
 categories: ["research"]
 tags: ["diffusion", "peft"]
-math: true
+math: false
 published: false
 ---
 

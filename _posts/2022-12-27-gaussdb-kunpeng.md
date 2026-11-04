@@ -6,7 +6,7 @@ description: >
   华为GaussDB与Open Euler OS
 categories: ["notes"]
 tags: ["GaussDB数据库", "Open Euler", "大二下"]
-math: true
+math: false
 ---
 ## 1.1. Chapter1 GaussDB数据库概述
 

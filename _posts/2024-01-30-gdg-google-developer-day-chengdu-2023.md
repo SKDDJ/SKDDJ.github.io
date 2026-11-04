@@ -4,7 +4,7 @@ title: "[TODO]谷歌开发者日 2023 成都篇 - 体验与见解"
 date: 2024-01-30 12:00:00
 categories: ["research"]
 tags: ["peft"]
-math: true
+math: false
 published: false
 ---
 
