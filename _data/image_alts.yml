@@ -1,0 +1,8 @@
+# Filename keys match the alt values the theme passes into figure.liquid
+# (profile image name, publication preview filename).
+"prof_pic.jpg": "Yiming Shi standing at a waterfront railing with the Hong Kong skyline across the harbor"
+"dap.png": "Radar chart of performance, representativeness, and diversity for diffusion-as-priors compared with DiT, MGD², and IGD"
+"loldu.png": "Accuracy versus number of trainable parameters for LoLDU, compared with FourierFT and LoRA"
+"glm.png": "Radar chart and bar chart of GLM-4.5V accuracy across reasoning, vision, and coding tasks"
+"svfit.png": "Accuracy versus rank for singular-value fine-tuning across image classification datasets, compared with LoRA"
+"difflora.png": "Diagram of DiffLoRA turning reference images into personalized generation through a diffusion model and reparameterized weights"

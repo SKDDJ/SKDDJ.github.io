@@ -1,0 +1,9 @@
+{% comment %}
+  al_math 1.0.2 emits MathJax on every page when site.enable_math is true
+  and does not read page.math. Gate the tag so the ~1.1MB script loads only
+  where a page opts in with math: true (or pseudocode / tikzjax).
+  Leave enable_math true: the plugin emits nothing when that flag is false.
+{% endcomment %}
+{% if page.math or page.pseudocode or page.tikzjax %}
+  {% al_math_scripts %}
+{% endif %}

@@ -6,7 +6,7 @@ description: >
   对计算机网络概念和模型进行图文解释,使抽象的网络知识更直观。
 categories: ["notes"]
 tags: ["systems"]
-math: true
+math: false
 ---
 ## 计算机网络协议有什么用?
 

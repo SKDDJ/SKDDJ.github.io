@@ -9,7 +9,7 @@ description: >
   account usage.
 categories: ["engineering"]
 tags: ["systems"]
-math: true
+math: false
 ---
 ## 1. Analyzing Process States 
 

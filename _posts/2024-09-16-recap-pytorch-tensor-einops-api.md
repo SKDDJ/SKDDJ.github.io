@@ -6,7 +6,7 @@ description: >
   简要回顾 PyTorch 中关于 Tensor 形状变换的 API（如 view, reshape, unsqueeze, squeeze）以及 Einops 库中
   rearrange, reduce, repeat 的用法。
 categories: ["notes"]
-math: true
+math: false
 ---
 在深度学习中，对 Tensor 的维度和形状变换是日常操作。本文简单介绍 PyTorch 的 Tensor 自带的 API（`view`, `reshape`, `unsqueeze`, `squeeze`）以及配合 [Einops](https://github.com/arogozhnikov/einops) 库进行维度重排、维度聚合和重复操作（`rearrange`, `reduce`, `repeat`）。
 

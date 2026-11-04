@@ -1,0 +1,14 @@
+# Yiming Shi (史一鸣)
+
+Ace Top Talent Intern at Dots (Xiaohongshu), working on abstract reasoning for ARC-AGI. Incoming Ph.D. student in Computer Science at The University of Queensland.
+
+## Links
+
+- [About](https://yiming-shi.com/): homepage
+- [Publications](https://yiming-shi.com/publications/): papers
+- [CV](https://yiming-shi.com/cv/): curriculum vitae
+- [LoLDU](https://arxiv.org/abs/2410.13618): low-rank adaptation by lower-diag-upper decomposition (IEEE TNNLS, 2026)
+- [Diffusion Models as Dataset Distillation Priors](https://arxiv.org/abs/2510.17421): ICLR 2026
+- [GLM-4.5V and GLM-4.1V-Thinking](https://arxiv.org/abs/2507.01006): multimodal reasoning with reinforcement learning
+- [DiffLoRA](https://arxiv.org/abs/2408.06740): personalized low-rank adaptation weights from a diffusion model
+- [Singular-value fine-tuning](https://arxiv.org/abs/2409.05926): parameter-efficient fine-tuning of large pre-trained models (IEEE TMM)
