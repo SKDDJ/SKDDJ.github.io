@@ -6,6 +6,8 @@ categories: ["research"]
 tags: ["peft"]
 math: false
 published: false
+robots: noindex
+sitemap: false
 ---
 
 ### 介绍

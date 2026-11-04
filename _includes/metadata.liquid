@@ -2,7 +2,7 @@
   Override of al_folio_core 1.0.15 _includes/metadata.liquid.
   Local changes: seo_title for the document title, homepage Open Graph title,
   summary_large_image when an og:image is set, schema headline on the homepage,
-  and the Atom feed autodiscovery link.
+  the Atom feed autodiscovery link, and a robots meta tag when page.robots is set.
 {% endcomment %}
 {% if site.enable_google_verification or site.enable_bing_verification %}
   <!-- Website verification -->
@@ -56,6 +56,9 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.keywords or site.keywords %}
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+{% endif %}
+{% if page.robots %}
+  <meta name="robots" content="{{ page.robots | escape }}">
 {% endif %}
 
 {% assign is_blog_post = false %}

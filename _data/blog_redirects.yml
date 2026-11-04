@@ -1,11 +1,19 @@
 # _data/blog_redirects.yml
-# Draft 301 map only. Not applied to Cloudflare or GitHub Pages.
-# The Matery site at https://skddj.github.io/blog stays up for now.
-# Later: /blog/article/<abbrlink> -> the al-folio permalink on https://yiming-shi.com
-# Rewrite rows are unpublished drafts; do not 301 those URLs until they are public.
+# Matery /blog/article/<hash> → al-folio permalink on this site (https://yiming-shi.com).
+#
+# applied: true
+#   A Jekyll page at blog/article/<hash>/index.html redirects with
+#   meta refresh + canonical + noindex. GitHub Pages serves that as HTTP 200,
+#   not a 301. Cloudflare 301s can come later; this file stays the map.
+# applied: false
+#   Draft / note only. No redirect page. Either published is false (rewrite
+#   TODO) or the target post is not in _posts.
+#
+# The old Matery site at https://skddj.github.io/blog is unchanged by these pages.
 redirects:
   - bucket: keep
     published: true
+    applied: true
     title: "ZCA白化 (Whitening)"
     from: /blog/article/803a0aab
     old_url: https://skddj.github.io/blog/article/803a0aab
@@ -13,6 +21,7 @@ redirects:
 
   - bucket: keep
     published: true
+    applied: true
     title: "Diffusion Sampling Techniques"
     from: /blog/article/714df5a
     old_url: https://skddj.github.io/blog/article/714df5a
@@ -20,6 +29,7 @@ redirects:
 
   - bucket: keep
     published: true
+    applied: true
     title: "Recap PyTorch Tensor & Einops API"
     from: /blog/article/10f3127e
     old_url: https://skddj.github.io/blog/article/10f3127e
@@ -27,6 +37,7 @@ redirects:
 
   - bucket: keep
     published: true
+    applied: true
     title: "Vision Transformer (ViT) -> Towards a Modality-Agnostic Transformer?"
     from: /blog/article/8ad3e72a
     old_url: https://skddj.github.io/blog/article/8ad3e72a
@@ -34,6 +45,7 @@ redirects:
 
   - bucket: keep
     published: true
+    applied: true
     title: "梯度范数与梯度裁剪的详细解释 Gradient Norm and Clipping"
     from: /blog/article/3ff1f570
     old_url: https://skddj.github.io/blog/article/3ff1f570
@@ -41,6 +53,7 @@ redirects:
 
   - bucket: keep
     published: true
+    applied: true
     title: "Learning Diffusers Library"
     from: /blog/article/d3a6f586
     old_url: https://skddj.github.io/blog/article/d3a6f586
@@ -48,6 +61,7 @@ redirects:
 
   - bucket: keep
     published: true
+    applied: true
     title: "Fine-Tuning Face Based on UniDiffuser"
     from: /blog/article/3fe63e99
     old_url: https://skddj.github.io/blog/article/3fe63e99
@@ -55,6 +69,7 @@ redirects:
 
   - bucket: keep
     published: true
+    applied: true
     title: "My Questions and Learnings from Exploring  Process Management"
     from: /blog/article/e2f5e0f7
     old_url: https://skddj.github.io/blog/article/e2f5e0f7
@@ -62,24 +77,28 @@ redirects:
 
   - bucket: rewrite
     published: false
+    applied: false
     title: "[TODO]谷歌开发者日 2023 成都篇 - 体验与见解"
     from: /blog/article/f0b89bcc
     old_url: https://skddj.github.io/blog/article/f0b89bcc
     to: /blog/2024/gdg-google-developer-day-chengdu-2023/
+    note: Draft only. Unpublished rewrite TODO. No redirect page until the post is public.
 
   - bucket: rewrite
     published: false
+    applied: false
     title: "[TODO]我的粤港澳湾区AI算法竞赛之旅"
     from: /blog/article/d0c627b
     old_url: https://skddj.github.io/blog/article/d0c627b
     to: /blog/2024/greater-bay-area-ai-algorithm-competition/
     source_abbrlink: "0"
-    note: Source file abbrlink differs from the live URL; redirect the live hash.
+    note: Draft only. Unpublished rewrite TODO (source abbrlink differs from the live hash). No redirect page until the post is public.
 
-  # Batch 2: remaining 技术/学术 posts, plus the two trick/ Engineering and Technology notes.
-  # Draft rows only. Not applied to Cloudflare or GitHub Pages.
+  # Batch 2. applied: true rows have pages under blog/article/<hash>/.
+  # applied: false rows stay as notes because the target post is gone.
   - bucket: batch2
     published: true
+    applied: true
     title: "Hard Disk Mounting Under Linux System"
     from: /blog/article/8350d4a
     old_url: https://skddj.github.io/blog/article/8350d4a
@@ -87,6 +106,7 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: true
     title: "Fix entering Emergency Mode during startup"
     from: /blog/article/2185f868
     old_url: https://skddj.github.io/blog/article/2185f868
@@ -94,28 +114,34 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: false
     title: "计算机网络课程实验：手动访问 404 网站"
     from: /blog/article/3af5c2d7
     old_url: https://skddj.github.io/blog/article/3af5c2d7
     to: /blog/2023/computer-network-vpn-404/
+    note: Draft only. Target post is not on this site. No redirect page.
 
   - bucket: batch2
     published: true
+    applied: false
     title: "飞书ChatGPTBot使用指南"
     from: /blog/article/b5c3f382
     old_url: https://skddj.github.io/blog/article/b5c3f382
     to: /blog/2023/feishu-chatgpt-bot-guide/
+    note: Draft only. Target post is not on this site. No redirect page.
 
   - bucket: batch2
     published: true
+    applied: false
     title: "Alpaca Plan"
     from: /blog/article/bf637e11
     old_url: https://skddj.github.io/blog/article/bf637e11
     to: /blog/2023/alpaca-plan/
-    note: Hexo source had hide true and a SHA256 password. The migrated post is published without that gate.
+    note: Draft only. Target post is not on this site. Hexo source had hide true and a SHA256 password. No redirect page.
 
   - bucket: batch2
     published: true
+    applied: true
     title: "视频制作学习总结"
     from: /blog/article/eed73e40
     old_url: https://skddj.github.io/blog/article/eed73e40
@@ -123,6 +149,7 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: true
     title: "博客搭建指北"
     from: /blog/article/acd393eb
     old_url: https://skddj.github.io/blog/article/acd393eb
@@ -130,6 +157,7 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: true
     title: "matery Theme指北"
     from: /blog/article/4c867599
     old_url: https://skddj.github.io/blog/article/4c867599
@@ -137,6 +165,7 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: true
     title: "Ubuntu-Git-SSH 推送"
     from: /blog/article/847ddabe
     old_url: https://skddj.github.io/blog/article/847ddabe
@@ -144,6 +173,7 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: true
     title: "Verilog学习笔记:基础语法与代码规范总结"
     from: /blog/article/7045141b
     old_url: https://skddj.github.io/blog/article/7045141b
@@ -151,6 +181,7 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: true
     title: "OSI v.s. TCP/IP：网络模型和协议的比较"
     from: /blog/article/d3f72afd
     old_url: https://skddj.github.io/blog/article/d3f72afd
@@ -158,6 +189,7 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: true
     title: "Go语言学习笔记:数据类型、流程控制和其他基础"
     from: /blog/article/ada7eeb
     old_url: https://skddj.github.io/blog/article/ada7eeb
@@ -165,6 +197,7 @@ redirects:
 
   - bucket: batch2
     published: true
+    applied: true
     title: "我的Python编程学习笔记总结"
     from: /blog/article/8e458014
     old_url: https://skddj.github.io/blog/article/8e458014

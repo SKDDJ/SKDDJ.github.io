@@ -6,6 +6,8 @@ description: >
   本文对Verilog语言进行简要概览,并给出学习过程中的代码案例,旨在梳理语法要点,帮助快速入门Verilog语法。
 categories: ["notes"]
 math: false
+robots: noindex
+sitemap: false
 ---
 ## Verilog基本代码规范
 

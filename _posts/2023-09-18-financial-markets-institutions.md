@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["金融市场与机构", "大三上"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ![](https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202308311649113.jpg)
 

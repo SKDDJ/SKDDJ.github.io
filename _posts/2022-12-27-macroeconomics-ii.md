@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["宏观经济学", "Macro Economic", "大二下"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 1.1. Chapter1 宏观经济学概述
 

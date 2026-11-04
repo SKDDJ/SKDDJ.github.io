@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["概率论与数理统计", "大二上"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 第一章 随机事件与概率
 

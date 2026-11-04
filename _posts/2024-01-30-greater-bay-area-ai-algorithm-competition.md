@@ -8,6 +8,8 @@ categories: ["research"]
 tags: ["diffusion", "peft"]
 math: false
 published: false
+robots: noindex
+sitemap: false
 ---
 
 ### 引言

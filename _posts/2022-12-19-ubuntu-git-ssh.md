@@ -5,6 +5,8 @@ date: 2022-12-19 12:00:00
 description: >
   解决了代理模式下Ubuntu使用Git推送Hexo的心头之患
 categories: ["engineering"]
+robots: noindex
+sitemap: false
 ---
 ## 解决了我的心头大患
 

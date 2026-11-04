@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["金融学基础", "大二下", "Finance"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 1.1. Module1 金融和金融系统
 

@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["systems"]
 math: false
+robots: noindex
+sitemap: false
 ---
 ## 计算机网络协议有什么用?
 

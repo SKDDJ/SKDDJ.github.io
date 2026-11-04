@@ -6,6 +6,8 @@ description: >
   学习Go语言的笔记,内容涵盖了语言的基础知识点如数据类型、流程控制等,以及其他函数、方法等基础语法
 categories: ["notes"]
 math: false
+robots: noindex
+sitemap: false
 ---
 ## Go语言变量声明
 
