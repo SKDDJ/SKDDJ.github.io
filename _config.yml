@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Yiming Shi # the website title (if blank, full name will be used instead)
+title: Yiming Shi # visible heading and navbar brand
+seo_title: "Yiming Shi · ARC-AGI @ Dots · Incoming PhD @ UQ" # document <title> and social title; not the on-page heading
 first_name: Yiming
 middle_name:
 last_name: Shi
 contact_note: ""
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Yiming Shi. Ace Top Talent Intern at Dots Studio (Xiaohongshu), working on abstract reasoning. Incoming Ph.D. student in Computer Science at The University of Queensland.
+description: "Yiming Shi (史一鸣) is an Ace Top Talent Intern at Dots working on ARC-AGI, and an incoming Ph.D. student in Computer Science at The University of Queensland."
 footer_text: ""
 keywords: machine learning, abstract reasoning, ARC-AGI, data agents, memory, multimodal # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -106,9 +106,9 @@ max_width: 920px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/og-image.png # site-wide 1200x630 Open Graph image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

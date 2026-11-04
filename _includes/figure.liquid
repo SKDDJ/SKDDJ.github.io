@@ -13,6 +13,10 @@
   {% assign image_loading = 'lazy' %}
   {% assign avoid_scaling = false %}
 {% endif %}
+{% assign alt_text = include.alt %}
+{% if site.data.image_alts[include.alt] %}
+  {% assign alt_text = site.data.image_alts[include.alt] %}
+{% endif %}
 
 <figure
   {% if include.slot %}
@@ -74,8 +78,8 @@
           {% endif %}
         "
       {% endif %}
-      {% if include.alt %}
-        alt="{{ include.alt }}"
+      {% if alt_text %}
+        alt="{{ alt_text }}"
       {% endif %}
       {% if include.title %}
         title="{{ include.title }}"
