@@ -7,6 +7,7 @@ Ace Top Talent Intern at Dots (Xiaohongshu), working on abstract reasoning for A
 - [About](https://yiming-shi.com/): homepage
 - [Publications](https://yiming-shi.com/publications/): papers
 - [CV](https://yiming-shi.com/cv/): curriculum vitae
+- [ORCID](https://orcid.org/0009-0007-3735-3837): 0009-0007-3735-3837
 - [LoLDU](https://arxiv.org/abs/2410.13618): low-rank adaptation by lower-diag-upper decomposition (IEEE TNNLS, 2026)
 - [Diffusion Models as Dataset Distillation Priors](https://arxiv.org/abs/2510.17421): ICLR 2026
 - [GLM-4.5V and GLM-4.1V-Thinking](https://arxiv.org/abs/2507.01006): multimodal reasoning with reinforcement learning
