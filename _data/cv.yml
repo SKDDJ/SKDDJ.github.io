@@ -33,16 +33,22 @@ cv:
         logo: uestc.svg
 
     Experience:
-      - company: Dots Studio, Xiaohongshu
-        position: Ace Top Talent Intern
-        location: Beijing, China
-        start_date: 2025-08
-        end_date: present
-        url: https://studio.dots.ai/
-        logo: xiaohongshu.svg
-        highlights:
-          - Open-weight SOTA (~76.8%) on [ARC Prize](https://arcprize.org/)’s verified ARC-AGI-2 with [dots3-note Preview](https://studio.dots.ai/dots/dots3-en.html).
-          - "Invited poster, ARC Prize Research Summit 2026 (Boston, 23 Oct 2026): *Reasoning and Learning Across Puzzles and Games* ([PDF](https://yiming-shi.com/assets/pdf/arc-prize-research-summit-2026-poster.pdf))."
+      - company: Star Studio, UESTC
+        position: DevOps
+        location: Chengdu, China
+        start_date: 2022-11
+        end_date: 2023-05
+        url: https://github.com/StarStudio
+        logo: starstudio.png
+
+      - company: Center for Future Media, UESTC
+        position: Research Intern
+        location: Chengdu, China
+        start_date: 2023-05
+        end_date: 2024-07
+        url: https://cfm.uestc.edu.cn/index
+        logo: cfm.png
+        summary: Co-advised by Prof. Yang Yang and Prof. Jiwei Wei.
 
       - company: TSAIL, Tsinghua University
         position: Research Intern
@@ -63,19 +69,13 @@ cv:
         highlights:
           - Designed and open-sourced [GLM-V’s VLM reward system](https://github.com/zai-org/GLM-V/tree/main/glmv_reward), used in GLM-4.5V and GLM-4.1V-Thinking RL post-training.
 
-      - company: Center for Future Media, UESTC
-        position: Research Intern
-        location: Chengdu, China
-        start_date: 2023-05
-        end_date: 2024-07
-        url: https://cfm.uestc.edu.cn/index
-        logo: cfm.png
-        summary: Co-advised by Prof. Yang Yang and Prof. Jiwei Wei.
-
-      - company: Star Studio, UESTC
-        position: DevOps
-        location: Chengdu, China
-        start_date: 2022-11
-        end_date: 2023-05
-        url: https://github.com/StarStudio
-        logo: starstudio.png
+      - company: Dots Studio, Xiaohongshu
+        position: Ace Top Talent Intern
+        location: Beijing, China
+        start_date: 2025-08
+        end_date: present
+        url: https://studio.dots.ai/
+        logo: xiaohongshu.svg
+        highlights:
+          - Open-weight SOTA (~76.8%) on [ARC Prize](https://arcprize.org/)’s verified ARC-AGI-2 with [dots3-note Preview](https://studio.dots.ai/dots/dots3-en.html).
+          - "Invited poster, ARC Prize Research Summit 2026 (Boston, 23 Oct 2026): *Reasoning and Learning Across Puzzles and Games* ([PDF](https://yiming-shi.com/assets/pdf/arc-prize-research-summit-2026-poster.pdf))."
