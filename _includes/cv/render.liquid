@@ -125,7 +125,11 @@
         {% assign empty_array = '' | split: ',' %}
         {% assign exp = cv.sections.Experience | default: empty_array %}
         {% assign vol = cv.sections.Volunteer | default: empty_array %}
-        {% assign combined_experience = exp | concat: vol | al_cv_sort_by_date %}
+        {% comment %}
+          Keep _data/cv.yml order. al_cv_sort_by_date would force newest-first
+          and hide the intentional oldest-to-newest Experience list.
+        {% endcomment %}
+        {% assign combined_experience = exp | concat: vol %}
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
           <div class="card mt-3 p-3">
@@ -269,7 +273,10 @@
         {% assign empty_array = '' | split: ',' %}
         {% assign work = site.data.resume.work | default: empty_array %}
         {% assign vol = site.data.resume.volunteer | default: empty_array %}
-        {% assign combined_experience = work | concat: vol | al_cv_sort_by_date %}
+        {% comment %}
+          Keep source order, same as the RenderCV Experience list above.
+        {% endcomment %}
+        {% assign combined_experience = work | concat: vol %}
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
           <div class="card mt-3 p-3">
