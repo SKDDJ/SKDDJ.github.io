@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["Investment", "Finance", "Stocks", "Strategy", "Analysis", "A 股"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 彼得林奇著作读书笔记
 

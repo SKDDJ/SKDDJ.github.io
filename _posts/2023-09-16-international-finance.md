@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["国际金融", "International Finance", "大三上"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 1 第一章：课程概述
 

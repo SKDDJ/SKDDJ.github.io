@@ -6,6 +6,8 @@ description: >
   File-System Read-Only. Reboot and enter recovery mode to make it Write/Read.
 categories: ["engineering"]
 math: false
+robots: noindex
+sitemap: false
 ---
 关于解决Ubuntu22启动时进入Emergency Mode的问题
 

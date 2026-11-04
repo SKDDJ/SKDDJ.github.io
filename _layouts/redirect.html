@@ -1,0 +1,20 @@
+{% comment %} _layouts/redirect.html — HTML redirect for GitHub Pages (200 + meta refresh, not an HTTP 301). {% endcomment %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting&hellip;</title>
+    <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+    <meta name="robots" content="{{ page.robots | default: 'noindex' | escape }}">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect_to | absolute_url }}">
+  </head>
+  <body>
+    <p>
+      This page has moved to
+      <a href="{{ page.redirect_to | absolute_url }}">{{ page.redirect_to | absolute_url }}</a>.
+    </p>
+    <script>
+      location.replace({{ page.redirect_to | absolute_url | jsonify }});
+    </script>
+  </body>
+</html>

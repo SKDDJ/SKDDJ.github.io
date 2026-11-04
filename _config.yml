@@ -289,9 +289,15 @@ plugins:
   - al_rtl
 
 # Sitemap settings
+# jekyll-sitemap drops any document whose front matter (or these defaults) sets sitemap: false.
 defaults:
   - scope:
       path: "assets"
+    values:
+      sitemap: false
+  # Matery /blog/article/<hash> compatibility pages. Each page also sets sitemap: false.
+  - scope:
+      path: "blog/article"
     values:
       sitemap: false
 

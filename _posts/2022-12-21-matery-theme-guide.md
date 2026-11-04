@@ -5,6 +5,8 @@ date: 2022-12-21 12:00:00
 description: >
   matery主题的readme搬运
 categories: ["notes"]
+robots: noindex
+sitemap: false
 ---
 ## hexo-theme-matery
 

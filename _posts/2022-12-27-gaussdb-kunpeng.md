@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["GaussDB数据库", "Open Euler", "大二下"]
 math: false
+robots: noindex
+sitemap: false
 ---
 ## 1.1. Chapter1 GaussDB数据库概述
 

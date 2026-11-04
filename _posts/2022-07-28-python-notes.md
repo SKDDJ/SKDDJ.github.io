@@ -6,6 +6,8 @@ description: >
   本文总结我学习Python的第一阶段,包括基础语法、函数、面向对象等核心知识点,以及12天的学习过程。
 categories: ["notes"]
 math: false
+robots: noindex
+sitemap: false
 ---
 ## 一、****基础数据类型****
 

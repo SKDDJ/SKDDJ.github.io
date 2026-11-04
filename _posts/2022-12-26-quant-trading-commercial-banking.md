@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["量化交易与商业银行", "Python", "大二下"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 1.1. Chapter1 课程概述
 ### 1.1.1. 课程简介

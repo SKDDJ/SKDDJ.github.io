@@ -6,6 +6,8 @@ description: >
   Hexo框架下的个人博客搭建简略攻略,安装->魔改
 categories: ["notes"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 个人Blog的搭建避坑
 

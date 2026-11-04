@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["软件技术基础", "大二下"]
 math: true
+robots: noindex
+sitemap: false
 ---
 * Chapter1 编写单机API
 	* 排序

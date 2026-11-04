@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["计量经济学", "Econometrics", "大三上"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ![](https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202308301038752.jpg) ![](https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202308301039303.jpg)
 

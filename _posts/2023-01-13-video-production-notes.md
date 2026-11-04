@@ -5,6 +5,8 @@ date: 2023-01-13 12:00:00
 description: >
   YouTube频道制作学习整理，加上AIGC功能
 categories: ["notes"]
+robots: noindex
+sitemap: false
 ---
 > 传统的视频制作人工参与成本高昂，做到一定规模很可能需要小规模的团队，以往的视频制作推荐也大多需要较强的视频制作剪辑技术，而这并不适合信息爆炸短视频流行的今天，根据观看诸多视频教程，结合很火的AIGC（Artificial Intelligent Generates Content）技术，我总结出以下的视频制作Tricks。
 

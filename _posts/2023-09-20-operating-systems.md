@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["计算机操作系统", "Operating System", "大三上"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 第一章：概述
 

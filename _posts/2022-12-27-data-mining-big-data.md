@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["Machine Learning", "Big Data", "Data Mining", "大二下"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## 1.1. Chapter1 数据挖掘与大数据简介
 

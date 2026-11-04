@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["公司金融", "大三上"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ## Lecture1 第一章：公司目标和治理
 

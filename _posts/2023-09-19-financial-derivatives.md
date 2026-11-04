@@ -7,6 +7,8 @@ description: >
 categories: ["notes"]
 tags: ["金融衍生工具", "Derivatives", "大三上"]
 math: true
+robots: noindex
+sitemap: false
 ---
 ![](https://raw.githubusercontent.com/SKDDJ/picgoimgbed/main/202309011440006.jpg)
 
